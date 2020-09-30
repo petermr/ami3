@@ -1,0 +1,535 @@
+{
+  "id": [
+    "29641585"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29641585"
+  ],
+  "pmcid": [
+    "PMC5894989"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5894989"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.pone.0194680"
+  ],
+  "title": [
+    "Tetrapods on the EDGE: Overcoming data limitations to identify phylogenetic conservation priorities."
+  ],
+  "authorString": [
+    "Gumbs R, Gray CL, Wearn OR, Owen NR."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Gumbs R"
+          ],
+          "firstName": [
+            "Rikki"
+          ],
+          "lastName": [
+            "Gumbs"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4157-8549",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Science and Solutions for a Changing Planet DTP, and the Department of Life Sciences, Imperial College London, Silwood Park Campus, Ascot, Berkshire, United Kingdom.",
+                "EDGE of Existence Programme, Zoological Society of London, Regent's Park, London, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Gray CL"
+          ],
+          "firstName": [
+            "Claudia L"
+          ],
+          "lastName": [
+            "Gray"
+          ],
+          "initials": [
+            "CL"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "EDGE of Existence Programme, Zoological Society of London, Regent's Park, London, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Wearn OR"
+          ],
+          "firstName": [
+            "Oliver R"
+          ],
+          "lastName": [
+            "Wearn"
+          ],
+          "initials": [
+            "OR"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8258-3534",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "EDGE of Existence Programme, Zoological Society of London, Regent's Park, London, United Kingdom.",
+                "Institute of Zoology, Zoological Society of London, Regent's Park, London, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Owen NR"
+          ],
+          "firstName": [
+            "Nisha R"
+          ],
+          "lastName": [
+            "Owen"
+          ],
+          "initials": [
+            "NR"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "EDGE of Existence Programme, Zoological Society of London, Regent's Park, London, United Kingdom."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-4157-8549",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-8258-3534",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "13"
+      ],
+      "journalIssueId": [
+        "2667071"
+      ],
+      "dateOfPublication": [
+        "2018 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "e0194680"
+  ],
+  "abstractText": [
+    "The scale of the ongoing biodiversity crisis requires both effective conservation prioritisation and urgent action. As extinction is non-random across the tree of life, it is important to prioritise threatened species which represent large amounts of evolutionary history. The EDGE metric prioritises species based on their Evolutionary Distinctiveness (ED), which measures the relative contribution of a species to the total evolutionary history of their taxonomic group, and Global Endangerment (GE), or extinction risk. EDGE prioritisations rely on adequate phylogenetic and extinction risk data to generate meaningful priorities for conservation. However, comprehensive phylogenetic trees of large taxonomic groups are extremely rare and, even when available, become quickly out-of-date due to the rapid rate of species descriptions and taxonomic revisions. Thus, it is important that conservationists can use the available data to incorporate evolutionary history into conservation prioritisation. We compared published and new methods to estimate missing ED scores for species absent from a phylogenetic tree whilst simultaneously correcting the ED scores of their close taxonomic relatives. We found that following artificial removal of species from a phylogenetic tree, the new method provided the closest estimates of their \"true\" ED score, differing from the true ED score by an average of less than 1%, compared to the 31% and 38% difference of the previous methods. The previous methods also substantially under- and over-estimated scores as more species were artificially removed from a phylogenetic tree. We therefore used the new method to estimate ED scores for all tetrapods. From these scores we updated EDGE prioritisation rankings for all tetrapod species with IUCN Red List assessments, including the first EDGE prioritisation for reptiles. Further, we identified criteria to identify robust priority species in an effort to further inform conservation action whilst limiting uncertainty and anticipating future phylogenetic advances."
+  ],
+  "affiliation": [
+    "Science and Solutions for a Changing Planet DTP, and the Department of Life Sciences, Imperial College London, Silwood Park Campus, Ascot, Berkshire, United Kingdom."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "1823139"
+          ],
+          "agency": [
+            "Natural Environment Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Statistical"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Risk"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Uncertainty"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Conservation of Natural Resources"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biodiversity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Extinction, Biological"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Endangered Species"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0194680"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5894989"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5894989?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "PPR12064"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "5"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-07-25"
+  ],
+  "dateOfCreation": [
+    "2018-04-12"
+  ],
+  "firstIndexDate": [
+    "2018-04-12"
+  ],
+  "fullTextReceivedDate": [
+    "2018-05-11"
+  ],
+  "dateOfRevision": [
+    "2018-07-25"
+  ],
+  "electronicPublicationDate": [
+    "2018-04-11"
+  ],
+  "firstPublicationDate": [
+    "2018-04-11"
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "id": [
+    "25392761"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "25392761"
+  ],
+  "pmcid": [
+    "PMC4226647"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4226647"
+      ]
+    }
+  ],
+  "doi": [
+    "10.7717/peerj.663"
+  ],
+  "title": [
+    "Microsatellite frequencies vary with body mass and body temperature in mammals, suggesting correlated variation in mutation rate."
+  ],
+  "authorString": [
+    "Amos W, Filipe LN."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Amos W"
+          ],
+          "firstName": [
+            "William"
+          ],
+          "lastName": [
+            "Amos"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Zoology , Cambridge , UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Filipe LN"
+          ],
+          "firstName": [
+            "Laura N S"
+          ],
+          "lastName": [
+            "Filipe"
+          ],
+          "initials": [
+            "LN"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Hills Road Sixth Form College , Cambridge , UK."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "2"
+      ],
+      "journalIssueId": [
+        "2121020"
+      ],
+      "dateOfPublication": [
+        "2014 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2014"
+      ],
+      "printPublicationDate": [
+        "2014-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PeerJ"
+          ],
+          "ISOAbbreviation": [
+            "PeerJ"
+          ],
+          "medlineAbbreviation": [
+            "PeerJ"
+          ],
+          "NLMid": [
+            "101603425"
+          ],
+          "ISSN": [
+            "2167-8359"
+          ],
+          "ESSN": [
+            "2167-8359"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2014"
+  ],
+  "pageInfo": [
+    "e663"
+  ],
+  "abstractText": [
+    "Substitution rate is often found to correlate with life history traits such as body mass, a predictor of population size and longevity, and body temperature. The underlying mechanism is unclear but most models invoke either natural selection or factors such as generation length that change the number of mutation opportunities per unit time. Here we use published genome sequences from 69 mammals to ask whether life history traits impact another form of genetic mutation, the high rates of predominantly neutral slippage in microsatellites. We find that the length-frequency distributions of three common dinucleotide motifs differ greatly between even closely related species. These frequency differences correlate with body mass and body temperature and can be used to predict the phenotype of an unknown species. Importantly, different length microsatellites show complicated patterns of excess and deficit that cannot be explained by a simple model where species with short generation lengths have experienced more mutations. Instead, the patterns probably require changes in mutation rate that impact alleles of different length to different extents. Body temperature plausibly influences mutation rate by modulating the propensity for slippage. Existing hypotheses struggle to account for a link between body mass and mutation rate. However, body mass correlates inversely with population size, which in turn predicts heterozygosity. We suggest that heterozygote instability, HI, the idea that heterozygous sites show increased mutability, could provide a plausible link between body mass and mutation rate."
+  ],
+  "affiliation": [
+    "Department of Zoology , Cambridge , UK."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Mammal",
+        "Phenotype",
+        "Microsatellite",
+        "Mutation rate",
+        "heterozygosity"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.7717/peerj.663"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4226647"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4226647?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2014-11-13"
+  ],
+  "dateOfCreation": [
+    "2014-11-13"
+  ],
+  "firstIndexDate": [
+    "2014-11-13"
+  ],
+  "fullTextReceivedDate": [
+    "2014-11-14"
+  ],
+  "dateOfRevision": [
+    "2014-11-15"
+  ],
+  "electronicPublicationDate": [
+    "2014-11-06"
+  ],
+  "firstPublicationDate": [
+    "2014-11-06"
+  ]
+}

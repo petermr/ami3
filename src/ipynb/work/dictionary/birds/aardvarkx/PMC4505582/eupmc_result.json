@@ -1,0 +1,801 @@
+{
+  "id": [
+    "25851905"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "25851905"
+  ],
+  "pmcid": [
+    "PMC4505582"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4505582"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1074/jbc.m115.645283"
+  ],
+  "title": [
+    "Organization of Subunits in the Membrane Domain of the Bovine F-ATPase Revealed by Covalent Cross-linking."
+  ],
+  "authorString": [
+    "Lee J, Ding S, Walpole TB, Holding AN, Montgomery MG, Fearnley IM, Walker JE."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Lee J"
+          ],
+          "firstName": [
+            "Jennifer"
+          ],
+          "lastName": [
+            "Lee"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ding S"
+          ],
+          "firstName": [
+            "ShuJing"
+          ],
+          "lastName": [
+            "Ding"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Walpole TB"
+          ],
+          "firstName": [
+            "Thomas B"
+          ],
+          "lastName": [
+            "Walpole"
+          ],
+          "initials": [
+            "TB"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Holding AN"
+          ],
+          "firstName": [
+            "Andrew N"
+          ],
+          "lastName": [
+            "Holding"
+          ],
+          "initials": [
+            "AN"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8459-7048",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "The Medical Research Council Laboratory of Molecular Biology, Cambridge Biomedical Campus, Francis Crick Avenue, Cambridge CB2 0QH, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Montgomery MG"
+          ],
+          "firstName": [
+            "Martin G"
+          ],
+          "lastName": [
+            "Montgomery"
+          ],
+          "initials": [
+            "MG"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6142-9423",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Fearnley IM"
+          ],
+          "firstName": [
+            "Ian M"
+          ],
+          "lastName": [
+            "Fearnley"
+          ],
+          "initials": [
+            "IM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Walker JE"
+          ],
+          "firstName": [
+            "John E"
+          ],
+          "lastName": [
+            "Walker"
+          ],
+          "initials": [
+            "JE"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7929-2162",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and walker@mrc-mbu.cam.ac.uk."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8459-7048",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6142-9423",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-7929-2162",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "21"
+      ],
+      "volume": [
+        "290"
+      ],
+      "journalIssueId": [
+        "2287117"
+      ],
+      "dateOfPublication": [
+        "2015 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "The Journal of biological chemistry"
+          ],
+          "ISOAbbreviation": [
+            "J. Biol. Chem."
+          ],
+          "medlineAbbreviation": [
+            "J Biol Chem"
+          ],
+          "NLMid": [
+            "2985121R"
+          ],
+          "ISSN": [
+            "0021-9258"
+          ],
+          "ESSN": [
+            "1083-351X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "13308-13320"
+  ],
+  "abstractText": [
+    "The F-ATPase in bovine mitochondria is a membrane-bound complex of about 30 subunits of 18 different kinds. Currently, ∼85% of its structure is known. The enzyme has a membrane extrinsic catalytic domain, and a membrane intrinsic domain where the turning of the enzyme's rotor is generated from the transmembrane proton-motive force. The domains are linked by central and peripheral stalks. The central stalk and a hydrophobic ring of c-subunits in the membrane domain constitute the enzyme's rotor. The external surface of the catalytic domain and membrane subunit a are linked by the peripheral stalk, holding them static relative to the rotor. The membrane domain contains six additional subunits named ATP8, e, f, g, DAPIT (diabetes-associated protein in insulin-sensitive tissues), and 6.8PL (6.8-kDa proteolipid), each with a single predicted transmembrane α-helix, but their orientation and topography are unknown. Mutations in ATP8 uncouple the enzyme and interfere with its assembly, but its roles and the roles of the other five subunits are largely unknown. We have reacted accessible amino groups in the enzyme with bifunctional cross-linking agents and identified the linked residues. Cross-links involving the supernumerary subunits, where the structures are not known, show that the C terminus of ATP8 extends ∼70 Å from the membrane into the peripheral stalk and that the N termini of the other supernumerary subunits are on the same side of the membrane, probably in the mitochondrial matrix. These experiments contribute significantly toward building up a complete structural picture of the F-ATPase."
+  ],
+  "affiliation": [
+    "From the The Medical Research Council Mitochondrial Biology Unit, Cambridge Biomedical Campus, Hills Road, Cambridge CB2 0XY, United Kingdom and."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "MC_U105663150"
+          ],
+          "agency": [
+            "Medical Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "U105663150"
+          ],
+          "agency": [
+            "Medical Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cell Membrane"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mitochondria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "EN"
+                  ],
+                  "qualifierName": [
+                    "enzymology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cattle"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mitochondrial Proton-Translocating ATPases"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Peptide Fragments"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Subunits"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cross-Linking Reagents"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Amino Acid Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Catalytic Domain"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Conformation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Structure, Secondary"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Homology, Amino Acid"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mutation"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mitochondria",
+        "ATP synthase",
+        "Protein-protein interaction",
+        "topography",
+        "protein structure",
+        "Membrane Energetics",
+        "Supernumerary Membrane Subunits"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Peptide Fragments"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Cross-Linking Reagents"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Protein Subunits"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Mitochondrial Proton-Translocating ATPases"
+          ],
+          "registryNumber": [
+            "EC 3.6.3.-"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1074/jbc.M115.645283"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4505582"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4505582?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "18"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "N"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2015-09-01"
+  ],
+  "dateOfCreation": [
+    "2015-05-24"
+  ],
+  "firstIndexDate": [
+    "2015-04-08"
+  ],
+  "fullTextReceivedDate": [
+    "2015-07-23"
+  ],
+  "dateOfRevision": [
+    "2017-09-22"
+  ],
+  "electronicPublicationDate": [
+    "2015-04-07"
+  ],
+  "firstPublicationDate": [
+    "2015-04-07"
+  ]
+}

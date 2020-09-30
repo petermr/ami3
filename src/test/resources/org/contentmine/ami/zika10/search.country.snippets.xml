@@ -1,46 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectSnippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3113902/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3113902/results/search/country/results.xml">
    <result pre="of Immunohematology and Blood Transfusion, Leiden University Medical Center Leiden," exact="Netherlands" post="[], 2 Department of Pathology, VU University Medical Center"/>
    <result pre="[], 2 Department of Pathology, VU University Medical Center Amsterdam," exact="Netherlands" post="Edited by: Johan van der Vlag, Radboud University Nijmegen"/>
    <result pre="by: Johan van der Vlag, Radboud University Nijmegen Medical Centre," exact="Netherlands" post="Reviewed by: Johan van der Vlag, Radboud University Nijmegen"/>
    <result pre="Centre, Netherlands; Jurgen Dieker, Nijmegen Center for Molecular Life Sciences," exact="Netherlands" post="*Correspondence: Peter J. van den Elsen, Department of Immunohematology"/>
-   <result pre="regulator of MHC class I genes. Proc. Natl. Acad. Sci." exact="U.S.A." post="107, 13794– 13799 10.1073/pnas.1008684107 20639463 Moreau P. Mouillot G."/>
-   <result pre="gene repression is reversed by demethylation. Proc. Natl. Acad. Sci." exact="U.S.A." post="100, 1191– 1196 10.1073/pnas.0337539100 12552087 Moreno C. S. Beresford"/>
-   <result pre="in IFN-gamma-inducible MHC-II gene expression . Proc. Natl. Acad. Sci." exact="U.S.A." post="102, 16321– 16326 10.1073/pnas.0505045102 16254053 Zika E. Greer S."/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC320490/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC320490/results/search/country/results.xml">
    <result pre="Z.C.) from the General Secretariat of Research and Technology of" exact="Greece" post="as well as from the Public Benefit Foundation Alexander"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3289602/results/search/country/results.xml">
-   <result pre="Department of Pathology, University of Texas Medical Branch, Galveston, Texas," exact="United States of America" post="[2], United States Naval Medical Research Unit, No. 2,"/>
-   <result pre="University of Texas Medical Branch, Galveston, Texas, United States of" exact="America" post="[2], United States Naval Medical Research Unit, No. 2,"/>
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3289602/results/search/country/results.xml">
+   <result pre="Department of Pathology, University of Texas Medical Branch, Galveston, Texas," exact="United States" post="of America [2], United States Naval Medical Research Unit,"/>
    <result pre="Texas Medical Branch, Galveston, Texas, United States of America [2]," exact="United States" post="Naval Medical Research Unit, No. 2, Phnom Penh, Cambodia"/>
    <result pre="United States Naval Medical Research Unit, No. 2, Phnom Penh," exact="Cambodia" post="[3], National Dengue Control Program, Phnom Penh, Cambodia Olson"/>
    <result pre="Phnom Penh, Cambodia [3], National Dengue Control Program, Phnom Penh," exact="Cambodia" post="Olson Ken E. Editor [], * E-mail: adhaddow@gmail.com ¤:"/>
    <result pre="Ken E. Editor [], * E-mail: adhaddow@gmail.com ¤: Current address:" exact="United States" post="Naval Medical Research Unit, No. 6, Lima, Peru Conceived"/>
    <result pre="address: United States Naval Medical Research Unit, No. 6, Lima," exact="Peru" post="Conceived and designed the experiments: ADH AJS. Performed the"/>
-   <result pre="strains responsible for the epidemic that occurred on Yap Island," exact="Federated States of Micronesia" post="in 2007, and a 2010 pediatric case in Cambodia,"/>
-   <result pre="the epidemic that occurred on Yap Island, Federated States of" exact="Micronesia" post="in 2007, and a 2010 pediatric case in Cambodia,"/>
-   <result pre="of the strains responsible for the 2007 outbreak on Yap" exact="Island" post="and a 2010 Cambodian pediatric case of ZIKV infection,"/>
    <result pre="frame of five isolates from Cambodia, Malaysia, Nigeria, Uganda, and" exact="Senegal" post="collected between 1947 and 2010 were determined. Phylogenetic analyses"/>
    <result pre="Conclusions/Significance The basal position of the ZIKV strain isolated in" exact="Malaysia" post="in 1966 suggests that the recent outbreak in Micronesia"/>
-   <result pre="in Malaysia in 1966 suggests that the recent outbreak in" exact="Micronesia" post="was initiated by a strain from Southeast Asia. Because"/>
-   <result pre="for the recent outbreak of human disease on Yap Island," exact="Federated States of Micronesia," post="and a human case of ZIKV infection in Cambodia"/>
    <result pre="of Micronesia, and a human case of ZIKV infection in" exact="Cambodia" post="were unknown. Our results indicate that there are two"/>
-   <result pre="the past 50 years, whereupon it was introduced to Yap" exact="Island" post="resulting in an epidemic of human disease in 2007,"/>
    <result pre="rhesus monkey placed in the Zika Forest near Lake Victoria," exact="Uganda" post="in April 1947; a second isolation from the mosquito"/>
    <result pre="mosquitoes [3], [4], with cyclic epizootics in monkeys reported in" exact="Uganda" post="[5], [6], [7], [8]. In the sylvatic transmission cycle,"/>
    <result pre="isolation (Mosquito) Reference(s) Borneo 1951 X Pongo pygmaeus [29], [30]" exact="Burkina Faso" post="1981 Aedes aegypti, Ae. furcifer, Ae. jamoti, Ae. opok"/>
    <result pre="Aedes aegypti, Ae. furcifer, Ae. jamoti, Ae. opok [31], [32]" exact="Cambodia" post="2010 X [15] Cameroon 2010 X [33] Central African"/>
    <result pre="Ae. jamoti, Ae. opok [31], [32] Cambodia 2010 X [15]" exact="Cameroon" post="2010 X [33] Central African Republic 1968 X X"/>
    <result pre="[31], [32] Cambodia 2010 X [15] Cameroon 2010 X [33]" exact="Central African Republic" post="1968 X X Ae. africanus, Ae. opok [31], [32],"/>
-   <result pre="1968 X X Ae. africanus, Ae. opok [31], [32], [34]" exact="Cote d'Ivoire" post="1980 Ae. africanus, Ae. flavicollis, Ae. furcifer, Ae. grahami,"/>
    <result pre="quinquevittatus, Ae. taeniarostris, Ae. tarsalis, Ae. vitattus [31], [32], [35]" exact="Egypt" post="1953 X [36] Ethiopia 1967 X [37] Gabon 1967"/>
    <result pre="tarsalis, Ae. vitattus [31], [32], [35] Egypt 1953 X [36]" exact="Ethiopia" post="1967 X [37] Gabon 1967 X [38], [39] India"/>
    <result pre="[32], [35] Egypt 1953 X [36] Ethiopia 1967 X [37]" exact="Gabon" post="1967 X [38], [39] India 1952 X [40] Indonesia"/>
@@ -48,20 +37,15 @@
    <result pre="[37] Gabon 1967 X [38], [39] India 1952 X [40]" exact="Indonesia" post="1951 X [13], [41] Kenya 1967 X [37], [42],"/>
    <result pre="[39] India 1952 X [40] Indonesia 1951 X [13], [41]" exact="Kenya" post="1967 X [37], [42], [43] Malaysia 1951 X Ae."/>
    <result pre="1951 X [13], [41] Kenya 1967 X [37], [42], [43]" exact="Malaysia" post="1951 X Ae. aegypti [28], [29], [44] Micronesia, Yap"/>
-   <result pre="Malaysia 1951 X Ae. aegypti [28], [29], [44] Micronesia, Yap" exact="Island" post="‡ 2007 X X [9], [17] Nigeria 1968 X"/>
    <result pre="[44] Micronesia, Yap Island ‡ 2007 X X [9], [17]" exact="Nigeria" post="1968 X X [45], [46], [47], [48], [49] Pakistan"/>
    <result pre="[17] Nigeria 1968 X X [45], [46], [47], [48], [49]" exact="Pakistan" post="1980 X [10] Philippines 1953 [50] Senegal 1968 X"/>
    <result pre="X [45], [46], [47], [48], [49] Pakistan 1980 X [10]" exact="Philippines" post="1953 [50] Senegal 1968 X X Cercopithecus aethiops, Erythrocebus"/>
    <result pre="[47], [48], [49] Pakistan 1980 X [10] Philippines 1953 [50]" exact="Senegal" post="1968 X X Cercopithecus aethiops, Erythrocebus patas Ae. aegypti,"/>
    <result pre="Ae. vitattus, Anopheles gambiae, Mansonia uniformis [14], [31], [32], [51]" exact="Sierra Leone" post="1972 X [52] Somalia 1967 X [37], [43] Tanzania"/>
    <result pre="uniformis [14], [31], [32], [51] Sierra Leone 1972 X [52]" exact="Somalia" post="1967 X [37], [43] Tanzania 1948 X [53] Thailand"/>
-   <result pre="Sierra Leone 1972 X [52] Somalia 1967 X [37], [43]" exact="Tanzania" post="1948 X [53] Thailand 1954 X [44] Uganda 1947"/>
    <result pre="[52] Somalia 1967 X [37], [43] Tanzania 1948 X [53]" exact="Thailand" post="1954 X [44] Uganda 1947 X Cercopithecus aethiops, Cercopithecus"/>
    <result pre="[37], [43] Tanzania 1948 X [53] Thailand 1954 X [44]" exact="Uganda" post="1947 X Cercopithecus aethiops, Cercopithecus ascanius schmidti, Cercopithecus mona"/>
-   <result pre="[43], [53], [54], [55], [56], [57] USA 2009 X [14]" exact="Vietnam" post="1954 X [44] *Earliest report, indicates either the first"/>
-   <result pre="Asia ( Table 1). A recent epidemic on Yap Island," exact="Federated States of Micronesia," post="and a pediatric case of ZIKV infection in Cambodia"/>
    <result pre="of Micronesia, and a pediatric case of ZIKV infection in" exact="Cambodia" post="demonstrate that ZIKV is also capable of causing human"/>
-   <result pre="origin of the strain responsible for the epidemic on Yap" exact="Island" post="epidemic and of the recent Cambodian case of ZIKV"/>
    <result pre="between 1947 and 2010 in Cambodia, Malaysia, Nigeria, Uganda, and" exact="Senegal" post="and constructed phylogenetic trees to assess their relationships. Methods"/>
    <result pre="Passage history Reference (GenBank accession no.) MR 766 Sentinel rhesus" exact="Uganda" post="1947 SM 3 [15] (AY632535) MR 766 Sentinel rhesus"/>
    <result pre="Uganda 1947 SM 3 [15] (AY632535) MR 766 Sentinel rhesus" exact="Uganda" post="1947 SM 146, C6/36#1 HQ234498 ‡ MR 766 Sentinel"/>
@@ -69,116 +53,70 @@
    <result pre="Sentinel rhesus Uganda 1947 Unknown [21] (DQ859059) P6-740 Aedes aegypti" exact="Malaysia" post="1966 SM 6, Vero 1, BHK 1, C6/36#1 HQ234499"/>
    <result pre="1, BHK 1, C6/36#1 HQ234499 ‡ IbH 30656 Human blood" exact="Nigeria" post="1968 SM 21, Vero 1 HQ234500 ‡ ArD 41519"/>
    <result pre="SM 21, Vero 1 HQ234500 ‡ ArD 41519 Aedes africanus" exact="Senegal" post="1984 AP61#1, C6/36#2 HQ234501 ‡ EC Yap * Human"/>
-   <result pre="1984 AP61#1, C6/36#2 HQ234501 ‡ EC Yap * Human blood" exact="Micronesia" post="2007 N/A [16] (EU545988) FSS13025 Human blood Cambodia 2010"/>
    <result pre="Human blood Micronesia 2007 N/A [16] (EU545988) FSS13025 Human blood" exact="Cambodia" post="2010 Vero 1 JN860885 ‡ SM-6 V-1 † Unknown"/>
-   <result pre="conclusion is further substantiated by the geographic proximity of Yap" exact="Island" post="to known areas of ZIKV transmission (Indonesia and Malaysia)."/>
-   <result pre="by the fact that no monkeys were present on Yap" exact="Island" post="during the 2007 epidemic [9]. The phylogenetic results indicate"/>
-   <result pre="its overall topology. Summary This investigation indicates that the Yap" exact="Island" post="epidemic, which occurred in the Federated States of Micronesia"/>
-   <result pre="indicates that the Yap Island epidemic, which occurred in the" exact="Federated States of Micronesia" post="in 2007, most likely resulted from the introduction of"/>
-   <result pre="Yap Island epidemic, which occurred in the Federated States of" exact="Micronesia" post="in 2007, most likely resulted from the introduction of"/>
-   <result pre="do not reflect the official policy or position of the" exact="Kingdom of Cambodia," post="U.S. Department of Defense, or the Department of the"/>
-   <result pre="grant AI60549. CYY, MRK, VH, and RH were funded by" exact="the United States" post="Department of Defense Global Emerging Infections Surveillance and Response"/>
    <result pre="AI60549. CYY, MRK, VH, and RH were funded by the" exact="United States" post="Department of Defense Global Emerging Infections Surveillance and Response"/>
    <result pre="from Aedes (Stegomyia) Africanus (Theobald) taken in and above a" exact="Uganda" post="Forest. Bull World Health Organ 31 57 69 14230895"/>
-   <result pre="R Soc Trop Med Hyg 50 238 242 13337908 5" exact="Henderson" post="BE Hewitt LE Lule M 1968 Serology of wild"/>
    <result pre="Research Institute Annual Report 48 51 East African Printer, Nairobi," exact="Kenya" post="6 Kirya BG Okia NO 1977 A yellow fever"/>
-   <result pre="JL et al. 2009 Zika virus outbreak on Yap Island," exact="Federated States of Micronesia." post="N Engl J Med 360 2536 2543 19516034 10"/>
    <result pre="record of a long flight of Ae. sollicitans. Proc New" exact="Jersey" post="Mosq Exterm Ass 26 36 39 27 Chambers TJ"/>
    <result pre="research on arboviruses and hemorrhagic fever viruses: Annual report. Dakar," exact="Senegal" post="size: 143page 32 Faye O Dupressoir A Weidmann M"/>
    <result pre="arboviruses in the human population of the south-east area of" exact="Central African Republic" post="(author's transl)]. Bull Soc Pathol Exot Filiales 74 490"/>
-   <result pre="2001 [Investigation surrounding a fatal case of yellow fever in" exact="Cote d'Ivoire" post="in 1999]. Bull Soc Pathol Exot 94 227 230"/>
-   <result pre="Am J Trop Med Hyg 3 9 18 13114587 37" exact="Henderson" post="BE Tukei PM Sekyalo E Mukuye A Mujomba E"/>
    <result pre="Research Institute Annual Report 29 32 East African Printer, Nairobi," exact="Kenya" post="38 Jan C Languillat G Renaudet J Robin Y"/>
    <result pre="in the human and simian populations of the South-East of" exact="Gabon" post="(author's transl)]. Bull Soc Pathol Exot Filiales 75 262"/>
-   <result pre="arboviral antibodies in sera of humans and animals in Lombok," exact="Republic of Indonesia." post="Ann Trop Med Parasitol 77 131 137 6309104 42"/>
-   <result pre="Trop Med Parasitol 77 131 137 6309104 42 Geser A" exact="Henderson" post="BE Christensen S 1970 A multipurpose serological survey in"/>
-   <result pre="tests. Bull World Health Organ 43 539 552 5313066 43" exact="Henderson" post="BE Metselaar D Cahill K Timms GL Tukei PM"/>
    <result pre="PM et al. 1968 Yellow fever immunity surveys in northern" exact="Uganda" post="and Kenya and eastern Somalia, 1966–67. Bull World Health"/>
    <result pre="al. 1968 Yellow fever immunity surveys in northern Uganda and" exact="Kenya" post="and eastern Somalia, 1966–67. Bull World Health Organ 38"/>
    <result pre="virus antibodies in sera of residents of Kainji Lake Basin," exact="Nigeria" post="1980. Trans R Soc Trop Med Hyg 77 149"/>
-   <result pre="GE 1958 Serological survey for a arthropod-borne virus infections in" exact="the Philippines." post="Am J Trop Med Hyg 7 323 328 13533740"/>
-   <result pre="R Soc Trop Med Hyg 46 521 534 12995441 55" exact="Henderson" post="BE Kirya GB Hewitt LE 1970 Serological survey for"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3310194/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3310194/results/search/country/results.xml">
    <result pre="including the first report of Spartina ×townsendii for British Columbia," exact="Canada" post="Saarela Jeffery M. 1 [1], Corresponding author: Jeffery M."/>
-   <result pre="This is the situation in the Pacific Northwest of North" exact="America" post="(Oregon, Washington, British Columbia), where five Spartina species are"/>
-   <result pre="of these grasses and their closest relatives. Spartina in North" exact="America" post="Taxonomic revisions of Spartina have been produced by Merrill"/>
    <result pre="ex Elliott) A. Gray, Manual ed. 2. 552. 1856. Type." exact="United States" post="of america.South Carolina or Georgia: S.Elliott s.n. (holotype: ChM"/>
-   <result pre="1895, F.L.Scribner s.n. (holotype: US [US81736!]). Note: Peterson (2001) identified" exact="the US" post="specimen as an isotype, but I interpret it to"/>
    <result pre="specimen in the protologue. Spartina ×merrilli A.Chev. Bull. Soc. Bot." exact="France" post="80: 787. 1933. Type. UNITED STATES OF AMERICA. New"/>
-   <result pre="Distribution. Native to the Atlantic and Gulf coasts of North" exact="America" post="from Newfoundland and Labrador, Canada, to Texas, U.S.A. ("/>
-   <result pre="of North America from Newfoundland and Labrador, Canada, to Texas," exact="U.S.A." post="( Mobberley 1956, Barkworth 2003), and Tamaulipas and Veracruz,"/>
    <result pre="U.S.A. ( Mobberley 1956, Barkworth 2003), and Tamaulipas and Veracruz," exact="Mexico" post="( Mora-Olivo and Valdés-Reyna 2011). Introduced in England, France,"/>
    <result pre="( Mora-Olivo and Valdés-Reyna 2011). Introduced in England, France, and" exact="Spain" post="( Campos et al. 2004), the west coast of"/>
-   <result pre="Spain ( Campos et al. 2004), the west coast of" exact="the United States" post="(Washington, Oregon, California), New Zealand ( Partridge 1987), and"/>
    <result pre="( Campos et al. 2004), the west coast of the" exact="United States" post="(Washington, Oregon, California), New Zealand ( Partridge 1987), and"/>
    <result pre="the west coast of the United States (Washington, Oregon, California)," exact="New Zealand" post="( Partridge 1987), and China ( Bixing and Phillips"/>
    <result pre="States (Washington, Oregon, California), New Zealand ( Partridge 1987), and" exact="China" post="( Bixing and Phillips 2006, An et al. 2007,"/>
    <result pre="&quot;Spartina alternifolia&quot;. Spartina alterniflora was described from Bayonne in southwestern" exact="France" post="( Loiseleur-Deslongchamps 1807), where it has been introduced for"/>
    <result pre="introduced for over two centuries. The taxon was collected in" exact="France" post="as early as 1803, and was known from southern"/>
-   <result pre="1829; it is presumed to have been introduced from North" exact="America" post="to these European coastal regions in shipping ballast (see"/>
-   <result pre="Spartina alterniflora have occurred along the west coast of North" exact="America" post="where it is not native. The species was reported"/>
    <result pre="(1996) identified estuaries along the Pacific coast extending to the" exact="Canada" post="/ United States border, which they predicted to be"/>
    <result pre="estuaries along the Pacific coast extending to the Canada /" exact="United States" post="border, which they predicted to be potentially vulnerable to"/>
    <result pre="Spartina alterniflora throughout its native range with northern plants from" exact="Canada" post="and Maine tending to have looser inflorescences, weakly overlapping"/>
-   <result pre="61°33'W, 0.3 m, 7 Aug 1966, M.M.Grandtner 10801-V (CAN [CAN519301])." exact="United States of America." post="Connecticut: New London Co.: Norwich, 41°31'N, 72°04'W, G.R.Lumsden s.n.,"/>
-   <result pre="1863, Wm.M.Canby s.n. (CAN [CAN162184, CAN162183]). Washington: Skagit Co.: Dike" exact="Island" post="in Padilla Bay, 7 mi W of Mt. Vernon,"/>
+   <result pre="61°33'W, 0.3 m, 7 Aug 1966, M.M.Grandtner 10801-V (CAN [CAN519301])." exact="United States" post="of America. Connecticut: New London Co.: Norwich, 41°31'N, 72°04'W,"/>
    <result pre="(C.E. Hubb.) Lambinon &amp;amp; Maquet, Nouv. Fl. Belgique, Luxembourg, N." exact="France" post="(ed. 3) 923: 1983. Type. United Kingdom. West Sussex:"/>
    <result pre="Fl. Belgique, Luxembourg, N. France (ed. 3) 923: 1983. Type." exact="United Kingdom." post="West Sussex: Bosham, fruiging shore on mud-flats and muddy"/>
    <result pre="origin. Illustrations. Barkworth 2003:248, Cope and Gray 2009:551. Distribution. Britain," exact="China" post="( An et al. 2007, Bixing and Phillips 2006),"/>
    <result pre="China ( An et al. 2007, Bixing and Phillips 2006)," exact="Australia" post="(Tasmania, Victoria, Kriwoken and Hedge 2000), New Zealand ("/>
    <result pre="and Phillips 2006), Australia (Tasmania, Victoria, Kriwoken and Hedge 2000)," exact="New Zealand" post="( Partridge 1987), France (western coastal Brittany, Baumel et"/>
    <result pre="Victoria, Kriwoken and Hedge 2000), New Zealand ( Partridge 1987)," exact="France" post="(western coastal Brittany, Baumel et al. 2001), United States"/>
-   <result pre="Partridge 1987), France (western coastal Brittany, Baumel et al. 2001)," exact="United States of America" post="(Washington, California), and Canada (British Columbia). Comments. Spartina anglica"/>
-   <result pre="(western coastal Brittany, Baumel et al. 2001), United States of" exact="America" post="(Washington, California), and Canada (British Columbia). Comments. Spartina anglica"/>
+   <result pre="Partridge 1987), France (western coastal Brittany, Baumel et al. 2001)," exact="United States" post="of America (Washington, California), and Canada (British Columbia). Comments."/>
    <result pre="et al. 2001), United States of America (Washington, California), and" exact="Canada" post="(British Columbia). Comments. Spartina anglica is an amphidiploid taxon"/>
-   <result pre="been present on the continent for over fifty years. In" exact="the United States" post="it is known from Washington and California. It was"/>
    <result pre="present on the continent for over fifty years. In the" exact="United States" post="it is known from Washington and California. It was"/>
    <result pre="anglica had increased dramatically in these regions ( Ducks Unlimited" exact="Canada" post="2010). It is currently reproducing by seed production and"/>
-   <result pre="at the time. Only a few taxonomic keys in North" exact="America" post="include both taxa ( Barkworth 2003, Kozloff 2005), emphasizing"/>
-   <result pre="G. Williams 2004-1 (UBC [UBCV220130†, Suppl. Fig. 6], V [V191493])." exact="United States of America." post="Washington: Island Co.: W side of Cornet Bay mudflat"/>
-   <result pre="Suppl. Fig. 6], V [V191493]). United States of America. Washington:" exact="Island" post="Co.: W side of Cornet Bay mudflat N of"/>
-   <result pre="of the species. Illustration. Barkworth 2003:251. Distribution. Native to South" exact="America" post="in temperate coastal regions of southern Brazil, Uruguay, Argentina,"/>
+   <result pre="G. Williams 2004-1 (UBC [UBCV220130†, Suppl. Fig. 6], V [V191493])." exact="United States" post="of America. Washington: Island Co.: W side of Cornet"/>
    <result pre="of southern Brazil, Uruguay, Argentina, and on the coast of" exact="Chile" post="( Bortolus 2006). Introduced in Spain, Portugal, the Mediterranean"/>
    <result pre="Mediterranean (see Castillo et al. 2000, Nieva et al. 2005)," exact="United States" post="(California, Washington), and Canada (British Columbia). Comments. The taxonomy,"/>
    <result pre="2000, Nieva et al. 2005), United States (California, Washington), and" exact="Canada" post="(British Columbia). Comments. The taxonomy, biogeography, and natural history"/>
-   <result pre="presented here is not complete; several taxa described from South" exact="America" post="are considered to be synonyms by Mobberley (1956), including"/>
-   <result pre="ago. The first collection was made in 2001 on Whidbey" exact="Island" post="at the northern boundary of Puget Sound (Heimer 01-1"/>
-   <result pre="found in 2005 in Bayne’s Sound, a channel between Vancouver" exact="Island" post="and Denman Island ( Morgan and Sytsma 2010). It"/>
-   <result pre="in Bayne’s Sound, a channel between Vancouver Island and Denman" exact="Island" post="( Morgan and Sytsma 2010). It is not reported"/>
-   <result pre="124°50'54.5&quot;W, 12 July 2010, F.Lomer 7377 (CAN, Suppl. Fig. 23)." exact="United States of America." post="Washington: Island Co.: Whidbey Island, near Coupeville (T32E R2E"/>
-   <result pre="7377 (CAN, Suppl. Fig. 23). United States of America. Washington:" exact="Island" post="Co.: Whidbey Island, near Coupeville (T32E R2E S37), 14"/>
+   <result pre="124°50'54.5&quot;W, 12 July 2010, F.Lomer 7377 (CAN, Suppl. Fig. 23)." exact="United States" post="of America. Washington: Island Co.: Whidbey Island, near Coupeville"/>
    <result pre="of the species. Distribution. Southern Northwest Territories, Canada, to central" exact="Mexico" post="( Barkworth 2003). In the Pacific Northwest Spartina gracilis"/>
    <result pre="1932. Dactylis patens Aiton, Hort. Kew. 1: 104. 1789. Type." exact="United Kingdom." post="Cultivated, native of North America, introduced 1781, by Mr."/>
-   <result pre="Spartina juncea subvar. americana St.-Yves, Candollea 5: 84. 1932. Type." exact="United States of America." post="bord des Creeks salés Basse Caroline, Michaux s.n. (holotype:"/>
-   <result pre="patens var. monogyna (M.A.Curtis) Fernald, Rhodora 49: 114. 1947. Type." exact="United States of America." post="North Carolina: M.A.Curtis s.n. (holotype: GH [GH00295532!], Appendix Fig."/>
-   <result pre="holotype. Spartina pumila Roth, Catal. Bot. 3: 10. 1806. Type." exact="United States of America." post="New York, 1794, Schreber s.n. (holotype: B-Willd.!). Description. See"/>
-   <result pre="Barkworth 2003:251. Distribution. Native to the east coast of North" exact="America" post="and Central America, distributed along the Atlantic coast of"/>
+   <result pre="Spartina juncea subvar. americana St.-Yves, Candollea 5: 84. 1932. Type." exact="United States" post="of America. bord des Creeks salés Basse Caroline, Michaux"/>
+   <result pre="patens var. monogyna (M.A.Curtis) Fernald, Rhodora 49: 114. 1947. Type." exact="United States" post="of America. North Carolina: M.A.Curtis s.n. (holotype: GH [GH00295532!],"/>
+   <result pre="holotype. Spartina pumila Roth, Catal. Bot. 3: 10. 1806. Type." exact="United States" post="of America. New York, 1794, Schreber s.n. (holotype: B-Willd.!)."/>
    <result pre="Peterson 2001). It has been introduced to coastal regions in" exact="Spain" post="( Campos et al. 2004, SanLeón et al. 1999,"/>
    <result pre="al. 2004, SanLeón et al. 1999, Prieto et al. 2011)," exact="China" post="( An et al. 2007), North Africa, and the"/>
-   <result pre="et al. 2007), North Africa, and the west coast of" exact="the United States" post="(Oregon, Washington), and Canada (British Columbia). Comments. Spartina patens"/>
    <result pre="al. 2007), North Africa, and the west coast of the" exact="United States" post="(Oregon, Washington), and Canada (British Columbia). Comments. Spartina patens"/>
    <result pre="the west coast of the United States (Oregon, Washington), and" exact="Canada" post="(British Columbia). Comments. Spartina patens grows in coastal salt"/>
-   <result pre="al. 2011 for summaries of this taxonomic problem). In North" exact="America" post="Spartina patens hybridizes with Spartina pectinata in areas where"/>
-   <result pre="from scattered locations along the Atlantic coast from Prince Edward" exact="Island" post="to Maryland ( Mobberley 1956, Dore and Marchant 1968,"/>
-   <result pre="Oregon, Spartina patens grows in the Siuslaw estuary on Cox" exact="Island" post="(Lane Co.), where it has been introduced since at"/>
-   <result pre="was discovered in 1979 in the Comox Estuary on Vancouver" exact="Island" post="(Brayshaw 79-1143, V); nearly a decade later, in 1988,"/>
    <result pre="these areas are similar morphologically to those in the eastern" exact="Canada" post="and the northeastern United States, which tend to be"/>
    <result pre="morphologically to those in the eastern Canada and the northeastern" exact="United States," post="which tend to be smaller than plants distributed further"/>
-   <result pre="(UBC [UBCV196070, Suppl. Fig. 31]); Lane Co.: center of Cox" exact="Island" post="in Siuslaw River estuary, 3.5 km E of Florence,"/>
    <result pre="http://species-id.net/wiki/Spartina_pectinata Spartina pectinata Link, Jahrb. Gewächsk. 1(3): 92-93. 1820. Type." exact="United States" post="of America:Aus Nordamerika, Bosc s.n. (holotype: B; isotype: US-92011!"/>
-   <result pre="St.-Yves, Candollea 5: 58, t. 3, f. a-7. 1932. Type." exact="United States of America." post="Illinois: hauteurs des terres, Michaux s.n. (holotype: P, not"/>
-   <result pre="pectinata var. suttiei (Farw.) Fernald, Rhodora 35: 260. 1933. Type." exact="United States of America." post="Michigan: Island Lake, 16 Jul 1905, Farwell 1487a (holotype:"/>
-   <result pre="Rhodora 35: 260. 1933. Type. United States of America. Michigan:" exact="Island" post="Lake, 16 Jul 1905, Farwell 1487a (holotype: probably BLH;"/>
-   <result pre="var. tenuior Farw., Rep. Michigan Acad. Sci 21: 352.1920. Type." exact="United States of America." post="Michigan: River Rouge, 15 Sep 1918, Farwell 5138 (holotype:"/>
-   <result pre="2009:553. Distribution. Spartina pectinata is widespread across much of North" exact="America" post="north of Mexico, distributed in southern Alberta, eastern Washington"/>
+   <result pre="St.-Yves, Candollea 5: 58, t. 3, f. a-7. 1932. Type." exact="United States" post="of America. Illinois: hauteurs des terres, Michaux s.n. (holotype:"/>
+   <result pre="pectinata var. suttiei (Farw.) Fernald, Rhodora 35: 260. 1933. Type." exact="United States" post="of America. Michigan: Island Lake, 16 Jul 1905, Farwell"/>
+   <result pre="var. tenuior Farw., Rep. Michigan Acad. Sci 21: 352.1920. Type." exact="United States" post="of America. Michigan: River Rouge, 15 Sep 1918, Farwell"/>
    <result pre="is known from a few scattered sites in Britain and" exact="Ireland" post="where it has been introduced and escaped from cultivation"/>
    <result pre="has been introduced sporadically to other regions, such as the" exact="United Kingdom." post="It occurs natively in eastern Washington and Oregon ("/>
-   <result pre="collection made by V. Brink on the shore of Sea" exact="Island" post="at the mouth of the Fraser River (where the"/>
    <result pre="other taxa. Specimens examined. CANADA. British Columbia: Greater Vancouver, Burnaby," exact="Canada" post="Way and Wedgewood St., NE corner, vacant lot of"/>
-   <result pre="98°18'04&quot;W, 437 m, 16 Jul 2007, J.M.Saarela 1019 (CAN [CAN590577])." exact="United States of America." post="Colorado: Fort Collins, 3 Aug 1898, n.c. 3551 (CAN"/>
+   <result pre="98°18'04&quot;W, 437 m, 16 Jul 2007, J.M.Saarela 1019 (CAN [CAN590577])." exact="United States" post="of America. Colorado: Fort Collins, 3 Aug 1898, n.c."/>
    <result pre="2009:547. Distribution. This species is found in England, Wales, Scotland," exact="Ireland" post="( Cope and Gray 2009), Italy ( Scarton et"/>
    <result pre="in England, Wales, Scotland, Ireland ( Cope and Gray 2009)," exact="Italy" post="( Scarton et al. 2003), United States (Washington), New"/>
    <result pre="Cope and Gray 2009), Italy ( Scarton et al. 2003)," exact="United States" post="(Washington), New Zealand ( Partridge 1987), and Canada (British"/>
@@ -187,23 +125,15 @@
    <result pre="and animal feed across the British Isles, Europe, and in" exact="New Zealand" post="(e.g., Oliver 1925, Harboard 1949, Goodman et al. 1959,"/>
    <result pre="In 1894 Jules Foucaud described Spartina neyrautii Fouc. from southwestern" exact="France" post="and northern Spain. Spartina neyrautii was initially considered to"/>
    <result pre="that these hybrid plants are highly restricted in distribution in" exact="France" post="( Marchant 1977, Hubbard et al. 1978, Raybould et"/>
-   <result pre="the most recent confirmed reports of the taxon in North" exact="America" post="since it was collected at Stanwood, Washington. Herbarium specimens"/>
-   <result pre="[secondary], 8 Nov 2006, T.Taylor 80 (UBC [UBCV222939†, Fig. 11)." exact="United States of America." post="Washington: Snohomish Co.:near Stanwood, ca. 48°14'N, 122°21'W, 26 Aug"/>
-   <result pre="KM Long S Piep MB ( Eds). Flora of North" exact="America" post="North of Mexico, Volume 25: Magnoliophyta: Commelinidae (in part):"/>
+   <result pre="[secondary], 8 Nov 2006, T.Taylor 80 (UBC [UBCV222939†, Fig. 11)." exact="United States" post="of America. Washington: Snohomish Co.:near Stanwood, ca. 48°14'N, 122°21'W,"/>
    <result pre="97 doi: 10.1007/s00606-002-0251-8 Beetle AA ( 1977) Noteworthy grasses from" exact="Mexico" post="V. Phytologia 37: 317- 407 Benbrook R ( 2011)"/>
    <result pre="sur le Spartina Townsendi. Bulletin de la Société botanique de" exact="France" post="80: 779- 788 Civille JC Sayce K Smith SD"/>
-   <result pre="Spartina alterniflora). Proceedings of the National Academy of Sciences of" exact="the United States" post="of America 101: 13804- 13807 doi: 10.1073/pnas.0405230101 15317944 Dore"/>
-   <result pre="alterniflora). Proceedings of the National Academy of Sciences of the" exact="United States of America" post="101: 13804- 13807 doi: 10.1073/pnas.0405230101 15317944 Dore WG Marchant"/>
-   <result pre="the National Academy of Sciences of the United States of" exact="America" post="101: 13804- 13807 doi: 10.1073/pnas.0405230101 15317944 Dore WG Marchant"/>
+   <result pre="alterniflora). Proceedings of the National Academy of Sciences of the" exact="United States" post="of America 101: 13804- 13807 doi: 10.1073/pnas.0405230101 15317944 Dore"/>
    <result pre="Sustainable Resource Management. (Archived by WebCite® at http://www.webcitation.org/66A2fjppD) Ducks Unlimited" exact="Canada" post="( 2010) British Columbia Spartina eradication program 2009 progress"/>
    <result pre="( 1949) Spartina townsendii: a valuable grass on tidal mudflats." exact="New Zealand" post="Journal of Agriculture 78: 507- 508 Hedge P Kriwoken"/>
-   <result pre="JK ( 1915) Flora of southern British Columbia and Vancouver" exact="Island" post="with many references to Alaska and northern species. W.J."/>
-   <result pre="( 1908) The grasses of Michaux’s Flora Boreali-Americana. Contributions from" exact="the United States" post="National Herbarium 12: 143- 158 Hitchcock AS ( 1932)"/>
    <result pre="1908) The grasses of Michaux’s Flora Boreali-Americana. Contributions from the" exact="United States" post="National Herbarium 12: 143- 158 Hitchcock AS ( 1932)"/>
-   <result pre="52 Hitchcock AS ( 1935) Manual of the grasses of" exact="the United States." post="Miscellaneous publication no. 200, United States Department of Agriculture,"/>
    <result pre="Hitchcock AS ( 1935) Manual of the grasses of the" exact="United States." post="Miscellaneous publication no. 200, United States Department of Agriculture,"/>
    <result pre="the grasses of the United States. Miscellaneous publication no. 200," exact="United States" post="Department of Agriculture, Washington, D.C. Hitchcock AS ( 1951)"/>
-   <result pre="Washington, D.C. Hitchcock AS ( 1951) Manual of grasses of" exact="the United States" post="(ed. 2, revised by A. Chase). Miscellaneous publication no."/>
    <result pre="D.C. Hitchcock AS ( 1951) Manual of grasses of the" exact="United States" post="(ed. 2, revised by A. Chase). Miscellaneous publication no."/>
    <result pre="(ed. 2, revised by A. Chase). Miscellaneous publication no. 200," exact="United States" post="Department of Agriculture. Washington, D.C. doi: 10.5962/bhl.title.5731 Hitchcock CL"/>
    <result pre="and Cronquist’s manual: illustrations of the vascular plants of northeastern" exact="United States" post="and adjacent Canada. The New York Botanical Garden, Bronx,"/>
@@ -215,81 +145,54 @@
    <result pre="North American species of Spartina. Bulletin, Bureau of Plant Industry," exact="United States" post="Department of Agriculture Washington, DC 9: 1- 16 Murphy"/>
    <result pre="1015 doi: 10.1111/j.1469-8137.2009.03029.x 19780987 Partridge TR ( 1987) Spartina in" exact="New Zealand." post="New Zealand Journal of Botany 25: 567- 575 Peterson"/>
    <result pre="10.1111/j.1469-8137.2009.03029.x 19780987 Partridge TR ( 1987) Spartina in New Zealand." exact="New Zealand" post="Journal of Botany 25: 567- 575 Peterson PM ("/>
-   <result pre="of New World Grasses (Poaceae): II Subfamily Chloridoideae. Contributions from" exact="the United States" post="National Herbarium 41: 195- 200 Peterson PM Columbus JT"/>
    <result pre="New World Grasses (Poaceae): II Subfamily Chloridoideae. Contributions from the" exact="United States" post="National Herbarium 41: 195- 200 Peterson PM Columbus JT"/>
-   <result pre="Jung M-J ( 2009) Supplements to the grasses (Poaceae) in" exact="Taiwan" post="(II). Taiwania 54: 168- 174 Scoggan HJ ( 1978)"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3310457/results/search/country/results.xml">
-   <result pre="mild disease characterized by rash, arthralgia, and conjunctivitis on Yap" exact="Island" post="in the southwestern Pacific Ocean. This was the first"/>
-   <result pre="characterized by rash, arthralgia, and conjunctivitis was reported on Yap" exact="Island" post="in the Federated States of Micronesia. Serum samples from"/>
-   <result pre="arthralgia, and conjunctivitis was reported on Yap Island in the" exact="Federated States of Micronesia." post="Serum samples from patients in the acute phase of"/>
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3310457/results/search/country/results.xml">
    <result pre="cage on a tree platform in the Zika Forest of" exact="Uganda" post="( 3 ). The monkey, Rhesus 766, was a"/>
    <result pre="1956 ( 6 ). ZIKV was isolated from humans in" exact="Nigeria" post="during studies conducted in 1968 and during 1971–1975; in"/>
    <result pre="reported from other African countries such as Uganda, Tanzania, Egypt," exact="Central African Republic," post="Sierra Leone ( 10 ), and Gabon, and in"/>
    <result pre="African countries such as Uganda, Tanzania, Egypt, Central African Republic," exact="Sierra Leone" post="( 10 ), and Gabon, and in parts of"/>
-   <result pre="and Gabon, and in parts of Asia including India, Malaysia," exact="the Philippines," post="Thailand, Vietnam, and Indonesia ( 10 – 14 )."/>
    <result pre="of Asia including India, Malaysia, the Philippines, Thailand, Vietnam, and" exact="Indonesia" post="( 10 – 14 ). In additional investigations, the"/>
-   <result pre="mosquitoes in Malaysia, a human in Senegal, and mosquitoes in" exact="Côte d’Ivoire" post="( 15 – 17 ). In 1981 Olson et"/>
    <result pre="reported 7 people with serologic evidence of ZIKV illness in" exact="Indonesia" post="( 11 ). A subsequent serologic study indicated that"/>
-   <result pre="antibody to ZIKV ( 18 ). The outbreak on Yap" exact="Island" post="in 2007 shows that ZIKV illness has been detected"/>
    <result pre="resolved in ≈1 week. Of the 7 ZIKV case-patients in" exact="Indonesia" post="described by Olson et al. all had fever, but"/>
-   <result pre="had conjunctivitis but none had rash. The outbreak on Yap" exact="Island" post="was characterized by rash, conjunctivitis, and arthralgia ( 1"/>
-   <result pre="than 10 days after illness onset; 1 patient from Yap" exact="Island" post="still had detectable viral RNA on day 11 ("/>
    <result pre="West Nile virus caused large outbreaks of neuroinvasive disease in" exact="Romania" post="and in North America, it was also considered to"/>
-   <result pre="discovery of ZIKV on the physically isolated community of Yap" exact="Island" post="is testimony to the potential for travel or commerce"/>
-   <result pre="across large distances. A medical volunteer who was on Yap" exact="Island" post="during the ZIKV disease outbreak became ill and was"/>
-   <result pre="and was likely viremic with ZIKV after her return to" exact="the United States" post="( 2 ). The competence of mosquitoes in the"/>
    <result pre="was likely viremic with ZIKV after her return to the" exact="United States" post="( 2 ). The competence of mosquitoes in the"/>
-   <result pre="laboratories. Given that the epidemiology of ZIKV transmission on Yap" exact="Island" post="appeared to be similar to that of dengue, strategies"/>
-   <result pre="responsible for public health surveillance in the Pacific region and" exact="the United States" post="should be alert to the potential spread of ZIKV"/>
    <result pre="for public health surveillance in the Pacific region and the" exact="United States" post="should be alert to the potential spread of ZIKV"/>
-   <result pre="RS , et al. Zika virus outbreak on Yap Island," exact="Federated States of Micronesia." post="N Engl J Med 2009; 360: 2536– 43 10.1056/NEJMoa0805715"/>
    <result pre="Mouchet J Serological and entomological study on yellow fever in" exact="Sierra Leone." post="Bull Soc Pathol Exot Filiales 1975; 68: 249– 58"/>
    <result pre="J , Robin Y A serological survey of arboviruses in" exact="Gabon" post="[in French] Bull Soc Pathol Exot Filiales 1978; 71:"/>
    <result pre="arboviruses in the human population of the south-east area of" exact="Central African Republic" post="[in French] Bull Soc Pathol Exot Filiales 1981; 74:"/>
    <result pre="in the human and simian populations of the South-East of" exact="Gabon" post="[in French] Bull Soc Pathol Exot Filiales 1982; 75:"/>
    <result pre="of arbovirus of medical interest in the region of eastern" exact="Senegal" post="[in French] Bull Soc Pathol Exot 1993; 86: 21–"/>
-   <result pre="al. Investigation surrounding a fatal case of yellow fever in" exact="Côte d’Ivoire" post="in 1999 [in French] Bull Soc Pathol Exot 2001;"/>
-   <result pre="arboviral antibodies in sera of humans and animals in Lombok," exact="Republic of Indonesia." post="Ann Trop Med Parasitol 1983; 77: 131– 7 6309104"/>
    <result pre="from Aedes (Stegomyia) africanus (Theobald) taken in and above a" exact="Uganda" post="forest. Bull World Health Organ 1964; 31: 57– 69"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3310660/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3310660/results/search/country/results.xml">
    <result pre="¶ [1], Chair of Livestock Biotechnology, Technische Universität München, Freising," exact="Germany" post="[2], Pharma Research and Early Development, Roche Diagnostics GmbH,"/>
    <result pre="[2], Pharma Research and Early Development, Roche Diagnostics GmbH, Penzberg," exact="Germany" post="[3], Sangamo BioSciences Inc., Richmond, California, United States of"/>
-   <result pre="Diagnostics GmbH, Penzberg, Germany [3], Sangamo BioSciences Inc., Richmond, California," exact="United States of America" post="Milstone David S. Editor [], * E-mail: schnieke@wzw.tum.de Conceived"/>
-   <result pre="Germany [3], Sangamo BioSciences Inc., Richmond, California, United States of" exact="America" post="Milstone David S. Editor [], * E-mail: schnieke@wzw.tum.de Conceived"/>
+   <result pre="Diagnostics GmbH, Penzberg, Germany [3], Sangamo BioSciences Inc., Richmond, California," exact="United States" post="of America Milstone David S. Editor [], * E-mail:"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3321795/results/search/country/results.xml">
-   <result pre="region to another. The introduction of West Nile virus into" exact="the United States" post="in 1999 was a dramatic example, as was the"/>
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3321795/results/search/country/results.xml">
    <result pre="to another. The introduction of West Nile virus into the" exact="United States" post="in 1999 was a dramatic example, as was the"/>
    <result pre="encephalitis virus to jump vectors, sparking the 1993 epidemic in" exact="Mexico" post="( 6 ), and it might have been an"/>
-   <result pre="to birds and influenced the shape of the epidemic in" exact="the United States" post="( 7 ). In none of these examples was"/>
    <result pre="birds and influenced the shape of the epidemic in the" exact="United States" post="( 7 ). In none of these examples was"/>
    <result pre="difficult to achieve. The yellow fever epidemic that began in" exact="Uganda" post="at the end of 2010 was the first in"/>
-   <result pre="RS , et al. Zika virus outbreak on Yap Island," exact="Federated States of Micronesia." post="N Engl J Med. 2009; 360: 2536– 43 10.1056/NEJMoa0805715"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/PMC3321797/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3321797/results/search/country/results.xml">
    <result pre="22000358 10-1890 doi: 10.3201/eid1710.101890 : Dispatch Tembusu Virus in Ducks," exact="China" post="Tembusu Virus in Ducks, China Cao Zhenzhen 1 Zhang"/>
    <result pre="Dispatch Tembusu Virus in Ducks, China Tembusu Virus in Ducks," exact="China" post="Cao Zhenzhen 1 Zhang Cun 1 Liu Yuehuan 1"/>
    <result pre="of Zoonosis of Ministry of Agriculture, College of Veterinary Medicine," exact="China" post="Agricultural University, Yuanmingyuan West Rd, no. 2, Beijing 100193,"/>
-   <result pre="Agricultural University, Yuanmingyuan West Rd, no. 2, Beijing 100193, People’s" exact="Republic of" post="China; email: zdb@cau.edu.cn ppub: 2011-10 17 10 1873 1875"/>
    <result pre="email: zdb@cau.edu.cn ppub: 2011-10 17 10 1873 1875 Abstract In" exact="China" post="in 2010, a disease outbreak in egg-laying ducks was"/>
    <result pre="Keywords: Flavivirus duck flavivirus duck hemorrhagic ovaritis Tembusu virus viruses" exact="China" post="dispatch From June through November 2010 in the People’s"/>
-   <result pre="China dispatch From June through November 2010 in the People’s" exact="Republic of" post="China, a disease characterized by a sudden onset was"/>
-   <result pre="detection in 63 samples from diseased ducks, 4 provinces, People’s" exact="Republic of" post="China, 2010 Sample No. (%) flavivirus positive No. flavivirus"/>
-   <result pre="(in boldface) from an ill Shaoxing duck in the People’s" exact="Republic of" post="China and selected other flaviviruses obtained by using an"/>
    <result pre="from an ill Shaoxing duck in the People’s Republic of" exact="China" post="and selected other flaviviruses obtained by using an ≈1-kb"/>
    <result pre="(BAGV); AF013376, Ilheus virus (ILHV); AF013397, Rocio virus (ROCV); AF013377," exact="Israel" post="turkey meningoencephalomyelitis virus (ITV); AF013392, Ntaya virus (NTAV); AF013408,"/>
    <result pre="(JUGV); AF013400, Saboya virus (SABV); AF013404, Sepik virus (SEPV); AF013411," exact="Uganda" post="S virus (UGSV); EU707555, Wesselsbron virus (WESSV); X03700, yellow"/>
-   <result pre="Perlita virus (SPV); AF013365, Bukalasa bat virus (BBV); AF013368, Carey" exact="Island" post="virus (CIV); AF013371, Dakar bat virus (DBV); AF013388, Montana"/>
    <result pre="contributed equally to this article. This work was supported by" exact="China" post="Agriculture Research System (CARS-43) and the China Mega-Project for"/>
    <result pre="was supported by China Agriculture Research System (CARS-43) and the" exact="China" post="Mega-Project for Infectious Disease (2008ZX10004-001). Ms Cao is a"/>
    <result pre="Cao is a graduate student at College of Veterinary Medicine," exact="China" post="Agricultural University in Beijing, in the Modern Agro-industry Technology"/>
@@ -298,10 +201,10 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/0_PMC320490/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/0_PMC320490/results/search/country/results.xml">
    <result pre="Z.C.) from the General Secretariat of Research and Technology of" exact="Greece" post="as well as from the Public Benefit Foundation Alexander"/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/4_PMC3310194/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/4_PMC3310194/results/search/country/results.xml">
    <result pre="including the first report of Spartina ×townsendii for British Columbia," exact="Canada" post="Saarela Jeffery M. 1 [1], Corresponding author: Jeffery M."/>
    <result pre="This is the situation in the Pacific Northwest of North" exact="America" post="(Oregon, Washington, British Columbia), where five Spartina species are"/>
    <result pre="of these grasses and their closest relatives. Spartina in North" exact="America" post="Taxonomic revisions of Spartina have been produced by Merrill"/>
@@ -406,7 +309,7 @@
    <result pre="New World Grasses (Poaceae): II Subfamily Chloridoideae. Contributions from the" exact="United States" post="National Herbarium 41: 195- 200 Peterson PM Columbus JT"/>
    <result pre="Jung M-J ( 2009) Supplements to the grasses (Poaceae) in" exact="Taiwan" post="(II). Taiwania 54: 168- 174 Scoggan HJ ( 1978)"/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/2_PMC3113902/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/2_PMC3113902/results/search/country/results.xml">
    <result pre="of Immunohematology and Blood Transfusion, Leiden University Medical Center Leiden," exact="Netherlands" post="[], 2 Department of Pathology, VU University Medical Center"/>
    <result pre="[], 2 Department of Pathology, VU University Medical Center Amsterdam," exact="Netherlands" post="Edited by: Johan van der Vlag, Radboud University Nijmegen"/>
    <result pre="by: Johan van der Vlag, Radboud University Nijmegen Medical Centre," exact="Netherlands" post="Reviewed by: Johan van der Vlag, Radboud University Nijmegen"/>
@@ -415,7 +318,7 @@
    <result pre="gene repression is reversed by demethylation. Proc. Natl. Acad. Sci." exact="U.S.A." post="100, 1191– 1196 10.1073/pnas.0337539100 12552087 Moreno C. S. Beresford"/>
    <result pre="in IFN-gamma-inducible MHC-II gene expression . Proc. Natl. Acad. Sci." exact="U.S.A." post="102, 16321– 16326 10.1073/pnas.0505045102 16254053 Zika E. Greer S."/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/6_PMC3321797/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/6_PMC3321797/results/search/country/results.xml">
    <result pre="22000358 10-1890 doi: 10.3201/eid1710.101890 : Dispatch Tembusu Virus in Ducks," exact="China" post="Tembusu Virus in Ducks, China Cao Zhenzhen 1 Zhang"/>
    <result pre="Dispatch Tembusu Virus in Ducks, China Tembusu Virus in Ducks," exact="China" post="Cao Zhenzhen 1 Zhang Cun 1 Liu Yuehuan 1"/>
    <result pre="of Zoonosis of Ministry of Agriculture, College of Veterinary Medicine," exact="China" post="Agricultural University, Yuanmingyuan West Rd, no. 2, Beijing 100193,"/>
@@ -434,7 +337,7 @@
    <result pre="et al. Genetic characterization of Bagaza virus (BAGV) isolated in" exact="India" post="and evidence of anti-BAGV antibodies in sera collected from"/>
    <result pre="analysis and molecular characterization of Usutu virus that emerged in" exact="Austria" post="in 2001: comparison with the South African strain SAAR-1776"/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/3_PMC3310457/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/3_PMC3310457/results/search/country/results.xml">
    <result pre="arthralgia, and conjunctivitis was reported on Yap Island in the" exact="Federated States of Micronesia." post="Serum samples from patients in the acute phase of"/>
    <result pre="cage on a tree platform in the Zika Forest of" exact="Uganda" post="( 3 ). The monkey, Rhesus 766, was a"/>
    <result pre="1956 ( 6 ). ZIKV was isolated from humans in" exact="Nigeria" post="during studies conducted in 1968 and during 1971–1975; in"/>
@@ -460,13 +363,13 @@
    <result pre="arboviral antibodies in sera of humans and animals in Lombok," exact="Republic of Indonesia." post="Ann Trop Med Parasitol 1983; 77: 131– 7 6309104"/>
    <result pre="from Aedes (Stegomyia) africanus (Theobald) taken in and above a" exact="Uganda" post="forest. Bull World Health Organ 1964; 31: 57– 69"/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/7_PMC3310660/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/7_PMC3310660/results/search/country/results.xml">
    <result pre="¶ [1], Chair of Livestock Biotechnology, Technische Universität München, Freising," exact="Germany" post="[2], Pharma Research and Early Development, Roche Diagnostics GmbH,"/>
    <result pre="[2], Pharma Research and Early Development, Roche Diagnostics GmbH, Penzberg," exact="Germany" post="[3], Sangamo BioSciences Inc., Richmond, California, United States of"/>
    <result pre="Diagnostics GmbH, Penzberg, Germany [3], Sangamo BioSciences Inc., Richmond, California," exact="United States of America" post="Milstone David S. Editor [], * E-mail: schnieke@wzw.tum.de Conceived"/>
    <result pre="Germany [3], Sangamo BioSciences Inc., Richmond, California, United States of" exact="America" post="Milstone David S. Editor [], * E-mail: schnieke@wzw.tum.de Conceived"/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/5_PMC3289602/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/5_PMC3289602/results/search/country/results.xml">
    <result pre="Department of Pathology, University of Texas Medical Branch, Galveston, Texas," exact="United States of America" post="[2], United States Naval Medical Research Unit, No. 2,"/>
    <result pre="University of Texas Medical Branch, Galveston, Texas, United States of" exact="America" post="[2], United States Naval Medical Research Unit, No. 2,"/>
    <result pre="Texas Medical Branch, Galveston, Texas, United States of America [2]," exact="United States" post="Naval Medical Research Unit, No. 2, Phnom Penh, Cambodia"/>
@@ -541,7 +444,7 @@
    <result pre="GE 1958 Serological survey for a arthropod-borne virus infections in" exact="the Philippines." post="Am J Trop Med Hyg 7 323 328 13533740"/>
    <result pre="R Soc Trop Med Hyg 46 521 534 12995441 55" exact="Henderson" post="BE Kirya GB Hewitt LE 1970 Serological survey for"/>
   </snippets>
-  <snippets file="zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/1_PMC3321795/results/search/country/results.xml">
+  <snippets file="src/test/resources/org/contentmine/ami/zika10/_summary/Users/pm286/workspace/cmdev/ami3/target/files/junk/summary1x/1_PMC3321795/results/search/country/results.xml">
    <result pre="region to another. The introduction of West Nile virus into" exact="the United States" post="in 1999 was a dramatic example, as was the"/>
    <result pre="to another. The introduction of West Nile virus into the" exact="United States" post="in 1999 was a dramatic example, as was the"/>
    <result pre="encephalitis virus to jump vectors, sparking the 1993 epidemic in" exact="Mexico" post="( 6 ), and it might have been an"/>

@@ -1,0 +1,692 @@
+{
+  "id": [
+    "32427848"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "32427848"
+  ],
+  "pmcid": [
+    "PMC7237685"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC7237685"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1038/s41467-020-16060-8"
+  ],
+  "title": [
+    "Fossils from Mille-Logya, Afar, Ethiopia, elucidate the link between Pliocene environmental changes and Homo origins."
+  ],
+  "authorString": [
+    "Alemseged Z, Wynn JG, Geraads D, Reed D, Andrew Barr W, Bobe R, McPherron SP, Deino A, Alene M, J Sier M, Roman D, Mohan J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Alemseged Z"
+          ],
+          "firstName": [
+            "Zeresenay"
+          ],
+          "lastName": [
+            "Alemseged"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Organismal Biology and Anatomy, University of Chicago, Chicago, IL, 60637, USA. alemseged@uchicago.edu."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Wynn JG"
+          ],
+          "firstName": [
+            "Jonathan G"
+          ],
+          "lastName": [
+            "Wynn"
+          ],
+          "initials": [
+            "JG"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Earth Sciences, National Science Foundation, Alexandria, VA, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Geraads D"
+          ],
+          "firstName": [
+            "Denis"
+          ],
+          "lastName": [
+            "Geraads"
+          ],
+          "initials": [
+            "D"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "CR2P, Sorbonne Universités, MNHN, CNRS, UPMC, CP 38, 8 rue Buffon, 75231, PARIS Cedex 05, France."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Reed D"
+          ],
+          "firstName": [
+            "Denne"
+          ],
+          "lastName": [
+            "Reed"
+          ],
+          "initials": [
+            "D"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Anthropology, University of Texas at Austin, Austin, TX, 78712, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Andrew Barr W"
+          ],
+          "firstName": [
+            "W"
+          ],
+          "lastName": [
+            "Andrew Barr"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Center for the Advanced Study of Human Paleobiology. Department of Anthropology, The George Washington University, Washington, DC, 20052, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bobe R"
+          ],
+          "firstName": [
+            "René"
+          ],
+          "lastName": [
+            "Bobe"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9059-2203",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Primate Models for Behavioural Evolution Lab, Institute of Cognitive & Evolutionary Anthropology, School of Anthropology, University of Oxford, Oxford, UK.",
+                "Gorongosa National Park, Sofala, Mozambique.",
+                "Interdisciplinary Center for Archaeology and Evolution of Human Behavior (ICArEHB), Universidade do Algarve, Faro, Portugal."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "McPherron SP"
+          ],
+          "firstName": [
+            "Shannon P"
+          ],
+          "lastName": [
+            "McPherron"
+          ],
+          "initials": [
+            "SP"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Human Evolution, Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Deino A"
+          ],
+          "firstName": [
+            "Alan"
+          ],
+          "lastName": [
+            "Deino"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Berkeley Geochronology Center, 2455 Ridge Road, Berkeley, CA, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Alene M"
+          ],
+          "firstName": [
+            "Mulugeta"
+          ],
+          "lastName": [
+            "Alene"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Earth Sciences, Addis Ababa University, P. O. Box 1176, Addis Ababa, Ethiopia."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "J Sier M"
+          ],
+          "firstName": [
+            "Mark"
+          ],
+          "lastName": [
+            "J Sier"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4145-0556",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "CENIEH, Paseo Sierra de Atapuerca 3, 09002, Burgos, Spain.",
+                "Department of Earth Sciences, University of Oxford, South Parks Road, Oxford, OX1 3AN, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Roman D"
+          ],
+          "firstName": [
+            "Diana"
+          ],
+          "lastName": [
+            "Roman"
+          ],
+          "initials": [
+            "D"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Earth and Planets Laboratory, Carnegie Institution for Science, Washington, DC, 20015-1305, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mohan J"
+          ],
+          "firstName": [
+            "Joseph"
+          ],
+          "lastName": [
+            "Mohan"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Climate Change Institute, University of Maine, Orono, ME, 04469-5790, USA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-9059-2203",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-4145-0556",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "11"
+      ],
+      "journalIssueId": [
+        "2949307"
+      ],
+      "dateOfPublication": [
+        "2020 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2020"
+      ],
+      "printPublicationDate": [
+        "2020-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nature communications"
+          ],
+          "ISOAbbreviation": [
+            "Nat Commun"
+          ],
+          "medlineAbbreviation": [
+            "Nat Commun"
+          ],
+          "NLMid": [
+            "101528555"
+          ],
+          "ISSN": [
+            "2041-1723"
+          ],
+          "ESSN": [
+            "2041-1723"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2020"
+  ],
+  "pageInfo": [
+    "2480"
+  ],
+  "abstractText": [
+    "Several hypotheses posit a link between the origin of Homo and climatic and environmental shifts between 3 and 2.5 Ma. Here we report on new results that shed light on the interplay between tectonics, basin migration and faunal change on the one hand and the fate of Australopithecus afarensis and the evolution of Homo on the other. Fieldwork at the new Mille-Logya site in the Afar, Ethiopia, dated to between 2.914 and 2.443 Ma, provides geological evidence for the northeast migration of the Hadar Basin, extending the record of this lacustrine basin to Mille-Logya. We have identified three new fossiliferous units, suggesting in situ faunal change within this interval. While the fauna in the older unit is comparable to that at Hadar and Dikika, the younger units contain species that indicate more open conditions along with remains of Homo. This suggests that Homo either emerged from Australopithecus during this interval or dispersed into the region as part of a fauna adapted to more open habitats."
+  ],
+  "affiliation": [
+    "Department of Organismal Biology and Anatomy, University of Chicago, Chicago, IL, 60637, USA. alemseged@uchicago.edu."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Hominidae"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Ecosystem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Geography"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Geologic Sediments"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "AN"
+                  ],
+                  "qualifierName": [
+                    "analysis"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Geology"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Time Factors"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Paleontology"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "SN"
+                  ],
+                  "qualifierName": [
+                    "statistics & numerical data"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Fossils"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ethiopia"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Human Migration"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/s41467-020-16060-8"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7237685"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7237685?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2020-08-10"
+  ],
+  "dateOfCreation": [
+    "2020-05-20"
+  ],
+  "firstIndexDate": [
+    "2020-05-22"
+  ],
+  "fullTextReceivedDate": [
+    "2020-05-29"
+  ],
+  "dateOfRevision": [
+    "2020-08-10"
+  ],
+  "electronicPublicationDate": [
+    "2020-05-19"
+  ],
+  "firstPublicationDate": [
+    "2020-05-19"
+  ]
+}

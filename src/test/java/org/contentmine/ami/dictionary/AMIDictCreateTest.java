@@ -1279,7 +1279,7 @@ https://github.com/petermr/openVirus/issues/81
 https://github.com/petermr/openVirus/issues/81
 	 */ 
 	@Test
-	public void testCreateDictionaryFromSparqlAndsValidate() {
+	public void testCreateDictionaryFromSparqlXMLAndsValidate() {
 		String dictionaryName = "country";
 		File targetDir = new AMIDictCreateTest().createAbsoluteTargetDir();
 		File inputFile = new File(DICTIONARY_DIR, dictionaryName + ".sparql.xml");  // first 1 <results>
@@ -1323,6 +1323,49 @@ https://github.com/petermr/openVirus/issues/81
 			
 	}
 
+	@Test
+	public void testCreateDictionaryFromSparqlQuery() {
+		String dictionaryName = "cats";
+		File targetDir = new AMIDictCreateTest().createAbsoluteTargetDir();
+		File inputFile = new File(DICTIONARY_DIR, dictionaryName + ".sparql");  // first 1 <results>
+		String cmd = ""
+				+ " -vv" +
+				"	 --dictionary " + dictionaryName +
+				"	 --directory  " + targetDir +
+				"	 --input " + inputFile +
+				"	create " +
+				"	 --informat wikisparqlquery " +
+				"	 --sparqlmap " +
+				"wikidataURL=wikidata," +
+				"wikipediaURL=wikipedia," +
+				"name=wikidataLabel," +
+				"term=wikidataLabel," +
+				"description=wikidataDescription," +
+
+//				"_p297_country=_iso3166" +
+
+				"	 --transformName"
+				+ " wikidataID=EXTRACT(wikidataURL,.*/(.*))@"
+				+ "wikipediaPage=EXTRACT(wikipediaURL,.*/(.*))" +
+
+				"	 --synonyms=synonym "
+				;
+		AMIDict.execute(cmd);
+		File dictionaryFile = new File(targetDir, dictionaryName + ".xml");
+		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
+		Element dictionary = XMLUtil.parseQuietlyToRootElement(dictionaryFile);
+		Assert.assertEquals("title",  dictionaryName, dictionary.getAttributeValue("title"));
+
+		// now validate
+		cmd =
+				" --dictionary " + dictionaryName
+						+ " input " + dictionaryFile
+						+ " display"
+						+ " --validate"
+		;
+//			AMIDict.execute(cmd);
+
+	}
 
 
 	// ============================== HELPERS ========================

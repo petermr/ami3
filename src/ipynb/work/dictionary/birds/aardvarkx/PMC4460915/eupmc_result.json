@@ -1,0 +1,485 @@
+{
+  "id": [
+    "26097743"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26097743"
+  ],
+  "pmcid": [
+    "PMC4460915"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4460915"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1038/sdata.2015.26"
+  ],
+  "title": [
+    "Snapshot Serengeti, high-frequency annotated camera trap images of 40 mammalian species in an African savanna."
+  ],
+  "authorString": [
+    "Swanson A, Kosmala M, Lintott C, Simpson R, Smith A, Packer C."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Swanson A"
+          ],
+          "firstName": [
+            "Alexandra"
+          ],
+          "lastName": [
+            "Swanson"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology, Evolution and Behavior, University of Minnesota , Saint Paul, MN 55108, USA ; Department of Physics, University of Oxford , Denys Wilkinson Building, Oxford, OX1 3RH, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kosmala M"
+          ],
+          "firstName": [
+            "Margaret"
+          ],
+          "lastName": [
+            "Kosmala"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1446-4856",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology, Evolution and Behavior, University of Minnesota , Saint Paul, MN 55108, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lintott C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Lintott"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Physics, University of Oxford , Denys Wilkinson Building, Oxford, OX1 3RH, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Simpson R"
+          ],
+          "firstName": [
+            "Robert"
+          ],
+          "lastName": [
+            "Simpson"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Physics, University of Oxford , Denys Wilkinson Building, Oxford, OX1 3RH, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Smith A"
+          ],
+          "firstName": [
+            "Arfon"
+          ],
+          "lastName": [
+            "Smith"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3957-2474",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Adler Planetarium, Department of Citizen Science , Chicago, IL 60605, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Packer C"
+          ],
+          "firstName": [
+            "Craig"
+          ],
+          "lastName": [
+            "Packer"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology, Evolution and Behavior, University of Minnesota , Saint Paul, MN 55108, USA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1446-4856",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-3957-2474",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "2"
+      ],
+      "journalIssueId": [
+        "2296884"
+      ],
+      "dateOfPublication": [
+        "2015"
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific data"
+          ],
+          "ISOAbbreviation": [
+            "Sci Data"
+          ],
+          "medlineAbbreviation": [
+            "Sci Data"
+          ],
+          "NLMid": [
+            "101640192"
+          ],
+          "ISSN": [
+            "2052-4463"
+          ],
+          "ESSN": [
+            "2052-4463"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "150026"
+  ],
+  "abstractText": [
+    "Camera traps can be used to address large-scale questions in community ecology by providing systematic data on an array of wide-ranging species. We deployed 225 camera traps across 1,125 km(2) in Serengeti National Park, Tanzania, to evaluate spatial and temporal inter-species dynamics. The cameras have operated continuously since 2010 and had accumulated 99,241 camera-trap days and produced 1.2 million sets of pictures by 2013. Members of the general public classified the images via the citizen-science website www.snapshotserengeti.org. Multiple users viewed each image and recorded the species, number of individuals, associated behaviours, and presence of young. Over 28,000 registered users contributed 10.8 million classifications. We applied a simple algorithm to aggregate these individual classifications into a final 'consensus' dataset, yielding a final classification for each image and a measure of agreement among individual answers. The consensus classifications and raw imagery provide an unparalleled opportunity to investigate multi-species dynamics in an intact ecosystem and a valuable resource for machine-learning and computer-vision research."
+  ],
+  "affiliation": [
+    "Department of Ecology, Evolution and Behavior, University of Minnesota , Saint Paul, MN 55108, USA ; Department of Physics, University of Oxford , Denys Wilkinson Building, Oxford, OX1 3RH, UK."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "Dataset",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "data-paper",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Behavior, Animal"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ecosystem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Image Processing, Computer-Assisted"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Tanzania"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/sdata.2015.26"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4460915"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4460915?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "27"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2015-12-23"
+  ],
+  "dateOfCreation": [
+    "2015-06-23"
+  ],
+  "firstIndexDate": [
+    "2015-06-23"
+  ],
+  "fullTextReceivedDate": [
+    "2015-06-21"
+  ],
+  "dateOfRevision": [
+    "2015-06-24"
+  ],
+  "electronicPublicationDate": [
+    "2015-06-09"
+  ],
+  "firstPublicationDate": [
+    "2015-06-09"
+  ]
+}

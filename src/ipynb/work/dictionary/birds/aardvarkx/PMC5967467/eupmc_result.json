@@ -1,0 +1,563 @@
+{
+  "id": [
+    "29562344"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29562344"
+  ],
+  "pmcid": [
+    "PMC5967467"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5967467"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/molbev/msy028"
+  ],
+  "title": [
+    "The Birth and Death of Olfactory Receptor Gene Families in Mammalian Niche Adaptation."
+  ],
+  "authorString": [
+    "Hughes GM, Boston ESM, Finarelli JA, Murphy WJ, Higgins DG, Teeling EC."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Hughes GM"
+          ],
+          "firstName": [
+            "Graham M"
+          ],
+          "lastName": [
+            "Hughes"
+          ],
+          "initials": [
+            "GM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3088-345X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Biology and Environmental Science, University College Dublin, Dublin, Ireland."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Boston ESM"
+          ],
+          "firstName": [
+            "Emma S M"
+          ],
+          "lastName": [
+            "Boston"
+          ],
+          "initials": [
+            "ESM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "AECOM, 9th Floor Clarence West Building, Clarence Street West, Belfast, BT2 7GP, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Finarelli JA"
+          ],
+          "firstName": [
+            "John A"
+          ],
+          "lastName": [
+            "Finarelli"
+          ],
+          "initials": [
+            "JA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Biology and Environmental Science, University College Dublin, Dublin, Ireland."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Murphy WJ"
+          ],
+          "firstName": [
+            "William J"
+          ],
+          "lastName": [
+            "Murphy"
+          ],
+          "initials": [
+            "WJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Veterinary Integrative Biosciences, Texas A&M University, College Station, TX."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Higgins DG"
+          ],
+          "firstName": [
+            "Desmond G"
+          ],
+          "lastName": [
+            "Higgins"
+          ],
+          "initials": [
+            "DG"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "UCD Conway Institute of Biomolecular and Biomedical Research, University College Dublin, Dublin, Ireland."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Teeling EC"
+          ],
+          "firstName": [
+            "Emma C"
+          ],
+          "lastName": [
+            "Teeling"
+          ],
+          "initials": [
+            "EC"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3309-1346",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Biology and Environmental Science, University College Dublin, Dublin, Ireland."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3088-345X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-3309-1346",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "6"
+      ],
+      "volume": [
+        "35"
+      ],
+      "journalIssueId": [
+        "2687159"
+      ],
+      "dateOfPublication": [
+        "2018 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Molecular biology and evolution"
+          ],
+          "ISOAbbreviation": [
+            "Mol. Biol. Evol."
+          ],
+          "medlineAbbreviation": [
+            "Mol Biol Evol"
+          ],
+          "NLMid": [
+            "8501455"
+          ],
+          "ISSN": [
+            "0737-4038"
+          ],
+          "ESSN": [
+            "1537-1719"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "1390-1406"
+  ],
+  "abstractText": [
+    "The olfactory receptor (OR) gene families, which govern mammalian olfaction, have undergone extensive expansion and contraction through duplication and pseudogenization. Previous studies have shown that broadly defined environmental adaptations (e.g., terrestrial vs. aquatic) are correlated with the number of functional and non-functional OR genes retained. However, to date, no study has examined species-specific gene duplications in multiple phylogenetically divergent mammals to elucidate OR evolution and adaptation. Here, we identify the OR gene families driving adaptation to different ecological niches by mapping the fate of species-specific gene duplications in the OR repertoire of 94 diverse mammalian taxa, using molecular phylogenomic methods. We analyze >70,000 OR gene sequences mined from whole genomes, generated from novel amplicon sequencing data, and collated with data from previous studies, comprising one of the largest OR studies to date. For the first time, we demonstrate statistically significant patterns of OR species-specific gene duplications associated with the presence of a functioning vomeronasal organ. With respect to dietary niche, we uncover a novel link between a large number of duplications in OR family 5/8/9 and herbivory. Our results also highlight differences between social and solitary niches, indicating that a greater OR repertoire expansion may be associated with a solitary lifestyle. This study demonstrates the utility of species-specific duplications in elucidating gene family evolution, revealing how the OR repertoire has undergone expansion and contraction with respect to a number of ecological adaptations in mammals."
+  ],
+  "affiliation": [
+    "School of Biology and Environmental Science, University College Dublin, Dublin, Ireland."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Receptors, Odorant"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ecosystem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Adaptation, Biological"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Duplication"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Multigene Family"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Receptors, Odorant"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/molbev/msy028"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5967467"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5967467?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "15"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2019-03-27"
+  ],
+  "dateOfCreation": [
+    "2018-03-22"
+  ],
+  "firstIndexDate": [
+    "2018-03-22"
+  ],
+  "fullTextReceivedDate": [
+    "2018-06-06"
+  ],
+  "dateOfRevision": [
+    "2019-03-27"
+  ],
+  "firstPublicationDate": [
+    "2018-06-01"
+  ]
+}

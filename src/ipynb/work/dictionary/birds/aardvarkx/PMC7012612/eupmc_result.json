@@ -1,0 +1,480 @@
+{
+  "id": [
+    "32043462"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "32043462"
+  ],
+  "pmcid": [
+    "PMC7012612"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC7012612"
+      ]
+    }
+  ],
+  "doi": [
+    "10.7554/elife.51089"
+  ],
+  "title": [
+    "Pan-mammalian analysis of molecular constraints underlying extended lifespan."
+  ],
+  "authorString": [
+    "Kowalczyk A, Partha R, Clark NL, Chikina M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Kowalczyk A"
+          ],
+          "firstName": [
+            "Amanda"
+          ],
+          "lastName": [
+            "Kowalczyk"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9061-1336",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Joint Carnegie Mellon University-University of Pittsburgh PhD Program in Computational Biology, Pittsburgh, United States.",
+                "Department of Computational and Systems Biology, University of Pittsburgh, Pittsburgh, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Partha R"
+          ],
+          "firstName": [
+            "Raghavendran"
+          ],
+          "lastName": [
+            "Partha"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7900-4375",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Joint Carnegie Mellon University-University of Pittsburgh PhD Program in Computational Biology, Pittsburgh, United States.",
+                "Department of Computational and Systems Biology, University of Pittsburgh, Pittsburgh, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Clark NL"
+          ],
+          "firstName": [
+            "Nathan L"
+          ],
+          "lastName": [
+            "Clark"
+          ],
+          "initials": [
+            "NL"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-0006-8374",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Computational and Systems Biology, University of Pittsburgh, Pittsburgh, United States.",
+                "Pittsburgh Center for Evolutionary Biology and Medicine, University of Pittsburgh, Pittsburgh, United States.",
+                "Department of Human Genetics, University of Utah, Salt Lake City, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chikina M"
+          ],
+          "firstName": [
+            "Maria"
+          ],
+          "lastName": [
+            "Chikina"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Computational and Systems Biology, University of Pittsburgh, Pittsburgh, United States."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-9061-1336",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7900-4375",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-0006-8374",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "9"
+      ],
+      "journalIssueId": [
+        "2907566"
+      ],
+      "dateOfPublication": [
+        "2020 Feb"
+      ],
+      "monthOfPublication": [
+        "2"
+      ],
+      "yearOfPublication": [
+        "2020"
+      ],
+      "printPublicationDate": [
+        "2020-02-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "eLife"
+          ],
+          "ISOAbbreviation": [
+            "Elife"
+          ],
+          "medlineAbbreviation": [
+            "Elife"
+          ],
+          "NLMid": [
+            "101579614"
+          ],
+          "ISSN": [
+            "2050-084X"
+          ],
+          "ESSN": [
+            "2050-084X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2020"
+  ],
+  "abstractText": [
+    "Although lifespan in mammals varies over 100-fold, the precise evolutionary mechanisms underlying variation in longevity remain unknown. Species-specific genetic changes have been observed in long-lived species including the naked mole-rat, bats, and the bowhead whale, but these adaptations do not generalize to other mammals. We present a novel method to identify associations between rates of protein evolution and continuous phenotypes across the entire mammalian phylogeny. Unlike previous analyses that focused on individual species, we treat absolute and relative longevity as quantitative traits and demonstrate that these lifespan traits affect the evolutionary constraint on hundreds of genes. Specifically, we find that genes related to cell cycle, DNA repair, cell death, the IGF1 pathway, and immunity are under increased evolutionary constraint in large and long-lived mammals. For mammals exceptionally long-lived for their body size, we find increased constraint in inflammation, DNA repair, and NFKB-related pathways. Strikingly, these pathways have considerable overlap with those that have been previously reported to have potentially adaptive changes in single-species studies, and thus would be expected to show decreased constraint in our analysis. This unexpected finding of increased constraint in many longevity-associated pathways underscores the power of our quantitative approach to detect patterns that generalize across the mammalian phylogeny."
+  ],
+  "affiliation": [
+    "Joint Carnegie Mellon University-University of Pittsburgh PhD Program in Computational Biology, Pittsburgh, United States."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "T32 EB009403"
+          ],
+          "agency": [
+            "NIBIB NIH HHS"
+          ],
+          "acronym": [
+            "EB"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "T32 EB009403"
+          ],
+          "agency": [
+            "Howard Hughes Medical Institute"
+          ],
+          "acronym": [
+            "HHMI"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "U54 HG008540"
+          ],
+          "agency": [
+            "NIH HHS"
+          ],
+          "acronym": [
+            "NH"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 HG009299"
+          ],
+          "agency": [
+            "NHGRI NIH HHS"
+          ],
+          "acronym": [
+            "HG"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01HG009299"
+          ],
+          "agency": [
+            "NIH HHS"
+          ],
+          "acronym": [
+            "NH"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Genetics",
+        "Longevity",
+        "Mammals",
+        "Genomics",
+        "systems biology",
+        "computational biology",
+        "Phylogenomics",
+        "Rerconverge"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.7554/eLife.51089"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7012612"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7012612?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2020-02-12"
+  ],
+  "firstIndexDate": [
+    "2020-02-12"
+  ],
+  "fullTextReceivedDate": [
+    "2020-02-18"
+  ],
+  "dateOfRevision": [
+    "2020-08-05"
+  ],
+  "electronicPublicationDate": [
+    "2020-02-11"
+  ],
+  "firstPublicationDate": [
+    "2020-02-11"
+  ]
+}

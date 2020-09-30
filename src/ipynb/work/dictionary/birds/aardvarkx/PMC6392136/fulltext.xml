@@ -1,0 +1,665 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Clin Genet</journal-id><journal-id journal-id-type="iso-abbrev">Clin. Genet</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1399-0004</journal-id><journal-id journal-id-type="publisher-id">CGE</journal-id><journal-title-group><journal-title>Clinical Genetics</journal-title></journal-title-group><issn pub-type="ppub">0009-9163</issn><issn pub-type="epub">1399-0004</issn><publisher><publisher-name>Blackwell Publishing Ltd</publisher-name><publisher-loc>Oxford, UK</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1111/cge.13487</article-id><article-id pub-id-type="publisher-id">CGE13487</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>Mutations in <italic>RELT</italic> cause autosomal recessive amelogenesis imperfecta</article-title><alt-title alt-title-type="left-running-head">Kim et al.</alt-title></title-group><contrib-group><contrib id="cge13487-cr-0001" contrib-type="author" corresp="yes"><name><surname>Kim</surname><given-names>Jung&#x02010;Wook</given-names></name><address><email>pedoman@snu.ac.kr</email></address><xref ref-type="aff" rid="cge13487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="cge13487-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="cge13487-cr-0002" contrib-type="author"><name><surname>Zhang</surname><given-names>Hong</given-names></name><xref ref-type="aff" rid="cge13487-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="cge13487-cr-0003" contrib-type="author"><name><surname>Seymen</surname><given-names>Figen</given-names></name><xref ref-type="aff" rid="cge13487-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="cge13487-cr-0004" contrib-type="author"><name><surname>Koruyucu</surname><given-names>Mine</given-names></name><xref ref-type="aff" rid="cge13487-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="cge13487-cr-0005" contrib-type="author"><name><surname>Hu</surname><given-names>Yuanyuan</given-names></name><xref ref-type="aff" rid="cge13487-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="cge13487-cr-0006" contrib-type="author"><name><surname>Kang</surname><given-names>Jenny</given-names></name><xref ref-type="aff" rid="cge13487-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="cge13487-cr-0007" contrib-type="author"><name><surname>Kim</surname><given-names>Youn J.</given-names></name><xref ref-type="aff" rid="cge13487-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="cge13487-cr-0008" contrib-type="author"><name><surname>Ikeda</surname><given-names>Atsushi</given-names></name><xref ref-type="aff" rid="cge13487-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="cge13487-cr-0009" contrib-type="author"><name><surname>Kasimoglu</surname><given-names>Yelda</given-names></name><xref ref-type="aff" rid="cge13487-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="cge13487-cr-0010" contrib-type="author"><name><surname>Bayram</surname><given-names>Merve</given-names></name><xref ref-type="aff" rid="cge13487-aff-0006">
+<sup>6</sup>
+</xref></contrib><contrib id="cge13487-cr-0011" contrib-type="author"><name><surname>Zhang</surname><given-names>Chuhua</given-names></name><xref ref-type="aff" rid="cge13487-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="cge13487-cr-0012" contrib-type="author"><name><surname>Kawasaki</surname><given-names>Kazuhiko</given-names></name><xref ref-type="aff" rid="cge13487-aff-0007">
+<sup>7</sup>
+</xref></contrib><contrib id="cge13487-cr-0013" contrib-type="author"><name><surname>Bartlett</surname><given-names>John D.</given-names></name><xref ref-type="aff" rid="cge13487-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="cge13487-cr-0014" contrib-type="author"><name><surname>Saunders</surname><given-names>Thomas L.</given-names></name><xref ref-type="aff" rid="cge13487-aff-0008">
+<sup>8</sup>
+</xref></contrib><contrib id="cge13487-cr-0015" contrib-type="author" corresp="yes"><name><surname>Simmer</surname><given-names>James P.</given-names></name><address><email>jsimmer@umich.edu</email></address><xref ref-type="aff" rid="cge13487-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="cge13487-cr-0016" contrib-type="author"><name><surname>Hu</surname><given-names>Jan C&#x02010;C.</given-names></name><xref ref-type="aff" rid="cge13487-aff-0003">
+<sup>3</sup>
+</xref></contrib></contrib-group><aff id="cge13487-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Pediatric Dentistry &#x00026; Dental Research Institute, School of Dentistry</named-content>
+<institution>Seoul National University</institution>
+<named-content content-type="city">Seoul</named-content>
+<country country="KR">Republic of Korea</country>
+</aff><aff id="cge13487-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Department of Molecular Genetics &#x00026; the Dental Research Institute, School of Dentistry</named-content>
+<institution>Seoul National University</institution>
+<named-content content-type="city">Seoul</named-content>
+<country country="KR">Republic of Korea</country>
+</aff><aff id="cge13487-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Department of Biologic and Materials Sciences</named-content>
+<institution>University of Michigan School of Dentistry</institution>
+<named-content content-type="city">Ann Arbor</named-content>
+<named-content content-type="country-part">Michigan</named-content>
+</aff><aff id="cge13487-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Pedodontics, Faculty of Dentistry</named-content>
+<institution>Istanbul University</institution>
+<named-content content-type="city">Istanbul</named-content>
+<country country="TR">Turkey</country>
+</aff><aff id="cge13487-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">Division of Biosciences</named-content>
+<institution>The Ohio State University, College of Dentistry</institution>
+<named-content content-type="city">Columbus</named-content>
+<named-content content-type="country-part">Ohio</named-content>
+</aff><aff id="cge13487-aff-0006">
+<label><sup>6</sup></label>
+<named-content content-type="organisation-division">Department of Pedodontics, Faculty of Dentistry</named-content>
+<institution>Istanbul Medipol University</institution>
+<named-content content-type="city">Istanbul</named-content>
+<country country="TR">Turkey</country>
+</aff><aff id="cge13487-aff-0007">
+<label><sup>7</sup></label>
+<named-content content-type="organisation-division">Department of Anthropology</named-content>
+<institution>Penn State University</institution>
+<named-content content-type="city">University Park</named-content>
+<named-content content-type="country-part">Pennsylvania</named-content>
+</aff><aff id="cge13487-aff-0008">
+<label><sup>8</sup></label>
+<named-content content-type="organisation-division">Department of Internal Medicine, Division of Molecular, Medicine and Genetics</named-content>
+<institution>University of Michigan Medical School</institution>
+<named-content content-type="city">Ann Arbor</named-content>
+<named-content content-type="country-part">Michigan</named-content>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+Jung&#x02010;Wook Kim, Department of Pediatric Dentistry &#x00026; Dental Research Institute, School of Dentistry, Seoul National University, 101 Daehak&#x02010;ro, Jongno&#x02010;gu, Seoul 03080, Republic of Korea.<break/>
+Email: <email>pedoman@snu.ac.kr</email><break/>
+James P. Simmer, Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, 1210 Eisenhower Place, Ann Arbor, MI 48108.<break/>
+Email: <email>jsimmer@umich.edu</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>21</day><month>12</month><year>2018</year></pub-date><pub-date pub-type="ppub"><month>3</month><year>2019</year></pub-date><volume>95</volume><issue>3</issue><issue-id pub-id-type="doi">10.1111/cge.2019.95.issue-3</issue-id><fpage>375</fpage><lpage>383</lpage><history><date date-type="received"><day>26</day><month>10</month><year>2018</year></date><date date-type="rev-recd"><day>26</day><month>11</month><year>2018</year></date><date date-type="accepted"><day>27</day><month>11</month><year>2018</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2019 John Wiley & Sons A/S. Published by John Wiley & Sons Ltd <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2018 The Authors. Clinical Genetics published by John Wiley &#x00026; Sons A/S. Published by John Wiley &#x00026; Sons Ltd.</copyright-statement><license license-type="creativeCommonsBy-nc"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:CGE-95-375.pdf"/><abstract><p>Amelogenesis imperfecta (AI) is a collection of isolated (non&#x02010;syndromic) inherited diseases affecting dental enamel formation or a clinical phenotype in syndromic conditions. We characterized three consanguineous AI families with generalized irregular hypoplastic enamel with rapid attrition that perfectly segregated with homozygous defects in a novel gene: <italic>RELT</italic> that is a member of the tumor necrosis factor receptor superfamily (TNFRSF). RNAscope in situ hybridization of wild&#x02010;type mouse molars and incisors showed specific <italic>Relt</italic> mRNA expression by secretory stage ameloblasts and by odontoblasts. <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> mice generated by CRISPR/Cas9 exhibited incisor and molar enamel malformations. <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> enamel had a rough surface and underwent rapid attrition. Normally unmineralized spaces in the deep enamel near the dentino&#x02010;enamel junction (DEJ) were as highly mineralized as the adjacent enamel, which likely altered the mechanical properties of the DEJ. Phylogenetic analyses showed the existence of selective pressure on <italic>RELT</italic> gene outside of tooth development, indicating that the human condition may be syndromic, which possibly explains the history of small stature and severe childhood infections in two of the probands. Knowing a TNFRSF member is critical during the secretory stage of enamel formation advances our understanding of amelogenesis and improves our ability to diagnose human conditions featuring enamel malformations.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="cge13487-kwd-0001">amelogenesis imperfecta</kwd><kwd id="cge13487-kwd-0002">enamel</kwd><kwd id="cge13487-kwd-0003">hypomineralized</kwd><kwd id="cge13487-kwd-0004"><italic>Relt</italic> knockout</kwd><kwd id="cge13487-kwd-0005">tooth</kwd></kwd-group><funding-group><award-group><funding-source>National Institute of Dental and Craniofacial Research</funding-source><award-id>DE015846DE016276</award-id></award-group><award-group><funding-source>National Research Foundation of Korea</funding-source><award-id>NRF&#x02010;2017R1A2A2A05069281</award-id><award-id>NRF&#x02010;2018R1A5A2024418</award-id></award-group></funding-group><counts><fig-count count="6"/><table-count count="0"/><page-count count="10"/><word-count count="6631"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>cge13487</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>March 2019</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.0 mode:remove_FC converted:27.02.2019</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="cge13487-cit-9001">
+<string-name>
+<surname>Kim</surname>
+<given-names>J&#x02010;W</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>
+<given-names>F</given-names>
+</string-name>, et al. <article-title>Mutations in <italic>RELT</italic> cause autosomal recessive amelogenesis imperfecta</article-title>. <source xml:lang="en">Clin Genet</source>. <year>2019</year>;<volume>95</volume>:<fpage>375</fpage>&#x02013;<lpage>383</lpage>. <pub-id pub-id-type="doi">10.1111/cge.13487</pub-id>
+<pub-id pub-id-type="pmid">30506946</pub-id></mixed-citation>
+</p><fn-group><fn id="cge13487-note-1001"><p>
+<bold>Funding information</bold> National Institute of Dental and Craniofacial Research, Grant/Award Number: DE015846DE016276; National Research Foundation of Korea, Grant/Award Number: NRF&#x02010;2017R1A2A2A05069281NRF&#x02010;2018R1A5A2024418</p></fn></fn-group></notes></front><body><sec id="cge13487-sec-0001"><label>1</label><title>INTRODUCTION</title><p>During tooth development, enamel matrix proteins are secreted by secretory stage ameloblasts into a defined extracellular space that enlarges as the enamel ribbons grow in length.<xref rid="cge13487-bib-0001" ref-type="ref">1</xref> During the secretory stage, the enamel layer expands until it reaches its final dimensions,<xref rid="cge13487-bib-0001" ref-type="ref">1</xref> after which the ameloblasts transition into maturation stage ameloblasts that thicken pre&#x02010;existing enamel crystals and harden the enamel layer as a whole.<xref rid="cge13487-bib-0002" ref-type="ref">2</xref> The findings of this study relate to the secretory stage of amelogenesis. During this stage, the major proteins secreted by secretory stage ameloblasts are enamelin,<xref rid="cge13487-bib-0003" ref-type="ref">3</xref> ameloblastin,<xref rid="cge13487-bib-0004" ref-type="ref">4</xref> amelogenin,<xref rid="cge13487-bib-0005" ref-type="ref">5</xref> and matrix metalloproteinase 20.<xref rid="cge13487-bib-0006" ref-type="ref">6</xref> Evolutionary analyses have showed that the genes encoding these proteins are critical and specific for amelogenesis.<xref rid="cge13487-bib-0007" ref-type="ref">7</xref>, <xref rid="cge13487-bib-0008" ref-type="ref">8</xref>, <xref rid="cge13487-bib-0009" ref-type="ref">9</xref> Individuals with defects in these enamel&#x02010;specific genes suffer from enamel malformations in the absence of systemic abnormalities.<xref rid="cge13487-bib-0010" ref-type="ref">10</xref>, <xref rid="cge13487-bib-0011" ref-type="ref">11</xref>, <xref rid="cge13487-bib-0012" ref-type="ref">12</xref>, <xref rid="cge13487-bib-0013" ref-type="ref">13</xref>
+</p><p>The identities of the major secreted enamel proteins were first discovered through biochemical analyses of developing enamel,<xref rid="cge13487-bib-0014" ref-type="ref">14</xref>, <xref rid="cge13487-bib-0015" ref-type="ref">15</xref> leading to subsequent discoveries that the genes encoding these secreted proteins contributed to the etiologies of inherited enamel defects.<xref rid="cge13487-bib-0016" ref-type="ref">16</xref> In contrast, genes encoding non&#x02010;secreted proteins essential for amelogenesis have been discovered through human genetic studies. Each genetic discovery leads to the generation of mouse models and a better understanding of enamel formation. Because of this underlying genetic complexity, a patient presenting with inherited hypoplastic (thin) enamel could have any of a large number of conditions, isolated or syndromic, that often can't be distinguished at the initial presentation and genetic testing is necessary to establish the diagnosis.</p><p>Despite that many genes known to be involved in the etiology of amelogenesis imperfecta (AI),<xref rid="cge13487-bib-0017" ref-type="ref">17</xref> about half of AI families who undergo genetic testing show no apparent defect in the known AI candidate genes, so it is believed that many genes critical for amelogenesis await discovery.<xref rid="cge13487-bib-0018" ref-type="ref">18</xref>, <xref rid="cge13487-bib-0019" ref-type="ref">19</xref>, <xref rid="cge13487-bib-0020" ref-type="ref">20</xref> Here, we report that mutations in <italic>RELT</italic> (Receptor Expressed in Lymphoid Tissues [MIM: 611211]) cause an autosomal recessive syndromic form of AI. By identifying the genes that cause AI, we improve our understanding of the molecular mechanisms of dental enamel formation and our ability to use genetic tests to determine the etiology of enamel malformations in patients. Knowing the etiology is especially important because the patient learns if the condition is isolated or syndromic, and if therapeutic intervention is available to manage the systemic phenotypes.</p></sec><sec id="cge13487-sec-0002"><label>2</label><title>MATERIALS AND METHODS</title><sec id="cge13487-sec-0003"><label>2.1</label><title>Enrollment of human subjects</title><p>This study was reviewed and approved by the Institution Review Boards at the University of Istanbul, Seoul National University Dental Hospital, and the University of Michigan. Three unrelated Turkish families presenting with non&#x02010;syndromic hypomineralized AI were characterized and recruited by Dr. Seymen and her team. In compliance with the Declaration of Helsinki, subject enrollment, clinical examinations and collection of saliva samples were performed with the understanding and written consent of each participant.</p></sec><sec id="cge13487-sec-0004"><label>2.2</label><title>Approval of animal protocol</title><p>The described animal experiments were conducted according to the basic protocols reviewed and approved by the Institutional Animal Care and Use Committees (IACUC) at the University of Michigan and in an agreement with the US Public Health Service Policy on Humane Care and Use of Laboratory Animals.</p></sec><sec id="cge13487-sec-0005"><label>2.3</label><title>Whole&#x02010;exome sequencing and bioinformatics analysis</title><p>Subject saliva samples were inspected, coded, and 300 &#x003bc;L aliquots were removed for genomic DNA isolation. Genomic DNA quality was assessed by 1.5% agarose gel electrophoresis and quantified using a Qubit Fluorometer (ThermoFisher Scientific, Waltham, Massachusetts). Whole&#x02010;exome sequencing (WES) used DNA samples from probands and selected family members. DNA samples were submitted to Johns Hopkins University Center for Inherited Disease Research (CIDR, Baltimore, Maryland) for WES. Each DNA sample at the concentration of 50 ng/&#x003bc;L, volume of 50 &#x003bc;L, total amount of 2.5 &#x003bc;g was plated onto a 96 well plate. Each sample was genotyped using an Illumina QC Array and characterized by WES. Exome capture was performed using the Agilent SureSelect Human All Exon Enrichment System. Paired&#x02010;end sequencing was generated using the Illumina HiSeq 2500 (Illumina, Inc. San Diego, California). Sequencing reads were aligned to human reference genome hg19 using the Burrows&#x02010;Wheeler Aligner. Following WES, QC report with &#x0003e;100 QC metrics, ANNOVAR annotation, Variant calls (.vcf files), and raw data (BAM files) were available through Aspera File transfer. Secondary data analysis was then conducted by applying an established analyses pipeline using a series of bioinformatics tools, including Samtools, Genome Analysis Tool Kit, Annovar and VarSeq (Golden Helix, Bozeman, Montana). The sequence variants were annotated with The Single Nucleotide Polymorphism Database (dbSNP) build 138 and filtered with a cutoff value of 0.01 for the minor allele frequency. Homozygous variants that segregated with the enamel malformations, showed an minor allele frequency (MAF) &#x0003c;1% in 1000 Genomes or ExAC, and a Sorting Intolerant from Tolerant (SIFT) score less than 0.05 were tabulated (Table S1). <italic>RELT</italic> variations were the only ones that segregated in multiple families and confirmed by Sanger sequencing (Table S2).</p></sec><sec id="cge13487-sec-0006"><label>2.4</label><title>
+<italic>RELT</italic> in situ hybridization</title><p>Maxillae containing developing molars were harvested from postnatal day 5 and 12 pups, and maxilla incisors from adult wild&#x02010;type C57BL/6 mice were formalin&#x02010;fixed, decalcified in a solution of 150 mM NaCl/10% acetic acid, paraffin embedded, microtome sectioned, and deparaffinized in xylene. An antisense <italic>RELT</italic> RNA probe for RNAscope in situ hybridization was designed and produced by Advanced Cell Diagnostics (Newark, California). In situ hybridization with antisense <italic>RELT</italic> probe was performed on deparaffinized histological sections and visualized with fast red dye using hematoxylin as a counterstain.</p></sec><sec id="cge13487-sec-0007"><label>2.5</label><title>In vitro splicing assay</title><p>To characterize the potential effects of the splice junction mutation (c.121&#x02010;2A &#x0003e; G), an in vitro splicing assay was performed. A <italic>RELT</italic> genomic fragment inclusive of exon 3, intron 3, and exon 4 was amplified (primers: 5&#x02032;&#x02010;GGTCCCTACCACTGGGGTTT&#x02010;3&#x02032; and 5&#x02032;&#x02010;CCATTTCACAGAT GGGAAGAA&#x02010;3&#x02032;) using Hipi Super DNA polymerase (Elpis biotech, Daejeon, Korea) and the genomic DNA of the proband's heterozygous father (IV:6) as template. The 589 bp amplification products (which included the mutated and wild&#x02010;type segment) were cloned into the pTop TA V2 cloning vector (Enzynomics, Seoul, Korea) and subcloned into the pSPL3 vector after being double digested with <italic>Bam</italic>HI and <italic>Eco</italic>RI restriction endonucleases. Wild&#x02010;type and mutant allelic variants in the pSPL3 vector were identified by DNA sequencing and transfected into COS&#x02010;7 cells. Total RNA was isolated after 48 hours. Reverse transcriptase&#x02010;polymerase chain reaction (PCR) was performed using the vector primers (SD6: TCTGAGTCACCTGGACAACC; SA2: ATCTCAGTGGTATTTGTGAGC). The amplification bands were excised from an agarose gel and characterized by sequencing.</p></sec><sec id="cge13487-sec-0008"><label>2.6</label><title>Dissecting microscopy</title><p>Two&#x02010;week&#x02010;old mice were anesthetized with isoflurane for bodyweight assessment and facial photos. Next, they were sacrificed and perfused with 1&#x000d7; phosphate&#x02010;buffered saline (PBS) for 10 minutes. Their mandibles were denuded of soft tissues, post&#x02010;fixed by immersion in 4% paraformaldehyde (PFA), overnight, and rinsed with PBS three times, for 5 minutes each. The teeth were cleaned with 1% bleach (sodium hypochlorite), rinsed with PBS, air dried, displayed on the Nikon SMZ1000 dissection microscope, and photographed using a Nikon DXM1200 digital camera. Detailed methods for the generation of <italic>Relt</italic>
+<sup>&#x02212;</sup> mice using CRISPR/Cas9 (Methods S1), the mouse zygote microinjection procedure (Methods S2), and backscattered scanning electron microscopy of molars and incisors (Methods S3) are provided in the Supplemental Data.</p></sec><sec id="cge13487-sec-0009"><label>2.7</label><title>Germline transmission</title><p>Genotyping assays identified three female and four male G0 founder mice that carried the <italic>Relt</italic> p.P396* mutation, six of these transmitted the mutation through the germline. The G0 founder mice were crossed with C57BL/6 for two generations to dilute any possible off&#x02010;target effect of the CRISPR/cas9 gene editing and to generate offspring for characterization. Six out of seven founders were germline positive. Either the founders or their offspring had no observable change of behaviors and no apparent physical defects from neonatal stage to young adulthood. Genotyping was conducted as described in Table S3 and Figure S1.</p></sec></sec><sec id="cge13487-sec-0010"><label>3</label><title>RESULTS</title><p>We used WES of three consanguineous Turkish AI families to identify homozygous loss&#x02010;of&#x02010;function <italic>RELT</italic> mutations that perfectly segregate with a consistent pattern of dental enamel malformations. The surface of the enamel is rough and often stained, even as the teeth erupt into the oral cavity (Figure <xref rid="cge13487-fig-0001" ref-type="fig">1</xref>). After eruption, the enamel disintegrates from normal function, so that the occlusal enamel on the molars disappears due to attrition, leaving a ring of intact enamel remaining on the sides. The parents reported that the proband of family 1, from a first&#x02010;cousin marriage in generation 3, had frequent throat infections around age 1, but otherwise had no remarkable medical history. The proband was first examined at age 7, displaying mostly a primary dentition (Figure <xref rid="cge13487-fig-0001" ref-type="fig">1</xref>A; Figure S2B). Most of the occlusal enamel had already disappeared from the maxillary and mandibular posterior teeth, which gave the crowns the yellow color of dentin. The occlusal plane had flattened secondary to the advanced enamel attrition. The partially erupted secondary mandibular incisors (#23 and #24) exhibited an amber&#x02010;brown stain and marked surface roughness. The roughness and staining were more evident in the mixed dentition stage at age 10 when the secondary incisors were erupted, but had been spared excessive attrition by an anterior open&#x02010;bite (Figure S2C). The first molars were stained amber&#x02010;brown and had undergone attrition that exposed dentin. At age 10 the proband's weight was 31 kg (50th percentile), and height was 1.25 m, which is 3rd percentile for this age. The identified mutation was a frameshift mutation in <italic>RELT</italic> Exon 10 (c.1169_1170delCT [GenBank: NM_032871.3] or p.Pro390fs*35 [GenBank: NP_116260.2]). This two&#x02010;base&#x02010;pair deletion is found in the dbSNP database (rs772929908) where it is said to have a MAF count = 0.00009/11 (ExAC) or = 0.00008/10 (TOPMED). The unaffected parents (III:6 and III:7) were both heterozygous for this <italic>RELT</italic> mutation while their unaffected sons (IV:1 and IV:2) were both homozygous for the <italic>RELT</italic> reference sequence. Both parents exhibited subtle localized enamel surface roughness and vertical enamel lamellae in their maxillary central incisors (#8 and #9) (Figure S3), while the proband's brothers exhibited enamel that was within normal limits. These findings suggested that there may be a mild enamel phenotype in heterozygous carriers of <italic>RELT</italic> mutations, or background effects.<xref rid="cge13487-bib-0021" ref-type="ref">21</xref>
+</p><fig fig-type="Figure" xml:lang="en" id="cge13487-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Three consanguineous families with ARAI caused by homozygous <italic>RELT</italic> mutations. A, Pedigree of family 1 and the dental phenotype of the proband (IV:3) at age 7. Five members of the family were recruited (asterisks). The enamel phenotype was caused by a homozygous <italic>RELT</italic> frameshift in exon 10 designated NC_000011.10:g.18850_18851delCT; NM_032871.3:c.1169_1170delCT;p.Pro390fs*35. B, Pedigree of family 2 and the dental phenotype of the proband (V:1) at age 14. Four members of this family were recruited (asterisks). The enamel phenotype was caused by a homozygous <italic>RELT</italic> missense mutation in exon 9 designated NC_000011.10:g.19104G&#x0003e;C; NM_032871.3:c.1265G&#x0003e;C; p.Arg422Pro. C, Pedigree of family 3 and the dental phenotype of the proband&#x02019; brother (V:2) at age 13. The cardinal feature of this recessive condition caused by <italic>RELT</italic> mutations is generalized irregular hypoplastic enamel with rapid attrition [Colour figure can be viewed at <ext-link ext-link-type="uri" xlink:href="http://wileyonlinelibrary.com">wileyonlinelibrary.com</ext-link>]</p></caption><graphic id="nlm-graphic-3" xlink:href="CGE-95-375-g001"/></fig><p>Family 2 is a five&#x02010;generation pedigree (Figure <xref rid="cge13487-fig-0001" ref-type="fig">1</xref>B; Figure S4). Both parents (IV:8 and IV:9), the proband (V:1) and her sister (V:2) enrolled in the study. Only the proband was affected. The proband, at age 14, presented with severe generalized enamel attrition. The enamel on the maxillary posterior lingual cusps was already gone. The facial surfaces of the incisors did not look as rough as in family 1, but the enamel here was very thin to non&#x02010;existent. Parents reported that the proband had experienced febrile convulsions, 3 to 4 times, in early childhood that required hospitalization and abundant use of antibiotics. At age 18 the proband's weight was 46.5 kg (fifth percentile) and height was 1.5 m (third percentile). The proband had composite restorations on the labial surface of her maxillary incisors (#7&#x02010;#10) and on the occlusal surface of the molars (Figure S4C). The proband had a full complement of the permanent dentition (32 teeth) in normal occlusion. We identified a <italic>RELT</italic> homozygous missense mutation in Exon 11 (c.1265G&#x0003e;C or p.Arg422Pro) that co&#x02010;segregated with the AI phenotype. This mutation is found in the dbSNP database (rs762816338) where it is said to have a MAF count = 0.00003/4 (ExAC) or = 0.00008/10 (TOPMED). This missense mutation is predicted to interfere with protein function, and has a SIFT score = 0,<xref rid="cge13487-bib-0022" ref-type="ref">22</xref> and a Polyphen2 (HDIV) score = 0.99.<xref rid="cge13487-bib-0023" ref-type="ref">23</xref> The proband was the only recruited individual with both <italic>RELT</italic> alleles mutated. The probands parents (Figure S5) and sister were all heterozygous and unaffected.</p><p>Family 3 has a five&#x02010;generation pedigree (Figure <xref rid="cge13487-fig-0001" ref-type="fig">1</xref>C). Both parents and their two children participated in this study. The affected children were homozygous for a <italic>RELT</italic> splice junction mutation in intron 3 (NC_000011.10: g.14394A&#x0003e;G; NM_032871.3: c.121&#x02010;2A&#x0003e;G) (Figure S6B). The proband (V:1) and her brother (V:2) presented with generalized but irregularly rough hypoplastic enamel that readily abraded from the occlusal surfaces of their posterior teeth (Figure S6). As in the first two families with homozygous <italic>RELT</italic> defects, posterior teeth, but most notably the four first molars rapidly lost virtually all of their occlusal enamel leaving behind a characteristic ring of thin enamel covering the lateral surfaces of the crown. The parents denied that their affected children had experienced any major systemic defects or abnormal medical history. Both parents were heterozygous for the <italic>RELT</italic> splice junction mutation and were unaffected (Figure S7).</p><p>The A to G transition that alters the splice acceptor site at the end of <italic>RELT</italic> intron 3 has not been previously identified in the dbSNP database and must be rare. An &#x0201c;A&#x0201d; in the second nucleotide preceding the start of an exon is highly conserved (~100%) and is considered to be essential for successful RNA splicing.<xref rid="cge13487-bib-0024" ref-type="ref">24</xref> Intron 3 cannot be correctly removed from exon 4 by the spliceosome, so how might the mutated <italic>RELT</italic> transcript be spliced? We performed a mini&#x02010;gene splicing assay (Figure <xref rid="cge13487-fig-0002" ref-type="fig">2</xref>). The results showed that the c.121&#x02010;2A&#x0003e;G mutation is spliced in three ways: retaining intron 3, which is 129 nucleotides in length (does not alter the reading frame) with no in&#x02010;frame translation termination codon, and would cause the insertion of 43 amino acids between Leu40 (exon 3) and Asp41 (exon 4). Exon 4 can be skipped (connecting exons 3 to 5) resulting in the reading frame shift p.Asp41Valfs*26). Exons 3 and 4 can both be skipped causing the reading frame shift p.Leu16Valfs*26. In the cases of frameshifts caused by exon skipping, the likely result would be nonsense mediated decay of the mutant transcripts.</p><fig fig-type="Figure" xml:lang="en" id="cge13487-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>
+<italic>RELT</italic> disease&#x02010;causing mutations. A, <italic>RELT</italic> gene structure of transcript variant 1 (TV1; NM_032871.3). The 11 exons are depicted as vertical boxes. The positions of the three disease&#x02010;causing mutations are shown in red. Below the formal designations of the mutations are shown with respect to the start of the gene reference sequence (NC_000011.10) and the start of translation of the cDNA reference sequence (NM_032871.3) and are shown in bold. The three possible effects of the splice junction mutation, as determined by an in vitro splicing assay (shown in B) are indicated by arrows and include retention of intron 3, deletion of exon 4, and the deletion of exons 3 and 4. B, Agarose gel showing the RT&#x02010;PCR amplification products of an in vitro splicing assay for the wild&#x02010;type (WT) and intron 3 splicing mutant (Mut; c.121&#x02010;2A&#x0003e;G). The numbers to the left indicate the number of bp in the associated marker bands. While the WT construct specifically removed intron 3, the mutant transcript generated all three possibilities: Inclusion of intron 3, skipping of exon 4, and skipping of exons 3 and 4. The <italic>RELT</italic> exons are orange, the splicing vector exons are in blue [Colour figure can be viewed at <ext-link ext-link-type="uri" xlink:href="http://wileyonlinelibrary.com">wileyonlinelibrary.com</ext-link>]</p></caption><graphic id="nlm-graphic-5" xlink:href="CGE-95-375-g002"/></fig><p>Ameloblasts in developing maxillary first molars are in the secretory stage of amelogenesis in D5 molars. Ameloblasts near the cusp tips start to transition into maturation on D6. Most ameloblasts are in the maturation stage in D8 through D14.<xref rid="cge13487-bib-0025" ref-type="ref">25</xref> RNAscope analyses of D5 maxillary first molars detected <italic>Relt</italic> expression throughout the odontoblast and ameloblast layers, strongly supporting the interpretation that secretory stage ameloblasts express <italic>Relt</italic> (Figure <xref rid="cge13487-fig-0003" ref-type="fig">3</xref>A). In contrast by D12, no <italic>Relt</italic> signal was observed in the ameloblast layer, which by that time was comprised of maturation stage ameloblasts (Figure <xref rid="cge13487-fig-0003" ref-type="fig">3</xref>B). <italic>Relt</italic> expression in odontoblasts was greatly reduced, but still detectable. In the continuously growing maxillary incisor, <italic>Relt</italic> signal was specific for secretory ameloblasts and terminated abruptly during their transition to maturation (Figure <xref rid="cge13487-fig-0003" ref-type="fig">3</xref>C). These findings are supported by ameloblast stage&#x02010;specific transcriptome analyses that found ~20&#x02010;fold higher expression of <italic>Relt</italic> in secretory relative to maturation stage ameloblasts.<xref rid="cge13487-bib-0026" ref-type="ref">26</xref>
+</p><fig fig-type="Figure" xml:lang="en" id="cge13487-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>
+<italic>Relt</italic> in situ hybridization in developing mouse teeth. A, D5 maxillary molars (M1 and M2) exhibited active <italic>Relt</italic> expression in secretory stage ameloblasts and odontoblasts. Presecretory stage ameloblasts near the cervical area were negative. B, Maxillary molars from postnatal D12 displayed no <italic>Relt</italic> expression in maturation stage ameloblasts, but showed residual expression in odontoblasts. Maturation stage ameloblasts of the first molar mesial cusp were negative. C, Adult maxillary incisor ISH confirmed secretory stage&#x02010;specific <italic>Relt</italic> expression in ameloblasts. <italic>Relt</italic> signal started abruptly in pre&#x02010;ameloblasts (single arrowhead) and ended abruptly in transition stage ameloblasts (double arrowheads). <italic>Relt</italic> expression in odontoblasts persisted, but decreased in intensity over time. Am, ameloblasts; d, dentin; e, enamel; Od, odontoblasts; P, pulp [Colour figure can be viewed at <ext-link ext-link-type="uri" xlink:href="http://wileyonlinelibrary.com">wileyonlinelibrary.com</ext-link>]</p></caption><graphic id="nlm-graphic-7" xlink:href="CGE-95-375-g003"/></fig><p>To gain additional evidence that <italic>RELT</italic> mutations cause the enamel phenotype in our AI families and to better understand the function of RELT during amelogenesis we used the CRISP/Cas9 system to generate a <italic>Relt</italic>
+<sup>&#x02212;</sup> allele in mice. We introduced a premature termination codon in the codon for Pro396 (p.Pro396*), which is homologous to human Pro390 and potentially analogous to the p.Pro390Rfs*35 mutation afflicting family 1. Six C57BL/6 <italic>Relt</italic> founders were identified with germline transmission of the <italic>Relt</italic> p.Pro396* mutation. The first heterozygous sib&#x02010;pair breeding generated a litter with seven pups: four females; three males, and two <italic>Relt</italic>
+<sup>+/+</sup> (wild&#x02010;type), three <italic>Relt</italic>
+<sup>+/&#x02212;</sup> heterozygous, and two <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> (null) mice. There was no apparent correlation between bodyweight and genotype. At 2&#x02010;weeks postnatal (D14), the mice were weighed and ranged in weight from 6.1 to 7.2 g. They were then sacrificed, genotyped, and their dentitions characterized. The incisors were photographed in situ under a dissecting microscope (Figure <xref rid="cge13487-fig-0004" ref-type="fig">4</xref>; Figure S8). No significant enamel attrition was evident, although none was expected as the mice had not yet been weaned. The <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> incisor enamel exhibited a rough surface texture relative to the <italic>Relt</italic>
+<sup>+/+</sup> and <italic>Relt</italic>
+<sup>+/&#x02212;</sup> mice. Backscattered scanning electron microscopy (bSEM) imaging of D14 incisor cross sections at level 8 (even with the alveolar crest after the enamel has formed but has not yet entered the oral cavity) showed that the <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> incisor enamel was of normal thickness but rough&#x02010;surfaced and generally hypomineralized.</p><fig fig-type="Figure" xml:lang="en" id="cge13487-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Incisors of 2&#x02010;week&#x02010;old (D14) <italic>Relt</italic> mice. Three genotypes were compared: wild&#x02010;type (<italic>Relt</italic>
+<sup>+/+</sup>; left), heterozygous (<italic>Relt</italic>
+<sup>+/&#x02212;</sup>; center) and homozygous (<italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup>; right). <italic>Top</italic>: Photographs of the mouse incisors show that the <italic>Relt</italic> null enamel is less translucent, chalkier, and has a rough surface, while the heterozygous incisors are similar to those of the wild&#x02010;type. <italic>Middle</italic>: Backscattered SEM images of the incisors at the level of the alveolar crest. The enamel layer as a whole is of similar thickness in all three genotypes. The <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> enamel layer is darker (hypomineralized) relative to the wild&#x02010;type and heterozygous enamel, except at the DEJ where the <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> enamel shows a distinct white line (arrowheads). <italic>Bottom</italic>: Five&#x02010;level color mapping highlights differences in the degree of mineralization at the DEJ: Red &#x0003e; orange &#x0003e; blue &#x0003e; black &#x0003e; white. For pseudo colorization of the images, gray levels 1 to 66 were assigned as black, 67 to 85 as white, 86 to 123 as blue, 124 to 137 as orange, and 138 and above as red (the gray range of the whole &#x000d7;5000 image are 55 to 160). Importantly, the normally empty (white and black) spaces where the rods are forming on the initial enamel, are filled with more fully mineralized enamel (red) in the <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> mice. b, bone; d, dentin; e, enamel, p, pulp [Colour figure can be viewed at <ext-link ext-link-type="uri" xlink:href="http://wileyonlinelibrary.com">wileyonlinelibrary.com</ext-link>]</p></caption><graphic id="nlm-graphic-9" xlink:href="CGE-95-375-g004"/></fig><p>A surprising finding was that although the <italic>Relt</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> enamel layer was generally hypomineralized, it lacked the poorly mineralized spaces of normal enamel near the dentino&#x02010;enamel junction (DEJ) where enamel rods extend from the initial enamel in the incisors (Figure <xref rid="cge13487-fig-0004" ref-type="fig">4</xref>; Figure S8) and molars (Figure <xref rid="cge13487-fig-0005" ref-type="fig">5</xref>; Figure S9).<xref rid="cge13487-bib-0027" ref-type="ref">27</xref>, <xref rid="cge13487-bib-0028" ref-type="ref">28</xref>, <xref rid="cge13487-bib-0029" ref-type="ref">29</xref>, <xref rid="cge13487-bib-0030" ref-type="ref">30</xref> These curious spaces are vacancies in the deep enamel near the DEJ that were originally occupied (during early enamel formation) by a secretory ameloblast incipient Tomes' process.<xref rid="cge13487-bib-0030" ref-type="ref">30</xref>
+</p><fig fig-type="Figure" xml:lang="en" id="cge13487-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>bSEM of Unerupted (D14) mandibular molars. Three genotypes were compared: wild&#x02010;type (<italic>Relt</italic>
+<sup>+/+</sup>; left), heterozygous (<italic>Relt</italic>
+<sup>+/&#x02212;</sup>; center) and homozygous (<italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup>; right). Two mice were examined for each genotype. All mice were littermates. <italic>Top</italic>: The D14 is the last day the mandibular first molar can be examined prior to its eruption into the oral cavity, where it might undergo rapid attrition if the enamel is defective. The wild&#x02010;type (<italic>Relt</italic>
+<sup>+/+</sup>; left) and heterozygous (<italic>Relt</italic>
+<sup>+/&#x02212;</sup>; middle) molars show a similar surface texture, whereas the enamel on the homozygous mutant (<italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup>; right) molars is rough and bulbous. <italic>Bottom</italic>: bSEM images of polished sections through the mesial cusps of D14 mandibular first molars. The &#x0201c;holes&#x0201d; at the base of the rods near the DEJ (arrowheads) in <italic>Relt</italic>
+<sup>+/+</sup> and <italic>Relt</italic>
+<sup>+/&#x02212;</sup> are mineralized in the <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> mice. b, bone; d, dentin; e, enamel, p, pulp</p></caption><graphic id="nlm-graphic-11" xlink:href="CGE-95-375-g005"/></fig></sec><sec id="cge13487-sec-0011"><label>4</label><title>DISCUSSION</title><p>RELT is a member of the tumor necrosis factor receptor (TNFR) superfamily that typically bind to members of the tumor necrosis factor (TNF) superfamily of signaling molecules that generally serve to regulate inflammation, cellular proliferation, apoptosis, and morphogenesis.<xref rid="cge13487-bib-0031" ref-type="ref">31</xref> TNF is the largest family of cytokines known,<xref rid="cge13487-bib-0032" ref-type="ref">32</xref> with at least 19 TNFs and 29 TNFRs having been identified.<xref rid="cge13487-bib-0031" ref-type="ref">31</xref> A synonym for RELT is tumor necrosis factor receptor superfamily, member 19&#x02010;like (TNFRSF19L). Each tumor necrosis factor is able to interact with one to five TNFRs, whereas each receptor can only interact with one to three different TNFs.<xref rid="cge13487-bib-0033" ref-type="ref">33</xref> Such interactions typically involve one trimeric TNF, which engages three monomeric receptors to activate intracellular signaling pathways.<xref rid="cge13487-bib-0033" ref-type="ref">33</xref> RELT was first discovered as an expressed sequence tag (EST) showing homology to other TNFRs.<xref rid="cge13487-bib-0034" ref-type="ref">34</xref> Multiple tissue Northern blots of a panel of normal tissues (not including developing teeth) showed the highest RELT expression in hematopoietic tissues.<xref rid="cge13487-bib-0035" ref-type="ref">35</xref>
+</p><p>When the full complement of 19 known TNF ligands was tested for their ability to bind to any of the 29 known TNF receptors, no TNF bound to RELT. As interactions were tested in both human and mouse, it was thought unlikely that an interaction between RELT and a known TNF ligand would not have been missed, although RELT binding to heterotrimeric TNFs was not tested and could not be ruled out.<xref rid="cge13487-bib-0033" ref-type="ref">33</xref> The physiological ligand for RELT is still unknown. in vitro studies have suggested that RELT stimulates the proliferation of T&#x02010;cells,<xref rid="cge13487-bib-0034" ref-type="ref">34</xref> and can induce apoptosis.<xref rid="cge13487-bib-0036" ref-type="ref">36</xref>, <xref rid="cge13487-bib-0037" ref-type="ref">37</xref> Proliferation and apoptosis, however, are not normal activities of secretory stage ameloblasts. Secretory stage ameloblasts are terminally differentiated and do not proliferate.<xref rid="cge13487-bib-0038" ref-type="ref">38</xref>, <xref rid="cge13487-bib-0039" ref-type="ref">39</xref>, <xref rid="cge13487-bib-0040" ref-type="ref">40</xref> While apoptosis is common in maturation stage ameloblasts, secretory stage ameloblasts do not normally undergo apoptosis.<xref rid="cge13487-bib-0002" ref-type="ref">2</xref>, <xref rid="cge13487-bib-0040" ref-type="ref">40</xref> Therefore, during the specific interval when ameloblasts express RELT, cell proliferation and apoptosis are not stimulated. This is also true for the differentiated odontoblasts that were also RELT positive.<xref rid="cge13487-bib-0038" ref-type="ref">38</xref>, <xref rid="cge13487-bib-0041" ref-type="ref">41</xref>, <xref rid="cge13487-bib-0042" ref-type="ref">42</xref> The signaling molecule(s) that stimulate RELT are unknown and may not belong to the TNF superfamily. The observation that RELT behaves differently in other contexts suggests that its function is context dependent, so understanding RELT's function in secretory ameloblasts will require studying it in developing teeth. RELT context&#x02010;dependence could be mediated by phosphorylation or interactions with intracellular proteins. RELT can be phosphorylated by oxidative stress&#x02010;responsive 1 kinase (<italic>OXSR1</italic> [OMIM: 604046]).<xref rid="cge13487-bib-0043" ref-type="ref">43</xref> A possible intracellular interaction between RELT and phospholipid scramblase 1 (PLSCR1) was identified by yeast two&#x02010;hybrid screening.<xref rid="cge13487-bib-0044" ref-type="ref">44</xref>
+</p><p>A phylogenetic comparison of RELT amino acid sequences (Figure S10) reveals that the <italic>Relt</italic> gene is functional in cartilaginous vertebrates (<italic>Callorhinchus</italic> and <italic>Rhincodon</italic>), so the gene preceded the invention of enamel during evolution. <italic>Relt</italic> can also be found in teleosts (<italic>Danio</italic>), turtles (<italic>Pelodiscus</italic>), birds (<italic>Gallus; Meleagris</italic>), Aardvark (<italic>Orycteropus</italic>), Hoffmann's two toed sloth (<italic>Choloepus hoffmanni</italic>), Armadillo (<italic>Dasypus</italic>), Pangolin (<italic>Manis</italic>) and Baleen whales (<italic>Balaenoptera</italic>), which either do not make teeth at all, or do not make dental enamel specifically (Figure S10). Therefore, RELT originally functioned in other contexts before being co&#x02010;opted by ameloblasts for enamel formation. Selection pressure maintains a viable <italic>RELT</italic> gene in many tetrapods that lost the ability to make teeth or enamel during evolution, so RELT likely serves a critical function outside of amelogenesis in humans. Perhaps the short stature or unusual histories of severe infections in early childhood in the probands from two of our three families are part of the <italic>RELT</italic> phenotype. No other phenotypes were observed clinically or were reported in the medical histories of the affected individuals in our three families. The chief complaint was enamel malformations. The phylogenetic analysis is not consistent with the condition being non&#x02010;syndromic, so an isolated AI phenotype caused by <italic>RELT</italic> defects should not be assumed. An instructive example is the case of WD repeat&#x02010;containing protein 72 (<italic>WDR72</italic>; OMIM *613214), which causes an autosomal recessive form of hypomaturation AI.<xref rid="cge13487-bib-0045" ref-type="ref">45</xref> Phylogenetic analyses showed the presence of an intact <italic>Wdr72</italic> gene in the Chinese pangolin and three types of baleen whales that don't make teeth, and in the aardvark, nine&#x02010;banded armadillo, Hoffmann's two&#x02010;toed sloth that make enamel&#x02010;less teeth.<xref rid="cge13487-bib-0046" ref-type="ref">46</xref> The observation of intact genes in these vertebrates contrasts with genes that are truly specialized for amelogenesis, which become pseudogenized in these species.<xref rid="cge13487-bib-0009" ref-type="ref">9</xref> Recently, <italic>WDR72</italic> defects were shown to cause AI with distal renal tubular acidosis (dRTA).<xref rid="cge13487-bib-0047" ref-type="ref">47</xref> We expect further information about the range of enamel malformations and other phenotypes associated with <italic>RELT</italic> defects will be forthcoming as more <italic>RELT</italic>
+<sup>&#x02212;/&#x02212;</sup> patients are identified and the <italic>Relt</italic>
+<sup>&#x02212;/&#x02212;</sup> mice are better characterized.</p></sec><sec sec-type="COI-statement" id="cge13487-sec-0013"><title>CONFLICTS OF INTEREST</title><p>The authors declare no conflict of interests with respect to the authorship and publication of this article.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data" id="cge13487-supitem-0001"><caption><p>Appendix S1.</p></caption><media xlink:href="CGE-95-375-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="cge13487-sec-0012"><title>ACKNOWLEDGMENTS</title><p>We thank Tameka U. Shelford, M.A., Project Manager and Senior Research Program Coordinator at the Johns Hopkins Genomics Center for Inherited Disease Research (CIDR) for managing the whole&#x02010;exome sequencing of the study samples. This work was supported by grants by the National Research Foundation of Korea (NRF) funded by the Korea government (NRF&#x02010;2017R1A2A2A05069281 and NRF&#x02010;2018R1A5A2024418) and NIDCR/NIH grants DE015846 (J.H.) and DE016276 (J.B.). We acknowledge Galina Gavrilina &#x00026; Wanda Fillipak, for preparation of transgenic mice and the Transgenic Animal Model Core of the University of Michigan&#x02019;s Biomedical Research Core Facilities. WES data of this study are available on the dbGaP. The dbGaP study accession number is phs001491.v1.p1, and the title of the study is &#x0201c;Genetics of Disorders Affecting Tooth Structure, Number, Morphology and Eruption.&#x0201d; The authors declare that all other data supporting the findings of this study are available within the paper and its supplementary information files.</p></ack><ref-list id="cge13487-bibl-0001" content-type="cited-references"><title>REFERENCES</title><ref id="cge13487-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="cge13487-cit-0001">
+<string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Papagerakis</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>, et al. <article-title>Regulation of dental enamel shape and hardness</article-title>. <source xml:lang="en">J Dent Res</source>. <year>2010</year>;<volume>89</volume>(<issue>10</issue>):<fpage>1024</fpage>&#x02010;<lpage>1038</lpage>.<pub-id pub-id-type="pmid">20675598</pub-id></mixed-citation></ref><ref id="cge13487-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="cge13487-cit-0002">
+<string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>. <article-title>Cellular and chemical events during enamel maturation</article-title>. <source xml:lang="en">Crit Rev Oral Biol Med</source>. <year>1998</year>;<volume>9</volume>(<issue>2</issue>):<fpage>128</fpage>&#x02010;<lpage>161</lpage>.<pub-id pub-id-type="pmid">9603233</pub-id></mixed-citation></ref><ref id="cge13487-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="cge13487-cit-0003">
+<string-name>
+<surname>Hu</surname>
+<given-names>CC</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Uchida</surname>
+<given-names>T</given-names>
+</string-name>, et al. <article-title>Cloning and characterization of porcine enamelin mRNAs</article-title>. <source xml:lang="en">J Dent Res</source>. <year>1997</year>;<volume>76</volume>(<issue>11</issue>):<fpage>1720</fpage>&#x02010;<lpage>1729</lpage>.<pub-id pub-id-type="pmid">9372788</pub-id></mixed-citation></ref><ref id="cge13487-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="cge13487-cit-0004">
+<string-name>
+<surname>Krebsbach</surname>
+<given-names>PH</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>SK</given-names>
+</string-name>, <string-name>
+<surname>Matsuki</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Kozak</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Full&#x02010;length sequence, localization, and chromosomal mapping of ameloblastin: a novel tooth&#x02010;specific gene</article-title>. <source xml:lang="en">J Biol Chem</source>. <year>1996</year>;<volume>271</volume>(<issue>8</issue>):<fpage>4431</fpage>&#x02010;<lpage>4435</lpage>.<pub-id pub-id-type="pmid">8626794</pub-id></mixed-citation></ref><ref id="cge13487-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="cge13487-cit-0005">
+<string-name>
+<surname>Snead</surname>
+<given-names>ML</given-names>
+</string-name>, <string-name>
+<surname>Lau</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name>
+<surname>Zeichner&#x02010;David</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fincham</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name>
+<surname>Woo</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Slavkin</surname>
+<given-names>HC</given-names>
+</string-name>. <article-title>DNA sequence for cloned cDNA for murine amelogenin reveal the amino acid sequence for enamel&#x02010;specific protein</article-title>. <source xml:lang="en">Biochem Biophys Res Commun</source>. <year>1985</year>;<volume>129</volume>:<fpage>812</fpage>&#x02010;<lpage>818</lpage>.<pub-id pub-id-type="pmid">4015654</pub-id></mixed-citation></ref><ref id="cge13487-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="cge13487-cit-0006">
+<string-name>
+<surname>Bartlett</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Xue</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Margolis</surname>
+<given-names>HC</given-names>
+</string-name>, <string-name>
+<surname>Moreno</surname>
+<given-names>EC</given-names>
+</string-name>. <article-title>Molecular cloning and mRNA tissue distribution of a novel matrix metalloproteinase isolated from porcine enamel organ</article-title>. <source xml:lang="en">Gene</source>. <year>1996</year>;<volume>183</volume>:<fpage>123</fpage>&#x02010;<lpage>128</lpage>.<pub-id pub-id-type="pmid">8996096</pub-id></mixed-citation></ref><ref id="cge13487-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="cge13487-cit-0007">
+<string-name>
+<surname>Meredith</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Murphy</surname>
+<given-names>WJ</given-names>
+</string-name>, <string-name>
+<surname>Ryder</surname>
+<given-names>OA</given-names>
+</string-name>, <string-name>
+<surname>Springer</surname>
+<given-names>MS</given-names>
+</string-name>. <article-title>Molecular decay of the tooth gene Enamelin (ENAM) mirrors the loss of enamel in the fossil record of placental mammals</article-title>. <source xml:lang="en">PLoS Genet</source>. <year>2009</year>;<volume>5</volume>(<issue>9</issue>):<fpage>e1000634</fpage>.<pub-id pub-id-type="pmid">19730686</pub-id></mixed-citation></ref><ref id="cge13487-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="cge13487-cit-0008">
+<string-name>
+<surname>Meredith</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Cheng</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Springer</surname>
+<given-names>MS</given-names>
+</string-name>. <article-title>Pseudogenization of the tooth gene enamelysin (MMP20) in the common ancestor of extant baleen whales</article-title>. <source xml:lang="en">Proc Biol Sci</source>. <year>2011</year>;<volume>278</volume>(<issue>1708</issue>):<fpage>993</fpage>&#x02010;<lpage>1002</lpage>.<pub-id pub-id-type="pmid">20861053</pub-id></mixed-citation></ref><ref id="cge13487-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="cge13487-cit-0009">
+<string-name>
+<surname>Meredith</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Springer</surname>
+<given-names>MS</given-names>
+</string-name>. <article-title>Molecular decay of enamel matrix protein genes in turtles and other edentulous amniotes</article-title>. <source xml:lang="en">BMC Evol Biol</source>. <year>2013</year>;<volume>13</volume>:<fpage>20</fpage>.<pub-id pub-id-type="pmid">23342979</pub-id></mixed-citation></ref><ref id="cge13487-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="cge13487-cit-0010">
+<string-name>
+<surname>Lagerstr&#x000f6;m</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Dahl</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Nakahori</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>A deletion in the amelogenin gene (AMG) causes X&#x02010;linked amelogenesis imperfecta (AIH1)</article-title>. <source xml:lang="en">Genomics</source>. <year>1991</year>;<volume>10</volume>(<issue>4</issue>):<fpage>971</fpage>&#x02010;<lpage>975</lpage>.<pub-id pub-id-type="pmid">1916828</pub-id></mixed-citation></ref><ref id="cge13487-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="cge13487-cit-0011">
+<string-name>
+<surname>Rajpar</surname>
+<given-names>MH</given-names>
+</string-name>, <string-name>
+<surname>Harley</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Laing</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Davies</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>Dixon</surname>
+<given-names>MJ</given-names>
+</string-name>. <article-title>Mutation of the gene encoding the enamel&#x02010;specific protein, enamelin, causes autosomal&#x02010;dominant amelogenesis imperfecta</article-title>. <source xml:lang="en">Hum Mol Genet</source>. <year>2001</year>;<volume>10</volume>(<issue>16</issue>):<fpage>1673</fpage>&#x02010;<lpage>1677</lpage>.<pub-id pub-id-type="pmid">11487571</pub-id></mixed-citation></ref><ref id="cge13487-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="cge13487-cit-0012">
+<string-name>
+<surname>Kim</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Hart</surname>
+<given-names>TC</given-names>
+</string-name>, et al. <article-title>MMP&#x02010;20 mutation in autosomal recessive pigmented hypomaturation amelogenesis imperfecta</article-title>. <source xml:lang="en">J Med Genet</source>. <year>2005</year>;<volume>42</volume>(<issue>3</issue>):<fpage>271</fpage>&#x02010;<lpage>275</lpage>.<pub-id pub-id-type="pmid">15744043</pub-id></mixed-citation></ref><ref id="cge13487-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="cge13487-cit-0013">
+<string-name>
+<surname>Poulter</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Murillo</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Brookes</surname>
+<given-names>SJ</given-names>
+</string-name>, et al. <article-title>Deletion of ameloblastin exon 6 is associated with amelogenesis imperfecta</article-title>. <source xml:lang="en">Hum Mol Genet</source>. <year>2014</year>;<volume>23</volume>(<issue>20</issue>):<fpage>5317</fpage>&#x02010;<lpage>5324</lpage>.<pub-id pub-id-type="pmid">24858907</pub-id></mixed-citation></ref><ref id="cge13487-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="cge13487-cit-0014">
+<string-name>
+<surname>Fukae</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ijiri</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Shimizu</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Partial amino acid sequences of two proteins in developing porcine enamel</article-title>. <source xml:lang="en">J Dent Res</source>. <year>1979</year>;<volume>58</volume>(<issue>Spec Issue B</issue>):<fpage>1000</fpage>&#x02010;<lpage>1001</lpage>.<pub-id pub-id-type="pmid">283102</pub-id></mixed-citation></ref><ref id="cge13487-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="cge13487-cit-0015">
+<string-name>
+<surname>Fukae</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Nonamelogenin components of porcine enamel in the protein fraction free from the enamel crystals</article-title>. <source xml:lang="en">Calcif Tissue Int</source>. <year>1987</year>;<volume>40</volume>(<issue>5</issue>):<fpage>286</fpage>&#x02010;<lpage>293</lpage>.<pub-id pub-id-type="pmid">3034388</pub-id></mixed-citation></ref><ref id="cge13487-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="cge13487-cit-0016">
+<string-name>
+<surname>Kim</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>
+<given-names>BP</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>JC</given-names>
+</string-name>. <article-title>Mutational analysis of candidate genes in 24 amelogenesis imperfecta families</article-title>. <source xml:lang="en">Eur J Oral Sci</source>. <year>2006</year>;<volume>114</volume>(<issue>suppl 1</issue>):<fpage>3</fpage>&#x02010;<lpage>12</lpage>.<pub-id pub-id-type="pmid">16674655</pub-id></mixed-citation></ref><ref id="cge13487-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="cge13487-cit-0017">
+<string-name>
+<surname>Smith</surname>
+<given-names>CEL</given-names>
+</string-name>, <string-name>
+<surname>Poulter</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Antanaviciute</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Amelogenesis imperfecta; genes, proteins, and pathways</article-title>. <source xml:lang="en">Front Physiol</source>. <year>2017</year>;<volume>8</volume>:<fpage>435</fpage>.<pub-id pub-id-type="pmid">28694781</pub-id></mixed-citation></ref><ref id="cge13487-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="cge13487-cit-0018">
+<string-name>
+<surname>Chan</surname>
+<given-names>HC</given-names>
+</string-name>, <string-name>
+<surname>Estrella</surname>
+<given-names>NM</given-names>
+</string-name>, <string-name>
+<surname>Milkovich</surname>
+<given-names>RN</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>. <article-title>Hu JC. Target gene analyses of 39 amelogenesis imperfecta kindreds</article-title>. <source xml:lang="en">Eur J Oral Sci</source>. <year>2011</year>;<volume>119</volume>(<issue>suppl 1</issue>):<fpage>311</fpage>&#x02010;<lpage>323</lpage>.<pub-id pub-id-type="pmid">22243262</pub-id></mixed-citation></ref><ref id="cge13487-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="cge13487-cit-0019">
+<string-name>
+<surname>Wright</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name>
+<surname>Torain</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Long</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>Amelogenesis imperfecta: genotype&#x02010;phenotype studies in 71 families</article-title>. <source xml:lang="en">Cells Tissues Organs</source>. <year>2011</year>;<volume>194</volume>(<issue>2&#x02013;4</issue>):<fpage>279</fpage>&#x02010;<lpage>283</lpage>.<pub-id pub-id-type="pmid">21597265</pub-id></mixed-citation></ref><ref id="cge13487-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="cge13487-cit-0020">
+<string-name>
+<surname>Wright</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name>
+<surname>Carrion</surname>
+<given-names>IA</given-names>
+</string-name>, <string-name>
+<surname>Morris</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>The molecular basis of hereditary enamel defects in humans</article-title>. <source xml:lang="en">J Dent Res</source>. <year>2015</year>;<volume>94</volume>(<issue>1</issue>):<fpage>52</fpage>&#x02010;<lpage>61</lpage>.<pub-id pub-id-type="pmid">25389004</pub-id></mixed-citation></ref><ref id="cge13487-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="cge13487-cit-0021">
+<string-name>
+<surname>Mullis</surname>
+<given-names>MN</given-names>
+</string-name>, <string-name>
+<surname>Matsui</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Schell</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Foree</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Ehrenreich</surname>
+<given-names>IM</given-names>
+</string-name>. <article-title>The complex underpinnings of genetic background effects</article-title>. <source xml:lang="en">Nat Commun</source>. <year>2018</year>;<volume>9</volume>(<issue>1</issue>):<fpage>3548</fpage>.<pub-id pub-id-type="pmid">30224702</pub-id></mixed-citation></ref><ref id="cge13487-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="cge13487-cit-0022">
+<string-name>
+<surname>Sim</surname>
+<given-names>NL</given-names>
+</string-name>, <string-name>
+<surname>Kumar</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Henikoff</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Schneider</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Ng</surname>
+<given-names>PC</given-names>
+</string-name>. <article-title>SIFT web server: predicting effects of amino acid substitutions on proteins</article-title>. <source xml:lang="en">Nucleic Acids Res</source>. <year>2012</year>;<volume>40</volume>(<issue>Web Server issue</issue>):<fpage>W452</fpage>&#x02010;<lpage>W457</lpage>.<pub-id pub-id-type="pmid">22689647</pub-id></mixed-citation></ref><ref id="cge13487-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="cge13487-cit-0023">
+<string-name>
+<surname>Adzhubei</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Jordan</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name>
+<surname>Sunyaev</surname>
+<given-names>SR</given-names>
+</string-name>. <article-title>Predicting functional effect of human missense mutations using PolyPhen&#x02010;2</article-title>. <source xml:lang="en">Curr Protoc Hum Genet</source>. <year>2013</year>;7.20.1&#x02010;7.20.41. Chapter 7: doi:10.1002/0471142905.hg0720s76</mixed-citation></ref><ref id="cge13487-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="cge13487-cit-0024">
+<string-name>
+<surname>Padgett</surname>
+<given-names>RA</given-names>
+</string-name>. <article-title>New connections between splicing and human disease</article-title>. <source xml:lang="en">Trends Genet</source>. <year>2012</year>;<volume>28</volume>(<issue>4</issue>):<fpage>147</fpage>&#x02010;<lpage>154</lpage>.<pub-id pub-id-type="pmid">22397991</pub-id></mixed-citation></ref><ref id="cge13487-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="cge13487-cit-0025">
+<string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>JC</given-names>
+</string-name>. <article-title>Expression of kallikrein&#x02010;related peptidase 4 in dental and non&#x02010;dental tissues</article-title>. <source xml:lang="en">Eur J Oral Sci</source>. <year>2011</year>;<volume>119</volume>(<issue>suppl 1</issue>):<fpage>226</fpage>&#x02010;<lpage>233</lpage>.<pub-id pub-id-type="pmid">22243250</pub-id></mixed-citation></ref><ref id="cge13487-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="cge13487-cit-0026">
+<string-name>
+<surname>Simmer</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>SK</given-names>
+</string-name>, et al. <article-title>Ameloblast transcriptome changes from secretory to maturation stages</article-title>. <source xml:lang="en">Connect Tissue Res</source>. <year>2014</year>;<volume>55</volume>(<issue>suppl 1</issue>):<fpage>29</fpage>&#x02010;<lpage>32</lpage>.<pub-id pub-id-type="pmid">25158176</pub-id></mixed-citation></ref><ref id="cge13487-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="cge13487-cit-0027">
+<string-name>
+<surname>Weber</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Phase microscopic observations of rat incisor enamel</article-title>. <source xml:lang="en">Am J Anat</source>. <year>1965</year>;<volume>117</volume>(<issue>2</issue>):<fpage>233</fpage>&#x02010;<lpage>249</lpage>.<pub-id pub-id-type="pmid">5327452</pub-id></mixed-citation></ref><ref id="cge13487-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="cge13487-cit-0028">
+<string-name>
+<surname>Nylen</surname>
+<given-names>MU</given-names>
+</string-name>, <string-name>
+<surname>Omnell</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Lofgren</surname>
+<given-names>CG</given-names>
+</string-name>. <article-title>An unusual structure associated with the onset of prism formation in rat incisor enamel. An electron microscopic study</article-title>. <source xml:lang="en">Tandlaegebladet</source>. <year>1970</year>;<volume>74</volume>(<issue>6</issue>):<fpage>685</fpage>&#x02010;<lpage>695</lpage>.<pub-id pub-id-type="pmid">5272240</pub-id></mixed-citation></ref><ref id="cge13487-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="cge13487-cit-0029">
+<string-name>
+<surname>Halse</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Electron microprobe analysis of deep layers of rat incisor enamel</article-title>. <source xml:lang="en">Scand J Dent Res</source>. <year>1971</year>;<volume>79</volume>(<issue>6</issue>):<fpage>377</fpage>&#x02010;<lpage>380</lpage>.<pub-id pub-id-type="pmid">5288671</pub-id></mixed-citation></ref><ref id="cge13487-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="cge13487-cit-0030">
+<string-name>
+<surname>Warshawsky</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>A light and electron microscopic study of the nearly mature enamel of rat incisors</article-title>. <source xml:lang="en">Anat Rec</source>. <year>1971</year>;<volume>169</volume>(<issue>3</issue>):<fpage>559</fpage>&#x02010;<lpage>583</lpage>.<pub-id pub-id-type="pmid">4994470</pub-id></mixed-citation></ref><ref id="cge13487-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="cge13487-cit-0031">
+<string-name>
+<surname>Aggarwal</surname>
+<given-names>BB</given-names>
+</string-name>, <string-name>
+<surname>Gupta</surname>
+<given-names>SC</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>JH</given-names>
+</string-name>. <article-title>Historical perspectives on tumor necrosis factor and its superfamily: 25 years later, a golden journey</article-title>. <source xml:lang="en">Blood</source>. <year>2012</year>;<volume>119</volume>(<issue>3</issue>):<fpage>651</fpage>&#x02010;<lpage>665</lpage>.<pub-id pub-id-type="pmid">22053109</pub-id></mixed-citation></ref><ref id="cge13487-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="cge13487-cit-0032">
+<string-name>
+<surname>Cabal&#x02010;Hierro</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Lazo</surname>
+<given-names>PS</given-names>
+</string-name>. <article-title>Signal transduction by tumor necrosis factor receptors</article-title>. <source xml:lang="en">Cell Signal</source>. <year>2012</year>;<volume>24</volume>(<issue>6</issue>):<fpage>1297</fpage>&#x02010;<lpage>1305</lpage>.<pub-id pub-id-type="pmid">22374304</pub-id></mixed-citation></ref><ref id="cge13487-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="cge13487-cit-0033">
+<string-name>
+<surname>Bossen</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Ingold</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Tardivel</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Interactions of tumor necrosis factor (TNF) and TNF receptor family members in the mouse and human</article-title>. <source xml:lang="en">J Biol Chem</source>. <year>2006</year>;<volume>281</volume>(<issue>20</issue>):<fpage>13964</fpage>&#x02010;<lpage>13971</lpage>.<pub-id pub-id-type="pmid">16547002</pub-id></mixed-citation></ref><ref id="cge13487-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="cge13487-cit-0034">
+<string-name>
+<surname>Sica</surname>
+<given-names>GL</given-names>
+</string-name>, <string-name>
+<surname>Zhu</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Tamada</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ni</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>LRELT</given-names>
+</string-name>. <article-title>A new member of the tumor necrosis factor receptor superfamily, is selectively expressed in hematopoietic tissues and activates transcription factor NF&#x02010;kappaB</article-title>. <source xml:lang="en">Blood</source>. <year>2001</year>;<volume>97</volume>(<issue>9</issue>):<fpage>2702</fpage>&#x02010;<lpage>2707</lpage>.<pub-id pub-id-type="pmid">11313261</pub-id></mixed-citation></ref><ref id="cge13487-bib-0035"><label>35</label><mixed-citation publication-type="book" id="cge13487-cit-0035">
+<string-name>
+<surname>Orban</surname>
+<given-names>BJ</given-names>
+</string-name>. <source xml:lang="en">Orban's Oral Histology and Embryology</source>. <edition>10th</edition> ed. <publisher-loc>St. Louis</publisher-loc>: <publisher-name>Mosby</publisher-name>; <year>1986</year>.</mixed-citation></ref><ref id="cge13487-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="cge13487-cit-0036">
+<string-name>
+<surname>Cusick</surname>
+<given-names>JK</given-names>
+</string-name>, <string-name>
+<surname>Mustian</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Goldberg</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Reyland</surname>
+<given-names>ME</given-names>
+</string-name>. <article-title>RELT induces cellular death in HEK 293 epithelial cells</article-title>. <source xml:lang="en">Cell Immunol</source>. <year>2010</year>;<volume>261</volume>(<issue>1</issue>):<fpage>1</fpage>&#x02010;<lpage>8</lpage>.<pub-id pub-id-type="pmid">19969290</pub-id></mixed-citation></ref><ref id="cge13487-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="cge13487-cit-0037">
+<string-name>
+<surname>Moua</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Checketts</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>LG</given-names>
+</string-name>, <string-name>
+<surname>Shu</surname>
+<given-names>HB</given-names>
+</string-name>, <string-name>
+<surname>Reyland</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name>
+<surname>Cusick</surname>
+<given-names>JK</given-names>
+</string-name>. <article-title>RELT family members activate p38 and induce apoptosis by a mechanism distinct from TNFR1</article-title>. <source xml:lang="en">Biochem Biophys Res Commun</source>. <year>2017</year>;<volume>491</volume>(<issue>1</issue>):<fpage>25</fpage>&#x02010;<lpage>32</lpage>.<pub-id pub-id-type="pmid">28688764</pub-id></mixed-citation></ref><ref id="cge13487-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="cge13487-cit-0038">
+<string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Warshawsky</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Cellular renewal in the enamel organ and the odontoblast layer of the rat incisor as followed by radioautography using 3H&#x02010;thymidine</article-title>. <source xml:lang="en">Anat Rec</source>. <year>1975</year>;<volume>183</volume>(<issue>4</issue>):<fpage>523</fpage>&#x02010;<lpage>561</lpage>.<pub-id pub-id-type="pmid">1200409</pub-id></mixed-citation></ref><ref id="cge13487-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="cge13487-cit-0039">
+<string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Warshawsky</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Movement of entire cell populations during renewal of the rat incisor as shown by radoioautography after labeling with 3H&#x02010;thymidine. The concept of a continuously differentiating cross&#x02010;sectional segment. (With an appendix on the development of the periodontal ligament)</article-title>. <source xml:lang="en">Am J Anat</source>. <year>1976</year>;<volume>145</volume>(<issue>2</issue>):<fpage>225</fpage>&#x02010;<lpage>259</lpage>.<pub-id pub-id-type="pmid">1258806</pub-id></mixed-citation></ref><ref id="cge13487-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="cge13487-cit-0040">
+<string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Warshawsky</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Quantitative analysis of cell turnover in the enamel organ of the rat incisor. Evidence for ameloblast death immediately after enamel matrix secretion</article-title>. <source xml:lang="en">Anat Rec</source>. <year>1977</year>;<volume>187</volume>(<issue>1</issue>):<fpage>63</fpage>&#x02010;<lpage>98</lpage>.<pub-id pub-id-type="pmid">835843</pub-id></mixed-citation></ref><ref id="cge13487-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="cge13487-cit-0041">
+<string-name>
+<surname>Chiba</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Cellular proliferation in the tooth germ of the rat incisor</article-title>. <source xml:lang="en">Arch Oral Biol</source>. <year>1965</year>;<volume>10</volume>(<issue>4</issue>):<fpage>707</fpage>&#x02010;<lpage>718</lpage>.<pub-id pub-id-type="pmid">5226834</pub-id></mixed-citation></ref><ref id="cge13487-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="cge13487-cit-0042">
+<string-name>
+<surname>Robins</surname>
+<given-names>MW</given-names>
+</string-name>. <article-title>The proliferation of pulp cells in rat incisors</article-title>. <source xml:lang="en">Arch Oral Biol</source>. <year>1967</year>;<volume>12</volume>(<issue>4</issue>):<fpage>487</fpage>&#x02010;<lpage>501</lpage>.<pub-id pub-id-type="pmid">5227880</pub-id></mixed-citation></ref><ref id="cge13487-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="cge13487-cit-0043">
+<string-name>
+<surname>Cusick</surname>
+<given-names>JK</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>LG</given-names>
+</string-name>, <string-name>
+<surname>Bin</surname>
+<given-names>LH</given-names>
+</string-name>, <string-name>
+<surname>Han</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Shu</surname>
+<given-names>HB</given-names>
+</string-name>. <article-title>Identification of RELT homologues that associate with RELT and are phosphorylated by OSR1</article-title>. <source xml:lang="en">Biochem Biophys Res Commun</source>. <year>2006</year>;<volume>340</volume>(<issue>2</issue>):<fpage>535</fpage>&#x02010;<lpage>543</lpage>.<pub-id pub-id-type="pmid">16389068</pub-id></mixed-citation></ref><ref id="cge13487-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="cge13487-cit-0044">
+<string-name>
+<surname>Cusick</surname>
+<given-names>JK</given-names>
+</string-name>, <string-name>
+<surname>Mustian</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Jacobs</surname>
+<given-names>AT</given-names>
+</string-name>, <string-name>
+<surname>Reyland</surname>
+<given-names>ME</given-names>
+</string-name>. <article-title>Identification of PLSCR1 as a protein that interacts with RELT family members</article-title>. <source xml:lang="en">Mol Cell Biochem</source>. <year>2012</year>;<volume>362</volume>(<issue>1&#x02013;2</issue>):<fpage>55</fpage>&#x02010;<lpage>63</lpage>.<pub-id pub-id-type="pmid">22052202</pub-id></mixed-citation></ref><ref id="cge13487-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="cge13487-cit-0045">
+<string-name>
+<surname>El&#x02010;Sayed</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Parry</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Shore</surname>
+<given-names>RC</given-names>
+</string-name>, et al. <article-title>Mutations in the beta propeller WDR72 cause autosomal&#x02010;recessive hypomaturation amelogenesis imperfecta</article-title>. <source xml:lang="en">Am J Hum Genet</source>. <year>2009</year>;<volume>85</volume>(<issue>5</issue>):<fpage>699</fpage>&#x02010;<lpage>705</lpage>.<pub-id pub-id-type="pmid">19853237</pub-id></mixed-citation></ref><ref id="cge13487-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="cge13487-cit-0046">
+<string-name>
+<surname>Springer</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Starrett</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Morin</surname>
+<given-names>PA</given-names>
+</string-name>, <string-name>
+<surname>Lanzetti</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Hayashi</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Inactivation of C4orf26 in toothless placental mammals</article-title>. <source xml:lang="en">Mol Phylogenet Evol</source>. <year>2016</year>;<volume>95</volume>:<fpage>34</fpage>&#x02010;<lpage>45</lpage>.<pub-id pub-id-type="pmid">26596502</pub-id></mixed-citation></ref><ref id="cge13487-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="cge13487-cit-0047">
+<string-name>
+<surname>Rungroj</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Nettuwakul</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Sawasdee</surname>
+<given-names>N</given-names>
+</string-name>, et al. <article-title>Distal renal tubular acidosis caused by tryptophan&#x02010;aspartate repeat domain 72 (WDR72) mutations</article-title>. <source xml:lang="en">Clin Genet</source>. <year>2018</year>;<volume>20</volume>(<issue>10</issue>):<fpage>13418</fpage>.</mixed-citation></ref></ref-list></back></article>

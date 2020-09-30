@@ -1,0 +1,845 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1d3 20150301//EN" "JATS-archivearticle1.dtd">
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 2?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="iso-abbrev">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2324-9269</journal-id><journal-id journal-id-type="publisher-id">MGG3</journal-id><journal-title-group><journal-title>Molecular Genetics &#x00026; Genomic Medicine</journal-title></journal-title-group><issn pub-type="epub">2324-9269</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1002/mgg3.176</article-id><article-id pub-id-type="publisher-id">MGG3176</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>The dentin phosphoprotein repeat region and inherited defects of dentin</article-title><alt-title alt-title-type="left-running-head">J. Yang <italic>et&#x000a0;al</italic>.</alt-title></title-group><contrib-group><contrib id="mgg3176-cr-0001" contrib-type="author"><name><surname>Yang</surname><given-names>Jie</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="mgg3176-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="mgg3176-cr-0002" contrib-type="author"><name><surname>Kawasaki</surname><given-names>Kazuhiko</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg3176-cr-0003" contrib-type="author"><name><surname>Lee</surname><given-names>Moses</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="mgg3176-cr-0004" contrib-type="author"><name><surname>Reid</surname><given-names>Bryan M.</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3176-cr-0005" contrib-type="author"><name><surname>Nunez</surname><given-names>Stephanie M.</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3176-cr-0006" contrib-type="author"><name><surname>Choi</surname><given-names>Murim</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="mgg3176-cr-0007" contrib-type="author"><name><surname>Seymen</surname><given-names>Figen</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="mgg3176-cr-0008" contrib-type="author"><name><surname>Koruyucu</surname><given-names>Mine</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="mgg3176-cr-0009" contrib-type="author"><name><surname>Kasimoglu</surname><given-names>Yelda</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="mgg3176-cr-0010" contrib-type="author"><name><surname>Estrella&#x02010;Yuson</surname><given-names>Ninna</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0006">
+<sup>6</sup>
+</xref></contrib><contrib id="mgg3176-cr-0011" contrib-type="author"><name><surname>Lin</surname><given-names>Brent P. J.</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0007">
+<sup>7</sup>
+</xref></contrib><contrib id="mgg3176-cr-0012" contrib-type="author" corresp="yes"><name><surname>Simmer</surname><given-names>James P.</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3176-cr-0013" contrib-type="author"><name><surname>Hu</surname><given-names>Jan C.&#x02010;C.</given-names></name><xref ref-type="aff" rid="mgg3176-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="mgg3176-aff-0001"><label><sup>1</sup></label><named-content content-type="organisation-division">Department of Biologic and Materials Sciences</named-content><institution>University of Michigan School of Dentistry</institution><named-content content-type="street">1210 Eisenhower Place</named-content><named-content content-type="city">Ann Arbor</named-content><named-content content-type="country-part">Michigan</named-content></aff><aff id="mgg3176-aff-0002"><label><sup>2</sup></label><named-content content-type="organisation-division">Department of Pediatric Dentistry</named-content><named-content content-type="organisation-division">School and Hospital of Stomatology</named-content><institution>Peking University</institution><named-content content-type="street">22 South Avenue</named-content><named-content content-type="street">Zhongguancun Haidian District</named-content><named-content content-type="city">Beijing</named-content><named-content content-type="post-code">100081</named-content><country country="CN">China</country></aff><aff id="mgg3176-aff-0003"><label><sup>3</sup></label><named-content content-type="organisation-division">Department of Anthropology</named-content><institution>Pennsylvania State University</institution><named-content content-type="city">University Park</named-content><named-content content-type="country-part">Pennsylvania</named-content><named-content content-type="post-code">16802</named-content></aff><aff id="mgg3176-aff-0004"><label><sup>4</sup></label><named-content content-type="organisation-division">Department of Biomedical Sciences</named-content><institution>Seoul National University College of Medicine</institution><named-content content-type="street">275&#x02010;1 Yongon&#x02010;dong, Chongno&#x02010;gu</named-content><named-content content-type="city">Seoul</named-content><named-content content-type="post-code">110&#x02010;768</named-content><country country="KP">Korea</country></aff><aff id="mgg3176-aff-0005"><label><sup>5</sup></label><named-content content-type="organisation-division">Department of Pedodontics</named-content><named-content content-type="organisation-division">Faculty of Dentistry</named-content><institution>Istanbul University</institution><named-content content-type="city">Istanbul</named-content><country country="TR">Turkey</country></aff><aff id="mgg3176-aff-0006"><label><sup>6</sup></label><named-content content-type="organisation-division">Department of Paediatric Dentistry</named-content><institution>Women's and Children's Hospital</institution><named-content content-type="street">72 King William Road</named-content><named-content content-type="city">North Adelaide</named-content><named-content content-type="country-part">South Australia</named-content><named-content content-type="post-code">5006</named-content><country country="AU">Australia</country></aff><aff id="mgg3176-aff-0007"><label><sup>7</sup></label><named-content content-type="organisation-division">Department of Pediatric Dentistry</named-content><named-content content-type="organisation-division">School of Dentistry</named-content><institution>University of California</institution><named-content content-type="city">San Francisco</named-content><named-content content-type="country-part">California</named-content></aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+James P. Simmer, Department of Biologic and Materials Sciences, Dental Research Lab, University of Michigan School of Dentistry, 1210 Eisenhower Pl, Ann Arbor, MI 48108. Tel: 734&#x02010;975&#x02010;9318; Fax: 734&#x02010;975&#x02010;9329; E&#x02010;mail: <email>jsimmer@umich.edu</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>07</day><month>9</month><year>2015</year></pub-date><pub-date pub-type="collection"><month>1</month><year>2016</year></pub-date><volume>4</volume><issue>1</issue><issue-id pub-id-type="doi">10.1002/mgg3.2016.4.issue-1</issue-id><fpage>28</fpage><lpage>38</lpage><history><date date-type="received"><day>25</day><month>6</month><year>2015</year></date><date date-type="rev-recd"><day>05</day><month>8</month><year>2015</year></date><date date-type="accepted"><day>06</day><month>8</month><year>2015</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2016 Wiley Periodicals, Inc. <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2015 The Authors. <italic>Molecular Genetics &#x00026; Genomic Medicine</italic> published by Wiley Periodicals, Inc.</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:MGG3-4-028.pdf"/><abstract abstract-type="main" id="mgg3176-abs-0001"><title>Abstract</title><p>Nonsyndromic dentin defects classified as type <styled-content style="fixed-case">II</styled-content> dentin dysplasia and types <styled-content style="fixed-case">II</styled-content> and <styled-content style="fixed-case">III</styled-content> dentinogenesis imperfecta are caused by mutations in <italic><styled-content style="fixed-case">DSPP</styled-content></italic> (dentin sialophosphoprotein). Most reported disease&#x02010;causing <italic><styled-content style="fixed-case">DSPP</styled-content></italic> mutations occur within the repetitive <styled-content style="fixed-case">DPP</styled-content> (dentin phosphoprotein) coding sequence. We characterized the <styled-content style="fixed-case">DPP</styled-content> sequences of five probands with inherited dentin defects using single molecule real&#x02010;time (<styled-content style="fixed-case">SMRT</styled-content>) <styled-content style="fixed-case">DNA</styled-content> sequencing. Eight of the 10 sequences matched previously reported <styled-content style="fixed-case">DPP</styled-content> length haplotypes and two were novel. Alignment with known <styled-content style="fixed-case">DPP</styled-content> sequences showed 32 indels arranged in 36 different patterns. Sixteen of the 32 indels were not represented in more than one haplotype. The 25 haplotypes with confirmed indels were aligned to generate a tree that describes how the length variations might have evolved. Some indels were independently generated in multiple lines. A previously reported disease&#x02010;causing <italic><styled-content style="fixed-case">DSPP</styled-content></italic> mutation in Family 1 was confirmed and its position clarified (c.3135delC; p.Ser1045Argfs*269). A novel frameshift mutation (c.3504_3508dup; p.Asp1170Alafs*146) caused the dentin defects in Family 2. A <italic><styled-content style="fixed-case">COL</styled-content>1A2</italic> (c.2027G&#x0003e;A or p.Gly676Asp) missense mutation, discovered by whole&#x02010;exome sequencing, caused the dentin defects in Family 3. We conclude that <styled-content style="fixed-case">SMRT</styled-content> sequencing characterizes the <styled-content style="fixed-case">DPP</styled-content> repeat region without cloning and can improve our understanding of normal and pathological length variations in <italic><styled-content style="fixed-case">DSPP</styled-content></italic> alleles.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="mgg3176-kwd-0001">Mutations</kwd><kwd id="mgg3176-kwd-0002">osteogenesis imperfecta</kwd><kwd id="mgg3176-kwd-0003"><styled-content style="fixed-case">SMRT</styled-content> technology</kwd><kwd id="mgg3176-kwd-0004">tooth</kwd><kwd id="mgg3176-kwd-0005">whole&#x02010;exome sequencing</kwd></kwd-group><funding-group><award-group><funding-source>NIDCR/National Institutes of Health</funding-source><award-id>DE015846</award-id></award-group></funding-group><funding-group><award-group><funding-source>Bio &#x00026; Medical Technology Development Program</funding-source><award-id>2011&#x02010;0027790</award-id></award-group></funding-group><funding-group><award-group><funding-source>Science Research Center</funding-source><award-id>2012&#x02010;0000487</award-id></award-group></funding-group><funding-group><award-group><funding-source>Korea Research Foundation</funding-source></award-group></funding-group><funding-group><award-group><funding-source>Korean Government (MEST)</funding-source></award-group></funding-group><funding-group><award-group><funding-source>Yale Center for Mendelian Genomics</funding-source><award-id>NIH U54 HG006504</award-id></award-group></funding-group><counts><page-count count="11"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>mgg3176</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>January 2016</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:4.7.2 mode:remove_FC converted:10.01.2016</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="mgg3176-sec-0001"><title>Introduction</title><p>Nonsyndromic inherited dentin defects are relatively common, with an incidence of one in every 6000 to 8000 persons (Witkop <xref rid="mgg3176-bib-0044" ref-type="ref">1957</xref>; Aplin et&#x000a0;al. <xref rid="mgg3176-bib-0002" ref-type="ref">1995</xref>). Inherited dentin defects, subclassified as dentin dysplasia type II (DD&#x02010;II) and dentinogenesis imperfecta type II and type III (DGI&#x02010;II, DGI&#x02010;III) (Shields et&#x000a0;al. <xref rid="mgg3176-bib-0033" ref-type="ref">1973</xref>), show an autosomal dominant pattern of inheritance and are all caused by mutations in dentin sialophosphoprotein (<italic>DSPP</italic>; OMIM*125485) (Kim and Simmer <xref rid="mgg3176-bib-0018" ref-type="ref">2007</xref>). <italic>DSPP</italic> is a member of the secretory calcium&#x02010;binding phosphoprotein (SCPP) gene family, which all share a common 5&#x02032; region that is descended from an ancestral SPARC&#x02010;like 1 gene (Kawasaki et&#x000a0;al. <xref rid="mgg3176-bib-0017" ref-type="ref">2004</xref>). There are two SCPP subfamilies: the proline/glutamine (P/Q) rich and the acidic genes. In humans there are 18 P/Q&#x02010;rich and 5 acidic SCPP genes. All except <italic>AMELX</italic> (*300391) and <italic>AMELY</italic> (*410000) are clustered on chromosome 4. <italic>DSPP</italic> is a member of the acidic group (also called SIBLINGs or Small Integrin&#x02010;Binding LIgand, N&#x02010;linked Glycoproteins) (Fisher et&#x000a0;al. <xref rid="mgg3176-bib-0012" ref-type="ref">2001</xref>). Features shared by SCPP genes include a conserved signal peptide and signal peptide cleavage site, a short N&#x02010;terminal motif that facilitates trafficking through the secretory pathway (Nam et&#x000a0;al. <xref rid="mgg3176-bib-0028" ref-type="ref">2014</xref>), a near N&#x02010;terminal Golgi casein kinase (G&#x02010;CK) phosphorylation site (Ser&#x02010;X&#x02010;Glu or Ser&#x02010;X&#x02010;pSer; SXE/pS), and phase zero introns (Kawasaki and Weiss <xref rid="mgg3176-bib-0016" ref-type="ref">2003</xref>).</p><p>
+<italic>DSPP</italic> is the most recent member of the acidic SCPP genes to be generated during evolution. <italic>DSPP</italic> is found in mammals and reptiles, but not in amphibians or fish, whereas the other acidic SCPP genes appeared earlier: <italic>DMP1</italic> (*600980), <italic>IBSP</italic> (*147563), and <italic>SPP1</italic> (*166490) are in the Coelacanth (a fish with lobefins and lungs) and <italic>MEPE</italic> is in amphibians. <italic>DSPP</italic> appears to have originated as a duplication of <italic>Dspp like 1</italic> (<italic>Dsppl1</italic>), which is found in Coelacanth and in reptiles, but not in mammals (Kawasaki and Amemiya <xref rid="mgg3176-bib-0015" ref-type="ref">2013</xref>). <italic>Dsppl1</italic> may serve the same function as <italic>DSPP</italic>. When <italic>Dsppl1</italic> duplicated, <italic>DSPP</italic> landed on the other side of <italic>DMP1</italic> within the acidic SCPP gene cluster, and <italic>Dsppl1</italic> was subsequently deleted during the evolution of mammals. Coelacanth <italic>Dsppl1</italic> sequence shows conservation in its 5&#x02032; regulatory region with mammalian <italic>DSPP</italic> (Fig.&#x000a0;S1), which has been studied in mouse and contains important transcriptional <italic>cis</italic>&#x02010;regulatory elements (Feng et&#x000a0;al. <xref rid="mgg3176-bib-0011" ref-type="ref">1998</xref>; Chen et&#x000a0;al. <xref rid="mgg3176-bib-0007" ref-type="ref">2004</xref>).</p><p>
+<italic>DSPP</italic> expression is tooth&#x02010;specific (Chen et&#x000a0;al. <xref rid="mgg3176-bib-0007" ref-type="ref">2004</xref>). No <italic>DSPP</italic> expressed sequence tags (ESTs) are listed among the 3,328,811 characterized from over 40 healthy tissues (excluding developing teeth) in the human EST file for <italic>DSPP</italic> (Hs.678914). DSPP is required for normal dentin formation in mammals, as <italic>Dspp</italic> null mice exhibit severe dentin malformations (Sreenath et&#x000a0;al. <xref rid="mgg3176-bib-0035" ref-type="ref">2003</xref>). <italic>Dspp</italic> is pseudogenized in tetrapods that have lost the ability to make teeth during evolution, including anteaters (McKnight and Fisher <xref rid="mgg3176-bib-0025" ref-type="ref">2009</xref>), turtles (Shaffer et&#x000a0;al. <xref rid="mgg3176-bib-0032" ref-type="ref">2013</xref>), and birds (Kawasaki and Amemiya <xref rid="mgg3176-bib-0015" ref-type="ref">2013</xref>). These findings support the conclusion that DSPP is specialized for the formation of dentin.</p><p>Studies of DSPP protein products isolated from developing porcine and murine dentin have contributed much to our understanding of its structure and posttranslational modifications. Porcine DSPP is secreted as a single protein that is cleaved following its secretion (Tsuchiya et&#x000a0;al. <xref rid="mgg3176-bib-0038" ref-type="ref">2011</xref>). Uncleaved DSPP has been detected in mouse dentin (Sun et&#x000a0;al. <xref rid="mgg3176-bib-0036" ref-type="ref">2010</xref>). The first DSPP cleavage releases dentin phosphoprotein (DPP) from the C&#x02010;terminus. This cleavage is catalyzed by bone morphogenetic protein 1 (BMP1) and related proteases (von Marschall and Fisher <xref rid="mgg3176-bib-0023" ref-type="ref">2010</xref>; Sun et&#x000a0;al. <xref rid="mgg3176-bib-0036" ref-type="ref">2010</xref>; Tsuchiya et&#x000a0;al. <xref rid="mgg3176-bib-0038" ref-type="ref">2011</xref>). Following the release of DPP from the parent DSPP protein, there is a subsequent cleavage that generates dentin glycoprotein (DGP), an 81&#x02010;amino acid domain with four phosphoserines and one N&#x02010;linked glycosylation (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0049" ref-type="ref">2005b</xref>). The cleavage that generates DGP is catalyzed by MMP20 (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0050" ref-type="ref">2006</xref>) and has not been demonstrated to occur in other animal models besides pig. The amount of DGP extracted from pig dentin was reduced by rapid acid extraction, suggesting that some (but not all) of the accumulated DGP was a postmortem artifact. The N&#x02010;terminal domain of DSPP is dentin sialoprotein (DSP), a proteoglycan that binds hyaluronic acid, and forms covalent dimers via a disulfide bridge at Cys<sup>205</sup> (the only cysteine in DSPP). This cysteine is conserved in mammalian DSP sequences (McKnight and Fisher <xref rid="mgg3176-bib-0025" ref-type="ref">2009</xref>). Porcine DSP has two glycan attachments, at Ser<sup>253</sup> and Ser<sup>265</sup>. Both comprised chondroitin&#x02010;6&#x02010;sulfate (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0048" ref-type="ref">2005a</xref>; Yamakoshi <xref rid="mgg3176-bib-0047" ref-type="ref">2009</xref>). Mouse DSP also has two glycan attachments, which contain chondroitin&#x02010;4&#x02010;sulfate (Zhu et&#x000a0;al. <xref rid="mgg3176-bib-0054" ref-type="ref">2010</xref>). Porcine DSP has at least six <italic>N</italic>&#x02010;glycosylations (at Asn<sup>52</sup>, Asn<sup>92</sup>, Asn<sup>151</sup>, Asn<sup>170</sup>, Asn<sup>176</sup>, and Asn<sup>191</sup>) (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0052" ref-type="ref">2011</xref>). Most DSP oligosaccharide attachments are removed by chondroitinase ABC digestion, indicating that the glycans are the predominant posttranslational modification of DSP (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0048" ref-type="ref">2005a</xref>). Overall the primary structure of porcine DSPP (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0051" ref-type="ref">2008</xref>) is: Signal peptide (Met<sup>1</sup> to Ala<sup>15</sup>) DSP (Ile<sup>16</sup> to Arg<sup>391</sup>) DGP (Ser<sup>392</sup> to Gly<sup>472</sup>) DPP (Asp<sup>473</sup> to Asp<sup>1066</sup>). The primary structure of human DSPP is: Signal peptide (Met<sup>1</sup> to Ala<sup>15</sup>) DSP (Ile<sup>16</sup> to Gly<sup>462</sup>) DPP (Asp<sup>463</sup> to Asp<sup>1301</sup>).</p><p>The size of the DPP domain of DSPP varies from species to species and even among individuals within a species. Porcine DPP coding region length polymorphisms ranged from 3 to 63 nucleotides in length and appeared in at least four unique patterns (haplotypes) and expressed DPP domains between 551 and 594 amino acids (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0051" ref-type="ref">2008</xref>). Human DPP varies between 770 and 902 amino acids (Wang et&#x000a0;al. <xref rid="mgg3176-bib-0041" ref-type="ref">2011</xref>). The number of amino acids in the DPP reference sequences from selected mammals are humans 839, mouse 494, and aardvark 524. These length variations reflect the size of a repetitive region, which includes numerous Asp&#x02010;Ser&#x02010;Ser (DSS) sequence motifs. There are 165 DSS sequences in human DPP. The amino acid composition of human DPP is 60% serine and 26% aspartic acid.</p><p>DPP is highly phosphorylated. Assuming the DPP molecular mass to be 100&#x02010;kDa, porcine DPP averaged 212 phosphates per molecule. The calculated isoelectric point of unmodified human DPP is 2.84 and its deduced molecular weight is 82&#x02010;kDa. In contrast, the measured pI of the rat DPP (modified) protein was 1.1 (Jonsson and Fredriksson <xref rid="mgg3176-bib-0014" ref-type="ref">1978</xref>) and the apparent molecular weight of human DPP on sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS&#x02010;PAGE) is 140&#x02010;kDa (Chang et&#x000a0;al. <xref rid="mgg3176-bib-0006" ref-type="ref">1996</xref>). There are only eight primary SXE G&#x02010;CK sites in human DPP and phosphorylation of these serines generates six secondary SXpS G&#x02010;CK sites. The total of 14 G&#x02010;CK sites is far below the number of phosphoserines on human DPP, based upon the data from pig (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0051" ref-type="ref">2008</xref>). There must either be other (unidentified) kinases in the secretory pathway that can phosphorylate DPP or G&#x02010;CK can also phosphorylate Ser&#x02010;X&#x02010;Asp sites. Recently G&#x02010;CK was shown to be part of a secretory kinase complex that regulates extracellular protein phosphorylation (Cui et&#x000a0;al. <xref rid="mgg3176-bib-0009" ref-type="ref">2015</xref>). A pseudokinase encoded by <italic>Fam20a</italic> increases the activity of G&#x02010;CK, which is encoded by <italic>Fam20c</italic> (Tagliabracci et&#x000a0;al. <xref rid="mgg3176-bib-0037" ref-type="ref">2012</xref>). Perhaps other factors can influence the target&#x02010;site specificity of the kinase complex in a way that could account for the observed phosphorylation of DPP.</p><p>Sequencing through the DPP repetitive region is necessary to determine the genetic causes of inherited dentin defects and their pathogenesis, to understand the range of DPP length variations in humans, to provide information from a gene on an autosomal chromosome for human migration studies, and to determine the DPP sequences of species whose genomes are being characterized by next&#x02010;generation sequencing (which cannot assemble the correct DPP sequence) to better understand the evolution of <italic>Dspp</italic> and its role in biomineralization. Until now, the only way to sequence the DPP repetitive region was to clone PCR amplification products and use the resulting plasmid DNA as template (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0027" ref-type="ref">2008b</xref>), which is labor intensive and impractical for most applications, including diagnoses. Here, we use the single molecule real&#x02010;time (SMRT) DNA sequencing system to accurately characterize the human DPP repetitive region without cloning, identify a novel frameshift mutation that causes DGI&#x02010;II, and analyze the currently known human DPP length variations to establish their relations to each other.</p></sec><sec id="mgg3176-sec-0002"><title>Materials and Methods</title><p>The human study protocol and consents were reviewed and approved by Institutional Review Board (IRB) Committees at the University of Michigan, the University of Texas Health Science Center at San Antonio, and the Ethics Committee at the University of Istanbul, Turkey. Study participants signed appropriate written consents after explanation and discussion of their contents. Minors age 8 or older signed a written assent form after their parents completed a written parental consent form for participation of the minor.</p><sec id="mgg3176-sec-0003"><title>Recruitment of subjects</title><p>Five unrelated families with at least one person who had been diagnosed by their dentists as having inherited dentin defects were enrolled in our study. Family medical and dental histories were obtained and the family pedigrees were ascertained. The dental phenotypes of recruited family members were documented following clinical and radiographic examinations. Family 1 was a positive control with a known frameshift muation in the DPP repetitive region (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0026" ref-type="ref">2008a</xref>).</p></sec><sec id="mgg3176-sec-0004"><title>Genomic DNA extraction</title><p>Peripheral whole blood (5&#x000a0;cc) or saliva (2&#x000a0;cc) were obtained from enrolled subjects and genomic DNA was isolated using the QIAamp DNA Blood Maxi Kit (51194; Qiagen, Valencia, CA) or Saliva DNA Collection, Preservation and Isolation Kit (RU35700; Norgen Biotek Corporation; Thorold, Canada), respectively. The quality and quantity of the extracted DNA samples was determined by gel electrophoresis and spectrophotometry at OD<sub>260</sub> and OD<sub>280</sub>.</p></sec><sec id="mgg3176-sec-0005"><title>Whole&#x02010;exome analyses</title><p>DNA samples from families 2, 3, and 5 were subjected to whole&#x02010;exome sequencing (WES) at the Yale Center for Genome Analysis (West Haven, CT) using specific approaches modified according to a previous report (Choi et&#x000a0;al. <xref rid="mgg3176-bib-0008" ref-type="ref">2009</xref>). Briefly, the genomic DNA was captured with NimbleGen v2.0 exome capture reagent (Roche/NimbleGen Incorporation; Madison, WI) and sequenced with Illumina, San Diego, CA, USA, HiSeq2000 for 75 base paired end reads. Reads were aligned to human reference genome hg19 using ELANDv2. Single&#x02010;nucleotide variants and short insertions and deletions (indels) were called using SAM tools and annotated using an in&#x02010;house script. The annotated results were first searched for potential disease&#x02010;causing sequence variations in the nonredundant region of <italic>DSPP</italic> and in known candidate genes for osteogenesis imperfecta (OI): <italic>COL1A1</italic>,<italic> COL1A2</italic>,<italic> IFITM5, FKBP10, CRTAP, LEPRE1, PPIB, LRP5, PLOD2, FKBP10, SERPINF1, SERPINH1</italic>,<italic> WNT1</italic>,<italic> BMP1</italic>,<italic> PLS3</italic>,<italic> TMEM38B, CBP2,</italic> and <italic>SP7</italic> (Valadares et&#x000a0;al. <xref rid="mgg3176-bib-0039" ref-type="ref">2014</xref>).</p><p>The number of reads per exome ranged from 70 to 94&#x000a0;mol/L. The mean coverage of the exome ranged from 67X to 93X. The quality of the WES data is summarized in Table&#x000a0;S1. Based on the WES results, exon 34 of the type I collagen gene, collagen type I alpha 2 (<italic>COL1A2</italic>), was amplified using genomic DNA from the participants in Family 3 as template. The 229&#x000a0;bp amplification product was purified and characterized by direct Sanger sequencing at the University of Michigan DNA Sequencing Core (Ann Arbor, MI). For Family 4, which did not consent to WES, genomic DNA from the proband was first evaluated for sequence variations in the <italic>DSPP</italic> nonrepetitive coding region by Sanger sequencing of PCR amplification products. Oligonucleotide primer sequences and the reaction conditions for all PCR amplification performed in this study are provided in Table&#x000a0;S2.</p></sec><sec id="mgg3176-sec-0006"><title>SMRT sequencing and analysis</title><p>SMRT sequences were characterized in two single cells by using PCR amplification primers that included 5&#x02010;prime, 16&#x02010;basepair &#x0201c;barcode&#x0201d; sequences that were unique for each proband on their 5&#x02032; ends (Table&#x000a0;S2). The barcodes were selected from published data (<ext-link ext-link-type="uri" xlink:href="http://www.smrtcommunity.com/Share/Protocol?id=a1q70000000J4m5AAC">http://www.smrtcommunity.com/Share/Protocol?id=a1q70000000J4m5AAC</ext-link>). The barcoded primer pairs used to amplify the DPP repetitive region annealed at sites that would produce an amplification product ~2543&#x000a0;bp in length if the <italic>DSPP</italic> gene haplotype in the patient was the <italic>DSPP</italic> reference sequence (NM_014208.3). As the <italic>DSPP</italic> sequence in the DPP coding region is variable in its length due to existence of multiple indels in the DPP repetitive region, most DPP amplifications generate two amplicons that are manifested as a thick band or doublet on an agarose gel. These amplicons were separated from primers by excising them from a 1.25% agarose gel stained with SYBR Gold nucleic acid gel stain (Life Technologies, Calsbad, CA) and purified using QIAquick Gel Extraction Kit (Qiagen, Hilden, DE). Purified amplicons were quantified using a spectrometer (Beckman, Carlsbad, CA, USA, Coulter DU730). An average of 250&#x000a0;ng of purified amplicons from each proband was submitted to the University of Michigan DNA Sequencing Core for SMRT sequencing using two SMRT cells P4&#x02010;C2 chemistry, 120&#x000a0;min movies and hot start. The sequence data were compiled by the Bioinformatic core and further interrogated by informaticians at the Pacific Biosciences (Menlos Park, CA).</p></sec><sec id="mgg3176-sec-0007"><title>DPP alignment</title><p>Wild&#x02010;type DPP haplotype sequences were downloaded from NCBI (National Center for Biotechnology Information) PopSets 162077127 and 162077085 (Table&#x000a0;S3A and B), which contain DPP haplotype sequences from two different sizes of cloned DPP PCR products (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0026" ref-type="ref">2008a</xref>). Other published DPP haplotype sequences that were not submitted to GenBank but had clearly described the indels with respect to the reference sequence (Song et&#x000a0;al. <xref rid="mgg3176-bib-0034" ref-type="ref">2008</xref>) were readily assembled. The DNA alignments were made manually, trying to minimize the number of genetic events required to generate the observed allelic differences in DPP sequences. Only a single previously published DPP sequence for each indel pattern was retained in the final alignment.</p><p>The nomenclatures for the 32 indels (Table&#x000a0;S4) and the 21 known disease&#x02010;causing DPP frameshift mutations (Table&#x000a0;S5) were verified using <italic>Mutalyzer</italic> 2.0.3 at <ext-link ext-link-type="uri" xlink:href="http://www.lovd.nl/mutalyzer/">http://www.lovd.nl/mutalyzer/</ext-link> (Wildeman et&#x000a0;al. <xref rid="mgg3176-bib-0043" ref-type="ref">2008</xref>) and were described with respect to the <italic>DSPP</italic> reference sequence (<ext-link ext-link-type="DDBJ/EMBL/GenBank" xlink:href="NM_014208.3">NM_014208.3</ext-link>).</p></sec><sec id="mgg3176-sec-0008"><title>Generating a tree relating the known DPP haplotypes</title><p>Indels found in only a single haplotype were eliminated from this analysis as potentially being PCR artifacts, which reduced the number of novel DPP haplotypes from 36 to 25. These &#x0201c;confirmed&#x0201d; indel patterns (haplotypes) were then analyzed to produce a tree showing a potential relationship of DPP haplotypes in human populations. The tree was generated using <italic>Network</italic> version 4.6.1.3 available from Fluxus Technology Ltd. (<ext-link ext-link-type="uri" xlink:href="http://www.fluxus-engineering.com">www.fluxus-engineering.com</ext-link>). The indels of each haplotype were converted into binary data and used to calculate a phylogenetic network&#x000a0;using the median&#x02010;joining algorithm (Bandelt et&#x000a0;al. <xref rid="mgg3176-bib-0003" ref-type="ref">1999</xref>).</p></sec></sec><sec id="mgg3176-sec-0009"><title>Results</title><sec id="mgg3176-sec-0010"><title>Family 1</title><p>Family 1 was a Caucasian family spanning four generations with DD&#x02010;II that followed an autosomal dominant pattern of inheritance (Fig.&#x000a0;<xref rid="mgg3176-fig-0001" ref-type="fig">1</xref>A). The dental phenotype of this family was described previously (Beattie et&#x000a0;al. <xref rid="mgg3176-bib-0004" ref-type="ref">2006</xref>). The primary dentition was more severely affected than the secondary dentition. The phenotype varied, but the crowns of the permanent dentition of affected individuals were shaded gray. The pulp chambers tended to fill&#x02010;in (obliterate) more rapidly than normal, and some posterior teeth had bulbous crowns. Penetrance appeared to be complete as more than half of the offspring of a single affected parent exhibited the DD&#x02010;II phenotype. The genetic cause was a variant of <italic>DSPP</italic> haplotype SHap6(2) that included a novel single&#x02010;nucleotide deletion originally described as c.3141delC or p.S1047fsX223 (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0026" ref-type="ref">2008a</xref>). Subsequently it was noted that the designation for this mutation was in error, as nucleotide 3141 in the <italic>DSPP</italic> reference sequence (<ext-link ext-link-type="DDBJ/EMBL/GenBank" xlink:href="NM_014208.3">NM_014208.3</ext-link>) was not a &#x0201c;C.&#x0201d; By comparing the published chromatogram with the DSPP cDNA reference sequence, an alternative designation was proposed: c.3153delC and p.S1051fsX223 (Wang et&#x000a0;al. <xref rid="mgg3176-bib-0041" ref-type="ref">2011</xref>). To clarify this situation and to help assess the reliability of SMRT DNA sequencing for accurately determining the sequence of the DPP repetitive region, we included DNA from Family 1 along with that of four other families exhibiting inherited dentin defects of unknown etiology to be characterized by SMRT sequencing. These sequences were analyzed by aligning them to the sequences of all known <italic>DSPP</italic> haplotypes that vary due to their pattern of indels (Fig.&#x000a0;S2).</p><fig fig-type="Figure" xml:lang="en" id="mgg3176-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Pedigrees and proband's phenotype in families with <italic><styled-content style="fixed-case">DSPP</styled-content></italic> &#x02212;1 frameshifts. (A) Family 1: the four generation pedigree of a family diagnosed with dentin dysplasia type <styled-content style="fixed-case">II</styled-content> following an autosomal dominant pattern of inheritance. The dental phenotype was mild, with grayish/yellowish discoloration of the permanent dentition. The panorex radiograph showed premature obliteration of the root canals, thistle&#x02010;shaped pulp chambers, and mildly bulbous molar crowns. The cause of this phenotype was confirmed by <styled-content style="fixed-case">SMRT</styled-content> sequencing to be c.3135delC; p.Ser1045Argfs*269. This designation is, by convention, numbered as if the deletion had occurred in the <italic><styled-content style="fixed-case">DSPP</styled-content></italic> reference sequence (<styled-content style="fixed-case">NM</styled-content>_014208.3). (B) Family 2: the pedigree is consistent with an autosomal dominant pattern of inheritance. The proband presented with a more severe dental phenotype than the proband of Family 1, with grayish discoloration of the crowns, bulbous crown morphology with constricted cervical areas of the roots, and obliterated pulp chambers and root canals. This phenotype was caused by a five nucleotide duplication in a single <italic><styled-content style="fixed-case">DSPP</styled-content></italic> allele with haplotype <styled-content style="fixed-case">SH</styled-content>ap3 (c.3504_3508dup; p.Asp1170Alafs*146) that would have produced a &#x02212;1 frameshift that is known to cause inherited dentin defects. An asterisk in the pedigree marks persons who were recruited for the study and contributed <styled-content style="fixed-case">DNA</styled-content> samples. <italic>DSPP</italic>, dentin sialophosphoprotein; SMRT, single molecule real time.</p></caption><graphic id="nlm-graphic-3" xlink:href="MGG3-4-028-g001"/></fig><p>The proband of Family 1 carried two different <italic>DSPP</italic> alleles. The SMRT sequence for the first <italic>DSPP</italic> allele (designated F1a) showed the same indel pattern as haplotype SHap6(2) (Song et&#x000a0;al. <xref rid="mgg3176-bib-0034" ref-type="ref">2008</xref>). The 2399 basepair DPP sequence exactly matched the one previously published for this family (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0027" ref-type="ref">2008b</xref>), and included the single&#x02010;nucleotide deletion that caused the DD&#x02010;II phenotype. Aligning this sequence to other <italic>DSPP</italic> haplotypes (Fig.&#x000a0;S2) resolved the ambiguity of the designation for the disease&#x02010;causing single&#x02010;nucleotide deletion. The previous confusion occurred because the position of the single&#x02010;nucleotide deletion was immediately upstream from an indel that deleted the subsequent 18 nucleotides relative to the <italic>DSPP</italic> reference sequence (<ext-link ext-link-type="DDBJ/EMBL/GenBank" xlink:href="NM_014208.3">NM_014208.3</ext-link>). The proper designation for the single&#x02010;nucleotide deletion is c.3135delC; p.Ser1045Argfs*269. A lesson learned is that properly designating a DPP mutation sometimes requires aligning the patient's sequence to the known DPP haplotypes (not just the reference sequence) to accurately position the defect. The second DSPP allele in the proband (F1b) had the same indel pattern as <italic>DSPP</italic> haplotype 1a (Hap1a) and showed no potential disease&#x02010;causing sequence variations.</p></sec><sec id="mgg3176-sec-0011"><title>Family 2</title><p>Family 2 was a Hispanic family with a DGI phenotype following an autosomal dominant pattern of inheritance (Fig.&#x000a0;<xref rid="mgg3176-fig-0001" ref-type="fig">1</xref>B). The dental phenotype was more severe than in Family 1. The permanent teeth were shaded gray, the posterior teeth had bulbous crowns, and the pulp chambers obliterated prematurely. WES analyses found no potential disease&#x02010;causing mutations in the type I collagen genes (<italic>COL1A1/COL1A2</italic>), or the nonredundant region of <italic>DSPP</italic>. SMRT analyses provided the DPP sequences of both <italic>DSPP</italic> alleles in the proband. F2a had the same DPP indel pattern as SHap3 (Song et&#x000a0;al. <xref rid="mgg3176-bib-0034" ref-type="ref">2008</xref>) as well as a novel 5&#x02010;bp duplication in the DPP coding region of <italic>DSPP</italic> (c.3504_3508dup; p.Asp1170Alafs*146) that would have generated &#x02212;1 reading frameshift of the type known to cause inherited dentin defects (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0027" ref-type="ref">2008b</xref>). This is the first novel disease&#x02010;causing <italic>DSPP</italic> mutation identified by SMRT sequencing and in this case helped to establish the diagnosis as being DGI&#x02010;II, rather than OI. The other DPP allele in the proband (F2b) was identical to the reference sequence except for a novel 18&#x02010;bp duplication (indel 11 or ID11).</p></sec><sec id="mgg3176-sec-0012"><title>Family 3</title><p>Family 3 was a Hispanic family exhibiting an autosomal dominant DGI phenotype, with grayish, variably colored teeth, bulbous crowns, and abnormal pulp size, either larger or smaller than normal, and some pulp obliteration (Fig.&#x000a0;<xref rid="mgg3176-fig-0002" ref-type="fig">2</xref>A). The mother reported that proband was otherwise healthy, and denied bone fragility or joint pain. This was true at the time of enrollment (age 5.5&#x000a0;years), but the proband later broke her arm at age 7. WES analysis identified a heterozygous mutation in the first codon of exon 34 in <italic>COL1A2</italic>: c.2027G&#x0003e;A; p.Gly676Asp (based on <italic>COL1A2</italic> cDNA reference sequence <ext-link ext-link-type="DDBJ/EMBL/GenBank" xlink:href="NM_000089.3">NM_000089.3</ext-link>). This <italic>COL1A2</italic> mutation was previously reported to cause OI type III, but no description of the phenotype was provided and there was no mention of whether or not there were dentin defects (Lee et&#x000a0;al. <xref rid="mgg3176-bib-0020" ref-type="ref">2006</xref>). The DPP region of <italic>DSPP</italic> was characterized by SMRT sequencing. No potential disease&#x02010;causing mutations were observed in <italic>DSPP</italic>. The <italic>COL1A2</italic> defect established the diagnosis of OI and determined that the dentin defects were the earliest feature of the OI in this family. The DPP sequences determined by SMRT sequence analysis were identical to previously published haplotypes (F3a, Hap15a; F3b, Hap2a).</p><fig fig-type="Figure" xml:lang="en" id="mgg3176-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Pedigrees and proband's phenotype in <styled-content style="fixed-case">OI</styled-content> families. (A) Family 3: the three generation pedigree of a family diagnosed with inherited dentin defects that follow an autosomal dominant pattern of inheritance. The dental phenotype was typical of dentinogenesis imperfecta, with variable discoloration of the permanent dentition, abnormal pulp size, and bulbous molar crown morphology. The cause of this phenotype was discovered during whole&#x02010;exome sequence analyses to be a dominant mutation in the first codon of exon 34 in <italic><styled-content style="fixed-case">COL</styled-content>1A2</italic>: c.2027G&#x0003e;A; p.Gly676Asp. Sanger sequencing chromatograms from exon 34 of <italic><styled-content style="fixed-case">COL</styled-content>1A2</italic> show that the proband (<styled-content style="fixed-case">III</styled-content>:1; left) and her similarly affected younger brother (<styled-content style="fixed-case">III</styled-content>:2; middle) were heterozygous for this mutation, while the unaffected brother (<styled-content style="fixed-case">III</styled-content>:3; right) did not carry the mutant allele. (B) Family 4: mild dentin defects in the primary dentition of a simplex case. No potential disease&#x02010;causing mutations were detected in <italic><styled-content style="fixed-case">DSPP</styled-content></italic>. (C) Family 5: a second simplex case of inherited dentin defects in the absence of any <italic><styled-content style="fixed-case">DSPP</styled-content></italic> defects. The dentition is severely discolored, with bulbous crowns, constricted cervical areas, pulp obliteration, and thin narrow roots. No disease&#x02010;causing mutation was evident by the whole&#x02010;exome sequence analysis. An asterisk in the pedigree marks persons who were recruited for the study and contributed <styled-content style="fixed-case">DNA</styled-content> samples. OI, osteogenesis imperfecta; <italic>COL1A2</italic>, collagen type I alpha 2; <italic>DSPP</italic>, dentin sialophosphoprotein.</p></caption><graphic id="nlm-graphic-5" xlink:href="MGG3-4-028-g002"/></fig></sec><sec id="mgg3176-sec-0013"><title>Families 4 and 5</title><p>Family 4 was a Caucasian family with only the proband presenting with inherited dentin defects, which included yellowish discolored teeth, bulbous crowns, and obliterating pulp chambers (Fig.&#x000a0;<xref rid="mgg3176-fig-0002" ref-type="fig">2</xref>B). As the family did not consent to WES analyses, mutation analyses of <italic>DSPP</italic> (exons 1&#x02013;4 and the 5&#x02032; part of exon 5; Table&#x000a0;S2) and SMRT sequencing of the DPP region was performed, but did not identify any frame&#x02010;shift sequence variations. The proband's DPP alleles were a novel haplotype (F4a) and the <italic>DSPP</italic> reference sequence (F4b; SHap2). A c.2535C&#x0003e;A or p.Ser845Arg missense mutation was observed in one allele (F4a), which has a PolyPhen&#x02010;2 prediction of being probably damaging with a score of 0.993 (sensitivity 0.70; specificity 0.97) (Adzhubei et&#x000a0;al. <xref rid="mgg3176-bib-0001" ref-type="ref">2013</xref>). The cause of the dental phenotype in this family remains unknown.</p><p>Family 5, a Turkish family, was a sporadic case of OI type I with opalescent dentin and a history of bone fractures (Fig.&#x000a0;<xref rid="mgg3176-fig-0002" ref-type="fig">2</xref>C). Despite the confident clinical diagnosis, WES analyses did not find any deleterious variants in any of the OI candidate genes or in the DSP coding region. In addition, no potentially disease&#x02010;causing variants in the DPP coding region were identified by SMRT sequencing, which were identical to previously published haplotypes (F5a, Hap2a; F5b, Hap15a).</p></sec><sec id="mgg3176-sec-0014"><title>DPP repetitive region</title><p>The SMRT sequences of the DPP region for the 10 <italic>DSPP</italic> alleles of the probands from the five families with inherited dentin defects were aligned with the <italic>DSPP</italic> cDNA reference sequence (<ext-link ext-link-type="DDBJ/EMBL/GenBank" xlink:href="NM_014208.3">NM_014208.3</ext-link>), the McKnight sequence (<ext-link ext-link-type="DDBJ/EMBL/GenBank" xlink:href="EU709728">EU709728</ext-link>) previously obtained for the DPP sequence of the proband of Family 1, and all previously reported <italic>DSPP</italic> haplotypes that varied with respect to their pattern of insertions or deletions (indels) in the DPP coding region (Fig.&#x000a0;S2). The alignment shows 32 different indels in the DPP coding region relative to the <italic>DSPP</italic> reference sequence. The number of nucleotides in every indel is divisible by 3, so all maintain the reading frame and none are associated with a loss of function. The 32 indels in the DPP repetitive region combined into 36 different <italic>DSPP</italic> haplotypes based on the patterns of indels (Fig.&#x000a0;S2). Half of the <italic>DSPP</italic> indels (16) have been identified in no more than one haplotype, and some of these may be artifacts generated during PCR amplification. If only the 16 shared indels (ones not unique to a single haplotype) are used and the 16 unconfirmed indels ignored, there are 25 unique patterns of DPP indels or <italic>DSPP</italic> length haplotypes (Fig.&#x000a0;S3). A tree was generated mapping the relationships of unique <italic>DSPP</italic> length haplotypes (Fig.&#x000a0;<xref rid="mgg3176-fig-0003" ref-type="fig">3</xref>). The tree shows several of the indels occurred independently in multiple haplotypes. This is especially likely because some parts of the DPP repetitive region are so repetitive that the position of an indel can be moved up or down the sequence in the alignment (Fig.&#x000a0;<xref rid="mgg3176-fig-0004" ref-type="fig">4</xref>), so that independent insertions or deletions (indels) of the same length that occur within such a region would be aligned and appear to be generated in a single genetic event.</p><fig fig-type="Figure" xml:lang="en" id="mgg3176-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Tree describing a possible evolutionary relationship among the confirmed dentin phosphoprotein (<styled-content style="fixed-case">DPP</styled-content>) length haplotypes (HAP). Yellow dots are nodes on the tree corresponding to a novel <styled-content style="fixed-case">DPP</styled-content> length haplotype. The haplotypes are numbered in black type and &#x0201c;<styled-content style="fixed-case">HAP</styled-content>&#x0201d; has been removed from the designations. Red numbers correspond to each of the confirmed <styled-content style="fixed-case">DPP</styled-content> indels (those appearing in more than one unique length haplotype). Note that indels 8, 15, 23, 26, and 28 appear three times and indels 9 and 14 appear twice. <styled-content style="fixed-case">DPP</styled-content> indels are apparent hot spots for slippage during <styled-content style="fixed-case">DNA</styled-content> replication. A hypothetical haplotype, mv1 (medial vector 1, shown in a red dot), was inserted to construct the shortest connection.</p></caption><graphic id="nlm-graphic-7" xlink:href="MGG3-4-028-g003"/></fig><fig fig-type="Figure" xml:lang="en" id="mgg3176-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Variable positions for indel 15. The alignment covers the <styled-content style="fixed-case">DPP</styled-content> sequence between <styled-content style="fixed-case">ID</styled-content>14 and <styled-content style="fixed-case">ID</styled-content>16. <styled-content style="fixed-case">ID</styled-content>15 is an 18&#x02010;bp deletion relative to the reference sequence. Here, <styled-content style="fixed-case">ID</styled-content>15 is placed in a different position each <styled-content style="fixed-case">DPP</styled-content> length haplotype that contains it. <styled-content style="fixed-case">ID</styled-content>15 could be placed at any position between <styled-content style="fixed-case">ID</styled-content>14 and <styled-content style="fixed-case">ID</styled-content>16. When aligning such sequences, Occam's razor is applied to minimize the number of genetic events required to explain the variation. As a result the dashes are aligned at a somewhat arbitrary location (as in Fig.&#x000a0;S2), which suggests that the indel was generated at a single time and position and is present in multiple sequences through common descent. The tree, however, suggests that <styled-content style="fixed-case">ID</styled-content>15 was generated independently in three lines. The C in bold is the site of a single bp deletion that caused <styled-content style="fixed-case">DD</styled-content>&#x02010;<styled-content style="fixed-case">II</styled-content> (c.3135delC). DPP, dentin phosphoprotein; DD&#x02010;II, dentin dysplasia type II.</p></caption><graphic id="nlm-graphic-9" xlink:href="MGG3-4-028-g004"/></fig></sec></sec><sec id="mgg3176-sec-0015"><title>Discussion</title><p>Next&#x02010;generation sequencing enables efficient examination of genomes except in repetitive areas that cannot be &#x0201c;disambiguated&#x0201d; during the assembly of short overlapping sequences. SMRT technology generates reads of several kilobases and has been used to close gaps in the human reference genome, 78% of which contains tandem repeats (Chaisson et&#x000a0;al. <xref rid="mgg3176-bib-0005" ref-type="ref">2015</xref>). The advantage of SMRT sequencing is that the target sequences are not fragmented into small segments of DNA that must contain overlapping unique sequences to accurately assemble the longer original sequence. Instead, the original DNA target sequences (in the case of DPP ~2500&#x000a0;bp) were circularized and sequenced as single molecules. Between 100 and 200 independently determined full&#x02010;length DPP sequences were aligned to eliminate random sequencing errors and to obtain a consensus sequence for each DPP allele. This platform allowed us to sequence through the highly redundant DPP coding region without cloning, determine the pattern of indels in both <italic>DSPP</italic> alleles in each proband, and to identify frameshift mutations in the DPP repetitive region (and the haplotype in which they occurred) that caused DD&#x02010;II and DGI&#x02010;II.</p><p>Type I collagen and DSPP are the principle organic constituents of tooth dentin (Linde <xref rid="mgg3176-bib-0021" ref-type="ref">1989</xref>), and mutations in the genes encoding these proteins are the predominant cause of inherited dentin defects (Kim and Simmer <xref rid="mgg3176-bib-0018" ref-type="ref">2007</xref>). <italic>DSPP</italic> is tooth&#x02010;specific, and defects in this gene cause isolated (nonsyndromic) dentin defects. Type I collagen is an important constituent in tissues besides dentin, such as bone, tendon, and skin, so mutations in the <italic>COL1A1</italic> or <italic>COL1A2</italic> genes (encoding type I collagen) cause dentin defects in syndromes, such as OI. Many genes contribute to the production of type I collagen, but due to their dominant pattern of inheritance, over 80% of the mutations that cause OI are in <italic>COL1A1</italic> or <italic>COL1A2</italic> (Kuivaniemi et&#x000a0;al. <xref rid="mgg3176-bib-0019" ref-type="ref">1997</xref>). Some patients with OI show no dentin abnormalities, while others suffer severe dentin malformations (O'Connell and Marini <xref rid="mgg3176-bib-0029" ref-type="ref">1999</xref>). Some patients with type I collagen mutations show only dentin manifestations (Pallos et&#x000a0;al. <xref rid="mgg3176-bib-0030" ref-type="ref">2001</xref>; Wang et&#x000a0;al. <xref rid="mgg3176-bib-0042" ref-type="ref">2012</xref>).</p><p>In hereditary diseases of dentin, the primary teeth are typically more severely affected than the permanent dentition and therefore evident at an early age. Such patients are often diagnosed as having DD&#x02010;II, DGI&#x02010;II, or DGI&#x02010;III until an episode of bone fracture prompts a revision of the diagnosis to OI (O'Connell and Marini <xref rid="mgg3176-bib-0029" ref-type="ref">1999</xref>). In this study, the probands of Family 3 and Family 5 showed obvious dental malformations but were otherwise healthy in early childhood when they enrolled in the study. Both experienced subsequent bone fractures.</p><p>Children with OI may experience gross motor developmental delay, joint and ligament instability, muscle weakness, and lack of stamina (Rauch and Glorieux <xref rid="mgg3176-bib-0031" ref-type="ref">2004</xref>). The delayed diagnosis precludes the possibility of early intervention to improve mobility, increase bone mass and muscle strength, protection to prevent facture cycles, and awareness for accommodations. Correct diagnosis and intervention may help OI patients to initiate treatment early to maximize growth potential of the bone, function, and strength (Engelbert et&#x000a0;al. <xref rid="mgg3176-bib-0010" ref-type="ref">1998</xref>). Physical therapy, early intervention, and physical activity potentially improve outcomes. It is therefore important in cases of autosomal dominant inherited dentin defects to determine the genetic etiology to discern if the dentin defects are isolated (mutations in <italic>DSPP</italic>) or part of a syndrome like OI.</p><p>As OI can be caused by defects in many genes besides type I collagen (Marini et&#x000a0;al. <xref rid="mgg3176-bib-0022" ref-type="ref">2014</xref>) and dentin malformations can be manifested in other inherited conditions besides OI, WES should be considered as the first&#x02010;line screening test, which sequences the <italic>DSPP</italic> coding region outside of the DPP repeat region as well as all potential OI&#x02010;causing genes for potential disease&#x02010;causing mutations. If no causality is identified, then SMRT sequencing should be used to sequence DPP. Aligning the SMRT sequence with those provided in Figure&#x000a0;S2 identifies the DPP haplotype and the causative mutation. If no mutation is found, the WES data should be reanalyzed with an expanded list of candidate genes.</p><p>Including the two novel haplotypes characterized in our probands (F2b and F4a), there are 36 novel DPP length haplotypes, or patterns of 32 indels. Excluding the 16 indels that have been identified in only a single haplotype, there are 16 confirmed DPP indels that give rise to 25 novel <italic>DSPP</italic> length haplotypes (Fig.&#x000a0;S3). The tree generated from the alignment of these haplotypes describes how the haplotypes might have evolved. Trees are generated by minimizing the number of genetic events needed to arrive at a solution. In this case, even the most efficient tree required some indels to be generated independently in different lines. This kind of result should be expected for large, highly repetitive sequences, as it is sometimes possible to align all indels of the same length (suggesting they were generated by a single event) even though they could have occurred at any site within a segment of DNA. Indel 15 (an 18&#x02010;bp deletion relative to the reference sequence) could have been generated by an 18&#x02010;bp deletion anywhere between Indel 14 and Indel 16 (Fig.&#x000a0;<xref rid="mgg3176-fig-0004" ref-type="fig">4</xref>). It is apparent from the tree that some indels were generated independently in different DPP haplotypes, presumably by strand slippage during DNA replication. As more DPP sequences are characterized, the accuracy of the tree will improve and potentially help resolve prehistorical human migration patterns (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0027" ref-type="ref">2008b</xref>). Sequence variations including indels in <italic>DMP1</italic> (a close relative of <italic>DSPP</italic>) were used to successfully deduce the phylogenetic relationship of 19 species of closely related bats (Van Den Bussche et&#x000a0;al. <xref rid="mgg3176-bib-0040" ref-type="ref">2003</xref>).</p><p>The most severe form of inherited dentin defects (Witkop et&#x000a0;al. <xref rid="mgg3176-bib-0045" ref-type="ref">1956</xref>) was first described in a group of early immigrants that became known as the &#x0201c;Brandywine isolate&#x0201d; (Witkop et&#x000a0;al. <xref rid="mgg3176-bib-0046" ref-type="ref">1966</xref>). The dentin malformations allowed for dental abscesses to form in primary teeth without decay or history of trauma and was designated as DGI&#x02010;III (Shields et&#x000a0;al. <xref rid="mgg3176-bib-0033" ref-type="ref">1973</xref>). &#x0201c;Compound mutations&#x0201d; in <italic>DSPP</italic> (indels that maintained the reading frame) were proposed to cause the DGI&#x02010;III in this group, but it was subsequently demonstrated that the dentin defects in Brandywine isolate were caused by a p.Pro17Ser missense alteration that segregated with the phenotype, caused endoplasmic reticulum retention of the protein in a functional assay (Hart and Hart <xref rid="mgg3176-bib-0013" ref-type="ref">2007</xref>), and was disease&#x02010;causing in another DGI family (Zhang et&#x000a0;al. <xref rid="mgg3176-bib-0053" ref-type="ref">2007</xref>). No other studies have linked indels in <italic>DSPP</italic> that maintain the reading frame to inherited dentin malformations.</p><p>This report brings to 36 the number of novel <italic>DSPP</italic> mutations that cause inherited dentin defects. These mutations are transmitted in an autosomal dominant pattern and fall into two groups. Both cause the mutant protein to be retained in the rER and therefore fail to efficiently traffic out of the cell (von Marschall et&#x000a0;al. <xref rid="mgg3176-bib-0024" ref-type="ref">2012</xref>). There are 21 (3&#x02010;prime) defects within the DPP repetitive region in exon 5 (Table&#x000a0;S5). All shift translation into the &#x02212;1 reading frame and replace the downstream Asp/Ser&#x02010;rich sequence with one rich in Val, Ala, Ile, and Thr (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0027" ref-type="ref">2008b</xref>). The mutant DPP protein is actually longer (has more amino acids) than normal DPP no matter where the frameshift occurs in the DPP repeat region (Wang et&#x000a0;al. <xref rid="mgg3176-bib-0041" ref-type="ref">2011</xref>). The absence of any disease&#x02010;causing frameshift mutations into the &#x02212;2 reading frame (which would truncate the DPP protein near the site of the frameshift in all cases) suggests that a loss of half of the normal amount of DPP at the protein level does not result in dentin defects. This is consistent with the observation that <italic>Dspp</italic>
+<sup>+/&#x02212;</sup> mice lack a discernable dentin phenotype (Sreenath et&#x000a0;al. <xref rid="mgg3176-bib-0035" ref-type="ref">2003</xref>). However, while recombinant DSPP was expressed and secreted by HEK293 cells, secretion of this protein could be inhibited by coexpression of a recombinant DSPP with a &#x02212;1 frameshift (von Marschall et&#x000a0;al. <xref rid="mgg3176-bib-0024" ref-type="ref">2012</xref>). It was proposed that capture of recombinant DSPP by the &#x02212;1 frameshifted protein was mediated through the &#x0201c;formation of Ca<sup>2+</sup>&#x02010;dependent complexes&#x0201d; in the part of DPP that preceded the frameshift, which might explain why most of the 5&#x02032; DPP frameshifts exhibit the milder (DD&#x02010;II) phenotype (von Marschall et&#x000a0;al. <xref rid="mgg3176-bib-0024" ref-type="ref">2012</xref>). However, while the locations of the mutations that cause DD&#x02010;II or DGI&#x02010;II tend to cluster (Fig.&#x000a0;S2), there is overlap (McKnight et&#x000a0;al. <xref rid="mgg3176-bib-0026" ref-type="ref">2008a</xref>), and <italic>DSPP</italic> mutations that cause DD&#x02010;II in one family or individual cause DGI&#x02010;II in others (Wang et&#x000a0;al. <xref rid="mgg3176-bib-0041" ref-type="ref">2011</xref>). It seems more probable that the formation of covalent dimers in the DSP domain via intermolecular disulfide bridging (Yamakoshi et&#x000a0;al. <xref rid="mgg3176-bib-0048" ref-type="ref">2005a</xref>) explains the ability of mutant DSPP to prevent the secretion of normal DSPP (haploinsufficiency). Cell pathology caused by the retention of the mutant protein in the rER (dominant negative effects) is also likely to be important (Wang et&#x000a0;al. <xref rid="mgg3176-bib-0041" ref-type="ref">2011</xref>). We suspect that with the application of SMRT sequencing more frameshift mutations in specific DPP haplotypes will be identified and provide a clearer picture of the relationship between the position of each mutation and the severity of the clinical phenotype.</p></sec><sec id="mgg3176-sec-0017"><title>Conflict of Interest</title><p>The authors state that they have no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><caption><p>
+<bold>Figure&#x000a0;S1.</bold> Alignment of the <italic>DSPP</italic> 5&#x02032; region from reptiles and mammals with <italic>DSPPL1</italic> from Coelacanth.</p><p>
+<bold>Figure&#x000a0;S2.</bold> Alignment of DPP coding region of <italic>DSPP</italic> showing allelic variants and disease&#x02010;causing mutations.</p><p>
+<bold>Figure&#x000a0;S3.</bold> Patterns of 32 DPP indels in <italic>DSPP</italic> haplotypes.</p><p>
+<bold>Figure&#x000a0;S4.</bold> Map showing the 25 different patterns (length haplotypes) of confirmed indels.</p></caption><media xlink:href="MGG3-4-028-s001.docx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Table&#x000a0;S1.</bold> Outcome analyses of whole&#x02010;exome sequencing.</p><p>
+<bold>Table&#x000a0;S2.</bold> PCR primers and reaction conditions.</p><p>
+<bold>Table&#x000a0;S3A.</bold> Thirty&#x02010;eight short <italic>DSPP</italic> haplotype sequences in NCBI PopSet: 162077127.</p><p>
+<bold>Table&#x000a0;S3B.</bold> Twenty&#x02010;one longer <italic>DSPP</italic> haplotype sequences in NCBI PopSet: 162077085.</p><p>
+<bold>Table&#x000a0;S4.</bold> List of insertions and deletions (indels) in the DPP repetitive region.</p><p>
+<bold>Table&#x000a0;S5.</bold> Disease&#x02010;causing mutations in the coding region for DPP.</p></caption><media xlink:href="MGG3-4-028-s002.docx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="mgg3176-sec-0016"><title>Acknowledgments</title><p>We thank all the families for their participation in this study. We thank also Robert Lyons and Christina McHenry at the DNA Sequencing Core, University of Michigan for their expert consultations; James Cavalcoli and Weisheng Wu at the Bioinformatics Core, University of Michigan for their analyses of the SMRT sequencing outcomes; and Anand Sethuraman and Greg Khitrov, Staff Scientists of Bioinformatics, Pacific Biosciences (Menlo Park, CA 94025) for their expert assessment of our SMRT reactions, quality of sequence reads, accuracy of sequence alignment, and variants calling. This study is supported by NIDCR/National Institutes of Health grant DE015846, by grants from the Bio &#x00026; Medical Technology Development Program (2011&#x02010;0027790), the Science Research Center grant to Bone Metabolism Research Center (2012&#x02010;0000487), the Korea Research Foundation Grant funded by the Korean Government (MEST), and the Yale Center for Mendelian Genomics (National Institutes of Health U54 HG006504). The funding sources had no involvement in the study or its publication.</p></ack><ref-list content-type="cited-references" id="mgg3176-bibl-0001"><title>References</title><ref id="mgg3176-bib-0001"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Adzhubei</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<given-names>D. M.</given-names>
+<surname>Jordan</surname>
+</string-name>, and <string-name>
+<given-names>S. R.</given-names>
+<surname>Sunyaev</surname>
+</string-name>. <year>2013</year>
+<article-title>Predicting functional effect of human missense mutations using PolyPhen&#x02010;2</article-title>. <source>Curr. Protoc. Hum. Genet.</source>
+<volume>Chapter 7</volume>:<fpage>Unit7.20</fpage>.<pub-id pub-id-type="pmid">23315928</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0002"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Aplin</surname>, <given-names>H. M.</given-names>
+</string-name>, <string-name>
+<given-names>K. L.</given-names>
+<surname>Hirst</surname>
+</string-name>, <string-name>
+<given-names>A. H.</given-names>
+<surname>Crosby</surname>
+</string-name>, and <string-name>
+<given-names>M. J.</given-names>
+<surname>Dixon</surname>
+</string-name>. <year>1995</year>
+<article-title>Mapping of the human dentin matrix acidic phosphoprotein gene (DMP1) to the dentinogenesis imperfecta type II critical region at chromosome 4q21</article-title>. <source>Genomics</source>
+<volume>30</volume>:<fpage>347</fpage>&#x02013;<lpage>349</lpage>.<pub-id pub-id-type="pmid">8586437</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0003"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Bandelt</surname>, <given-names>H. J.</given-names>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Forster</surname>
+</string-name>, and <string-name>
+<given-names>A.</given-names>
+<surname>Rohl</surname>
+</string-name>. <year>1999</year>
+<article-title>Median&#x02010;joining networks for inferring intraspecific phylogenies</article-title>. <source>Mol. Biol. Evol.</source>
+<volume>16</volume>:<fpage>37</fpage>&#x02013;<lpage>48</lpage>.<pub-id pub-id-type="pmid">10331250</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0004"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Beattie</surname>, <given-names>M. L.</given-names>
+</string-name>, <string-name>
+<given-names>J. W.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name>
+<given-names>S. G.</given-names>
+<surname>Gong</surname>
+</string-name>, <string-name>
+<given-names>C. A.</given-names>
+<surname>Murdoch&#x02010;Kinch</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>. <year>2006</year>
+<article-title>Phenotypic variation in dentinogenesis imperfecta/dentin dysplasia linked to 4q21</article-title>. <source>J. Dent. Res.</source>
+<volume>85</volume>:<fpage>329</fpage>&#x02013;<lpage>333</lpage>.<pub-id pub-id-type="pmid">16567553</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0005"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Chaisson</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Huddleston</surname>
+</string-name>, <string-name>
+<given-names>M. Y.</given-names>
+<surname>Dennis</surname>
+</string-name>, <string-name>
+<given-names>P. H.</given-names>
+<surname>Sudmant</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Malig</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Hormozdiari</surname>
+</string-name>, et&#x000a0;al. <year>2015</year>
+<article-title>Resolving the complexity of the human genome using single&#x02010;molecule sequencing</article-title>. <source>Nature</source>
+<volume>517</volume>:<fpage>608</fpage>&#x02013;<lpage>611</lpage>.<pub-id pub-id-type="pmid">25383537</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0006"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Chang</surname>, <given-names>S. R.</given-names>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Chiego</surname>
+<suffix>Jr.</suffix>
+</string-name>, and <string-name>
+<given-names>B. H.</given-names>
+<surname>Clarkson</surname>
+</string-name>. <year>1996</year>
+<article-title>Characterization and identification of a human dentin phosphophoryn</article-title>. <source>Calcif. Tissue Int.</source>
+<volume>59</volume>:<fpage>149</fpage>&#x02013;<lpage>153</lpage>.<pub-id pub-id-type="pmid">8694890</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0007"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Chen</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Unterbrink</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Kadapakkam</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Dong</surname>
+</string-name>, <string-name>
+<given-names>T. T.</given-names>
+<surname>Gu</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Dickson</surname>
+</string-name>, et&#x000a0;al. <year>2004</year>
+<article-title>Regulation of the cell type&#x02010;specific dentin sialophosphoprotein gene expression in mouse odontoblasts by a novel transcription repressor and an activator CCAAT&#x02010;binding factor</article-title>. <source>J. Biol. Chem.</source>
+<volume>279</volume>:<fpage>42182</fpage>&#x02013;<lpage>42191</lpage>.<pub-id pub-id-type="pmid">15292199</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0008"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Choi</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<given-names>U. I.</given-names>
+<surname>Scholl</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Ji</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>I. R.</given-names>
+<surname>Tikhonova</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Zumbo</surname>
+</string-name>, et&#x000a0;al. <year>2009</year>
+<article-title>Genetic diagnosis by whole exome capture and massively parallel DNA sequencing</article-title>. <source>Proc. Natl. Acad. Sci. USA</source>
+<volume>106</volume>:<fpage>19096</fpage>&#x02013;<lpage>19101</lpage>.<pub-id pub-id-type="pmid">19861545</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0009"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Cui</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Xiao</surname>
+</string-name>, <string-name>
+<given-names>V. S.</given-names>
+<surname>Tagliabracci</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Wen</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Rahdar</surname>
+</string-name>, and <string-name>
+<given-names>J. E.</given-names>
+<surname>Dixon</surname>
+</string-name>. <year>2015</year>
+<article-title>A secretory kinase complex regulates extracellular protein phosphorylation</article-title>. <source>Elife</source>
+<volume>4</volume>:<fpage>e06120</fpage>.<pub-id pub-id-type="pmid">25789606</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0010"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Engelbert</surname>, <given-names>R. H.</given-names>
+</string-name>, <string-name>
+<given-names>H. E.</given-names>
+<surname>Pruijs</surname>
+</string-name>, <string-name>
+<given-names>F. A.</given-names>
+<surname>Beemer</surname>
+</string-name>, and <string-name>
+<given-names>P. J.</given-names>
+<surname>Helders</surname>
+</string-name>. <year>1998</year>
+<article-title>Osteogenesis imperfecta in childhood: treatment strategies</article-title>. <source>Arch. Phys. Med. Rehabil.</source>
+<volume>79</volume>:<fpage>1590</fpage>&#x02013;<lpage>1594</lpage>.<pub-id pub-id-type="pmid">9862306</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0011"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Feng</surname>, <given-names>J. Q.</given-names>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Luan</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Wallace</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Jing</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Ohshima</surname>
+</string-name>, <string-name>
+<given-names>A. B.</given-names>
+<surname>Kulkarni</surname>
+</string-name>, et&#x000a0;al. <year>1998</year>
+<article-title>Genomic organization, chromosomal mapping, and promoter analysis of the mouse dentin sialophosphoprotein (DSPP) gene, which codes for both dentin sialoprotein and dentin phosphoprotein</article-title>. <source>J. Biol. Chem.</source>
+<volume>273</volume>:<fpage>9457</fpage>&#x02013;<lpage>9464</lpage>.<pub-id pub-id-type="pmid">9545272</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0012"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Fisher</surname>, <given-names>L. W.</given-names>
+</string-name>, <string-name>
+<given-names>D. A.</given-names>
+<surname>Torchia</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Fohr</surname>
+</string-name>, <string-name>
+<given-names>M. F.</given-names>
+<surname>Young</surname>
+</string-name>, and <string-name>
+<given-names>N. S.</given-names>
+<surname>Fedarko</surname>
+</string-name>. <year>2001</year>
+<article-title>Flexible structures of SIBLING proteins, bone sialoprotein, and osteopontin</article-title>. <source>Biochem. Biophys. Res. Commun.</source>
+<volume>280</volume>:<fpage>460</fpage>&#x02013;<lpage>465</lpage>.<pub-id pub-id-type="pmid">11162539</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0013"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Hart</surname>, <given-names>P. S.</given-names>
+</string-name>, and <string-name>
+<given-names>T. C.</given-names>
+<surname>Hart</surname>
+</string-name>. <year>2007</year>
+<article-title>Disorders of human dentin</article-title>. <source>Cells Tissues Organs</source>
+<volume>186</volume>:<fpage>70</fpage>&#x02013;<lpage>77</lpage>.<pub-id pub-id-type="pmid">17627120</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0014"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Jonsson</surname>, <given-names>M.</given-names>
+</string-name>, and <string-name>
+<given-names>S.</given-names>
+<surname>Fredriksson</surname>
+</string-name>. <year>1978</year>
+<article-title>Isoelectric focusing of the phosphoprotein of rat&#x02010;incisor dentin in ampholine and acid pH gradients. Evidence for carrier ampholyte&#x02010;protein complexes</article-title>. <source>J. Chromatogr.</source>
+<volume>157</volume>:<fpage>234</fpage>&#x02013;<lpage>242</lpage>.</mixed-citation></ref><ref id="mgg3176-bib-0015"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, and <string-name>
+<given-names>C.</given-names>
+<surname>Amemiya</surname>
+</string-name>. <year>2013</year>
+<article-title>SCPP genes in the coelacanth: tissue mineralization genes shared by sarcopterygians</article-title>. <source>J. Exp. Zool. Mol. Dev. Evol.</source>
+<volume>9999B</volume>:<fpage>1</fpage>&#x02013;<lpage>13</lpage>.</mixed-citation></ref><ref id="mgg3176-bib-0016"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, and <string-name>
+<given-names>K. M.</given-names>
+<surname>Weiss</surname>
+</string-name>. <year>2003</year>
+<article-title>Mineralized tissue and vertebrate evolution: the secretory calcium&#x02010;binding phosphoprotein gene cluster</article-title>. <source>Proc. Natl. Acad. Sci. USA</source>
+<volume>100</volume>:<fpage>4060</fpage>&#x02013;<lpage>4065</lpage>.<pub-id pub-id-type="pmid">12646701</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0017"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Suzuki</surname>
+</string-name>, and <string-name>
+<given-names>K. M.</given-names>
+<surname>Weiss</surname>
+</string-name>. <year>2004</year>
+<article-title>Genetic basis for the evolution of vertebrate mineralized tissue</article-title>. <source>Proc. Natl. Acad. Sci. USA</source>
+<volume>101</volume>:<fpage>11356</fpage>&#x02013;<lpage>11361</lpage>.<pub-id pub-id-type="pmid">15272073</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0018"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2007</year>
+<article-title>Hereditary dentin defects</article-title>. <source>J. Dent. Res.</source>
+<volume>86</volume>:<fpage>392</fpage>&#x02013;<lpage>399</lpage>.<pub-id pub-id-type="pmid">17452557</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0019"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Kuivaniemi</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Tromp</surname>
+</string-name>, and <string-name>
+<given-names>D. J.</given-names>
+<surname>Prockop</surname>
+</string-name>. <year>1997</year>
+<article-title>Mutations in fibrillar collagens (types I, II, III, and XI), fibril&#x02010;associated collagen (type IX), and network&#x02010;forming collagen (type X) cause a spectrum of diseases of bone, cartilage, and blood vessels</article-title>. <source>Hum. Mutat.</source>
+<volume>9</volume>:<fpage>300</fpage>&#x02013;<lpage>315</lpage>.<pub-id pub-id-type="pmid">9101290</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0020"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Lee</surname>, <given-names>K. S.</given-names>
+</string-name>, <string-name>
+<given-names>H. R.</given-names>
+<surname>Song</surname>
+</string-name>, <string-name>
+<given-names>T. J.</given-names>
+<surname>Cho</surname>
+</string-name>, <string-name>
+<given-names>H. J.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name>
+<given-names>T. M.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>H. S.</given-names>
+<surname>Jin</surname>
+</string-name>, et&#x000a0;al. <year>2006</year>
+<article-title>Mutational spectrum of type I collagen genes in Korean patients with osteogenesis imperfecta</article-title>. <source>Hum. Mutat.</source>
+<volume>27</volume>:<fpage>599</fpage>.<pub-id pub-id-type="pmid">16705691</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0021"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Linde</surname>, <given-names>A.</given-names>
+</string-name>
+<year>1989</year>
+<article-title>Dentin matrix proteins: composition and possible functions in calcification</article-title>. <source>Anat. Rec.</source>
+<volume>224</volume>:<fpage>154</fpage>&#x02013;<lpage>166</lpage>.<pub-id pub-id-type="pmid">2672882</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0022"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Marini</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Reich</surname>
+</string-name>, and <string-name>
+<given-names>S. M.</given-names>
+<surname>Smith</surname>
+</string-name>. <year>2014</year>
+<article-title>Osteogenesis imperfecta due to mutations in non&#x02010;collagenous genes: lessons in the biology of bone formation</article-title>. <source>Curr. Opin. Pediatr.</source>
+<volume>26</volume>:<fpage>500</fpage>&#x02013;<lpage>507</lpage>.<pub-id pub-id-type="pmid">25007323</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0023"><mixed-citation publication-type="journal">
+<string-name>
+<surname>von Marschall</surname>, <given-names>Z.</given-names>
+</string-name>, and <string-name>
+<given-names>L. W.</given-names>
+<surname>Fisher</surname>
+</string-name>. <year>2010</year>
+<article-title>Dentin sialophosphoprotein (DSPP) is cleaved into its two natural dentin matrix products by three isoforms of bone morphogenetic protein&#x02010;1 (BMP1)</article-title>. <source>Matrix Biol.</source>
+<volume>29</volume>:<fpage>295</fpage>&#x02013;<lpage>303</lpage>.<pub-id pub-id-type="pmid">20079836</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0024"><mixed-citation publication-type="journal">
+<string-name>
+<surname>von Marschall</surname>, <given-names>Z.</given-names>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Mok</surname>
+</string-name>, <string-name>
+<given-names>M. D.</given-names>
+<surname>Phillips</surname>
+</string-name>, <string-name>
+<given-names>D. A.</given-names>
+<surname>McKnight</surname>
+</string-name>, and <string-name>
+<given-names>L. W.</given-names>
+<surname>Fisher</surname>
+</string-name>. <year>2012</year>
+<article-title>Rough endoplasmic reticulum trafficking errors by different classes of mutant dentin sialophosphoprotein (DSPP) cause dominant negative effects in both dentinogenesis imperfecta and dentin dysplasia by entrapping normal DSPP</article-title>. <source>J. Bone Miner. Res.</source>
+<volume>27</volume>:<fpage>1309</fpage>&#x02013;<lpage>1321</lpage>.<pub-id pub-id-type="pmid">22392858</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0025"><mixed-citation publication-type="journal">
+<string-name>
+<surname>McKnight</surname>, <given-names>D. A.</given-names>
+</string-name>, and <string-name>
+<given-names>L. W.</given-names>
+<surname>Fisher</surname>
+</string-name>. <year>2009</year>
+<article-title>Molecular evolution of dentin phosphoprotein among toothed and toothless animals</article-title>. <source>BMC Evol. Biol.</source>
+<volume>9</volume>:<fpage>299</fpage>.<pub-id pub-id-type="pmid">20030824</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0026"><mixed-citation publication-type="journal">
+<string-name>
+<surname>McKnight</surname>, <given-names>D. A.</given-names>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>P. S.</given-names>
+<surname>Hart</surname>
+</string-name>, <string-name>
+<given-names>T. C.</given-names>
+<surname>Hart</surname>
+</string-name>, and <string-name>
+<given-names>L. W.</given-names>
+<surname>Fisher</surname>
+</string-name>. <year>2008a</year>
+<article-title>Overlapping DSPP mutations cause dentin dysplasia and dentinogenesis imperfecta</article-title>. <source>J. Dent. Res.</source>
+<volume>87</volume>:<fpage>1108</fpage>&#x02013;<lpage>1111</lpage>.<pub-id pub-id-type="pmid">19029076</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0027"><mixed-citation publication-type="journal">
+<string-name>
+<surname>McKnight</surname>, <given-names>D. A.</given-names>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Suzanne Hart</surname>
+</string-name>, <string-name>
+<given-names>T. C.</given-names>
+<surname>Hart</surname>
+</string-name>, <string-name>
+<given-names>J. K.</given-names>
+<surname>Hartsfield</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Wilson</surname>
+</string-name>, <string-name>
+<given-names>J. T.</given-names>
+<surname>Wright</surname>
+</string-name>, et&#x000a0;al. <year>2008b</year>
+<article-title>A comprehensive analysis of normal variation and disease&#x02010;causing mutations in the human DSPP gene</article-title>. <source>Hum. Mutat.</source>
+<volume>29</volume>:<fpage>1392</fpage>&#x02013;<lpage>1404</lpage>.<pub-id pub-id-type="pmid">18521831</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0028"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Nam</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yin</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>von Marschall</surname>
+</string-name>, and <string-name>
+<given-names>L. W.</given-names>
+<surname>Fisher</surname>
+</string-name>. <year>2014</year>
+<article-title>Efficient trafficking of acidic proteins out of the endoplasmic reticulum involves a conserved amino terminal IleProVal (IPV)&#x02010;like tripeptide motif</article-title>. <source>Connect. Tissue Res.</source>
+<volume>55</volume>(<issue>Suppl. 1</issue>):<fpage>138</fpage>&#x02013;<lpage>141</lpage>.<pub-id pub-id-type="pmid">24844412</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0029"><mixed-citation publication-type="journal">
+<string-name>
+<surname>O'Connell</surname>, <given-names>A. C.</given-names>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Marini</surname>
+</string-name>. <year>1999</year>
+<article-title>Evaluation of oral problems in an osteogenesis imperfecta population</article-title>. <source>Oral Surg. Oral Med. Oral Pathol. Oral Radiol. Endod.</source>
+<volume>87</volume>:<fpage>189</fpage>&#x02013;<lpage>196</lpage>.<pub-id pub-id-type="pmid">10052375</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0030"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Pallos</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<given-names>P. S.</given-names>
+<surname>Hart</surname>
+</string-name>, <string-name>
+<given-names>J. R.</given-names>
+<surname>Cortelli</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Vian</surname>
+</string-name>, <string-name>
+<given-names>J. T.</given-names>
+<surname>Wright</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Korkko</surname>
+</string-name>, et&#x000a0;al. <year>2001</year>
+<article-title>Novel COL1A1 mutation (G559C) [correction of G599C] associated with mild osteogenesis imperfecta and dentinogenesis imperfecta</article-title>. <source>Arch. Oral Biol.</source>
+<volume>46</volume>:<fpage>459</fpage>&#x02013;<lpage>470</lpage>.<pub-id pub-id-type="pmid">11286811</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0031"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Rauch</surname>, <given-names>F.</given-names>
+</string-name>, and <string-name>
+<given-names>F. H.</given-names>
+<surname>Glorieux</surname>
+</string-name>. <year>2004</year>
+<article-title>Osteogenesis imperfecta</article-title>. <source>Lancet</source>
+<volume>363</volume>:<fpage>1377</fpage>&#x02013;<lpage>1385</lpage>.<pub-id pub-id-type="pmid">15110498</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0032"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Shaffer</surname>, <given-names>H. B.</given-names>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Minx</surname>
+</string-name>, <string-name>
+<given-names>D. E.</given-names>
+<surname>Warren</surname>
+</string-name>, <string-name>
+<given-names>A. M.</given-names>
+<surname>Shedlock</surname>
+</string-name>, <string-name>
+<given-names>R. C.</given-names>
+<surname>Thomson</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Valenzuela</surname>
+</string-name>, et&#x000a0;al. <year>2013</year>
+<article-title>The western painted turtle genome, a model for the evolution of extreme physiological adaptations in a slowly evolving lineage</article-title>. <source>Genome Biol.</source>
+<volume>14</volume>:<fpage>R28</fpage>.<pub-id pub-id-type="pmid">23537068</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0033"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Shields</surname>, <given-names>E. D.</given-names>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Bixler</surname>
+</string-name>, and <string-name>
+<given-names>A. M.</given-names>
+<surname>el&#x02010;Kafrawy</surname>
+</string-name>. <year>1973</year>
+<article-title>A proposed classification for heritable human dentine defects with a description of a new entity</article-title>. <source>Arch. Oral Biol.</source>
+<volume>18</volume>:<fpage>543</fpage>&#x02013;<lpage>553</lpage>.<pub-id pub-id-type="pmid">4516067</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0034"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Song</surname>, <given-names>Y. L.</given-names>
+</string-name>, <string-name>
+<given-names>C. N.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>M. W.</given-names>
+<surname>Fan</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Su</surname>
+</string-name>, and <string-name>
+<given-names>Z.</given-names>
+<surname>Bian</surname>
+</string-name>. <year>2008</year>
+<article-title>Dentin phosphoprotein frameshift mutations in hereditary dentin disorders and their variation patterns in normal human population</article-title>. <source>J. Med. Genet.</source>
+<volume>45</volume>:<fpage>457</fpage>&#x02013;<lpage>464</lpage>.<pub-id pub-id-type="pmid">18456718</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0035"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Sreenath</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Thyagarajan</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Hall</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Longenecker</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>D'Souza</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Hong</surname>
+</string-name>, et&#x000a0;al. <year>2003</year>
+<article-title>Dentin sialophosphoprotein knockout mouse teeth display widened predentin zone and develop defective dentin mineralization similar to human dentinogenesis imperfecta type III</article-title>. <source>J. Biol. Chem.</source>
+<volume>278</volume>:<fpage>24874</fpage>&#x02013;<lpage>24880</lpage>.<pub-id pub-id-type="pmid">12721295</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0036"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Sun</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Prasad</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Zhu</surname>
+</string-name>, et&#x000a0;al. <year>2010</year>
+<article-title>Key proteolytic cleavage site and full&#x02010;length form of DSPP</article-title>. <source>J. Dent. Res.</source>
+<volume>89</volume>:<fpage>498</fpage>&#x02013;<lpage>503</lpage>.<pub-id pub-id-type="pmid">20332332</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0037"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Tagliabracci</surname>, <given-names>V. S.</given-names>
+</string-name>, <string-name>
+<given-names>J. L.</given-names>
+<surname>Engel</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Wen</surname>
+</string-name>, <string-name>
+<given-names>S. E.</given-names>
+<surname>Wiley</surname>
+</string-name>, <string-name>
+<given-names>C. A.</given-names>
+<surname>Worby</surname>
+</string-name>, <string-name>
+<given-names>L. N.</given-names>
+<surname>Kinch</surname>
+</string-name>, et&#x000a0;al. <year>2012</year>
+<article-title>Secreted kinase phosphorylates extracellular proteins that regulate biomineralization</article-title>. <source>Science</source>
+<volume>336</volume>:<fpage>1150</fpage>&#x02013;<lpage>1153</lpage>.<pub-id pub-id-type="pmid">22582013</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0038"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Tsuchiya</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, and <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>. <year>2011</year>
+<article-title>Astacin proteases cleave dentin sialophosphoprotein (Dspp) to generate dentin phosphoprotein (Dpp)</article-title>. <source>J. Bone Miner. Res.</source>
+<volume>26</volume>:<fpage>220</fpage>&#x02013;<lpage>228</lpage>.<pub-id pub-id-type="pmid">20687161</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0039"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Valadares</surname>, <given-names>E. R.</given-names>
+</string-name>, <string-name>
+<given-names>T. B.</given-names>
+<surname>Carneiro</surname>
+</string-name>, <string-name>
+<given-names>P. M.</given-names>
+<surname>Santos</surname>
+</string-name>, <string-name>
+<given-names>A. C.</given-names>
+<surname>Oliveira</surname>
+</string-name>, and <string-name>
+<given-names>B.</given-names>
+<surname>Zabel</surname>
+</string-name>. <year>2014</year>
+<article-title>What is new in genetics and osteogenesis imperfecta classification?</article-title>
+<source>J. Pediatr. (Rio J)</source>
+<volume>90</volume>:<fpage>536</fpage>&#x02013;<lpage>541</lpage>.<pub-id pub-id-type="pmid">25046257</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0040"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Van Den Bussche</surname>, <given-names>R. A.</given-names>
+</string-name>, <string-name>
+<given-names>S. A.</given-names>
+<surname>Reeder</surname>
+</string-name>, <string-name>
+<given-names>E. W.</given-names>
+<surname>Hansen</surname>
+</string-name>, and <string-name>
+<given-names>S. R.</given-names>
+<surname>Hoofer</surname>
+</string-name>. <year>2003</year>
+<article-title>Utility of the dentin matrix protein 1 (DMP1) gene for resolving mammalian intraordinal phylogenetic relationships</article-title>. <source>Mol. Phylogenet. Evol.</source>
+<volume>26</volume>:<fpage>89</fpage>&#x02013;<lpage>101</lpage>.<pub-id pub-id-type="pmid">12470941</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0041"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Wang</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<given-names>H. C.</given-names>
+<surname>Chan</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Rajderkar</surname>
+</string-name>, <string-name>
+<given-names>R. N.</given-names>
+<surname>Milkovich</surname>
+</string-name>, <string-name>
+<given-names>K. A.</given-names>
+<surname>Uston</surname>
+</string-name>, <string-name>
+<given-names>J. W.</given-names>
+<surname>Kim</surname>
+</string-name>, et&#x000a0;al. <year>2011</year>
+<article-title>Enamel malformations associated with a defined dentin sialophosphoprotein mutation in two families</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>:<fpage>158</fpage>&#x02013;<lpage>167</lpage>.<pub-id pub-id-type="pmid">22243242</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0042"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Wang</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<given-names>H. C.</given-names>
+<surname>Chan</surname>
+</string-name>, <string-name>
+<given-names>I.</given-names>
+<surname>Makovey</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>. <year>2012</year>
+<article-title>Novel PAX9 and COL1A2 missense mutations causing tooth agenesis and OI/DGI without skeletal abnormalities</article-title>. <source>PLoS One</source>
+<volume>7</volume>:<fpage>e51533</fpage>.<pub-id pub-id-type="pmid">23227268</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0043"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Wildeman</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>van Ophuizen</surname>
+</string-name>, <string-name>
+<given-names>J. T.</given-names>
+<surname>den Dunnen</surname>
+</string-name>, and <string-name>
+<given-names>P. E.</given-names>
+<surname>Taschner</surname>
+</string-name>. <year>2008</year>
+<article-title>Improving sequence variant descriptions in mutation databases and literature using the Mutalyzer sequence variation nomenclature checker</article-title>. <source>Hum. Mutat.</source>
+<volume>29</volume>:<fpage>6</fpage>&#x02013;<lpage>13</lpage>.<pub-id pub-id-type="pmid">18000842</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0044"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Witkop</surname>, <given-names>C. J.</given-names>
+</string-name>
+<year>1957</year>
+<article-title>Hereditary defects in enamel and dentin</article-title>. <source>Acta Genet. Stat. Med.</source>
+<volume>7</volume>:<fpage>236</fpage>&#x02013;<lpage>239</lpage>.<pub-id pub-id-type="pmid">13469154</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0045"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Witkop</surname>, <given-names>C. J.</given-names>, <suffix>Jr.</suffix>
+</string-name>, <string-name>
+<given-names>H. R.</given-names>
+<surname>Dyson</surname>
+</string-name>, and <string-name>
+<given-names>L. M.</given-names>
+<surname>Sackett</surname>
+</string-name>. <year>1956</year>
+<article-title>A study of hereditary defects occurring in a racial isolate residing in Southern Maryland; special report</article-title>. <source>Clin. Proc. Child Hosp. Dist. Columbia</source>
+<volume>12</volume>:<fpage>29</fpage>&#x02013;<lpage>33</lpage>.<pub-id pub-id-type="pmid">13317110</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0046"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Witkop</surname>, <given-names>C. J.</given-names>, <suffix>Jr.</suffix>
+</string-name>, <string-name>
+<given-names>C. J.</given-names>
+<surname>MacLean</surname>
+</string-name>, <string-name>
+<given-names>P. J.</given-names>
+<surname>Schmidt</surname>
+</string-name>, and <string-name>
+<given-names>J. L.</given-names>
+<surname>Henry</surname>
+</string-name>. <year>1966</year>
+<article-title>Medical and dental findings in the Brandywine isolate</article-title>. <source>Ala. J. Med. Sci.</source>
+<volume>3</volume>:<fpage>382</fpage>&#x02013;<lpage>403</lpage>.<pub-id pub-id-type="pmid">5978170</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0047"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>
+<year>2009</year>
+<article-title>Dentinogenesis and dentin sialophosphoprotein (DSPP)</article-title>. <source>J. Oral Biosci.</source>
+<volume>51</volume>:<fpage>134</fpage>.<pub-id pub-id-type="pmid">20157636</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0048"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Iwata</surname>
+</string-name>, <string-name>
+<given-names>J. W.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Zhang</surname>
+</string-name>, et&#x000a0;al. <year>2005a</year>
+<article-title>Porcine dentin sialoprotein is a proteoglycan with glycosaminoglycan chains containing chondroitin 6&#x02010;sulfate</article-title>. <source>J. Biol. Chem.</source>
+<volume>280</volume>:<fpage>1552</fpage>&#x02013;<lpage>1560</lpage>.<pub-id pub-id-type="pmid">15537641</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0049"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Zhang</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2005b</year>
+<article-title>Dentin glycoprotein: the protein in the middle of the dentin sialophosphoprotein chimera</article-title>. <source>J. Biol. Chem.</source>
+<volume>280</volume>:<fpage>17472</fpage>&#x02013;<lpage>17479</lpage>.<pub-id pub-id-type="pmid">15728577</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0050"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Iwata</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Kobayashi</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2006</year>
+<article-title>Dentin sialophosphoprotein is processed by MMP&#x02010;2 and MMP&#x02010;20 in&#x000a0;vitro and in&#x000a0;vivo</article-title>. <source>J. Biol. Chem.</source>
+<volume>281</volume>:<fpage>38235</fpage>&#x02013;<lpage>38243</lpage>.<pub-id pub-id-type="pmid">17046814</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0051"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. W.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Iwata</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Kobayashi</surname>
+</string-name>, et&#x000a0;al. <year>2008</year>
+<article-title>Porcine dentin sialophosphoprotein: length polymorphisms, glycosylation, phosphorylation, and stability</article-title>. <source>J. Biol. Chem.</source>
+<volume>283</volume>:<fpage>14835</fpage>&#x02013;<lpage>14844</lpage>.<pub-id pub-id-type="pmid">18359767</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0052"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Nagano</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2011</year>
+<article-title>Porcine dentin sialoprotein glycosylation and glycosaminoglycan attachments</article-title>. <source>BMC Biochem.</source>
+<volume>12</volume>:<fpage>1</fpage>&#x02013;<lpage>6</lpage>.<pub-id pub-id-type="pmid">21205312</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0053"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Zhang</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Qu</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Wang</surname>
+</string-name>, et&#x000a0;al. <year>2007</year>
+<article-title>A novel DSPP mutation is associated with type II dentinogenesis imperfecta in a Chinese family</article-title>. <source>BMC Med. Genet.</source>
+<volume>8</volume>:<fpage>52</fpage>.<pub-id pub-id-type="pmid">17686168</pub-id></mixed-citation></ref><ref id="mgg3176-bib-0054"><mixed-citation publication-type="journal">
+<string-name>
+<surname>Zhu</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Prasad</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>A. K.</given-names>
+<surname>Yamoah</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, et&#x000a0;al. <year>2010</year>
+<article-title>Glycosaminoglycan chain of dentin sialoprotein proteoglycan</article-title>. <source>J. Dent. Res.</source>
+<volume>89</volume>:<fpage>808</fpage>&#x02013;<lpage>812</lpage>.<pub-id pub-id-type="pmid">20400719</pub-id></mixed-citation></ref></ref-list></back></article>

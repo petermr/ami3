@@ -1,0 +1,467 @@
+{
+  "id": [
+    "18664426"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "18664426"
+  ],
+  "pmcid": [
+    "PMC2659582"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC2659582"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1098/rsif.2008.0242"
+  ],
+  "title": [
+    "Geographic profiling applied to testing models of bumble-bee foraging."
+  ],
+  "authorString": [
+    "Raine NE, Rossmo DK, Le Comber SC."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Raine NE"
+          ],
+          "firstName": [
+            "Nigel E"
+          ],
+          "lastName": [
+            "Raine"
+          ],
+          "initials": [
+            "NE"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6343-2829",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Research Centre for Psychology, School of Biological and Chemical Sciences, Queen Mary, University of London, Mile End Road, London E1 4NS, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Rossmo DK"
+          ],
+          "firstName": [
+            "D Kim"
+          ],
+          "lastName": [
+            "Rossmo"
+          ],
+          "initials": [
+            "DK"
+          ]
+        },
+        {
+          "fullName": [
+            "Le Comber SC"
+          ],
+          "firstName": [
+            "Steven C"
+          ],
+          "lastName": [
+            "Le Comber"
+          ],
+          "initials": [
+            "SC"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-6343-2829",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "32"
+      ],
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "1590577"
+      ],
+      "dateOfPublication": [
+        "2009 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2009"
+      ],
+      "printPublicationDate": [
+        "2009-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Journal of the Royal Society, Interface"
+          ],
+          "ISOAbbreviation": [
+            "J R Soc Interface"
+          ],
+          "medlineAbbreviation": [
+            "J R Soc Interface"
+          ],
+          "NLMid": [
+            "101217269"
+          ],
+          "ISSN": [
+            "1742-5689"
+          ],
+          "ESSN": [
+            "1742-5662"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2009"
+  ],
+  "pageInfo": [
+    "307-319"
+  ],
+  "abstractText": [
+    "Geographic profiling (GP) was originally developed as a statistical tool to help police forces prioritize lists of suspects in investigations of serial crimes. GP uses the location of related crime sites to make inferences about where the offender is most likely to live, and has been extremely successful in criminology. Here, we show how GP is applicable to experimental studies of animal foraging, using the bumble-bee Bombus terrestris. GP techniques enable us to simplify complex patterns of spatial data down to a small number of parameters (2-3) for rigorous hypothesis testing. Combining computer model simulations and experimental observation of foraging bumble-bees, we demonstrate that GP can be used to discriminate between foraging patterns resulting from (i) different hypothetical foraging algorithms and (ii) different food item (flower) densities. We also demonstrate that combining experimental and simulated data can be used to elucidate animal foraging strategies: specifically that the foraging patterns of real bumble-bees can be reliably discriminated from three out of nine hypothetical foraging algorithms. We suggest that experimental systems, like foraging bees, could be used to test and refine GP model predictions, and that GP offers a useful technique to analyse spatial animal behaviour data in both the laboratory and field."
+  ],
+  "affiliation": [
+    "Research Centre for Psychology, School of Biological and Chemical Sciences, Queen Mary, University of London, Mile End Road, London E1 4NS, UK."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "agency": [
+            "Wellcome Trust"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "BB/F52765X/1"
+          ],
+          "agency": [
+            "Biotechnology and Biological Sciences Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Bees"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Behavior, Animal"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Feeding Behavior"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Spatial Behavior"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Geography"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Algorithms"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Models, Biological"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Computer Simulation"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/18664426/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/18664426/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1098/rsif.2008.0242"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC2659582"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC2659582?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2009-04-16"
+  ],
+  "dateOfCreation": [
+    "2008-07-31"
+  ],
+  "firstIndexDate": [
+    "2009-12-23"
+  ],
+  "fullTextReceivedDate": [
+    "2009-06-11"
+  ],
+  "dateOfRevision": [
+    "2019-10-08"
+  ],
+  "firstPublicationDate": [
+    "2009-03-01"
+  ]
+}

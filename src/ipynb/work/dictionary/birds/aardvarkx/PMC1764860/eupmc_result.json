@@ -1,0 +1,553 @@
+{
+  "id": [
+    "17225861"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "17225861"
+  ],
+  "pmcid": [
+    "PMC1764860"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC1764860"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.pone.0000158"
+  ],
+  "title": [
+    "Evolutionary history of LINE-1 in the major clades of placental mammals."
+  ],
+  "authorString": [
+    "Waters PD, Dobigny G, Waddell PJ, Robinson TJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Waters PD"
+          ],
+          "firstName": [
+            "Paul D"
+          ],
+          "lastName": [
+            "Waters"
+          ],
+          "initials": [
+            "PD"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Evolutionary Genomics Group, Department of Botany and Zoology, University of Stellenbosch, Matieland, South Africa."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Dobigny G"
+          ],
+          "firstName": [
+            "Gauthier"
+          ],
+          "lastName": [
+            "Dobigny"
+          ],
+          "initials": [
+            "G"
+          ]
+        },
+        {
+          "fullName": [
+            "Waddell PJ"
+          ],
+          "firstName": [
+            "Peter J"
+          ],
+          "lastName": [
+            "Waddell"
+          ],
+          "initials": [
+            "PJ"
+          ]
+        },
+        {
+          "fullName": [
+            "Robinson TJ"
+          ],
+          "firstName": [
+            "Terence J"
+          ],
+          "lastName": [
+            "Robinson"
+          ],
+          "initials": [
+            "TJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4298-4891",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-4298-4891",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "2"
+      ],
+      "journalIssueId": [
+        "2465245"
+      ],
+      "dateOfPublication": [
+        "2007 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2007"
+      ],
+      "printPublicationDate": [
+        "2007-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2007"
+  ],
+  "pageInfo": [
+    "e158"
+  ],
+  "abstractText": [
+    "LINE-1 constitutes an important component of mammalian genomes. It has a dynamic evolutionary history characterized by the rise, fall and replacement of subfamilies. Most data concerning LINE-1 biology and evolution are derived from the human and mouse genomes and are often assumed to hold for all placentals.To examine LINE-1 relationships, sequences from the 3' region of the reverse transcriptase from 21 species (representing 13 orders across Afrotheria, Xenarthra, Supraprimates and Laurasiatheria) were obtained from whole genome sequence assemblies, or by PCR with degenerate primers. These sequences were aligned and analysed.Our analysis reflects accepted placental relationships suggesting mostly lineage-specific LINE-1 families. The data provide clear support for several clades including Glires, Supraprimates, Laurasiatheria, Boreoeutheria, Xenarthra and Afrotheria. Within the afrotherian LINE-1 (AfroLINE) clade, our tree supports Paenungulata, Afroinsectivora and Afroinsectiphillia. Xenarthran LINE-1 (XenaLINE) falls sister to AfroLINE, providing some support for the Atlantogenata (Xenarthra+Afrotheria) hypothesis.LINEs and SINEs make up approximately half of all placental genomes, so understanding their dynamics is an essential aspect of comparative genomics. Importantly, a tree of LINE-1 offers a different view of the root, as long edges (branches) such as that to marsupials are shortened and/or broken up. Additionally, a robust phylogeny of diverse LINE-1 is essential in testing that site-specific LINE-1 insertions, often regarded as homoplasy-free phylogenetic markers, are indeed unique and not convergent."
+  ],
+  "affiliation": [
+    "Evolutionary Genomics Group, Department of Botany and Zoology, University of Stellenbosch, Matieland, South Africa."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "agency": [
+            "Wellcome Trust"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "5R01LM8626"
+          ],
+          "agency": [
+            "NLM NIH HHS"
+          ],
+          "acronym": [
+            "LM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 LM008626"
+          ],
+          "agency": [
+            "NLM NIH HHS"
+          ],
+          "acronym": [
+            "LM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Placenta"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mice"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Long Interspersed Nucleotide Elements"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Pregnancy"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genome"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Female"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0000158"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0000158"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC1764860"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC1764860?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "35"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "uniprot"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2010-03-12"
+  ],
+  "dateOfCreation": [
+    "2007-01-18"
+  ],
+  "firstIndexDate": [
+    "2010-03-13"
+  ],
+  "fullTextReceivedDate": [
+    "2010-03-13"
+  ],
+  "dateOfRevision": [
+    "2018-02-14"
+  ],
+  "electronicPublicationDate": [
+    "2007-01-17"
+  ],
+  "firstPublicationDate": [
+    "2007-01-17"
+  ]
+}

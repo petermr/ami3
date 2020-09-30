@@ -1,0 +1,368 @@
+{
+  "id": [
+    "29325122"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29325122"
+  ],
+  "pmcid": [
+    "PMC5786205"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5786205"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/gbe/evy008"
+  ],
+  "title": [
+    "LINEs Contribute to the Origins of Middle Bodies of SINEs besides 3' Tails."
+  ],
+  "authorString": [
+    "Kojima KK."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Kojima KK"
+          ],
+          "firstName": [
+            "Kenji K"
+          ],
+          "lastName": [
+            "Kojima"
+          ],
+          "initials": [
+            "KK"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2715-5531",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Life Sciences, National Cheng Kung University, Tainan, Taiwan.",
+                "Genetic Information Research Institute, Mountain View, California."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-2715-5531",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "10"
+      ],
+      "journalIssueId": [
+        "2636808"
+      ],
+      "dateOfPublication": [
+        "2018 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Genome biology and evolution"
+          ],
+          "ISOAbbreviation": [
+            "Genome Biol Evol"
+          ],
+          "medlineAbbreviation": [
+            "Genome Biol Evol"
+          ],
+          "NLMid": [
+            "101509707"
+          ],
+          "ISSN": [
+            "1759-6653"
+          ],
+          "ESSN": [
+            "1759-6653"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "370-379"
+  ],
+  "abstractText": [
+    "Short interspersed elements (SINEs), which are nonautonomous transposable elements, require the transposition machinery of long interspersed elements (LINEs) to mobilize. SINEs are composed of two or more independently originating parts. The 5' region is called the \"head\" and is derived mainly from small RNAs, and the 3' region (\"tail\") originates from the 3' region of LINEs and is responsible for being recognized by counterpart LINE proteins. The origin of the middle \"body\" of SINEs is enigmatic, although significant sequence similarities among SINEs from very diverse species have been observed. Here, a systematic analysis of the similarities among SINEs and LINEs deposited on Repbase, a comprehensive database of eukaryotic repeat sequences was performed. Three primary findings are described: 1) The 5' regions of only two clades of LINEs, RTE and Vingi, were revealed to have contributed to the middle parts of SINEs; 2) The linkage of the 5' and 3' parts of LINEs can be lost due to occasional tail exchange of SINEs; and 3) The previously proposed Ceph-domain was revealed to be a fusion of a CORE-domain and a 5' part of RTE clade of LINE. Based on these findings, a hypothesis that the 5' parts of bipartite nonautonomous LINEs, which possess only the 5' and 3' regions of the original LINEs, can contribute to the undefined middle part of SINEs is proposed."
+  ],
+  "affiliation": [
+    "Department of Life Sciences, National Cheng Kung University, Tainan, Taiwan."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Alignment"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Long Interspersed Nucleotide Elements"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Short Interspersed Nucleotide Elements"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Nonautonomous",
+        "Line",
+        "Sine",
+        "Rte",
+        "Internal Deletion",
+        "Ceph-domain"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/gbe/evy008"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5786205"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5786205?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-10-22"
+  ],
+  "dateOfCreation": [
+    "2018-01-12"
+  ],
+  "firstIndexDate": [
+    "2018-01-12"
+  ],
+  "fullTextReceivedDate": [
+    "2018-02-07"
+  ],
+  "dateOfRevision": [
+    "2018-10-22"
+  ],
+  "firstPublicationDate": [
+    "2018-01-01"
+  ]
+}

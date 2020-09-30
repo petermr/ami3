@@ -1,0 +1,321 @@
+{
+  "id": [
+    "29946416"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29946416"
+  ],
+  "pmcid": [
+    "PMC6003202"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6003202"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/s13227-018-0103-4"
+  ],
+  "title": [
+    "Creating diversity in mammalian facial morphology: a review of potential developmental mechanisms."
+  ],
+  "authorString": [
+    "Usui K, Tokita M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Usui K"
+          ],
+          "firstName": [
+            "Kaoru"
+          ],
+          "lastName": [
+            "Usui"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biology, Faculty of Science, Toho University, 2-2-1 Miyama, Funabashi, Chiba 274-8510 Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Tokita M"
+          ],
+          "firstName": [
+            "Masayoshi"
+          ],
+          "lastName": [
+            "Tokita"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9215-5170",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biology, Faculty of Science, Toho University, 2-2-1 Miyama, Funabashi, Chiba 274-8510 Japan."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-9215-5170",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "9"
+      ],
+      "journalIssueId": [
+        "2645068"
+      ],
+      "dateOfPublication": [
+        "2018 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "EvoDevo"
+          ],
+          "ISOAbbreviation": [
+            "Evodevo"
+          ],
+          "medlineAbbreviation": [
+            "Evodevo"
+          ],
+          "NLMid": [
+            "101525836"
+          ],
+          "ISSN": [
+            "2041-9139"
+          ],
+          "ESSN": [
+            "2041-9139"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "15"
+  ],
+  "abstractText": [
+    "Mammals (class Mammalia) have evolved diverse craniofacial morphology to adapt to a wide range of ecological niches. However, the genetic and developmental mechanisms underlying the diversification of mammalian craniofacial morphology remain largely unknown. In this paper, we focus on the facial length and orofacial clefts of mammals and deduce potential mechanisms that produced diversity in mammalian facial morphology. Small-scale changes in facial morphology from the common ancestor, such as slight changes in facial length and the evolution of the midline cleft in some lineages of bats, could be attributed to heterochrony in facial bone ossification. In contrast, large-scale changes of facial morphology from the common ancestor, such as a truncated, widened face as well as the evolution of the bilateral cleft possessed by some bat species, could be brought about by changes in growth and patterning of the facial primordium (the facial processes) at the early stages of embryogenesis."
+  ],
+  "affiliation": [
+    "Department of Biology, Faculty of Science, Toho University, 2-2-1 Miyama, Funabashi, Chiba 274-8510 Japan."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mammals",
+        "Diversity",
+        "Transgenic mice",
+        "Bone",
+        "Bats",
+        "neural crest",
+        "Craniofacial Morphology",
+        "Orofacial Cleft",
+        "Ectomesenchyme",
+        "Facial Processes"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s13227-018-0103-4"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6003202"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6003202?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2018-06-28"
+  ],
+  "firstIndexDate": [
+    "2018-06-28"
+  ],
+  "fullTextReceivedDate": [
+    "2018-06-30"
+  ],
+  "dateOfRevision": [
+    "2018-06-29"
+  ],
+  "electronicPublicationDate": [
+    "2018-06-14"
+  ],
+  "firstPublicationDate": [
+    "2018-06-14"
+  ]
+}

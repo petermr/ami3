@@ -1,0 +1,620 @@
+{
+  "id": [
+    "31670760"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31670760"
+  ],
+  "pmcid": [
+    "PMC6934887"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6934887"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/gbe/evz238"
+  ],
+  "title": [
+    "Evolutionary Analysis of Bile Acid-Conjugating Enzymes Reveals a Complex Duplication and Reciprocal Loss History."
+  ],
+  "authorString": [
+    "Kirilenko BM, Hagey LR, Barnes S, Falany CN, Hiller M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Kirilenko BM"
+          ],
+          "firstName": [
+            "Bogdan M"
+          ],
+          "lastName": [
+            "Kirilenko"
+          ],
+          "initials": [
+            "BM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany.",
+                "Max Planck Institute for the Physics of Complex Systems, Dresden, Germany.",
+                "Center for Systems Biology, Dresden, Germany."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hagey LR"
+          ],
+          "firstName": [
+            "Lee R"
+          ],
+          "lastName": [
+            "Hagey"
+          ],
+          "initials": [
+            "LR"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Medicine, University of California at San Diego, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Barnes S"
+          ],
+          "firstName": [
+            "Stephen"
+          ],
+          "lastName": [
+            "Barnes"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pharmacology and Toxicology, Targeted Metabolomics and Proteomics Laboratory, University of Alabama, Birmingham, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Falany CN"
+          ],
+          "firstName": [
+            "Charles N"
+          ],
+          "lastName": [
+            "Falany"
+          ],
+          "initials": [
+            "CN"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pharmacology and Toxicology, Targeted Metabolomics and Proteomics Laboratory, University of Alabama, Birmingham, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hiller M"
+          ],
+          "firstName": [
+            "Michael"
+          ],
+          "lastName": [
+            "Hiller"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany.",
+                "Max Planck Institute for the Physics of Complex Systems, Dresden, Germany.",
+                "Center for Systems Biology, Dresden, Germany."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "11"
+      ],
+      "volume": [
+        "11"
+      ],
+      "journalIssueId": [
+        "2875571"
+      ],
+      "dateOfPublication": [
+        "2019 Nov"
+      ],
+      "monthOfPublication": [
+        "11"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-11-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Genome biology and evolution"
+          ],
+          "ISOAbbreviation": [
+            "Genome Biol Evol"
+          ],
+          "medlineAbbreviation": [
+            "Genome Biol Evol"
+          ],
+          "NLMid": [
+            "101509707"
+          ],
+          "ISSN": [
+            "1759-6653"
+          ],
+          "ESSN": [
+            "1759-6653"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "3256-3268"
+  ],
+  "abstractText": [
+    "To fulfill their physiological functions, bile acids are conjugated with amino acids. In humans, conjugation is catalyzed by bile acid coenzyme A: amino acid N-acyltransferase (BAAT), an enzyme with a highly conserved catalytic triad in its active site. Interestingly, the conjugated amino acids are highly variable among mammals, with some species conjugating bile acids with both glycine and taurine, whereas others conjugate only taurine. The genetic origin of these bile acid conjugation differences is unknown. Here, we tested whether mutations in BAAT's catalytic triad could explain bile acid conjugation differences. Our comparative analysis of 118 mammals first revealed that the ancestor of placental mammals and marsupials possessed two genes, BAAT and BAATP1, that arose by a tandem duplication. This duplication was followed by numerous gene losses, including BAATP1 in humans. Losses of either BAAT or BAATP1 largely happened in a reciprocal fashion, suggesting that a single conjugating enzyme is generally sufficient for mammals. In intact BAAT and BAATP1 genes, we observed multiple changes in the catalytic triad between Cys and Ser residues. Surprisingly, although mutagenesis experiments with the human enzyme have shown that replacing Cys for Ser greatly diminishes the glycine-conjugating ability, across mammals we found that this residue provides little power in predicting the experimentally measured amino acids that are conjugated with bile acids. This suggests that the mechanism of BAAT's enzymatic function is incompletely understood, despite relying on a classic catalytic triad. More generally, our evolutionary analysis indicates that results of mutagenesis experiments may not easily be extrapolatable to other species."
+  ],
+  "affiliation": [
+    "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Marsupialia"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bile Acids and Salts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Acyltransferases"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Duplication"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Deletion"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Lipid Metabolism"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Eutheria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Gene duplication",
+        "Bile Acid Conjugation",
+        "Reciprocal Gene Loss"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "glycine N-choloyltransferase"
+          ],
+          "registryNumber": [
+            "EC 2.3.1.65"
+          ]
+        },
+        {
+          "name": [
+            "Bile Acids and Salts"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Acyltransferases"
+          ],
+          "registryNumber": [
+            "EC 2.3.-"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/gbe/evz238"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6934887"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6934887?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "ensembl"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2020-03-23"
+  ],
+  "dateOfCreation": [
+    "2019-11-01"
+  ],
+  "firstIndexDate": [
+    "2019-11-01"
+  ],
+  "fullTextReceivedDate": [
+    "2020-01-03"
+  ],
+  "dateOfRevision": [
+    "2020-03-23"
+  ],
+  "firstPublicationDate": [
+    "2019-11-01"
+  ]
+}

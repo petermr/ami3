@@ -1,0 +1,578 @@
+{
+  "id": [
+    "31915874"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31915874"
+  ],
+  "pmcid": [
+    "PMC7021774"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC7021774"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1007/s00122-019-03517-8"
+  ],
+  "title": [
+    "Genetic analysis of wheat sensitivity to the ToxB fungal effector from Pyrenophora tritici-repentis, the causal agent of tan spot."
+  ],
+  "authorString": [
+    "Corsi B, Percival-Alwyn L, Downie RC, Venturini L, Iagallo EM, Campos Mantello C, McCormick-Barnes C, See PT, Oliver RP, Moffat CS, Cockram J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Corsi B"
+          ],
+          "firstName": [
+            "Beatrice"
+          ],
+          "lastName": [
+            "Corsi"
+          ],
+          "initials": [
+            "B"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Percival-Alwyn L"
+          ],
+          "firstName": [
+            "Lawrence"
+          ],
+          "lastName": [
+            "Percival-Alwyn"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Downie RC"
+          ],
+          "firstName": [
+            "Rowena C"
+          ],
+          "lastName": [
+            "Downie"
+          ],
+          "initials": [
+            "RC"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK.",
+                "Plant Sciences Department, University of Cambridge, Cambridge, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Venturini L"
+          ],
+          "firstName": [
+            "Luca"
+          ],
+          "lastName": [
+            "Venturini"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Life Sciences Department, Natural History Museum, Cromwell Road, London, SW7 5BD, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Iagallo EM"
+          ],
+          "firstName": [
+            "Elyce M"
+          ],
+          "lastName": [
+            "Iagallo"
+          ],
+          "initials": [
+            "EM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centre for Crop and Disease Management, School of Molecular and Life Sciences, Curtin University, Perth, Australia."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Campos Mantello C"
+          ],
+          "firstName": [
+            "Camila"
+          ],
+          "lastName": [
+            "Campos Mantello"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK.",
+                "Genetracer Biotech, Calle Albert Einstein 22, 39011, Santander, Spain."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "McCormick-Barnes C"
+          ],
+          "firstName": [
+            "Charlie"
+          ],
+          "lastName": [
+            "McCormick-Barnes"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK.",
+                "Faculty of Biology, Medicine and Health, The University of Manchester, Oxford Road, Manchester, M13 9PL, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "See PT"
+          ],
+          "firstName": [
+            "Pao Theen"
+          ],
+          "lastName": [
+            "See"
+          ],
+          "initials": [
+            "PT"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centre for Crop and Disease Management, School of Molecular and Life Sciences, Curtin University, Perth, Australia."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Oliver RP"
+          ],
+          "firstName": [
+            "Richard P"
+          ],
+          "lastName": [
+            "Oliver"
+          ],
+          "initials": [
+            "RP"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centre for Crop and Disease Management, School of Molecular and Life Sciences, Curtin University, Perth, Australia."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Moffat CS"
+          ],
+          "firstName": [
+            "Caroline S"
+          ],
+          "lastName": [
+            "Moffat"
+          ],
+          "initials": [
+            "CS"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6360-1933",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centre for Crop and Disease Management, School of Molecular and Life Sciences, Curtin University, Perth, Australia. caroline.moffat@curtin.edu.au."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Cockram J"
+          ],
+          "firstName": [
+            "James"
+          ],
+          "lastName": [
+            "Cockram"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1014-6463",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK. james.cockram@niab.com."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-6360-1933",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-1014-6463",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "3"
+      ],
+      "volume": [
+        "133"
+      ],
+      "journalIssueId": [
+        "2913583"
+      ],
+      "dateOfPublication": [
+        "2020 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2020"
+      ],
+      "printPublicationDate": [
+        "2020-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik"
+          ],
+          "ISOAbbreviation": [
+            "Theor. Appl. Genet."
+          ],
+          "medlineAbbreviation": [
+            "Theor Appl Genet"
+          ],
+          "NLMid": [
+            "0145600"
+          ],
+          "ISSN": [
+            "0040-5752"
+          ],
+          "ESSN": [
+            "1432-2242"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2020"
+  ],
+  "pageInfo": [
+    "935-950"
+  ],
+  "abstractText": [
+    "KEY MESSAGE:Genetic mapping of sensitivity to the Pyrenophora tritici-repentis effector ToxB allowed development of a diagnostic genetic marker, and investigation of wheat pedigrees allowed transmission of sensitive alleles to be tracked. Tan spot, caused by the necrotrophic fungal pathogen Pyrenophora tritici-repentis, is a major disease of wheat (Triticum aestivum). Secretion of the P. tritici-repentis effector ToxB is thought to play a part in mediating infection, causing chlorosis of plant tissue. Here, genetic analysis using an association mapping panel (n = 480) and a multiparent advanced generation intercross (MAGIC) population (n founders = 8, n progeny = 643) genotyped with a 90,000 feature single nucleotide polymorphism (SNP) array found ToxB sensitivity to be highly heritable (h2 ≥ 0.9), controlled predominantly by the Tsc2 locus on chromosome 2B. Genetic mapping of Tsc2 delineated a 1921-kb interval containing 104 genes in the reference genome of ToxB-insensitive variety 'Chinese Spring'. This allowed development of a co-dominant genetic marker for Tsc2 allelic state, diagnostic for ToxB sensitivity in the association mapping panel. Phenotypic and genotypic analysis in a panel of wheat varieties post-dated the association mapping panel further supported the diagnostic nature of the marker. Combining ToxB phenotype and genotypic data with wheat pedigree datasets allowed historic sources of ToxB sensitivity to be tracked, finding the variety 'Maris Dove' to likely be the historic source of sensitive Tsc2 alleles in the wheat germplasm surveyed. Exploration of the Tsc2 region gene space in the ToxB-sensitive line 'Synthetic W7984' identified candidate genes for future investigation. Additionally, a minor ToxB sensitivity QTL was identified on chromosome 2A. The resources presented here will be of immediate use for marker-assisted selection for ToxB insensitivity and the development of germplasm with additional genetic recombination within the Tsc2 region."
+  ],
+  "affiliation": [
+    "John Bingham Laboratory, NIAB, Huntingdon Road, Cambridge, CB3 0LE, UK."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "BB/N00518X/1"
+          ],
+          "agency": [
+            "Biotechnology and Biological Sciences Research Council"
+          ],
+          "acronym": [
+            "BB_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "CUR00023"
+          ],
+          "agency": [
+            "Grains Research and Development Corporation"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "BB/P010768/2"
+          ],
+          "agency": [
+            "Biotechnology and Biological Sciences Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1007/s00122-019-03517-8"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7021774"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7021774?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject",
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2020-01-10"
+  ],
+  "firstIndexDate": [
+    "2020-01-17"
+  ],
+  "fullTextReceivedDate": [
+    "2020-03-01"
+  ],
+  "dateOfRevision": [
+    "2020-03-09"
+  ],
+  "electronicPublicationDate": [
+    "2020-01-08"
+  ],
+  "firstPublicationDate": [
+    "2020-01-08"
+  ]
+}

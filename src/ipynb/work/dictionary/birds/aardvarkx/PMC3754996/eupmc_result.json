@@ -1,0 +1,521 @@
+{
+  "id": [
+    "24015252"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "24015252"
+  ],
+  "pmcid": [
+    "PMC3754996"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3754996"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.pone.0072506"
+  ],
+  "title": [
+    "Evolutionary history of the grey-faced Sengi, Rhynchocyon udzungwensis, from Tanzania: a molecular and species distribution modelling approach."
+  ],
+  "authorString": [
+    "Lawson LP, Vernesi C, Ricci S, Rovero F."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Lawson LP"
+          ],
+          "firstName": [
+            "Lucinda P"
+          ],
+          "lastName": [
+            "Lawson"
+          ],
+          "initials": [
+            "LP"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biological Sciences, University of Cincinnati, Cincinnati, Ohio, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Vernesi C"
+          ],
+          "firstName": [
+            "Cristiano"
+          ],
+          "lastName": [
+            "Vernesi"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7534-5669",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ricci S"
+          ],
+          "firstName": [
+            "Silvia"
+          ],
+          "lastName": [
+            "Ricci"
+          ],
+          "initials": [
+            "S"
+          ]
+        },
+        {
+          "fullName": [
+            "Rovero F"
+          ],
+          "firstName": [
+            "Francesco"
+          ],
+          "lastName": [
+            "Rovero"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6688-1494",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7534-5669",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6688-1494",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "8"
+      ],
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2065500"
+      ],
+      "dateOfPublication": [
+        "2013 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "e72506"
+  ],
+  "abstractText": [
+    "Rhynchocyon udzungwensis is a recently described and poorly understood sengi (giant elephant-shrew) endemic to two small montane forests in Southern Tanzania, and surrounded in lower forests by R. cirnei reichardi. In this study, we investigate the molecular genetic relationship between R. udzungwensis and R. c. reichardi, and the possible role that shifting species distributions in response to climate fluctuations may have played in shaping their evolutionary history. Rhynchocyon udzungwensis and R. c. reichardi individuals were sampled from five localities for genetic analyses. Three mitochondrial and two nuclear loci were used to construct species trees for delimitation and to determine whether introgression was detectable either from ancient or ongoing hybridization. All species-tree results show R. udzungwensis and R. c. reichardi as distinct lineages, though mtDNA shows evidence of introgression in some populations. Nuclear loci of each species were monophyletic, implying introgression is exclusively historical. Because we found evidence of introgression, we used distribution data and species distribution modelling for present, glacial, and interglacial climate cycles to predict how shifting species distributions may have facilitated hybridization in some populations. Though interpretations are affected by the limited range of these species, a likely scenario is that the mtDNA introgression found in eastern mid-elevation populations was facilitated by low numbers of R. udzungwensis that expanded into lowland heavily occupied R. c. reichardi areas during interglacial climate cycles. These results imply that relationships within the genus Rhynchocyon may be confounded by porous species boundaries and introgression, even if species are not currently sympatric."
+  ],
+  "affiliation": [
+    "Department of Biological Sciences, University of Cincinnati, Cincinnati, Ohio, United States of America."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Shrews"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA, Mitochondrial"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Tanzania"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "DNA, Mitochondrial"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24015252/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24015252/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0072506"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3754996"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3754996?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2014-03-31"
+  ],
+  "dateOfCreation": [
+    "2013-09-10"
+  ],
+  "firstIndexDate": [
+    "2013-09-10"
+  ],
+  "fullTextReceivedDate": [
+    "2013-09-09"
+  ],
+  "dateOfRevision": [
+    "2020-03-05"
+  ],
+  "electronicPublicationDate": [
+    "2013-08-27"
+  ],
+  "firstPublicationDate": [
+    "2013-08-27"
+  ]
+}

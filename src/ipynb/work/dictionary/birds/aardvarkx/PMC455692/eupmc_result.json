@@ -1,0 +1,388 @@
+{
+  "id": [
+    "15236656"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "15236656"
+  ],
+  "pmcid": [
+    "PMC455692"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC455692"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/1477-7827-2-46"
+  ],
+  "title": [
+    "Comparative aspects of trophoblast development and placentation."
+  ],
+  "authorString": [
+    "Carter AM, Enders AC."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Carter AM"
+          ],
+          "firstName": [
+            "Anthony M"
+          ],
+          "lastName": [
+            "Carter"
+          ],
+          "initials": [
+            "AM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8359-2085",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Enders AC"
+          ],
+          "firstName": [
+            "Allen C"
+          ],
+          "lastName": [
+            "Enders"
+          ],
+          "initials": [
+            "AC"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8359-2085",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "2"
+      ],
+      "journalIssueId": [
+        "1275232"
+      ],
+      "dateOfPublication": [
+        "2004 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2004"
+      ],
+      "printPublicationDate": [
+        "2004-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Reproductive biology and endocrinology : RB&E"
+          ],
+          "ISOAbbreviation": [
+            "Reprod. Biol. Endocrinol."
+          ],
+          "medlineAbbreviation": [
+            "Reprod Biol Endocrinol"
+          ],
+          "NLMid": [
+            "101153627"
+          ],
+          "ISSN": [
+            "1477-7827"
+          ],
+          "ESSN": [
+            "1477-7827"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2004"
+  ],
+  "pageInfo": [
+    "46"
+  ],
+  "abstractText": [
+    "Based on the number of tissues separating maternal from fetal blood, placentas are classified as epitheliochorial, endotheliochorial or hemochorial. We review the occurrence of these placental types in the various orders of eutherian mammals within the framework of the four superorders identified by the techniques of molecular phylogenetics. The superorder Afrotheria diversified in ancient Africa and its living representatives include elephants, sea cows, hyraxes, aardvark, elephant shrews and tenrecs. Xenarthra, comprising armadillos, anteaters and sloths, diversified in South America. All placentas examined from members of these two oldest superorders are either endotheliochorial or hemochorial. The superorder Euarchontoglires includes two sister groups, Glires and Euarchonta. The former comprises rodents and lagomorphs, which typically have hemochorial placentas. The most primitive members of Euarchonta, the tree shrews, have endotheliochorial placentation. Flying lemurs and all higher primates have hemochorial placentas. However, the lemurs and lorises are exceptional among primates in having epitheliochorial placentation. Laurasiatheria, the last superorder to arise, includes several orders with epitheliochorial placentation. These comprise whales, camels, pigs, ruminants, horses and pangolins. In contrast, nearly all carnivores have endotheliochorial placentation, whilst bats have endotheliochorial or hemochorial placentas. Also included in Laurasiatheria are a number of insectivores that have many conserved morphological characters; none of these has epitheliochorial placentation. Consideration of placental type in relation to the findings of molecular phylogenetics suggests that the likely path of evolution in Afrotheria was from endotheliochorial to hemochorial placentation. This is also a likely scenario for Xenarthra and the bats. We argue that a definitive epitheliochorial placenta is a secondary specialization and that it evolved twice, once in the Laurasiatheria and once in the lemurs and lorises."
+  ],
+  "affiliation": [
+    "Department of Physiology and Pharmacology, University of Southern Denmark, Winsloewparken 21, DK-5000 Odense, Denmark. acarter@health.sdu.dk"
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Trophoblasts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Placenta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GD"
+                  ],
+                  "qualifierName": [
+                    "growth & development"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Pregnancy"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Female"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1477-7827-2-46"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC455692"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC455692?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "85"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "N"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2004-12-14"
+  ],
+  "dateOfCreation": [
+    "2004-07-14"
+  ],
+  "firstIndexDate": [
+    "2009-12-23"
+  ],
+  "fullTextReceivedDate": [
+    "2011-02-07"
+  ],
+  "dateOfRevision": [
+    "2013-06-09"
+  ],
+  "electronicPublicationDate": [
+    "2004-07-05"
+  ],
+  "firstPublicationDate": [
+    "2004-07-05"
+  ]
+}

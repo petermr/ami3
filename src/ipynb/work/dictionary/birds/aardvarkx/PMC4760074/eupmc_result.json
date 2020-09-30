@@ -1,0 +1,624 @@
+{
+  "id": [
+    "26556496"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26556496"
+  ],
+  "pmcid": [
+    "PMC4760074"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4760074"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/molbev/msv250"
+  ],
+  "title": [
+    "Shotgun Mitogenomics Provides a Reference Phylogenetic Framework and Timescale for Living Xenarthrans."
+  ],
+  "authorString": [
+    "Gibb GC, Condamine FL, Kuch M, Enk J, Moraes-Barros N, Superina M, Poinar HN, Delsuc F."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Gibb GC"
+          ],
+          "firstName": [
+            "Gillian C"
+          ],
+          "lastName": [
+            "Gibb"
+          ],
+          "initials": [
+            "GC"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4283-9790",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut des Sciences de l'Evolution, UMR 5554, CNRS, IRD, EPHE, Université de Montpellier, Montpellier, France Ecology Group, Institute of Agriculture and Environment, Massey University, Palmerston North, New Zealand."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Condamine FL"
+          ],
+          "firstName": [
+            "Fabien L"
+          ],
+          "lastName": [
+            "Condamine"
+          ],
+          "initials": [
+            "FL"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut des Sciences de l'Evolution, UMR 5554, CNRS, IRD, EPHE, Université de Montpellier, Montpellier, France Department of Biological and Environmental Sciences, University of Gothenburg, Göteborg, Sweden Department of Biological Sciences, University of Alberta, Edmonton, AL, Canada."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kuch M"
+          ],
+          "firstName": [
+            "Melanie"
+          ],
+          "lastName": [
+            "Kuch"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "McMaster Ancient DNA Centre, Department of Anthropology and Biology, McMaster University, Hamilton, ON, Canada."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Enk J"
+          ],
+          "firstName": [
+            "Jacob"
+          ],
+          "lastName": [
+            "Enk"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "McMaster Ancient DNA Centre, Department of Anthropology and Biology, McMaster University, Hamilton, ON, Canada."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Moraes-Barros N"
+          ],
+          "firstName": [
+            "Nadia"
+          ],
+          "lastName": [
+            "Moraes-Barros"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2829-5862",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Cibio/Inbio, Centro de Investigação em Biodiversidade e Recursos Genéticos, Universidade do Porto, Vairão, Portugal Laboratório de Biologia Evolutiva e Conservação de Vertebrados (Labec), Departamento de Genética e Biologia Evolutiva, Instituto de Biociências, Universidade de São Paulo, São Paulo, Brazil."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Superina M"
+          ],
+          "firstName": [
+            "Mariella"
+          ],
+          "lastName": [
+            "Superina"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Laboratorio de Endocrinología de la Fauna Silvestre, IMBECU, CCT CONICET Mendoza, Mendoza, Argentina."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Poinar HN"
+          ],
+          "firstName": [
+            "Hendrik N"
+          ],
+          "lastName": [
+            "Poinar"
+          ],
+          "initials": [
+            "HN"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "McMaster Ancient DNA Centre, Department of Anthropology and Biology, McMaster University, Hamilton, ON, Canada poinarh@mcmaster.ca frederic.delsuc@umontpellier.fr."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Delsuc F"
+          ],
+          "firstName": [
+            "Frédéric"
+          ],
+          "lastName": [
+            "Delsuc"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6501-6287",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut des Sciences de l'Evolution, UMR 5554, CNRS, IRD, EPHE, Université de Montpellier, Montpellier, France poinarh@mcmaster.ca frederic.delsuc@umontpellier.fr."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-4283-9790",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-2829-5862",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-6501-6287",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "wikipedia",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "3"
+      ],
+      "volume": [
+        "33"
+      ],
+      "journalIssueId": [
+        "2376885"
+      ],
+      "dateOfPublication": [
+        "2016 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Molecular biology and evolution"
+          ],
+          "ISOAbbreviation": [
+            "Mol. Biol. Evol."
+          ],
+          "medlineAbbreviation": [
+            "Mol Biol Evol"
+          ],
+          "NLMid": [
+            "8501455"
+          ],
+          "ISSN": [
+            "0737-4038"
+          ],
+          "ESSN": [
+            "1537-1719"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "621-642"
+  ],
+  "abstractText": [
+    "Xenarthra (armadillos, sloths, and anteaters) constitutes one of the four major clades of placental mammals. Despite their phylogenetic distinctiveness in mammals, a reference phylogeny is still lacking for the 31 described species. Here we used Illumina shotgun sequencing to assemble 33 new complete mitochondrial genomes, establishing Xenarthra as the first major placental clade to be fully sequenced at the species level for mitogenomes. The resulting data set allowed the reconstruction of a robust phylogenetic framework and timescale that are consistent with previous studies conducted at the genus level using nuclear genes. Incorporating the full species diversity of extant xenarthrans points to a number of inconsistencies in xenarthran systematics and species definition. We propose to split armadillos into two distinct families Dasypodidae (dasypodines) and Chlamyphoridae (euphractines, chlamyphorines, and tolypeutines) to better reflect their ancient divergence, estimated around 42 Ma. Species delimitation within long-nosed armadillos (genus Dasypus) appeared more complex than anticipated, with the discovery of a divergent lineage in French Guiana. Diversification analyses showed Xenarthra to be an ancient clade with a constant diversification rate through time with a species turnover driven by high but constant extinction. We also detected a significant negative correlation between speciation rate and past temperature fluctuations with an increase in speciation rate corresponding to the general cooling observed during the last 15 My. Biogeographic reconstructions identified the tropical rainforest biome of Amazonia and the Guiana Shield as the cradle of xenarthran evolutionary history with subsequent dispersions into more open and dry habitats."
+  ],
+  "affiliation": [
+    "Institut des Sciences de l'Evolution, UMR 5554, CNRS, IRD, EPHE, Université de Montpellier, Montpellier, France Ecology Group, Institute of Agriculture and Environment, Massey University, Palmerston North, New Zealand."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Xenarthra"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Computational Biology"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genomics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genome, Mitochondrial"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "High-Throughput Nucleotide Sequencing"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mammals",
+        "Mitochondrial genomes",
+        "molecular phylogenetics",
+        "Molecular Dating",
+        "Xenarthra",
+        "Shotgun Illumina Sequencing"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/molbev/msv250"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4760074"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4760074?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "21"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2016-11-04"
+  ],
+  "dateOfCreation": [
+    "2016-02-20"
+  ],
+  "firstIndexDate": [
+    "2015-11-12"
+  ],
+  "fullTextReceivedDate": [
+    "2016-02-26"
+  ],
+  "dateOfRevision": [
+    "2016-12-30"
+  ],
+  "electronicPublicationDate": [
+    "2015-11-09"
+  ],
+  "firstPublicationDate": [
+    "2015-11-09"
+  ]
+}

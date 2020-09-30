@@ -1,0 +1,563 @@
+{
+  "id": [
+    "30348934"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30348934"
+  ],
+  "pmcid": [
+    "PMC6350106"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6350106"
+      ]
+    }
+  ],
+  "doi": [
+    "10.24272/j.issn.2095-8137.2018.059"
+  ],
+  "title": [
+    "An annotated checklist of mammals of Kenya."
+  ],
+  "authorString": [
+    "Musila S, Monadjem A, Webala PW, Patterson BD, Hutterer R, De Jong YA, Butynski TM, Mwangi G, Chen ZZ, Jiang XL."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Musila S"
+          ],
+          "firstName": [
+            "Simon"
+          ],
+          "lastName": [
+            "Musila"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Mammalogy Section, Department of Zoology, National Museums of Kenya, Nairobi 40658-00100, Kenya; E-mail:surnbirds@gmail.com."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Monadjem A"
+          ],
+          "firstName": [
+            "Ara"
+          ],
+          "lastName": [
+            "Monadjem"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1906-4023",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biological Sciences, University of Swaziland, Kwaluseni M201, Swaziland.",
+                "Mammal Research Institute, Department of Zoology & Entomology, University of Pretoria, Pretoria 0002, South Africa."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Webala PW"
+          ],
+          "firstName": [
+            "Paul W"
+          ],
+          "lastName": [
+            "Webala"
+          ],
+          "initials": [
+            "PW"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Forestry and Wildlife Management, Maasai Mara University, Narok 861-20500, Kenya."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Patterson BD"
+          ],
+          "firstName": [
+            "Bruce D"
+          ],
+          "lastName": [
+            "Patterson"
+          ],
+          "initials": [
+            "BD"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2249-7260",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Research Center, Field Museum of Natural History, Chicago IL 60605-2496, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hutterer R"
+          ],
+          "firstName": [
+            "Rainer"
+          ],
+          "lastName": [
+            "Hutterer"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Zoologisches Forschungsmuseum Alexander Koenig, Leibniz-Institut für Biodiversität der Tiere, Bonn 53113, Germany."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "De Jong YA"
+          ],
+          "firstName": [
+            "Yvonne A"
+          ],
+          "lastName": [
+            "De Jong"
+          ],
+          "initials": [
+            "YA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Eastern Africa Primate Diversity and Conservation Program, Nanyuki 149-10400, Kenya."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Butynski TM"
+          ],
+          "firstName": [
+            "Thomas M"
+          ],
+          "lastName": [
+            "Butynski"
+          ],
+          "initials": [
+            "TM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Eastern Africa Primate Diversity and Conservation Program, Nanyuki 149-10400, Kenya."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mwangi G"
+          ],
+          "firstName": [
+            "Geoffrey"
+          ],
+          "lastName": [
+            "Mwangi"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Natural Resources and Environmental Studies, Karatina University, Karatina 1957-10101, Kenya."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chen ZZ"
+          ],
+          "firstName": [
+            "Zhong-Zheng"
+          ],
+          "lastName": [
+            "Chen"
+          ],
+          "initials": [
+            "ZZ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Sino-African Joint Research Center, Chinese Academy of Sciences, Nairobi 62000-00200, Kenya.",
+                "State Key Laboratory of Genetic Resources and Evolution, Kunming Institute of Zoology, Chinese Academy of Sciences, Kunming Yunnan 650223, China."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Jiang XL"
+          ],
+          "firstName": [
+            "Xue-Long"
+          ],
+          "lastName": [
+            "Jiang"
+          ],
+          "initials": [
+            "XL"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Sino-African Joint Research Center, Chinese Academy of Sciences, Nairobi 62000-00200, Kenya.",
+                "State Key Laboratory of Genetic Resources and Evolution, Kunming Institute of Zoology, Chinese Academy of Sciences, Kunming Yunnan 650223, China."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-1906-4023",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-2249-7260",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "40"
+      ],
+      "journalIssueId": [
+        "2763610"
+      ],
+      "dateOfPublication": [
+        "2019 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Zoological research"
+          ],
+          "ISOAbbreviation": [
+            "Zool Res"
+          ],
+          "medlineAbbreviation": [
+            "Zool Res"
+          ],
+          "NLMid": [
+            "101697192"
+          ],
+          "ISSN": [
+            "2095-8137"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "3-52"
+  ],
+  "abstractText": [
+    "Kenya has a rich mammalian fauna. We reviewed recently published books and papers including the six volumes of Mammals of Africa to develop an up-to-date annotated checklist of all mammals recorded from Kenya. A total of 390 species have been identified in the country, including 106 species of rodents, 104 species of bats, 63 species of even-toed ungulates (including whales and dolphins), 36 species of insectivores and carnivores, 19 species of primates, five species of elephant shrews, four species of hyraxes and odd-toed ungulates, three species of afrosoricids, pangolins, and hares, and one species of aardvark, elephant, sirenian and hedgehog. The number of species in this checklist is expected to increase with additional surveys and as the taxonomic status of small mammals (e.g., bats, shrews and rodents) becomes better understood."
+  ],
+  "affiliation": [
+    "Mammalogy Section, Department of Zoology, National Museums of Kenya, Nairobi 40658-00100, Kenya; E-mail:surnbirds@gmail.com."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "review-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biodiversity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Kenya"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Animal Distribution"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Checklist",
+        "Carnivores",
+        "rodents",
+        "Bats Ungulate",
+        "Shrews Kenya"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.24272/j.issn.2095-8137.2018.059"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6350106"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6350106?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2019-01-02"
+  ],
+  "dateOfCreation": [
+    "2018-10-24"
+  ],
+  "firstIndexDate": [
+    "2018-10-24"
+  ],
+  "fullTextReceivedDate": [
+    "2019-02-09"
+  ],
+  "dateOfRevision": [
+    "2019-01-30"
+  ],
+  "electronicPublicationDate": [
+    "2018-10-17"
+  ],
+  "firstPublicationDate": [
+    "2018-10-17"
+  ]
+}

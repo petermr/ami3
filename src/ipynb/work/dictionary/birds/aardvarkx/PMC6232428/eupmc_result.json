@@ -1,0 +1,440 @@
+{
+  "id": [
+    "30443409"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30443409"
+  ],
+  "pmcid": [
+    "PMC6232428"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6232428"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/ve/vey026"
+  ],
+  "title": [
+    "Endogenous amdoparvovirus-related elements reveal insights into the biology and evolution of vertebrate parvoviruses."
+  ],
+  "authorString": [
+    "Pénzes JJ, Marsile-Medun S, Agbandje-McKenna M, Gifford RJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Pénzes JJ"
+          ],
+          "firstName": [
+            "Judit J"
+          ],
+          "lastName": [
+            "Pénzes"
+          ],
+          "initials": [
+            "JJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "University of Florida McKnight Brain Institute, 1149 Newell Dr, Gainesville, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Marsile-Medun S"
+          ],
+          "firstName": [
+            "Soledad"
+          ],
+          "lastName": [
+            "Marsile-Medun"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Agrocampus Ouest, 65 Rue de Saint-Brieuc, Rennes, France.",
+                "MRC-University of Glasgow Centre for Virus Research, 464 Bearsden Road, Glasgow, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Agbandje-McKenna M"
+          ],
+          "firstName": [
+            "Mavis"
+          ],
+          "lastName": [
+            "Agbandje-McKenna"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "University of Florida McKnight Brain Institute, 1149 Newell Dr, Gainesville, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Gifford RJ"
+          ],
+          "firstName": [
+            "Robert James"
+          ],
+          "lastName": [
+            "Gifford"
+          ],
+          "initials": [
+            "RJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4028-9884",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "MRC-University of Glasgow Centre for Virus Research, 464 Bearsden Road, Glasgow, UK."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-4028-9884",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "2"
+      ],
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2708540"
+      ],
+      "dateOfPublication": [
+        "2018 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Virus evolution"
+          ],
+          "ISOAbbreviation": [
+            "Virus Evol"
+          ],
+          "medlineAbbreviation": [
+            "Virus Evol"
+          ],
+          "NLMid": [
+            "101664675"
+          ],
+          "ISSN": [
+            "2057-1577"
+          ],
+          "ESSN": [
+            "2057-1577"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "vey026"
+  ],
+  "abstractText": [
+    "Amdoparvoviruses (family Parvoviridae: genus Amdoparvovirus) infect carnivores, and are a major cause of morbidity and mortality in farmed animals. In this study, we systematically screened animal genomes to identify endogenous parvoviral elements (EPVs) disclosing a high degree of similarity to amdoparvoviruses, and investigated their genomic, phylogenetic and protein structural features. We report the first examples of full-length, amdoparvovirus-derived EPVs in the genome of the Transcaucasian mole vole (Ellobius lutescens). We also identify four EPVs in mammal and reptile genomes that are intermediate between amdoparvoviruses and their sister genus (Protoparvovirus) in terms of their phylogenetic placement and genomic features. In particular, we identify a genome-length EPV in the genome of a pit viper (Protobothrops mucrosquamatus) that is more similar to a protoparvovirus than an amdoparvovirus in terms of its phylogenetic placement and the structural features of its capsid protein (as revealed by homology modeling), yet exhibits characteristically amdoparvovirus-like genome features including: (1) a putative middle ORF gene; (2) a capsid gene that lacks a phospholipase A2 domain; (3) a genome structure consistent with an amdoparvovirus-like mechanism of capsid gene expression. Our findings indicate that amdoparvovirus host range extends to rodents, and that parvovirus lineages possessing a mixture of proto- and amdoparvovirus-like characteristics have circulated in the past. In addition, we show that EPV sequences in the mole vole and pit viper encode intact, expressible replicase genes that have potentially been co-opted or exapted in these host species."
+  ],
+  "affiliation": [
+    "University of Florida McKnight Brain Institute, 1149 Newell Dr, Gainesville, USA."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "MC_UU_12014/10"
+          ],
+          "agency": [
+            "Medical Research Council"
+          ],
+          "acronym": [
+            "MRC_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "MC_UU_12014/12"
+          ],
+          "agency": [
+            "Medical Research Council"
+          ],
+          "acronym": [
+            "MRC_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 GM109524"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Parvovirus",
+        "Endogenous Virus",
+        "Paleovirology",
+        "Amdoparvovirus",
+        "Protoparvovirus"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/ve/vey026"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6232428"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6232428?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "PPR13376"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2018-11-17"
+  ],
+  "firstIndexDate": [
+    "2018-11-17"
+  ],
+  "fullTextReceivedDate": [
+    "2018-11-22"
+  ],
+  "dateOfRevision": [
+    "2020-04-24"
+  ],
+  "electronicPublicationDate": [
+    "2018-11-12"
+  ],
+  "firstPublicationDate": [
+    "2018-07-01"
+  ]
+}

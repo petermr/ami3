@@ -1,0 +1,802 @@
+{
+  "id": [
+    "30674270"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30674270"
+  ],
+  "pmcid": [
+    "PMC6343362"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6343362"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/s12862-019-1359-6"
+  ],
+  "title": [
+    "Odontogenic ameloblast-associated (ODAM) is inactivated in toothless/enamelless placental mammals and toothed whales."
+  ],
+  "authorString": [
+    "Springer MS, Emerling CA, Gatesy J, Randall J, Collin MA, Hecker N, Hiller M, Delsuc F."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Springer MS"
+          ],
+          "firstName": [
+            "Mark S"
+          ],
+          "lastName": [
+            "Springer"
+          ],
+          "initials": [
+            "MS"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7335-6946",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Evolution, Ecology, and Organismal Biology, University of California, Riverside, CA, 92521, USA. springer@ucr.edu."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Emerling CA"
+          ],
+          "firstName": [
+            "Christopher A"
+          ],
+          "lastName": [
+            "Emerling"
+          ],
+          "initials": [
+            "CA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut des Sciences de l'Évolution de Montpellier (ISEM), CNRS, IRD, EPHE, Université de Montpellier, Montpellier, France.",
+                "Department of Biology, Whittier College, Whittier, CA, 90602, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Gatesy J"
+          ],
+          "firstName": [
+            "John"
+          ],
+          "lastName": [
+            "Gatesy"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Vertebrate Zoology and Sackler Institute for Comparative Genomics, American Museum of Natural History, New York, NY, 10024, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Randall J"
+          ],
+          "firstName": [
+            "Jason"
+          ],
+          "lastName": [
+            "Randall"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Evolution, Ecology, and Organismal Biology, University of California, Riverside, CA, 92521, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Collin MA"
+          ],
+          "firstName": [
+            "Matthew A"
+          ],
+          "lastName": [
+            "Collin"
+          ],
+          "initials": [
+            "MA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Evolution, Ecology, and Organismal Biology, University of California, Riverside, CA, 92521, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hecker N"
+          ],
+          "firstName": [
+            "Nikolai"
+          ],
+          "lastName": [
+            "Hecker"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1693-4257",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany.",
+                "Max Planck Institute for the Physics of Complex Systems, Dresden, Germany.",
+                "Center for Systems Biology Dresden, Dresden, Germany."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hiller M"
+          ],
+          "firstName": [
+            "Michael"
+          ],
+          "lastName": [
+            "Hiller"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany.",
+                "Max Planck Institute for the Physics of Complex Systems, Dresden, Germany.",
+                "Center for Systems Biology Dresden, Dresden, Germany."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Delsuc F"
+          ],
+          "firstName": [
+            "Frédéric"
+          ],
+          "lastName": [
+            "Delsuc"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut des Sciences de l'Évolution de Montpellier (ISEM), CNRS, IRD, EPHE, Université de Montpellier, Montpellier, France."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7335-6946",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1693-4257",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "19"
+      ],
+      "journalIssueId": [
+        "2766477"
+      ],
+      "dateOfPublication": [
+        "2019 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC evolutionary biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Evol. Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Evol Biol"
+          ],
+          "NLMid": [
+            "100966975"
+          ],
+          "ISSN": [
+            "1471-2148"
+          ],
+          "ESSN": [
+            "1471-2148"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "31"
+  ],
+  "abstractText": [
+    "BACKGROUND:The gene for odontogenic ameloblast-associated (ODAM) is a member of the secretory calcium-binding phosphoprotein gene family. ODAM is primarily expressed in dental tissues including the enamel organ and the junctional epithelium, and may also have pleiotropic functions that are unrelated to teeth. Here, we leverage the power of natural selection to test competing hypotheses that ODAM is tooth-specific versus pleiotropic. Specifically, we compiled and screened complete protein-coding sequences, plus sequences for flanking intronic regions, for ODAM in 165 placental mammals to determine if this gene contains inactivating mutations in lineages that either lack teeth (baleen whales, pangolins, anteaters) or lack enamel on their teeth (aardvarks, sloths, armadillos), as would be expected if the only essential functions of ODAM are related to tooth development and the adhesion of the gingival junctional epithelium to the enamel tooth surface. RESULTS:We discovered inactivating mutations in all species of placental mammals that either lack teeth or lack enamel on their teeth. A surprising result is that ODAM is also inactivated in a few additional lineages including all toothed whales that were examined. We hypothesize that ODAM inactivation is related to the simplified outer enamel surface of toothed whales. An alternate hypothesis is that ODAM inactivation in toothed whales may be related to altered antimicrobial functions of the junctional epithelium in aquatic habitats. Selection analyses on ODAM sequences revealed that the composite dN/dS value for pseudogenic branches is close to 1.0 as expected for a neutrally evolving pseudogene. DN/dS values on transitional branches were used to estimate ODAM inactivation times. In the case of pangolins, ODAM was inactivated ~ 65 million years ago, which is older than the oldest pangolin fossil (Eomanis, 47 Ma) and suggests an even more ancient loss or simplification of teeth in this lineage. CONCLUSION:Our results validate the hypothesis that the only essential functions of ODAM that are maintained by natural selection are related to tooth development and/or the maintenance of a healthy junctional epithelium that attaches to the enamel surface of teeth."
+  ],
+  "affiliation": [
+    "Department of Evolution, Ecology, and Organismal Biology, University of California, Riverside, CA, 92521, USA. springer@ucr.edu."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "683257"
+          ],
+          "agency": [
+            "European Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ameloblasts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Dental Enamel"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Whales"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Codon"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Likelihood Functions"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Gene Silencing"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Odontogenesis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Pregnancy"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mutation"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Fossils"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Female"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Eutheria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Pseudogene",
+        "Enamel",
+        "Edentulism",
+        "Junctional Epithelium",
+        "Odam"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Codon"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s12862-019-1359-6"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6343362"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6343362?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2019-06-26"
+  ],
+  "dateOfCreation": [
+    "2019-01-25"
+  ],
+  "firstIndexDate": [
+    "2019-01-25"
+  ],
+  "fullTextReceivedDate": [
+    "2019-01-30"
+  ],
+  "dateOfRevision": [
+    "2020-03-09"
+  ],
+  "electronicPublicationDate": [
+    "2019-01-23"
+  ],
+  "firstPublicationDate": [
+    "2019-01-23"
+  ]
+}

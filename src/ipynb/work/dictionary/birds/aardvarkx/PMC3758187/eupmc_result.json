@@ -1,0 +1,534 @@
+{
+  "id": [
+    "23938752"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "23938752"
+  ],
+  "pmcid": [
+    "PMC3758187"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3758187"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1098/rstb.2012.0503"
+  ],
+  "title": [
+    "Identification of an ancient endogenous retrovirus, predating the divergence of the placental mammals."
+  ],
+  "authorString": [
+    "Lee A, Nolan A, Watson J, Tristem M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Lee A"
+          ],
+          "firstName": [
+            "Adam"
+          ],
+          "lastName": [
+            "Lee"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Imperial College London, , South Kensington Campus, London SW7 2AZ, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Nolan A"
+          ],
+          "firstName": [
+            "Alison"
+          ],
+          "lastName": [
+            "Nolan"
+          ],
+          "initials": [
+            "A"
+          ]
+        },
+        {
+          "fullName": [
+            "Watson J"
+          ],
+          "firstName": [
+            "Jason"
+          ],
+          "lastName": [
+            "Watson"
+          ],
+          "initials": [
+            "J"
+          ]
+        },
+        {
+          "fullName": [
+            "Tristem M"
+          ],
+          "firstName": [
+            "Michael"
+          ],
+          "lastName": [
+            "Tristem"
+          ],
+          "initials": [
+            "M"
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1626"
+      ],
+      "volume": [
+        "368"
+      ],
+      "journalIssueId": [
+        "2077059"
+      ],
+      "dateOfPublication": [
+        "2013 Sep"
+      ],
+      "monthOfPublication": [
+        "9"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-09-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Philosophical transactions of the Royal Society of London. Series B, Biological sciences"
+          ],
+          "ISOAbbreviation": [
+            "Philos. Trans. R. Soc. Lond., B, Biol. Sci."
+          ],
+          "medlineAbbreviation": [
+            "Philos Trans R Soc Lond B Biol Sci"
+          ],
+          "NLMid": [
+            "7503623"
+          ],
+          "ISSN": [
+            "0962-8436"
+          ],
+          "ESSN": [
+            "1471-2970"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "20120503"
+  ],
+  "abstractText": [
+    "The evolutionary arms race between mammals and retroviruses has long been recognized as one of the oldest host-parasite interactions. Rapid evolution rates in exogenous retroviruses have often made accurate viral age estimations highly problematic. Endogenous retroviruses (ERVs), however, integrate into the germline of their hosts, and are subjected to their evolutionary rates. This study describes, for the first time, a retroviral orthologue predating the divergence of placental mammals, giving it a minimum age of 104-110 Myr. Simultaneously, other orthologous selfish genetic elements (SGEs), inserted into the ERV sequence, provide evidence for the oldest individual mammalian-wide interspersed repeat and medium-reiteration frequency interspersed repeat mammalian repeats, with the same minimum age. The combined use of shared SGEs and reconstruction of viral orthologies defines new limits and increases maximum 'lookback' times, with subsequent implications for the field of paleovirology."
+  ],
+  "affiliation": [
+    "Imperial College London, , South Kensington Campus, London SW7 2AZ, UK."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "agency": [
+            "Wellcome Trust"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "VI"
+                  ],
+                  "qualifierName": [
+                    "virology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Endogenous Retroviruses"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Alignment"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genome"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Host-Pathogen Interactions"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Genomics",
+        "Mammalian evolution",
+        "Paleovirology",
+        "Mammalian-wide Interspersed Repeat",
+        "Retrovirus Evolution",
+        "Selfish Genetic Elements"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/23938752/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/23938752/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1098/rstb.2012.0503"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3758187"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3758187?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "23"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2014-04-16"
+  ],
+  "dateOfCreation": [
+    "2013-08-13"
+  ],
+  "firstIndexDate": [
+    "2013-08-14"
+  ],
+  "fullTextReceivedDate": [
+    "2013-09-20"
+  ],
+  "dateOfRevision": [
+    "2016-10-19"
+  ],
+  "electronicPublicationDate": [
+    "2013-08-12"
+  ],
+  "firstPublicationDate": [
+    "2013-08-12"
+  ]
+}

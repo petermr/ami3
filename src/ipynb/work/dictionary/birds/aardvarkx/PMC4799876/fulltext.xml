@@ -1,0 +1,1457 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd">
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 2?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="iso-abbrev">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2324-9269</journal-id><journal-id journal-id-type="publisher-id">MGG3</journal-id><journal-title-group><journal-title>Molecular Genetics &#x00026; Genomic Medicine</journal-title></journal-title-group><issn pub-type="epub">2324-9269</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1002/mgg3.194</article-id><article-id pub-id-type="publisher-id">MGG3194</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>
+<italic>MMP20</italic>,<italic> KLK4,</italic> and <italic>MMP20/KLK4</italic> double null mice define roles for matrix proteases during dental enamel formation</article-title><alt-title alt-title-type="left-running-head">Y. Hu <italic>et&#x000a0;al</italic>.</alt-title></title-group><contrib-group><contrib id="mgg3194-cr-0001" contrib-type="author"><name><surname>Hu</surname><given-names>Yuanyuan</given-names></name><xref ref-type="aff" rid="mgg3194-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3194-cr-0002" contrib-type="author"><name><surname>Smith</surname><given-names>Charles E.</given-names></name><xref ref-type="aff" rid="mgg3194-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="mgg3194-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="mgg3194-cr-0003" contrib-type="author"><name><surname>Richardson</surname><given-names>Amelia S</given-names></name><xref ref-type="aff" rid="mgg3194-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3194-cr-0004" contrib-type="author"><name><surname>Bartlett</surname><given-names>John D.</given-names></name><xref ref-type="aff" rid="mgg3194-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg3194-cr-0005" contrib-type="author"><name><surname>Hu</surname><given-names>Jan C.C.</given-names></name><xref ref-type="aff" rid="mgg3194-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3194-cr-0006" contrib-type="author" corresp="yes"><name><surname>Simmer</surname><given-names>James P.</given-names></name><xref ref-type="aff" rid="mgg3194-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="mgg3194-aff-0001"><label><sup>1</sup></label><named-content content-type="organisation-division">Departments of Biologic and Materials Sciences</named-content><institution>University of Michigan School of Dentistry</institution><named-content content-type="street">1210 Eisenhower Place</named-content><named-content content-type="city">Ann Arbor</named-content><named-content content-type="country-part">Michigan</named-content><named-content content-type="post-code">48108</named-content></aff><aff id="mgg3194-aff-0002"><label><sup>2</sup></label><named-content content-type="organisation-division">Facility for Electron Microscopy Research</named-content><named-content content-type="organisation-division">Department of Anatomy and Cell Biology and Faculty of Dentistry</named-content><institution>McGill University</institution><named-content content-type="city">Montreal</named-content><named-content content-type="country-part">Quebec</named-content><named-content content-type="post-code">H3A 2B2</named-content><country country="CA">Canada</country></aff><aff id="mgg3194-aff-0003"><label><sup>3</sup></label><named-content content-type="organisation-division">Office of Research</named-content><institution>College of Dentistry</institution><institution>Ohio State University</institution><named-content content-type="street">4139 Postle Hall, 305 W. 12th Ave.</named-content><named-content content-type="city">Columbus</named-content><named-content content-type="country-part">Ohio 43210</named-content></aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+James P. Simmer, Departments of Biologic and Materials Sciences, University of Michigan Dental Research Lab, 1210 Eisenhower Pl, Ann Arbor, 48108 MI. Tel:&#x000a0;734&#x02010;975&#x02010;9318; Fax: 734&#x02010;975&#x02010;9329; E&#x02010;mail: <email>jsimmer@umich.edu</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>20</day><month>12</month><year>2015</year></pub-date><pub-date pub-type="collection"><month>3</month><year>2016</year></pub-date><volume>4</volume><issue>2</issue><issue-id pub-id-type="doi">10.1002/mgg3.2016.4.issue-2</issue-id><fpage>178</fpage><lpage>196</lpage><history><date date-type="received"><day>16</day><month>9</month><year>2015</year></date><date date-type="rev-recd"><day>12</day><month>11</month><year>2015</year></date><date date-type="accepted"><day>13</day><month>11</month><year>2015</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2016 Wiley Periodicals, Inc. <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2015 The Authors. <italic>Molecular Genetics &#x00026; Genomic Medicine</italic> published by Wiley Periodicals, Inc.</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:MGG3-4-178.pdf"/><abstract id="mgg3194-abs-0001"><title>Abstract</title><p>Matrix metalloproteinase 20 (MMP20) and kallikrein&#x02010;related peptidase 4 (KLK4) are secreted proteinases that are essential for proper dental enamel formation. We characterized and compared enamel formed in wild&#x02010;type, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice using dissecting and&#x000a0;light microscopy, backscattered scanning electron microscopy (bSEM), SEM, microcomputed tomography (<italic>&#x003bc;</italic>CT), and energy&#x02010;dispersive X&#x02010;ray analysis (EDX). Following eruption, fractures were observed on <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> molars. Failure of the enamel in the <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> molars was unexpected and suggested that digenic effects could contribute to the etiology of amelogenesis imperfecta in humans. Micro&#x02010;CT analyses of hemimandibles demonstrated significantly reduced high&#x02010;density enamel volume in the <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice relative to the wild&#x02010;type, which was further reduced in <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice. bSEM images of 7&#x02010;week <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mandibular incisors showed rough, pitted enamel surfaces with numerous indentations and protruding nodules. The <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> incisors showed prominent, evenly spaced, horizontal ridges that were more distinct in <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> incisors relative to <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> incisors due to the darkening of the valleys between the ridges. In cross sections, the <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> exhibited three distinct layers. The outer layer exhibited a disturbed elemental composition and an irregular enamel surface covered with nodules. The <italic>Mmp20</italic> null enamel was apparently unable to withstand the sheer forces associated with eruption and separated from dentin during development. Cells invaded the cracks and interposed between the dentin and enamel layers. MMP20 and KLK4 serve overlapping and complementary functions to harden enamel by removing protein, but MMP20 potentially serves multiple additional functions necessary for the adherence of enamel to dentin, the release of intercellular protein stores into the enamel matrix, the retreat of ameloblasts to facilitate thickening of the enamel layer, and the timely transition of ameloblasts to maturation.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="mgg3194-kwd-0001">Amelogenesis imperfecta</kwd><kwd id="mgg3194-kwd-0002">enamelysin</kwd><kwd id="mgg3194-kwd-0003">FAM83H</kwd><kwd id="mgg3194-kwd-0004">Kallikrein&#x02010;related peptidase 4</kwd><kwd id="mgg3194-kwd-0005">matrix metalloproteinase 20</kwd></kwd-group><funding-group><award-group><funding-source>NIDCR/NIH</funding-source><award-id>DE012769 </award-id><award-id>DE015846</award-id><award-id>DE016276</award-id></award-group></funding-group><counts><page-count count="19"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>mgg3194</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>March 2016</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:4.8.5 mode:remove_FC converted:20.03.2016</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="mgg3194-sec-0001"><title>Introduction</title><p>Two secreted proteinases are essential for dental enamel formation: matrix metalloproteinase 20 (MMP20; OMIM *604629) and kallikrein&#x02010;related peptidase 4 (KLK4; OMIM *603767) (Lu et&#x000a0;al. <xref rid="mgg3194-bib-0040" ref-type="ref">2008</xref>). MMP20 is secreted early during the secretory stage, and cleaves or &#x0201c;processes&#x0201d; enamel matrix proteins at a limited number of sites (Ryu et&#x000a0;al. <xref rid="mgg3194-bib-0050" ref-type="ref">1999</xref>). MMP20 cleaves amelogenin (Nagano et&#x000a0;al. <xref rid="mgg3194-bib-0043" ref-type="ref">2009</xref>) and ameloblastin (Iwata et&#x000a0;al. <xref rid="mgg3194-bib-0030" ref-type="ref">2007</xref>; Chun et&#x000a0;al. <xref rid="mgg3194-bib-0010" ref-type="ref">2010</xref>) in&#x000a0;vitro at the same sites that must be hydrolyzed in&#x000a0;vivo to explain the spectrum of accumulated cleavage products that are found in developing pig enamel (Yamakoshi et&#x000a0;al. <xref rid="mgg3194-bib-0076" ref-type="ref">2003</xref>; Yamakoshi <xref rid="mgg3194-bib-0075" ref-type="ref">2011</xref>). Uncleaved enamel proteins are prominent in the secretory stage enamel of <italic>Mmp20</italic> null mice (Yamakoshi et&#x000a0;al. <xref rid="mgg3194-bib-0078" ref-type="ref">2011</xref>). MMP20 is expressed by both odontoblasts and ameloblasts at the onset of enamel formation, during formation of the dentino&#x02010;enamel junction (DEJ) (Begue&#x02010;Kirn et&#x000a0;al. <xref rid="mgg3194-bib-0005" ref-type="ref">1998</xref>), and is critical for proper formation of the interface between dentin and enamel (Beniash et&#x000a0;al. <xref rid="mgg3194-bib-0006" ref-type="ref">2006</xref>). Early during dental biomineralization, a line of hypermineralization along the DEJ can be observed until the overlying enamel reaches a similar density (Hu et&#x000a0;al. <xref rid="mgg3194-bib-0027" ref-type="ref">2011a</xref>). This line is absent during early amelogenesis in <italic>Mmp20</italic> null mice (Hu et&#x000a0;al. <xref rid="mgg3194-bib-0028" ref-type="ref">2011b</xref>), and the enamel layer in these mice fails at the DEJ (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0061" ref-type="ref">2012b</xref>). <italic>Mmp20</italic> null mice show severe enamel malformations (Caterina et&#x000a0;al. <xref rid="mgg3194-bib-0008" ref-type="ref">2002</xref>; Bartlett et&#x000a0;al. <xref rid="mgg3194-bib-0002" ref-type="ref">2004</xref>, <xref rid="mgg3194-bib-0004" ref-type="ref">2011b</xref>), with no phenotype evident outside of the dentition. Mutations in human <italic>MMP20</italic> cause a nonsyndromic form of amelogenesis imperfecta (Kim et&#x000a0;al. <xref rid="mgg3194-bib-0037" ref-type="ref">2005</xref>; Papagerakis et&#x000a0;al. <xref rid="mgg3194-bib-0046" ref-type="ref">2008</xref>; Wang et&#x000a0;al. <xref rid="mgg3194-bib-0073" ref-type="ref">2013</xref>; Seymen et&#x000a0;al. <xref rid="mgg3194-bib-0054" ref-type="ref">2015</xref>).</p><p>The <italic>Mmp20</italic> gene is found in teleosts (Kawasaki and Suzuki <xref rid="mgg3194-bib-0033" ref-type="ref">2011</xref>), so its existence preceded the innovation of enamel formation in fish with lungs (Kawasaki and Amemiya <xref rid="mgg3194-bib-0032" ref-type="ref">2014</xref>). Despite this, MMP20 is clearly specialized for enamel formation. The human expressed sequence tag (EST) database (which does not have a sampling for developing teeth) lists only 4 MMP20 ESTs out of over 3.3&#x000a0;million ESTs characterized for normal tissues, suggesting there is only trace expression of <italic>MMP20</italic> in nondental tissues. <italic>Mmp20</italic> has been independently pseudogenized in many vertebrates that have lost the ability to make teeth or dental enamel during evolution, such as birds (Kawasaki and Suzuki <xref rid="mgg3194-bib-0033" ref-type="ref">2011</xref>), baleen and sperm whales (Meredith et&#x000a0;al. <xref rid="mgg3194-bib-0041" ref-type="ref">2011</xref>), turtles, pangolins, sloths, and aardvarks (Meredith et&#x000a0;al. <xref rid="mgg3194-bib-0042" ref-type="ref">2014</xref>). The independent degeneration of <italic>Mmp20</italic> in vertebrates that stop making enamel demonstrates a lack of selection pressure for maintaining this gene, except for enamel formation.</p><p>Three enamel proteins are secreted along with MMP20: amelogenin, enamelin, and ameloblastin (Fincham et&#x000a0;al. <xref rid="mgg3194-bib-0015" ref-type="ref">1999</xref>). These proline/glutamine&#x02010;rich proteins are all members of the secretory calcium&#x02010;binding phosphoprotein (SCPP) family (Kawasaki and Weiss <xref rid="mgg3194-bib-0034" ref-type="ref">2003</xref>), and are found in the coelacanth and lungfish, but not in teleosts (Kawasaki and Amemiya <xref rid="mgg3194-bib-0032" ref-type="ref">2014</xref>). These three SCPP proteins are specialized for dental enamel formation and their appearance during evolution is associated with the development of a specialized mineralization front apparatus along the distal membrane of ameloblasts that generates, extends and orients numerous thin mineral ribbons beneath each cell. This process is the defining feature of true enamel and is remarkably similar in lungfish and in mammals (Satchell et&#x000a0;al. <xref rid="mgg3194-bib-0052" ref-type="ref">2000</xref>; Ronnholm <xref rid="mgg3194-bib-0048" ref-type="ref">1962a</xref>). Amelogenin, enamelin, and ameloblastin are secreted and partially reabsorbed by ameloblasts at the mineral front as the ribbons elongate. The target specificity of MMP20 is an important factor in determining which protein domains accumulate and which are reabsorbed.</p><p>The onset of KLK4 expression is later than MMP20 and occurs during the transition by ameloblasts into the maturation stage (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0059" ref-type="ref">2011b</xref>; Hu et&#x000a0;al. <xref rid="mgg3194-bib-0024" ref-type="ref">2000</xref>, <xref rid="mgg3194-bib-0025" ref-type="ref">2002</xref>). Unlike <italic>Mmp20</italic>,<italic> Klk4</italic> is not expressed by odontoblasts (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0058" ref-type="ref">2011a</xref>). KLK4 cleaves enamel proteins at more sites than MMP20, and serves a more degradative (rather than processing) function. KLK4 cleaves amelogenin at multiple sites in&#x000a0;vitro (Ryu et&#x000a0;al. <xref rid="mgg3194-bib-0051" ref-type="ref">2002</xref>), and its cleavage pattern complements that of MMP20, so that the accumulated matrix proteins that have been processed by MMP20 undergo subsequent degradation into smaller polypeptides. Degradation by KLK4 facilitates diffusion of these fragments back to the enamel surface where they are reabsorbed by maturation stage ameloblasts. Enamelin is secreted as a 186&#x02010;kDa protein (Hu et&#x000a0;al. <xref rid="mgg3194-bib-0021" ref-type="ref">1997a</xref>), but only a 32&#x02010;kDa enamelin cleavage product accumulates to abundance during the secretory stage (Tanabe et&#x000a0;al. <xref rid="mgg3194-bib-0068" ref-type="ref">1990a</xref>). This highly glycosylated peptide (Yamakoshi <xref rid="mgg3194-bib-0074" ref-type="ref">1995</xref>) resists further degradation by MMP20. In contrast, KLK4 hydrolyzes it into multiple products (Yamakoshi et&#x000a0;al. <xref rid="mgg3194-bib-0077" ref-type="ref">2006</xref>). Although MMP20 can be activated by the KLK4 zymogen in&#x000a0;vitro (Ryu et&#x000a0;al. <xref rid="mgg3194-bib-0051" ref-type="ref">2002</xref>), <italic>Klk4</italic> is expressed normally in the <italic>Mmp20</italic> null background and appears as an active band on zymograms of enamel extracts (Yamakoshi et&#x000a0;al. <xref rid="mgg3194-bib-0078" ref-type="ref">2011</xref>). As is the case for MMP20, enamel malformations are evident in <italic>Klk4</italic> null mice, but the phenotype is very different than in the <italic>Mmp20</italic> nulls (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0057" ref-type="ref">2009b</xref>; Smith et&#x000a0;al. <xref rid="mgg3194-bib-0066" ref-type="ref">2011b</xref>). <italic>Klk4</italic> null mouse enamel is normal in thickness and contour, and the enamel rods show the same decussation pattern as wild&#x02010;type teeth, but the enamel is hypomineralized and contains residual enamel proteins. Despite the deficiency in removing enamel proteins from the matrix, mineralization of the maturation stage enamel matrix proceeds normally until the mineral level reaches ~80% of normal (Smith et&#x000a0;al. <xref rid="mgg3194-bib-0067" ref-type="ref">2011c</xref>), and then stalls, apparently because residual protein occupies the space between the crystals and blocks completion of mineralization where the crystals grow into contact and interlock.</p><p>
+<italic>Klk4</italic> is the most recently evolved of the kallikrein&#x02010;related peptidase genes (Kawasaki et&#x000a0;al. <xref rid="mgg3194-bib-0036" ref-type="ref">2014</xref>), a family that in humans includes 15 members, all clustered on the long arm of chromosome 19. The <italic>KLK</italic> family arose from a trypsin&#x02010;like gene and is largely a mammalian innovation. <italic>Klk4</italic> was generated from a duplication of <italic>Klk5</italic> and is found only in boreoeutherian mammals, where it appears to have enhanced enamel maturation, enabling increased enamel thickness or earlier tooth eruption without reducing enamel hardness (Kawasaki et&#x000a0;al. <xref rid="mgg3194-bib-0036" ref-type="ref">2014</xref>). In this study we further characterize <italic>Mmp20&#x02010;</italic> and <italic>Klk4</italic>&#x02010;deficient mice and <italic>Mmp20Klk4</italic> (MK) double null mice and discuss the findings with respect to current theories of enamel biomineralization.</p></sec><sec id="mgg3194-sec-0002"><title>Materials and Methods</title><sec id="mgg3194-sec-0003"><title>Ethical compliance</title><p>All procedures involving animals were reviewed and approved by the UACUC committee at the University of Michigan.</p></sec><sec id="mgg3194-sec-0004"><title>Generation of <italic>MK</italic> double knockout mice</title><p>
+<italic>Mmp20</italic> null mice in the C57BL/6 background (Caterina et&#x000a0;al. <xref rid="mgg3194-bib-0008" ref-type="ref">2002</xref>) were mated with <italic>Klk4</italic> null mice, also in the C57BL/6 background (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0057" ref-type="ref">2009b</xref>) to generate double heterozygous offspring (<italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> or <italic>M</italic>
+<sup>+/&#x02212;</sup>
+<italic>K</italic>
+<sup>+/&#x02212;</sup>), which were mated to obtain <italic>Mmp20Klk4</italic> (<italic>MK</italic>) double null mice (<italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> or <italic>M</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>K</italic>
+<sup>&#x02212;/&#x02212;</sup>), which were interbred to maintain that genotype. Genotyping was accomplished using five pairs of PCR primers that together produce a unique pattern for each genotype (Fig.&#x000a0;S1).</p></sec><sec id="mgg3194-sec-0005"><title>Dissecting microscopy</title><p>Day 14, Day 17, and 9&#x02010;week&#x02010;old (adult) mice were anesthetized with isoflurane, sacrificed by head dislocation, and fixed by immersion in 4% paraformaldehyde (PFA). The mandibles were removed and dissected free of soft tissues. The teeth were cleaned with nonwoven gauze, displayed on the Nikon SMZ1000 dissection microscope and photographed using a Nikon digital camera DXM1200.</p></sec><sec id="mgg3194-sec-0006"><title>Backscattered scanning electron microscopy</title><p>The backscattered scanning electron microscopy (bSEM) procedures were described previously (Smith et&#x000a0;al. <xref rid="mgg3194-bib-0067" ref-type="ref">2011c</xref>). For enamel thickness measurements, soft tissues were removed from left and right hemimandibles of wild&#x02010;type, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> (<italic>MK</italic> double null) mice at 7&#x000a0;weeks, sectioned at the level of the labial alveolar ridge (Fig.&#x000a0;S2), and imaged by bSEM. Incisor and molar imaging was performed at 7&#x000a0;weeks on wild&#x02010;type, <italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> (<italic>MK</italic> double null) mice. For incisor imaging, the bony caps and soft tissue covering the mandibular incisors were carefully removed, and examined at &#x000d7;50 magnification in a Hitachi S&#x02010;3000N variable pressure scanning electron microscope using the backscatter mode at 25&#x000a0;kV and 20&#x000a0;pascal pressure. For molar imaging, soft tissues were dissected away, the crowns wiped clean and air&#x02010;dried and then imaged in backscatter mode at &#x000d7;40 magnification using 15&#x02013;30&#x000a0;kV and 20&#x000a0;pascal pressure.</p></sec><sec id="mgg3194-sec-0007"><title>Scanning electron microscopy</title><p>Scanning electron microscopy (SEM) evaluation was performed at the University of Michigan Microscopy and Image&#x02010;analysis Laboratory (Ann Arbor, MI). Ethanol dehydrated, air&#x02010;dried hemi&#x02010;mandibles and mandibular incisors from Day 17 wild&#x02010;type, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice were mounted on metallic stubs using conductive carbon cement, degassed in a vacuum desiccator overnight, and sputter&#x02010;coated with an Au&#x02010;Pd film to increase conductivity. The samples were imaged using an Amray EF 1910 Scanning Electron Microscope operating at an accelerating voltage of 3&#x02013;5&#x000a0;kV.</p></sec><sec id="mgg3194-sec-0008"><title>Wavelength&#x02010;dispersive X&#x02010;ray spectroscopy</title><p>Hemimandibles from wild&#x02010;type (WT), <italic>Klk4</italic> null, <italic>Mmp20</italic> Null, and <italic>MK</italic> double null mice were collected at 9&#x000a0;weeks, freeze&#x02010;dried, cleared of all soft tissue, and embedded in Castolite AC (Eager Polymers, Chicago, IL). The embedded hemimandibles/incisors were cut transversely at the level of the labial alveolar crest and embedded again with Castolite AC in 25&#x000a0;mm SeriForm molds (Struers Inc, Westlake, OH). The incisor cross sections were successively polished with 120, 180, 400, and 800 grit waterproof silicon carbide papers, followed by diamond polishing overnight. The polished incisor cross sections were imaged and analyzed using a Cameca SX100 Electron Microprobe Analyzer at University of Michigan Electron Microbeam Analysis Laboratory (EMAL). The spot beam used a 15&#x000a0;kV accelerating voltage and 2&#x000a0;nA beam current. The standard (Wilberforce, Ontario CA) for Ca and P was natural apatite, for Na was natural albite, for Mg was natural enstatite, for Cl was natural scapolite, and for K was natural adularia. The Ca, P, Mg, Na, K, and Cl atomic percentages were analyzed along a line from near the dentin surface outward to near the enamel surface. Control points were also sampled from inner dentin, middle dentin, outer dentin, and alveolar bone. Wavelength&#x02010;dispersive X&#x02010;ray spectroscopy (WDX) data were collected from 20 points for each mouse genotype. Statistical analyses used the Microsoft Excel <italic>t</italic>&#x02010;test.</p></sec><sec id="mgg3194-sec-0009"><title>Histological staining and analyses</title><p>Wild&#x02010;type, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> mice at 7&#x02010;weeks were deeply anesthetized with isoflurane, fixed by cardiac perfusion with 2.5% glutaraldehyde in 0.1&#x000a0;mol/L sodium cacodylate buffer (pH 7.2&#x02013;7.4) containing 0.05% calcium chloride, postfixed for 2&#x000a0;h at 4&#x000b0;C, and rinsed 3&#x000d7; for 15&#x000a0;min each with 0.1&#x000a0;mol/L sodium cacodylate buffer. The samples were decalcified at 4&#x000b0;C by immersion in 1&#x000a0;L of 4.13% disodium ethylenediaminetetraacetic acid (EDTA, pH 7.3) with agitation. The EDTA solution was changed every other day for 30&#x000a0;days. The samples were washed in PBS at 4&#x000b0;C 4&#x02013;5 times every 0.5&#x02013;1&#x000a0;h, washed overnight, postfixed for 60&#x000a0;min in 1% osmium tetroxide in 1.5% potassium ferrocyanide, and dehydrated using an acetone gradient, embedded in Epon812 substitute, and semi thin&#x02010;sectioned and stained with 0.1% toluidine blue as described elsewhere (Smith et&#x000a0;al. <xref rid="mgg3194-bib-0065" ref-type="ref">2011a</xref>). At least three maxillary and three mandibular incisors were processed for longitudinal sectioning, and three mandibular incisors were processed for cross sectioning at 1&#x000a0;mm increments at the approximate locations shown in Figure S2C.</p></sec></sec><sec id="mgg3194-sec-0010"><title>Results</title><sec id="mgg3194-sec-0011"><title>Gross morphology and attrition</title><p>The gross morphologies of the mouse molar and incisors before and after eruption were assessed under a dissecting microscope, by scanning electron microscopy (SEM) and by bSEM. Mandibular molars and incisors were examined at Day 14 (following the removal of soft tissues) prior to eruption of the first molars (Fig.&#x000a0;S3) and at Day 17, shortly following eruption of the first molars (Fig.&#x000a0;<xref rid="mgg3194-fig-0001" ref-type="fig">1</xref>, Fig.&#x000a0;S4). This allowed us to first evaluate the molar crowns before they had erupted and potentially been altered in the oral cavity, and to determine how quickly they failed following eruption. Prior to and immediately after eruption, the molar crowns and incisors of <italic>Klk4</italic> null mice looked similar to those of the wild&#x02010;type (WT) mice. The cusps showed normal contour and the enamel surfaces were both smooth and reflective. In contrast, <italic>Mmp20</italic> null and <italic>MK</italic> double null (<italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>) molars had thinner cusps with rough, dull surfaces. Immediately following eruption both <italic>Mmp20</italic> and <italic>MK</italic> double null first molars were already severely damaged, especially on the cusps (working surfaces) (Fig.&#x000a0;<xref rid="mgg3194-fig-0001" ref-type="fig">1</xref>). Enamel that had not worn away was irregular, with dome&#x02010;like nodules protruding from the surface. By week 7 (5&#x000a0;weeks after the eruption of the mandibular first molars), severe enamel attrition was observed on all molars and incisors in <italic>Klk4</italic> null, <italic>Mmp20</italic> null, and <italic>MK</italic> double null mice (Fig.&#x000a0;S5). This was true even though all mice were maintained on soft chow.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Scanning electron microscopy of Day 17 mandibular molar crowns. Descending from top row: occlusal view, lingual view (M2 on left; M1 on right), lingual view of M1, and progressively higher magnification views of the distal&#x02010;lingual cusp. These images were take only a day or two following eruption. The overall enamel form of wild&#x02010;type and <italic>Klk4</italic> null molars is the same. The enamel crust of <italic>Mmp20</italic> null molars is irregular and shows mineral nodules of various sizes protruding from the surface. The <italic>Mmp20/Klk4</italic> double null molars appeared to be very similar to <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> molars, but had erupted slightly earlier and already showed significant attrition. Bars&#x000a0;=&#x000a0;200&#x000a0;<italic>&#x003bc;</italic>m.</p></caption><graphic id="nlm-graphic-3" xlink:href="MGG3-4-178-g001"/></fig><p>Mandibular molars (9&#x000a0;week) from wild&#x02010;type, <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup><italic>+/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice were imaged using backscatter scanning electron microscopy (Fig.&#x000a0;<xref rid="mgg3194-fig-0002" ref-type="fig">2</xref>). Wild&#x02010;type molars showed a smooth enamel layer covering the entire crown except in the enamel free zones at the cusp tips. <italic>Mmp20</italic> and <italic>Klk4</italic> heterozygous mouse molars were indistinguishable from the wild&#x02010;type. Notably, <italic>MK</italic> double heterozygous mouse molars often appeared normal in form, but showed increased surface roughness and a susceptibility to attrition: the enamel fractured off the double heterozygous crowns in some places. This unexpected finding suggested that an enamel phenotype can result from digenic inheritance (Schaffer <xref rid="mgg3194-bib-0053" ref-type="ref">2013</xref>), which has not yet been demonstrated in human cases of amelogenesis imperfecta. Both <italic>Mmp20</italic> and <italic>Klk4</italic> single null mice showed severe occlusal attrition, which appeared to be even worse in <italic>MK</italic> double null mice.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Backscatter scanning electron microscopy of 9&#x02010;week mandibular molar crowns. (A) Buccal&#x02010;occlusal views (M1 first molar; M2&#x000a0;second molar; M3 third molar). (B) Occlusal views. These molars have been in occlusion for as much as 48&#x000a0;days (first molars) while the animals were maintained on a soft diet. The <italic>Mmp20</italic> null (<italic>M</italic>&#x02212;/&#x02212;), <italic>Klk4</italic> null (<italic>K</italic>&#x02212;/&#x02212;), and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null (<italic><styled-content style="fixed-case">MK</styled-content></italic>&#x02212;/&#x02212;), molars show severe enamel abrasion that exposes the underlying dentin. The <italic>Mmp20</italic> (<italic>M</italic>+/&#x02212;) and <italic>Klk4</italic> (<italic>K</italic>+/&#x02212;) heterozygous molars are similar to the wild&#x02010;type and show no signs of attrition. The <italic><styled-content style="fixed-case">MK</styled-content></italic> double heterozygous (<italic><styled-content style="fixed-case">MK</styled-content></italic>+/&#x02212;) molars sometimes showed significant attrition (Note the distal buccal surface of the third molar). Cracks are not part of the phenotype, but are unavoidable artifacts from freeze drying. Bars&#x000a0;=&#x000a0;1&#x000a0;mm.</p></caption><graphic id="nlm-graphic-5" xlink:href="MGG3-4-178-g002"/></fig></sec><sec id="mgg3194-sec-0012"><title>Enamel thickness</title><p>Enamel thickness was measured by bSEM of polished cross sections 8&#x000a0;mm from the basal end of 7&#x02010;week mandibular incisor in wild&#x02010;type, <italic>Mmp20</italic>,<italic> Klk4</italic>, and <italic>MK</italic> double null mice (Fig.&#x000a0;<xref rid="mgg3194-fig-0003" ref-type="fig">3</xref>). Sections at this level (where the enamel of the continuously erupting incisor has matured and erupted to the level of the alveolar crest) sample the middle to late maturation stage well after the enamel layer has reached its final thickness, but before it has entered the oral cavity and undergone attrition. The bSEM images of polished sections were used to assess enamel thickness, rod decussation pattern and relative enamel mineralization levels in the various genetic backgrounds. The enamel layers in the wild&#x02010;type and <italic>Klk4</italic> null mice were both ~115&#x02010;<italic>&#x003bc;</italic>m thick and showed normally decussating enamel rods. <italic>Klk4</italic> null enamel was less mineralized than the wild&#x02010;type enamel throughout, but was also progressively less mineralized with depth, and least mineralized just above the DEJ. The <italic>Mmp20</italic> and <italic>MK</italic> double null enamel layers were similar to each other, but fundamentally different from those of the wild&#x02010;type and <italic>Klk4</italic> null mice. Thickness of the enamel layer in <italic>Mmp20</italic> and <italic>MK</italic> double null mandibular incisors was variable due to the presence of surface irregularities and nodules. Enamel layer thickness in these mice was, on average, only about one&#x02010;third that of wild&#x02010;type enamel, and was comprised of three distinct mineral layers (Fig.&#x000a0;<xref rid="mgg3194-fig-0003" ref-type="fig">3</xref>D). Superficial to a line of severe hypomineralization at the DEJ laid a zone, 10&#x02013;15&#x000a0;<italic>&#x003bc;</italic>m in thickness, of poorly mineralized enamel, well below the density of dentin. This layer was characterized by irregular light and dark bands oriented roughly perpendicular to the DEJ. Superficial to this layer was a middle zone that was about the same thickness (10&#x02013;15&#x000a0;<italic>&#x003bc;</italic>m) as the deeper layer, but more homogeneous and about the same density as dentin. This layer was more distinct in <italic>Mmp20</italic> nulls and more highly mineralized than the same layer in <italic>MK</italic> double nulls. In the <italic>MK</italic> double nulls there were regions where the second layer appeared to be morphologically similar to the first layer in that the degree of mineralization was very low and irregular. Despite this, the boundary between the first and second layers was apparent throughout. The third, most superficial layer, was highly mineralized, almost as dense as wild&#x02010;type enamel in some areas, and interrupted by unmineralized vacancies apparently caused by entrapped cells. This layer varied greatly in thickness, with mineral nodules projecting from its surface in some places. This third layer was less highly mineralized in <italic>MK</italic> double null mice relative to <italic>Mmp20</italic> single null mice, except for the most superficial 2&#x02013;3&#x000a0;<italic>&#x003bc;</italic>m, which was highly mineralized in both cases. The distal enamel margin, near where the enamel layer ends and the root analog begins, was expanded and more highly mineralized in <italic>Mmp20</italic> null mice relative to MK double null mice. This analysis demonstrates that there are fundamental problems with the deposition of enamel in <italic>Mmp20</italic> and <italic>MK</italic> double null mice. Layers 1 and 2 appeared to correspond to inner and outer enamel, respectively, which in wild&#x02010;type mice differ primarily in the orientations of their enamel rods, although the rods lack definition in <italic>Mmp20</italic> and <italic>MK</italic> double null enamel. The <italic>Klk4</italic> null enamel layer showed a normal rod pattern and final thickness, but diminished mineralization.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Backscattered scanning electron microscopy (<styled-content style="fixed-case">bSEM</styled-content>) analysis and enamel thickness of mandibular incisor cross sections at level 6 from 7&#x02010;week&#x02010;old wild&#x02010;type, <italic>Klk4</italic> null, <italic>Mmp20</italic> null, and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null mice. (A) Scale Bar&#x000a0;=&#x000a0;1&#x000a0;mm. (B) Scale Bar&#x000a0;=&#x000a0;500&#x000a0;<italic>&#x003bc;</italic>m. (C) Scale Bar&#x000a0;=&#x000a0;200&#x000a0;<italic>&#x003bc;</italic>m. (D) Scale Bar&#x000a0;=&#x000a0;50&#x000a0;<italic>&#x003bc;</italic>m. The enamel layers of wild&#x02010;type and <italic>Klk4</italic> null mice are virtually identical in both their thickness and rod decussation patterns. The <italic>Klk4</italic> null enamel is hypomineralized relative to the wild&#x02010;type. The hypomineralization is more severe with depth, and most severe at the junction of the initial enamel and rod enamel, just above the dentino&#x02010;enamel junction (DEJ). The enamel layers of <italic>Mmp20</italic> and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null mice both show a dark, poorly mineralized band at the <styled-content style="fixed-case">DEJ</styled-content> overlaid by three morphologically distinct mineralized layers. (E) Statistical analyses of enamel thickness. The enamel thickness of <italic>Klk4</italic> null mice is the same as wild&#x02010;type mice, whereas <italic>Mmp20</italic> null and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null mice both have rough enamel layers that are only a third as thick as the wild&#x02010;type on average. Key: Averages are in <italic>&#x003bc;</italic>m; <italic>P</italic>&#x000a0;=&#x000a0;<italic>P</italic> value.</p></caption><graphic id="nlm-graphic-7" xlink:href="MGG3-4-178-g003"/></fig></sec><sec id="mgg3194-sec-0013"><title>Incisor enamel surface features</title><p>Rodent incisors are noteworthy because all of the stages of amelogenesis are linearly arrayed in the continuously growing incisors (Smith and Nanci <xref rid="mgg3194-bib-0063" ref-type="ref">1989</xref>). In addition, the incisors are continuously erupting, which applies shear forces to the enamel organ during amelogenesis. Mandibular incisors (7&#x000a0;week) from wild&#x02010;type, <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup><italic>+/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice were carefully dissected and their exposed enamel surfaces were imaged by bSEM (Fig.&#x000a0;<xref rid="mgg3194-fig-0004" ref-type="fig">4</xref>). The incisors of <italic>Klk4</italic>
+<sup>+/&#x02212;</sup> mice were indistinguishable from wild&#x02010;type incisors. An interesting and unexpected finding from the bSEM images was that <italic>Mmp20</italic>
+<sup><italic>+/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> incisor enamel showed distinct stripes, or evenly spaced horizontal ridges about 90&#x000a0;<italic>&#x003bc;</italic>m apart. These ridges were obvious along the entire length of maturation stage enamel in <italic>Mmp20</italic>
+<sup><italic>+/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> incisors, with the valleys between the ridges being less highly mineralized than the ridges themselves. The striped pattern appeared more C&#x02010;shaped basally and S&#x02010;shaped incisally. The ridges were generally less apparent in <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> incisor enamel, but were detectable and increasingly prominent incisally. Close inspection of the other incisors showed traces of similar bands in <italic>Klk4</italic>
+<sup>+/&#x02212;</sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, and wild&#x02010;type mouse incisors. The spacing of these lines is not consistent with patterns of ameloblast modulation and may be caused by stresses associated with eruption. The intensity of the superficial banding was greatest in <italic>Mmp20</italic>
+<sup><italic>+/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> incisors and decreased in the sequence <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>&#x0003e;<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>&#x0003e;<italic>Klk4</italic>
+<sup>+/&#x02212;</sup>&#x0003e; wild&#x02010;type. Band intensity in double heterozygous (<italic>Mmp20</italic>
+<sup><italic>+/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup>) mice was more distinct than in either of the single&#x02010;heterozygous mice, demonstrating a digenic contribution by the two enamel matrix protease genes for an enamel phenotype. The banding was presumably not observed in <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> nulls because the severity of the enamel defects obscured the banding patterns, or the effects of the eruption forces were manifested differently, as in the shearing off of the enamel layer. The enamel layers in <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> incisors were thin and frail, with a lumpy surface. The enamel delaminated near where the incisor erupted. <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mice both displayed rough enamel surfaces that were highly variable in their degree of mineralization. The coarse enamel had nodules protruding from the surface. These nodules were typically irregular, but occasionally were spherical or tubular in form.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Backscatter scanning electron microscopy of 7&#x02010;week mandibular incisors denuded of overlying tissues. The labial surfaces are shown, from the basal (left) to erupted (right) ends of the incisors. Dark areas contain less surface mineral than white areas. The labial surfaces of incisors from wild&#x02010;type, <italic>Klk4</italic> null and <italic>Klk4</italic> heterozygous mice were relatively smooth&#x02010;surfaced and evenly mineralized. In contrast, the labial incisor surfaces from heterozygous <italic>Mmp20</italic> null and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null mice had rough, pitted surfaces with indentations and protruding nodules (arrowheads in a and b, respectively). <italic>Mmp20</italic> heterozygous mice and <italic><styled-content style="fixed-case">MK</styled-content></italic> double heterozygous mice both showed prominent horizontal ridges evenly spaced ~90&#x000a0;<italic>&#x003bc;</italic>m apart (detailed in c and d, respectively). The ridges in <italic><styled-content style="fixed-case">MK</styled-content></italic> double heterozygous mice were more distinct in the central regions of the incisor relative to <italic>Mmp20</italic> single&#x02010;heterozygous mice due to the darkening of the valleys between the ridges.</p></caption><graphic id="nlm-graphic-9" xlink:href="MGG3-4-178-g004"/></fig></sec><sec id="mgg3194-sec-0014"><title>Volume of high&#x02010;density mineral</title><p>Hemimandibles from the various mouse genetic backgrounds at day 14 were imaged by radiography and 3D and 2D microcomputed tomography (<italic>&#x003bc;</italic>CT) (Fig.&#x000a0;<xref rid="mgg3194-fig-0005" ref-type="fig">5</xref>). The threshold value for imaging was raised until enamel was the only mineral displayed in the wild&#x02010;type. The suprathreshold incisor enamel on the wild&#x02010;type image started close to the position of section level 7, indicating that the threshold value of 3750 only permitted imaging of mineral as dense as that of mid to late maturation stage enamel. Both <italic>Klk4</italic> and <italic>Mmp20</italic> single null mice showed significantly reduced volume of high&#x02010;density mineral relative to the wild&#x02010;type, but significantly more high&#x02010;density mineral volume than in <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice. Almost no enamel in <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice exceeded the high&#x02010;density threshold. Therefore, the volume of high&#x02010;density mineral showed a significant digenic phenotype in the null conditions.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Microcomputed tomography (<italic>&#x003bc;</italic>
+<styled-content style="fixed-case">CT</styled-content>) of day 14 mouse hemimandibles. (A) Radiographs of the hemimandibles (M1 first molar; M2&#x000a0;second molar).(B) 3D <italic>&#x003bc;</italic>
+<styled-content style="fixed-case">CT</styled-content> of the hemimandibles. (C) 2D <italic>&#x003bc;</italic>
+<styled-content style="fixed-case">CT</styled-content> of the hemimandibles with the tooth crowns replaced with 3D images. (D) 3D images of mineral above the threshold value of 3750. Note that none of the incisor enamel and only small areas of the molar enamel reaches the threshold level. (E) Plot of high&#x02010;density volume (mm<sup>3</sup>) showing that both <italic>Mmp20</italic> and <italic>Klk4</italic> single null mice have significantly reduced high&#x02010;density enamel relative to the wild&#x02010;type, but significantly more than <italic><styled-content style="fixed-case">MK</styled-content></italic> double null mice.</p></caption><graphic id="nlm-graphic-11" xlink:href="MGG3-4-178-g005"/></fig></sec><sec id="mgg3194-sec-0015"><title>Energy&#x02010;dispersive X&#x02010;ray analysis</title><p>Elemental compositions (Ca, P, Na, Mg, Cl, and K) of the enamel from the DEJ to the surface were characterized for wild&#x02010;type, <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>, <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup>, and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice (Fig.&#x000a0;<xref rid="mgg3194-fig-0006" ref-type="fig">6</xref>). The elemental compositions for wild&#x02010;type and <italic>Klk4</italic> null mice were indistinguishable at all points analyzed. The first two mineral layers of <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> mouse enamel showed the same elemental compositions as did the wild&#x02010;type; however, the elemental compositions of the third mineral layer in these null mice was generally lower in Ca, and higher in P, Na, Mg, Cl, and K than wild&#x02010;type enamel. The superficial layers in <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice were fundamentally different in their elemental compositions than wild&#x02010;type enamel and appeared to be pathological in origin (not formed by the deposition of mineral ribbons at the mineralization front).</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Enamel elemental compositions. (A) Plots of Ca, P, Na, Mg, Cl, and K atomic percentages against location in the enamel from the dentino&#x02010;enamel junction (<styled-content style="fixed-case">DEJ</styled-content>) to the surface for wild&#x02010;type, <italic>Klk4</italic> null, <italic>Mmp20</italic> null, and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null mice. The multiple colored lines indicate samples taken from different mice. Note that none of the atomic percentages change in wild&#x02010;type or <italic>Klk4</italic> null enamel. Elemental compositions in the enamel near the <styled-content style="fixed-case">DEJ</styled-content> are virtually the same in all genotypes. The elemental compositions in the <italic>Mmp20</italic> and <italic><styled-content style="fixed-case">MK</styled-content></italic> double null incisors differ sharply near the enamel surface, most notably showing lower Ca and higher P. (B) backscattered scanning electron microscopy (<styled-content style="fixed-case">bSEM</styled-content>s) of mandibular incisors cross&#x02010;sectioned at level 8. Red dots map the locations of samples taken for elemental analysis. Left and middle panels show <italic>Mmp20</italic> null and wild&#x02010;type enamel sections at the same magnification (Bar&#x000a0;=&#x000a0;50&#x000a0;<italic>&#x003bc;</italic>m); right panel is higher magnification of <italic>Mmp20</italic> null enamel to distinguish the three enamel layers and the sampling sites. Bar&#x000a0;=&#x000a0;94&#x000a0;<italic>&#x003bc;</italic>m.</p></caption><graphic id="nlm-graphic-13" xlink:href="MGG3-4-178-g006"/></fig></sec><sec id="mgg3194-sec-0016"><title>Histology</title><p>To better understand how the pathological enamel formed in the various genotypes, extensive histological characterizations were conducted. Incisor cross sections were characterized at 1&#x000a0;mm increments along 7&#x02010;week&#x02010;old mandibular incisors from wild&#x02010;type (Fig.&#x000a0;S6), <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> (Fig.&#x000a0;S7), <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> (Fig.&#x000a0;S8), <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> (Fig.&#x000a0;S9), <italic>Klk4</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S10), <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S11), and <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S12) mice. In addition, longitudinal sections of 7&#x02010;week&#x02010;old maxillary and mandibular incisors were characterized from wild&#x02010;type (Fig.&#x000a0;S13, S14), <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> (Fig.&#x000a0;S15, S16), <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> (Fig.&#x000a0;S17, S18), <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> (Fig.&#x000a0;S19, S20), <italic>Klk4</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S21, S22), <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S23, S24), <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S25, S26) mice.</p><p>The positions along the mandibular incisors of the incisor cross sections are illustrated in Figs S2c. For each genotype, nine incisor cross sections were characterized. Section&#x000a0;1 localized to a position 1&#x000a0;mm from the basal end of the incisor and shows the forming incisor near the onset of dentin and enamel formation. Section&#x000a0;2 shows midsecretory stage. Section&#x000a0;3 shows late secretory stage, whereas sections 4&#x02013;9 are all at progressively later stages of enamel maturation. Mandibular incisor enamel at its greatest thickness is about 115&#x02010;<italic>&#x003bc;</italic>m thick. In decalcified incisors of wild&#x02010;type mice, the enamel space appears to be cleared of protein by level 6 or 7 (Fig.&#x000a0;S6). Once the enamel proteins have been largely removed by ameloblasts, the enamel space often gets distorted during histological processing and is not always a good indicator of enamel thickness in demineralized samples. In <italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice, enamel formation proceeds normally except that the enamel matrix proteins are not efficiently removed, especially from the deeper enamel, and stained matrix is readily observed even near the point where the incisor erupts out of the gingiva and into the oral cavity (level 9) (Fig.&#x000a0;S7).</p><p>MMP20 is active at the onset of enamel formation and its absence has a greater impact on the enamel phenotype than does the absence of KLK4, which is not expressed until the enamel layer has reached its final dimensions. The histological study of the <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mandibular molar histology is summarized in Fig.&#x000a0;<xref rid="mgg3194-fig-0007" ref-type="fig">7</xref>. In <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mice, only a thin layer of enamel matrix is initially deposited, which stains deeply in section 2 (Fig.&#x000a0;S8). Already at section level 2, the area occupied by the enamel extracellular matrix is significantly less than in the WT and <italic>Klk4</italic> null mice. The thinness of the enamel layer by itself could cause subsequent developmental problems, as the sheet of ameloblasts covering it must rest on an enamel surface that is smaller than normal. At section level 3, a thin layer of outer enamel that does not stain as intensely as the inner enamel below it forms a second distinct layer over the first. In addition, deeply stained matrix is observed within bulges in the ameloblast layer. The cross sections give the distinct impression that the ameloblast layer has buckled and that the gel&#x02010;like extracellular matrix has flowed toward the cervical margins and into wrinkles or blisters in the sheet of ameloblasts, disrupting the linearity of the ameloblast cell layer. The impression of bulk matrix flow is enhanced by the infrequent observation of a channel connecting the enamel matrix with ectopic matrix entirely lined by ameloblasts (Bartlett et&#x000a0;al. <xref rid="mgg3194-bib-0003" ref-type="ref">2011a</xref>). An alternative explanation is that the nodules form at focal points where ameloblasts overproduce matrix proteins and &#x0201c;swell out&#x0201d; to keep these areas covered.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0007" orientation="portrait" position="float"><label>Figure 7</label><caption><p>Histology 7&#x02010;week <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> mandibular incisor. (A) Basal ends of mandibular incisor longitudinal sections from three different <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> mice. Arrowheads mark the beginning and end of the postsecretory transition. (B) Incisal ends of mandibular incisor longitudinal sections from the 3 <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> incisors shown in A. (C&#x02013;F) Mandibular incisor cross sections taken from levels 2&#x02013;4 (C&#x02013;E) and level 9 (F) from different <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> mice. (G) Level 2 detail showing secretory stage ameloblasts with Tomes' processes and thin layer of inner enamel. (H) Level 3 detail showing a thickened extracellular matrix near the cervical margin. (I&#x02013;J) Level 3 details showing secretory ameloblasts atop a thin enamel layer containing both inner and outer enamel layers, and a highly stained line over the dentin surface. Some deeply stained matrix appears to have flowed out of the enamel and bulged into the epithelia on the enamel surface. (K) Level 7 detail showing maturation ameloblasts hardening the third mineral layer atop of the outer enamel. (L&#x02013;M) Level 9 details showing a segment of enamel has broken off of the dentino&#x02010;enamel junction (<styled-content style="fixed-case">DEJ</styled-content>) of the continuously erupting incisor and a cell layer that has moved in from the surface. Am, ameloblasts; d, dentin; e, enamel.</p></caption><graphic id="nlm-graphic-15" xlink:href="MGG3-4-178-g007"/></fig><p>At section levels 4 and 5, the deeply stained material covering the outer enamel becomes a continuous third layer of uneven thickness between the outer enamel and the maturation stage ameloblasts (Fig.&#x000a0;S8). This layer becomes progressively less&#x02010;stained and forms an uneven crust over the outer enamel. The weakness of the enamel layer is highlighted at section level 9 where it appears to have separated from the underlying dentin (presumably being unable to sustain the shear forces associated with eruption or occlusion). Remarkably, cells from the overlying enamel organ seem to have moved through the crack and bridged the space between dentin and the inner enamel, indicating that the break was not an artifact of preparation, but actually occurred prior to this portion of the tooth erupting into the oral cavity. The <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mice (Fig.&#x000a0;S9) showed similar histology to the <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> single null, except that the third layer did not seem to mineralize as readily and the separation tended to occur between the second and third layers (above the outer enamel). The third layer did not mineralize as quickly in the double null relative to the <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> single null mice. Enamel formation in <italic>Klk4</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S10), <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup> (Fig.&#x000a0;S11), and <italic>Mmp20</italic>
+<sup>+/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup><italic>+/&#x02212;</italic></sup> (Fig.&#x000a0;S12) mice appeared to be identical to the wild&#x02010;type, with the lone exception that staining of the enamel matrix sometimes persisted through to level 7, suggesting a minor delay in the removal of organic matrix in the double heterozygous mice.</p><p>Scanning electron microscopy (SEM) images of the manibular incisors deliberately fractured at the level of the alveolar crest and histological images of analogous <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> incisor cross sections were compared (Fig.&#x000a0;<xref rid="mgg3194-fig-0008" ref-type="fig">8</xref>). Histologically, the DEJ was distinct and deeply stained, reflecting its high protein content and low degree of mineralization. The inner (1) and middle (2) layers of enamel were readily distinguished histologically by the deeper staining of the inner layer. The surface layer (3) was continuous with mineral nodules in the soft tissue. This third layer stained strongly in MK double null mice, whereas the superficial portion appeared to be highly mineralized and largely cleared of protein in <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mice. These differences indicate that the cells in contact with the surface of layer 3 were still behaving like maturation stage ameloblasts, resorbing protein, and promoting mineralization. The third layer readily separated from the second.</p><fig fig-type="Figure" xml:lang="en" id="mgg3194-fig-0008" orientation="portrait" position="float"><label>Figure 8</label><caption><p>
+<italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> and <italic>Mmp20</italic>
+<sup><italic>&#x02212;/&#x02212;</italic></sup> mandibular incisors at 7&#x000a0;weeks. (A&#x02013;B) Histology of mandibular incisors at level 7. The enamel layer in both mice is very similar and divided into 3 layers. One principle difference is that the most superficial part of layer 3 does not stain in the <italic>Mmp20</italic> single nulls. It appears to be more highly mineralized and lower in protein. (C&#x02013;D) Scanning electron microscopy( <styled-content style="fixed-case">SEM</styled-content>) images at level 8 showing the three mineral layers covering dentin. Bars&#x000a0;=&#x000a0;100&#x000a0;<italic>&#x003bc;</italic>m. (E&#x02013;F) Higher magnification views of the histology at level 7 and <styled-content style="fixed-case">SEM</styled-content> images from level 8. Bars&#x000a0;=&#x000a0;10&#x000a0;<italic>&#x003bc;</italic>m. The dentino&#x02010;enamel junction (<styled-content style="fixed-case">DEJ</styled-content>) (arrowheads) is highly stained and poorly mineralized. The first two layers, although thin and pathological, form during the secretory stage and correspond to the inner and outer enamel. The third layer has no corresponding structure in normal enamel, mineralizes during the maturation stage, and appears to become more highly mineralized when <styled-content style="fixed-case">KLK</styled-content>4 is expressed. Key: d, dentin; e, enamel.</p></caption><graphic id="nlm-graphic-17" xlink:href="MGG3-4-178-g008"/></fig></sec></sec><sec id="mgg3194-sec-0017"><title>Discussion</title><p>Dental enamel formation occurs by a biologic mechanism that originated in lobe&#x02010;finned fish with lungs some 400&#x02013;450&#x000a0;million years ago (Kawasaki et&#x000a0;al. <xref rid="mgg3194-bib-0035" ref-type="ref">2009</xref>). The key innovation was replacing the basal lamina with a mineralization front apparatus that deposits thin mineral ribbons on the incipient surface of dentin and extends them to the future enamel surface (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0060" ref-type="ref">2012a</xref>). The formation of these mineral ribbons is highly conserved and still remarkably similar in lungfish and mammals (Satchell et&#x000a0;al. <xref rid="mgg3194-bib-0052" ref-type="ref">2000</xref>; Ronnholm <xref rid="mgg3194-bib-0048" ref-type="ref">1962a</xref>). Electron diffraction of the highly oriented, thin mineral ribbons near the mineralization front indicate that they are comprised of amorphous calcium phosphate (Beniash et&#x000a0;al. <xref rid="mgg3194-bib-0007" ref-type="ref">2009</xref>), or very poorly crystalline hydroxyapatite (Landis et&#x000a0;al. <xref rid="mgg3194-bib-0039" ref-type="ref">1988</xref>). These findings contradict the major classical mechanism for enamel formation that attempts to explain the novel ribbon morphology of enamel crystals by postulating an octacalcium phosphate precursor phase and the specific binding of acidic protein inhibitors onto selected crystal faces, which are subsequently removed by proteolysis (Simmer and Fincham <xref rid="mgg3194-bib-0055" ref-type="ref">1995</xref>). As the enamel ribbons take their shape before they are crystalline, specific interactions with selected faces are impossible and the ribbon shape is not intrinsic to the mineral itself, but must somehow be imposed upon it externally, possibly by passing mineral through a shaped opening or into a mold. It is also observed that the thickness of the crystallites progressively increases with increasing distance from the ameloblast layer (Ronnholm <xref rid="mgg3194-bib-0049" ref-type="ref">1962b</xref>), which should not occur in the presence of bound inhibitors. The demise of the classical theory requires a fresh analysis of the roles of proteases in the formation of dental enamel.</p><p>Although MMP20 is expressed by both odontoblasts and ameloblasts, MMP20 is not necessary for normal dentinogenesis. No dentin malformations are observed in <italic>Mmp20</italic> null mice or in people with AI caused by defects in <italic>MMP20</italic>. Furthermore, <italic>Mmp20</italic> has been pseudogenized in the sloth and aardvark, enamelless mammals that still make dentin (Meredith et&#x000a0;al. <xref rid="mgg3194-bib-0042" ref-type="ref">2014</xref>). So if the expression of MMP20 by odontoblasts is important, it must be in the formation of the DEJ. MMP20 is absolutely critical for proper formation of the DEJ, as the enamel fractures at the DEJ in <italic>Mmp20</italic> null mice (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0060" ref-type="ref">2012a</xref>). The initial mineralization of dentin generates an irregular mineral surface that is below the surface of the predentin matrix, so that frayed ends of collagen fibrils radiate out from the mineral toward the ameloblast membrane (Arsenault and Robinson <xref rid="mgg3194-bib-0001" ref-type="ref">1989</xref>; Kallenbach <xref rid="mgg3194-bib-0031" ref-type="ref">1976</xref>). Enamel proteins and MMP20 are secreted from ameloblast processes onto the freshly mineralized dentin surface and enamel mineral ribbons appear suddenly, associated with both the dentin crystals on one end and with the ameloblast membrane on the other. Although the enamel crystallite orientation is less regular in the contact area (Ronnholm <xref rid="mgg3194-bib-0049" ref-type="ref">1962b</xref>), the mineral ribbons quickly orient at right angles to both the surface of the dentin and the ameloblast membrane (Reith <xref rid="mgg3194-bib-0047" ref-type="ref">1967</xref>). The c&#x02010;axes of the dentin and enamel hydroxyapatite (HAP) crystals are oriented in the long axes of both the collagen fibrils and the enamel ribbons, respectively. As the collagen fibrils and the enamel ribbons run in the same direction and are closely associated (Fang et&#x000a0;al. <xref rid="mgg3194-bib-0012" ref-type="ref">2011</xref>), it is plausible that the dentin hydroxyapatite crystals might influence the orientation of the crystal lattice within the mineral ribbons, but not the orientation of the ribbons themselves, which are oriented by the mineralization front at the ameloblast membrane. Transmission electron microscopy (TEM) analyses have demonstrated that the initial enamel ribbons adjacent to mantle dentin form normally in <italic>Mmp20</italic> null mice (Beniash et&#x000a0;al. <xref rid="mgg3194-bib-0006" ref-type="ref">2006</xref>), so the absence of MMP20 proteolytic activity is not necessary for shaping the enamel ribbons, but results in a weaker bonding between dentin and enamel crystals. The weakness at the DEJ is so severe that the enamel layer shears off dentin at a level where the incisor that has not even erupted out of the soft tissue, and cells are able to invade the cracks to cover the exposed dentin.</p><p>In contrast to MMP20, KLK4 is never expressed by odontoblasts and is not expressed by ameloblasts until the enamel layer has reached full&#x02010;thickness&#x02014;long after formation of the DEJ. However, in the <italic>Klk4</italic> null mouse the failure of proteins to return to the enamel surface for reabsorption by maturation stage ameloblasts increases with depth, so the enamel is weakest just above the DEJ and tends to fracture there (Simmer et&#x000a0;al. <xref rid="mgg3194-bib-0056" ref-type="ref">2009a</xref>). The bases of the enamel ribbons in the inner enamel mature significantly (grow in width and thickness) during the secretory stage, and the space required for this expansion is gained by the reabsorption of amelogenin cleavage products generated by MMP20 (Fukae et&#x000a0;al. <xref rid="mgg3194-bib-0017" ref-type="ref">2007</xref>). Continued maturation of the enamel crystals, especially the part of the crystals in the inner enamel, depends upon the removal of proteins in the spaces between crystals, which in turn depends upon KLK4 activity (Smith et&#x000a0;al. <xref rid="mgg3194-bib-0066" ref-type="ref">2011b</xref>). This partial overlapping of MMP20 and KLK4 functions likely explains the observed enamel failures (attrition) in <italic>Mmp20Klk4</italic> double heterozygous mice, which occurred in the deeper enamel. To our knowledge this is the first demonstration of enamel malformations caused by a digenic effect, which has implications on the&#x000a0;types of strategies required to diagnose the genetic etiology in patients with AI.</p><p>Although critical for formation of the DEJ, MMP20 is also required for subsequent events during the secretory stage. The tips of the enamel ribbons are always associated with a &#x0201c;mineralization front&#x0201d; where enamel proteins are secreted. The mineral ribbons abut against a relatively smooth mineralization front that is attached to a cell membrane that is both undulated and infolded (Nanci and Warshawsky <xref rid="mgg3194-bib-0044" ref-type="ref">1984</xref>). There are two similar, but spatially distinct secretory sites associated with the formation of rod and interrod enamel (Nanci and Warshawsky <xref rid="mgg3194-bib-0044" ref-type="ref">1984</xref>). The complexity of the mineralization front in part reflects the simultaneous secretion, cleavage and reabsorption of proteins, exchange of ions, and cell movement that results in the precise deposition of calcium phosphate mineral onto the tips of ~10,000 enamel ribbons per ameloblast, each having cross&#x02010;sectional dimensions of ~1.5&#x000a0;nm x ~15&#x000a0;nm and separated from each other by a much larger area of organic matrix (Daculsi and Kerebel <xref rid="mgg3194-bib-0011" ref-type="ref">1978</xref>; Ronnholm <xref rid="mgg3194-bib-0049" ref-type="ref">1962b</xref>), possibly comprised of amelogenin nanospheres (Fincham et&#x000a0;al. <xref rid="mgg3194-bib-0013" ref-type="ref">1994</xref>, <xref rid="mgg3194-bib-0014" ref-type="ref">1995</xref>). Enamelin (Fukae et&#x000a0;al. <xref rid="mgg3194-bib-0016" ref-type="ref">1996</xref>; Hu et&#x000a0;al. <xref rid="mgg3194-bib-0023" ref-type="ref">1997c</xref>), and ameloblastin (Krebsbach et&#x000a0;al. <xref rid="mgg3194-bib-0038" ref-type="ref">1996</xref>; Cerny et&#x000a0;al. <xref rid="mgg3194-bib-0009" ref-type="ref">1996</xref>; Hu et&#x000a0;al. <xref rid="mgg3194-bib-0022" ref-type="ref">1997b</xref>) are essential mineralization front components as no enamel ribbons form in <italic>Enam</italic> or <italic>Ambn</italic> knockout mice (Hu et&#x000a0;al. <xref rid="mgg3194-bib-0026" ref-type="ref">2008</xref>; Fukumoto et&#x000a0;al. <xref rid="mgg3194-bib-0018" ref-type="ref">2004</xref>; Smith et&#x000a0;al. <xref rid="mgg3194-bib-0064" ref-type="ref">2009</xref>; Hu et&#x000a0;al. <xref rid="mgg3194-bib-0029" ref-type="ref">2014</xref>), whereas a thinner than normal layer of defective enamel containing characteristic enamel mineral ribbons forms in <italic>Amelx</italic> and <italic>Mmp20</italic> null mice (Gibson et&#x000a0;al. <xref rid="mgg3194-bib-0019" ref-type="ref">2001</xref>; Caterina et&#x000a0;al. <xref rid="mgg3194-bib-0008" ref-type="ref">2002</xref>; Beniash et&#x000a0;al. <xref rid="mgg3194-bib-0006" ref-type="ref">2006</xref>). Amelogenin, enamelin, and ameloblastin are all rapidly cleaved by MMP20 following their secretion. Most of the amelogenin protein accumulates, whereas only smaller fragments from the N&#x02010;terminal or near N&#x02010;terminal regions of ameloblastin and enamelin are retained in the extracellular matrix (Nanci et&#x000a0;al. <xref rid="mgg3194-bib-0045" ref-type="ref">1998</xref>; Uchida et&#x000a0;al. <xref rid="mgg3194-bib-0072" ref-type="ref">1997</xref>, <xref rid="mgg3194-bib-0071" ref-type="ref">1991</xref>; Tanabe et&#x000a0;al. <xref rid="mgg3194-bib-0069" ref-type="ref">1990b</xref>). Amelogenin is less abundant at the mineralization front where the enamel ribbons are shaped and oriented than it is in the bulk enamel beneath the mineralization front (Uchida et&#x000a0;al. <xref rid="mgg3194-bib-0070" ref-type="ref">1989</xref>; Nanci et&#x000a0;al. <xref rid="mgg3194-bib-0045" ref-type="ref">1998</xref>). This distribution is more consistent with a role in supporting the thin ribbons than in shaping and orienting them, which occurs the absence of amelogenin but is not sustained, resulting in an enamel layer that is much thinner than normal in <italic>Amelx</italic> null mice.</p><p>A major feature of <italic>Mmp20</italic> null enamel is the pathological accumulation of abundant extracellular matrix between and under ameloblasts that seems to flow onto the surface of the previously deposited enamel (layer 2) or accumulate near the cervical margins. In some cases it appears to flow through channels between cells and generate tubular or spherical nodules on the enamel surface. The matrix that mineralizes into this third layer is deposited more incisally than is normally covered by secretory stage ameloblasts, but the cells associated with its deposition resemble secretory stage ameloblasts. This finding suggests that in the absence of MMP20 there is a delay in transition from secretory to maturation stage or an increased eruption rate, or both. This third layer, being at the surface, undergoes a maturation processes that allows it to become more highly mineralized than the inner enamel layers. This is consistent with our determination that the enamel layer produced by <italic>Mmp20</italic> null mice has significantly more high&#x02010;density mineral than is the case for <italic>Mmp20Klk4</italic> double null mice where maturation stage activities are compromised.</p><p>We speculate that the organic matrix of the outer enamel layer formed in the <italic>Mmp20</italic> null enamel might relate to an obscure feature of normal amelogenesis, where large patches or droplets of amorphous electron&#x02010;dense material accumulate between adjacent rows of secretory stage ameloblasts and, to a lesser extent, between ameloblasts within rows (Nanci and Warshawsky <xref rid="mgg3194-bib-0044" ref-type="ref">1984</xref>). This intercellular material presumably empties into the enamel matrix at the interrod grow sites by transient, controlled interruptions in the distal junctional complex. Disruption of this mechanism in <italic>Mmp20</italic> null mice suggests that MMP20 cleavages are necessary to drain the droplets of intercellular organic material into the matrix, perhaps to stiffen it in support of ameloblast retrograde movements that allow for subsequent thickening of the enamel layer. This scenario is consistent with hypotheses that MMP20 facilitates ameloblast movement by cleaving ameloblast cell&#x02013;cell contacts (Guan and Bartlett <xref rid="mgg3194-bib-0020" ref-type="ref">2013</xref>).</p><p>The enamel malformations observed in the absence of MMP20, KLK4, or both enzymes provide strong evidence that the function of secreted enamel proteases is not to cleave crystal&#x02010;bound acidic proteins that inhibit mineral deposition on select crystal faces so that they can grow in width and thickness after adopting an elongated form. MMP20 might cleave inhibitors that prevent the solid attachment of the initial enamel ribbons to dentin, but plays no role in shaping the enamel ribbons. MMP20 catalyzes all of the cleavages of enamel proteins that occur during the secretory stage. These cleavages balance continued protein secretion with the reabsorption of selected cleavage products, which sustains the rhythmic, cyclical elongation of enamel ribbons at the mineralization front and the accumulation of cleavage products that support and separate the thin mineral ribbons, but must also be progressively degraded and reabsorbed to provide space for continuous growth of the thin crystallites in width and thickness. The complexity of the enamel phenotype displayed in the absence of MMP20 encourages the belief that MMP20 likely catalyzes cleavages in proteins besides amelogenin, enamelin, and ameloblastin that influence cellular processes that are at the present time, poorly understood.</p><p>KLK4 is secreted by maturation stage ameloblasts to degrade enamel proteins to facilitate their diffusion to the enamel surface for removal by endocytosis. The maturation of enamel takes less than 2&#x000a0;weeks in rodents where the enamel layer is only 115&#x02013;120&#x000a0;<italic>&#x003bc;</italic>m thick. In humans, where the enamel layer can grow to more than 2&#x000a0;mm in thickness, the process can take up to 5&#x000a0;years to complete. Thus, there is a trade&#x02010;off between enamel thickness and the amount of time required for enamel maturation (Smith <xref rid="mgg3194-bib-0062" ref-type="ref">1998</xref>). KLK4 is a relatively recent evolutionary innovation that facilitates the removal of enamel matrix. Without KLK4, there is a problem removing enamel proteins that increases in severity with distance from the enamel surface. Enamel crystals need to grow together and interlock with adjacent crystals, or they fail during function. Both MMP20 and KLK4 facilitate the removal of enamel proteins, and both activities are critically important for removing proteins in the inner enamel. As a consequence of this overlapping function, failure of the enamel occurs in the <italic>Mmp20Klk4</italic> double heterozygous mice, but not in the <italic>Mmp20</italic> or <italic>Klk4</italic> single heterozygotes. MMP20 and KLK4 also serve complementary functions so that enamel formed in the <italic>Mmp20Klk4</italic> double null mice does not contain as much high&#x02010;density enamel as it does in either the <italic>Mmp20</italic> or <italic>Klk4</italic> single nulls. Despite significant progress in our understanding of the mechanisms of enamel biomineralization and the roles of secreted proteases in the process, we have no explanation for the prominent, evenly spaced horizontal ridges observed in the mandibular incisors from the <italic>Mmp20</italic> null and <italic>Mmp20Klk4</italic> double null mice.</p></sec><sec id="mgg3194-sec-0019"><title>Conflict of Interest</title><p>None declared.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><caption><p>
+<bold>Figure&#x000a0;S1.</bold> PCR Genotyping.</p><p>
+<bold>Figure&#x000a0;S2.</bold> Cross sectioning a mandibular incisor.</p><p>
+<bold>Figure&#x000a0;S3.</bold> Day 14 mandibular dentition prior to molar eruption as viewed under a dissecting microscope.</p><p>
+<bold>Figure&#x000a0;S4.</bold> Day 17 mandibular dentition immediately following eruption of the first molar as viewed under a dissecting microscope.</p><p>
+<bold>Figure&#x000a0;S5.</bold> Week 7 mandibular dentition as viewed under a dissecting microscope.</p><p>
+<bold>Figure&#x000a0;S6.</bold> Week 7 wild&#x02010;type mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S7.</bold> Week 7 <italic>Klk4</italic> null mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S8.</bold> Week 7 <italic>Mmp20</italic> null mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S9.</bold> Week 7 <italic>Mmp20</italic>/<italic>Klk4</italic> double null mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S10.</bold> Week 7 <italic>Klk4</italic> heterozygous mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S11.</bold> Week 7 <italic>Mmp20</italic> heterozygous mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S12.</bold> Week 7 <italic>Mmp20</italic>/<italic>Klk4</italic> double heterozygous mandibular incisor cross sections.</p><p>
+<bold>Figure&#x000a0;S13.</bold> Week 7 wild&#x02010;type maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S14.</bold> Week 7 wild&#x02010;type mandibular incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S15.</bold> Week 7 <italic>Klk4</italic> null maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S16.</bold> Week 7 <italic>Klk4</italic> null mandibular incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S17.</bold> Week 7 <italic>Mmp20</italic> null maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S18.</bold> Week 7 <italic>Mmp20</italic> null mandibular incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S19.</bold> Week 7 <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S20.</bold> Week 7 <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Klk4</italic>
+<sup>&#x02212;/&#x02212;</sup> mandibular incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S21.</bold> Week 7 <italic>Klk4</italic> heterozygous maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S22.</bold> Week 7 <italic>Klk4</italic> heterozygous mandibular incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S23.</bold> Week 7 <italic>Mmp20</italic> heterozygous maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S24.</bold> Week 7 <italic>Mmp20</italic> heterozygous mandibular incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S25.</bold> Week 7 <italic>Mmp20</italic>/Klk4 double heterozygous maxillary incisor longitudinal section.</p><p>
+<bold>Figure&#x000a0;S26.</bold> Week 7 <italic>Mmp20</italic>/Klk4 double heterozygous mandibular incisor longitudinal section.</p></caption><media xlink:href="MGG3-4-178-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="mgg3194-sec-0018"><title>Acknowledgments</title><p>This study was supported by NIDCR/NIH research grants DE012769 (JS), DE015846 (JH), and DE016276 (JB). We thank Jeannie Mui of the FEMR Laboratory at McGill University for her exceptional skill and patience in cutting and staining the final semithin plastic sections that were used to make the histological illustrations presented in this study.</p></ack><ref-list content-type="cited-references" id="mgg3194-bibl-0001"><title>References</title><ref id="mgg3194-bib-0001"><mixed-citation publication-type="journal" id="mgg3194-cit-0001">
+<string-name>
+<surname>Arsenault</surname>, <given-names>A. L.</given-names>
+</string-name>, and <string-name>
+<given-names>B. W.</given-names>
+<surname>Robinson</surname>
+</string-name>. <year>1989</year>
+<article-title>The dentino&#x02010;enamel junction: a structural and microanalytical study of early mineralization</article-title>. <source>Calcif. Tissue Int.</source>
+<volume>45</volume>:<fpage>111</fpage>&#x02013;<lpage>121</lpage>.<pub-id pub-id-type="pmid">2505895</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0002"><mixed-citation publication-type="journal" id="mgg3194-cit-0002">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Beniash</surname>
+</string-name>, <string-name>
+<given-names>D. H.</given-names>
+<surname>Lee</surname>
+</string-name>, and <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>. <year>2004</year>
+<article-title>Decreased mineral content in MMP&#x02010;20 null mouse enamel is prominent during the maturation stage</article-title>. <source>J. Dent. Res.</source>
+<volume>83</volume>:<fpage>909</fpage>&#x02013;<lpage>913</lpage>.<pub-id pub-id-type="pmid">15557396</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0003"><mixed-citation publication-type="journal" id="mgg3194-cit-0003">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Skobe</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Nanci</surname>
+</string-name>, and <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>. <year>2011a</year>
+<article-title>Matrix metalloproteinase 20 promotes a smooth enamel surface, a strong dentino&#x02010;enamel junction, and a decussating enamel rod pattern</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>:<fpage>199</fpage>&#x02013;<lpage>205</lpage>.<pub-id pub-id-type="pmid">22243247</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0004"><mixed-citation publication-type="journal" id="mgg3194-cit-0004">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Skobe</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Nanci</surname>
+</string-name>, and <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>. <year>2011b</year>
+<article-title>Matrix metalloproteinase 20 promotes a smooth enamel surface, a strong dentino&#x02010;enamel junction, and a decussating enamel rod pattern</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>(<issue>Suppl. 1</issue>):<fpage>199</fpage>&#x02013;<lpage>205</lpage>.<pub-id pub-id-type="pmid">22243247</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0005"><mixed-citation publication-type="journal" id="mgg3194-cit-0005">
+<string-name>
+<surname>Begue&#x02010;Kirn</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<given-names>P. H.</given-names>
+<surname>Krebsbach</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, and <string-name>
+<given-names>W. T.</given-names>
+<surname>Butler</surname>
+</string-name>. <year>1998</year>
+<article-title>Dentin sialoprotein, dentin phosphoprotein, enamelysin and ameloblastin: tooth&#x02010;specific molecules that are distinctively expressed during murine dental differentiation</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>106</volume>:<fpage>963</fpage>&#x02013;<lpage>970</lpage>.<pub-id pub-id-type="pmid">9786327</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0006"><mixed-citation publication-type="journal" id="mgg3194-cit-0006">
+<string-name>
+<surname>Beniash</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Skobe</surname>
+</string-name>, and <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>
+<year>2006</year>
+<article-title>Formation of the dentino&#x02010;enamel interface in enamelysin (MMP&#x02010;20)&#x02010;deficient mouse incisors</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>114</volume>
+<issue>Suppl 1</issue>, 24&#x02010;9; discussion 39&#x02010;41, <fpage>379</fpage>.</mixed-citation></ref><ref id="mgg3194-bib-0007"><mixed-citation publication-type="journal" id="mgg3194-cit-0007">
+<string-name>
+<surname>Beniash</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<given-names>R. A.</given-names>
+<surname>Metzler</surname>
+</string-name>, <string-name>
+<given-names>R. S.</given-names>
+<surname>Lam</surname>
+</string-name>, and <string-name>
+<given-names>P. U.</given-names>
+<surname>Gilbert</surname>
+</string-name>. <year>2009</year>
+<article-title>Transient amorphous calcium phosphate in forming enamel</article-title>. <source>J. Struct. Biol.</source>
+<volume>166</volume>:<fpage>133</fpage>&#x02013;<lpage>143</lpage>.<pub-id pub-id-type="pmid">19217943</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0008"><mixed-citation publication-type="journal" id="mgg3194-cit-0008">
+<string-name>
+<surname>Caterina</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Skobe</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Ding</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Birkedal&#x02010;Hansen</surname>
+</string-name>, et&#x000a0;al. <year>2002</year>
+<article-title>Enamelysin (matrix metalloproteinase 20)&#x02010;deficient mice display an amelogenesis imperfecta phenotype</article-title>. <source>J. Biol. Chem.</source>
+<volume>277</volume>:<fpage>49598</fpage>&#x02013;<lpage>49604</lpage>.<pub-id pub-id-type="pmid">12393861</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0009"><mixed-citation publication-type="journal" id="mgg3194-cit-0009">
+<string-name>
+<surname>Cerny</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<given-names>I.</given-names>
+<surname>Slaby</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Hammarstrom</surname>
+</string-name>, and <string-name>
+<given-names>T.</given-names>
+<surname>Wurtz</surname>
+</string-name>. <year>1996</year>
+<article-title>A novel gene expressed in rat ameloblasts codes for proteins with cell binding domains</article-title>. <source>J. Bone Min. Res.</source>
+<volume>11</volume>:<fpage>883</fpage>&#x02013;<lpage>891</lpage>.</mixed-citation></ref><ref id="mgg3194-bib-0010"><mixed-citation publication-type="journal" id="mgg3194-cit-0010">
+<string-name>
+<surname>Chun</surname>, <given-names>Y. H.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, et&#x000a0;al. <year>2010</year>
+<article-title>Cleavage site specificity of MMP&#x02010;20 for secretory&#x02010;stage ameloblastin</article-title>. <source>J. Dent. Res.</source>
+<volume>89</volume>:<fpage>785</fpage>&#x02013;<lpage>790</lpage>.<pub-id pub-id-type="pmid">20400724</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0011"><mixed-citation publication-type="journal" id="mgg3194-cit-0011">
+<string-name>
+<surname>Daculsi</surname>, <given-names>G.</given-names>
+</string-name>, and <string-name>
+<given-names>B.</given-names>
+<surname>Kerebel</surname>
+</string-name>. <year>1978</year>
+<article-title>High&#x02010;resolution electron microscope study of human enamel crystallites: size, shape, and growth</article-title>. <source>J. Ultrastruct. Res.</source>
+<volume>65</volume>:<fpage>163</fpage>&#x02013;<lpage>172</lpage>.<pub-id pub-id-type="pmid">731784</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0012"><mixed-citation publication-type="journal" id="mgg3194-cit-0012">
+<string-name>
+<surname>Fang</surname>, <given-names>P. A.</given-names>
+</string-name>, <string-name>
+<given-names>R. S.</given-names>
+<surname>Lam</surname>
+</string-name>, and <string-name>
+<given-names>E.</given-names>
+<surname>Beniash</surname>
+</string-name>. <year>2011</year>
+<article-title>Relationships between dentin and enamel mineral at the dentino&#x02010;enamel boundary: electron tomography and high&#x02010;resolution transmission electron microscopy study</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>(<issue>Suppl. 1</issue>):<fpage>120</fpage>&#x02013;<lpage>124</lpage>.<pub-id pub-id-type="pmid">22243237</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0013"><mixed-citation publication-type="journal" id="mgg3194-cit-0013">
+<string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Moradian&#x02010;Oldak</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Sarte</surname>
+</string-name>, <string-name>
+<given-names>E. C.</given-names>
+<surname>Lau</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Diekwisch</surname>
+</string-name>, et&#x000a0;al. <year>1994</year>
+<article-title>Self&#x02010;assembly of a recombinant amelogenin protein generates supramolecular structures</article-title>. <source>J. Struct. Biol.</source>
+<volume>112</volume>:<fpage>103</fpage>&#x02013;<lpage>109</lpage>.<pub-id pub-id-type="pmid">8060728</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0014"><mixed-citation publication-type="journal" id="mgg3194-cit-0014">
+<string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Moradian&#x02010;Oldak</surname>
+</string-name>, <string-name>
+<given-names>T. G.</given-names>
+<surname>Diekwisch</surname>
+</string-name>, <string-name>
+<given-names>D. M.</given-names>
+<surname>Lyaruu</surname>
+</string-name>, <string-name>
+<given-names>J. T.</given-names>
+<surname>Wright</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<suffix>Jr</suffix>
+<surname>Bringas</surname>
+</string-name>, et&#x000a0;al. <year>1995</year>
+<article-title>Evidence for amelogenin &#x0201c;nanospheres&#x0201d; as functional components of secretory&#x02010;stage enamel matrix</article-title>. <source>J. Struc. Biol.</source>
+<volume>115</volume>:<fpage>50</fpage>&#x02013;<lpage>59</lpage>.</mixed-citation></ref><ref id="mgg3194-bib-0015"><mixed-citation publication-type="journal" id="mgg3194-cit-0015">
+<string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Moradian&#x02010;Oldak</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>1999</year>
+<article-title>The structural biology of the developing dental enamel matrix</article-title>. <source>J. Struct. Biol.</source>
+<volume>126</volume>:<fpage>270</fpage>&#x02013;<lpage>299</lpage>.<pub-id pub-id-type="pmid">10441532</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0016"><mixed-citation publication-type="journal" id="mgg3194-cit-0016">
+<string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Tanabe</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Murakami</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Dohi</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Uchida</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Shimizu</surname>
+</string-name>. <year>1996</year>
+<article-title>Primary structure of the porcine 89&#x02010;kDa enamelin</article-title>. <source>Adv. Dent. Res.</source>
+<volume>10</volume>:<fpage>111</fpage>&#x02013;<lpage>118</lpage>.<pub-id pub-id-type="pmid">9206327</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0017"><mixed-citation publication-type="journal" id="mgg3194-cit-0017">
+<string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Yamamoto</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Karakida</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Shimoda</surname>
+</string-name>, and <string-name>
+<given-names>T.</given-names>
+<surname>Tanabe</surname>
+</string-name>. <year>2007</year>
+<article-title>Micelle structure of amelogenin in porcine secretory enamel</article-title>. <source>J. Dent. Res.</source>
+<volume>86</volume>:<fpage>758</fpage>&#x02013;<lpage>763</lpage>.<pub-id pub-id-type="pmid">17652206</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0018"><mixed-citation publication-type="journal" id="mgg3194-cit-0018">
+<string-name>
+<surname>Fukumoto</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Kiba</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Hall</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Iehara</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Nakamura</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Longenecker</surname>
+</string-name>, et&#x000a0;al. <year>2004</year>
+<article-title>Ameloblastin is a cell adhesion molecule required for maintaining the differentiation state of ameloblasts</article-title>. <source>J. Cell Biol.</source>
+<volume>167</volume>:<fpage>973</fpage>&#x02013;<lpage>983</lpage>.<pub-id pub-id-type="pmid">15583034</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0019"><mixed-citation publication-type="journal" id="mgg3194-cit-0019">
+<string-name>
+<surname>Gibson</surname>, <given-names>C. W.</given-names>
+</string-name>, <string-name>
+<given-names>Z. A.</given-names>
+<surname>Yuan</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Hall</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Longenecker</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Thyagarajan</surname>
+</string-name>, et&#x000a0;al. <year>2001</year>
+<article-title>Amelogenin&#x02010;deficient mice display an amelogenesis imperfecta phenotype</article-title>. <source>J. Biol. Chem.</source>
+<volume>276</volume>:<fpage>31871</fpage>&#x02013;<lpage>31875</lpage>.<pub-id pub-id-type="pmid">11406633</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0020"><mixed-citation publication-type="journal" id="mgg3194-cit-0020">
+<string-name>
+<surname>Guan</surname>, <given-names>X.</given-names>
+</string-name>, and <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>. <year>2013</year>
+<article-title>MMP20 modulates cadherin expression in ameloblasts as enamel develops</article-title>. <source>J. Dent. Res.</source>
+<volume>92</volume>:<fpage>1123</fpage>&#x02013;<lpage>1128</lpage>.<pub-id pub-id-type="pmid">24067343</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0021"><mixed-citation publication-type="journal" id="mgg3194-cit-0021">
+<string-name>
+<surname>Hu</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Uchida</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Qian</surname>
+</string-name>, <string-name>
+<given-names>C. H.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>O. H.</given-names>
+<surname>Ryu</surname>
+</string-name>, et&#x000a0;al. <year>1997a</year>
+<article-title>Cloning and characterization of porcine enamelin mRNAs</article-title>. <source>J. Dent. Res.</source>
+<volume>76</volume>:<fpage>1720</fpage>&#x02013;<lpage>1729</lpage>.<pub-id pub-id-type="pmid">9372788</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0022"><mixed-citation publication-type="journal" id="mgg3194-cit-0022">
+<string-name>
+<surname>Hu</surname>, <given-names>C.&#x02010;C.</given-names>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Uchida</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Qian</surname>
+</string-name>, <string-name>
+<given-names>C. H.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>O. H.</given-names>
+<surname>Ryu</surname>
+</string-name>, et&#x000a0;al. <year>1997b</year>
+<article-title>Sheathlin: cloning, cDNA/polypeptide sequences, and immunolocalization of porcine enamel proteins concentrated in the sheath space</article-title>. <source>J. Dent. Res.</source>
+<volume>76</volume>:<fpage>648</fpage>&#x02013;<lpage>657</lpage>.<pub-id pub-id-type="pmid">9062558</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0023"><mixed-citation publication-type="journal" id="mgg3194-cit-0023">
+<string-name>
+<surname>Hu</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Uchida</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Qian</surname>
+</string-name>, <string-name>
+<given-names>C. H.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>O. H.</given-names>
+<surname>Ryu</surname>
+</string-name>, et&#x000a0;al. <year>1997c</year>
+<article-title>Cloning and characterization of porcine enamelin mRNAs</article-title>. <source>J. Dent. Res.</source>
+<volume>76</volume>:<fpage>1720</fpage>&#x02013;<lpage>1729</lpage>.<pub-id pub-id-type="pmid">9372788</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0024"><mixed-citation publication-type="journal" id="mgg3194-cit-0024">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Cao</surname>
+</string-name>, <string-name>
+<given-names>O.</given-names>
+<surname>Ryu</surname>
+</string-name>, et&#x000a0;al. <year>2000</year>
+<article-title>Characterization of the mouse and human PRSS17 genes, their relationship to other serine proteases, and the expression of PRSS17 in developing mouse incisors</article-title>. <source>Gene</source>
+<volume>251</volume>:<fpage>1</fpage>&#x02013;<lpage>8</lpage>.<pub-id pub-id-type="pmid">10863090</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0025"><mixed-citation publication-type="journal" id="mgg3194-cit-0025">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2002</year>
+<article-title>Enamelysin and kallikrein&#x02010;4 mRNA expression in developing mouse molars</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>110</volume>:<fpage>307</fpage>&#x02013;<lpage>315</lpage>.<pub-id pub-id-type="pmid">12206593</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0026"><mixed-citation publication-type="journal" id="mgg3194-cit-0026">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, <string-name>
+<given-names>M. D.</given-names>
+<surname>Mckee</surname>
+</string-name>, <string-name>
+<given-names>J. T.</given-names>
+<surname>Wright</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, et&#x000a0;al. <year>2008</year>
+<article-title>Enamel defects and ameloblast&#x02010;specific expression in Enam knock&#x02010;out/lacz knock&#x02010;in mice</article-title>. <source>J. Biol. Chem.</source>
+<volume>283</volume>:<fpage>10858</fpage>&#x02013;<lpage>10871</lpage>.<pub-id pub-id-type="pmid">18252720</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0027"><mixed-citation publication-type="journal" id="mgg3194-cit-0027">
+<string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2011a</year>
+<article-title>Kallikrein&#x02010;related peptidase 4, matrix metalloproteinase 20, and the maturation of murine and porcine enamel</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>:<fpage>217</fpage>&#x02013;<lpage>225</lpage>.<pub-id pub-id-type="pmid">22243249</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0028"><mixed-citation publication-type="journal" id="mgg3194-cit-0028">
+<string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2011b</year>
+<article-title>Kallikrein&#x02010;related peptidase 4, matrix metalloproteinase 20, and the maturation of murine and porcine enamel</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>(<issue>Suppl. 1</issue>):<fpage>217</fpage>&#x02013;<lpage>225</lpage>.<pub-id pub-id-type="pmid">22243249</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0029"><mixed-citation publication-type="journal" id="mgg3194-cit-0029">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Lertlam</surname>
+</string-name>, <string-name>
+<given-names>J. T.</given-names>
+<surname>Wright</surname>
+</string-name>, et&#x000a0;al. <year>2014</year>
+<article-title>Enamelin is critical for ameloblast integrity and enamel ultrastructure formation</article-title>. <source>PLoS ONE</source>
+<volume>9</volume>:<fpage>e89303</fpage>.<pub-id pub-id-type="pmid">24603688</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0030"><mixed-citation publication-type="journal" id="mgg3194-cit-0030">
+<string-name>
+<surname>Iwata</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>I.</given-names>
+<surname>Ishikawa</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, <string-name>
+<given-names>P. H.</given-names>
+<surname>Krebsbach</surname>
+</string-name>, et&#x000a0;al. <year>2007</year>
+<article-title>Processing of ameloblastin by MMP&#x02010;20</article-title>. <source>J. Dent. Res.</source>
+<volume>86</volume>:<fpage>153</fpage>&#x02013;<lpage>157</lpage>.<pub-id pub-id-type="pmid">17251515</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0031"><mixed-citation publication-type="journal" id="mgg3194-cit-0031">
+<string-name>
+<surname>Kallenbach</surname>, <given-names>E.</given-names>
+</string-name>
+<year>1976</year>
+<article-title>Fine structure of differentiating ameloblasts in the kitten</article-title>. <source>Am J. Anat</source>
+<volume>145</volume>:<fpage>283</fpage>&#x02013;<lpage>318</lpage>.<pub-id pub-id-type="pmid">1266772</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0032"><mixed-citation publication-type="journal" id="mgg3194-cit-0032">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, and <string-name>
+<given-names>C. T.</given-names>
+<surname>Amemiya</surname>
+</string-name>. <year>2014</year>
+<article-title>SCPP genes in the coelacanth: tissue mineralization genes shared by sarcopterygians</article-title>. <source>J. Exp. Zool. B. Mol. Dev. Evol.</source>
+<volume>322</volume>:<fpage>390</fpage>&#x02013;<lpage>402</lpage>.<pub-id pub-id-type="pmid">25243252</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0033"><mixed-citation publication-type="journal" id="mgg3194-cit-0033">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, and <string-name>
+<given-names>T.</given-names>
+<surname>Suzuki</surname>
+</string-name>. <year>2011</year>
+<article-title>Molecular evolution of matrix metalloproteinase 20</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>(<issue>Suppl. 1</issue>):<fpage>247</fpage>&#x02013;<lpage>253</lpage>.<pub-id pub-id-type="pmid">22243253</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0034"><mixed-citation publication-type="journal" id="mgg3194-cit-0034">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, and <string-name>
+<given-names>K. M.</given-names>
+<surname>Weiss</surname>
+</string-name>. <year>2003</year>
+<article-title>Mineralized tissue and vertebrate evolution: the secretory calcium&#x02010;binding phosphoprotein gene cluster</article-title>. <source>Proc. Natl Acad. Sci. USA</source>
+<volume>100</volume>:<fpage>4060</fpage>&#x02013;<lpage>4065</lpage>.<pub-id pub-id-type="pmid">12646701</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0035"><mixed-citation publication-type="journal" id="mgg3194-cit-0035">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<given-names>A. V.</given-names>
+<surname>Buchanan</surname>
+</string-name>, and <string-name>
+<given-names>K. M.</given-names>
+<surname>Weiss</surname>
+</string-name>. <year>2009</year>
+<article-title>Biomineralization in humans: making the hard choices in life</article-title>. <source>Annu. Rev. Genet.</source>
+<volume>43</volume>:<fpage>119</fpage>&#x02013;<lpage>142</lpage>.<pub-id pub-id-type="pmid">19659443</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0036"><mixed-citation publication-type="journal" id="mgg3194-cit-0036">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2014</year>
+<article-title>Evolution of Klk4 and enamel maturation in eutherians</article-title>. <source>Biol. Chem.</source>
+<volume>395</volume>:<fpage>1003</fpage>&#x02013;<lpage>1013</lpage>.<pub-id pub-id-type="pmid">25153384</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0037"><mixed-citation publication-type="journal" id="mgg3194-cit-0037">
+<string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>T. C.</given-names>
+<surname>Hart</surname>
+</string-name>, <string-name>
+<given-names>P. S.</given-names>
+<surname>Hart</surname>
+</string-name>, <string-name>
+<given-names>M. D.</given-names>
+<surname>Ramaswami</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, et&#x000a0;al. <year>2005</year>
+<article-title>MMP&#x02010;20 mutation in autosomal recessive pigmented hypomaturation amelogenesis imperfecta</article-title>. <source>J. Med. Genet.</source>
+<volume>42</volume>:<fpage>271</fpage>&#x02013;<lpage>275</lpage>.<pub-id pub-id-type="pmid">15744043</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0038"><mixed-citation publication-type="journal" id="mgg3194-cit-0038">
+<string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, <string-name>
+<given-names>S. K.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Matsuki</surname>
+</string-name>, <string-name>
+<given-names>C. A.</given-names>
+<surname>Kozak</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Yamada</surname>
+</string-name>, and <string-name>
+<given-names>Y.</given-names>
+<surname>Yamada</surname>
+</string-name>. <year>1996</year>
+<article-title>Full&#x02010;length sequence, localization, and chromosomal mapping of ameloblastin: a novel tooth&#x02010;specific gene</article-title>. <source>J. Biol. Chem.</source>
+<volume>271</volume>:<fpage>4431</fpage>&#x02013;<lpage>4435</lpage>.<pub-id pub-id-type="pmid">8626794</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0039"><mixed-citation publication-type="journal" id="mgg3194-cit-0039">
+<string-name>
+<surname>Landis</surname>, <given-names>W. J.</given-names>
+</string-name>, <string-name>
+<given-names>G. Y.</given-names>
+<surname>Burke</surname>
+</string-name>, <string-name>
+<given-names>J. R.</given-names>
+<surname>Neuringer</surname>
+</string-name>, <string-name>
+<given-names>M. C.</given-names>
+<surname>Paine</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Nanci</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Bai</surname>
+</string-name>, et&#x000a0;al. <year>1988</year>
+<article-title>Earliest enamel deposits of the rat incisor examined by electron microscopy, electron diffraction, and electron probe microanalysis</article-title>. <source>Anat. Rec.</source>
+<volume>220</volume>:<fpage>233</fpage>&#x02013;<lpage>238</lpage>.<pub-id pub-id-type="pmid">2834985</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0040"><mixed-citation publication-type="journal" id="mgg3194-cit-0040">
+<string-name>
+<surname>Lu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Papagerakis</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2008</year>
+<article-title>Functions of KLK4 and MMP&#x02010;20 in dental enamel formation</article-title>. <source>Biol. Chem.</source>
+<volume>389</volume>:<fpage>695</fpage>&#x02013;<lpage>700</lpage>.<pub-id pub-id-type="pmid">18627287</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0041"><mixed-citation publication-type="journal" id="mgg3194-cit-0041">
+<string-name>
+<surname>Meredith</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Gatesy</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Cheng</surname>
+</string-name>, and <string-name>
+<given-names>M. S.</given-names>
+<surname>Springer</surname>
+</string-name>. <year>2011</year>
+<article-title>Pseudogenization of the tooth gene enamelysin (MMP20) in the common ancestor of extant baleen whales</article-title>. <source>Proc. Biol. Sci.</source>
+<volume>278</volume>:<fpage>993</fpage>&#x02013;<lpage>1002</lpage>.<pub-id pub-id-type="pmid">20861053</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0042"><mixed-citation publication-type="journal" id="mgg3194-cit-0042">
+<string-name>
+<surname>Meredith</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>M. T.</given-names>
+<surname>Gilbert</surname>
+</string-name>, <string-name>
+<given-names>E. D.</given-names>
+<surname>Jarvis</surname>
+</string-name>, and <string-name>
+<given-names>M. S.</given-names>
+<surname>Springer</surname>
+</string-name>. <year>2014</year>
+<article-title>Evidence for a single loss of mineralized teeth in the common avian ancestor</article-title>. <source>Science</source>
+<volume>346</volume>:<fpage>1254390</fpage>.<pub-id pub-id-type="pmid">25504730</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0043"><mixed-citation publication-type="journal" id="mgg3194-cit-0043">
+<string-name>
+<surname>Nagano</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Kakegawa</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Tsuchiya</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Gomi</surname>
+</string-name>, et&#x000a0;al. <year>2009</year>
+<article-title>Mmp&#x02010;20 and Klk4 cleavage site preferences for amelogenin sequences</article-title>. <source>J. Dent. Res.</source>
+<volume>88</volume>:<fpage>823</fpage>&#x02013;<lpage>828</lpage>.<pub-id pub-id-type="pmid">19767579</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0044"><mixed-citation publication-type="journal" id="mgg3194-cit-0044">
+<string-name>
+<surname>Nanci</surname>, <given-names>A.</given-names>
+</string-name>, and <string-name>
+<given-names>H.</given-names>
+<surname>Warshawsky</surname>
+</string-name>. <year>1984</year>
+<article-title>Characterization of putative secretory sites on ameloblasts of the rat incisor</article-title>. <source>Am J. Anat</source>
+<volume>171</volume>:<fpage>163</fpage>&#x02013;<lpage>189</lpage>.<pub-id pub-id-type="pmid">6496374</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0045"><mixed-citation publication-type="journal" id="mgg3194-cit-0045">
+<string-name>
+<surname>Nanci</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Zalzal</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Lavoie</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Kunikata</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>P. H.</given-names>
+<surname>Krebsbach</surname>
+</string-name>, et&#x000a0;al. <year>1998</year>
+<article-title>Comparative immunochemical analyses of the developmental expression and distribution of ameloblastin and amelogenin in rat incisors</article-title>. <source>J. Histochem. Cytochem.</source>
+<volume>46</volume>:<fpage>911</fpage>&#x02013;<lpage>934</lpage>.<pub-id pub-id-type="pmid">9671442</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0046"><mixed-citation publication-type="journal" id="mgg3194-cit-0046">
+<string-name>
+<surname>Papagerakis</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<given-names>H. K.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name>
+<given-names>K. Y.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, et&#x000a0;al. <year>2008</year>
+<article-title>Premature stop codon in MMP20 causing amelogenesis imperfecta</article-title>. <source>J. Dent. Res.</source>
+<volume>87</volume>:<fpage>56</fpage>&#x02013;<lpage>59</lpage>.<pub-id pub-id-type="pmid">18096894</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0047"><mixed-citation publication-type="journal" id="mgg3194-cit-0047">
+<string-name>
+<surname>Reith</surname>, <given-names>E. J.</given-names>
+</string-name>
+<year>1967</year>
+<article-title>The early stage of amelogenesis as observed in molar teeth of young rats</article-title>. <source>J. Ultrastruct. Res.</source>
+<volume>17</volume>:<fpage>503</fpage>&#x02013;<lpage>526</lpage>.<pub-id pub-id-type="pmid">6026385</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0048"><mixed-citation publication-type="journal" id="mgg3194-cit-0048">
+<string-name>
+<surname>Ronnholm</surname>, <given-names>E.</given-names>
+</string-name>
+<year>1962a</year>
+<article-title>The amelogenesis of human teeth as revealed by electron mircoscopy I. The fine structure of the ameloblasts</article-title>. <source>J. Ultrastructure Res.</source>
+<volume>6</volume>:<fpage>229</fpage>&#x02013;<lpage>248</lpage>.</mixed-citation></ref><ref id="mgg3194-bib-0049"><mixed-citation publication-type="journal" id="mgg3194-cit-0049">
+<string-name>
+<surname>Ronnholm</surname>, <given-names>E.</given-names>
+</string-name>
+<year>1962b</year>
+<article-title>The amelogenesis of human teeth as revealed by electron mircoscopy II. The development of the enamel crystallites</article-title>. <source>J. Ultrastructure Res.</source>
+<volume>6</volume>:<fpage>249</fpage>&#x02013;<lpage>303</lpage>.</mixed-citation></ref><ref id="mgg3194-bib-0050"><mixed-citation publication-type="journal" id="mgg3194-cit-0050">
+<string-name>
+<surname>Ryu</surname>, <given-names>O. H.</given-names>
+</string-name>, <string-name>
+<given-names>A. G.</given-names>
+<surname>Fincham</surname>
+</string-name>, <string-name>
+<given-names>C. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Qian</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, et&#x000a0;al. <year>1999</year>
+<article-title>Characterization of recombinant pig enamelysin activity and cleavage of recombinant pig and mouse amelogenins</article-title>. <source>J. Dent. Res.</source>
+<volume>78</volume>:<fpage>743</fpage>&#x02013;<lpage>750</lpage>.<pub-id pub-id-type="pmid">10096449</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0051"><mixed-citation publication-type="journal" id="mgg3194-cit-0051">
+<string-name>
+<surname>Ryu</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>J. L.</given-names>
+<surname>Villemain</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Cao</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Zhang</surname>
+</string-name>, et&#x000a0;al. <year>2002</year>
+<article-title>Porcine kallikrein&#x02010;4 activation, glycosylation, activity, and expression in prokaryotic and eukaryotic hosts</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>110</volume>:<fpage>358</fpage>&#x02013;<lpage>365</lpage>.<pub-id pub-id-type="pmid">12664466</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0052"><mixed-citation publication-type="journal" id="mgg3194-cit-0052">
+<string-name>
+<surname>Satchell</surname>, <given-names>P. G.</given-names>
+</string-name>, <string-name>
+<given-names>C. F.</given-names>
+<surname>Shuler</surname>
+</string-name>, and <string-name>
+<given-names>T. G.</given-names>
+<surname>Diekwisch</surname>
+</string-name>. <year>2000</year>
+<article-title>True enamel covering in teeth of the Australian lungfish Neoceratodus forsteri</article-title>. <source>Cell Tissue Res.</source>
+<volume>299</volume>:<fpage>27</fpage>&#x02013;<lpage>37</lpage>.<pub-id pub-id-type="pmid">10654067</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0053"><mixed-citation publication-type="journal" id="mgg3194-cit-0053">
+<string-name>
+<surname>Schaffer</surname>, <given-names>A. A.</given-names>
+</string-name>
+<year>2013</year>
+<article-title>Digenic inheritance in medical genetics</article-title>. <source>J. Med. Genet.</source>
+<volume>50</volume>:<fpage>641</fpage>&#x02013;<lpage>652</lpage>.<pub-id pub-id-type="pmid">23785127</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0054"><mixed-citation publication-type="journal" id="mgg3194-cit-0054">
+<string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name>
+<given-names>K. E.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>H. K.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>D. S.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Koruyucu</surname>
+</string-name>, et&#x000a0;al. <year>2015</year>
+<article-title>Novel MMP20 and KLK4 Mutations in Amelogenesis Imperfecta</article-title>. <source>J. Dent. Res.</source>
+<volume>94</volume>:<fpage>1063</fpage>&#x02013;<lpage>1069</lpage>.<pub-id pub-id-type="pmid">26124219</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0055"><mixed-citation publication-type="journal" id="mgg3194-cit-0055">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, and <string-name>
+<given-names>A. G.</given-names>
+<surname>Fincham</surname>
+</string-name>. <year>1995</year>
+<article-title>Molecular mechanisms of dental enamel formation</article-title>. <source>Crit. Rev. Oral Biol. Med.</source>
+<volume>6</volume>:<fpage>84</fpage>&#x02013;<lpage>108</lpage>.<pub-id pub-id-type="pmid">7548623</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0056"><mixed-citation publication-type="journal" id="mgg3194-cit-0056">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Lertlam</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>. <year>2009a</year>
+<article-title>Hypomaturation enamel defects in Klk4 knockout/LacZ knockin mice</article-title>. <source>J. Biol. Chem.</source>
+<volume>284</volume>:<fpage>19110</fpage>&#x02013;<lpage>19121</lpage>.<pub-id pub-id-type="pmid">19578120</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0057"><mixed-citation publication-type="journal" id="mgg3194-cit-0057">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Lertlam</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>. <year>2009b</year>
+<article-title>Hypomaturation enamel defects in Klk4 knockout/LacZ knockin mice</article-title>. <source>J. Biol. Chem.</source>
+<volume>284</volume>:<fpage>19110</fpage>&#x02013;<lpage>19121</lpage>.<pub-id pub-id-type="pmid">19578120</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0058"><mixed-citation publication-type="journal" id="mgg3194-cit-0058">
+<string-name>
+<surname>Simmer</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Bartlett</surname>
+</string-name>, and <string-name>
+<given-names>J. C.&#x02010;C.</given-names>
+<surname>Hu</surname>
+</string-name>. <year>2011a</year>
+<article-title>Why does enamel in Klk4 null mice break above the dentino&#x02010;enamel junction?</article-title>
+<source>Cells Tissues Org.</source>
+<volume>194</volume>:<fpage>211</fpage>&#x02013;<lpage>215</lpage>.</mixed-citation></ref><ref id="mgg3194-bib-0059"><mixed-citation publication-type="journal" id="mgg3194-cit-0059">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>. <year>2011b</year>
+<article-title>Expression of kallikrein&#x02010;related peptidase 4 in dental and non&#x02010;dental tissues</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>:<fpage>226</fpage>&#x02013;<lpage>233</lpage>.<pub-id pub-id-type="pmid">22243250</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0060"><mixed-citation publication-type="journal" id="mgg3194-cit-0060">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>Y. Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, and <string-name>
+<given-names>J.</given-names>
+<surname>Ching&#x02010;Chun Hu</surname>
+</string-name>. <year>2012a</year>
+<article-title>A post&#x02010;classical theory of enamel biomineralization&#x02026; and why we need one</article-title>. <source>Int. J. Oral. Sci.</source>
+<volume>4</volume>:<fpage>129</fpage>&#x02013;<lpage>134</lpage>.<pub-id pub-id-type="pmid">22996272</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0061"><mixed-citation publication-type="journal" id="mgg3194-cit-0061">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>Y. Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>C. E.</given-names>
+<surname>Smith</surname>
+</string-name>, and <string-name>
+<given-names>J.</given-names>
+<surname>Ching&#x02010;Chun Hu</surname>
+</string-name>. <year>2012b</year>
+<article-title>A post&#x02010;classical theory of enamel biomineralization&#x02026; and why we need one</article-title>. <source>Int. J. Oral Sci.</source>
+<volume>4</volume>:<fpage>129</fpage>&#x02013;<lpage>134</lpage>.<pub-id pub-id-type="pmid">22996272</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0062"><mixed-citation publication-type="journal" id="mgg3194-cit-0062">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>
+<year>1998</year>
+<article-title>Cellular and chemical events during enamel maturation</article-title>. <source>Crit. Rev. Oral Biol. Med.</source>
+<volume>9</volume>:<fpage>128</fpage>&#x02013;<lpage>161</lpage>.<pub-id pub-id-type="pmid">9603233</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0063"><mixed-citation publication-type="journal" id="mgg3194-cit-0063">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, and <string-name>
+<given-names>A.</given-names>
+<surname>Nanci</surname>
+</string-name>. <year>1989</year>
+<article-title>A method for sampling the stages of amelogenesis on mandibular rat incisors using the molars as a reference for dissection</article-title>. <source>Anat. Rec.</source>
+<volume>225</volume>:<fpage>257</fpage>&#x02013;<lpage>266</lpage>.<pub-id pub-id-type="pmid">2683870</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0064"><mixed-citation publication-type="journal" id="mgg3194-cit-0064">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Wazen</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>S. F.</given-names>
+<surname>Zalzal</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Nanci</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, et&#x000a0;al. <year>2009</year>
+<article-title>Consequences for enamel development and mineralization resulting from loss of function of ameloblastin or enamelin</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>117</volume>:<fpage>485</fpage>&#x02013;<lpage>497</lpage>.<pub-id pub-id-type="pmid">19758243</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0065"><mixed-citation publication-type="journal" id="mgg3194-cit-0065">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2011a</year>
+<article-title>Relationships between protein and mineral during enamel development in normal and genetically altered mice</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>:<fpage>125</fpage>&#x02013;<lpage>135</lpage>.<pub-id pub-id-type="pmid">22243238</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0066"><mixed-citation publication-type="journal" id="mgg3194-cit-0066">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2011b</year>
+<article-title>Effect of kallikrein 4 loss on enamel mineralization: comparison with mice lacking matrix metalloproteinase 20</article-title>. <source>J. Biol. Chem.</source>
+<volume>286</volume>:<fpage>18149</fpage>&#x02013;<lpage>18160</lpage>.<pub-id pub-id-type="pmid">21454549</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0067"><mixed-citation publication-type="journal" id="mgg3194-cit-0067">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. D.</given-names>
+<surname>Bartlett</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2011c</year>
+<article-title>Effect of Kallikrein 4 loss on enamel mineralization: comparison with mice lacking matrix metalloproteinase 20</article-title>. <source>J. Biol. Chem.</source>
+<volume>286</volume>:<fpage>18149</fpage>&#x02013;<lpage>18160</lpage>.<pub-id pub-id-type="pmid">21454549</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0068"><mixed-citation publication-type="journal" id="mgg3194-cit-0068">
+<string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Aoba</surname>
+</string-name>, <string-name>
+<given-names>E. C.</given-names>
+<surname>Moreno</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Shimizu</surname>
+</string-name>. <year>1990a</year>
+<article-title>Properties of phosphorylated 32 kd nonamelogenin proteins isolated from porcine secretory enamel</article-title>. <source>Calcif. Tissue Int.</source>
+<volume>46</volume>:<fpage>205</fpage>&#x02013;<lpage>215</lpage>.<pub-id pub-id-type="pmid">2106381</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0069"><mixed-citation publication-type="journal" id="mgg3194-cit-0069">
+<string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Aoba</surname>
+</string-name>, <string-name>
+<given-names>E. C.</given-names>
+<surname>Moreno</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Shimuzu</surname>
+</string-name>. <year>1990b</year>
+<article-title>Properties of phosphorylated 32 kd nonamelogenin proteins isolated from porcine secretory enamel</article-title>. <source>Calcif. Tissue Int.</source>
+<volume>46</volume>:<fpage>205</fpage>&#x02013;<lpage>215</lpage>.<pub-id pub-id-type="pmid">2106381</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0070"><mixed-citation publication-type="journal" id="mgg3194-cit-0070">
+<string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Tanabe</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>. <year>1989</year>
+<article-title>Immunocytochemical localization of amelogenins in the deciduous tooth germs of the human fetus</article-title>. <source>Arch. Histol. Cytol.</source>
+<volume>52</volume>:<fpage>543</fpage>&#x02013;<lpage>552</lpage>.<pub-id pub-id-type="pmid">2631923</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0071"><mixed-citation publication-type="journal" id="mgg3194-cit-0071">
+<string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Tanabe</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Shimizu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Yamada</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Miake</surname>
+</string-name>, et&#x000a0;al. <year>1991</year>
+<article-title>Immunochemical and immunohistochemical studies, using antisera against porcine 25&#x000a0;kDa amelogenin, 89&#x000a0;kDa enamelin and the 13&#x02010;17&#x000a0;kDa nonamelogenins, on immature enamel of the pig and rat</article-title>. <source>Histochemistry</source>
+<volume>96</volume>:<fpage>129</fpage>&#x02013;<lpage>138</lpage>.<pub-id pub-id-type="pmid">1917569</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0072"><mixed-citation publication-type="journal" id="mgg3194-cit-0072">
+<string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Murakami</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Dohi</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Wakida</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Satoda</surname>
+</string-name>, and <string-name>
+<given-names>O.</given-names>
+<surname>Takahashi</surname>
+</string-name>. <year>1997</year>
+<article-title>Synthesis, secretion, degradation, and fate of ameloblastin during the matrix formation stage of the rat incisor as shown by immunocytochemistry and immunochemistry using region&#x02010;specific antibodies</article-title>. <source>J. Histochem. Cytochem.</source>
+<volume>45</volume>:<fpage>1329</fpage>&#x02013;<lpage>1340</lpage>.<pub-id pub-id-type="pmid">9313795</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0073"><mixed-citation publication-type="journal" id="mgg3194-cit-0073">
+<string-name>
+<surname>Wang</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Seymen</surname>
+</string-name>, <string-name>
+<given-names>N. M.</given-names>
+<surname>Estrella</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Pal</surname>
+</string-name>, et&#x000a0;al. <year>2013</year>
+<article-title>Novel KLK4 and MMP20 mutations discovered by whole&#x02010;exome sequencing</article-title>. <source>J. Dent. Res.</source>
+<volume>92</volume>:<fpage>266</fpage>&#x02013;<lpage>271</lpage>.<pub-id pub-id-type="pmid">23355523</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0074"><mixed-citation publication-type="journal" id="mgg3194-cit-0074">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>
+<year>1995</year>
+<article-title>Carbohydrate moieties of porcine 32&#x000a0;kDa enamelin</article-title>. <source>Calcif. Tissue Int.</source>
+<volume>56</volume>:<fpage>323</fpage>&#x02013;<lpage>330</lpage>.<pub-id pub-id-type="pmid">7767845</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0075"><mixed-citation publication-type="journal" id="mgg3194-cit-0075">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>
+<year>2011</year>
+<article-title>Porcine Amelogenin: alternative Splicing, Proteolytic Processing, Protein&#x02010;Protein Interactions, &#x00026; Possible Functions</article-title>. <source>J. Oral Biosci.</source>
+<volume>53</volume>:<fpage>275</fpage>&#x02013;<lpage>283</lpage>.<pub-id pub-id-type="pmid">22200995</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0076"><mixed-citation publication-type="book" id="mgg3194-cit-0076">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.&#x02010;C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>O. H.</given-names>
+<surname>Ryu</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Tanabe</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Oida</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, et&#x000a0;al. <year>2003</year>
+<chapter-title>A comprehensive strategy for purifying pig enamel proteins</chapter-title> Pp. <fpage>326</fpage>&#x02013;<lpage>332</lpage>
+<italic>in</italic>
+<person-group person-group-type="editor"><name><surname>Kobayashi</surname><given-names>I.</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Ozawa</surname><given-names>H.</given-names></name></person-group>, eds. <source>Biomineralization: formation, diversity, evolution and application</source>. Proceedings of the 8th International Symposium on Biomineralization, Niigata, Japan, Sept 25&#x02010;28, 2001 <publisher-name>Tokai University Press</publisher-name>: <publisher-loc>Hadano, Japan</publisher-loc>.</mixed-citation></ref><ref id="mgg3194-bib-0077"><mixed-citation publication-type="journal" id="mgg3194-cit-0077">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>J. C.&#x02010;C.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Fukae</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Iwata</surname>
+</string-name>, and <string-name>
+<given-names>J. P.</given-names>
+<surname>Simmer</surname>
+</string-name>. <year>2006</year>
+<article-title>How do MMP&#x02010;20 and KLK4 process the 32&#x000a0;kDa enamelin?</article-title>
+<source>Eur. J. Oral Sci.</source>; <volume>114 </volume>(Suppl 1):<fpage>45</fpage>&#x02013;<lpage>51</lpage>.<pub-id pub-id-type="pmid">16674662</pub-id></mixed-citation></ref><ref id="mgg3194-bib-0078"><mixed-citation publication-type="journal" id="mgg3194-cit-0078">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Richardson</surname>
+</string-name>, <string-name>
+<given-names>S. M.</given-names>
+<surname>Nunez</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Yamakoshi</surname>
+</string-name>, <string-name>
+<given-names>R. N.</given-names>
+<surname>Milkovich</surname>
+</string-name>, <string-name>
+<given-names>J. C.</given-names>
+<surname>Hu</surname>
+</string-name>, et&#x000a0;al. <year>2011</year>
+<article-title>Enamel proteins and proteases in Mmp20 and Klk4 null and double&#x02010;null mice</article-title>. <source>Eur. J. Oral Sci.</source>
+<volume>119</volume>:<fpage>206</fpage>&#x02013;<lpage>216</lpage>.<pub-id pub-id-type="pmid">22243248</pub-id></mixed-citation></ref></ref-list></back></article>

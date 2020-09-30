@@ -1,0 +1,598 @@
+{
+  "id": [
+    "32052416"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "32052416"
+  ],
+  "pmcid": [
+    "PMC7216828"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC7216828"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1111/cge.13721"
+  ],
+  "title": [
+    "New missense variants in RELT causing hypomineralised amelogenesis imperfecta."
+  ],
+  "authorString": [
+    "Nikolopoulos G, Smith CEL, Brookes SJ, El-Asrag ME, Brown CJ, Patel A, Murillo G, O'Connell MJ, Inglehearn CF, Mighell AJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Nikolopoulos G"
+          ],
+          "firstName": [
+            "Georgios"
+          ],
+          "lastName": [
+            "Nikolopoulos"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3166-8372",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Molecular Medicine, Leeds Institute of Medical Research, The University of Leeds, Leeds, UK.",
+                "Department of Oral Biology, School of Dentistry, St James's University Hospital, The University of Leeds, Leeds, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Smith CEL"
+          ],
+          "firstName": [
+            "Claire E L"
+          ],
+          "lastName": [
+            "Smith"
+          ],
+          "initials": [
+            "CEL"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8320-5105",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Molecular Medicine, Leeds Institute of Medical Research, The University of Leeds, Leeds, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Brookes SJ"
+          ],
+          "firstName": [
+            "Steven J"
+          ],
+          "lastName": [
+            "Brookes"
+          ],
+          "initials": [
+            "SJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Oral Biology, School of Dentistry, St James's University Hospital, The University of Leeds, Leeds, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "El-Asrag ME"
+          ],
+          "firstName": [
+            "Mohammed E"
+          ],
+          "lastName": [
+            "El-Asrag"
+          ],
+          "initials": [
+            "ME"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3750-7414",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Molecular Medicine, Leeds Institute of Medical Research, The University of Leeds, Leeds, UK.",
+                "Division of Cardiovascular Sciences, School of Medicine, Faculty of Biology Medicine and Health, University of Manchester, Manchester, UK.",
+                "Department of Zoology, Faculty of Science, Benha University, Benha, Egypt."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Brown CJ"
+          ],
+          "firstName": [
+            "Catriona J"
+          ],
+          "lastName": [
+            "Brown"
+          ],
+          "initials": [
+            "CJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Birmingham Dental Hospital, Mill Pool Way, Edgbaston, Birmingham, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Patel A"
+          ],
+          "firstName": [
+            "Anesha"
+          ],
+          "lastName": [
+            "Patel"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Birmingham Dental Hospital, Mill Pool Way, Edgbaston, Birmingham, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Murillo G"
+          ],
+          "firstName": [
+            "Gina"
+          ],
+          "lastName": [
+            "Murillo"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Dentistry, Ciudad Universitaria Rodrigo Facio, Montes De Oca, Universidad de Costa Rica, San Jose, Costa Rica."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "O'Connell MJ"
+          ],
+          "firstName": [
+            "Mary J"
+          ],
+          "lastName": [
+            "O'Connell"
+          ],
+          "initials": [
+            "MJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Biology, Faculty of Biological Sciences, The University of Leeds, Leeds, UK.",
+                "School of Life Sciences, Faculty of Medicine and Health Sciences, The University of Nottingham, Nottingham, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Inglehearn CF"
+          ],
+          "firstName": [
+            "Chris F"
+          ],
+          "lastName": [
+            "Inglehearn"
+          ],
+          "initials": [
+            "CF"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5143-2562",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Molecular Medicine, Leeds Institute of Medical Research, The University of Leeds, Leeds, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mighell AJ"
+          ],
+          "firstName": [
+            "Alan J"
+          ],
+          "lastName": [
+            "Mighell"
+          ],
+          "initials": [
+            "AJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9624-6923",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Oral Biology, School of Dentistry, St James's University Hospital, The University of Leeds, Leeds, UK."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3166-8372",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-8320-5105",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-3750-7414",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5143-2562",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9624-6923",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "5"
+      ],
+      "volume": [
+        "97"
+      ],
+      "journalIssueId": [
+        "2944429"
+      ],
+      "dateOfPublication": [
+        "2020 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2020"
+      ],
+      "printPublicationDate": [
+        "2020-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Clinical genetics"
+          ],
+          "ISOAbbreviation": [
+            "Clin. Genet."
+          ],
+          "medlineAbbreviation": [
+            "Clin Genet"
+          ],
+          "NLMid": [
+            "0253664"
+          ],
+          "ISSN": [
+            "0009-9163"
+          ],
+          "ESSN": [
+            "1399-0004"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2020"
+  ],
+  "pageInfo": [
+    "688-695"
+  ],
+  "abstractText": [
+    "Amelogenesis imperfecta (AI) is a heterogeneous group of genetic diseases characterised by dental enamel malformation. Pathogenic variants in at least 33 genes cause syndromic or non-syndromic AI. Recently variants in RELT, encoding an orphan receptor in the tumour necrosis factor (TNF) superfamily, were found to cause recessive AI, as part of a syndrome encompassing small stature and severe childhood infections. Here we describe four additional families with autosomal recessive hypomineralised AI due to previously unreported homozygous mutations in RELT. Three families carried a homozygous missense variant in the fourth exon (c.164C>T, p.(T55I)) and a fourth family carried a homozygous missense variant in the 11th exon (c.1264C>T, p.(R422W)). We found no evidence of additional syndromic symptoms in affected individuals. Analyses of tooth microstructure with computerised tomography and scanning electron microscopy suggest a role for RELT in ameloblasts' coordination and interaction with the enamel matrix. Microsatellite genotyping in families segregating the T55I variant reveals a shared founder haplotype. These findings extend the RELT pathogenic variant spectrum, reveal a founder mutation in the UK Pakistani population and provide detailed analysis of human teeth affected by this hypomineralised phenotype, but do not support a possible syndromic presentation in all those with RELT-variant associated AI."
+  ],
+  "affiliation": [
+    "Division of Molecular Medicine, Leeds Institute of Medical Research, The University of Leeds, Leeds, UK."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "093113"
+          ],
+          "agency": [
+            "Wellcome Trust"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "agency": [
+            "Wellcome Trust"
+          ],
+          "acronym": [
+            "WT_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Enamel",
+        "Amelogenesis Imperfecta",
+        "Tumour Necrosis Factor Receptor",
+        "Relt"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1111/cge.13721"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7216828"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7216828?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "refsnp",
+        "omim",
+        "refseq",
+        "uniprot"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2020-02-14"
+  ],
+  "firstIndexDate": [
+    "2020-02-14"
+  ],
+  "fullTextReceivedDate": [
+    "2020-05-15"
+  ],
+  "dateOfRevision": [
+    "2020-05-16"
+  ],
+  "electronicPublicationDate": [
+    "2020-02-21"
+  ],
+  "firstPublicationDate": [
+    "2020-02-21"
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "id": [
+    "28348838"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28348838"
+  ],
+  "pmcid": [
+    "PMC5359413"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5359413"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1099/mgen.0.000099"
+  ],
+  "title": [
+    "Sequence-based analysis of the genus Ruminococcus resolves its phylogeny and reveals strong host association."
+  ],
+  "authorString": [
+    "La Reau AJ, Meier-Kolthoff JP, Suen G."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "La Reau AJ"
+          ],
+          "firstName": [
+            "Alex J"
+          ],
+          "lastName": [
+            "La Reau"
+          ],
+          "initials": [
+            "AJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "1​Department of Bacteriology, University of Wisconsin - Madison, Madison, WI 53706, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Meier-Kolthoff JP"
+          ],
+          "firstName": [
+            "Jan P"
+          ],
+          "lastName": [
+            "Meier-Kolthoff"
+          ],
+          "initials": [
+            "JP"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9105-9814",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "2​Leibniz Institute DSMZ - German Collection of Microorganisms and Cell Cultures, 38124 Braunschweig, Germany."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Suen G"
+          ],
+          "firstName": [
+            "Garret"
+          ],
+          "lastName": [
+            "Suen"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6170-711X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "1​Department of Bacteriology, University of Wisconsin - Madison, Madison, WI 53706, USA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-9105-9814",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-6170-711X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "12"
+      ],
+      "volume": [
+        "2"
+      ],
+      "journalIssueId": [
+        "2540590"
+      ],
+      "dateOfPublication": [
+        "2016 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Microbial genomics"
+          ],
+          "ISOAbbreviation": [
+            "Microb Genom"
+          ],
+          "medlineAbbreviation": [
+            "Microb Genom"
+          ],
+          "NLMid": [
+            "101671820"
+          ],
+          "ISSN": [
+            "2057-5858"
+          ],
+          "ESSN": [
+            "2057-5858"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "e000099"
+  ],
+  "abstractText": [
+    "It has become increasingly clear that the composition of mammalian gut microbial communities is substantially diet driven. These microbiota form intricate mutualisms with their hosts, which have profound implications on overall health. For example, many gut microbes are involved in the conversion of host-ingested dietary polysaccharides into host-usable nutrients. One group of important gut microbial symbionts are bacteria in the genus Ruminococcus. Originally isolated from the bovine rumen, ruminococci have been found in numerous mammalian hosts, including other ruminants, and non-ruminants such as horses, pigs and humans. All ruminococci require fermentable carbohydrates for growth, and their substrate preferences appear to be based on the diet of their particular host. Most ruminococci that have been studied are those capable of degrading cellulose, much less is known about non-cellulolytic non-ruminant-associated species, and even less is known about the environmental distribution of ruminococci as a whole. Here, we capitalized on the wealth of publicly available 16S rRNA gene sequences, genomes and large-scale microbiota studies to both resolve the phylogenetic placement of described species in the genus Ruminococcus, and further demonstrate that this genus has largely unexplored diversity and a staggering host distribution. We present evidence that ruminococci are predominantly associated with herbivores and omnivores, and our data supports the hypothesis that very few ruminococci are found consistently in non-host-associated environments. This study not only helps to resolve the phylogeny of this important genus, but also provides a framework for understanding its distribution in natural systems."
+  ],
+  "affiliation": [
+    "1​Department of Bacteriology, University of Wisconsin - Madison, Madison, WI 53706, USA."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ruminococcus"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Ribosomal, 16S"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Host-Pathogen Interactions"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Phylogeny",
+        "Host range",
+        "16S rRNA",
+        "Ruminococcus",
+        "Phylogenomics",
+        "Host Diet"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "RNA, Ribosomal, 16S"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1099/mgen.0.000099"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5359413"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5359413?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "14"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject",
+        "gen",
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-10-19"
+  ],
+  "dateOfCreation": [
+    "2017-03-29"
+  ],
+  "firstIndexDate": [
+    "2017-03-28"
+  ],
+  "fullTextReceivedDate": [
+    "2017-03-29"
+  ],
+  "dateOfRevision": [
+    "2019-06-11"
+  ],
+  "electronicPublicationDate": [
+    "2016-12-12"
+  ],
+  "firstPublicationDate": [
+    "2016-12-12"
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "id": [
+    "25427971"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "25427971"
+  ],
+  "pmcid": [
+    "PMC4266906"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4266906"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/s12862-014-0226-8"
+  ],
+  "title": [
+    "Inferring ancestral states without assuming neutrality or gradualism using a stable model of continuous character evolution."
+  ],
+  "authorString": [
+    "Elliot MG, Mooers AØ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Elliot MG"
+          ],
+          "firstName": [
+            "Michael G"
+          ],
+          "lastName": [
+            "Elliot"
+          ],
+          "initials": [
+            "MG"
+          ]
+        },
+        {
+          "fullName": [
+            "Mooers AØ"
+          ],
+          "firstName": [
+            "Arne Ø"
+          ],
+          "lastName": [
+            "Mooers"
+          ],
+          "initials": [
+            "AØ"
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "wikipedia",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "14"
+      ],
+      "journalIssueId": [
+        "2474594"
+      ],
+      "dateOfPublication": [
+        "2014 Nov"
+      ],
+      "monthOfPublication": [
+        "11"
+      ],
+      "yearOfPublication": [
+        "2014"
+      ],
+      "printPublicationDate": [
+        "2014-11-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC evolutionary biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Evol. Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Evol Biol"
+          ],
+          "NLMid": [
+            "100966975"
+          ],
+          "ISSN": [
+            "1471-2148"
+          ],
+          "ESSN": [
+            "1471-2148"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2014"
+  ],
+  "pageInfo": [
+    "226"
+  ],
+  "abstractText": [
+    "BACKGROUND:The value of a continuous character evolving on a phylogenetic tree is commonly modelled as the location of a particle moving under one-dimensional Brownian motion with constant rate. The Brownian motion model is best suited to characters evolving under neutral drift or tracking an optimum that drifts neutrally. We present a generalization of the Brownian motion model which relaxes assumptions of neutrality and gradualism by considering increments to evolving characters to be drawn from a heavy-tailed stable distribution (of which the normal distribution is a specialized form). RESULTS:We describe Markov chain Monte Carlo methods for fitting the model to biological data paying special attention to ancestral state reconstruction, and study the performance of the model in comparison with a selection of existing comparative methods, using both simulated data and a database of body mass in 1,679 mammalian species. We discuss hypothesis testing and model selection. The stable model outperforms Brownian and Ornstein-Uhlenbeck approaches under simulations in which traits evolve with occasional large \"jumps\" in their value, but does not perform markedly worse for traits evolving under a truly Brownian process. CONCLUSIONS:The stable model is well suited to a stochastic process with a volatile rate of change in which biological characters undergo a mixture of neutral drift and occasional evolutionary events of large magnitude."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PH"
+                  ],
+                  "qualifierName": [
+                    "physiology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Monte Carlo Method"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Markov Chains"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Models, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s12862-014-0226-8"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4266906"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4266906?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "14"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2015-04-21"
+  ],
+  "dateOfCreation": [
+    "2014-11-28"
+  ],
+  "firstIndexDate": [
+    "2014-11-28"
+  ],
+  "fullTextReceivedDate": [
+    "2014-12-18"
+  ],
+  "dateOfRevision": [
+    "2019-01-08"
+  ],
+  "electronicPublicationDate": [
+    "2014-11-28"
+  ],
+  "firstPublicationDate": [
+    "2014-11-28"
+  ]
+}

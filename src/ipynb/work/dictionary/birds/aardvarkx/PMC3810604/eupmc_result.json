@@ -1,0 +1,332 @@
+{
+  "id": [
+    "24194723"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "24194723"
+  ],
+  "pmcid": [
+    "PMC3810604"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3810604"
+      ]
+    }
+  ],
+  "doi": [
+    "10.3389/fpsyg.2013.00777"
+  ],
+  "title": [
+    "Statistics of high-level scene context."
+  ],
+  "authorString": [
+    "Greene MR."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Greene MR"
+          ],
+          "firstName": [
+            "Michelle R"
+          ],
+          "lastName": [
+            "Greene"
+          ],
+          "initials": [
+            "MR"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Computer Science, Stanford University Stanford, CA, USA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2003512"
+      ],
+      "dateOfPublication": [
+        "2013 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Frontiers in Psychology"
+          ],
+          "ISOAbbreviation": [
+            "Front Psychol"
+          ],
+          "medlineAbbreviation": [
+            "Front Psychol"
+          ],
+          "NLMid": [
+            "101550902"
+          ],
+          "ISSN": [
+            "1664-1078"
+          ],
+          "ESSN": [
+            "1664-1078"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "777"
+  ],
+  "abstractText": [
+    "CONTEXT IS CRITICAL FOR RECOGNIZING ENVIRONMENTS AND FOR SEARCHING FOR OBJECTS WITHIN THEM: contextual associations have been shown to modulate reaction time and object recognition accuracy, as well as influence the distribution of eye movements and patterns of brain activations. However, we have not yet systematically quantified the relationships between objects and their scene environments. Here I seek to fill this gap by providing descriptive statistics of object-scene relationships. A total of 48, 167 objects were hand-labeled in 3499 scenes using the LabelMe tool (Russell et al., 2008). From these data, I computed a variety of descriptive statistics at three different levels of analysis: the ensemble statistics that describe the density and spatial distribution of unnamed \"things\" in the scene; the bag of words level where scenes are described by the list of objects contained within them; and the structural level where the spatial distribution and relationships between the objects are measured. The utility of each level of description for scene categorization was assessed through the use of linear classifiers, and the plausibility of each level for modeling human scene categorization is discussed. Of the three levels, ensemble statistics were found to be the most informative (per feature), and also best explained human patterns of categorization errors. Although a bag of words classifier had similar performance to human observers, it had a markedly different pattern of errors. However, certain objects are more useful than others, and ceiling classification performance could be achieved using only the 64 most informative objects. As object location tends not to vary as a function of category, structural information provided little additional information. Additionally, these data provide valuable information on natural scene redundancy that can be exploited for machine vision, and can help the visual cognition community to design experiments guided by statistics rather than intuition."
+  ],
+  "affiliation": [
+    "Department of Computer Science, Stanford University Stanford, CA, USA."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "F32 EY019815"
+          ],
+          "agency": [
+            "NEI NIH HHS"
+          ],
+          "acronym": [
+            "EY"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "data mining",
+        "Context",
+        "Ensemble",
+        "Scene Understanding",
+        "Scene",
+        "Bag Of Words"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24194723/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24194723/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3389/fpsyg.2013.00777"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3810604"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3810604?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "15"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2013-11-06"
+  ],
+  "dateOfCreation": [
+    "2013-11-06"
+  ],
+  "firstIndexDate": [
+    "2013-11-07"
+  ],
+  "fullTextReceivedDate": [
+    "2013-11-07"
+  ],
+  "dateOfRevision": [
+    "2016-10-19"
+  ],
+  "electronicPublicationDate": [
+    "2013-10-29"
+  ],
+  "firstPublicationDate": [
+    "2013-10-29"
+  ]
+}

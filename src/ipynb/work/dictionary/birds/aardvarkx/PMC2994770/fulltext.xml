@@ -1,0 +1,946 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20031101//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">21152400</article-id><article-id pub-id-type="publisher-id">10-PONE-RA-18825R1</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0014156</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Evolutionary Biology</subject><subject>Evolutionary Biology/Bioinformatics</subject><subject>Evolutionary Biology/Evolutionary and Comparative Genetics</subject><subject>Genetics and Genomics/Bioinformatics</subject></subj-group></article-categories><title-group><article-title>Reconstructing Mammalian Phylogenies: A Detailed Comparison of the Cytochrome <italic>b</italic> and Cytochrome Oxidase Subunit I Mitochondrial Genes</article-title><alt-title alt-title-type="running-head">Mammalian Phylogeny Best Gene</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Tobe</surname><given-names>Shanan S.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Kitchener</surname><given-names>Andrew C.</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Linacre</surname><given-names>Adrian M. T.</given-names></name><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>Centre for Forensic Science, WestCHEM, Department of Pure and Applied Chemistry, University of Strathclyde, Glasgow, United Kingdom</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Department of Natural Sciences, National Museums Scotland, Edinburgh, United Kingdom</addr-line>
+</aff><aff id="aff3">
+<label>3</label>
+<addr-line>Institute of Geography, School of Geosciences, University of Edinburgh, Edinburgh, United Kingdom</addr-line>
+</aff><aff id="aff4">
+<label>4</label>
+<addr-line>School of Biological Sciences, Flinders University, Adelaide, Australia</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>DeSalle</surname><given-names>Robert</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">American Museum of Natural History, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>shanan.s.tobe@strath.ac.uk</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: SST AL. Performed the experiments: SST. Analyzed the data: SST AK. Contributed reagents/materials/analysis tools: SST. Wrote the paper: SST AK AL.</p></fn></author-notes><pub-date pub-type="collection"><year>2010</year></pub-date><pub-date pub-type="epub"><day>30</day><month>11</month><year>2010</year></pub-date><volume>5</volume><issue>11</issue><elocation-id>e14156</elocation-id><history><date date-type="received"><day>12</day><month>5</month><year>2010</year></date><date date-type="accepted"><day>5</day><month>11</month><year>2010</year></date></history><permissions><copyright-statement>Tobe et al.</copyright-statement><copyright-year>2010</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>The phylogeny and taxonomy of mammalian species were originally based upon shared or derived morphological characteristics. However, genetic analyses have more recently played an increasingly important role in confirming existing or establishing often radically different mammalian groupings and phylogenies. The two most commonly used genetic loci in species identification are the cytochrome oxidase I gene (COI) and the cytochrome <italic>b</italic> gene (cyt <italic>b</italic>). For the first time this study provides a detailed comparison of the effectiveness of these two loci in reconstructing the phylogeny of mammals at different levels of the taxonomic hierarchy in order to provide a basis for standardizing methodologies in the future. Interspecific and intraspecific variation is assessed and for the first time, to our knowledge, statistical confidence is applied to sequence comparisons. Comparison of the DNA sequences of 217 mammalian species reveals that cyt <italic>b</italic> more accurately reconstructs their phylogeny and known relationships between species based on other molecular and morphological analyses at Super Order, Order, Family and generic levels. Cyt <italic>b</italic> correctly assigned 95.85&#x00025; of mammal species to Super Order, 94.31&#x00025; to Order and 98.16&#x00025; to Family compared to 78.34&#x00025;, 93.36&#x00025; and 96.93&#x00025; respectively for COI. Cyt <italic>b</italic> also gives better resolution when separating species based on sequence data. Using a Kimura 2-parameter <italic>p</italic>-distance (x100) threshold of 1.5&#x02013;2.5, cyt <italic>b</italic> gives a better resolution for separating species with a lower false positive rate and higher positive predictive value than those of COI.</p></abstract><counts><page-count count="14"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>Species classification depends on our understanding of morphology, behavior, ecology and genetics of organisms. Taxonomy and systematics are dynamic disciplines, changing frequently owing to new evidence and changing consensuses on species definitions. Species boundaries and higher taxonomic categories within the Mammalia are historically based on morphological characteristics (e.g. <xref rid="pone.0014156-Asher1" ref-type="bibr">[1]</xref>&#x02013;<xref rid="pone.0014156-Shoshani1" ref-type="bibr">[6]</xref>). More recently genetic comparisons have led to greater understanding of lineages of related species, especially at higher taxonomic levels, where derived morphological characteristics can be difficult to determine owing to ancient divergences, thus leading to often radically different phylogenies and species groupings <xref rid="pone.0014156-Asher1" ref-type="bibr">[1]</xref>, <xref rid="pone.0014156-BuckleyBeason1" ref-type="bibr">[7]</xref>&#x02013;<xref rid="pone.0014156-Tabuce1" ref-type="bibr">[13]</xref>. In recent years several molecular and combined molecular and morphological studies have confirmed the presence of four main Super Orders, the Afrotheria, Xenarthra, Laurasiatheria and Euarchontoglires, which have radically superseded previous taxonomic groupings <xref rid="pone.0014156-Asher1" ref-type="bibr">[1]</xref>, <xref rid="pone.0014156-Arnason1" ref-type="bibr">[9]</xref>, <xref rid="pone.0014156-Liu1" ref-type="bibr">[10]</xref>.</p><p>The genetic loci of choice for many taxonomic and phylogenetic studies are primarily found on the mitochondrial genome <xref rid="pone.0014156-Simon1" ref-type="bibr">[14]</xref>. Within mitochondrial DNA (mtDNA) some gene sequences are thought to exhibit little intraspecific variability, but show sufficient interspecific variation to allow for estimation of degrees of relatedness and divergence times via calibrated molecular clocks. Studies have used many different loci on the mitochondrial genome such as 12S rRNA (e.g. <xref rid="pone.0014156-BalitzkiKorte1" ref-type="bibr">[15]</xref>, <xref rid="pone.0014156-Melton1" ref-type="bibr">[16]</xref>), 16S rRNA (e.g. <xref rid="pone.0014156-Mitani1" ref-type="bibr">[17]</xref>, <xref rid="pone.0014156-Dubey1" ref-type="bibr">[18]</xref>), COII (e.g. <xref rid="pone.0014156-Roe1" ref-type="bibr">[19]</xref>&#x02013;<xref rid="pone.0014156-Ascunce1" ref-type="bibr">[21]</xref>) and others. However, the main locus used in species discrimination until recently was cytochrome <italic>b</italic> (cyt <italic>b</italic>) <xref rid="pone.0014156-Irwin1" ref-type="bibr">[22]</xref>, <xref rid="pone.0014156-Kocher1" ref-type="bibr">[23]</xref>, which occurs between bases 14,747 and 15,887 in human mtDNA <xref rid="pone.0014156-Anderson1" ref-type="bibr">[24]</xref>, <xref rid="pone.0014156-Andrews1" ref-type="bibr">[25]</xref>. More recently use of cytochrome oxidase subunit I (COI) has increased owing primarily to its adoption by the Barcode for Life Consortium <xref rid="pone.0014156-Hebert1" ref-type="bibr">[26]</xref>, <xref rid="pone.0014156-Borisenko1" ref-type="bibr">[27]</xref>. COI is found between bases 5,904 and 7,445 in human mtDNA <xref rid="pone.0014156-Anderson1" ref-type="bibr">[24]</xref>, <xref rid="pone.0014156-Andrews1" ref-type="bibr">[25]</xref>. No previous study has quantified intraspecific variation in these two loci and made direct comparisons of their effectiveness in reconstructing mammalian phylogeny, although a few previous studies have investigated a limited number of species or gene fragments for particular Orders (e.g. <xref rid="pone.0014156-Honeycutt1" ref-type="bibr">[28]</xref>&#x02013;<xref rid="pone.0014156-Kartavtsev1" ref-type="bibr">[31]</xref>).</p><p>Being able to diagnose species and determine interspecific relationships are of primary importance in biology, ecology, evolution, systematics, wildlife management, conservation and forensic science. Typically phylogenetic studies depend on sequencing one or, more usually, part of one of COI or cyt <italic>b</italic>, followed by comparison with DNA sequences held on databases (e.g. EMBL or GenBank) <xref rid="pone.0014156-Weir1" ref-type="bibr">[32]</xref>. These comparisons assume that registered sequence data are: i) correct and the sequence is not from another species or contains errors; ii) diagnostic for each representative of the species rather than being a rare example of subspecies or individual variation; iii) and that all individuals of a species have identical, or very similar, DNA sequences. It would be expected that two members of the same species have nearly 100&#x00025; identity at either cyt <italic>b</italic> or COI. If the identity match is less than 100&#x00025; then either there is some intraspecific variation, or the compared sequence comes from an unknown, but closely related, species. Although the degrees of intraspecific variation and divergence between closely related species have been investigated by some authors (e.g. 7.93&#x00025; between and 0.43&#x00025; within bird species for COI <xref rid="pone.0014156-Hebert2" ref-type="bibr">[33]</xref>; 5.7&#x00025; between and 1.5&#x00025; within <italic>Stenella</italic> species for cyt <italic>b</italic>
+<xref rid="pone.0014156-Irwin1" ref-type="bibr">[22]</xref>), these are generally poorly studied.</p><p>In addition many authors construct phylogenetic trees from sequence data on the assumption that any tree based on genetic data is the &#x02018;true&#x02019; evolutionary history of those organisms (e.g. <xref rid="pone.0014156-Hebert2" ref-type="bibr">[33]</xref>&#x02013;<xref rid="pone.0014156-Abiadh1" ref-type="bibr">[35]</xref>). When anomalies arise, these are often interpreted as cryptic species <xref rid="pone.0014156-Hebert2" ref-type="bibr">[33]</xref>. However, cryptic species may be designated based on levels of expected intraspecific variation observed between as few as two individuals <xref rid="pone.0014156-Moritz1" ref-type="bibr">[36]</xref>. Currently the use of multiple genetic loci to infer phylogeny is routine (e.g. <xref rid="pone.0014156-Chatterjee1" ref-type="bibr">[37]</xref>, <xref rid="pone.0014156-Rakotoarisoa1" ref-type="bibr">[38]</xref>). However, if a single gene could be used this would be beneficial because it would standardize the loci used, and reduce cost, time and complexity of comparisons.</p><p>This study aims to compare entire sequences of COI and cyt <italic>b</italic> from the same individuals to assess patterns of variation within and between different mammalian species and to see how these relate to their evolutionary histories. Specifically we wish to (i) identify if either gene sequence can be used to reconstruct mammalian evolutionary history and if so which one does this more accurately; (ii) determine levels of variation within each gene between different mammalian species; (iii) determine levels of intraspecific variation within COI and cyt <italic>b</italic> and; (iv) identify which gene provides the greatest power in distinguishing between closely related species. For the first time this study will provide an unbiased analysis of both genes using the same criteria for each and will make recommendations based on their use in phylogenetic reconstruction and species discrimination in mammals.</p></sec><sec sec-type="materials|methods" id="s2"><title>Materials and Methods</title><sec id="s2a"><title>2.1 Sequence Data and Alignment</title><p>All sequence data were obtained from GenBank on the NCBI website (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/">http://www.ncbi.nlm.nih.gov/</ext-link>). For the interspecific comparisons of cyt <italic>b</italic> and COI genes, whole mitochondrial genome sequences from 236 mammals (comprising 29 Orders, 89 Families, 174 genera and 217 species) were obtained; a full list can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s016">Table S1</xref> with references in <xref ref-type="supplementary-material" rid="pone.0014156.s001">Text S1</xref>. The cyt <italic>b</italic> and COI genes were isolated from the complete sequences for alignment. It was assumed that the sequences were correct and that species designations were accurate, although it is possible that errors may have occurred.</p><p>Complete mitochondrial genome sequences were obtained for 945 humans, <italic>Homo sapiens</italic>, 130 domestic cattle, <italic>Bos taurus</italic>, and 35 domestic dogs, <italic>Canis familiaris</italic>, to assess intraspecific variation (<xref ref-type="supplementary-material" rid="pone.0014156.s017">Table S2</xref>).</p><p>Sequences were aligned using ClustalW in the Molecular Evolutionary Genetics Analysis (MEGA) software package version 4.0 <xref rid="pone.0014156-Kumar1" ref-type="bibr">[39]</xref>&#x02013;<xref rid="pone.0014156-Thompson1" ref-type="bibr">[41]</xref> on a desktop PC. Pairwise and multiple alignment parameters were gap opening penalty 15; gap extension penalty 6.66; delay divergent sequences 30&#x00025;; DNA transition weight 0.5; and no use of a negative matrix.</p></sec><sec id="s2b"><title>2.2 Phylogenetic Trees and Analysis</title><p>Phylogenetic trees were constructed for cyt <italic>b</italic> and COI sequence alignments using the Maximum Parsimony, Neighbor-Joining, Minimum Evolution and Maximum Likelihood methods. The Maximum Parsimony, Neighbor-Joining and Minimum Evolution methods were calculated in MEGA 4.0 <xref rid="pone.0014156-Kumar1" ref-type="bibr">[39]</xref>, <xref rid="pone.0014156-Tamura1" ref-type="bibr">[40]</xref>, <xref rid="pone.0014156-Nei1" ref-type="bibr">[42]</xref>. Maximum Likelihood trees were calculated using RAxML 7.2.3 <xref rid="pone.0014156-Stamatakis1" ref-type="bibr">[43]</xref> and MrBayes 3.1.2 <xref rid="pone.0014156-Geyer1" ref-type="bibr">[44]</xref>&#x02013;<xref rid="pone.0014156-Ronquist1" ref-type="bibr">[48]</xref>. The trees were then exported as Newick files and edited online, to assign color ranges using the Interactive Tree Of Life (iTOL) <xref rid="pone.0014156-Letunic1" ref-type="bibr">[49]</xref>. Each taxonomic Order was assigned a different color. Analysis of the phylogenetic trees showed that overall the Maximum Likelihood phylogenetic trees compiled using MrBayes showed the highest congruence with conventional taxonomic species groupings (as described below in 2.2.1), so these were used as the phylogenetic trees for detailed comparison.</p><p>The Maximum Parsimony trees were calculated using the complete deletion option, all codon positions and a CNI level of 3 with an initial tree by random addition of sequences (10 replicates). The Neighbor-Joining trees were calculated using complete deletion, all codon positions, a Kimura 2-parameter model and a CNI level of 1. The Minimum Evolution trees were calculated using complete deletion, all codon positions and a Kimura 2-parameter model, including transitions and transversions. All trees were calculated using 1,000 bootstrap repetitions and a random seed.</p><p>Maximum Likelihood trees calculated in RAxML <xref rid="pone.0014156-Stamatakis1" ref-type="bibr">[43]</xref> used rapid bootstrapping and searched for the best ML Tree. Bootstrapping was performed using a random seed, 100 repetitions, a general time reversible model of nucleotide substitution <xref rid="pone.0014156-Tavare1" ref-type="bibr">[50]</xref> with the I model of rate heterogeneity <xref rid="pone.0014156-Yang1" ref-type="bibr">[51]</xref> and four discrete rate categories. Maximum Likelihood trees calculated in MrBayes <xref rid="pone.0014156-Geyer1" ref-type="bibr">[44]</xref>&#x02013;<xref rid="pone.0014156-Ronquist1" ref-type="bibr">[48]</xref> were set to a DNA data type, a 4&#x000d7;4 nucleotide model, N<sub>st</sub> of 6 with a Dirichlet prior, no covarion, four states with frequencies of a Dirichlet prior, an invariable gamma (default settings), vertebrate mitochondrial code and were partitioned by codon position (1<sup>st</sup>, 2<sup>nd</sup> or 3<sup>rd</sup> base of a codon). Markov chain Monte Carlo (MCMC) was executed in two independent analyses starting from different random seeds and calculated for 1 million generations, sampling every 100 generations and performing diagnostics every 1,000 generations. Final trees were compiled from the two analyses with a burnin of 25&#x00025; (15,002 total samples).</p><sec id="s2b1"><title>2.2.1 Phylogenetic Trees Used to Determine Degree of Congruence</title><p>The phylogenies for cyt <italic>b</italic> and COI were assessed for their ability to show the highest degree of congruence with conventional taxonomic classifications in Super Orders, Orders, Families and genera. Although the true evolutionary history of any Class of organisms is unknown, for the purposes of comparison the following phylogenies were used. For species-level classification, Wilson and Reeder <xref rid="pone.0014156-Wilson1" ref-type="bibr">[52]</xref> (with minor modifications) was followed, so that the number of taxa that did not correctly associate with their taxonomic ranks was calculated and the percentage of correctly associated taxa was calculated. Higher level taxonomic ranks for placental mammals (Order and above) followed Murphy <italic>et al.</italic>
+<xref rid="pone.0014156-Murphy1" ref-type="bibr">[53]</xref> and marsupial Orders followed Phillips <italic>et al.</italic>
+<xref rid="pone.0014156-Phillips1" ref-type="bibr">[54]</xref> and Cardillo <italic>et al.</italic>
+<xref rid="pone.0014156-Cardillo1" ref-type="bibr">[55]</xref>. For example, in the COI ML MrBayes tree four of 24 species were not associated with the other Rodentia to give a percentage correct classification of 85.7&#x00025; compared with 64.3&#x00025; for cyt <italic>b</italic>. Two values were calculated for each taxonomic group for each gene. One included all the samples that were used, whereas the second only included the putative full species. Therefore, the five samples for Asian black bear subspecies (<italic>Ursus thibetanus</italic> sspp.) were firstly treated as five samples for the first percentage and then recalculated as one species for the second percentage. Similar calculations were done for percentage correct assignment to Families, but inter- and intrageneric inconsistencies were noted and are commented on in the text, where applicable.</p><p>For primates, carnivorans and cetaceans (excluding artiodactyls, which are not represented as well in this study) good morphological trees or super trees (combining molecular and morphological data) are available for comparison with the molecular data from this study <xref rid="pone.0014156-Groves1" ref-type="bibr">[2]</xref>, <xref rid="pone.0014156-Rose1" ref-type="bibr">[5]</xref>, <xref rid="pone.0014156-Price1" ref-type="bibr">[11]</xref>, <xref rid="pone.0014156-Agnarsson1" ref-type="bibr">[30]</xref>, <xref rid="pone.0014156-Berta1" ref-type="bibr">[56]</xref>&#x02013;<xref rid="pone.0014156-Hatch1" ref-type="bibr">[66]</xref>. These allowed more detailed comparisons with those Orders, for which we have a good taxonomic representation. Significant differences from these classifications and phylogenies are discussed.</p></sec></sec><sec id="s2c"><title>2.3 Data Analysis</title><p>Sequence alignments were transferred to Excel for some statistical analyses. Variation at each base position was estimated by calculating the uncertainty according to Shannon <xref rid="pone.0014156-Shannon1" ref-type="bibr">[67]</xref> adapted to aligned sequences, both DNA and amino acid, by Schneider and Stephens <xref rid="pone.0014156-Schneider1" ref-type="bibr">[68]</xref>. This value, <italic>R<sub>s</sub></italic>, gives the degree of sequence conservation per site:<disp-formula><graphic xlink:href="pone.0014156.e001.jpg" mimetype="image" position="float"/></disp-formula>where <italic>N</italic> is the number of options per site and <italic>p</italic> is the frequency of each option per site. 100&#x00025; identity at any given site for a DNA alignment would result in an <italic>R<sub>s</sub></italic> of 2 (log<sub>2</sub>4&#x0200a;=&#x0200a;2 bits of information). Points of heteroplasmy were noted and included for the number of sequences, but not counted as a separate &#x02018;base&#x02019;. For example, at one base position, if out of 100 sequences 99 had an A and one had an A/G heteroplasmy, then the probability was recorded as 99&#x00025; A and 0&#x00025; for T, C and G.</p><p>Moving averages of identity were calculated in 101 bp, 401 bp and 601 bp sliding windows by taking a sum of the <italic>R<sub>s</sub></italic> values and dividing it by 2<italic>X</italic> (2 being the <italic>R<sub>s</sub></italic> value for 100&#x00025; identity and <italic>X</italic> being the size of the window). Therefore, if a 101 bp sequence was 100&#x00025; identical between all sequences a value of 1 would be obtained. Boxes of 401 and 601 bps were used as these are the approximate fragment sizes generally used for sequencing, when working with cyt <italic>b</italic> and COI, respectively. This calculation was also used to assess the level of variation over the entire genes.</p><p>MEGA 4.0 <xref rid="pone.0014156-Kumar1" ref-type="bibr">[39]</xref>, <xref rid="pone.0014156-Tamura1" ref-type="bibr">[40]</xref> was used to calculate nucleotide <italic>p</italic>-distance; Kimura 2-parameter <italic>p</italic>-distance (K2P) and; synonymous and non-synonymous <italic>p</italic>-distances using the Nei-Gojobori method. Nucleotide <italic>p</italic>-distance and K2P were calculated for the first, second and third bases of each codon as well as an overall value for all bases. Synonymous and non-synonymous differences were calculated pairwise and as an overall value. Standard error estimates were calculated using 1,000 bootstrap replicates from a random seed. The data from the 236 mammal samples, 945 humans, 130 domestic cattle and 35 domestic dogs were calculated separately.</p><p>K2P values (x 100) were plotted according to their frequency. Thresholds were identified where there was a split between K2P values for within species (low values) and between species (high values). Three potential thresholds were identified. Synonymous differences were calculated per synonymous site (<italic>d</italic>
+<sub>S</sub>) and non-synonymous differences were calculated per non-synonymous (<italic>d</italic>
+<sub>N</sub>) site in both pairwise and as overall values, and <italic>d</italic>
+<sub>S</sub> and <italic>d</italic>
+<sub>N</sub> were plotted against each other. Owing to the large number of comparison points and the low variation within species, the intraspecific <italic>d</italic>
+<sub>S</sub> and <italic>d</italic>
+<sub>N</sub> were plotted as overall means with error bars representing the observed maximum and minimum values.</p><p>In addition, inter- and intraspecific data sets were combined (1,343 sequences in total &#x02013; duplicate sequences were removed, one of each for dog, cattle and human) for both cyt <italic>b</italic> and COI to produce a single database. K2P values were calculated pairwise for all samples in the database. These values were compared to the threshold values obtained. A comparison was considered positive if it had a K2P (x100) falling below the threshold, which would indicate that the comparison was between two members of the same species. A comparison was considered negative if the K2P (x100) was greater than the threshold, which would indicate that the comparison was between two different species. A two-by-two contingency table was calculated (<xref ref-type="table" rid="pone-0014156-t001">Table 1</xref>) where <italic>n</italic>
+<sub>AB</sub> represents true positives; <italic>n</italic>
+<sub>aB</sub> represents false positives; <italic>n</italic>
+<sub>Ab</sub> represents false negatives; <italic>n</italic>
+<sub>ab</sub> represents true negatives; <italic>n</italic>
+<sub>A</sub> represents all samples/values from the same species; <italic>n</italic>
+<sub>a</sub> represents all samples/values from different species; <italic>n</italic>
+<sub>B</sub> represents total positive samples; and <italic>n</italic>
+<sub>b</sub> represents total negative samples. Based on the contingency table (<xref ref-type="table" rid="pone-0014156-t001">Table 1</xref>), the frequency of obtaining a false positive was estimated from the ratio of <italic>n</italic>
+<sub>aB</sub> to <italic>n</italic>
+<sub>a</sub>
+<xref rid="pone.0014156-Aitken1" ref-type="bibr">[69]</xref>. The frequency of obtaining a false negative was estimated by the ratio from <italic>n</italic>
+<sub>Ab</sub> to <italic>n</italic>
+<sub>A</sub>
+<xref rid="pone.0014156-Aitken1" ref-type="bibr">[69]</xref>. The true sensitivity (<italic>n</italic>
+<sub>AB</sub>/<italic>n</italic>
+<sub>A</sub>), specificity (<italic>n</italic>
+<sub>ab</sub>/<italic>n</italic>
+<sub>a</sub>), positive predictive value (<italic>n</italic>
+<sub>AB</sub>/<italic>n</italic>
+<sub>B</sub>) and negative predictive value (<italic>n</italic>
+<sub>ab</sub>/<italic>n</italic>
+<sub>b</sub>) were also calculated for each gene at each threshold <xref rid="pone.0014156-Stewart1" ref-type="bibr">[70]</xref>.</p><table-wrap id="pone-0014156-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.t001</object-id><label>Table 1</label><caption><title>A two-by-two contingency table for K2P frequencies for the tabulation of the same species (A) or different species (a) with a K2P value (x 100) falling below or above (B or b) a threshold.</title></caption><alternatives><graphic id="pone-0014156-t001-1" xlink:href="pone.0014156.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Same species (A)</td><td align="left" rowspan="1" colspan="1">Different species (a)</td><td align="left" rowspan="1" colspan="1">Total</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c; Threshold (B)</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>AB</sub>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>aB</sub>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>B</sub>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003e; Threshold (b)</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>Ab</sub>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>ab</sub>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>b</sub>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Total</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>A</sub>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+<sub>a</sub>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>
+<italic>n</italic>
+<sub>AB</sub> represents true positives; <italic>n</italic>
+<sub>aB</sub> represents false positives; <italic>n</italic>
+<sub>Ab</sub> represents false negatives; <italic>n</italic>
+<sub>ab</sub> represents true negatives; <italic>n</italic>
+<sub>A</sub> represents all samples/values from the same species; <italic>n</italic>
+<sub>a</sub> represents all samples/values from different species; <italic>n</italic>
+<sub>B</sub> represents total positive samples; <italic>n</italic>
+<sub>b</sub> represents total negative samples and; <italic>n</italic> represents the total number of samples/values. Adapted from <xref rid="pone.0014156-Aitken1" ref-type="bibr">[69]</xref>.</p></fn></table-wrap-foot></table-wrap><p>Receiver Operator Characteristic (ROC) curves were plotted using SPSS 17.0.0 (SPSS UK Ltd., Surry) and were plotted as 1&#x02013;specificity (X-axis) against sensitivity (Y-axis). The ROC curves were analyzed with the smaller values indicating a positive result. Standard errors of area were calculated in a non-parametric distribution assumption with a 99&#x00025; confidence level.</p></sec></sec><sec id="s3"><title>Results</title><sec id="s3a"><title>3.1 Phylogenetic Trees</title><p>Full phylogenetic trees for Maximum Parsimony, Neighbor-Joining, Minimum Evolution and Maximum Likelihood methods for the COI and cyt <italic>b</italic> genes can be found in the <xref ref-type="supplementary-material" rid="pone.0014156.s003">Figures S1</xref>&#x02013;<xref ref-type="supplementary-material" rid="pone.0014156.s013">S11</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s018">Tables S3</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s019">S4</xref>. Analysis of the tree types (<xref ref-type="table" rid="pone-0014156-t002">Table 2</xref> and <xref ref-type="fig" rid="pone-0014156-g001">Figure 1</xref>) demonstrated that the Maximum Likelihood trees compiled using MrBayes <xref rid="pone.0014156-Geyer1" ref-type="bibr">[44]</xref>&#x02013;<xref rid="pone.0014156-Ronquist1" ref-type="bibr">[48]</xref> showed the highest congruence with conventional classifications and expected evolutionary history for both genes and were therefore used for detailed analysis (<xref ref-type="fig" rid="pone-0014156-g002">Figure 2</xref>).</p><fig id="pone-0014156-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.g001</object-id><label>Figure 1</label><caption><title>Analysis and comparison of different phylogenetic trees.</title><p>An analysis of the correctly grouped Orders (a and b) and Families (c and d) for COI (a and c) and cyt <italic>b</italic> (b and d) from the different phylogenetic trees. Only Orders containing n&#x02265;6 were included for analysis and all Families were included for n&#x02265;2 (n is displayed in parentheses following the name of the Family). Bars indicate the percentage of correctly assigned taxonomic groups and points indicate the percentage of correctly assigned species groups within the larger taxonomic designation. NJ- Neighbor-Joining tree; MP- Maximum Parsimony tree; ME- Minimum Evolution tree; MrBayes- MrBayes Maximum Likelihood; RAxML- RAxML Maximum Likelihood; NJ S- Neighbor-Joining species placement; MP S- Maximum Parsimony species placement; ME S- Minimum Evolution species placement; MrBayes S- MrBayes Maximum Likelihood species placement and; RAxML S - RAxML Maximum Likelihood species placement.</p></caption><graphic xlink:href="pone.0014156.g001"/></fig><fig id="pone-0014156-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.g002</object-id><label>Figure 2</label><caption><title>Maximum Likelihood phylogenetic trees calculated using MrBayes <xref rid="pone.0014156-Geyer1" ref-type="bibr">
+<bold>[44]</bold>
+</xref>&#x02013;<xref rid="pone.0014156-Ronquist1" ref-type="bibr">[<bold>48</bold>]</xref> for COI and cyt <italic>b</italic>.</title><p>Clades have been collapsed based on Order at nodes where all subsequent branches belong to a particular Order. Full versions of these trees can be found in the <xref ref-type="supplementary-material" rid="pone.0014156.s005">Figures S3</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s010">S8</xref>. Details of the collapsed orders can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s002">Text S2</xref>.</p></caption><graphic xlink:href="pone.0014156.g002"/></fig><table-wrap id="pone-0014156-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.t002</object-id><label>Table 2</label><caption><title>A direct comparison of the five phylogenetic trees compiled for each of COI and cyt <italic>b</italic>.</title></caption><alternatives><graphic id="pone-0014156-t002-2" xlink:href="pone.0014156.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td colspan="4" align="left" rowspan="1">Order</td><td colspan="2" align="left" rowspan="1">Family</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">n total</td><td align="left" rowspan="1" colspan="1">&#x0003c;100&#x00025; accuracy</td><td align="left" rowspan="1" colspan="1">n chart</td><td align="left" rowspan="1" colspan="1">&#x0003c;100&#x00025; accuracy</td><td align="left" rowspan="1" colspan="1">n total</td><td align="left" rowspan="1" colspan="1">&#x0003c;100&#x00025; accuracy</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>COI</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>Neighbor-Joining</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">3</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Maximum Parsimony</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">11</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">9</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">6</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Minimum Evolution</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">6</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">3</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Maximum Likelihood MrBayes</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">2</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Maximum Likelihood RAxML</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">2</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Cyt</bold>
+<bold><italic>b</italic></bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>Neighbor-Joining</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Maximum Parsimony</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">9</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">4</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Minimum Evolution</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">6</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">2</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Maximum Likelihood MrBayes</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">2</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>Maximum Likelihood RAxML</bold>
+</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">2</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt102"><label/><p>n total refers to the total number of groups (Orders or Families) present in the trees. n chart refers to only those Orders which were used in <xref ref-type="fig" rid="pone-0014156-g001">Figure 1</xref>. &#x0003c;100&#x00025; accuracy refers to any grouping which did not correspond to the expected grouping as given by conventional morphological and taxonomic analysis as described in <xref ref-type="sec" rid="s2">Materials and Methods</xref> section 2.2.1. The MrBayes Maximum Likelihood trees show the most accuracy overall. The Maximum Parsimony trees showed the least accuracy for both genes at both the Order and Family levels.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3b"><title>3.2 Data analysis</title><p>Sequence data, both interspecific and intraspecific, were analyzed and results are summarized in <xref ref-type="table" rid="pone-0014156-t003">Table 3</xref>.</p><table-wrap id="pone-0014156-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.t003</object-id><label>Table 3</label><caption><title>A comparison of the intra- and inter-specific variation in cyt <italic>b</italic> and COI genes.</title></caption><alternatives><graphic id="pone-0014156-t003-3" xlink:href="pone.0014156.t003"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td colspan="2" align="left" rowspan="1">INTERSPECIFIC VARIATION</td><td colspan="6" align="left" rowspan="1">INTRASPECIFIC VARIATION</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td colspan="2" align="left" rowspan="1">Mammalian samples (n&#x0200a;=&#x0200a;236)</td><td colspan="2" align="left" rowspan="1">
+<italic>Homo sapiens</italic> (n&#x0200a;=&#x0200a;945)</td><td colspan="2" align="left" rowspan="1">
+<italic>Bos taurus</italic> (n&#x0200a;=&#x0200a;130)</td><td colspan="2" align="left" rowspan="1">
+<italic>Canis familiaris</italic> (n&#x0200a;=&#x0200a;35)</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Cyt <italic>b</italic>
+</td><td align="left" rowspan="1" colspan="1">CO1</td><td align="left" rowspan="1" colspan="1">Cyt <italic>b</italic>
+</td><td align="left" rowspan="1" colspan="1">CO1</td><td align="left" rowspan="1" colspan="1">Cyt <italic>b</italic>
+</td><td align="left" rowspan="1" colspan="1">CO1</td><td align="left" rowspan="1" colspan="1">Cyt <italic>b</italic>
+</td><td align="left" rowspan="1" colspan="1">CO1</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>Size (bp)</bold>
+</td><td align="left" rowspan="1" colspan="1">1130&#x02013;149</td><td align="left" rowspan="1" colspan="1">1537&#x02013;1557</td><td align="left" rowspan="1" colspan="1">1141</td><td align="left" rowspan="1" colspan="1">1542</td><td align="left" rowspan="1" colspan="1">1140</td><td align="left" rowspan="1" colspan="1">1545</td><td align="left" rowspan="1" colspan="1">1140</td><td align="left" rowspan="1" colspan="1">1545</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Heteroplasmy</bold>
+</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Total variable sites</bold>
+</td><td align="left" rowspan="1" colspan="1">892</td><td align="left" rowspan="1" colspan="1">877</td><td align="left" rowspan="1" colspan="1">206</td><td align="left" rowspan="1" colspan="1">191</td><td align="left" rowspan="1" colspan="1">36</td><td align="left" rowspan="1" colspan="1">39</td><td align="left" rowspan="1" colspan="1">18</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>in a single sample</bold>
+</td><td align="left" rowspan="1" colspan="1">318</td><td align="left" rowspan="1" colspan="1">198</td><td align="left" rowspan="1" colspan="1">101</td><td align="left" rowspan="1" colspan="1">81</td><td align="left" rowspan="1" colspan="1">23</td><td align="left" rowspan="1" colspan="1">31</td><td align="left" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">6</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>p</italic></bold>
+<bold>-distance (x100)</bold>
+</td><td colspan="2" align="left" rowspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>1<sup>st</sup> base</bold>
+</td><td align="left" rowspan="1" colspan="1">16.876&#x000b1;1.067</td><td align="left" rowspan="1" colspan="1">08.662&#x000b1;0.690</td><td align="left" rowspan="1" colspan="1">0.265&#x000b1;0.077</td><td align="left" rowspan="1" colspan="1">0.123&#x000b1;0.063</td><td align="left" rowspan="1" colspan="1">0.120&#x000b1;0.048</td><td align="left" rowspan="1" colspan="1">0.015&#x000b1;0.007</td><td align="left" rowspan="1" colspan="1">0.188&#x000b1;0.097</td><td align="left" rowspan="1" colspan="1">0.086&#x000b1;0.045</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>2<sup>nd</sup> base</bold>
+</td><td align="left" rowspan="1" colspan="1">06.218&#x000b1;0.645</td><td align="left" rowspan="1" colspan="1">01.768&#x000b1;0.287</td><td align="left" rowspan="1" colspan="1">0.135&#x000b1;0.074</td><td align="left" rowspan="1" colspan="1">0.017&#x000b1;0.008</td><td align="left" rowspan="1" colspan="1">0.024&#x000b1;0.012</td><td align="left" rowspan="1" colspan="1">0.027&#x000b1;0.012</td><td align="left" rowspan="1" colspan="1">0.015&#x000b1;0.015</td><td align="left" rowspan="1" colspan="1">0.000</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>3<sup>rd</sup> base</bold>
+</td><td align="left" rowspan="1" colspan="1">47.775&#x000b1;0.808</td><td align="left" rowspan="1" colspan="1">51.525&#x000b1;0.666</td><td align="left" rowspan="1" colspan="1">0.614&#x000b1;0.151</td><td align="left" rowspan="1" colspan="1">0.602&#x000b1;0.127</td><td align="left" rowspan="1" colspan="1">0.097&#x000b1;0.024</td><td align="left" rowspan="1" colspan="1">0.174&#x000b1;0.058</td><td align="left" rowspan="1" colspan="1">0.552&#x000b1;0.186</td><td align="left" rowspan="1" colspan="1">0.733&#x000b1;0.180</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Mean</bold>
+</td><td align="left" rowspan="1" colspan="1">23.602&#x000b1;0.662</td><td align="left" rowspan="1" colspan="1">20.644&#x000b1;0.474</td><td align="left" rowspan="1" colspan="1">0.338&#x000b1;0.065</td><td align="left" rowspan="1" colspan="1">0.247&#x000b1;0.049</td><td align="left" rowspan="1" colspan="1">0.080&#x000b1;0.019</td><td align="left" rowspan="1" colspan="1">0.072&#x000b1;0.020</td><td align="left" rowspan="1" colspan="1">0.252&#x000b1;0.075</td><td align="left" rowspan="1" colspan="1">0.273&#x000b1;0.064</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Maximum</bold>
+</td><td align="left" rowspan="1" colspan="1">32.651</td><td align="left" rowspan="1" colspan="1">26.090</td><td align="left" rowspan="1" colspan="1">1.150</td><td align="left" rowspan="1" colspan="1">1.040</td><td align="left" rowspan="1" colspan="1">0.526</td><td align="left" rowspan="1" colspan="1">0.518</td><td align="left" rowspan="1" colspan="1">0.789</td><td align="left" rowspan="1" colspan="1">0.777</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Minimum</bold>
+</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td></tr><tr><td colspan="3" align="left" rowspan="1">
+<bold>Kimura 2-parameter </bold>
+<bold><italic>p</italic></bold>
+<bold>-distance (x100)</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>1<sup>st</sup> base</bold>
+</td><td align="left" rowspan="1" colspan="1">19.485&#x000b1;1.392</td><td align="left" rowspan="1" colspan="1">09.363&#x000b1;0.823</td><td align="left" rowspan="1" colspan="1">0.267&#x000b1;0.079</td><td align="left" rowspan="1" colspan="1">0.124&#x000b1;0.064</td><td align="left" rowspan="1" colspan="1">0.121&#x000b1;0.049</td><td align="left" rowspan="1" colspan="1">0.015&#x000b1;0.006</td><td align="left" rowspan="1" colspan="1">0.189&#x000b1;0.100</td><td align="left" rowspan="1" colspan="1">0.086&#x000b1;0.045</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>2<sup>nd</sup> base</bold>
+</td><td align="left" rowspan="1" colspan="1">06.588&#x000b1;0.721</td><td align="left" rowspan="1" colspan="1">01.797&#x000b1;0.293</td><td align="left" rowspan="1" colspan="1">0.136&#x000b1;0.075</td><td align="left" rowspan="1" colspan="1">0.017&#x000b1;0.008</td><td align="left" rowspan="1" colspan="1">0.024&#x000b1;0.012</td><td align="left" rowspan="1" colspan="1">0.027&#x000b1;0.012</td><td align="left" rowspan="1" colspan="1">0.015&#x000b1;0.014</td><td align="left" rowspan="1" colspan="1">0.000</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>3<sup>rd</sup> base</bold>
+</td><td align="left" rowspan="1" colspan="1">80.217&#x000b1;2.398</td><td align="left" rowspan="1" colspan="1">97.677&#x000b1;2.474</td><td align="left" rowspan="1" colspan="1">0.620&#x000b1;0.159</td><td align="left" rowspan="1" colspan="1">0.607&#x000b1;0.124</td><td align="left" rowspan="1" colspan="1">0.097&#x000b1;0.025</td><td align="left" rowspan="1" colspan="1">0.175&#x000b1;0.060</td><td align="left" rowspan="1" colspan="1">0.557&#x000b1;0.197</td><td align="left" rowspan="1" colspan="1">0.741&#x000b1;0.191</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Mean</bold>
+</td><td align="left" rowspan="1" colspan="1">28.794&#x000b1;1.007</td><td align="left" rowspan="1" colspan="1">24.540&#x000b1;0.753</td><td align="left" rowspan="1" colspan="1">0.339&#x000b1;0.066</td><td align="left" rowspan="1" colspan="1">0.248&#x000b1;0.049</td><td align="left" rowspan="1" colspan="1">0.081&#x000b1;0.019</td><td align="left" rowspan="1" colspan="1">0.072&#x000b1;0.020</td><td align="left" rowspan="1" colspan="1">0.253&#x000b1;0.076</td><td align="left" rowspan="1" colspan="1">0.274&#x000b1;0.064</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Maximum</bold>
+</td><td align="left" rowspan="1" colspan="1">43.648</td><td align="left" rowspan="1" colspan="1">32.605</td><td align="left" rowspan="1" colspan="1">1.160</td><td align="left" rowspan="1" colspan="1">1.050</td><td align="left" rowspan="1" colspan="1">0.529</td><td align="left" rowspan="1" colspan="1">0.520</td><td align="left" rowspan="1" colspan="1">0.795</td><td align="left" rowspan="1" colspan="1">0.783</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Minimum</bold>
+</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="left" rowspan="1" colspan="1">0.000</td></tr><tr><td colspan="4" align="left" rowspan="1">
+<bold>Synonymous and Non-synonymous </bold>
+<bold><italic>p</italic></bold>
+<bold>-distance Nei-Gojobori</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>S (x100)</bold>
+</td><td align="left" rowspan="1" colspan="1">63.309&#x000b1;0.971</td><td align="left" rowspan="1" colspan="1">71.264&#x000b1;0.881</td><td align="left" rowspan="1" colspan="1">0.907&#x000b1;0.213</td><td align="left" rowspan="1" colspan="1">0.811&#x000b1;0.163</td><td align="left" rowspan="1" colspan="1">0.198&#x000b1;0.072</td><td align="left" rowspan="1" colspan="1">0.244&#x000b1;0.080</td><td align="left" rowspan="1" colspan="1">0.930&#x000b1;0.292</td><td align="left" rowspan="1" colspan="1">1.075&#x000b1;0.239</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>N (x100)</bold>
+</td><td align="left" rowspan="1" colspan="1">10.497&#x000b1;0.769</td><td align="left" rowspan="1" colspan="1">03.976&#x000b1;0.384</td><td align="left" rowspan="1" colspan="1">0.152&#x000b1;0.047</td><td align="left" rowspan="1" colspan="1">0.059&#x000b1;0.029</td><td align="left" rowspan="1" colspan="1">0.041&#x000b1;0.010</td><td align="left" rowspan="1" colspan="1">0.016&#x000b1;0.006</td><td align="left" rowspan="1" colspan="1">0.033&#x000b1;0.016</td><td align="left" rowspan="1" colspan="1">0.014&#x000b1;0.010</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt103"><label/><p>n&#x0200a;=&#x0200a; sample size. Standard errors were calculated using 1,000 bootstrap repetitions. 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> base refer to the position within a codon.</p></fn></table-wrap-foot></table-wrap><p>Variability (<italic>R<sub>s</sub></italic>) was determined at each base position for each gene (<xref ref-type="fig" rid="pone-0014156-g003">Figure 3a, b</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s014">Figure S12</xref>). Between-species COI showed an average <italic>R<sub>s</sub></italic> value of 74.5&#x00025; of a completely conserved gene. Of 1,557 base pairs (bp) (largest variant), 56.3&#x00025; were variable in at least one sample. Sliding windows within COI of 101, 401 and 601 bp showed average <italic>R<sub>s</sub></italic> values of 74.6, 75.2 and 75.4&#x00025; of a conserved sequence, respectively. Cyt <italic>b</italic> showed an average <italic>R<sub>s</sub></italic> value of 69.9&#x00025; of a completely conserved gene. Of the total 1,149 bp of cyt <italic>b</italic>, 77.6&#x00025; showed variation in at least one sample. Sliding windows within cyt <italic>b</italic> of 101, 401 and 601 bp gave average <italic>R<sub>s</sub></italic> values of 70.2, 70.6 and 70.6&#x00025; of a conserved sequence, respectively.</p><fig id="pone-0014156-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.g003</object-id><label>Figure 3</label><caption><title>A comparison of the COI and cyt <italic>b</italic> genes.</title><p>a and b) The <italic>R<sub>s</sub></italic> values for the first 400 base pairs of the COI (a) and cyt <italic>b</italic> (b) genes. Sliding windows of identity are shown for blocks of 101 bp (red), 401 bp (purple) and 601 bp (yellow), and are shown as a percentage of completely conserved sequences. Values for entire genes can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s014">Figure S12</xref>. c and d) A histogram of the Kimura 2-parameter <italic>p</italic>-distances for COI (c) and cyt <italic>b</italic> (d) for pairwise comparisons within species for domestic cattle (red), domestic dogs (purple), humans (green) and between other mammalian species (blue). e and f) The synonymous differences per synonymous site (<italic>d</italic>
+<sub>S</sub>) versus the nonsynonymous differences per nonsynonymous site (<italic>d</italic>
+<sub>N</sub>) for COI (e) and cyt <italic>b</italic> (f) calculated in pairwise fashion within species for cattle (red), dogs (purple), humans (green) and between other mammalian species (blue). Within-species comparisons are shown in the inlays and are displayed as a mean value with error bars representing maxima and minima. The reference line indicates <italic>d</italic>
+<sub>S</sub>&#x0200a;=&#x0200a;<italic>d</italic>
+<sub>N</sub>.</p></caption><graphic xlink:href="pone.0014156.g003"/></fig><p>Average K2P values (x 100) were plotted according to frequency when the four data sets were analyzed independently (<xref ref-type="fig" rid="pone-0014156-g003">Figure 3c, d</xref>). There is a gap between intraspecific and interspecific K2P values, ranging between 1.5 and 2.5 for both genes. Intraspecific K2P values were &#x0003c;1.5 with maximum values of 1.05 and 1.16 for COI and cyt <italic>b</italic>, respectively. The highest intraspecific value was between two human cyt <italic>b</italic> samples. No intraspecific K2P <italic>p</italic>-distance comparison was &#x0003e;1.5 and few inter-specific values were &#x0003c;2.5 (<xref ref-type="fig" rid="pone-0014156-g004">Figure 4</xref>). This suggested three potential K2P (x 100) threshold values of 2.5, 2.0 and 1.5, which would distinguish intra- and interspecific differences.</p><fig id="pone-0014156-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.g004</object-id><label>Figure 4</label><caption><title>The Kimura 2-parameter <italic>p</italic>-distance (x100) for COI in the upper diagonal and cyt <italic>b</italic> in the lower diagonal.</title><p>Only values less than 2.5 are shown and all other comparisons showed values above 2.5. Red shading indicates &#x0003c;1.5, yellow shading indicates 1.5&#x0003c;&#x0003e;2 and green shading indicates 2&#x0003c;&#x0003e;2.5. Species included are: <italic>Mus musculus musculus</italic> (1); <italic>M. m. molossinus</italic> (2); <italic>M. musculus</italic> (3); <italic>M. m. domesticus</italic> (4); <italic>Rattus norvegicus</italic> (Wistar) (5); <italic>R. norvegicus</italic> (BN/SsNHsdMCW) (6); <italic>Camelus ferus</italic> (7); <italic>C. bactrianus</italic> (8); <italic>Bos indicus</italic> (9); <italic>B. taurus</italic> (10); <italic>Muntiacus reevesi micrurus</italic> (11); <italic>M. reevesi</italic> (12); <italic>Cervus nippon centralis</italic> (13); <italic>C. n. yesoensis</italic> (14); <italic>C. n. yakushimae</italic> (15); <italic>C. n. taiouanus</italic> (16); <italic>Eubalaena japonica</italic> (17); <italic>E. australis</italic> (18); <italic>Pusa sibirica</italic> (19); <italic>P. caspica</italic> (20); <italic>P. hispida</italic> (21); <italic>Phoca vitulina</italic> (22); <italic>Phoca largha</italic> (23); <italic>Ursus thibetanus ussuricus</italic> (24); <italic>U. thibetanus</italic> (25); <italic>U. t. thibetanus</italic> (26); <italic>U. t. formosanus</italic> (27); <italic>U. t. mupinensis</italic> (28); <italic>U. maritimus</italic> (29); <italic>U. arctos</italic> (30); <italic>Ailurus fulgens</italic> (31); <italic>A. f. styani</italic> (32); <italic>Canis lupus chanco</italic> (33); <italic>C. l. laniger</italic> (34); <italic>C. l. lupus</italic> (35); <italic>C. lupus</italic> (36); <italic>C. familiaris</italic> (37); <italic>Homo sapiens</italic> (38, 39); <italic>Gorilla gorilla gorilla</italic> (40) and; <italic>G. gorilla</italic> (41). The colored headings represent different Families.</p></caption><graphic xlink:href="pone.0014156.g004"/></fig><p>When subspecific and intraspecific comparisons were removed, the average between-species K2P (x 100) values were 24.6&#x000b1;2.9 and 28.8&#x000b1;4.8 for COI and cyt <italic>b</italic>, respectively. Within-Order K2P comparisons (for Orders with n&#x02265;3) showed average values of 20.2&#x000b1;2.8 and 22.4&#x000b1;4.0 for COI and cyt <italic>b</italic>, respectively. Within-Order values were greater in cyt <italic>b</italic> in all Orders by, on average, 2.35 except in the Lagomorpha where the COI average was greater by 0.27. Average intraspecific K2P (x 100) values for human, domestic cattle and domestic dog samples were: 0.25&#x000b1;0.18 (COI) and 0.34&#x000b1;0.16 (cyt <italic>b</italic>); 0.07&#x000b1;0.08 (COI) and 0.08&#x000b1;0.09 (cyt <italic>b</italic>) and; 0.27&#x000b1;0.18 (COI) and 0.25&#x000b1;0.18 (cyt <italic>b</italic>), respectively.</p><p>Pairwise comparisons of synonymous (<italic>d<sub>S</sub></italic>) and non-synonymous substitution rates (<italic>d<sub>N</sub></italic>) were plotted against each other (<xref ref-type="fig" rid="pone-0014156-g003">Figure 3e, f</xref>). Between-species COI showed a greater average synonymous substitution rate (0.7126&#x000b1;0.0686) than cyt <italic>b</italic> (0.6331&#x000b1;0.0701). However, cyt <italic>b</italic> showed a greater average non-synonymous substitution rate than COI (0.1049&#x000b1;0.0311 and 0.0398&#x000b1;0.0148, respectively). For COI two pairs of samples showed a <italic>d<sub>N</sub></italic>&#x0003e;<italic>d<sub>S</sub></italic> (<italic>Gorilla gorilla</italic> and <italic>G. g. gorilla</italic>, and <italic>Cervus nippon centralis</italic> and <italic>C. n. yesoensis</italic>); all cyt <italic>b</italic> comparisons showed <italic>d<sub>N</sub></italic>&#x02264;<italic>d<sub>S</sub></italic>.</p><p>Combined-data-set K2P pairwise comparisons (901,153 comparisons) showed similar results to those when analysed separately. All <italic>Bos taurus</italic> and <italic>B. indicus</italic> comparisons fell below 1.5 in COI, but only two fell below 1.5 in cyt <italic>b</italic> with the rest falling between 1.5 and 2. All samples of <italic>Canis familiaris</italic>, compared with <italic>C. lupus</italic> and <italic>C. l. lupus</italic>, fell below 1.5 for both COI and cyt <italic>b</italic>, but seven of the <italic>C. familiaris</italic> samples showed 100&#x00025; sequence match (K2P&#x0200a;=&#x0200a;0) with the <italic>C. l. lupus</italic> sample in COI. Also within COI 30 of the <italic>C. familiaris</italic> samples showed K2P values between 2 and 2.5, when compared to <italic>C. l. laniger</italic> and 16 K2P values were between 2 and 2.5 when compared with <italic>C. l. chanco</italic>.</p><p>A K2P threshold of 1.5 showed that for COI the false positive rate was 4.85&#x000d7;10<sup>&#x02212;4</sup> and the positive predictive value was 0.9995. For cyt <italic>b</italic> the false positive rate was 2.02&#x000d7;10<sup>&#x02212;4</sup> and the positive predictive value was 0.9998. Values for comparisons of sensitivity and specificity for a threshold of 1.5, along with results for thresholds of 2.0 and 2.5, are found in <xref ref-type="table" rid="pone-0014156-t004">Table 4</xref>. Results for the ROC curves can be found in the <xref ref-type="supplementary-material" rid="pone.0014156.s015">Figure S13</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s020">Table S5</xref>. No differences are evident between the ROC curves for the two genes.</p><table-wrap id="pone-0014156-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0014156.t004</object-id><label>Table 4</label><caption><title>Results of the analyses from the two-by-two contingency table.</title></caption><alternatives><graphic id="pone-0014156-t004-4" xlink:href="pone.0014156.t004"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Cyt <italic>b</italic>
+</td><td align="left" rowspan="1" colspan="1">COI</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Cyt <italic>b</italic>
+</td><td align="left" rowspan="1" colspan="1">COI</td></tr></thead><tbody><tr><td colspan="3" align="left" rowspan="1">
+<bold>Total greater than (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>b</sub>)</bold>
+</td><td colspan="3" align="left" rowspan="1">
+<bold>Rate of False Negative (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>Ab</sub>/</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>A</sub>)</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">444962</td><td align="left" rowspan="1" colspan="1">444906</td><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td></tr><tr><td align="left" rowspan="1" colspan="1">2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">444968</td><td align="left" rowspan="1" colspan="1">444964</td><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td></tr><tr><td align="left" rowspan="1" colspan="1">1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">445097</td><td align="left" rowspan="1" colspan="1">444971</td><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td></tr><tr><td colspan="3" align="left" rowspan="1">
+<bold>Total less than (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>B</sub>)</bold>
+</td><td colspan="2" align="left" rowspan="1">
+<bold>Sensitivity (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>AB</sub>/</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>A</sub>)</bold>
+</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">456191</td><td align="left" rowspan="1" colspan="1">456247</td><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">456185</td><td align="left" rowspan="1" colspan="1">456189</td><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">456056</td><td align="left" rowspan="1" colspan="1">456182</td><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td colspan="3" align="left" rowspan="1">
+<bold>False Negative (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>Ab</sub>)</bold>
+</td><td colspan="2" align="left" rowspan="1">
+<bold>Specificity (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>ab</sub>/</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>a</sub>)</bold>
+</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0.999495</td><td align="left" rowspan="1" colspan="1">0.999369</td></tr><tr><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">0.999508</td><td align="left" rowspan="1" colspan="1">0.999499</td></tr><tr><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0.999798</td><td align="left" rowspan="1" colspan="1">0.999515</td></tr><tr><td colspan="3" align="left" rowspan="1">
+<bold>False Positive (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>aB</sub>)</bold>
+</td><td colspan="3" align="left" rowspan="1">
+<bold>Positive Predictive Value (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>AB</sub>/</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>B</sub>)</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">225</td><td align="left" rowspan="1" colspan="1">281</td><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0.999507</td><td align="left" rowspan="1" colspan="1">0.999384</td></tr><tr><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">219</td><td align="left" rowspan="1" colspan="1">223</td><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">0.999520</td><td align="left" rowspan="1" colspan="1">0.999511</td></tr><tr><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">90</td><td align="left" rowspan="1" colspan="1">216</td><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0.999803</td><td align="left" rowspan="1" colspan="1">0.999527</td></tr><tr><td colspan="3" align="left" rowspan="1">
+<bold>Rate of False Positive (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>aB</sub>/</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>a</sub>)</bold>
+</td><td colspan="3" align="left" rowspan="1">
+<bold>Negative Predictive Value (</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>ab</sub>/</bold>
+<bold><italic>n</italic></bold>
+<bold><sub>b</sub>)</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0.000505</td><td align="left" rowspan="1" colspan="1">0.000631</td><td align="left" rowspan="1" colspan="1">at 2.5&#x00025;</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">0.000492</td><td align="left" rowspan="1" colspan="1">0.000501</td><td align="left" rowspan="1" colspan="1">at 2.0&#x00025;</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">0.000202</td><td align="left" rowspan="1" colspan="1">0.000485</td><td align="left" rowspan="1" colspan="1">at 1.5&#x00025;</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt104"><label/><p>Thresholds were set at K2P values (x 100&#x00025;) of 2.5, 2.0 and 1.5&#x00025; such that the negative predictive value (the probability that a comparison will be from two different species) was 1.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="s4"><title>Discussion</title><sec id="s4a"><title>4.1 Accuracy of the Phylogenetic Trees</title><p>Analysis of the phylogenetic trees showed that overall the Maximum Likelihood phylogenetic trees constructed in MrBayes show the highest congruences with conventional taxonomic groupings. The ML trees show the least number of inconsistencies when compared to traditional morphological and other molecular studies based on different gene loci, and taxonomic classifications and expected relationships between species. This method was used in further analyses in this study.</p><p>Although cyt b showed a very high congruence (95.85&#x00025;) with conventional classifications at Super Order, COI was very poor (78.34&#x00025;) (<xref ref-type="fig" rid="pone-0014156-g002">Figure 2</xref>, un-collapsed trees can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s005">Figures S3</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s010">S8</xref>). COI grouped all species correctly in Xenarthra, but members of Afrotheria were split, with only 63.6&#x00025; (elephants, tenrec, sirenians and hyraxes) associated together. Cyt <italic>b</italic> also correctly grouped all xenarthrans together, but gave a better grouping of Afrotherians (72.7&#x00025;), with only the golden moles and elephant shrew grouped incorrectly. The results for Euarchontoglires and Laurasiatheria were very different for each gene. COI was much less able to group members of the Euarchontoglires (63.0&#x00025;) and Laurasiatheria (79.4&#x00025;) together, whereas cyt <italic>b</italic> performed much better with 87.0&#x00025; of Euarchontoglires and 100&#x00025; of Laurasiatheria grouped correctly together, so that overall cyt <italic>b</italic> correctly placed more of the 217 mammal species in the correct Super Order than COI. Both genes correctly assigned marsupials and monotremes to their respective groups. However, relationships between Super Orders were difficult to interpret, owing to a lack of resolution of the branching of Super Orders. For cyt <italic>b</italic> most Afrotherians were closest to the Xenarthra, which is regarded as basal among placentals (e.g. <xref rid="pone.0014156-Asher1" ref-type="bibr">[1]</xref>, <xref rid="pone.0014156-Liu1" ref-type="bibr">[10]</xref>, <xref rid="pone.0014156-Prasad1" ref-type="bibr">[71]</xref>), although not in all phylogenies (e.g. <xref rid="pone.0014156-Reyes1" ref-type="bibr">[72]</xref>) as found here. The high degree of splitting among members of the Laurasiatheria and Euarchontoglires for COI makes further interpretation difficult. The monotremes grouped together correctly for both genes; for cyt <italic>b</italic> they were the sister group to marsupials and basal to a mixed grouping of Afrotherians, rodents and xenarthrans, but for COI the Eurasian red squirrel, <italic>Sciurus vulgaris</italic>, was a sister species to the monotremes between the perissodactyls and Afrotherians.</p><p>One notable aspect of these phylogenetic reconstructions is the difference in branch lengths for different mammal groups. Larger species, such as carnivorans, cetaceans, artiodactyls, primates, etc., tended to have much shorter branch lengths than for smaller species, such as bats, rodents, hedgehogs, shrews, marsupials and monotremes. This has been noted in previous phylogenetic reconstructions and different explanations have been proposed, including differences in generation times and longevity, but recent analyses suggest that mutation rates differ for mtDNA between different mammal lineages <xref rid="pone.0014156-Nabholz1" ref-type="bibr">[73]</xref>. These differences would significantly affect phylogenetic reconstruction, owing to the distortion of relationships between otherwise closely related taxonomic groups. However, this is only understood for a limited number of species.</p><p>At the level of Order cyt <italic>b</italic> grouped correctly 94.31&#x00025; of 211 mammal species and COI gave a slightly lower percentage of 93.36&#x00025;. For COI six placental mammal Orders were split with maximum correct groupings ranging from 66.7&#x00025; to 85.7&#x00025;, and one marsupial Order (Diprotodontia) was split with 92.3&#x00025; correct membership. In contrast, for cyt <italic>b</italic> only two placental Orders (Lagomorpha and Rodentia) did not correctly group species, varying between 60.0 and 64.3&#x00025; correct membership, and one marsupial Order (Diprotodontia) had one split, giving a correct grouping of 61.5&#x00025;. However, splitting of Orders was mostly caused by particular species associating oddly with unrelated groups. For example, for cyt <italic>b</italic> the rodents were split into three groups by Afrotherians, xenarthrans and the tree shrew, <italic>Tupaia belangeri</italic>. For COI the association pattern was far less clear; rodents were split into four groups with fat dormouse, <italic>Glis glis</italic>, Eurasian red squirrel and guinea pig, <italic>Cavia porcellus</italic>/cane rat, <italic>Thryonomys swinderianus</italic>, separated from the main group, Horsfield' tarsier, <italic>Tarsius spectrum</italic>, colugo, <italic>Galeopterus variegatus</italic>, aardvark, <italic>Orycteropus afer</italic>, and pangolin, <italic>Manis longicaudatus</italic>, are associated with each other, the prosimian primates are separated from the remaining primates, and the lagomorphs are divided by the elephant shrew, <italic>Macroscelideus proboscideus</italic>, and golden moles.</p><p>At the level of Family cyt <italic>b</italic> correctly grouped 98.16&#x00025; of 163 mammal species compared with 96.93&#x00025; for COI. For COI, one placental Family (Balaenopteridae) only correctly grouped 55.6&#x00025; of species, while one marsupial Family (Petauridae) was split for its two species. For cyt <italic>b</italic>, the Camelidae showed only 75&#x00025; correct grouping and the Balaenopteridae showed 77.8&#x00025; correct association of its species. However, it should be noted that with both genes, the gray whale's (<italic>Eschrichtius robustus</italic>, Family Eschrichtidae) placement with respect to the Balaenopteridae makes the latter paraphyletic, although this has been recorded previously <xref rid="pone.0014156-Price1" ref-type="bibr">[11]</xref>, <xref rid="pone.0014156-Agnarsson1" ref-type="bibr">[30]</xref>, <xref rid="pone.0014156-McGowen1" ref-type="bibr">[64]</xref>, <xref rid="pone.0014156-Hatch1" ref-type="bibr">[66]</xref>, indicating a significant morphological divergence of the gray whale from a balanaeopterid ancestor <xref rid="pone.0014156-Nikaido1" ref-type="bibr">[62]</xref>, <xref rid="pone.0014156-Hatch1" ref-type="bibr">[66]</xref>. However, other recent phylogenetic studies of mysticetes place it basal to the Balaenopteridae <xref rid="pone.0014156-Steeman1" ref-type="bibr">[60]</xref>&#x02013;<xref rid="pone.0014156-Nikaido1" ref-type="bibr">[62]</xref>, <xref rid="pone.0014156-Sasaki1" ref-type="bibr">[65]</xref>. Not surprisingly, as potential group sizes fall from Super Order through Order to Family, so the chances of species misclassification reduce, but cyt <italic>b</italic> shows congruences of &#x0003e;94&#x00025; for all taxonomic ranks compared with conventional classifications and phylogenies.</p><p>At generic and intrafamilial phylogenetic levels, most relationships were reconstructed by cyt <italic>b</italic> as expected and are congruent with a recent molecular supertree for the Carnivora <xref rid="pone.0014156-Agnarsson2" ref-type="bibr">[59]</xref>. Exceptions were among phocine seals, where relationships between three genera (<italic>Phoca</italic>, <italic>Pusa</italic> and <italic>Halichoerus</italic>) were somewhat anomalous, with the Baikal seal, <italic>Pusa sibirica</italic>, not correctly grouped with other <italic>Pusa</italic> spp., relative to the grey seal, <italic>Halichoerus grypus</italic>, but similar results were obtained by Arnason <italic>et al.</italic>
+<xref rid="pone.0014156-Arnason2" ref-type="bibr">[74]</xref>. Hooker's sealion, <italic>Phocarctos hookeri</italic>, and Australian sealion, <italic>Neophoca cinerea</italic>, were placed within the fur seals, <italic>Arctocephalus</italic> spp., making the latter paraphyletic, but similar paraphyly was recorded by Agnarsson <italic>et al.</italic>
+<xref rid="pone.0014156-Agnarsson2" ref-type="bibr">[59]</xref>. Cyt <italic>b</italic> placed the colobus monkeys within an expected langur and odd-nosed colobines clade, thus isolating the entellus langur, <italic>Semnopithecus entellus</italic>, but for all other primates phylogenetic relationships were reconstructed as expected <xref rid="pone.0014156-Chatterjee1" ref-type="bibr">[37]</xref>, <xref rid="pone.0014156-Purvis1" ref-type="bibr">[58]</xref>. MtDNA has produced anomalous phylogenies for langurs in other studies, which was interpreted as being due to ancient hybridisation events <xref rid="pone.0014156-Osterholz1" ref-type="bibr">[75]</xref>, <xref rid="pone.0014156-Ting1" ref-type="bibr">[76]</xref>. The red deer, <italic>Cervus elaphus</italic>, was shown as a sister species to the Formosan sambar, <italic>Rucervus unicolor</italic>, rather than the expected sister grouping with sika deer, <italic>C. nippon</italic> sspp. <xref rid="pone.0014156-Marcot1" ref-type="bibr">[63]</xref>. The humpback whale, <italic>Megaptera novaeangliae</italic>, is a sister species to the fin whale, <italic>Balaenoptera physalus</italic>, but similar results have been recorded in other recent phylogenetic studies of cetaceans <xref rid="pone.0014156-Steeman1" ref-type="bibr">[60]</xref>&#x02013;<xref rid="pone.0014156-Nikaido1" ref-type="bibr">[62]</xref>, <xref rid="pone.0014156-Sasaki1" ref-type="bibr">[65]</xref>, <xref rid="pone.0014156-Hatch1" ref-type="bibr">[66]</xref>, suggesting that taxonomic relationships require further investigation; ancient hybridisation has been ruled out as influencing baleen whale phylogenetics <xref rid="pone.0014156-Hatch1" ref-type="bibr">[66]</xref>. The gray whale, <italic>Eschrichtius robustus</italic> (Family Eschrichtidae), is the sister species to the humpback/fin whale clade rather than basal to the Balaenopteridae as in recent molecular and morphological/molecular phylogenies <xref rid="pone.0014156-Steeman1" ref-type="bibr">[60]</xref>&#x02013;<xref rid="pone.0014156-Nikaido1" ref-type="bibr">[62]</xref>, <xref rid="pone.0014156-Sasaki1" ref-type="bibr">[65]</xref>, <xref rid="pone.0014156-Hatch1" ref-type="bibr">[66]</xref>. There was no expected sister grouping of goat, <italic>Capra hircus</italic>, and sheep, <italic>Ovis aries</italic>, although other relationships within the ovicaprines were broadly as expected <xref rid="pone.0014156-Price1" ref-type="bibr">[11]</xref>, <xref rid="pone.0014156-Agnarsson1" ref-type="bibr">[30]</xref>. Among marsupials, the anomalous banded hare wallaby, <italic>Lagostrophus fasciatus</italic>, was expected to be divergent from the rufous hare wallaby, <italic>Lagorchestes hirsutus</italic>, and wallaroo, <italic>Macropus robustus</italic>, as shown by cyt <italic>b</italic>
+<xref rid="pone.0014156-Cardillo1" ref-type="bibr">[55]</xref>.</p><p>For COI generic and intrafamilial relationships were almost as good and in some cases provided better phylogenetic reconstructions than for cyt <italic>b</italic>. The apparently anomalous position of the gray whale and the humpback whale among <italic>Balaenoptera</italic> spp., was repeated, albeit with a different pattern of relationships, and the gray seal formed a single clade with the <italic>Pusa</italic> spp. seals. However, an expected sister grouping of <italic>Phocarctos hookeri</italic> and <italic>Neophoca cinerea</italic> maintained the paraphyly of <italic>Arctocephalus</italic> spp. The Formosan sambar, <italic>Rucervus unicolor</italic>, occurred in the same clade as <italic>Cervus</italic> spp., but the relationship between red and sika deer was reconstructed as expected <xref rid="pone.0014156-Marcot1" ref-type="bibr">[63]</xref>. The Asian colobine phylogeny was reconstructed as expected based on morphology, with a sister grouping of the langurs and the odd-nosed colobines.</p></sec><sec id="s4b"><title>4.2 Sequence Analysis</title><p>Comparison of sequence alignments showed cyt <italic>b</italic> as more variable for both inter- and intraspecific comparisons, which is in line with previous studies <xref rid="pone.0014156-Kartavtsev1" ref-type="bibr">[31]</xref>. Estimates of substitutions per site, using the <italic>p</italic>-distance and K2P distance (<xref ref-type="table" rid="pone-0014156-t003">Table 3</xref>), showed greater substitution rates at the third nucleotide position followed by the first and then the second, as expected in coding genes, owing to redundancy in the genetic code. An exception was the sample of 130 <italic>Bos taurus</italic> individuals, which showed greater substitution rates at the first nucleotide position for cyt <italic>b</italic> and at the second position for COI.</p><p>Sequence analysis also showed that cyt <italic>b</italic> contains 21.3&#x00025; more base positions (relative to the size of the gene, largest variant) that are variable than does COI. <italic>R<sub>s</sub></italic> values demonstrated more variability (&#x0002b;3.1&#x00025;) than COI in a sequence that is 408 bp shorter (1149 bp for cyt <italic>b</italic> and 1557 bp for COI, largest variants). For both genes within the 945 human samples &#x02248;50&#x00025; of the variable sites were variable in only one sample (<xref ref-type="table" rid="pone-0014156-t003">Table 3</xref>) with similar results between the 130 domestic cattle individuals. Domestic dog samples showed a different pattern in both genes with less mutations appearing in only one sample.</p><p>The average number of synonymous substitutions per synonymous site was greater in both genes than the average number of nonsynonymous substitutions per nonsynonymous site for all data sets. Pairwise comparisons showed <italic>d<sub>S</sub>&#x0003e;d<sub>N</sub></italic> and are almost equal between the two genes, indicating that both genes are in states of purifying and neutral selection. Two COI pairwise comparisons showed <italic>d<sub>N</sub>&#x0003e;d<sub>S</sub></italic>; <italic>Gorilla gorilla</italic> and <italic>G. g. gorilla</italic>, and <italic>Cervus nippon centralis</italic> and <italic>C. n. yesoensis</italic>. However, these two comparisons showed a <italic>d<sub>N</sub></italic> almost equal to <italic>d<sub>S</sub></italic>, and almost on the reference line (<xref ref-type="fig" rid="pone-0014156-g003">Figure 3e</xref> inlay). They are within the <italic>d<sub>N</sub></italic> and <italic>d<sub>S</sub></italic> values obtained for domestic cattle and human intraspecific comparisons.</p></sec><sec id="s4c"><title>4.3 Determining Thresholds</title><p>Based on the K2P histogram (<xref ref-type="fig" rid="pone-0014156-g003">Figure 3</xref>), a clear separation between inter- and intraspecific comparisons can be seen, falling between 1.5 and 2.5. This is similar to what has been identified in similar studies with other Classes of organisms <xref rid="pone.0014156-Irwin1" ref-type="bibr">[22]</xref>, <xref rid="pone.0014156-Hebert2" ref-type="bibr">[33]</xref>, <xref rid="pone.0014156-Desmyter1" ref-type="bibr">[77]</xref>&#x02013;<xref rid="pone.0014156-Santamaria1" ref-type="bibr">[81]</xref>. With all intraspecific comparisons falling well below K2P &#x0200a;=&#x0200a;1.5, the largest being 1.16, our analysis suggests that a K2P &#x0200a;=&#x0200a;1.5 can be adopted as a minimum threshold for mammalian species separation. A K2P &#x0003c;1.5 indicates the samples come from the same species and a K2P&#x0003e;2.5 indicates that the sample comes from a different mammalian species for COI and cyt <italic>b</italic>. This leaves a gray area of 1.5&#x02264;K2P&#x02264;2.5, where there is the possibility that intraspecific variation is greater than predicted and would require analysis of more than one locus. We feel that this gray area is important because, despite the huge number of sequences on the databases, there are still insufficient data to properly assess intraspecific variability for all organisms. These thresholds can be refined as more intraspecific analyses are undertaken.</p></sec><sec id="s4d"><title>4.4 Inter- and Intra-specific Analyses</title><p>The K2P distance <xref rid="pone.0014156-Kimura1" ref-type="bibr">[82]</xref> is the most widely used metric in analyses using COI <xref rid="pone.0014156-Ward1" ref-type="bibr">[83]</xref> and was used for our comparisons of inter- and intraspecific differences. Using 217 species (236 samples) to examine interspecific variation, cyt <italic>b</italic> demonstrated greater K2P values (x100) with a greater standard deviation at both the species (average 28.8&#x000b1;4.8) and Order (average 22.4&#x000b1;4.0) levels compared with those from COI (24.6&#x000b1;2.9 and 20.2&#x000b1;2.8 on average for species and Order, respectively).</p><p>Interspecific analysis showed that most (&#x0003e;99.99&#x00025;) interspecific comparisons fell above K2P &#x0200a;=&#x0200a;2.5 (27 and 37 out of 27,727 comparisons for cyt <italic>b</italic> and COI, respectively, fell below). Those comparisons falling below a K2P distance (x100) of 2.5 were generally between species (or some subspecies) or genera. COI K2P values showed two intrageneric comparisons with values &#x0003c;1.5 (1.251 between <italic>Bos indicus</italic> and <italic>B. taurus</italic>; 0.721 between <italic>Eubalaena japonica</italic> and <italic>E. australis</italic>), but cyt <italic>b</italic> K2P values for these two comparisons were &#x0003e;1.5 (1.720 between <italic>B. indicus</italic> and <italic>B. taurus</italic>; 1.536 between <italic>E. japonica</italic> and <italic>E. australis</italic>). All cyt <italic>b</italic> K2P values &#x0003c;1.5 were between subspecies (<xref ref-type="fig" rid="pone-0014156-g004">Figure 4</xref>). However, the different levels of K2P values for COI and cyt <italic>b</italic> reflect taxonomic uncertainty as to how these taxon pairs are treated; in some cases they are full species, and in others they are regarded as conspecific with <italic>B. taurus</italic> and <italic>E. australis</italic> respectively.</p><p>One comparison gave K2P &#x0200a;=&#x0200a;0 for both COI and cyt <italic>b</italic> between <italic>Mus musculus</italic> and <italic>M. m. domesticus</italic>, which was almost certainly because of inaccurate taxonomic designation of the <italic>M. musculus</italic> sample, which is likely to be <italic>M. m. domesticus</italic> (N.B. The subspecies <italic>musculus</italic> and <italic>domesticus</italic> are often treated as separate species). This misclassification is a recognized problem associated with online databases <xref rid="pone.0014156-Vilgalys1" ref-type="bibr">[84]</xref>, <xref rid="pone.0014156-Zhang1" ref-type="bibr">[85]</xref>. Conversely, all Palaearctic badgers were treated as a single species, <italic>Meles meles</italic>, until a recent morphological analysis revealed three species, including the Japanese badger, <italic>M. anakuma</italic>
+<xref rid="pone.0014156-Abramov1" ref-type="bibr">[86]</xref>, which is confirmed by K2P values of 8.736 for cyt <italic>b</italic> and 6.734 for COI in this study.</p><p>Intraspecific variation was examined using mtDNA data from 945 human, 35 domestic dog and 130 domestic cattle samples. For both genes and all three data sets, intraspecific variation was below a K2P value (x100) of 1.5. This is similar to what was found in a similar, but smaller study <xref rid="pone.0014156-Santamaria1" ref-type="bibr">[81]</xref>. Comparisons of the two genes showed that cyt <italic>b</italic> demonstrated greater intraspecific K2P values for human and domestic cattle samples (1.367 and 1.125 times greater than average COI values, respectively). However, domestic dog samples showed average K2P values 1.083 times greater in the COI comparison. The amalgamation of all four data sets showed all <italic>Bos taurus</italic> and <italic>B. indicus</italic> comparisons falling below K2P &#x0200a;=&#x0200a;1.5 in COI, but only two fell below 1.5 in cyt <italic>b</italic>, with the rest falling between 1.5 and 2. This could be due to misclassification of some of the <italic>B. indicus</italic> samples (which may have been <italic>B. taurus</italic>) or might be due to potential hybrid individuals.</p><p>Conversely, even though COI showed greater intraspecific variation within the domestic dog samples, it did not perform as well as cyt <italic>b</italic> in the combined data set. Seven of the <italic>Canis familiaris</italic> samples showed 100&#x00025; sequence match (K2P &#x0200a;=&#x0200a;0) with the <italic>C. l. lupus</italic> sample in COI. The closest sequence match between <italic>C. familiaris</italic> and <italic>C. l. lupus</italic> in cyt <italic>b</italic> was K2P (x100) &#x0200a;=&#x0200a;0.09 for one sample. <italic>C. lupus</italic> from the Middle East is known to be the ancestor of domestic dogs, perhaps with various genetic infusions from local northern wolf populations <xref rid="pone.0014156-Driscoll1" ref-type="bibr">[87]</xref>. Also within COI, 30 of the <italic>C. familiaris</italic> samples showed K2P values between 2 and 2.5, when compared to <italic>C. l. laniger</italic> and 16 domestic dog samples had K2P values between 2 and 2.5 when compared with <italic>C. l. chanco</italic>. This was not observed within the cyt <italic>b</italic> comparison. This indicates that cyt <italic>b</italic> is better suited for species differentiation, being able to better separate closely related congeneric species. However, it should be noted that recent molecular studies have suggested that <italic>C. lupus</italic> may well represent more than one species, with Himalayan/Tibetan wolves, <italic>C. l. chanco/laniger</italic>, regarded as possibly specifically distinct from <italic>C. lupus</italic>
+<xref rid="pone.0014156-Aggarwal1" ref-type="bibr">[88]</xref>.</p><p>Other anomalies within the combined dataset K2P comparisons are: <italic>Camelus bactrianus</italic> and <italic>C. b. ferus</italic> show K2P &#x0003c;1.5 with COI but &#x0003e;2.5 with cyt <italic>b</italic> and <italic>Ursus thibetanus mupinensis</italic> with <italic>U. t. ussuricus</italic>, <italic>U. thibetanus</italic>, <italic>U. t. thibetanus</italic> and <italic>U. t. formosanus</italic> show K2P &#x0003e;1.5 with COI but &#x0003c;1.5 for cyt <italic>b</italic>. Domestic and wild Bactrian camels are morphologically similar, but it is increasingly normal for wild counterparts for domestic mammals to be treated as distinct species, following the ruling of the International Commission for Zoological Nomenclature <xref rid="pone.0014156-International1" ref-type="bibr">[89]</xref>. A recent mtDNA study supports the specific differentiation between wild and domestic Bactrian camels <xref rid="pone.0014156-Silbermayr1" ref-type="bibr">[90]</xref>. The intraspecific taxonomy of the Asian black bear is in much need of revision <xref rid="pone.0014156-Kitchener1" ref-type="bibr">[91]</xref>, but only <italic>U. t. ussuricus</italic> and island populations (e.g. <italic>U. t. formosanus</italic>) are likely to be regarded as subspecifically distinctive, owing to geographical isolation. In both cases <italic>cyt b</italic> is likely to be giving a more accurate assessment of the taxonomic distinctiveness of these taxa.</p></sec><sec id="s4e"><title>4.5 Statistical Analysis</title><p>Statistical tests have been applied, for the first time to our knowledge, to sequence comparisons for identification purposes. Although the statistical results are similar for both genes (ROC curves show no differences, see <xref ref-type="supplementary-material" rid="pone.0014156.s015">Figure S13</xref> and <xref ref-type="supplementary-material" rid="pone.0014156.s020">Table S5</xref>), cyt <italic>b</italic> displays a greater ability to distinguish between samples originating from the same or different species.</p><p>All potential threshold values showed no false negatives for both genes, meaning that none of the intraspecific comparisons in our study would be shown to originate from two different species. The two genes do start to be differentiated by the rate of false positives, where COI has a value (at a threshold of 1.5) 2.4 times great than cyt <italic>b</italic>. This is shown in the false positives obtained; 90 for cyt <italic>b</italic> versus 216 for COI. These values become almost equal if the threshold is increased to 2.0, but an increase of the threshold also decreases the positive predictive value. This demonstrates that a K2P value of 1.5 provides the most accurate threshold value to determine the specific identity of unknown samples.</p><p>This is the first report that applies a statistical approach to determine the accuracy of sequence data being used for identification purposes; the key threshold value of 1.5 for cyt <italic>b</italic> will now allow unknown samples to be identified with confidence when compared to database or reference samples. This method sets a precedent that can be applied for use with other online sequence databases. These methods can also be applied to other studies or for other genes, for validation purposes.</p></sec><sec id="s4f"><title>4.6 Conclusions</title><p>Although our comparisons for COI and cyt <italic>b</italic> show similar results, cyt <italic>b</italic> demonstrates: (i) greater congruence with conventional mammalian phylogeny; (ii) greater variation in base pairs in a shorter sequence; (iii) that its intraspecific variation is similar to that of COI and still remains below a nominal threshold and; (iv) that it has a rate of false positive less than half that of COI and a greater positive predictor value. This is the first study to compare the relative values of cyt <italic>b</italic> and COI for phylogenetic reconstruction and identification of mammalian species despite much investment in the previous use of both these loci. For the first time statistical confidence has been applied to species identification. If one locus is to be used as a standard for mammalian species phylogeny and identification, our data supports the use of cyt <italic>b</italic> over that of COI.</p></sec></sec><sec sec-type="supplementary-material" id="s5"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0014156.s001"><label>Text S1</label><caption><p>Supplementary references.</p><p>(0.05 MB DOC)</p></caption><media xlink:href="pone.0014156.s001.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s002"><label>Text S2</label><caption><p>Supplementary <xref ref-type="fig" rid="pone-0014156-g002">Figure 2</xref> caption.</p><p>(0.03 MB DOC)</p></caption><media xlink:href="pone.0014156.s002.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s003"><label>Figure S1</label><caption><p>The evolutionary history inferred using the Minimum Evolution method [S115] for COI. The optimal tree with the sum of branch length &#x0200a;=&#x0200a;17.26235975 is shown. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1,000 replicates) [S116] are show as symbols on the branches (for values &#x0003e;75&#x00025;). The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree. The evolutionary distances were computed using the Kimura 2-parameter method [S117] and are in the units of the number of base substitutions per site. The ME tree was searched using the Close-Neighbor-Interchange (CNI) algorithm [S118] at a search level of 1. The Neighbor-joining algorithm [S119] was used to generate the initial tree.</p><p>(10.30 MB EPS)</p></caption><media xlink:href="pone.0014156.s003.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s004"><label>Figure S2</label><caption><p>The evolutionary history inferred using the Maximum Parsimony method [S120] for COI. The consensus tree inferred from 15 most parsimonious trees is shown. The consistency index is 0.051612, the retention index is (0.500358), and the composite index is 0.027801 (0.025824) for all sites and parsimony-informative sites (in parentheses). The percentage of parsimonious trees in which the associated taxa clustered together are shown as symbols (for values &#x0003e;75&#x00025;). The MP tree was obtained using the Close-Neighbor-Interchange algorithm [S118] with search level 3 [S110&#x02013;18] in which the initial trees were obtained with the random addition of sequences (10 replicates). There were a total of 1537 positions in the final dataset, out of which 744 were parsimony informative.</p><p>(10.29 MB EPS)</p></caption><media xlink:href="pone.0014156.s004.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s005"><label>Figure S3</label><caption><p>The evolutionary history inferred using the Maximum Likelihood method as calculated using MrBayes [S111&#x02013;112] for COI. Markov chain Monte Carlo (MCMC) [S121] was executed in two independent analyses starting from different random seeds, parameters were DNA data type, a 4&#x000d7;4 nucleotide model, Nst of 6 with a Dirichlet prior, no covarion, four states with frequencies of a Dirichlet prior, an invariable gamma (default settings), vertebrate mitochondrial code and were partitioned by codon position (1st, 2nd or 3rd base of a codon) [S122&#x02013;123]. The consensus tree was inferred from 15,002 trees. Total tree length is 59.710509 with variance of 2.341455. The median tree length of all sampled trees is 59.749; the lower and upper boundaries of the 95&#x00025; credibility interval are 56.876 and 62.723, respectively. The six reversible substitution rates, four stationary state frequencies (pi), the shape of the gamma distribution (&#x003b1;) and the proportion of invariable sites (pinvar) can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s018">Table S3</xref>. Posterior probabilities are shown as symbols on the branches (for values &#x0003e;75&#x00025;).</p><p>(10.28 MB EPS)</p></caption><media xlink:href="pone.0014156.s005.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s006"><label>Figure S4</label><caption><p>The evolutionary history inferred using the Neighbor-Joining method [S119] for COI. The optimal tree with the sum of branch length &#x0200a;=&#x0200a;17.29940543 is shown. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1,000 replicates) [S116] are show as symbols on the branches (for values &#x0003e;75&#x00025;). The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree. The evolutionary distances were computed using the Kimura 2-parameter method [S117] and are in the units of the number of base substitutions per site.</p><p>(10.29 MB EPS)</p></caption><media xlink:href="pone.0014156.s006.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s007"><label>Figure S5</label><caption><p>The evolutionary history inferred using the Maximum Likelihood method as calculated using RAxML [S113] for COI. Rapid bootstrapping was used followed by searching for the best ML Tree. Bootstrapping was performed using a random seed, 100 repetitions, a general time reversible model of nucleotide substitution [S124] with the I model of rate heterogeneity [S125] and four discrete rate categories. Tree length is 52.96548. The six reversible substitution rates, four stationary state frequencies (pi), the shape of the gamma distribution (&#x003b1;) and the proportion of invariable sites (pinvar) can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s019">Table S4</xref>. Posterior probabilities are shown as symbols on the branches (for values &#x0003e;75&#x00025;).</p><p>(10.27 MB EPS)</p></caption><media xlink:href="pone.0014156.s007.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s008"><label>Figure S6</label><caption><p>The evolutionary history inferred using the Minimum Evolution method [S115] for cyt <italic>b</italic>. The optimal tree with the sum of branch length &#x0200a;=&#x0200a;19.25186677 is shown. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1,000 replicates) [S116] are shown as symbols on the branches (for values &#x0003e;75&#x00025;). The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree. The evolutionary distances were computed using the Kimura 2-parameter method [S117] and are in the units of the number of base substitutions per site. The ME tree was searched using the Close-Neighbor-Interchange (CNI) algorithm [S118] at a search level of 1. The Neighbor-joining algorithm [S119] was used to generate the initial tree.</p><p>(10.27 MB EPS)</p></caption><media xlink:href="pone.0014156.s008.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s009"><label>Figure S7</label><caption><p>The evolutionary history inferred using the Maximum Parsimony method [S120] for cyt <italic>b</italic>. The consensus tree inferred from 15 most parsimonious trees is shown. The consistency index is 0.065208, the retention index is (0.508168), and the composite index is 0.034876 (0.033137) for all sites and parsimony-informative sites (in parentheses). The percentage of parsimonious trees in which the associated taxa clustered together are shown as symbols (for values &#x0003e;75&#x00025;). The MP tree was obtained using the Close-Neighbor-Interchange algorithm [S118] with search level 3 [S110&#x02013;118] in which the initial trees were obtained with the random addition of sequences (10 replicates). There were a total of 1124 positions in the final dataset, out of which 710 were parsimony informative.</p><p>(10.27 MB EPS)</p></caption><media xlink:href="pone.0014156.s009.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s010"><label>Figure S8</label><caption><p>The evolutionary history inferred using the Maximum Likelihood method as calculated using MrBayes [S111&#x02013;112] for cyt <italic>b</italic>. Markov chain Monte Carlo (MCMC) [S121] was executed in two independent analyses starting from different random seeds, parameters were DNA data type, a 4&#x000d7;4 nucleotide model, Nst of 6 with a Dirichlet prior, no covarion, four states with frequencies of a Dirichlet prior, an invariable gamma (default settings), vertebrate mitochondrial code and were partitioned by codon position (1st, 2nd or 3rd base of a codon) [S122&#x02013;123]. The consensus tree was inferred from 15,002 trees. Total tree length is 59.66446 with variance of 2.882398. The median tree length of all sampled trees is 59.532; the lower and upper boundaries of the 95&#x00025; credibility interval are 56.701 and 63.177, respectively. The six reversible substitution rates, four stationary state frequencies (pi), the shape of the gamma distribution (&#x003b1;) and the proportion of invariable sites (pinvar) can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s018">Table S3</xref>. Posterior probabilities are shown as symbols on the branches (for values &#x0003e;75&#x00025;).</p><p>(10.28 MB EPS)</p></caption><media xlink:href="pone.0014156.s010.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s011"><label>Figure S9</label><caption><p>The evolutionary history inferred using the Neighbor-Joining method [S119] for cyt <italic>b</italic>. The optimal tree with the sum of branch length &#x0200a;=&#x0200a;19.31726074 is shown. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1,000 replicates) [S116] are shown as symbols on the branches (for values &#x0003e;75&#x00025;). The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree. The evolutionary distances were computed using the Kimura 2-parameter method [S117] and are in the units of the number of base substitutions per site.</p><p>(10.27 MB EPS)</p></caption><media xlink:href="pone.0014156.s011.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s012"><label>Figure S10</label><caption><p>The evolutionary history inferred using the Maximum Likelihood method as calculated using RAxML [S113] for cyt <italic>b</italic>. Rapid bootstrapping was used followed by searching for the best ML Tree. Bootstrapping was performed using a random seed, 100 repetitions, a general time reversible model of nucleotide substitution [S124] with the I model of rate heterogeneity [S125] and four discrete rate categories. Tree length is 66.78724. The six reversible substitution rates, four stationary state frequencies (pi), the shape of the gamma distribution (&#x003b1;) and the proportion of invariable sites (pinvar) can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s019">Table S4</xref>. Posterior probabilities are shown as symbols on the branches (for values &#x0003e;75&#x00025;).</p><p>(10.27 MB EPS)</p></caption><media xlink:href="pone.0014156.s012.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s013"><label>Figure S11</label><caption><p>Legend for <xref ref-type="supplementary-material" rid="pone.0014156.s003">Figures S1</xref>&#x02013;<xref ref-type="supplementary-material" rid="pone.0014156.s012">S10</xref>. Phylogenetic trees based on the aligned sequences for cyt <italic>b</italic> and COI of 236 mammals (compromising 29 Orders, 89 Families, 174 genera and 217 species). Color ranges are the same for all trees and correspond to the Order of the species. Minimum Evolution, Maximum Parsimony and Neighbor-Joining phylogenetic trees were created in MEGA 4.0 [S109&#x02013;110]. Maximum Likelihood phylogenetic trees were calculated in MrBayes [S111&#x02013;112] and RAxML [S113]. All trees were exported and edited online using the Interactive Tree Of Life (iTOL) [S114] to define color ranges and export as image files.</p><p>(9.07 MB EPS)</p></caption><media xlink:href="pone.0014156.s013.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s014"><label>Figure S12</label><caption><p>The <italic>R<sub>s</sub></italic> values for COI (A) and cyt <italic>b</italic> (B) over the entire genes represented by the blue bars. A value of 2 represents 100&#x00025; conservation over all species at that base. Moving averages of homology are shown for blocks of 101 bp (red) 401 bp (purple) and 601 bp (yellow).</p><p>(8.24 MB EPS)</p></caption><media xlink:href="pone.0014156.s014.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s015"><label>Figure S13</label><caption><p>Receiver Operator Characteristic (ROC) curves for COI and cyt <italic>b</italic>. A reference line is given. The two genes cannot be differentiated based on their ROC curves. Area under the curves and statistical results can be found in <xref ref-type="supplementary-material" rid="pone.0014156.s020">Table S5</xref>. Calculated in SPSS 17.0.0.</p><p>(1.26 MB EPS)</p></caption><media xlink:href="pone.0014156.s015.eps"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s016"><label>Table S1</label><caption><p>The list of complete mitochondrial sequences used for the cyt <italic>b</italic> and COI alignments. Accession number, common name, Order, Family, species and reference as given by the NCBI listing are shown. DS: Direct Submission.</p><p>(0.40 MB DOC)</p></caption><media xlink:href="pone.0014156.s016.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s017"><label>Table S2</label><caption><p>The list of human (<italic>Homo sapiens</italic>), domestic cattle (<italic>Bos taurus</italic>) and domestic dog (<italic>Canis familiaris</italic>) complete mitochondrial sequences used for the cyt <italic>b</italic> and COI alignments. Accession number, ethnicity/breed (if known) and reference as given by the NCBI listing are shown.</p><p>(0.27 MB DOC)</p></caption><media xlink:href="pone.0014156.s017.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s018"><label>Table S3</label><caption><p>The statistical results from the Maximum Likelihood phylogenetic trees calculated using MrBayes [S111&#x02013;112] from 15,002 trees sampled. Tree length, six reversible substitution rates, four stationary state frequencies (pi), the shape of the gamma distribution (&#x003b1;) and the proportion of invariable sites (pinvar) are displayed.</p><p>(0.07 MB DOC)</p></caption><media xlink:href="pone.0014156.s018.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s019"><label>Table S4</label><caption><p>The statistical results from the Maximum Likelihood phylogenetic trees calculated using RAxML [S113] from 100 trees sampled. Tree length, six reversible substitution rates, four stationary state frequencies (pi), the shape of the gamma distribution (&#x003b1;) and the proportion of invariable sites (pinvar) are displayed.</p><p>(0.03 MB DOC)</p></caption><media xlink:href="pone.0014156.s019.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0014156.s020"><label>Table S5</label><caption><p>The statistical results from the ROC curve (<xref ref-type="supplementary-material" rid="pone.0014156.s005">Figure S3</xref>). Calculated in SPSS 17.0.0.</p><p>(0.03 MB DOC)</p></caption><media xlink:href="pone.0014156.s020.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack><p>We would like to thank Dr. Peter Gill and Dr. Hilary Buchanan for advice with the statistical methods.</p></ack><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>This project was funded by the Leverhulme Trust (Grant number A20080076) awarded to AMTL. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0014156-Asher1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Asher</surname><given-names>R</given-names></name></person-group>
+<year>2007</year>
+<article-title>A web-database of mammalian morphology and a reanalysis of placental phylogeny.</article-title>
+<source>BMC Evol Biol</source>
+<volume>7</volume>
+<fpage>108</fpage>
+<pub-id pub-id-type="pmid">17608930</pub-id></element-citation></ref><ref id="pone.0014156-Groves1"><label>2</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Groves</surname><given-names>C</given-names></name></person-group>
+<year>2001</year>
+<article-title>Primate Taxonomy.</article-title>
+<publisher-loc>Washington, DC</publisher-loc>
+<publisher-name>Smithsonian Institution Press</publisher-name>
+</element-citation></ref><ref id="pone.0014156-Kemp1"><label>3</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Kemp</surname><given-names>TS</given-names></name></person-group>
+<year>2005</year>
+<article-title>The Origin and Evolution of Mammals.</article-title>
+<publisher-loc>Oxford</publisher-loc>
+<publisher-name>Oxford University Press</publisher-name>
+</element-citation></ref><ref id="pone.0014156-Novacek1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Novacek</surname><given-names>MJ</given-names></name></person-group>
+<year>1992</year>
+<article-title>Mammalian phytogeny: shaking the tree.</article-title>
+<source>Nature</source>
+<volume>356</volume>
+<fpage>121</fpage>
+<lpage>125</lpage>
+<pub-id pub-id-type="pmid">1545862</pub-id></element-citation></ref><ref id="pone.0014156-Rose1"><label>5</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Rose</surname><given-names>KD</given-names></name></person-group>
+<year>2006</year>
+<article-title>The beginning of the age of mammals.</article-title>
+<publisher-loc>Baltimore and London</publisher-loc>
+<publisher-name>Johns Hopkins University Press</publisher-name>
+</element-citation></ref><ref id="pone.0014156-Shoshani1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shoshani</surname><given-names>J</given-names></name><name><surname>McKenna</surname><given-names>MC</given-names></name></person-group>
+<year>1998</year>
+<article-title>Higher Taxonomic Relationships among Extant Mammals Based on Morphology, with Selected Comparisons of Results from Molecular Data.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>9</volume>
+<fpage>572</fpage>
+<lpage>584</lpage>
+<pub-id pub-id-type="pmid">9668007</pub-id></element-citation></ref><ref id="pone.0014156-BuckleyBeason1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Buckley-Beason</surname><given-names>VA</given-names></name><name><surname>Johnson</surname><given-names>WE</given-names></name><name><surname>Nash</surname><given-names>WG</given-names></name><name><surname>Stanyon</surname><given-names>R</given-names></name><name><surname>Menninger</surname><given-names>JC</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Molecular evidence for species-level distinctions in clouded leopards.</article-title>
+<source>Curr Biol</source>
+<volume>16</volume>
+<fpage>2371</fpage>
+<lpage>2376</lpage>
+<pub-id pub-id-type="pmid">17141620</pub-id></element-citation></ref><ref id="pone.0014156-Peng1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Peng</surname><given-names>R</given-names></name><name><surname>Zeng</surname><given-names>B</given-names></name><name><surname>Meng</surname><given-names>X</given-names></name><name><surname>Yue</surname><given-names>B</given-names></name><name><surname>Zhang</surname><given-names>Z</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The complete mitochondrial genome and phylogenetic analysis of the giant panda (Ailuropoda melanoleuca).</article-title>
+<source>Gene</source>
+<volume>397</volume>
+<fpage>76</fpage>
+<lpage>83</lpage>
+<pub-id pub-id-type="pmid">17499457</pub-id></element-citation></ref><ref id="pone.0014156-Arnason1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Arnason</surname><given-names>U</given-names></name><name><surname>Adegoke</surname><given-names>JA</given-names></name><name><surname>Bodin</surname><given-names>K</given-names></name><name><surname>Born</surname><given-names>EW</given-names></name><name><surname>Esa</surname><given-names>YB</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Mammalian mitogenomic relationships and the root of the eutherian tree.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>8151</fpage>
+<lpage>8156</lpage>
+<pub-id pub-id-type="pmid">12034869</pub-id></element-citation></ref><ref id="pone.0014156-Liu1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liu</surname><given-names>F-GR</given-names></name><name><surname>Miyamoto</surname><given-names>MM</given-names></name><name><surname>Freire</surname><given-names>NP</given-names></name><name><surname>Ong</surname><given-names>PQ</given-names></name><name><surname>Tennant</surname><given-names>MR</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>Molecular and Morphological Supertrees for Eutherian (Placental) Mammals.</article-title>
+<source>Science</source>
+<volume>291</volume>
+<fpage>1786</fpage>
+<lpage>1789</lpage>
+<pub-id pub-id-type="pmid">11230694</pub-id></element-citation></ref><ref id="pone.0014156-Price1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Price</surname><given-names>SA</given-names></name><name><surname>Bininda-Emonds</surname><given-names>ORP</given-names></name><name><surname>Gittleman</surname><given-names>JL</given-names></name></person-group>
+<year>2005</year>
+<article-title>A complete phylogeny of the whales, dolphins and even-toed hoofed mammals (Cetartiodactyla).</article-title>
+<source>Biological Reviews</source>
+<volume>80</volume>
+<fpage>445</fpage>
+<lpage>473</lpage>
+<pub-id pub-id-type="pmid">16094808</pub-id></element-citation></ref><ref id="pone.0014156-Stanhope1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stanhope</surname><given-names>MJ</given-names></name><name><surname>Waddell</surname><given-names>VG</given-names></name><name><surname>Madsen</surname><given-names>O</given-names></name><name><surname>de Jong</surname><given-names>W</given-names></name><name><surname>Hedges</surname><given-names>SB</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>Molecular evidence for multiple origins of Insectivora and for a new order of endemic African insectivore mammals.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>95</volume>
+<fpage>9967</fpage>
+<lpage>9972</lpage>
+<pub-id pub-id-type="pmid">9707584</pub-id></element-citation></ref><ref id="pone.0014156-Tabuce1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tabuce</surname><given-names>R</given-names></name><name><surname>Asher</surname><given-names>RJ</given-names></name><name><surname>Lehmann</surname><given-names>T</given-names></name></person-group>
+<year>2008</year>
+<article-title>Afrotherian mammals: a review of current data.</article-title>
+<source>Mammalia</source>
+<volume>72</volume>
+<fpage>2</fpage>
+<lpage>14</lpage>
+</element-citation></ref><ref id="pone.0014156-Simon1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Simon</surname><given-names>C</given-names></name><name><surname>Buckley</surname><given-names>TR</given-names></name><name><surname>Frati</surname><given-names>F</given-names></name><name><surname>Stewart</surname><given-names>JB</given-names></name><name><surname>Beckenbach</surname><given-names>AT</given-names></name></person-group>
+<year>2006</year>
+<article-title>Incorporating molecular evolution into phylogenetic analysis, and a new compilation of conserved polymerase chain reaction primers for animal mitochondrial DNA.</article-title>
+<source>Annu Rev Ecol Evol Syst</source>
+<volume>37</volume>
+<fpage>545</fpage>
+<lpage>579</lpage>
+</element-citation></ref><ref id="pone.0014156-BalitzkiKorte1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Balitzki-Korte</surname><given-names>B</given-names></name><name><surname>Anslinger</surname><given-names>K</given-names></name><name><surname>Bartsch</surname><given-names>C</given-names></name><name><surname>Rolf</surname><given-names>B</given-names></name></person-group>
+<year>2005</year>
+<article-title>Species identification by means of pyrosequencing the mitochondrial 12S rRNA gene.</article-title>
+<source>Int J Leg Med</source>
+<volume>119</volume>
+<fpage>291</fpage>
+<lpage>294</lpage>
+</element-citation></ref><ref id="pone.0014156-Melton1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Melton</surname><given-names>T</given-names></name><name><surname>Holland</surname><given-names>C</given-names></name></person-group>
+<year>2007</year>
+<article-title>Routine forensic use of the mitochondrial 12S ribosomal RNA gene for species identification.</article-title>
+<source>J Forensic Sci</source>
+<volume>52</volume>
+<fpage>1305</fpage>
+<lpage>1307</lpage>
+<pub-id pub-id-type="pmid">17868265</pub-id></element-citation></ref><ref id="pone.0014156-Mitani1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mitani</surname><given-names>T</given-names></name><name><surname>Akane</surname><given-names>A</given-names></name><name><surname>Tokiyasu</surname><given-names>T</given-names></name><name><surname>Yoshimura</surname><given-names>S</given-names></name><name><surname>Okii</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Identification of animal species using the partial sequences in the mitochondrial 16S rRNA gene.</article-title>
+<source>Leg Med (Tokyo)</source>
+<volume>11</volume>
+<issue>Suppl 1</issue>
+<fpage>S449</fpage>
+<lpage>450</lpage>
+<pub-id pub-id-type="pmid">19289300</pub-id></element-citation></ref><ref id="pone.0014156-Dubey1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dubey</surname><given-names>B</given-names></name><name><surname>Meganathan</surname><given-names>PR</given-names></name><name><surname>Haque</surname><given-names>I</given-names></name></person-group>
+<year>2009</year>
+<article-title>Multiplex PCR assay for rapid identification of three endangered snake species of India.</article-title>
+<source>Conserv Genet</source>
+<volume>10</volume>
+<fpage>1861</fpage>
+<lpage>1864</lpage>
+</element-citation></ref><ref id="pone.0014156-Roe1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Roe</surname><given-names>AD</given-names></name><name><surname>Sperling</surname><given-names>FAH</given-names></name></person-group>
+<year>2007</year>
+<article-title>Patterns of evolution of mitochondrial cytochrome c oxidase I and II DNA and implications for DNA barcoding.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>44</volume>
+<fpage>325</fpage>
+<lpage>345</lpage>
+<pub-id pub-id-type="pmid">17270468</pub-id></element-citation></ref><ref id="pone.0014156-Alessandrini1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alessandrini</surname><given-names>F</given-names></name><name><surname>Mazzanti</surname><given-names>M</given-names></name><name><surname>Onofri</surname><given-names>V</given-names></name><name><surname>Turchi</surname><given-names>C</given-names></name><name><surname>Tagliabracci</surname><given-names>A</given-names></name></person-group>
+<year>2008</year>
+<article-title>MtDNA analysis for genetic identification of forensically important insects.</article-title>
+<source>Forensic Sci Int Gen Sup</source>
+<volume>1</volume>
+<fpage>584</fpage>
+<lpage>585</lpage>
+</element-citation></ref><ref id="pone.0014156-Ascunce1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ascunce</surname><given-names>M</given-names></name><name><surname>Oklander</surname><given-names>L</given-names></name><name><surname>Murdy</surname><given-names>M</given-names></name></person-group>
+<year>2003</year>
+<article-title>Amplification of mitochondrial COII gene from DNA extracted from hair samples in some species of new world monkeys.</article-title>
+<source>Folia Primatol (Basel)</source>
+<volume>74</volume>
+<fpage>165</fpage>
+<lpage>167</lpage>
+<pub-id pub-id-type="pmid">12861970</pub-id></element-citation></ref><ref id="pone.0014156-Irwin1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Irwin</surname><given-names>D</given-names></name><name><surname>Kocher</surname><given-names>T</given-names></name><name><surname>Wilson</surname><given-names>A</given-names></name></person-group>
+<year>1991</year>
+<article-title>Evolution of the cytochrome <italic>b</italic> gene of mammals.</article-title>
+<source>J Mol Evol</source>
+<volume>32</volume>
+<fpage>128</fpage>
+<lpage>144</lpage>
+<pub-id pub-id-type="pmid">1901092</pub-id></element-citation></ref><ref id="pone.0014156-Kocher1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kocher</surname><given-names>TD</given-names></name><name><surname>Thomas</surname><given-names>WK</given-names></name><name><surname>Meyer</surname><given-names>A</given-names></name><name><surname>Edwards</surname><given-names>SV</given-names></name><name><surname>Paabo</surname><given-names>S</given-names></name><etal/></person-group>
+<year>1989</year>
+<article-title>Dynamics of mitochondrial DNA evolution in animals: amplification and sequencing with conserved primers.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>86</volume>
+<fpage>6196</fpage>
+<lpage>6200</lpage>
+<pub-id pub-id-type="pmid">2762322</pub-id></element-citation></ref><ref id="pone.0014156-Anderson1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Anderson</surname><given-names>S</given-names></name><name><surname>Bankier</surname><given-names>AT</given-names></name><name><surname>Barrell</surname><given-names>BG</given-names></name><name><surname>de Bruijn</surname><given-names>MHL</given-names></name><name><surname>Coulson</surname><given-names>AR</given-names></name><etal/></person-group>
+<year>1981</year>
+<article-title>Sequence and organization of the human mitochondrial genome.</article-title>
+<source>Nature</source>
+<volume>290</volume>
+<fpage>457</fpage>
+<lpage>465</lpage>
+<pub-id pub-id-type="pmid">7219534</pub-id></element-citation></ref><ref id="pone.0014156-Andrews1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Andrews</surname><given-names>RM</given-names></name><name><surname>Kubacka</surname><given-names>I</given-names></name><name><surname>Chinnery</surname><given-names>PF</given-names></name><name><surname>Lightowlers</surname><given-names>RN</given-names></name><name><surname>Turnbull</surname><given-names>DM</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Reanalysis and revision of the Cambridge reference sequence for human mitochondrial DNA.</article-title>
+<source>Nat Genet</source>
+<volume>23</volume>
+<fpage>147</fpage>
+<lpage>147</lpage>
+<pub-id pub-id-type="pmid">10508508</pub-id></element-citation></ref><ref id="pone.0014156-Hebert1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hebert</surname><given-names>PDN</given-names></name><name><surname>Cywinska</surname><given-names>A</given-names></name><name><surname>Ball</surname><given-names>SL</given-names></name><name><surname>deWaard</surname><given-names>JR</given-names></name></person-group>
+<year>2003</year>
+<article-title>Biological identifications through DNA barcodes.</article-title>
+<source>Proceedings of the Royal Society B: Biological Sciences</source>
+<volume>270</volume>
+<fpage>313</fpage>
+<lpage>321</lpage>
+<pub-id pub-id-type="pmid">12614582</pub-id></element-citation></ref><ref id="pone.0014156-Borisenko1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Borisenko</surname><given-names>AV</given-names></name><name><surname>Lim</surname><given-names>BK</given-names></name><name><surname>Ivanova</surname><given-names>NV</given-names></name><name><surname>Hanner</surname><given-names>RH</given-names></name><name><surname>Hebert</surname><given-names>PDN</given-names></name></person-group>
+<year>2008</year>
+<article-title>DNA barcoding in surveys of small mammal communities: a field study in Suriname.</article-title>
+<source>Mol Ecol Resour</source>
+<volume>8</volume>
+<fpage>471</fpage>
+<lpage>479</lpage>
+<pub-id pub-id-type="pmid">21585824</pub-id></element-citation></ref><ref id="pone.0014156-Honeycutt1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Honeycutt</surname><given-names>RL</given-names></name><name><surname>Nedbal</surname><given-names>MA</given-names></name><name><surname>Adkins</surname><given-names>RM</given-names></name><name><surname>Janecek</surname><given-names>LL</given-names></name></person-group>
+<year>1995</year>
+<article-title>Mammalian mitochondrial DNA evolution: A comparison of the cytochrome b and cytochrome c oxidase II genes.</article-title>
+<source>J Mol Evol</source>
+<volume>40</volume>
+<fpage>260</fpage>
+<lpage>272</lpage>
+<pub-id pub-id-type="pmid">7723053</pub-id></element-citation></ref><ref id="pone.0014156-Alter1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alter</surname><given-names>S</given-names></name><name><surname>Palumbi</surname><given-names>S</given-names></name></person-group>
+<year>2009</year>
+<article-title>Comparing evolutionary patterns and variability in the mitochondrial control region and cytochrome b in three species of Baleen whales.</article-title>
+<source>J Mol Evol</source>
+<volume>68</volume>
+<fpage>97</fpage>
+<lpage>111</lpage>
+<pub-id pub-id-type="pmid">19116685</pub-id></element-citation></ref><ref id="pone.0014156-Agnarsson1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Agnarsson</surname><given-names>I</given-names></name><name><surname>May-Collado</surname><given-names>LJ</given-names></name></person-group>
+<year>2008</year>
+<article-title>The phylogeny of Cetartiodactyla: The importance of dense taxon sampling, missing data, and the remarkable promise of cytochrome b to provide reliable species-level phylogenies.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>48</volume>
+<fpage>964</fpage>
+<lpage>985</lpage>
+<pub-id pub-id-type="pmid">18590827</pub-id></element-citation></ref><ref id="pone.0014156-Kartavtsev1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kartavtsev</surname><given-names>YP</given-names></name><name><surname>Lee</surname><given-names>JS</given-names></name></person-group>
+<year>2006</year>
+<article-title>Analysis of nucleotide diversity at the cytochrome b and cytochrome oxidase 1 genes at the population, species, and genus levels.</article-title>
+<source>Russ J Genet</source>
+<volume>42</volume>
+<fpage>341</fpage>
+<lpage>362</lpage>
+</element-citation></ref><ref id="pone.0014156-Weir1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weir</surname><given-names>JT</given-names></name><name><surname>Schluter</surname><given-names>D</given-names></name></person-group>
+<year>2007</year>
+<article-title>The Latitudinal Gradient in Recent Speciation and Extinction Rates of Birds and Mammals.</article-title>
+<source>Science</source>
+<volume>315</volume>
+<fpage>1574</fpage>
+<lpage>1576</lpage>
+<pub-id pub-id-type="pmid">17363673</pub-id></element-citation></ref><ref id="pone.0014156-Hebert2"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hebert</surname><given-names>PDN</given-names></name><name><surname>Stoeckle</surname><given-names>MY</given-names></name><name><surname>Zemlak</surname><given-names>TS</given-names></name><name><surname>Francis</surname><given-names>CM</given-names></name></person-group>
+<year>2004</year>
+<article-title>Identification of Birds through DNA Barcodes.</article-title>
+<source>PLoS Biol</source>
+<volume>2</volume>
+<fpage>e312</fpage>
+<pub-id pub-id-type="pmid">15455034</pub-id></element-citation></ref><ref id="pone.0014156-Su1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Su</surname><given-names>B</given-names></name><name><surname>Wang</surname><given-names>Y-x</given-names></name><name><surname>Lan</surname><given-names>H</given-names></name><name><surname>Wang</surname><given-names>W</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name></person-group>
+<year>1999</year>
+<article-title>Phylogenetic study of complete cytochrome <italic>b</italic> genes in musk deer (Genus <italic>Moschus</italic>) using museum samples.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>12</volume>
+<fpage>241</fpage>
+<lpage>249</lpage>
+<pub-id pub-id-type="pmid">10413620</pub-id></element-citation></ref><ref id="pone.0014156-Abiadh1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abiadh</surname><given-names>A</given-names></name><name><surname>Chetoui</surname><given-names>Mb</given-names></name><name><surname>Lamine-Cheniti</surname><given-names>T</given-names></name><name><surname>Capanna</surname><given-names>E</given-names></name><name><surname>Colangelo</surname><given-names>P</given-names></name></person-group>
+<year>2010</year>
+<article-title>Molecular phylogenetics of the genus Gerbillus (Rodentia, Gerbillinae): Implications for systematics, taxonomy and chromosomal evolution.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>56</volume>
+<fpage>513</fpage>
+<lpage>518</lpage>
+<pub-id pub-id-type="pmid">20412863</pub-id></element-citation></ref><ref id="pone.0014156-Moritz1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Moritz</surname><given-names>C</given-names></name><name><surname>Cicero</surname><given-names>C</given-names></name></person-group>
+<year>2004</year>
+<article-title>DNA Barcoding: Promise and Pitfalls.</article-title>
+<source>PLoS Biol</source>
+<volume>2</volume>
+<fpage>e354</fpage>
+<pub-id pub-id-type="pmid">15486587</pub-id></element-citation></ref><ref id="pone.0014156-Chatterjee1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chatterjee</surname><given-names>H</given-names></name><name><surname>Ho</surname><given-names>S</given-names></name><name><surname>Barnes</surname><given-names>I</given-names></name><name><surname>Groves</surname><given-names>C</given-names></name></person-group>
+<year>2009</year>
+<article-title>Estimating the phylogeny and divergence times of primates using a supermatrix approach.</article-title>
+<source>BMC Evol Biol</source>
+<volume>9</volume>
+<fpage>259</fpage>
+<pub-id pub-id-type="pmid">19860891</pub-id></element-citation></ref><ref id="pone.0014156-Rakotoarisoa1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rakotoarisoa</surname><given-names>J-E</given-names></name><name><surname>Raheriarisena</surname><given-names>M</given-names></name><name><surname>Goodman</surname><given-names>SM</given-names></name></person-group>
+<year>2010</year>
+<article-title>Phylogeny and species boundaries of the endemic species complex, Eliurus antsingy and E. carletoni (Rodentia: Muroidea: Nesomyidae), in Madagascar using mitochondrial and nuclear DNA sequence data.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>57</volume>
+<fpage>11</fpage>
+<lpage>22</lpage>
+<pub-id pub-id-type="pmid">20685291</pub-id></element-citation></ref><ref id="pone.0014156-Kumar1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kumar</surname><given-names>S</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name><name><surname>Dudley</surname><given-names>J</given-names></name><name><surname>Tamura</surname><given-names>K</given-names></name></person-group>
+<year>2008</year>
+<article-title>MEGA: A biologist-centric software for evolutionary analysis of DNA and protein sequences.</article-title>
+<source>Brief Bioinform</source>
+<volume>9</volume>
+<fpage>299</fpage>
+<lpage>306</lpage>
+<pub-id pub-id-type="pmid">18417537</pub-id></element-citation></ref><ref id="pone.0014156-Tamura1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tamura</surname><given-names>K</given-names></name><name><surname>Dudley</surname><given-names>J</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<year>2007</year>
+<article-title>MEGA4: Molecular Evolutionary Genetics Analysis (MEGA) software version 4.0.</article-title>
+<source>Mol Biol Evol</source>
+<volume>24</volume>
+<fpage>1596</fpage>
+<lpage>1599</lpage>
+<pub-id pub-id-type="pmid">17488738</pub-id></element-citation></ref><ref id="pone.0014156-Thompson1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thompson</surname><given-names>JD</given-names></name><name><surname>Higgins</surname><given-names>DG</given-names></name><name><surname>Gibson</surname><given-names>TJ</given-names></name></person-group>
+<year>1994</year>
+<article-title>CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>22</volume>
+<fpage>4673</fpage>
+<lpage>4680</lpage>
+<pub-id pub-id-type="pmid">7984417</pub-id></element-citation></ref><ref id="pone.0014156-Nei1"><label>42</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Nei</surname><given-names>M</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<year>2000</year>
+<article-title>Molecular Evolution and Phylogenetics.</article-title>
+<publisher-loc>New York</publisher-loc>
+<publisher-name>Oxford University Press</publisher-name>
+<size units="page">333</size>
+</element-citation></ref><ref id="pone.0014156-Stamatakis1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stamatakis</surname><given-names>A</given-names></name><name><surname>Hoover</surname><given-names>P</given-names></name><name><surname>Rougemont</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>A Rapid Bootstrap Algorithm for the RAxML Web Servers.</article-title>
+<source>Syst Biol</source>
+<volume>57</volume>
+<fpage>758</fpage>
+<lpage>771</lpage>
+<pub-id pub-id-type="pmid">18853362</pub-id></element-citation></ref><ref id="pone.0014156-Geyer1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Geyer</surname><given-names>CJ</given-names></name></person-group>
+<year>1991</year>
+<article-title>Markov chain Monte Carlo maximum likelihood. 23rd Symposium on the Interface.</article-title>
+<fpage>156</fpage>
+<lpage>163</lpage>
+</element-citation></ref><ref id="pone.0014156-Goldman1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Goldman</surname><given-names>N</given-names></name><name><surname>Yang</surname><given-names>Z</given-names></name></person-group>
+<year>1994</year>
+<article-title>A codon-based model of nucleotide substitution for protein-coding DNA sequences.</article-title>
+<source>Mol Biol Evol</source>
+<volume>11</volume>
+<fpage>725</fpage>
+<lpage>736</lpage>
+<pub-id pub-id-type="pmid">7968486</pub-id></element-citation></ref><ref id="pone.0014156-Huelsenbeck1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Huelsenbeck</surname><given-names>JP</given-names></name><name><surname>Ronquist</surname><given-names>F</given-names></name></person-group>
+<year>2001</year>
+<article-title>MRBAYES: Bayesian inference of phylogenetic trees.</article-title>
+<source>Bioinformatics</source>
+<volume>17</volume>
+<fpage>754</fpage>
+<lpage>755</lpage>
+<pub-id pub-id-type="pmid">11524383</pub-id></element-citation></ref><ref id="pone.0014156-Muse1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Muse</surname><given-names>SV</given-names></name><name><surname>Gaut</surname><given-names>BS</given-names></name></person-group>
+<year>1994</year>
+<article-title>A likelihood approach for comparing synonymous and nonsynonymous nucleotide substitution rates, with application to the chloroplast genome.</article-title>
+<source>Mol Biol Evol</source>
+<volume>11</volume>
+<fpage>715</fpage>
+<lpage>724</lpage>
+<pub-id pub-id-type="pmid">7968485</pub-id></element-citation></ref><ref id="pone.0014156-Ronquist1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ronquist</surname><given-names>F</given-names></name><name><surname>Huelsenbeck</surname><given-names>JP</given-names></name></person-group>
+<year>2003</year>
+<article-title>MrBayes 3: Bayesian phylogenetic inference under mixed models.</article-title>
+<source>Bioinformatics</source>
+<volume>19</volume>
+<fpage>1572</fpage>
+<lpage>1574</lpage>
+<pub-id pub-id-type="pmid">12912839</pub-id></element-citation></ref><ref id="pone.0014156-Letunic1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Letunic</surname><given-names>I</given-names></name><name><surname>Bork</surname><given-names>P</given-names></name></person-group>
+<year>2007</year>
+<article-title>Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation.</article-title>
+<source>Bioinformatics</source>
+<volume>23</volume>
+<fpage>127</fpage>
+<lpage>128</lpage>
+<pub-id pub-id-type="pmid">17050570</pub-id></element-citation></ref><ref id="pone.0014156-Tavare1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tavare</surname><given-names>S</given-names></name></person-group>
+<year>1986</year>
+<article-title>Some probabilistic and statisical problems on the analysis of DNA sequences.</article-title>
+<source>Lect Math Life Sci</source>
+<volume>17</volume>
+<fpage>57</fpage>
+<lpage>86</lpage>
+</element-citation></ref><ref id="pone.0014156-Yang1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>Z</given-names></name></person-group>
+<year>1996</year>
+<article-title>Among-site rate variation and its impact on phylogenetic analyses.</article-title>
+<source>Trends Ecol Evol</source>
+<volume>11</volume>
+<fpage>367</fpage>
+<lpage>372</lpage>
+<pub-id pub-id-type="pmid">21237881</pub-id></element-citation></ref><ref id="pone.0014156-Wilson1"><label>52</label><element-citation publication-type="book">
+<person-group person-group-type="editor"><name><surname>Wilson</surname><given-names>DE</given-names></name><name><surname>Reeder</surname><given-names>DM</given-names></name></person-group>
+<year>2005</year>
+<article-title>Mammal Species of the World. A Taxonomic and Geographic Reference. 3rd ed.</article-title>
+<publisher-loc>Baltimore</publisher-loc>
+<publisher-name>Johns Hopkins University Press</publisher-name>
+<size units="page">2142</size>
+</element-citation></ref><ref id="pone.0014156-Murphy1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Murphy</surname><given-names>WJ</given-names></name><name><surname>Pringle</surname><given-names>TH</given-names></name><name><surname>Crider</surname><given-names>TA</given-names></name><name><surname>Springer</surname><given-names>MS</given-names></name><name><surname>Miller</surname><given-names>W</given-names></name></person-group>
+<year>2007</year>
+<article-title>Using genomic data to unravel the root of the placental mammal phylogeny.</article-title>
+<source>Genome Res</source>
+<volume>17</volume>
+<fpage>413</fpage>
+<lpage>421</lpage>
+<pub-id pub-id-type="pmid">17322288</pub-id></element-citation></ref><ref id="pone.0014156-Phillips1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Phillips</surname><given-names>MJ</given-names></name><name><surname>McLenachan</surname><given-names>PA</given-names></name><name><surname>Down</surname><given-names>C</given-names></name><name><surname>Gibb</surname><given-names>GC</given-names></name><name><surname>Penny</surname><given-names>D</given-names></name></person-group>
+<year>2006</year>
+<article-title>Combined Mitochondrial and Nuclear DNA Sequences Resolve the Interrelations of the Major Australasian Marsupial Radiations.</article-title>
+<source>Syst Biol</source>
+<volume>55</volume>
+<fpage>122</fpage>
+<lpage>137</lpage>
+<pub-id pub-id-type="pmid">16507529</pub-id></element-citation></ref><ref id="pone.0014156-Cardillo1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cardillo</surname><given-names>M</given-names></name><name><surname>Bininda-Emonds</surname><given-names>ORP</given-names></name><name><surname>Boakes</surname><given-names>E</given-names></name><name><surname>Purvis</surname><given-names>A</given-names></name></person-group>
+<year>2004</year>
+<article-title>A species-level phylogenetic supertree of marsupials.</article-title>
+<source>J Zool</source>
+<volume>264</volume>
+<fpage>11</fpage>
+<lpage>31</lpage>
+</element-citation></ref><ref id="pone.0014156-Berta1"><label>56</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Berta</surname><given-names>A</given-names></name><name><surname>Sumich</surname><given-names>JL</given-names></name><name><surname>Kovacs</surname><given-names>KM</given-names></name></person-group>
+<year>2006</year>
+<article-title>Marine mammals: evolutionary biology.</article-title>
+<publisher-loc>London</publisher-loc>
+<publisher-name>Academic Press</publisher-name>
+</element-citation></ref><ref id="pone.0014156-Fleagle1"><label>57</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Fleagle</surname><given-names>JG</given-names></name></person-group>
+<year>1999</year>
+<article-title>Primate adaptation and evolution.</article-title>
+<publisher-loc>London</publisher-loc>
+<publisher-name>Academic Press Inc</publisher-name>
+</element-citation></ref><ref id="pone.0014156-Purvis1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Purvis</surname><given-names>A</given-names></name></person-group>
+<year>1995</year>
+<article-title>A Composite Estimate of Primate Phylogeny.</article-title>
+<source>Philos Trans R Soc Lond B Biol Sci</source>
+<volume>348</volume>
+<fpage>405</fpage>
+<lpage>421</lpage>
+<pub-id pub-id-type="pmid">7480112</pub-id></element-citation></ref><ref id="pone.0014156-Agnarsson2"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Agnarsson</surname><given-names>I</given-names></name><name><surname>Kuntner</surname><given-names>M</given-names></name><name><surname>May-Collado</surname><given-names>LJ</given-names></name></person-group>
+<year>2010</year>
+<article-title>Dogs, cats, and kin: A molecular species-level phylogeny of Carnivora.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>54</volume>
+<fpage>726</fpage>
+<lpage>745</lpage>
+<pub-id pub-id-type="pmid">19900567</pub-id></element-citation></ref><ref id="pone.0014156-Steeman1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Steeman</surname><given-names>ME</given-names></name><name><surname>Hebsgaard</surname><given-names>MB</given-names></name><name><surname>Fordyce</surname><given-names>RE</given-names></name><name><surname>Ho</surname><given-names>SYW</given-names></name><name><surname>Rabosky</surname><given-names>DL</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Radiation of Extant Cetaceans Driven by Restructuring of the Oceans.</article-title>
+<source>Syst Biol</source>
+<volume>58</volume>
+<fpage>573</fpage>
+<lpage>585</lpage>
+<pub-id pub-id-type="pmid">20525610</pub-id></element-citation></ref><ref id="pone.0014156-Demr1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dem&#x000e9;r&#x000e9;</surname><given-names>TA</given-names></name><name><surname>McGowen</surname><given-names>MR</given-names></name><name><surname>Berta</surname><given-names>A</given-names></name><name><surname>Gatesy</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>Morphological and Molecular Evidence for a Stepwise Evolutionary Transition from Teeth to Baleen in Mysticete Whales.</article-title>
+<source>Syst Biol</source>
+<volume>57</volume>
+<fpage>15</fpage>
+<lpage>37</lpage>
+<pub-id pub-id-type="pmid">18266181</pub-id></element-citation></ref><ref id="pone.0014156-Nikaido1"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nikaido</surname><given-names>M</given-names></name><name><surname>Hamilton</surname><given-names>H</given-names></name><name><surname>Makino</surname><given-names>H</given-names></name><name><surname>Sasaki</surname><given-names>T</given-names></name><name><surname>Takahashi</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Baleen Whale Phylogeny and a Past Extensive Radiation Event Revealed by SINE Insertion Analysis.</article-title>
+<source>Mol Biol Evol</source>
+<volume>23</volume>
+<fpage>866</fpage>
+<lpage>873</lpage>
+<pub-id pub-id-type="pmid">16330660</pub-id></element-citation></ref><ref id="pone.0014156-Marcot1"><label>63</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Marcot</surname><given-names>J</given-names></name></person-group>
+<year>2007</year>
+<article-title>Molecular phylogeny of terrestrial artiodactyls.</article-title>
+<person-group person-group-type="editor"><name><surname>Prothero</surname><given-names>D</given-names></name><name><surname>Foss</surname><given-names>S</given-names></name></person-group>
+<source>The evolution of artiodactyls</source>
+<publisher-loc>Baltimore</publisher-loc>
+<publisher-name>Johns Hopkins University Press</publisher-name>
+<fpage>4</fpage>
+<lpage>18</lpage>
+</element-citation></ref><ref id="pone.0014156-McGowen1"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>McGowen</surname><given-names>MR</given-names></name><name><surname>Spaulding</surname><given-names>M</given-names></name><name><surname>Gatesy</surname><given-names>J</given-names></name></person-group>
+<year>2009</year>
+<article-title>Divergence date estimation and a comprehensive molecular tree of extant cetaceans.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>53</volume>
+<fpage>891</fpage>
+<lpage>906</lpage>
+<pub-id pub-id-type="pmid">19699809</pub-id></element-citation></ref><ref id="pone.0014156-Sasaki1"><label>65</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sasaki</surname><given-names>T</given-names></name><name><surname>Nikaido</surname><given-names>M</given-names></name><name><surname>Hamilton</surname><given-names>H</given-names></name><name><surname>Goto</surname><given-names>M</given-names></name><name><surname>Kato</surname><given-names>H</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Mitochondrial Phylogenetics and Evolution of Mysticete Whales.</article-title>
+<source>Syst Biol</source>
+<volume>54</volume>
+<fpage>77</fpage>
+<lpage>90</lpage>
+<pub-id pub-id-type="pmid">15805012</pub-id></element-citation></ref><ref id="pone.0014156-Hatch1"><label>66</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hatch</surname><given-names>LT</given-names></name><name><surname>Dopman</surname><given-names>EB</given-names></name><name><surname>Harrison</surname><given-names>RG</given-names></name></person-group>
+<year>2006</year>
+<article-title>Phylogenetic relationships among the baleen whales based on maternally and paternally inherited characters.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>41</volume>
+<fpage>12</fpage>
+<lpage>27</lpage>
+<pub-id pub-id-type="pmid">16843014</pub-id></element-citation></ref><ref id="pone.0014156-Shannon1"><label>67</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shannon</surname><given-names>CE</given-names></name></person-group>
+<year>1948</year>
+<article-title>A mathematical theory of communication.</article-title>
+<source>The Bell System Technical Journal</source>
+<volume>27</volume>
+<fpage>379</fpage>
+<lpage>423, 623&#x02013;656</lpage>
+</element-citation></ref><ref id="pone.0014156-Schneider1"><label>68</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schneider</surname><given-names>TD</given-names></name><name><surname>Stephens</surname><given-names>RM</given-names></name></person-group>
+<year>1990</year>
+<article-title>Sequence logos: a new way to display consensus sequences.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>18</volume>
+<fpage>6097</fpage>
+<lpage>6100</lpage>
+<pub-id pub-id-type="pmid">2172928</pub-id></element-citation></ref><ref id="pone.0014156-Aitken1"><label>69</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Aitken</surname><given-names>C</given-names></name><name><surname>Taroni</surname><given-names>F</given-names></name></person-group>
+<year>2004</year>
+<article-title>Statistics and the Evaluation of Evidence for Forensic Scientists;</article-title>
+<person-group person-group-type="editor"><name><surname>Barnett</surname><given-names>V</given-names></name></person-group>
+<publisher-loc>Chichester</publisher-loc>
+<publisher-name>John Wiley &#x00026; Sons, Ltd.</publisher-name>
+<size units="page">509</size>
+</element-citation></ref><ref id="pone.0014156-Stewart1"><label>70</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Stewart</surname><given-names>A</given-names></name></person-group>
+<year>2002</year>
+<article-title>Basic Statistics and Epidemiology: A Practical Guide.</article-title>
+<publisher-loc>Oxon</publisher-loc>
+<publisher-name>Radcliffe Medical Press</publisher-name>
+<size units="page">151</size>
+</element-citation></ref><ref id="pone.0014156-Prasad1"><label>71</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prasad</surname><given-names>AB</given-names></name><name><surname>Allard</surname><given-names>MW</given-names></name><name><surname>Green</surname><given-names>ED</given-names></name></person-group>
+<collab>NISC Comparative Sequencing Program</collab>
+<year>2008</year>
+<article-title>Confirming the Phylogeny of Mammals by Use of Large Comparative Sequence Data Sets.</article-title>
+<source>Mol Biol Evol</source>
+<volume>25</volume>
+<fpage>1795</fpage>
+<lpage>1808</lpage>
+<pub-id pub-id-type="pmid">18453548</pub-id></element-citation></ref><ref id="pone.0014156-Reyes1"><label>72</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Reyes</surname><given-names>A</given-names></name><name><surname>Gissi</surname><given-names>C</given-names></name><name><surname>Catzeflis</surname><given-names>F</given-names></name><name><surname>Nevo</surname><given-names>E</given-names></name><name><surname>Pesole</surname><given-names>G</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Congruent Mammalian Trees from Mitochondrial and Nuclear Genes Using Bayesian Methods.</article-title>
+<source>Mol Biol Evol</source>
+<volume>21</volume>
+<fpage>397</fpage>
+<lpage>403</lpage>
+<pub-id pub-id-type="pmid">14660685</pub-id></element-citation></ref><ref id="pone.0014156-Nabholz1"><label>73</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nabholz</surname><given-names>B</given-names></name><name><surname>Glemin</surname><given-names>S</given-names></name><name><surname>Galtier</surname><given-names>N</given-names></name></person-group>
+<year>2009</year>
+<article-title>The erratic mitochondrial clock: variations of mutation rate, not population size, affect mtDNA diversity across birds and mammals.</article-title>
+<source>BMC Evol Biol</source>
+<volume>9</volume>
+<fpage>54</fpage>
+<pub-id pub-id-type="pmid">19284537</pub-id></element-citation></ref><ref id="pone.0014156-Arnason2"><label>74</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Arnason</surname><given-names>U</given-names></name><name><surname>Gullberg</surname><given-names>A</given-names></name><name><surname>Janke</surname><given-names>A</given-names></name><name><surname>Kullberg</surname><given-names>M</given-names></name><name><surname>Lehman</surname><given-names>N</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Pinniped phylogeny and a new hypothesis for their origin and dispersal.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>41</volume>
+<fpage>345</fpage>
+<lpage>354</lpage>
+<pub-id pub-id-type="pmid">16815048</pub-id></element-citation></ref><ref id="pone.0014156-Osterholz1"><label>75</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Osterholz</surname><given-names>M</given-names></name><name><surname>Walter</surname><given-names>L</given-names></name><name><surname>Roos</surname><given-names>C</given-names></name></person-group>
+<year>2008</year>
+<article-title>Phylogenetic position of the langur genera Semnopithecus and Trachypithecus among Asian colobines, and genus affiliations of their species groups.</article-title>
+<source>BMC Evol Biol</source>
+<volume>8</volume>
+<fpage>58</fpage>
+<pub-id pub-id-type="pmid">18298809</pub-id></element-citation></ref><ref id="pone.0014156-Ting1"><label>76</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ting</surname><given-names>N</given-names></name><name><surname>Tosi</surname><given-names>AJ</given-names></name><name><surname>Li</surname><given-names>Y</given-names></name><name><surname>Zhang</surname><given-names>Y-P</given-names></name><name><surname>Disotell</surname><given-names>TR</given-names></name></person-group>
+<year>2008</year>
+<article-title>Phylogenetic incongruence between nuclear and mitochondrial markers in the Asian colobines and the evolution of the langurs and leaf monkeys.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>46</volume>
+<fpage>466</fpage>
+<lpage>474</lpage>
+<pub-id pub-id-type="pmid">18180172</pub-id></element-citation></ref><ref id="pone.0014156-Desmyter1"><label>77</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Desmyter</surname><given-names>S</given-names></name><name><surname>Gosselin</surname><given-names>M</given-names></name></person-group>
+<year>2009</year>
+<article-title>COI sequence variability between Chrysomyinae of forensic interest.</article-title>
+<source>Forensic Sci Int Gen</source>
+<volume>3</volume>
+<fpage>89</fpage>
+<lpage>95</lpage>
+</element-citation></ref><ref id="pone.0014156-Tavares1"><label>78</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tavares</surname><given-names>E</given-names></name><name><surname>Baker</surname><given-names>A</given-names></name></person-group>
+<year>2008</year>
+<article-title>Single mitochondrial gene barcodes reliably identify sister-species in diverse clades of birds.</article-title>
+<source>BMC Evol Biol</source>
+<volume>8</volume>
+<fpage>81</fpage>
+<pub-id pub-id-type="pmid">18328107</pub-id></element-citation></ref><ref id="pone.0014156-Smith1"><label>79</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>MA</given-names></name><name><surname>PoyarkovJr</surname><given-names>NA</given-names></name><name><surname>Hebert</surname><given-names>PDN</given-names></name></person-group>
+<year>2008</year>
+<article-title>CO1 DNA barcoding amphibians: take the chance, meet the challenge.</article-title>
+<source>Mol Ecol Resour</source>
+<volume>8</volume>
+<fpage>235</fpage>
+<lpage>246</lpage>
+<pub-id pub-id-type="pmid">21585765</pub-id></element-citation></ref><ref id="pone.0014156-Wiemers1"><label>80</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wiemers</surname><given-names>M</given-names></name><name><surname>Fiedler</surname><given-names>K</given-names></name></person-group>
+<year>2007</year>
+<article-title>Does the DNA barcoding gap exist? - a case study in blue butterflies (Lepidoptera: Lycaenidae).</article-title>
+<source>Frontiers in Zoology</source>
+<volume>4</volume>
+<fpage>8</fpage>
+<pub-id pub-id-type="pmid">17343734</pub-id></element-citation></ref><ref id="pone.0014156-Santamaria1"><label>81</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Santamaria</surname><given-names>M</given-names></name><name><surname>Lanave</surname><given-names>C</given-names></name><name><surname>Vicario</surname><given-names>S</given-names></name><name><surname>Saccone</surname><given-names>C</given-names></name></person-group>
+<year>2007</year>
+<article-title>Variability of the mitochondrial genome in mammals at the inter-species/intra-species boundary.</article-title>
+<source>Biol Chem</source>
+<volume>388</volume>
+<fpage>943</fpage>
+<lpage>946</lpage>
+<pub-id pub-id-type="pmid">17696778</pub-id></element-citation></ref><ref id="pone.0014156-Kimura1"><label>82</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kimura</surname><given-names>M</given-names></name></person-group>
+<year>1980</year>
+<article-title>A simple method for estimating evolutionary rates of base substitutions through comparative studies of nucleotide sequences.</article-title>
+<source>J Mol Evol</source>
+<volume>16</volume>
+<fpage>111</fpage>
+<lpage>120</lpage>
+<pub-id pub-id-type="pmid">7463489</pub-id></element-citation></ref><ref id="pone.0014156-Ward1"><label>83</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ward</surname><given-names>RD</given-names></name></person-group>
+<year>2009</year>
+<article-title>DNA barcode divergence among species and genera of birds and fishes.</article-title>
+<source>Mol Ecol Resour</source>
+<volume>9</volume>
+<fpage>1077</fpage>
+<lpage>1085</lpage>
+<pub-id pub-id-type="pmid">21564845</pub-id></element-citation></ref><ref id="pone.0014156-Vilgalys1"><label>84</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vilgalys</surname><given-names>R</given-names></name></person-group>
+<year>2003</year>
+<article-title>Taxonomic misidentification in public DNA databases.</article-title>
+<source>New Phytol</source>
+<volume>160</volume>
+<fpage>4</fpage>
+<lpage>5</lpage>
+</element-citation></ref><ref id="pone.0014156-Zhang1"><label>85</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>G</given-names></name><name><surname>Strasser</surname><given-names>BJ</given-names></name></person-group>
+<year>2009</year>
+<article-title>Specimens Versus Sequences.</article-title>
+<source>Science</source>
+<volume>323</volume>
+<fpage>1672</fpage>
+<pub-id pub-id-type="pmid">19325099</pub-id></element-citation></ref><ref id="pone.0014156-Abramov1"><label>86</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abramov</surname><given-names>AV</given-names></name><name><surname>Puzachenko</surname><given-names>AY</given-names></name></person-group>
+<year>2006</year>
+<article-title>Geographical variability of skull and taxonomy of Eurasian badgers (Mustelidae, Meles).</article-title>
+<source>Zoologichesky Zhurnal</source>
+<volume>85</volume>
+<fpage>641</fpage>
+<lpage>655</lpage>
+</element-citation></ref><ref id="pone.0014156-Driscoll1"><label>87</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Driscoll</surname><given-names>C</given-names></name><name><surname>Macdonald</surname><given-names>D</given-names></name></person-group>
+<year>2010</year>
+<article-title>Top dogs: wolf domestication and wealth.</article-title>
+<source>J Biol</source>
+<volume>9</volume>
+<fpage>10</fpage>
+<pub-id pub-id-type="pmid">20236496</pub-id></element-citation></ref><ref id="pone.0014156-Aggarwal1"><label>88</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aggarwal</surname><given-names>RK</given-names></name><name><surname>Kivisild</surname><given-names>T</given-names></name><name><surname>Ramadevi</surname><given-names>J</given-names></name><name><surname>Singh</surname><given-names>L</given-names></name></person-group>
+<year>2007</year>
+<article-title>Mitochondrial DNA coding region sequences support the phylogenetic distinction of two Indian wolf species.</article-title>
+<source>J Zool Syst Evol Res</source>
+<volume>45</volume>
+<fpage>163</fpage>
+<lpage>172</lpage>
+</element-citation></ref><ref id="pone.0014156-International1"><label>89</label><element-citation publication-type="journal">
+<collab>International Commission on Zoological Nomenclature</collab>
+<year>2003</year>
+<article-title>Opinion 2027 (Case 3010). Usage of 17 specific names based on wild species which are pre-dated by or contemporary with those based on domestic animals (Lepidoptera, Osteichthyes, Mammalia): conserved.</article-title>
+<source>Bull Zool Nomencl</source>
+<volume>60</volume>
+<fpage>81</fpage>
+<lpage>84</lpage>
+</element-citation></ref><ref id="pone.0014156-Silbermayr1"><label>90</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Silbermayr</surname><given-names>K</given-names></name><name><surname>Orozco-terWengel</surname><given-names>P</given-names></name><name><surname>Charruau</surname><given-names>P</given-names></name><name><surname>Enkhbileg</surname><given-names>D</given-names></name><name><surname>Walzer</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>High mitochondrial differentiation levels between wild and domestic Bactrian camels: a basis for rapid detection of maternal hybridization.</article-title>
+<source>Anim Genet In Press</source>
+</element-citation></ref><ref id="pone.0014156-Kitchener1"><label>91</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kitchener</surname><given-names>AC</given-names></name></person-group>
+<year>2010</year>
+<article-title>Taxonomic issues in bears: impacts on conservation in zoos and the wild, and gaps in current knowledge.</article-title>
+<source>Int Zoo Yearb</source>
+<volume>44</volume>
+<fpage>33</fpage>
+<lpage>46</lpage>
+</element-citation></ref></ref-list></back></article>

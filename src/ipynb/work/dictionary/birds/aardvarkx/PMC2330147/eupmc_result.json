@@ -1,0 +1,587 @@
+{
+  "id": [
+    "18377639"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "18377639"
+  ],
+  "pmcid": [
+    "PMC2330147"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC2330147"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/1471-2148-8-102"
+  ],
+  "title": [
+    "Molecular phylogeny and divergence times of Malagasy tenrecs: influence of data partitioning and taxon sampling on dating analyses."
+  ],
+  "authorString": [
+    "Poux C, Madsen O, Glos J, de Jong WW, Vences M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Poux C"
+          ],
+          "firstName": [
+            "Céline"
+          ],
+          "lastName": [
+            "Poux"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9379-2769",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biomolecular Chemistry 271, Radboud University Nijmegen, PO Box 9101, 6500 HB Nijmegen, The Netherlands. celine.poux@naturalsciences.be"
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Madsen O"
+          ],
+          "firstName": [
+            "Ole"
+          ],
+          "lastName": [
+            "Madsen"
+          ],
+          "initials": [
+            "O"
+          ]
+        },
+        {
+          "fullName": [
+            "Glos J"
+          ],
+          "firstName": [
+            "Julian"
+          ],
+          "lastName": [
+            "Glos"
+          ],
+          "initials": [
+            "J"
+          ]
+        },
+        {
+          "fullName": [
+            "de Jong WW"
+          ],
+          "firstName": [
+            "Wilfried W"
+          ],
+          "lastName": [
+            "de Jong"
+          ],
+          "initials": [
+            "WW"
+          ]
+        },
+        {
+          "fullName": [
+            "Vences M"
+          ],
+          "firstName": [
+            "Miguel"
+          ],
+          "lastName": [
+            "Vences"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-0747-0817",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-9379-2769",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-0747-0817",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "wikipedia",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2466105"
+      ],
+      "dateOfPublication": [
+        "2008 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2008"
+      ],
+      "printPublicationDate": [
+        "2008-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC evolutionary biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Evol. Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Evol Biol"
+          ],
+          "NLMid": [
+            "100966975"
+          ],
+          "ISSN": [
+            "1471-2148"
+          ],
+          "ESSN": [
+            "1471-2148"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2008"
+  ],
+  "pageInfo": [
+    "102"
+  ],
+  "abstractText": [
+    "BACKGROUND:Malagasy tenrecs belong to the Afrotherian clade of placental mammals and comprise three subfamilies divided in eight genera (Tenrecinae: Tenrec, Echinops, Setifer and Hemicentetes; Oryzorictinae: Oryzorictes, Limnogale and Microgale; Geogalinae:Geogale). The diversity of their morphology and incomplete taxon sampling made it difficult until now to resolve phylogenies based on either morphology or molecular data for this group. Therefore, in order to delineate the evolutionary history of this family, phylogenetic and dating analyses were performed on a four nuclear genes dataset (ADRA2B, AR, GHR and vWF) including all Malagasy tenrec genera. Moreover, the influence of both taxon sampling and data partitioning on the accuracy of the estimated ages were assessed. RESULTS:Within Afrotheria the vast majority of the nodes received a high support, including the grouping of hyrax with sea cow and the monophyly of both Afroinsectivora (Macroscelidea + Afrosoricida) and Afroinsectiphillia (Tubulidentata + Afroinsectivora). Strongly supported relationships were also recovered among all tenrec genera, allowing us to firmly establish the grouping of Geogale with Oryzorictinae, and to confirm the previously hypothesized nesting of Limnogale within the genus Microgale. The timeline of Malagasy tenrec diversification does not reflect a fast adaptive radiation after the arrival on Madagascar, indicating that morphological specializations have appeared over the whole evolutionary history of the family, and not just in a short period after colonization. In our analysis, age estimates at the root of a clade became older with increased taxon sampling of that clade. Moreover an augmentation of data partitions resulted in older age estimates as well, whereas standard deviations increased when more extreme partition schemes were used. CONCLUSION:Our results provide as yet the best resolved gene tree comprising all Malagasy tenrec genera, and may lead to a revision of tenrec taxonomy. A timeframe of tenrec evolution built on the basis of this solid phylogenetic framework showed that morphological specializations of the tenrecs may have been affected by environmental changes caused by climatic and/or subsequent colonization events. Analyses including various taxon sampling and data partitions allow us to point out some possible pitfalls that may lead to biased results in molecular dating; however, further analyses are needed to corroborate these observations."
+  ],
+  "affiliation": [
+    "Department of Biomolecular Chemistry 271, Radboud University Nijmegen, PO Box 9101, 6500 HB Nijmegen, The Netherlands. celine.poux@naturalsciences.be"
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Insectivora"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Likelihood Functions"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biodiversity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Madagascar"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genetic Speciation"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/18377639/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/18377639/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "abs"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "http://www.biomedcentral.com/1471-2148/8/102/abstract"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "http://www.biomedcentral.com/1471-2148/8/102"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "http://www.biomedcentral.com/content/pdf/1471-2148-8-102.pdf"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2148-8-102"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC2330147"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC2330147?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "36"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2008-06-02"
+  ],
+  "dateOfCreation": [
+    "2008-04-02"
+  ],
+  "firstIndexDate": [
+    "2010-09-23"
+  ],
+  "fullTextReceivedDate": [
+    "2009-05-02"
+  ],
+  "dateOfRevision": [
+    "2019-01-08"
+  ],
+  "electronicPublicationDate": [
+    "2008-03-31"
+  ],
+  "firstPublicationDate": [
+    "2008-03-31"
+  ]
+}

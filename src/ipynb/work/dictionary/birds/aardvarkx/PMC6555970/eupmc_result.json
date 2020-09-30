@@ -1,0 +1,605 @@
+{
+  "id": [
+    "31174607"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31174607"
+  ],
+  "pmcid": [
+    "PMC6555970"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6555970"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/s40246-019-0210-x"
+  ],
+  "title": [
+    "Evidence that DNA repair genes, a family of tumor suppressor genes, are associated with evolution rate and size of genomes."
+  ],
+  "authorString": [
+    "Voskarides K, Dweep H, Chrysostomou C."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Voskarides K"
+          ],
+          "firstName": [
+            "Konstantinos"
+          ],
+          "lastName": [
+            "Voskarides"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3705-3451",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Medical School, University of Cyprus, Kallipoleos 75, 1678, Nicosia, Cyprus. kvoskar@ucy.ac.cy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Dweep H"
+          ],
+          "firstName": [
+            "Harsh"
+          ],
+          "lastName": [
+            "Dweep"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "The Wistar Institute, Philadelphia, PA, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chrysostomou C"
+          ],
+          "firstName": [
+            "Charalambos"
+          ],
+          "lastName": [
+            "Chrysostomou"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "The Cyprus Institute, Nicosia, Cyprus."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-3705-3451",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "13"
+      ],
+      "journalIssueId": [
+        "2823321"
+      ],
+      "dateOfPublication": [
+        "2019 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Human genomics"
+          ],
+          "ISOAbbreviation": [
+            "Hum. Genomics"
+          ],
+          "medlineAbbreviation": [
+            "Hum Genomics"
+          ],
+          "NLMid": [
+            "101202210"
+          ],
+          "ISSN": [
+            "1473-9542"
+          ],
+          "ESSN": [
+            "1479-7364"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "26"
+  ],
+  "abstractText": [
+    "Adaptive radiation and evolutionary stasis are characterized by very different evolution rates. The main aim of this study was to investigate if any genes have a special role to a high or low evolution rate. The availability of animal genomes permitted comparison of gene content of genomes of 24 vertebrate species that evolved through adaptive radiation (representing high evolutionary rate) and of 20 vertebrate species that are considered as living fossils (representing a slow evolutionary rate or evolutionary stasis). Mammals, birds, reptiles, and bony fishes were included in the analysis. Pathway analysis was performed for genes found to be specific in adaptive radiation or evolutionary stasis respectively. Pathway analysis revealed that DNA repair and cellular response to DNA damage are important (false discovery rate = 8.35 × 10-5; 7.15 × 10-6, respectively) for species evolved through adaptive radiation. This was confirmed by further genetic in silico analysis (p = 5.30 × 10-3). Nucleotide excision repair and base excision repair were the most significant pathways. Additionally, the number of DNA repair genes was found to be linearly related to the genome size and the protein number (proteome) of the 44 animals analyzed (p < 1.00 × 10-4), this being compatible with Drake's rule. This is the first study where radiated and living fossil species have been genetically compared. Evidence has been found that cancer-related genes have a special role in radiated species. Linear association of the number of DNA repair genes with the species genome size has also been revealed. These comparative genetics results can support the idea of punctuated equilibrium evolution."
+  ],
+  "affiliation": [
+    "Medical School, University of Cyprus, Kallipoleos 75, 1678, Nicosia, Cyprus. kvoskar@ucy.ac.cy."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Letter"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Vertebrates"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA Damage"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genomics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA Repair"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phenotype"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genes, Tumor Suppressor"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genome"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genome Size"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Molecular evolution",
+        "Genomics",
+        "Natural selection",
+        "speciation",
+        "Rapid Evolution",
+        "Evolutionary Genetics",
+        "Evolutionary Medicine",
+        "Mutagenesis Rate"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s40246-019-0210-x"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6555970"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6555970?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "31266543"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Hum Genomics. 2019 Jul 2;13(1):29"
+          ],
+          "type": [
+            "Erratum in"
+          ],
+          "orderIn": [
+            "1"
+          ]
+        },
+        {
+          "id": [
+            "32178725"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Hum Genomics. 2020 Mar 16;14(1):12"
+          ],
+          "type": [
+            "Comment in"
+          ],
+          "orderIn": [
+            "2"
+          ]
+        },
+        {
+          "id": [
+            "32178733"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Hum Genomics. 2020 Mar 16;14(1):13"
+          ],
+          "type": [
+            "Comment in"
+          ],
+          "orderIn": [
+            "3"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "4"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2020-03-17"
+  ],
+  "dateOfCreation": [
+    "2019-06-09"
+  ],
+  "firstIndexDate": [
+    "2019-06-12"
+  ],
+  "fullTextReceivedDate": [
+    "2019-06-13"
+  ],
+  "dateOfRevision": [
+    "2020-03-17"
+  ],
+  "electronicPublicationDate": [
+    "2019-06-07"
+  ],
+  "firstPublicationDate": [
+    "2019-06-07"
+  ]
+}

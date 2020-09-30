@@ -1,0 +1,1048 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="iso-abbrev">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2324-9269</journal-id><journal-id journal-id-type="publisher-id">MGG3</journal-id><journal-title-group><journal-title>Molecular Genetics &#x00026; Genomic Medicine</journal-title></journal-title-group><issn pub-type="epub">2324-9269</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1002/mgg3.929</article-id><article-id pub-id-type="publisher-id">MGG3929</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>
+<italic>AMBN</italic> mutations causing hypoplastic amelogenesis imperfecta and <italic>Ambn</italic> knockout&#x02010;NLS&#x02010;lacZ knockin mice exhibiting failed amelogenesis and <italic>Ambn</italic> tissue&#x02010;specificity</article-title><alt-title alt-title-type="left-running-head">LIANG et al.</alt-title></title-group><contrib-group><contrib id="mgg3929-cr-0001" contrib-type="author"><name><surname>Liang</surname><given-names>Tian</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3929-cr-0002" contrib-type="author"><name><surname>Hu</surname><given-names>Yuanyuan</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3929-cr-0003" contrib-type="author"><name><surname>Smith</surname><given-names>Charles E.</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="mgg3929-cr-0004" contrib-type="author"><name><surname>Richardson</surname><given-names>Amelia S</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3929-cr-0005" contrib-type="author"><name><surname>Zhang</surname><given-names>Hong</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3929-cr-0006" contrib-type="author"><name><surname>Yang</surname><given-names>Jie</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="mgg3929-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg3929-cr-0007" contrib-type="author"><name><surname>Lin</surname><given-names>Brent</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="mgg3929-cr-0008" contrib-type="author"><name><surname>Wang</surname><given-names>Shih&#x02010;Kai</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="mgg3929-cr-0009" contrib-type="author"><name><surname>Kim</surname><given-names>Jung&#x02010;Wook</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0006">
+<sup>6</sup>
+</xref></contrib><contrib id="mgg3929-cr-0010" contrib-type="author"><name><surname>Chun</surname><given-names>Yong&#x02010;Hee</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0007">
+<sup>7</sup>
+</xref></contrib><contrib id="mgg3929-cr-0011" contrib-type="author" corresp="yes"><name><surname>Simmer</surname><given-names>James P.</given-names></name><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-7192-6105</contrib-id><address><email>jsimmer@umich.edu</email></address><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg3929-cr-0012" contrib-type="author"><name><surname>Hu</surname><given-names>Jan C.&#x02010;C.</given-names></name><xref ref-type="aff" rid="mgg3929-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="mgg3929-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Biologic and Materials Sciences</named-content>
+<institution>University of Michigan School of Dentistry</institution>
+<named-content content-type="city">Ann Arbor</named-content>
+<named-content content-type="country-part">Michigan</named-content>
+</aff><aff id="mgg3929-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Department of Anatomy and Cell Biology, Faculty of Medicine</named-content>
+<institution>McGill University</institution>
+<named-content content-type="city">Montreal</named-content>
+<named-content content-type="country-part">Quebec</named-content>
+<country country="CA">Canada</country>
+</aff><aff id="mgg3929-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Department of Pediatric Dentistry, School and Hospital of Stomatology</named-content>
+<institution>Peking University</institution>
+<named-content content-type="city">Beijing</named-content>
+<country country="CN">China</country>
+</aff><aff id="mgg3929-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Orofacial Sciences</named-content>
+<institution>UCSF School of Dentistry</institution>
+<named-content content-type="city">San Francisco</named-content>
+<named-content content-type="country-part">California</named-content>
+</aff><aff id="mgg3929-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">Department of Dentistry</named-content>
+<institution>National Taiwan University School of Dentistry</institution>
+<named-content content-type="city">Taipei City</named-content>
+<country country="TW">Taiwan R.O.C</country>
+</aff><aff id="mgg3929-aff-0006">
+<label><sup>6</sup></label>
+<named-content content-type="organisation-division">Department of Molecular Genetics and Department of Pediatric Dentistry &#x00026; Dental Research Institute, School of Dentistry</named-content>
+<institution>Seoul National University</institution>
+<named-content content-type="city">Seoul</named-content>
+<country country="KR">Korea</country>
+</aff><aff id="mgg3929-aff-0007">
+<label><sup>7</sup></label>
+<named-content content-type="organisation-division">Department of Periodontics and Department of Cell Systems &#x00026; Anatomy, School of Dentistry</named-content>
+<institution>University of Texas Health Science Center at San Antonio</institution>
+<named-content content-type="city">San Antonio</named-content>
+<named-content content-type="country-part">Texas</named-content>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+James P. Simmer, Department of Biologic and Materials Sciences, University of Michigan Dental Research Lab, 1210 Eisenhower Place, Ann Arbor, MI 48108.<break/>
+Email: <email>jsimmer@umich.edu</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>11</day><month>8</month><year>2019</year></pub-date><pub-date pub-type="collection"><month>9</month><year>2019</year></pub-date><volume>7</volume><issue>9</issue><issue-id pub-id-type="doi">10.1002/mgg3.v7.9</issue-id><elocation-id>e929</elocation-id><history><date date-type="received"><day>05</day><month>6</month><year>2019</year></date><date date-type="rev-recd"><day>25</day><month>7</month><year>2019</year></date><date date-type="accepted"><day>26</day><month>7</month><year>2019</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> Copyright &#x000a9; 2019 John Wiley & Sons Ltd. <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2019 The Authors. <italic>Molecular Genetics &#x00026; Genomic Medicine</italic> published by Wiley Periodicals, Inc.</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:MGG3-7-e929.pdf"/><abstract id="mgg3929-abs-0001"><title>Abstract</title><sec id="mgg3929-sec-0001"><title>Background</title><p>Ameloblastin (AMBN) is a secreted matrix protein that is critical for the formation of dental enamel and is enamel&#x02010;specific with respect to its essential functions. Biallelic <italic>AMBN</italic> defects cause non&#x02010;syndromic autosomal recessive amelogenesis imperfecta. Homozygous <italic>Ambn</italic> mutant mice expressing an internally truncated AMBN protein deposit only a soft mineral crust on the surface of dentin.</p></sec><sec id="mgg3929-sec-0002"><title>Methods</title><p>We characterized a family with hypoplastic amelogenesis imperfecta caused by <italic>AMBN</italic> compound heterozygous mutations (c.1061T&#x0003e;C; p.Leu354Pro/ c.1340C&#x0003e;T; p.Pro447Leu). We generated and characterized <italic>Ambn</italic> knockout/NLS&#x02010;lacZ (<italic>Ambn</italic>
+<sup>lacZ/lacZ</sup>) knockin mice.</p></sec><sec id="mgg3929-sec-0003"><title>Results</title><p>No AMBN protein was detected using immunohistochemistry in null mice. &#x000df;&#x02010;galactosidase activity was specific for ameloblasts in incisors and molars, and islands of cells along developing molar roots. <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> 7&#x02010;week incisors and unerupted (D14) first molars showed extreme enamel surface roughness. No abnormalities were observed in dentin mineralization or in nondental tissues. Ameloblasts in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice were unable to initiate appositional growth and started to degenerate and deposit ectopic mineral. No layer of initial enamel ribbons formed in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice, but pockets of amelogenin accumulated on the dentin surface along the ameloblast distal membrane and within the enamel organ epithelia (EOE). NLS&#x02010;lacZ signal was positive in the epididymis and nasal epithelium, but negative in ovary, oviduct, uterus, prostate, seminal vesicles, testis, submandibular salivary gland, kidney, liver, bladder, and bone, even after 15&#x000a0;hr of incubation with X&#x02010;gal.</p></sec><sec id="mgg3929-sec-0004"><title>Conclusions</title><p>Ameloblastin is critical for the initiation of enamel ribbon formation, and its absence results in pathological mineralization within the enamel organ epithelia.</p></sec></abstract><kwd-group kwd-group-type="author-generated"><kwd id="mgg3929-kwd-0001"><italic>Ambn</italic><sup>&#x02010;/&#x02010;</sup><italic>Amelx</italic><sup>&#x02010;/-</sup></kwd><kwd id="mgg3929-kwd-0002">amelin</kwd><kwd id="mgg3929-kwd-0003">ameloblastin</kwd><kwd id="mgg3929-kwd-0004">amelogenin</kwd><kwd id="mgg3929-kwd-0005">dental enamel formation</kwd><kwd id="mgg3929-kwd-0006">matrix proteins</kwd><kwd id="mgg3929-kwd-0007">mineralization</kwd><kwd id="mgg3929-kwd-0008">missense mutation</kwd><kwd id="mgg3929-kwd-0009">sheath protein</kwd><kwd id="mgg3929-kwd-0010">sheathlin</kwd></kwd-group><funding-group><award-group><funding-source>Ministry of Science and Technology, Taiwan</funding-source><award-id>107&#x02010;2314&#x02010;B&#x02010;002&#x02010;014</award-id></award-group><award-group><funding-source>National Research Foundation of Korea</funding-source><award-id>NRF-2017R1A2A2A05069281</award-id></award-group><award-group><funding-source>National Taiwan University Hospital</funding-source><award-id>106&#x02010;N3424</award-id></award-group><award-group><funding-source>National Institute of Dental and Craniofacial Research</funding-source><award-id>DE-015846</award-id><award-id>DE-025758</award-id><award-id>DE-026769</award-id></award-group></funding-group><counts><fig-count count="10"/><table-count count="0"/><page-count count="20"/><word-count count="11402"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>mgg3929</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>September 2019</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.8 mode:remove_FC converted:08.09.2019</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="mgg3929-cit-1001">
+<string-name>
+<surname>Liang</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>CE</given-names>
+</string-name>, et al. <article-title>
+<italic>AMBN</italic> mutations causing hypoplastic amelogenesis imperfecta and <italic>Ambn</italic> knockout&#x02010;NLS&#x02010;lacZ knockin mice exhibiting failed amelogenesis and <italic>Ambn</italic> tissue&#x02010;specificity</article-title>. <source xml:lang="en">Mol Genet Genomic Med</source>. <year>2019</year>;<volume>7</volume>:<elocation-id>e929</elocation-id>
+<pub-id pub-id-type="doi">10.1002/mgg3.929</pub-id>
+</mixed-citation>
+</p></notes></front><body><sec id="mgg3929-sec-0005"><label>1</label><title>INTRODUCTION</title><p>Ameloblastin (AMBN) (OMIM *601259) is a phosphorylated glycoprotein secreted by ameloblasts into the enamel matrix of developing teeth (Fincham, Moradian&#x02010;Oldak, &#x00026; Simmer, <xref rid="mgg3929-bib-0010" ref-type="ref">1999</xref>). AMBN is required for enamel formation, as defects in <italic>AMBN</italic> cause non&#x02010;syndromic inherited enamel malformations in humans (Poulter et al., <xref rid="mgg3929-bib-0048" ref-type="ref">2014</xref>; Prasad et al., <xref rid="mgg3929-bib-0049" ref-type="ref">2016</xref>) and in <italic>Ambn</italic> defective mice (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>). An intact <italic>Ambn</italic> is consistently found in vertebrates that make enamel, while <italic>Ambn</italic> is pseudogenized in mammals that have lost the ability to make teeth, such as baleen whales (Mysticeti; Demere, McGowen, Berta, &#x00026; Gatesy, <xref rid="mgg3929-bib-0009" ref-type="ref">2008</xref>; Meredith, Gatesy, Cheng, &#x00026; Springer, <xref rid="mgg3929-bib-0041" ref-type="ref">2011</xref>), turtles (Meredith, Gatesy, &#x00026; Springer, <xref rid="mgg3929-bib-0042" ref-type="ref">2013</xref>), birds (Meredith et al., <xref rid="mgg3929-bib-0042" ref-type="ref">2013</xref>), narwhal (Meredith et al., <xref rid="mgg3929-bib-0042" ref-type="ref">2013</xref>), aardvark (Meredith et al., <xref rid="mgg3929-bib-0042" ref-type="ref">2013</xref>), and two&#x02010;toed sloth (Meredith et al., <xref rid="mgg3929-bib-0042" ref-type="ref">2013</xref>). Other tooth&#x02010;specific genes implicated in the etiology of non&#x02010;syndromic amelogenesis imperfecta in humans, including <italic>ENAM</italic>, <italic>AMEL</italic>, <italic>MMP20</italic>, <italic>ODAPH</italic>, <italic>KLK4</italic>, and <italic>AMTN</italic> (Springer et al., <xref rid="mgg3929-bib-0060" ref-type="ref">2016</xref>), have been shown to be inactivated in one or more toothless vertebrates and/or in vertebrates with enamel&#x02010;less teeth.</p><p>The spotted gar (<italic>Lepisosteus oculatus</italic>) is among the most distant extant relatives of tetrapods that make enamel (Sire, <xref rid="mgg3929-bib-0055" ref-type="ref">1994</xref>, <xref rid="mgg3929-bib-0056" ref-type="ref">1995</xref>). In the gar, enamel (also called ganoin) forms on both its teeth and scales, and <italic>Ambn</italic> expression is specifically associated with the formation of these mineralized organs, and is not expressed in gar bone, embryos, or any of the nine organs included in the PhyloFish database (Braasch et al., <xref rid="mgg3929-bib-0004" ref-type="ref">2016</xref>; Kawasaki et al., <xref rid="mgg3929-bib-0029" ref-type="ref">2017</xref>). AMBN is a tooth&#x02010;specific gene that is required for amelogenesis, although there are some reports that AMBN functions in other tissues, such as bone (Atsawasuwan et al., <xref rid="mgg3929-bib-0002" ref-type="ref">2013</xref>; Jacques et al., <xref rid="mgg3929-bib-0026" ref-type="ref">2014</xref>). These claims are inconsistent with (1)&#x000a0;the absence of&#x000a0;AMBN expressed sequence tags (EST) from bone in the human (Hs.272396; 0/71618) and mouse (Mm.8437; 0/34066) EST databases, (2)&#x000a0;<italic>Ambn</italic> pseudogenization in mammals that continue to make bone but not enamel, and (3)&#x000a0;the absence of reported bone phenotypes in persons with amelogenesis imperfecta (AI) caused by biallelic <italic>AMBN</italic> defects.</p><sec id="mgg3929-sec-0006"><label>1.1</label><title>Discovery of Ameloblastin and proteolysis by MMP20</title><p>AMBN was first discovered by the characterization of its cleavage products in developing pig enamel. AMBN cleavage products were purified from enamel scraped from developing pig teeth, characterized using N&#x02010;terminal sequencing and amino acid composition analyses, and used to raise specific polyclonal antibodies (Fukae &#x00026; Tanabe, <xref rid="mgg3929-bib-0011" ref-type="ref">1987a</xref>, <xref rid="mgg3929-bib-0012" ref-type="ref">1987b</xref>; Fukae, Tanabe, Uchida, Yamakoshi, &#x00026; Shimizu, <xref rid="mgg3929-bib-0013" ref-type="ref">1993</xref>; Murakami et al., <xref rid="mgg3929-bib-0043" ref-type="ref">1997</xref>; Shimizu, <xref rid="mgg3929-bib-0052" ref-type="ref">1984</xref>). Immunohistochemistry of developing pig enamel using these antibodies outlined the enamel rods, producing a honeycomb pattern throughout the inner and middle enamel layers (Uchida et al., <xref rid="mgg3929-bib-0062" ref-type="ref">1991</xref>), leading to its designation as &#x0201c;sheath protein&#x0201d; (Uchida et al., <xref rid="mgg3929-bib-0061" ref-type="ref">1995</xref>), although the concept of an organic sheath surrounding the rods and cementing them together had been previously dismissed (Orams, <xref rid="mgg3929-bib-0045" ref-type="ref">1964</xref>, <xref rid="mgg3929-bib-0046" ref-type="ref">1966</xref>). Rat and pig cDNA clones encoding the &#x0201c;sheath protein&#x0201d; were cloned independently from three groups and labeled &#x0201c;ameloblastin&#x0201d; (Krebsbach et al., <xref rid="mgg3929-bib-0035" ref-type="ref">1996</xref>), &#x0201c;amelin&#x0201d; (Cerny, Slaby, Hammarstrom, &#x00026; Wurtz, <xref rid="mgg3929-bib-0005" ref-type="ref">1996</xref>), and &#x0201c;sheathlin&#x0201d; (Hu et al., <xref rid="mgg3929-bib-0021" ref-type="ref">1997</xref>). With ameloblastin being the first cDNA cloning manuscript to be submitted and published, it became the formal and accepted designation. The N&#x02010;terminal sequences of six different non&#x02010;amelogenin peptides isolated from fresh secretory stage pig enamel were identified within the AMBN deduced amino acid sequences. MMP20 catalyzed the cleavage of recombinant AMBN in vitro at the exact same positions as were shown to occur in vivo (Chun et al., <xref rid="mgg3929-bib-0007" ref-type="ref">2010</xref>; Iwata et al., <xref rid="mgg3929-bib-0025" ref-type="ref">2007</xref>). Similar work had previously demonstrated that MMP20 also cleaves amelogenin (AMEL) in vitro at the same sites known to be cleaved in vivo through the isolation and characterization of matrix proteins (Ryu et al., <xref rid="mgg3929-bib-0051" ref-type="ref">1999</xref>). AMBN is expressed and secreted by ameloblasts (Lee et al., <xref rid="mgg3929-bib-0037" ref-type="ref">1996</xref>), and in mouse enamel concentrates near the secretory surface of the ameloblast (Nanci et al., <xref rid="mgg3929-bib-0044" ref-type="ref">1998</xref>).</p></sec><sec id="mgg3929-sec-0007"><label>1.2</label><title>
+<italic>Ambn</italic> gene structure</title><p>Alternative splicing results in the secretion of two ameloblastin isoforms. Transcript 1 includes (while transcript 2 omits) a 45 nucleotide segment encoding 15 amino acids at the 5' end of Exon 6 (Cerny et al., <xref rid="mgg3929-bib-0005" ref-type="ref">1996</xref>; Hu et al., <xref rid="mgg3929-bib-0021" ref-type="ref">1997</xref>). Alignment of 53 functional AMBN sequences, covering over 200 million years (MY) of evolution, identified 80 unchanged and 81 highly conserved amino acid residues (out of 447 residues in the human AMBN protein, inclusive of the signal peptide; Delsuc, Gasse, &#x00026; Sire, <xref rid="mgg3929-bib-0008" ref-type="ref">2015</xref>). All 15 amino acids encoded by the 5'&#x02010;end of Exon 6 that can be deleted during RNA splicing are highly or absolutely conserved, and this peptide also includes an O&#x02010;glycosylation (human secreted protein Ser<sup>112</sup>), suggesting that there may be an important functional difference between the two ameloblastin isoforms generated by alternative splicing (Kobayashi et al., <xref rid="mgg3929-bib-0033" ref-type="ref">2007</xref>). Evolutionary analysis suggested that ancestral mammalian <italic>AMBN</italic> likely possessed 11 exons (corresponding to exons 1 to 7 and 10 to 13 in humans, as Exons 8 and 9 were added in the human line by tandem duplications of Exon 7; Delsuc et al., <xref rid="mgg3929-bib-0008" ref-type="ref">2015</xref>). All <italic>AMBN</italic> introns are phase 0 (located between complete codons), so duplication and deletion of exons during evolution, and alternative mRNA splicing, does not shift the downstream reading frame. Virtually all introns in secretory calcium&#x02010;binding phosphoprotein genes (SCPPs), including <italic>AMBN</italic>, are phase 0 (Kawasaki et al., <xref rid="mgg3929-bib-0029" ref-type="ref">2017</xref>).</p><p>A potentially important <italic>AMBN</italic> structural feature is the presence of two in&#x02010;frame, putative translational start sites (TSS; Hu et al., <xref rid="mgg3929-bib-0021" ref-type="ref">1997</xref>). The 3' TSS (in Exon 2) is in a much better context for translation initiation, having purines in both the &#x02212;3 and +4 positions, whereas the 5' TSS (in Exon 1) has pyrimidines in both of these positions (Hinnebusch, <xref rid="mgg3929-bib-0018" ref-type="ref">2017</xref>; Kozak, <xref rid="mgg3929-bib-0034" ref-type="ref">1984</xref>). Phylogenetic analyses showed that the TSS in Exon 2 is conserved in all <italic>AMBN</italic> analyzed, while the TSS in Exon 1 appeared recently, in the eutherian (placental mammal) ancestor and was independently lost in various eutherian species (Delsuc et al., <xref rid="mgg3929-bib-0008" ref-type="ref">2015</xref>). Ribosomes scanning the mRNA from the 5&#x02019; end usually skip over the first weak TSS to initiate more frequently at the strong TSS (leaky scanning; Hinnebusch, Ivanov, &#x00026; Sonenberg, <xref rid="mgg3929-bib-0019" ref-type="ref">2016</xref>). Initiation from the more 5' TSS (in Exon 1) would add 10 amino acids to the beginning of the signal peptide compared with translation initiation from the more 3' TSS (in Exon 2), with use of either translation start site generating the same secreted protein.</p></sec><sec id="mgg3929-sec-0008"><label>1.3</label><title>Etiology of human amelogenesis imperfecta</title><p>Although <italic>AMBN</italic> has long been a candidate gene for the etiology of amelogenesis imperfecta (AI), only two AI&#x02010;causing <italic>AMBN</italic> defects have been reported to date (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S2</xref>). Both are homozygous recessive mutations, and both are predicted to delete a single exon. The first was a 2,347&#x000a0;bp deletion within <italic>AMBN</italic> (c.294+139_531+478del; p.Tyr99_Glu177del) inclusive of Exon 6 (Poulter et al., <xref rid="mgg3929-bib-0048" ref-type="ref">2014</xref>). The second was a splice&#x02010;junction mutation at the end of Intron 6 (c.532&#x02010;1G&#x0003e;C; p.Leu178_Ser190del) that was predicted to delete Exon 7 (Prasad et al., <xref rid="mgg3929-bib-0049" ref-type="ref">2016</xref>). Both of these <italic>AMBN</italic> defects were associated with a non&#x02010;syndromic hypoplastic AI (thin enamel) phenotype. Recently an <italic>AMBN</italic> single allele mutation (NM_016519.5: c.1069C&#x0003e;T; p.Pro357Ser) was reported to cause a dominant condition with both enamel and dentin defects (Lu et al., <xref rid="mgg3929-bib-0039" ref-type="ref">2018</xref>), but the clinical phenotype exactly matched that of dentinogenesis imperfecta, an autosomal dominant condition caused by mutations in <italic>DSPP</italic>, a gene linked to <italic>AMBN</italic> on chromosome 4 that contains a large repetitive region that cannot be characterized using whole exome sequence analyses (Yang et al., <xref rid="mgg3929-bib-0065" ref-type="ref">2016</xref>).</p></sec><sec id="mgg3929-sec-0009"><label>1.4</label><title>
+<italic>Ambn</italic> mutant mice</title><p>Generating a complete knockout of genes belonging to the secretory calcium&#x02010;binding phosphoprotein (SCPP) family (which includes enamel&#x02010;specific <italic>AMBN</italic>, <italic>AMELX</italic>, and <italic>ENAM</italic>) is complicated because of the ubiquitous phase&#x02010;0 introns. Because of them, alternative splicing always maintains the reading frame and potentially generates internally truncated proteins (Kawasaki &#x00026; Weiss, <xref rid="mgg3929-bib-0030" ref-type="ref">2003</xref>). Previously the <italic>Amelx<sup>&#x02212;/&#x02212;</sup></italic> mice were generated by deleting only Exon 2, inclusive of the translation initiation codon (Gibson et al., <xref rid="mgg3929-bib-0016" ref-type="ref">2001</xref>). However, reverse transcription polymerase chain reaction (RT&#x02010;PCR) helped detect <italic>Amelx</italic> mRNA transcripts lacking only the 69 nucleotides encoded by Exon 2 (including the translation initiation codon) in the <italic>Amelx<sup>&#x02212;</sup></italic>
+<sup>/</sup>
+<italic><sup>&#x02212;</sup></italic> mice. Dental enamel in the <italic>Amelx<sup>&#x02212;</sup></italic>
+<sup>/</sup>
+<italic><sup>&#x02212;</sup></italic> mice was dramatically malformed, and no AMEL protein was detected on Western blots using multiple antibodies, so clearly no AMEL was being translated from knockout transcripts lacking Exon 2 (Gibson et al., <xref rid="mgg3929-bib-0016" ref-type="ref">2001</xref>). An <italic>Ambn</italic> &#x0201c;knockout&#x0201d; mouse was generated by deleting Exons 5 and 6 and resulted in significant enamel malformations (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>). <italic>Ambn</italic> transcripts from this mouse were not detected using RT&#x02010;PCR, and ameloblastin protein was not detected using immunohistochemistry (IHC; Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>). Ameloblasts in this knockout mouse differentiated but soon detached from the matrix surface, lost cell polarity, resumed proliferation to form multiple cell layers, and deposited a thin, hypocalcified, unstructured matrix above the dentin surface (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>). <italic>Amelx</italic> mRNA was reported to be downregulated, and about 25% of the homozygous mice developed soft tissue tumors in the buccal vestibules of the oral cavity starting at 26&#x000a0;weeks (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>; Fukumoto, Yamada, Nonaka, &#x00026; Yamada, <xref rid="mgg3929-bib-0015" ref-type="ref">2005</xref>). However, a subsequent study of this mouse discovered that a shorter <italic>Ambn</italic> mRNA that only lacked exons 5 and 6&#x000a0;was expressed (Wazen, Moffatt, Zalzal, Yamada, &#x00026; Nanci, <xref rid="mgg3929-bib-0064" ref-type="ref">2009</xref>). The mutant transcript maintained the <italic>Ambn</italic> reading frame and replaced the two wild&#x02010;type 381 and 396 amino acid secreted AMBN isoforms with a single secreted 279 amino acid internally truncated AMBN protein lacking the Tyr<sup>41</sup>&#x02010;Glu<sup>157</sup> segment encoded by Exons 5 and 6. The aberrant AMBN protein was detected on Western blot and using immunohistochemistry using antibodies raised against amino acids encoded by Exons 8 to 11 (Smith et al., <xref rid="mgg3929-bib-0059" ref-type="ref">2011</xref>; Wazen et al., <xref rid="mgg3929-bib-0064" ref-type="ref">2009</xref>). They redesignated this knockin mouse <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup>. As the mutant protein might be partially functional or toxic, important additional information about AMBN function could be gained by characterization of a true <italic>Ambn</italic> null mouse.</p><p>To gain a better understanding of <italic>Ambn</italic> tissue&#x02010;specific expression and to improve our understanding of amelogenesis and the role played by AMBN in it, we have generated and extensively characterized a new <italic>Ambn</italic> knockout/NLS&#x02010;lacZ knockin mouse, which we alternately refer to as <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> or <italic>Ambn</italic>
+<sup>&#x02212;/&#x02212;</sup>. We also report a novel <italic>AMBN</italic> mutation that causes AI in humans.</p></sec></sec><sec sec-type="materials-and-methods" id="mgg3929-sec-0010"><label>2</label><title>MATERIALS AND METHODS</title><sec id="mgg3929-sec-0011"><label>2.1</label><title>Enrollment of human subjects</title><p>This study was reviewed and approved by the Institutional Review Boards at the University of Texas Health Science Center at San Antonio and the University of Michigan. Subject enrollment, clinical examinations, and collection of saliva samples were performed with the understanding and written consent of each participant in compliance with the Declaration of Helsinki, described previously (Chan et al., <xref rid="mgg3929-bib-0006" ref-type="ref">2011</xref>; Kim et al., <xref rid="mgg3929-bib-0031" ref-type="ref">2006</xref>).</p></sec><sec id="mgg3929-sec-0012"><label>2.2</label><title>Whole exome sequencing and bioinformatics analyses</title><p>A Hispanic family with hypoplastic enamel trait was recruited. Mother, proband, proband's half&#x02010;sister, her husband, and their daughter participated in the study and provided samples. Subject sample preparation, whole exome sequencing, variant annotation, and mutational analyses were conducted based upon established protocols (Zhang et al., <xref rid="mgg3929-bib-0067" ref-type="ref">2019</xref>). The <italic>ABMN</italic> mutations were identified by screening of 42 known AI candidate genes (Table S1).</p></sec><sec id="mgg3929-sec-0013"><label>2.3</label><title>Generation of <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice</title><p>The <italic>Ambn</italic> knockin construct was designed, fabricated, and used to establish germline <italic>Ambn</italic> knockout/NLS&#x02010;lacZ knockin mice (<italic>Ambn</italic>
+<sup>lacZ</sup>) by Ozgene (Bentley DC, Western Australia, Australia). The <italic>Ambn</italic>
+<sup>lacZ</sup> mice were crossed with C57BL/6 mice for at least eight generations. All mice were maintained on a soft diet (DietGel, ClearH2O), as described previously (Simmer, Hu, Lertlam, Yamakoshi, &#x00026; Hu, <xref rid="mgg3929-bib-0053" ref-type="ref">2009</xref>). These mice are available at the Mutant Mouse Resource and Research Center (MMRRC) repository (MMRRC:037503&#x02010;UCD).</p></sec><sec id="mgg3929-sec-0014"><label>2.4</label><title>RT&#x02010;PCR analyses <italic>Ambn</italic>
+<sup>+</sup> and <italic>Ambn</italic>
+<sup>lacZ</sup> expression products</title><p>RNA was extracted from enamel organ epithelia (EOE) dissected from maxillary and mandibular first molars of D5 <italic>Ambn</italic>
+<sup>+/+</sup>, <italic>Ambn</italic>
+<sup>+/lacZ</sup>, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. Reverse transcription was performed using the Invitrogen SuperScript III First&#x02010;Strand Synthesis System, and polymerase chain reaction (PCR) was conducted using Invitrogen Platinum Hot Start PCR Master Mix (2X), according to the manufacturer's instructions (Invitrogen). The primer sequences are shown in Table S2. The band around 700&#x000a0;bp in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice amplified by primers in Exons 1 and 11 was isolated from the agarose gel and characterized using DNA sequencing.</p></sec><sec id="mgg3929-sec-0015"><label>2.5</label><title>Whole&#x02010;mount X&#x02010;gal staining</title><p>D2 and D6 <italic>Ambn</italic>
+<sup>+/+</sup>, <italic>Ambn</italic>
+<sup>+/lacZ</sup>, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice were anesthetized with isoflurane and fixed by cardiac perfusion. Blood was cleared from the vasculature using lactated Ringer's solution (30&#x02013;45&#x000a0;s) followed by fixation with 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS; 135&#x000a0;mM NaCl, 2.7&#x000a0;mM KCl, 4.3&#x000a0;mM Na<sub>2</sub>HPO<sub>4</sub>, 1.4&#x000a0;mM Na<sub>2</sub>H<sub>2</sub>PO<sub>4</sub>; pH 7.3) for 20&#x000a0;min. Following perfusion, the liver, kidneys, submandibular salivary glands, bladder, prostate, ovaries, oviducts, uterus, testis, seminal vesicle, and epididymis were dissected, immersed in the same fixative for 2&#x02013;3&#x000a0;hr at 4&#x000b0;C, followed by several washes in PBS. Samples were incubated at 45&#x000b0;C for 5&#x000a0;hr in freshly prepared X&#x02010;gal solution (0.1&#x000a0;M HEPES, 1&#x000a0;mM MgCl<sub>2</sub>, 5&#x000a0;mM potassium ferrocyanide, 5&#x000a0;mM potassium ferricyanide, 2% Triton X&#x02010;100, 1&#x000a0;mg/ml X&#x02010;gal substrate; pH 8.0). After staining, the samples were washed in PBS and photographed using a dissection microscope.</p></sec><sec id="mgg3929-sec-0016"><label>2.6</label><title>X&#x02010;gal staining of histology sections</title><p>
+<italic>Ambn</italic>
+<sup>+/+</sup>, <italic>Ambn</italic>
+<sup>+/lacZ</sup>, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse heads at D2, D6, D14, and 7 weeks were quickly dissected of skin, cut in half, and fixed by immersion in 4% PFA in PBS overnight at 4&#x000b0;C. The following day, the tissues were washed several times with PBS and decalcified at 4&#x000b0;C in 4.13% disodium ethylenediaminetetraacetic acid (EDTA), pH 7.3. The heads of&#x000a0;D2 mice&#x000a0;were decalcified for 5&#x000a0;days, D6 mice for 3&#x000a0;weeks, D14 mice for 5&#x000a0;weeks, and 7&#x02010;week mice for 7&#x000a0;weeks. Decalcified tissues were immersed in 15% sucrose (1&#x02013;2&#x000a0;hr) followed by 30% sucrose (3&#x02013;4&#x000a0;hr) at 4&#x000b0;C for cryoprotection and then embedded in optimal cutting temperature (OCT) compound and stored at &#x02212;80&#x000b0;C. The blocks were cryosectioned at 8&#x000a0;&#x000b5;m thickness at &#x02212;20 to &#x02212;22&#x000b0;C on a Leica cryostat microtome. Slides were stored at &#x02212;80&#x000b0;C until staining. For X&#x02010;gal staining of soft tissues, 7&#x02010;week&#x02010;old <italic>Ambn</italic>
+<sup>+/+</sup> and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice were anesthetized with isoflurane and fixed by cardiac perfusion. Blood was cleared from the vasculature using lactated ringer's solution (30&#x02013;45&#x000a0;s) followed by 4% PFA in PBS for 20&#x000a0;min. Following perfusion, the liver, kidneys, submandibular salivary glands, bladder, prostate, ovaries, oviducts, uterus, testis, seminal vesicle, and epididymis were dissected, immersed in the same fixative for 2&#x02013;3&#x000a0;hr at 4&#x000b0;C, followed by several washes in PBS. The tissues were then immersed in 15% sucrose (1&#x02013;2&#x000a0;hr) followed by 30% sucrose (3&#x02013;4&#x000a0;hr) at 4&#x000b0;C for cryoprotection, embedded in OCT media and stored at &#x02212;80&#x000b0;C. The blocks were cryosectioned at 8&#x000a0;&#x000b5;m at &#x02212;20 to &#x02212;22&#x000b0;C on a Leica cryostat. Slides were stored at &#x02212;80&#x000b0;C until staining.</p><p>Slides were removed from &#x02212;80&#x000b0;C and immediately treated with glutaraldehyde fixative [0.1&#x000a0;M 4&#x02010;(2&#x02010;hydroxyethyl)&#x02010;1&#x02010;piperazineethanesulfonic acid (HEPES), 1.25&#x000a0;mM ethylene glycol tetraacetic acid (EGTA), 2&#x000a0;mM MgCl<sub>2</sub>, 0.5% glutaraldehyde, pH 7.3] and then washed with 0.1&#x000a0;M HEPES, 2&#x000a0;mM MgCl<sub>2</sub> three times for 5&#x000a0;min. The slides were stained with X&#x02010;gal solution (0.1&#x000a0;M HEPES, 1&#x000a0;mM MgCl<sub>2</sub>, 5&#x000a0;mM potassium ferrocyanide, 5&#x000a0;mM potassium ferricyanide, 2% Triton X&#x02010;100, 1&#x000a0;mg/ml X&#x02010;gal substrate; pH 8.0) for 1&#x000a0;hr at 45&#x000b0;C and then washed several times in PBS, and counterstained with 0.1% (w/v) Nuclear Fast Red, coverslipped with Aqua&#x02010;Mount (Thermo Scientific) and imaged using a Nikon Eclipse TE300 inverted microscope. A 1&#x000a0;hr staining time was used because a 5&#x000a0;hr staining period caused significant overstaining in developing teeth and bleeding of the stain beyond the nuclei and into adjacent tissue.</p></sec><sec id="mgg3929-sec-0017"><label>2.7</label><title>Immunohistochemistry</title><p>Slides were baked at 60&#x000b0;C for 1&#x000a0;hr and rehydrated in a gradient ethanol series. Antigen retrieval was performed using the Heat Mediated Antigen Retrieval Solution pH 6.0 (ab973; abcam) following the manufacturer's instructions. Sections were blocked and incubated in primary antibody. The primary antibodies were both polyclonal, raised in rabbits, and used at 1:1000 dilution. The anti&#x02010;AMBN antibody was raised against peptide CMRPREHETQQYEYS, which is a remake of the AMBN&#x02010;63 antibody (Iwata et al., <xref rid="mgg3929-bib-0025" ref-type="ref">2007</xref>); the anti&#x02010;AMEL antibody was raised against recombinant mouse amelogenin rM179 (Simmer et al., <xref rid="mgg3929-bib-0054" ref-type="ref">1994</xref>). Sections were incubated in Goat anti&#x02010;rabbit IgG(H+L) Secondary Antibody, Alexa Fluor Plus 555 (Invitrogen, A32732) at a concentration of 1:1000, then mounted in Invitrogen<sup>&#x02122;</sup> ProLong<sup>&#x02122;</sup> Gold Antifade Mountant with DAPI (P36935; Invitrogen). Pictures were taken using a Nikon SP8 confocal microscope system (Biomedical Imaging Core, University of Michigan).</p></sec><sec id="mgg3929-sec-0018"><label>2.8</label><title>Dissecting microscopy</title><p>
+<italic>Ambn</italic>
+<sup>+/+</sup>, <italic>Ambn</italic>
+<sup>+/lacZ</sup>, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice at 7 weeks were anesthetized with isoflurane for facial photos, sacrificed, and perfused with PBS for 10&#x000a0;min. Their mandibles were denuded of soft tissues, postfixed by immersion in 4% PFA overnight, and rinsed with PBS three times, for 5&#x000a0;min each. The teeth were cleaned with 1% bleach (sodium hypochlorite), rinsed with PBS, air dried, displayed on the Nikon SMZ1000 dissection microscope, and photographed using a Nikon DXM1200 digital camera as described previously (Kim et al., <xref rid="mgg3929-bib-0032" ref-type="ref">2019</xref>).</p></sec><sec id="mgg3929-sec-0019"><label>2.9</label><title>Backscattered scanning electron microscopy</title><p>The backscattered scanning electron microscopy procedures were described previously (Wang et al., <xref rid="mgg3929-bib-0063" ref-type="ref">2015</xref>). Briefly, for molar enamel surface evaluation, D14 mandibles were fixed in 4% PFA overnight. The hemi&#x02010;mandibles were carefully dissected and submerged in 1% NaClO for 5&#x000a0;min, rinsed, and acetone dehydrated. The hemi&#x02010;mandibles were coated with conductive carbon. For incisor enamel surface evaluation, the 7&#x02010;week&#x02010;old mandibular incisors were carefully freed from the surrounding bony caps and soft tissue. For cross&#x02010;section evaluation, 7&#x02010;week hemi&#x02010;mandibles were embedded in Epon, cross&#x02010;sectioned at 1&#x000a0;mm increments, and imaged using a Hitachi S&#x02010;3000N microscope.</p></sec><sec id="mgg3929-sec-0020"><label>2.10</label><title>Focused ion beam scanning electron microscopy</title><p>The sample preparation and Focused ion beam scanning electron microscopy (FIB&#x02010;SEM) procedures were described previously (Smith, Hu, Hu, &#x00026; Simmer, <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>).</p></sec></sec><sec sec-type="results" id="mgg3929-sec-0021"><label>3</label><title>RESULTS</title><sec id="mgg3929-sec-0022"><label>3.1</label><title>Novel <italic>AMBN</italic> mutations causing AI</title><p>We recruited a three&#x02010;generation Hispanic family with recessive AI characterized by extremely thin or nonexistent enamel affecting both the primary and secondary dentitions, with no radiopaque layer covering dentin dental radiographs (Figure <xref rid="mgg3929-fig-0001" ref-type="fig">1</xref>). The enamel defects segregated with the presence of compound heterozygous missense mutations in <italic>AMBN</italic> (NG_042078.1: g.19190T&#x0003e;C; NM_016519.5: c.1061T&#x0003e;C; p.Leu354Pro and NG_042078.1: g.19469C&#x0003e;T; NM_016519.5: c.1340C&#x0003e;T; p.Pro447Leu). Leu354 is a highly conserved amino acid (Delsuc et al., <xref rid="mgg3929-bib-0008" ref-type="ref">2015</xref>). The p.Leu354Pro substitution gave a Sorting Intolerant from Tolerant (SIFT; Kumar, Henikoff, &#x00026; Ng, <xref rid="mgg3929-bib-0036" ref-type="ref">2009</xref>) score of 0.001 and a Polymorphism Phenotyping v2 (Polyphen2; HDIV; Adzhubei et al., <xref rid="mgg3929-bib-0001" ref-type="ref">2010</xref>) score of 1. This mutation is rare. Its frequency is 0.042 in the ExAC (Lek et al., <xref rid="mgg3929-bib-0038" ref-type="ref">2016</xref>) and 0.0176 in the 1000 genomes databases. The mother (II:2) and half&#x02010;sister (III:2) of the proband (III:1) were heterozygous for the p.Leu354Pro substitution. Very minor enamel pitting was observed in the two subjects heterozygous for the c.1061T&#x0003e;C/ p.Leu354Pro defect (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S1</xref>). The second <italic>AMBN</italic> mutation (p.Pro447Leu) changes the codon of the C&#x02010;terminal amino acid and is invariant in all 53 mammalian species expressing a functional ameloblastin protein (Delsuc et al., <xref rid="mgg3929-bib-0008" ref-type="ref">2015</xref>). The <italic>AMBN</italic> p.Pro447Leu substitution gave a SIFT score of 0.000 and a Polyphen2 score of 1, supporting a deleterious effect on the protein. This mutation is rare and not listed in the ExAC (0.3.1) or 1000 genomes databases. The p.Pro447Leu variant was apparently inherited from the unrecruited father and was not observed in the other four recruit family members besides the proband. As no simple heterozygote carrying this c.1340C&#x0003e;T/ p.Pro447Leu mutation was recruited, the potential for it causing a heterozygous phenotype could not be assessed. Whole exome sequencing did not help identify any other potentially disease&#x02010;causing mutation among our current list of 42 AI candidate genes (Table S1), nor was any other potential disease&#x02010;causing candidate gene identified using whole exome analyses. The <italic>AMBN</italic> genomic reference sequence with the locations of known AI&#x02010;causing <italic>AMBN</italic> mutations is provided in Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S2</xref>.</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>The AI family with compound heterozygous <italic>AMBN</italic> mutations. (a) Intraoral photos of the proband (III:1) at age 12 revealing dental attrition and extreme enamel hypoplasia in the secondary (permanent) dentition. No enamel is detected on the panoramic radiograph. (b) Intraoral images of proband at age 10 showing enamel hypoplasia and attrition in the primary dentition during the mixed dentition stage. (c) Pedigree of the <italic>AMBN</italic> AI family with five individuals recruited (asterisks). Only the proband was affected, which is consistent with a recessive pattern of inheritance. (d) Chromatography showing the <italic>AMBN</italic> compound heterozygous mutations: NG_042078.1:g.19190T&#x0003e;C; NM_016519.5:c.1061T&#x0003e;C; p.(Leu354Pro) and NG_042078.1:g.19469C&#x0003e;T; NM_016519.5:c.1340C&#x0003e;T; p.(Pro447Leu)</p></caption><graphic id="nlm-graphic-3" xlink:href="MGG3-7-e929-g001"/></fig></sec><sec id="mgg3929-sec-0023"><label>3.2</label><title>Generating <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> knockin mice</title><p>An <italic>Ambn</italic> knockout/NLS&#x02010;lacZ knockin mouse was generated using a knockin construct (Figure <xref rid="mgg3929-fig-0002" ref-type="fig">2</xref>a) to delete 4,204&#x000a0;bp segment from the 5' end of <italic>Ambn</italic> in the C57BL/6J mouse background. The knockin insert started at the evolutionarily invariant strong translation initiation codon in Exon 2 and ended in Intron 4 (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S3</xref>). The deleted <italic>Ambn</italic> segment was replaced with a 3,419&#x000a0;bp knockin sequence so that the ATG translation start site of NLS&#x02010;lacZ precisely replaced the ATG of the strong <italic>Ambn</italic> translation start site in Exon 2 (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S4</xref>), which, like <italic>Ambn</italic> in the wild&#x02010;type mouse, was also positioned in&#x02010;frame with the weak translation start site in Exon 1. To minimize transcription of the remaining downstream <italic>Ambn</italic> exons, two transcription termination signals were included in the 3' untranslated region following the NLS&#x02010;lacZ translation termination codon (TAA). Whole&#x02010;mount X&#x02010;gal staining of D2 (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S5</xref>) and D6 (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S6</xref>) mice showed strong X&#x02010;gal staining (for &#x000df;&#x02010;galactosidase activity) restricted to the incisor/molar regions with only trace staining in these areas in the wild&#x02010;type mice. X&#x02010;gal staining of D2, D6, and D14 mouse head sagittal sections showed strong &#x000df;&#x02010;galactosidase activity specific for ameloblasts in molars (Figures <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S7&#x02013;S9</xref>) and incisors (Figures <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S10</xref>, <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S11</xref>), with spotty &#x000df;&#x02010;galactosidase activity along the roots (Figures <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S8</xref>, <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S9</xref>) in <italic>Ambn</italic> heterozygous (<italic>Ambn</italic>
+<sup>+/lacZ</sup>) and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. X&#x02010;gal staining demonstrated that NLS&#x02010;lacZ knockin was strongly expressed from the <italic>Ambn</italic> promoter in <italic>Ambn</italic>
+<sup>+/lacZ</sup> and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice, but was not expressed in wild&#x02010;type mice. These studies provide strong evidence that NLS&#x02010;lacZ knockin is expressed from the <italic>Ambn</italic> promoter, and nuclear X&#x02010;gal staining provides an accurate and sensitive signal reporting its tissue&#x02010;specific expression.</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Ameloblastin knockout/NLS&#x02010;lacZ knockin mouse (<italic>Ambn</italic>
+<sup>lacZ/lacZ</sup>) generation and RT&#x02010;PCR verification. (a) Diagram of the <italic>Ambn</italic>
+<sup>lacZ</sup> construct used to delete 4,204&#x000a0;bp from the 5' end of the mouse C57BL/6J <italic>Ambn</italic> starting with the translation initiation codon in Exon 2 and ending in Intron 4. The deleted segment encoded 56 amino acids including the signal peptide, signal peptide cleavage site (after Ala<sup>26</sup>) and key phosphorylated residues, Ser<sup>20</sup> and Ser<sup>22</sup>. This 4,204&#x000a0;bp segment was replaced with NLS&#x02010;lacZ encoding &#x000df;&#x02010;galactosidase with a nuclear localization signal (NLS) followed by two downstream polyadenylation signals (pA) and an FRT&#x02010;PGK&#x02010;neo&#x02010;FRT selection cassette [that expressed a neomycin (neo) resistance gene driven by the mouse phosphoglucokinase (PGK) gene promoter]. After the selection cassette was excised by Flp recombinase, the size of the insert was 3,419&#x000a0;bp. The sequences of <italic>Ambn<sup>+/+</sup></italic> and <italic>Ambn</italic>
+<sup>lacZ</sup> are provided in Figures <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S3</xref>, <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S4</xref> respectively. (b) Ethidium bromide stained agarose gels showing RT&#x02010;PCR amplified mRNA extracted from D5 mouse first molar enamel organ epithelium. (c) Chromatography showing partial sequence of <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse cDNA amplified by primers in Exon 1 and 11. Amino acids colored in magenta indicate epitope used to generate AMBN antibody</p></caption><graphic id="nlm-graphic-5" xlink:href="MGG3-7-e929-g002"/></fig></sec><sec id="mgg3929-sec-0024"><label>3.3</label><title>Verifying the <italic>Ambn</italic> knockout</title><p>To assess the possibility of AMBN protein expression from our <italic>Ambn</italic>
+<sup>lacZ</sup> knockin allele, we performed RT&#x02010;PCR analyses using mRNA isolated from the enamel organ epithelia (EOE) of developing molars extracted from <italic>Ambn</italic>
+<sup>+/+</sup>, <italic>Ambn</italic>
+<sup>+/lacZ</sup>, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. Amplification using primers that annealed to <italic>Ambn</italic> Exon 1 and lacZ in the modified Exon 2 generated the expected 403&#x000a0;bp RT&#x02010;PCR product in both the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> and <italic>Ambn<sup>+</sup></italic>
+<sup>/lacZ</sup> mice, demonstrating that NLS&#x02010;lacZ knockin mRNA was correctly expressed (Figure <xref rid="mgg3929-fig-0002" ref-type="fig">2</xref>b). RT&#x02010;PCR amplification of mRNA isolated from D5 first molar enamel organ epithelia (EOE) using primers that annealed to <italic>Ambn</italic> Exons 1 and 4 produced no product in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse (which lacks <italic>Ambn</italic> Exons 4 annealing site). These primers produced the expected 292&#x000a0;bp RT&#x02010;PCR product in wild&#x02010;type controls, demonstrating that no wild&#x02010;type <italic>Ambn</italic> transcripts were expressed in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse (Figure <xref rid="mgg3929-fig-0002" ref-type="fig">2</xref>b). RT&#x02010;PCR amplification using primers that annealed to <italic>Ambn</italic> Exons 1 and 11 produced a single band in <italic>Ambn</italic>
+<sup>+/+</sup> mice that contained the expected 932 and 887&#x000a0;bp RT&#x02010;PCR products corresponding to the two alternatively spliced wild&#x02010;type <italic>Ambn</italic> transcripts (<italic>Ambn</italic> transcript variant 1, NM_001303431.1 and transcript variant 2, NM_009664.2; Figure <xref rid="mgg3929-fig-0002" ref-type="fig">2</xref>b). A faint amplification band lower on the gel was also detected in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse. This band was characterized using DNA sequencing and contained a mixture of two (749&#x000a0;bp and 704&#x000a0;bp) amplification products corresponding to alternatively spliced <italic>Ambn</italic> transcripts missing <italic>Ambn</italic> Exons 2 through 4, and thus lacking the <italic>Ambn</italic> coding region for the strong translation initiation site, signal peptide, signal peptide cleavage site, and the N&#x02010;terminal 40 amino acids from the secreted AMBN protein (Figure <xref rid="mgg3929-fig-0002" ref-type="fig">2</xref>c). It was apparent that this amplicon was generated by amplification of rare <italic>Ambn</italic>
+<sup>lacZ</sup> transcripts that failed to terminate transcription at the two transcription termination signals at the 3' end of NLS&#x02010;lacZ knockin, so transcription sometimes continued all the way to the 3' end of <italic>Ambn</italic> and generated transcripts that were spliced from <italic>Ambn</italic> Exon 1 to Exon 5, and then alternatively spliced to include or delete the 5' end of Exon 6 (as occurs in wild&#x02010;type transcripts). Inclusion of the 5' end of Exon 6 was favored over its deletion, based upon the relative sizes of the superimposed peaks on the DNA sequencing chromatogram; Figure <xref rid="mgg3929-fig-0002" ref-type="fig">2</xref>c). SignalP 4.1 predicted that these transcripts, if translated from the weak translation start site in Exon 1, would not have generated a functional signal peptide (Petersen, Brunak, von Heijne, &#x00026; Nielsen, <xref rid="mgg3929-bib-0047" ref-type="ref">2011</xref>). Immunohistochemistry of the continuously growing mandibular incisors was performed to determine if any AMBN protein could be detected in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice.</p></sec><sec id="mgg3929-sec-0025"><label>3.4</label><title>AMBN and AMEL immunohistochemistry</title><p>AMBN immunohistochemistry was performed on 7&#x02010;week&#x02010;old <italic>Ambn<sup>+</sup></italic>
+<sup>/</sup>
+<italic><sup>+</sup></italic> and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> littermates using an affinity&#x02010;purified antipeptide antibody recognizing an epitope encoded by <italic>Ambn</italic> Exons 5 and 6 (Iwata et al., <xref rid="mgg3929-bib-0025" ref-type="ref">2007</xref>). In <italic>Ambn<sup>+/+</sup></italic> incisors, AMBN signal was specific for ameloblasts and their associated extracellular matrix and was significantly stronger in the secretory, relative to the maturation stage (Figures <xref rid="mgg3929-fig-0003" ref-type="fig">3</xref>a&#x02010;e). No AMBN immunofluorescence was observed in odontoblasts, pulp, or bone. In the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisors, there was no AMBN immunofluorescence in ameloblasts or in the enamel matrix (Figure <xref rid="mgg3929-fig-0003" ref-type="fig">3</xref>f&#x02010;k). The only positive signal was cross&#x02010;reaction with material in vascular spaces in the thick pathological epithelium covering the enamel space, which was characteristic of the pathology evident in the enamel organ epithelia <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. As no AMBN could be detected, we conclude that the enamel phenotype in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice is due to the absence of AMBN protein.</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Immunohistochemistry of hemi&#x02010;mandible longitudinal sections of 7&#x02010;week <italic>Ambn</italic>
+<sup>+/+</sup> (a&#x02010;e) and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> (f&#x02010;k) incisors using an antibody raised against the AMBN peptide CMRPREHETQQYEYS. Red stain is AMBN; blue is nuclei stained with 4',6&#x02010;diamidino&#x02010;2&#x02010;phenylindole (DAPI). (a) Low magnification montage of WT section. Boxes labeled B&#x02010;E show positions of high magnification montages below. (b&#x02010;d) Strong AMBN signal is observed in secretory stage ameloblasts and the enamel extracellular matrix. (e) Much weaker AMBN signal is observed in maturation stage ameloblasts in the maturing enamel matrix. (f, k) Low magnification montages of <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse sections. Boxes in f labeled g&#x02010;j indicate positions of the high magnification montages below. (h&#x02010;j) AMBN signal is absent in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse mandibular incisor sections. (k) A second longitudinal section from <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse showed minor autofluorescence within blood vessels in pathological areas. Similar autofluorescence was observed in this region using the amelogenin antibody (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>)</p></caption><graphic id="nlm-graphic-7" xlink:href="MGG3-7-e929-g003"/></fig><p>Histologically, the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> enamel organ epithelia showed extensive pathology (Figure <xref rid="mgg3929-fig-0003" ref-type="fig">3</xref>f&#x02010;k), which was particularly evident following AMEL immunostaining (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>f&#x02010;m). Differentiating ameloblasts and preameloblasts appear to be normal and secrete AMEL onto the dentin surface, some of which penetrated into the dentin layer (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>g). The ameloblasts degenerated and detached from the dentin surface (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>h&#x02010;j). Separation appeared to occur within the unmineralized enamel matrix, leaving distinct layers of accumulated AMEL on the dentin surface and also along the detached distal surface of now pathological EOE (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>h&#x02010;i). Amelogenin seemed to accumulate in pockets between the degenerating ameloblasts and the stratum intermedium (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>h). A cyst&#x02010;like structure formed between the dentin surface and the EOE (Figure <xref rid="mgg3929-fig-0003" ref-type="fig">3</xref>h&#x02010;j), which compressed the epithelial layer as the enamel organ epithelia progressively lost its characteristic tissue organization evident in wild&#x02010;type mice (Figures <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>b&#x02010;e). Amelogenin continued to be secreted, but within the disorganized epithelium, generating numerous AMEL&#x02010;rich spherical nodules. The pathology in the epithelial layer covering dentin in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisors was similar to that previously described in the <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup> mice, with two apparent differences: the <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup> mice expressed an internally truncated AMBN protein that accumulated in the soft tissue nodules (Wazen et al., <xref rid="mgg3929-bib-0064" ref-type="ref">2009</xref>), and amelogenin expression appeared to be suppressed (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>). In contrast, our <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice were negative for AMBN expression, but continued secreting large amounts of amelogenin (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>f&#x02010;m).</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Immunohistochemistry of hemi&#x02010;mandible longitudinal sections of 7&#x02010;week <italic>Ambn</italic>
+<sup>+/+</sup> (a&#x02010;e) and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> (f&#x02010;m) incisors using an antibody raised against the recombinant mouse amelogenin rM179 (Simmer et al., <xref rid="mgg3929-bib-0054" ref-type="ref">1994</xref>). Red stain is AMEL; blue is nuclei stained with 4',6&#x02010;diamidino&#x02010;2&#x02010;phenylindole (DAPI). (a) Low magnification montage of <italic>Ambn</italic>
+<sup>+/+</sup> section. Boxes labeled B&#x02010;E show positions of high magnification montages shown below. (b, c) Amelogenin signal is detected in the enamel matrix during the secretory stage and in the early dentin matrix. (d, e) Amelogenin signal diminishes in the enamel matrix during the maturation stage. (f) Low magnification montages of <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse section. Boxes in f labeled g&#x02010;m indicate positions of the high magnification montages below. (g) AMEL stain is strong in ameloblasts and in the matrix along their distal membrane. Some amelogenin has penetrated into dentin. (h&#x02010;j) Amelogenin accumulates along the dentin surface and stratum intermedium (arrowheads). A cyst has formed beneath the ameloblasts and is associated with the onset of severe ameloblast pathology and circular pockets of amelogenin within the enamel organ epithelia. (k&#x02010;l) Brown autofluorescence is observed in sinuses containing blood elements</p></caption><graphic id="nlm-graphic-9" xlink:href="MGG3-7-e929-g004"/></fig></sec><sec id="mgg3929-sec-0026"><label>3.5</label><title>Enamel surface in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice</title><p>Malformation of the enamel layer was evident by inspection under a dissection microscope of the mandibular incisors and molars of <italic>Ambn</italic>
+<sup>lacZ</sup> homozygous and heterozygous mice (Figure <xref rid="mgg3929-fig-0005" ref-type="fig">5</xref>) relative to those of the wild&#x02010;type (Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S12</xref>). The <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> maxillary and mandibular incisors at 7&#x000a0;weeks were chalky&#x02010;white with rough surfaces and no detectable enamel layer. The <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> molar crowns also lacked enamel and underwent rapid attrition. <italic>Ambn</italic>
+<sup>+/lacZ</sup> mice displayed a well&#x02010;defined enamel layer. Their maxillary incisors appeared normal in color, whereas the mandibular incisors were chalky&#x02010;white and sometimes chipped. The molars look essentially normal, but their surface texture was slightly rougher than that of wild&#x02010;type molars. Radiographs revealed no abnormalities in root number, size, or shape in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice.</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Dissecting microscope photographs of 7&#x02010;week&#x02010;old <italic>Ambn</italic>
+<sup>+/lacZ</sup>, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. (a) Frontal view of maxillary and mandibular incisors. (b) Buccal (upper), occlusal (middle), and lingual (lower) views of mandibular molars. As shown in the radiographs, no appreciable abnormality in root number, size, and shape was observed in the <italic>Ambn</italic>
+<sup>+/lacZ</sup> and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. (c) Lateral (top), medial (middle) views, and radiograph (bottom) of hemi&#x02010;mandibles. (d) Lingual (top), labial, lingual, and buccal (bottom) views of mandibular incisors. Comparable images from a 7&#x02010;week&#x02010;old <italic>Ambn</italic>
+<sup>+/+</sup> mouse are shown in Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S12</xref>
+</p></caption><graphic id="nlm-graphic-11" xlink:href="MGG3-7-e929-g005"/></fig><p>To get a closer look at fully formed enamel surfaces prior to their alteration in the oral cavity, nearly erupted D14 mandibular first molars were characterized using backscattered scanning electron microscopy (bSEM) following removal of the thin overlying soft tissue (Figure <xref rid="mgg3929-fig-0006" ref-type="fig">6</xref> and Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S13</xref>). The <italic>Ambn</italic>
+<sup>+/lacZ</sup> mandibular first molar crowns were indistinguishable from wild&#x02010;type crowns except for a slightly rougher surface texture. The <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mandibular first molars, in contrast, had thin cusps, and their crowns were covered by irregular masses of crusty mineral. The enamel surfaces of carefully extracted 7&#x02010;week mandibular incisors were inspected using bSEM (Figure <xref rid="mgg3929-fig-0007" ref-type="fig">7</xref>). The wild&#x02010;type (Figure <xref rid="mgg3929-fig-0007" ref-type="fig">7</xref>a) and the <italic>Ambn</italic>
+<sup>+/lacZ</sup> mandibular incisors (Figure <xref rid="mgg3929-fig-0007" ref-type="fig">7</xref>b) looked similar with respect to surface roughness and degree of mineralization (grayscale). The <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisors were hypomineralized (dark), rough&#x02010;surfaced (Figure <xref rid="mgg3929-fig-0007" ref-type="fig">7</xref>c), and still retained the fragile crusty mineral nodules on their unerupted, unabraded surfaces.</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Backscattered SEMs of D14 mandibular molars of <italic>Ambn</italic>
+<sup>+/+</sup> (Wild&#x02010;type), <italic>Ambn</italic>
+<sup>+/lacZ</sup> (<italic>Ambn</italic>
+<sup>&#x000b1;</sup>) heterozygous, and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> (<italic>Ambn</italic>
+<sup>&#x02212;/&#x02212;</sup>) null mice following soft tissue removal. These images show the molars immediately prior to their eruption into occlusion. The top and third rows are lingual views; the second and bottom rows are occlusal views. The null molars show thin cusps and surface accumulation of an irregular crusty material. Mild surface roughness of the heterozygous molar relative to the wild&#x02010;type is most evident from the occlusal views. Another set of molars is shown in Figure <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S13</xref>.&#x000a0;Scale bars = 500 &#x000b5;m</p></caption><graphic id="nlm-graphic-13" xlink:href="MGG3-7-e929-g006"/></fig><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0007" orientation="portrait" position="float"><label>Figure 7</label><caption><p>bSEM montages of 7&#x02010;week mandibular incisors denuded of overlying tissues. The labial surfaces are shown, from the basal (left) to erupted (right) ends of the incisors. Dark areas contain less surface mineral than white areas. The surface of secretory stage enamel (left ~1/4 of the incisor length) appears rough in all genotypes. The maturation stage enamel surface of the <italic>Ambn</italic>
+<sup>+/+</sup> incisor (a) was similar to those from the <italic>Ambn</italic>
+<sup>+/lacZ</sup> mice (b) whereas the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> homozygous incisors (c) exhibited very rough, poorly mineralized (dark), crusty surfaces with protruding nodules. Scale bar&#x000a0;=&#x000a0;500&#x000a0;&#x000b5;m</p></caption><graphic id="nlm-graphic-15" xlink:href="MGG3-7-e929-g007"/></fig></sec><sec id="mgg3929-sec-0027"><label>3.6</label><title>bSEM of mandibular incisor cross&#x02010;sections</title><p>To gain information about the formation of the crusty mineral surface, <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisors were cross&#x02010;sectioned at 1&#x000a0;mm increments and imaged using bSEM (Figure <xref rid="mgg3929-fig-0008" ref-type="fig">8</xref>). Dentin formation was comparable in the wild&#x02010;type and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice, while the entire enamel layer was pathological in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisors. During what corresponded to the secretory stage in wild&#x02010;type incisors (levels 1&#x02013;3 located 1 to 3&#x000a0;mm from the apical loop), an irregular mineral crust formed on the surface of dentin that was already evident at level 2. The level 2 crust was less mineralized than dentin and contained unmineralized voids within it, evidently caused by the trapping of soft tissue (epithelia). The crust was continuous along the dentin surface but varied significantly in thickness throughout, averaging about 15&#x000a0;&#x000b5;m. By level 3 (nearing the end of what would be the secretory stage in wild&#x02010;type mice), the crust on the dentin surface had expanded to about 20&#x000a0;&#x000b5;m in thickness, while a large number of spherical mineral foci, often fused together, appeared within the epithelial layer at various distances from the irregular crusty surface. Some of these mineral foci showed concentric rings in cross&#x02010;section and looked like concretions. The concretions were more abundant laterally and appeared to expand in size incisally, being larger at levels 6 through 8 when compared to the nodules in levels 3 through 5. These detached nodules correlated with the presence of amelogenin&#x02010;filled pockets within the EOE that characterized the histological sections of <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice immunostained for amelogenin (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>). In wild&#x02010;type incisors, the enamel was constant in thickness from levels 4 through 8 (being about 114&#x000a0;&#x000b5;m thick at the height of contour) as ions excreted by maturation stage ameloblasts do not continue to add mineral ions to the tips of the enamel crystals (which would progressively thicken the enamel layer as a whole), but instead the ions penetrate into the enamel matrix and adsorb exclusively onto the sides of the enamel crystals (Smith, <xref rid="mgg3929-bib-0057" ref-type="ref">1998</xref>).</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0008" orientation="portrait" position="float"><label>Figure 8</label><caption><p>bSEM images of a wild&#x02010;type and an <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> homozygous 7&#x02010;week mandibular incisor cross&#x02010;sections at 1&#x000a0;mm increments. Numbers in panels indicate distance in mm from apical loop. The higher the number the more advanced is the dentin and enamel development. <italic>Top</italic>: Lower magnifications views of wild&#x02010;type above the corresponding <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> homozygous mouse incremental sections. Note that dentin formation is comparable in the wild&#x02010;type and <italic>Ambn</italic> null mice, but that enamel formation is not. <italic>Below</italic>: Higher magnification bSEM images of sections 2 through 8 and details of boxed concretions</p></caption><graphic id="nlm-graphic-17" xlink:href="MGG3-7-e929-g008"/></fig></sec><sec id="mgg3929-sec-0028"><label>3.7</label><title>FIB&#x02010;SEM</title><p>To view events on the surface of dentin at the point on the mandibular incisor where enamel normally initiates as oriented mineral ribbons (Smith et al., <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>), an <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisor was cross&#x02010;sectioned 1&#x000a0;mm from the basal loop and characterized using FIB&#x02010;SEM, with overlapping images taken at 5000x, 10000x, 20000x, and 35000x (Figure <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S14&#x02013;S23</xref>). The series spanned 155&#x000a0;&#x000b5;m of developing tooth along the ameloblast distal border. The earliest developmental stage on the section was the most lateral and shows the distal part of the ameloblasts intimately associated with pre&#x02010;dentin matrix following the breakdown of the basement membrane and onset of amelogenin secretion but prior to the onset of dentin mineralization (Figure <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S14</xref>). The series progressed to show the onset of dentin mineralization within collagen fibers oriented parallel to the long axis of the ameloblast and terminating against its distal membrane (Figure <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S15</xref>). Mineralization of the collagen&#x02010;rich pre&#x02010;dentin matrix expanded toward the ameloblast membrane and also in the opposite direction toward the odontoblasts, while coalescing into a continuous mineral mass of steadily increasing density. At this early stage pathology was evident in the form of droplets of enamel matrix, presumed to be comprised of amelogenin, that accumulated along the ameloblast membrane where the enamel ribbons normally initiate (Figures <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S16</xref>, <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S17</xref>). The dentin mineral increased in density and thickness, but no enamel ribbons formed (Figure <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S18</xref>). As the process of dentin mineralization continued normally, no enamel ribbons formed in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> incisor. Instead, enamel proteins (particularly amelogenin) accumulated between the mineralized dentin surface and the nearby ameloblast distal membrane (Figures <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S18&#x02013;S23</xref>).</p><p>To test our interpretation that the pathological accumulations in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> were amelogenin, we crossed the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> and <italic>Amelx</italic>
+<sup>&#x02010;/&#x02010;</sup> mice to generate <italic>Ambn</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Amelx</italic>
+<sup>&#x02212;/&#x02212;</sup> double null mice. We extensively characterized the mandibular incisors in the double null in the region where enamel ribbons should have formed (Figures <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">[Link]</xref>, <xref rid="mgg3929-sup-0003" ref-type="supplementary-material">[Link]</xref>), starting prior to dentin coalescing into a continuous mineral layer (Figure <xref rid="mgg3929-sup-0003" ref-type="supplementary-material">S24</xref>), and continuing long past the normal onset of enamel formation and on to a point where overt cell pathology was evident and crusty mineral started to form on dentin (Figures <xref rid="mgg3929-sup-0003" ref-type="supplementary-material">S38&#x02013;S40</xref>, <xref rid="mgg3929-sup-0003" ref-type="supplementary-material">S42</xref>). The accumulations of enamel protein observed between ameloblasts and the underlying dentin surface in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice were absent in the <italic>Ambn</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Amelx</italic>
+<sup>&#x02212;/&#x02212;</sup> mice, demonstrating that the material accumulating on the dentin surface was largely amelogenin, which was supported by the finding of strong amelogenin immunostaining on the dentin surface using light microscopy (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>).</p><p>The series of high magnification FIB&#x02010;SEM images detailing the early dentin and enamel formation in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> and <italic>Ambn</italic>
+<sup>&#x02212;/&#x02212;</sup>
+<italic>Amelx</italic>
+<sup>&#x02212;/&#x02212;</sup> double null mice strongly support the interpretation that dentin forms normally in the absence of ameloblastin, but the mineralization front along the ameloblast distal membrane was defective and no enamel ribbons formed. Instead, a very thin (~1&#x000a0;&#x000b5;m), sparse layer of curled mineral was deposited on dentin (Figure <xref rid="mgg3929-fig-0009" ref-type="fig">9</xref>) well after the normal onset of enamel mineralization, when dentin mineralization was well underway and ameloblasts had started to deteriorate. The curled ribbons were not oriented from the mineralized dentin to the ameloblast distal membrane and did not elongate (Figure <xref rid="mgg3929-fig-0009" ref-type="fig">9</xref>). For comparison, a full series of wild&#x02010;type FIB&#x02010;SEM images covering the onset of dentin mineralization through formation of the initial enamel are provided (Figures <xref rid="mgg3929-sup-0004" ref-type="supplementary-material">S45&#x02013;S66</xref>). <italic>Enam</italic>
+<sup>&#x02010;/&#x02010;</sup> mice also fail to form enamel ribbons (lack enamel), but do not accumulate deposits of amelogenin between the ameloblasts and dentin (Smith et al., <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>). <italic>Amelx</italic>
+<sup>&#x02010;/&#x02010;</sup> null mice initiate enamel ribbon formation almost normally, but the process degenerates rapidly and the ribbons convert into octacalcium phosphate and branch into fan&#x02010;like structures, forming plates (Hu et al., <xref rid="mgg3929-bib-0024" ref-type="ref">2016</xref>).</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0009" orientation="portrait" position="float"><label>Figure 9</label><caption><p>FIB&#x02010;SEM images of corresponding dentin surfaces in wild&#x02010;type (<italic>Ambn</italic>
+<sup>+/+</sup>), <italic>Ambn</italic> null (<italic>Ambn</italic>
+<sup>lacZ/lacZ</sup>), and <italic>Ambn</italic>&#x02010;<italic>Amelx</italic> double null (<italic>Ambn</italic>
+<sup>lacZ</sup>
+<italic><sup>/</sup></italic>
+<sup>lacZ</sup>
+<italic>Amelx</italic>
+<sup>&#x02212;/&#x02212;</sup>) mice. <italic>Top</italic>: Formation of a characteristic field of initial enamel ribbons extending from dentin mineral to the ameloblast membrane. <italic>Middle</italic>: Accumulation of enamel protein, mostly amelogenin, on the dentin surface and absence of a field of enamel ribbons in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. <italic>Bottom</italic>: <italic>Ambn</italic>&#x02010;<italic>Amelx</italic> double null mice show an absence of amelogenin accumulation and no field of enamel deposition. <italic>Key</italic>: Am, ameloblast; D, dentin; Ep, enamel protein</p></caption><graphic id="nlm-graphic-19" xlink:href="MGG3-7-e929-g009"/></fig></sec><sec id="mgg3929-sec-0029"><label>3.8</label><title>NLS&#x02010;lacZ expression in non&#x02010;dental tissues</title><p>Because NLS&#x02010;lacZ was inserted at the <italic>Ambn</italic> Exon 2 translation initiation codon (TIC) while deleting the <italic>Ambn</italic> coding region from the TIC through Exon 4, the <italic>Ambn</italic>
+<sup>lacZ</sup> knockin mice allowed us to assess tooth formation in the absence of <italic>Ambn</italic> expression and also detect &#x000df;&#x02010;galactosidase reporter expression from the <italic>Ambn</italic> promoter using the sensitive X&#x02010;gal staining assay. X&#x02010;gal staining of tissues containing developing teeth helped confirm that the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse was established properly. Strong X&#x02010;gal staining of ameloblasts was observed with 1&#x000a0;hr incubations (Figures <xref rid="mgg3929-sup-0001" ref-type="supplementary-material">S6&#x02013;S12</xref>). Trace expression was detected in the molar junctional epithelium at D28, but only after incubation overnight (15.5&#x000a0;hr; Figure <xref rid="mgg3929-sup-0005" ref-type="supplementary-material">S67</xref>). We sought to detect even trace expression in non&#x02010;dental tissues by using 15.5&#x000a0;hr (overnight) X&#x02010;gal incubations. To assess cranial tissues and calvaria, we cross&#x02010;sectioned D6 <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mouse heads at five different levels (Figure <xref rid="mgg3929-fig-0010" ref-type="fig">10</xref>). X&#x02010;gal staining was intense in the ameloblasts of developing teeth and strong in the nasal epithelium, but no staining was detected in the calvarium or the frontal suture. The calvarium and sutures were also negative in D2, D6, and D14 whole&#x02010;mounts (Figure <xref rid="mgg3929-fig-0010" ref-type="fig">10</xref>c). Soft tissue organs were also tested for X&#x02010;gal staining. Duct cells in the tail of the epididymis were positive after 1&#x000a0;hr of X&#x02010;gal staining (Figure <xref rid="mgg3929-sup-0005" ref-type="supplementary-material">S68</xref>). All other organs were negative even after 15.5&#x000a0;hr of X&#x02010;gal staining, including the ovary and oviduct, uterus, prostate, seminal vesicle, and testis (Figure <xref rid="mgg3929-sup-0005" ref-type="supplementary-material">S69</xref>), as well as the submandibular salivary gland, kidney, liver, and bladder (Figure <xref rid="mgg3929-sup-0005" ref-type="supplementary-material">S70</xref>).</p><fig fig-type="Figure" xml:lang="en" id="mgg3929-fig-0010" orientation="portrait" position="float"><label>Figure 10</label><caption><p>LacZ staining of mouse heads. Slides were stained in X&#x02010;gal solution for 1&#x000a0;hr at 45&#x000b0;C and then counterstained with Nuclear Fast Red. (a) Successive coronal plane sections (ventral L1 to L5 dorsal) of mouse heads. (b) Sagittal suture at L1 to L5 and nasal epithelium (NE) at L1 to L3 under higher magnification. (c) Whole&#x02010;mount lacZ staining of mouse heads from D2, D6 and D14 wild&#x02010;type (<italic>Ambn<sup>+/+</sup></italic>) and null (<italic>Ambn</italic>
+<sup>lacZ/lacZ</sup>) demonstrating no appreciable NLS&#x02010;lacZ positive staining. Scale bars&#x000a0;=&#x000a0;500&#x000a0;&#x000b5;m</p></caption><graphic id="nlm-graphic-21" xlink:href="MGG3-7-e929-g010"/></fig></sec></sec><sec sec-type="discussion" id="mgg3929-sec-0030"><label>4</label><title>DISCUSSION</title><sec id="mgg3929-sec-0031"><label>4.1</label><title>
+<italic>AMBN</italic> and amelogenesis imperfecta</title><p>Despite the early identification of AMBN cleavage products in developing enamel (Fukae &#x00026; Tanabe, <xref rid="mgg3929-bib-0011" ref-type="ref">1987a</xref>, <xref rid="mgg3929-bib-0012" ref-type="ref">1987b</xref>; Shimizu, <xref rid="mgg3929-bib-0052" ref-type="ref">1984</xref>), the cloning and characterization of <italic>Ambn</italic> cDNA from multiple organisms, the early recognition of AMBN as a major constituent of developing enamel (Fincham et al., <xref rid="mgg3929-bib-0010" ref-type="ref">1999</xref>), its association with dramatic enamel defects in <italic>Ambn</italic> mutant mice (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>), and linkage of <italic>AMBN</italic> to a chromosomal region associated with human enamel defects (MacDougall et al., <xref rid="mgg3929-bib-0040" ref-type="ref">1997</xref>), only two <italic>AMBN</italic> mutations have been found to cause amelogenesis imperfecta (AI). A homozygous genomic deletion (c.294+139_531+478del; p.Tyr99_Glu177del; Poulter et al., <xref rid="mgg3929-bib-0048" ref-type="ref">2014</xref>) and a homozygous splice&#x02010;junction defect predicted to cause a deletion by exon skipping during RNA splicing (c.532&#x02010;1G&#x0003e;C; p.Leu178_Ser190del; Prasad et al., <xref rid="mgg3929-bib-0049" ref-type="ref">2016</xref>) are the only <italic>AMBN</italic> mutations shown to cause AI. Both of these mutations caused autosomal recessive AI (ARAI), with no defects reported besides those in enamel. Here we report two <italic>AMBN</italic> missense mutations (c.1061T&#x0003e;C; p.Leu354Pro/ c.1340C&#x0003e;T; p.Pro447Leu)&#x000a0;that caused severely hypoplastic ARAI in compound heterozygotes, with minor pitting in single heterozygotes for the <italic>AMBN</italic> c.1061T&#x0003e;C; p.Leu354Pro&#x000a0;defect. In contrast, over 20 <italic>ENAM</italic> mutations have been reported to cause AI (Zhang et al., <xref rid="mgg3929-bib-0066" ref-type="ref">in press</xref>).</p></sec><sec id="mgg3929-sec-0032"><label>4.2</label><title>The <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> enamel phenotype and tissue&#x02010;specific expression</title><p>The most fundamental feature of dental enamel formation is the deposition (on dentin mineral) and elongation of thin mineral ribbons along the secretory surface of the ameloblast distal membrane. This occurs in all vertebrates that make true enamel, and existed 450 MY ago in the most recent common ancestor of humans and gar. Ameloblastin (<italic>Ambn</italic>) and enamelin (<italic>Enam</italic>) are expressed during tooth and scale formation in the gar, whereas amelogenin (<italic>Amel</italic>) is not (Braasch et al., <xref rid="mgg3929-bib-0004" ref-type="ref">2016</xref>; Kawasaki et al., <xref rid="mgg3929-bib-0029" ref-type="ref">2017</xref>). Amelogenin apparently evolved shortly thereafter, as it is found in sarcopterygian genomes, such as the coelacanth (Kawasaki &#x00026; Amemiya, <xref rid="mgg3929-bib-0028" ref-type="ref">2014</xref>), but not in gar or teleosts (Kawasaki, <xref rid="mgg3929-bib-0027" ref-type="ref">2018</xref>). No enamel ribbons form in <italic>Enam</italic>
+<sup>&#x02010;/&#x02010;</sup> mice. Enamel ribbons form in <italic>Amelx</italic>
+<sup>&#x02010;/&#x02010;</sup> mice, but the ribbons are short, elongate more slowly than normal (Hu et al., <xref rid="mgg3929-bib-0022" ref-type="ref">2008</xref>; Smith et al., <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>), and develop into a thin layer of octacalcium phosphate plates (Hu et al., <xref rid="mgg3929-bib-0024" ref-type="ref">2016</xref>). Here we demonstrate that no field of initial enamel ribbons form in the absence of ameloblastin (Figure <xref rid="mgg3929-fig-0009" ref-type="fig">9</xref>). Dentin forms normally, but enamel ribbons do not form on its surface. This is true even though amelogenin accumulates on the dentin surface where the enamel ribbons would normally initiate.</p><p>A remarkable feature observed in both the <italic>Enam</italic>
+<sup>&#x02010;/&#x02010;</sup> and <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice, in addition to the complete failure to deposit a field of initial enamel ribbons (Figure <xref rid="mgg3929-fig-0009" ref-type="fig">9</xref>), is the pathology and ectopic mineral evident within the enamel organ epithelia (Hu et al., <xref rid="mgg3929-bib-0023" ref-type="ref">2011</xref>; Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>). Histologically, the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> ameloblasts degenerate and detach from the dentin surface following their failure to deposit the initial enamel. Amid this pathology, an irregular mineral crust is deposited on the molar (Figure <xref rid="mgg3929-fig-0006" ref-type="fig">6</xref>) and incisor (Figures <xref rid="mgg3929-fig-0007" ref-type="fig">7</xref> and <xref rid="mgg3929-fig-0008" ref-type="fig">8</xref>) surfaces, which does not form through the normal process of enamel mineral ribbon deposition (compare WT Figures <xref rid="mgg3929-sup-0004" ref-type="supplementary-material">S58&#x02013;S65</xref> to <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> Figures <xref rid="mgg3929-sup-0003" ref-type="supplementary-material">S36&#x02013;S44</xref>). The mineral crust covering dentin in <italic>Ambn</italic>
+<sup>lacZ/</sup>
+<sup>lacZ</sup> mice was readily observed in the bSEM analyses of the D14 first molar (Figure <xref rid="mgg3929-fig-0006" ref-type="fig">6</xref>) and 7&#x02010;week incisor (Figure <xref rid="mgg3929-fig-0007" ref-type="fig">7</xref>) surfaces, and the 7&#x02010;week incisor cross&#x02010;sections (Figure <xref rid="mgg3929-fig-0008" ref-type="fig">8</xref>). The crust underwent rapid attrition after the teeth erupted into occlusion. A unique feature of the failed amelogenesis in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice was the accumulation of organic material on the dentin surface where the enamel ribbons failed to form (Figure <xref rid="mgg3929-fig-0009" ref-type="fig">9</xref>; Figures <xref rid="mgg3929-sup-0002" ref-type="supplementary-material">S16&#x02013;S23</xref>). These accumulations were absent in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup>
+<italic>Amelx</italic>
+<sup>&#x02010;/&#x02010;</sup> double null (Figures <xref rid="mgg3929-sup-0003" ref-type="supplementary-material">S26&#x02013;S36</xref>), indicating that the deposits were comprised principally of amelogenin. While amelogenin deposits are normally associated with the formation and elongation of enamel ribbons along the ameloblast membrane, the accumulations in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice were larger than those is observed in wild&#x02010;type and <italic>Enam</italic>
+<sup>&#x02010;/&#x02010;</sup> mice (Smith et al., <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>). We do not infer that amelogenin expression increases, simply that amelogenin accumulates more than normal on the dentin surface as a feature of the failed amelogenesis in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. Without ribbon elongation, the ameloblasts do not retreat and expand the enamel volume, so the amelogenin must accumulate on the mineralized dentin after it is secreted.</p><p>The phenotypes of the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice are similar to those of the <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup> mice, including ameloblast detachment, lack of enamel formation, ectopic mineral formation in the epithelium, and normal dentin formation (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>; Wazen et al., <xref rid="mgg3929-bib-0064" ref-type="ref">2009</xref>). The <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup> mice however, showed reduced <italic>Amelx</italic> expression and developed odontogenic tumors, which were not observed in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice. The absence of enamel formation in the <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> and <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup> mice indicates that ABMN function is dependent upon inclusion of the peptide segment encoded by Exons 5 and 6. We observed strong ectopic expression of amelogenin in the EOE of <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice (Figure <xref rid="mgg3929-fig-0004" ref-type="fig">4</xref>) that correlated with the formation of ectopic mineral in the EOE (Figure <xref rid="mgg3929-fig-0008" ref-type="fig">8</xref>). The importance of amelogenin in forming this ectopic mineral is supported by formation of ectopic mineral in the <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup> mice (Fukumoto et al., <xref rid="mgg3929-bib-0014" ref-type="ref">2004</xref>), but not in <italic>Ambn</italic>
+<sup>&#x00394;5,6/&#x00394;5,6</sup>
+<italic>Amelx<sup>&#x02212;/&#x02212;</sup></italic> double mutants (Hatakeyama et al., <xref rid="mgg3929-bib-0017" ref-type="ref">2009</xref>). An increasing body of evidence suggests that amelogenin does not play a critical role in the shaping of enamel mineral ribbons, including the absence of amelogenin in gar (which forms enamel ribbons; Prostak, Seifert, &#x00026; Skobe, <xref rid="mgg3929-bib-0050" ref-type="ref">1989</xref>; Sire, <xref rid="mgg3929-bib-0056" ref-type="ref">1995</xref>), formation of enamel ribbons in <italic>Amelx<sup>&#x02212;</sup></italic>
+<sup>/</sup>
+<italic><sup>&#x02212;</sup></italic> mice (Smith et al., <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>), enamel mineral adopting its ribbon shape before it is crystalline (and therefore cannot be shaped by amelogenin binding to selected crystal faces; Beniash, Metzler, Lam, &#x00026; Gilbert, <xref rid="mgg3929-bib-0003" ref-type="ref">2009</xref>), and ectopic mineral deposited in amelogenin&#x02010;laded spaces in <italic>Ambn</italic>
+<sup>lacZ/lacZ</sup> mice that is not comprised of enamel&#x02010;like ribbon&#x02010;shaped crystals (Figure <xref rid="mgg3929-fig-0008" ref-type="fig">8</xref>). Amelogenin is a critical matrix constituent, but it can only function properly in the context of a functioning mineralization front apparatus that initiates and shapes the enamel mineral ribbons, which requires both enamelin (ENAM) and ameloblastin (AMBN; Smith et al., <xref rid="mgg3929-bib-0058" ref-type="ref">2016</xref>).</p><p>The NLS&#x02010;lacZ reporter expressed nuclear localized &#x000df;&#x02010;galactosidase activity strongly in ameloblasts, with spotty expression along the developing molar roots. Mildly positive tissues included the tail of the epididymis and nasal epithelium, and trace, spotty signal was detected in the junctional epithelium. Except for enamel deposited by the strongly positive ameloblast layer, no phenotypic differences were observed in any other tissues, including the nasal epithelium, epididymis, and junctional epithelium where reporter signal was detected. We conclude that ameloblastin functions at the mineralization front along the secretory surface of the ameloblast membrane to establish and extend enamel mineral ribbons, a specialized function it has performed for over 450 MY in all vertebrates that produce true enamel, and does not serve any critical function in any other tissues.</p></sec></sec><sec sec-type="COI-statement" id="mgg3929-sec-0033"><title>CONFLICT OF INTEREST</title><p>None declared.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data" id="mgg3929-sup-0001"><caption><p>&#x02009;</p></caption><media xlink:href="MGG3-7-e929-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="mgg3929-sup-0002"><caption><p>&#x02009;</p></caption><media xlink:href="MGG3-7-e929-s002.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="mgg3929-sup-0003"><caption><p>&#x000a0;</p></caption><media xlink:href="MGG3-7-e929-s003.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="mgg3929-sup-0004"><caption><p>&#x000a0;</p></caption><media xlink:href="MGG3-7-e929-s004.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="mgg3929-sup-0005"><caption><p>&#x000a0;</p></caption><media xlink:href="MGG3-7-e929-s005.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="mgg3929-sec-0034"><title>ACKNOWLEDGMENTS</title><p>We thank the family for their participation in this study. We thank the Facility for Electron Microscopy Research at McGill University, Montreal, Canada for their technical support. This study was supported by NIDCR/NIH grants DE&#x02010;015846 (JH), DE&#x02010;025758 (YHC), and DE&#x02010;026769 (YHC); by National Taiwan University Hospital (NTUH) (Grant 106&#x02010;N3424), the Ministry of Science and Technology in Taiwan (MOST) (Grant 107&#x02010;2314&#x02010;B&#x02010;002&#x02010;014); and the National Research Foundation of Korea, funded by the Korean government (NRF&#x02010;2017R1A2A2A05069281).</p></ack><ref-list content-type="cited-references" id="mgg3929-bibl-0001"><title>REFERENCES</title><ref id="mgg3929-bib-0001"><mixed-citation publication-type="journal" id="mgg3929-cit-0001">
+<string-name>
+<surname>Adzhubei</surname>, <given-names>I. A.</given-names>
+</string-name>, <string-name>
+<surname>Schmidt</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Peshkin</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Ramensky</surname>, <given-names>V. E.</given-names>
+</string-name>, <string-name>
+<surname>Gerasimova</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Bork</surname>, <given-names>P.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Sunyaev</surname>, <given-names>S. R.</given-names>
+</string-name> (<year>2010</year>). <article-title>A method and server for predicting damaging missense mutations</article-title>. <source xml:lang="en">Nature Methods</source>, <volume>7</volume>(<issue>4</issue>), <fpage>248</fpage>&#x02013;<lpage>249</lpage>. <pub-id pub-id-type="doi">10.1038/nmeth0410-248</pub-id>
+<pub-id pub-id-type="pmid">20354512</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0002"><mixed-citation publication-type="journal" id="mgg3929-cit-0002">
+<string-name>
+<surname>Atsawasuwan</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Lu</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Ito</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Gopinathan</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Evans</surname>, <given-names>C. A.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Diekwisch</surname>, <given-names>T.</given-names>
+</string-name> (<year>2013</year>). <article-title>Expression and function of enamel&#x02010;related gene products in calvarial development</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>92</volume>(<issue>7</issue>), <fpage>622</fpage>&#x02013;<lpage>628</lpage>. <pub-id pub-id-type="doi">10.1177/0022034513487906</pub-id>
+<pub-id pub-id-type="pmid">23625374</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0003"><mixed-citation publication-type="journal" id="mgg3929-cit-0003">
+<string-name>
+<surname>Beniash</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Metzler</surname>, <given-names>R. A.</given-names>
+</string-name>, <string-name>
+<surname>Lam</surname>, <given-names>R. S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Gilbert</surname>, <given-names>P. U.</given-names>
+</string-name> (<year>2009</year>). <article-title>Transient amorphous calcium phosphate in forming enamel</article-title>. <source xml:lang="en">Journal of Structural Biology</source>, <volume>166</volume>(<issue>2</issue>), <fpage>133</fpage>&#x02013;<lpage>143</lpage>. <pub-id pub-id-type="doi">10.1016/j.jsb.2009.02.001</pub-id>
+<pub-id pub-id-type="pmid">19217943</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0004"><mixed-citation publication-type="journal" id="mgg3929-cit-0004">
+<string-name>
+<surname>Braasch</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Gehrke</surname>, <given-names>A. R.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Manousaki</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Pasquier</surname>, <given-names>J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Postlethwait</surname>, <given-names>J. H.</given-names>
+</string-name> (<year>2016</year>). <article-title>The spotted gar genome illuminates vertebrate evolution and facilitates human&#x02010;teleost comparisons</article-title>. <source xml:lang="en">Nature Genetics</source>, <volume>48</volume>(<issue>4</issue>), <fpage>427</fpage>&#x02013;<lpage>437</lpage>. <pub-id pub-id-type="doi">10.1038/ng.3526</pub-id>
+<pub-id pub-id-type="pmid">26950095</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0005"><mixed-citation publication-type="journal" id="mgg3929-cit-0005">
+<string-name>
+<surname>Cerny</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Slaby</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Hammarstrom</surname>, <given-names>L.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Wurtz</surname>, <given-names>T.</given-names>
+</string-name> (<year>1996</year>). <article-title>A novel gene expressed in rat ameloblasts codes for proteins with cell binding domains</article-title>. <source xml:lang="en">Journal of Bone and Mineral Research</source>, <volume>11</volume>(<issue>7</issue>), <fpage>883</fpage>&#x02013;<lpage>891</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.5650110703</pub-id>
+<pub-id pub-id-type="pmid">8797107</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0006"><mixed-citation publication-type="journal" id="mgg3929-cit-0006">
+<string-name>
+<surname>Chan</surname>, <given-names>H. C.</given-names>
+</string-name>, <string-name>
+<surname>Estrella</surname>, <given-names>N. M.</given-names>
+</string-name>, <string-name>
+<surname>Milkovich</surname>, <given-names>R. N.</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2011</year>). <article-title>Target gene analyses of 39 amelogenesis imperfecta kindreds</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>119</volume>(<issue>Suppl 1</issue>), <fpage>311</fpage>&#x02013;<lpage>323</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2011.00857.x</pub-id>
+<pub-id pub-id-type="pmid">22243262</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0007"><mixed-citation publication-type="journal" id="mgg3929-cit-0007">
+<string-name>
+<surname>Chun</surname>, <given-names>Y. H.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2010</year>). <article-title>Cleavage site specificity of MMP&#x02010;20 for secretory&#x02010;stage ameloblastin</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>89</volume>(<issue>8</issue>), <fpage>785</fpage>&#x02013;<lpage>790</lpage>. <pub-id pub-id-type="doi">10.1177/0022034510366903</pub-id>
+<pub-id pub-id-type="pmid">20400724</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0008"><mixed-citation publication-type="journal" id="mgg3929-cit-0008">
+<string-name>
+<surname>Delsuc</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Gasse</surname>, <given-names>B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Sire</surname>, <given-names>J. Y.</given-names>
+</string-name> (<year>2015</year>). <article-title>Evolutionary analysis of selective constraints identifies ameloblastin (AMBN) as a potential candidate for amelogenesis imperfecta</article-title>. <source xml:lang="en">BMC Evolutionary Biology</source>, <volume>15</volume>, <fpage>148</fpage>
+<pub-id pub-id-type="doi">10.1186/s12862-015-0431-0</pub-id>
+<pub-id pub-id-type="pmid">26223266</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0009"><mixed-citation publication-type="journal" id="mgg3929-cit-0009">
+<string-name>
+<surname>Demere</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>McGowen</surname>, <given-names>M. R.</given-names>
+</string-name>, <string-name>
+<surname>Berta</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Gatesy</surname>, <given-names>J.</given-names>
+</string-name> (<year>2008</year>). <article-title>Morphological and molecular evidence for a stepwise evolutionary transition from teeth to baleen in mysticete whales</article-title>. <source xml:lang="en">Systematic Biology</source>, <volume>57</volume>(<issue>1</issue>), <fpage>15</fpage>&#x02013;<lpage>37</lpage>. <pub-id pub-id-type="doi">10.1080/10635150701884632</pub-id>
+<pub-id pub-id-type="pmid">18266181</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0010"><mixed-citation publication-type="journal" id="mgg3929-cit-0010">
+<string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<surname>Moradian&#x02010;Oldak</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>1999</year>). <article-title>The structural biology of the developing dental enamel matrix</article-title>. <source xml:lang="en">Journal of Structural Biology</source>, <volume>126</volume>(<issue>3</issue>), <fpage>270</fpage>&#x02013;<lpage>299</lpage>. <pub-id pub-id-type="doi">10.1006/jsbi.1999.4130</pub-id>
+<pub-id pub-id-type="pmid">10441532</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0011"><mixed-citation publication-type="journal" id="mgg3929-cit-0011">
+<string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name> (<year>1987a</year>). <article-title>
+<sup>45</sup>Ca&#x02010;labeled proteins found in porcine developing dental enamel at an early stage of development</article-title>. <source xml:lang="en">Advances in Dental Research</source>, <volume>1</volume>(<issue>2</issue>), <fpage>261</fpage>&#x02013;<lpage>266</lpage>. <pub-id pub-id-type="doi">10.1177/08959374870010021501</pub-id>
+<pub-id pub-id-type="pmid">3504175</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0012"><mixed-citation publication-type="journal" id="mgg3929-cit-0012">
+<string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name> (<year>1987b</year>). <article-title>Nonamelogenin components of porcine enamel in the protein fraction free from the enamel crystals</article-title>. <source xml:lang="en">Calcified Tissue International</source>, <volume>40</volume>(<issue>5</issue>), <fpage>286</fpage>&#x02013;<lpage>293</lpage>. <pub-id pub-id-type="doi">10.1007/BF02555263</pub-id>
+<pub-id pub-id-type="pmid">3034388</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0013"><mixed-citation publication-type="journal" id="mgg3929-cit-0013">
+<string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Shimizu</surname>, <given-names>M.</given-names>
+</string-name> (<year>1993</year>). <article-title>Enamelins in the newly formed bovine enamel</article-title>. <source xml:lang="en">Calcified Tissue International</source>, <volume>53</volume>(<issue>4</issue>), <fpage>257</fpage>&#x02013;<lpage>261</lpage>. <pub-id pub-id-type="doi">10.1007/bf01320911</pub-id>
+<pub-id pub-id-type="pmid">8275354</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0014"><mixed-citation publication-type="journal" id="mgg3929-cit-0014">
+<string-name>
+<surname>Fukumoto</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Kiba</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Hall</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Iehara</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Nakamura</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Longenecker</surname>, <given-names>G.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name> (<year>2004</year>). <article-title>Ameloblastin is a cell adhesion molecule required for maintaining the differentiation state of ameloblasts</article-title>. <source xml:lang="en">Journal of Cell Biology</source>, <volume>167</volume>(<issue>5</issue>), <fpage>973</fpage>&#x02013;<lpage>983</lpage>. <pub-id pub-id-type="doi">10.1083/jcb.200409077</pub-id>
+<pub-id pub-id-type="pmid">15583034</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0015"><mixed-citation publication-type="journal" id="mgg3929-cit-0015">
+<string-name>
+<surname>Fukumoto</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Nonaka</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name> (<year>2005</year>). <article-title>Essential roles of ameloblastin in maintaining ameloblast differentiation and enamel formation</article-title>. <source xml:lang="en">Cells Tissues Organs</source>, <volume>181</volume>(<issue>3&#x02013;4</issue>), <fpage>189</fpage>&#x02013;<lpage>195</lpage>. <pub-id pub-id-type="doi">10.1159/000091380</pub-id>
+<pub-id pub-id-type="pmid">16612084</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0016"><mixed-citation publication-type="journal" id="mgg3929-cit-0016">
+<string-name>
+<surname>Gibson</surname>, <given-names>C. W.</given-names>
+</string-name>, <string-name>
+<surname>Yuan</surname>, <given-names>Z.&#x02010;A.</given-names>
+</string-name>, <string-name>
+<surname>Hall</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Longenecker</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Thyagarajan</surname>, <given-names>T.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Kulkarni</surname>, <given-names>A. B.</given-names>
+</string-name> (<year>2001</year>). <article-title>Amelogenin&#x02010;deficient mice display an amelogenesis imperfecta phenotype</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>276</volume>(<issue>34</issue>), <fpage>31871</fpage>&#x02013;<lpage>31875</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M104624200</pub-id>
+<pub-id pub-id-type="pmid">11406633</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0017"><mixed-citation publication-type="journal" id="mgg3929-cit-0017">
+<string-name>
+<surname>Hatakeyama</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Fukumoto</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Nakamura</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Haruyama</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Suzuki</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Hatakeyama</surname>, <given-names>Y.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Kulkarni</surname>, <given-names>A. B.</given-names>
+</string-name> (<year>2009</year>). <article-title>Synergistic roles of amelogenin and ameloblastin</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>88</volume>(<issue>4</issue>), <fpage>318</fpage>&#x02013;<lpage>322</lpage>. <pub-id pub-id-type="doi">10.1177/0022034509334749</pub-id>
+<pub-id pub-id-type="pmid">19407150</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0018"><mixed-citation publication-type="journal" id="mgg3929-cit-0018">
+<string-name>
+<surname>Hinnebusch</surname>, <given-names>A. G.</given-names>
+</string-name> (<year>2017</year>). <article-title>Structural insights into the mechanism of scanning and start codon recognition in eukaryotic translation initiation</article-title>. <source xml:lang="en">Trends in Biochemical Sciences</source>, <volume>42</volume>(<issue>8</issue>), <fpage>589</fpage>&#x02013;<lpage>611</lpage>. <pub-id pub-id-type="doi">10.1016/j.tibs.2017.03.004</pub-id>
+<pub-id pub-id-type="pmid">28442192</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0019"><mixed-citation publication-type="journal" id="mgg3929-cit-0019">
+<string-name>
+<surname>Hinnebusch</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<surname>Ivanov</surname>, <given-names>I. P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Sonenberg</surname>, <given-names>N.</given-names>
+</string-name> (<year>2016</year>). <article-title>Translational control by 5'&#x02010;untranslated regions of eukaryotic mRNAs</article-title>. <source xml:lang="en">Science</source>, <volume>352</volume>(<issue>6292</issue>), <fpage>1413</fpage>&#x02013;<lpage>1416</lpage>. <pub-id pub-id-type="doi">10.1126/science.aad9868</pub-id>
+<pub-id pub-id-type="pmid">27313038</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0021"><mixed-citation publication-type="journal" id="mgg3929-cit-0021">
+<string-name>
+<surname>Hu</surname>, <given-names>C.&#x02010;C.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Qian</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>C. H.</given-names>
+</string-name>, <string-name>
+<surname>Ryu</surname>, <given-names>O. H.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>1997</year>). <article-title>Sheathlin: Cloning, cDNA/polypeptide sequences, and immunolocalization of porcine enamel sheath proteins</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>76</volume>(<issue>2</issue>), <fpage>648</fpage>&#x02013;<lpage>657</lpage>. <pub-id pub-id-type="doi">10.1177/00220345970760020501</pub-id>
+<pub-id pub-id-type="pmid">9062558</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0022"><mixed-citation publication-type="journal" id="mgg3929-cit-0022">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>McKee</surname>, <given-names>M. D.</given-names>
+</string-name>, <string-name>
+<surname>Wright</surname>, <given-names>J. T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2008</year>). <article-title>Enamel defects and ameloblast&#x02010;specific expression in Enam knock&#x02010;out/lacz knock&#x02010;in mice</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>283</volume>(<issue>16</issue>), <fpage>10858</fpage>&#x02013;<lpage>10871</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M710565200</pub-id>
+<pub-id pub-id-type="pmid">18252720</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0023"><mixed-citation publication-type="journal" id="mgg3929-cit-0023">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Lertlam</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>McKee</surname>, <given-names>M. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2011</year>). <article-title>Cell proliferation and apoptosis in enamelin null mice</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>119</volume>(<issue>Suppl 1</issue>), <fpage>329</fpage>&#x02013;<lpage>337</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2011.00860.x</pub-id>
+<pub-id pub-id-type="pmid">22243264</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0024"><mixed-citation publication-type="journal" id="mgg3929-cit-0024">
+<string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Cai</surname>, <given-names>Z.</given-names>
+</string-name>, <string-name>
+<surname>Donnelly</surname>, <given-names>L. A.</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2016</year>). <article-title>Enamel ribbons, surface nodules, and octacalcium phosphate in C57BL/6 Amelx&#x02010;/&#x02010; mice and Amelx+/&#x02010; lyonization</article-title>. <source xml:lang="en">Molecular Genetics and Genomic Medicine</source>, <volume>4</volume>(<issue>6</issue>), <fpage>641</fpage>&#x02013;<lpage>661</lpage>. <pub-id pub-id-type="doi">10.1002/mgg3.252</pub-id>
+<pub-id pub-id-type="pmid">27896287</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0025"><mixed-citation publication-type="journal" id="mgg3929-cit-0025">
+<string-name>
+<surname>Iwata</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Ishikawa</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2007</year>). <article-title>Processing of ameloblastin by MMP&#x02010;20</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>86</volume>(<issue>2</issue>), <fpage>153</fpage>&#x02013;<lpage>157</lpage>. <pub-id pub-id-type="doi">10.1177/154405910708600209</pub-id>
+<pub-id pub-id-type="pmid">17251515</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0026"><mixed-citation publication-type="journal" id="mgg3929-cit-0026">
+<string-name>
+<surname>Jacques</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Hotton</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Asselin</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>De la Dure&#x02010;Molla</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Coudert</surname>, <given-names>A. E.</given-names>
+</string-name>, <string-name>
+<surname>Isaac</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Berdal</surname>, <given-names>A.</given-names>
+</string-name> (<year>2014</year>). <article-title>Ameloblastin as a putative marker of specific bone compartments</article-title>. <source xml:lang="en">Connective Tissue Research</source>, <volume>55</volume>(<issue>Suppl 1</issue>), <fpage>117</fpage>&#x02013;<lpage>120</lpage>. <pub-id pub-id-type="doi">10.3109/03008207.2014.923849</pub-id>
+<pub-id pub-id-type="pmid">25158194</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0027"><mixed-citation publication-type="book" id="mgg3929-cit-0027">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name> (<year>2018</year>). <chapter-title>The origin and early evolution of SCPP genes and tissue mineralization in vertebrates</chapter-title> In <person-group person-group-type="editor"><name><surname>Endo</surname><given-names>K.</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Kogure</surname><given-names>T.</given-names></name></person-group>, &#x00026; <person-group person-group-type="editor"><name><surname>Nagasawa</surname><given-names>H.</given-names></name></person-group> (Eds.), <source xml:lang="en">Biomineralization from molecular and nanostructural analyses to environental science</source> (pp. <fpage>157</fpage>&#x02013;<lpage>164</lpage>). <publisher-loc>Singapore</publisher-loc>: <publisher-name>Springer Open</publisher-name>.</mixed-citation></ref><ref id="mgg3929-bib-0028"><mixed-citation publication-type="journal" id="mgg3929-cit-0028">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Amemiya</surname>, <given-names>C. T.</given-names>
+</string-name> (<year>2014</year>). <article-title>SCPP genes in the coelacanth: Tissue mineralization genes shared by sarcopterygians</article-title>. <source xml:lang="en">Journal of Experimental Zoology Part B: Molecular and Developmental Evolution</source>, <volume>322</volume>(<issue>6</issue>), <fpage>390</fpage>&#x02013;<lpage>402</lpage>. <pub-id pub-id-type="doi">10.1002/jez.b.22546</pub-id>
+</mixed-citation></ref><ref id="mgg3929-bib-0029"><mixed-citation publication-type="journal" id="mgg3929-cit-0029">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Mikami</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Nakatomi</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Braasch</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Batzel</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Postlethwait</surname>, <given-names>J. H.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Ishiyama</surname>, <given-names>M.</given-names>
+</string-name> (<year>2017</year>). <article-title>SCPP Genes and their relatives in gar: Rapid expansion of mineralization genes in osteichthyans</article-title>. <source xml:lang="en">Journal of Experimental Zoology Part B: Molecular and Developmental Evolution</source>, <volume>328</volume>(<issue>7</issue>), <fpage>645</fpage>&#x02013;<lpage>665</lpage>. <pub-id pub-id-type="doi">10.1002/jez.b.22755</pub-id>
+</mixed-citation></ref><ref id="mgg3929-bib-0030"><mixed-citation publication-type="journal" id="mgg3929-cit-0030">
+<string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Weiss</surname>, <given-names>K. M.</given-names>
+</string-name> (<year>2003</year>). <article-title>Mineralized tissue and vertebrate evolution: The secretory calcium&#x02010;binding phosphoprotein gene cluster</article-title>. <source xml:lang="en">Proceedings of the National Academy of Sciences USA</source>, <volume>100</volume>(<issue>7</issue>), <fpage>4060</fpage>&#x02013;<lpage>4065</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0638023100</pub-id>
+</mixed-citation></ref><ref id="mgg3929-bib-0031"><mixed-citation publication-type="journal" id="mgg3929-cit-0031">
+<string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>, <given-names>B. P.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2006</year>). <article-title>Mutational analysis of candidate genes in 24 amelogenesis imperfecta families</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>114</volume>(<issue>Suppl 1</issue>), <fpage>3</fpage>&#x02013;<lpage>12</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2006.00278.x</pub-id>
+<pub-id pub-id-type="pmid">16674655</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0032"><mixed-citation publication-type="journal" id="mgg3929-cit-0032">
+<string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Koruyucu</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Kang</surname>, <given-names>J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2019</year>). <article-title>Mutations in RELT cause autosomal recessive amelogenesis imperfecta</article-title>. <source xml:lang="en">Clinical Genetics</source>, <volume>95</volume>(<issue>3</issue>), <fpage>375</fpage>&#x02013;<lpage>383</lpage>. <pub-id pub-id-type="doi">10.1111/cge.13487</pub-id>
+<pub-id pub-id-type="pmid">30506946</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0033"><mixed-citation publication-type="journal" id="mgg3929-cit-0033">
+<string-name>
+<surname>Kobayashi</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J.&#x02010;C.</given-names>
+</string-name>, <string-name>
+<surname>Gomi</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Arai</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2007</year>). <article-title>Splicing determines the glycosylation state of ameloblastin</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>86</volume>(<issue>10</issue>), <fpage>962</fpage>&#x02013;<lpage>967</lpage>. <pub-id pub-id-type="doi">10.1177/154405910708601009</pub-id>
+<pub-id pub-id-type="pmid">17890672</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0034"><mixed-citation publication-type="journal" id="mgg3929-cit-0034">
+<string-name>
+<surname>Kozak</surname>, <given-names>M.</given-names>
+</string-name> (<year>1984</year>). <article-title>Compilation and analysis of sequences upstream from the translational start site in eukaryotic mRNAs</article-title>. <source xml:lang="en">Nucl. Acids Res.</source>, <volume>12</volume>(<issue>2</issue>), <fpage>857</fpage>&#x02013;<lpage>872</lpage>. <pub-id pub-id-type="doi">10.1093/nar/12.2.857</pub-id>
+<pub-id pub-id-type="pmid">6694911</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0035"><mixed-citation publication-type="journal" id="mgg3929-cit-0035">
+<string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<surname>Matsuki</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Kozak</surname>, <given-names>C. A.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name> (<year>1996</year>). <article-title>Full&#x02010;length sequence, localization, and chromosomal mapping of ameloblastin: A novel tooth&#x02010;specific gene</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>271</volume>(<issue>8</issue>), <fpage>4431</fpage>&#x02013;<lpage>4435</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.271.8.4431</pub-id>
+<pub-id pub-id-type="pmid">8626794</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0036"><mixed-citation publication-type="journal" id="mgg3929-cit-0036">
+<string-name>
+<surname>Kumar</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Henikoff</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Ng</surname>, <given-names>P. C.</given-names>
+</string-name> (<year>2009</year>). <article-title>Predicting the effects of coding non&#x02010;synonymous variants on protein function using the SIFT algorithm</article-title>. <source xml:lang="en">Nature Protocols</source>, <volume>4</volume>(<issue>7</issue>), <fpage>1073</fpage>&#x02013;<lpage>1081</lpage>. <pub-id pub-id-type="doi">10.1038/nprot.2009.86</pub-id>
+<pub-id pub-id-type="pmid">19561590</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0037"><mixed-citation publication-type="journal" id="mgg3929-cit-0037">
+<string-name>
+<surname>Lee</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, <string-name>
+<surname>Matsuki</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Nanci</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>K. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name> (<year>1996</year>). <article-title>Ameloblastin expression in rat incisors and human tooth germs</article-title>. <source xml:lang="en">International Journal of Developmental Biology</source>, <volume>40</volume>(<issue>6</issue>), <fpage>1141</fpage>&#x02013;<lpage>1150</lpage>.<pub-id pub-id-type="pmid">9032019</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0038"><mixed-citation publication-type="journal" id="mgg3929-cit-0038">
+<string-name>
+<surname>Lek</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Karczewski</surname>, <given-names>K. J.</given-names>
+</string-name>, <string-name>
+<surname>Minikel</surname>, <given-names>E. V.</given-names>
+</string-name>, <string-name>
+<surname>Samocha</surname>, <given-names>K. E.</given-names>
+</string-name>, <string-name>
+<surname>Banks</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Fennell</surname>, <given-names>T.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>MacArthur</surname>, <given-names>D. G.</given-names>
+</string-name> (<year>2016</year>). <article-title>Analysis of protein&#x02010;coding genetic variation in 60,706 humans</article-title>. <source xml:lang="en">Nature</source>, <volume>536</volume>(<issue>7616</issue>), <fpage>285</fpage>&#x02013;<lpage>291</lpage>. <pub-id pub-id-type="doi">10.1038/nature19057</pub-id>
+<pub-id pub-id-type="pmid">27535533</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0039"><mixed-citation publication-type="journal" id="mgg3929-cit-0039">
+<string-name>
+<surname>Lu</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Xiong</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>X.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Xiong</surname>, <given-names>F. U.</given-names>
+</string-name> (<year>2018</year>). <article-title>Whole exome sequencing identifies an AMBN missense mutation causing severe autosomal&#x02010;dominant amelogenesis imperfecta and dentin disorders</article-title>. <source xml:lang="en">International Journal of Oral Science</source>, <volume>10</volume>(<issue>3</issue>), <fpage>26</fpage>
+<pub-id pub-id-type="doi">10.1038/s41368-018-0027-9</pub-id>
+<pub-id pub-id-type="pmid">30174330</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0040"><mixed-citation publication-type="journal" id="mgg3929-cit-0040">
+<string-name>
+<surname>MacDougall</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>DuPont</surname>, <given-names>B. R.</given-names>
+</string-name>, <string-name>
+<surname>Simmons</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Reus</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Krebsbach</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>K&#x000e4;rrman</surname>, <given-names>C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Forsman</surname>, <given-names>K.</given-names>
+</string-name> (<year>1997</year>). <article-title>Ameloblastin gene (AMBN) maps within the critical region for autosomal dominant amelogenesis imperfecta at chromosome 4q21</article-title>. <source xml:lang="en">Genomics</source>, <volume>41</volume>(<issue>1</issue>), <fpage>115</fpage>&#x02013;<lpage>118</lpage>. <pub-id pub-id-type="doi">10.1006/geno.1997.4643</pub-id>
+<pub-id pub-id-type="pmid">9126491</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0041"><mixed-citation publication-type="journal" id="mgg3929-cit-0041">
+<string-name>
+<surname>Meredith</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Cheng</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Springer</surname>, <given-names>M. S.</given-names>
+</string-name> (<year>2011</year>). <article-title>Pseudogenization of the tooth gene enamelysin (MMP20) in the common ancestor of extant baleen whales</article-title>. <source xml:lang="en">Proceedings of the Royal Society B: Biological Sciences</source>, <volume>278</volume>(<issue>1708</issue>), <fpage>993</fpage>&#x02013;<lpage>1002</lpage>. <pub-id pub-id-type="doi">10.1098/rspb.2010.1280</pub-id>
+</mixed-citation></ref><ref id="mgg3929-bib-0042"><mixed-citation publication-type="journal" id="mgg3929-cit-0042">
+<string-name>
+<surname>Meredith</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Springer</surname>, <given-names>M. S.</given-names>
+</string-name> (<year>2013</year>). <article-title>Molecular decay of enamel matrix protein genes in turtles and other edentulous amniotes</article-title>. <source xml:lang="en">BMC Evolutionary Biology</source>, <volume>13</volume>, <fpage>20</fpage>
+<pub-id pub-id-type="doi">10.1186/1471-2148-13-20</pub-id>
+<pub-id pub-id-type="pmid">23342979</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0043"><mixed-citation publication-type="journal" id="mgg3929-cit-0043">
+<string-name>
+<surname>Murakami</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Dohi</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Wakida</surname>, <given-names>K.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name> (<year>1997</year>). <article-title>Immunochemical and immunohistochemical study of the 27&#x02010; and 29&#x02010;kDa calcium&#x02010;binding proteins and related proteins in the porcine tooth germ</article-title>. <source xml:lang="en">Histochemistry and Cell Biology</source>, <volume>107</volume>(<issue>6</issue>), <fpage>485</fpage>&#x02013;<lpage>494</lpage>. <pub-id pub-id-type="doi">10.1007/s004180050136</pub-id>
+<pub-id pub-id-type="pmid">9243282</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0044"><mixed-citation publication-type="journal" id="mgg3929-cit-0044">
+<string-name>
+<surname>Nanci</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Zalzal</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Lavoie</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Kunikata</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>, <given-names>W.&#x02010;Y.</given-names>
+</string-name>, <string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name> (<year>1998</year>). <article-title>Comparative immunochemical analyses of the developmental expression and distribution of ameloblastin and amelogenin in rat incisors</article-title>. <source xml:lang="en">Journal of Histochemistry and Cytochemistry</source>, <volume>46</volume>(<issue>8</issue>), <fpage>911</fpage>&#x02013;<lpage>934</lpage>. <pub-id pub-id-type="doi">10.1177/002215549804600806</pub-id>
+<pub-id pub-id-type="pmid">9671442</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0045"><mixed-citation publication-type="journal" id="mgg3929-cit-0045">
+<string-name>
+<surname>Orams</surname>, <given-names>H. J.</given-names>
+</string-name> (<year>1964</year>). <article-title>The fine structure of the enamel examined with the electron microscope</article-title>. <source xml:lang="en">Australian Dental Journal</source>, <volume>9</volume>(<issue>5</issue>), <fpage>369</fpage>&#x02013;<lpage>373</lpage>. <pub-id pub-id-type="doi">10.1111/j.1834-7819.1964.tb02093.x</pub-id>
+</mixed-citation></ref><ref id="mgg3929-bib-0046"><mixed-citation publication-type="journal" id="mgg3929-cit-0046">
+<string-name>
+<surname>Orams</surname>, <given-names>H. J.</given-names>
+</string-name> (<year>1966</year>). <article-title>An examination of the prism core, prism sheath and interprismatic substance using the electon microscope</article-title>. <source xml:lang="en">Australian Dental Journal</source>, <volume>11</volume>(<issue>2</issue>), <fpage>93</fpage>&#x02013;<lpage>104</lpage>.<pub-id pub-id-type="pmid">5219045</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0047"><mixed-citation publication-type="journal" id="mgg3929-cit-0047">
+<string-name>
+<surname>Petersen</surname>, <given-names>T. N.</given-names>
+</string-name>, <string-name>
+<surname>Brunak</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>von Heijne</surname>, <given-names>G.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Nielsen</surname>, <given-names>H.</given-names>
+</string-name> (<year>2011</year>). <article-title>SignalP 4.0: Discriminating signal peptides from transmembrane regions</article-title>. <source xml:lang="en">Nature Methods</source>, <volume>8</volume>(<issue>10</issue>), <fpage>785</fpage>&#x02013;<lpage>786</lpage>. <pub-id pub-id-type="doi">10.1038/nmeth.1701</pub-id>
+<pub-id pub-id-type="pmid">21959131</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0048"><mixed-citation publication-type="journal" id="mgg3929-cit-0048">
+<string-name>
+<surname>Poulter</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Murillo</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Brookes</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E. L.</given-names>
+</string-name>, <string-name>
+<surname>Parry</surname>, <given-names>D. A.</given-names>
+</string-name>, <string-name>
+<surname>Silva</surname>, <given-names>S.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Mighell</surname>, <given-names>A. J.</given-names>
+</string-name> (<year>2014</year>). <article-title>Deletion of ameloblastin exon 6 is associated with amelogenesis imperfecta</article-title>. <source xml:lang="en">Human Molecular Genetics</source>, <volume>23</volume>(<issue>20</issue>), <fpage>5317</fpage>&#x02013;<lpage>5324</lpage>. <pub-id pub-id-type="doi">10.1093/hmg/ddu247</pub-id>
+<pub-id pub-id-type="pmid">24858907</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0049"><mixed-citation publication-type="journal" id="mgg3929-cit-0049">
+<string-name>
+<surname>Prasad</surname>, <given-names>M. K.</given-names>
+</string-name>, <string-name>
+<surname>Geoffroy</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Vicaire</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Jost</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Dumas</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Le Gras</surname>, <given-names>S.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Bloch&#x02010;Zupan</surname>, <given-names>A.</given-names>
+</string-name> (<year>2016</year>). <article-title>A targeted next&#x02010;generation sequencing assay for the molecular diagnosis of genetic disorders with orodental involvement</article-title>. <source xml:lang="en">Journal of Medical Genetics</source>, <volume>53</volume>(<issue>2</issue>), <fpage>98</fpage>&#x02013;<lpage>110</lpage>. <pub-id pub-id-type="doi">10.1136/jmedgenet-2015-103302</pub-id>
+<pub-id pub-id-type="pmid">26502894</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0050"><mixed-citation publication-type="book" id="mgg3929-cit-0050">
+<string-name>
+<surname>Prostak</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Seifert</surname>, <given-names>P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Skobe</surname>, <given-names>Z.</given-names>
+</string-name> (<year>1989</year>). <chapter-title>Ultrastructure of developing teeth in the gar pike, (Lepisosteus)</chapter-title> In <person-group person-group-type="editor"><name><surname>Fearnhead</surname><given-names>R.</given-names></name></person-group> (Ed.), <source xml:lang="en">Tooth enamel V</source> (pp. <fpage>188</fpage>&#x02013;<lpage>192</lpage>). <publisher-loc>Yokohama, Japan</publisher-loc>: <publisher-name>Florence</publisher-name>.</mixed-citation></ref><ref id="mgg3929-bib-0051"><mixed-citation publication-type="journal" id="mgg3929-cit-0051">
+<string-name>
+<surname>Ryu</surname>, <given-names>O. H.</given-names>
+</string-name>, <string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Qian</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>1999</year>). <article-title>Characterization of recombinant pig enamelysin activity and cleavage of recombinant pig and mouse amelogenins</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>78</volume>(<issue>3</issue>), <fpage>743</fpage>&#x02013;<lpage>750</lpage>. <pub-id pub-id-type="doi">10.1177/00220345990780030601</pub-id>
+<pub-id pub-id-type="pmid">10096449</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0052"><mixed-citation publication-type="book" id="mgg3929-cit-0052">
+<string-name>
+<surname>Shimizu</surname>, <given-names>M.</given-names>
+</string-name> (<year>1984</year>). <chapter-title>Investigation of highly aggregative components in porcine enamel proteins</chapter-title> In <person-group person-group-type="editor"><name><surname>Fearnhead</surname><given-names>R. W.</given-names></name></person-group>, &#x00026; <person-group person-group-type="editor"><name><surname>Suga</surname><given-names>S.</given-names></name></person-group> (Eds.), <source xml:lang="en">Tooth Enamel IV</source> (pp. <fpage>156</fpage>&#x02013;<lpage>160</lpage>). <publisher-loc>New York</publisher-loc>: <publisher-name>Elsevier Science Publishers</publisher-name>.</mixed-citation></ref><ref id="mgg3929-bib-0053"><mixed-citation publication-type="journal" id="mgg3929-cit-0053">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Lertlam</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2009</year>). <article-title>Hypomaturation enamel defects in Klk4 knockout/LacZ knockin mice</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>284</volume>(<issue>28</issue>), <fpage>19110</fpage>&#x02013;<lpage>19121</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M109.013623</pub-id>
+<pub-id pub-id-type="pmid">19578120</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0054"><mixed-citation publication-type="journal" id="mgg3929-cit-0054">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Lau</surname>, <given-names>E. C.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<surname>Aoba</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Lacey</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Nelson</surname>, <given-names>D.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name> (<year>1994</year>). <article-title>Isolation and characterization of a mouse amelogenin expressed in <italic>Escherichia coli</italic>
+</article-title>. <source xml:lang="en">Calcified Tissue International</source>, <volume>54</volume>(<issue>4</issue>), <fpage>312</fpage>&#x02013;<lpage>319</lpage>. <ext-link ext-link-type="uri" xlink:href="https://link.springer.com/article/10.1007/BF00295956">https://link.springer.com/article/10.1007/BF00295956</ext-link>
+<pub-id pub-id-type="pmid">8062146</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0055"><mixed-citation publication-type="journal" id="mgg3929-cit-0055">
+<string-name>
+<surname>Sire</surname>, <given-names>J. Y.</given-names>
+</string-name> (<year>1994</year>). <article-title>Light and TEM study of nonregenerated and experimentally regenerated scales of Lepisosteus oculatus (Holostei) with particular attention to ganoine formation</article-title>. <source xml:lang="en">Anatomical Record</source>, <volume>240</volume>(<issue>2</issue>), <fpage>189</fpage>&#x02013;<lpage>207</lpage>. <pub-id pub-id-type="doi">10.1002/ar.1092400206</pub-id>
+<pub-id pub-id-type="pmid">7992885</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0056"><mixed-citation publication-type="journal" id="mgg3929-cit-0056">
+<string-name>
+<surname>Sire</surname>, <given-names>J. Y.</given-names>
+</string-name> (<year>1995</year>). <article-title>Ganoine formation in the scales of primitive actinopterygian fishes, lepisosteids and polypterids</article-title>. <source xml:lang="en">Connective Tissue Research</source>, <volume>33</volume>(<issue>1&#x02013;3</issue>), <fpage>213</fpage>&#x02013;<lpage>222</lpage>. <pub-id pub-id-type="doi">10.3109/03008209509017006</pub-id>
+<pub-id pub-id-type="pmid">7554957</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0057"><mixed-citation publication-type="journal" id="mgg3929-cit-0057">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name> (<year>1998</year>). <article-title>Cellular and chemical events during enamel maturation</article-title>. <source xml:lang="en">Critical Reviews in Oral Biology and Medicine</source>, <volume>9</volume>(<issue>2</issue>), <fpage>128</fpage>&#x02013;<lpage>161</lpage>. <pub-id pub-id-type="doi">10.1177/10454411980090020101</pub-id>
+<pub-id pub-id-type="pmid">9603233</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0058"><mixed-citation publication-type="journal" id="mgg3929-cit-0058">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2016</year>). <article-title>Ultrastructure of early amelogenesis in wild&#x02010;type, Amelx&#x02010;/&#x02010;, and Enam&#x02010;/&#x02010; mice: Enamel ribbon initiation on dentin mineral and ribbon orientation by ameloblasts</article-title>. <source xml:lang="en">Molecular Genetics and Genomic Medicine</source>, <volume>4</volume>(<issue>6</issue>), <fpage>662</fpage>&#x02013;<lpage>683</lpage>. <pub-id pub-id-type="doi">10.1002/mgg3.253</pub-id>
+<pub-id pub-id-type="pmid">27896288</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0059"><mixed-citation publication-type="journal" id="mgg3929-cit-0059">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2011</year>). <article-title>Relationships between protein and mineral during enamel development in normal and genetically altered mice</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>119</volume>(<issue>Suppl 1</issue>), <fpage>125</fpage>&#x02013;<lpage>135</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2011.00871.x</pub-id>
+<pub-id pub-id-type="pmid">22243238</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0060"><mixed-citation publication-type="journal" id="mgg3929-cit-0060">
+<string-name>
+<surname>Springer</surname>, <given-names>M. S.</given-names>
+</string-name>, <string-name>
+<surname>Starrett</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Morin</surname>, <given-names>P. A.</given-names>
+</string-name>, <string-name>
+<surname>Lanzetti</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Hayashi</surname>, <given-names>C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Gatesy</surname>, <given-names>J.</given-names>
+</string-name> (<year>2016</year>). <article-title>Inactivation of C4orf26 in toothless placental mammals</article-title>. <source xml:lang="en">Molecular Phylogenetics and Evolution</source>, <volume>95</volume>, <fpage>34</fpage>&#x02013;<lpage>45</lpage>. <pub-id pub-id-type="doi">10.1016/j.ympev.2015.11.002</pub-id>
+<pub-id pub-id-type="pmid">26596502</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0061"><mixed-citation publication-type="journal" id="mgg3929-cit-0061">
+<string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Satoda</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Murakami</surname>, <given-names>C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Shimizu</surname>, <given-names>M.</given-names>
+</string-name> (<year>1995</year>). <article-title>Immunochemical and immunocytochemical study of a 15 kDa non&#x02010;amelogenin and related proteins in the porcine immature enamel: Proposal of a new group of enamel proteins sheath proteins</article-title>. <source xml:lang="en">Biomedical Research</source>, <volume>16</volume>(<issue>3</issue>), <fpage>131</fpage>&#x02013;<lpage>140</lpage>. <pub-id pub-id-type="doi">10.2220/biomedres.16.131</pub-id>
+</mixed-citation></ref><ref id="mgg3929-bib-0062"><mixed-citation publication-type="journal" id="mgg3929-cit-0062">
+<string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Shimizu</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Miake</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kobayashi</surname>, <given-names>S.</given-names>
+</string-name> (<year>1991</year>). <article-title>Immunochemical and immunohistochemical studies, using antisera against porcine 25 kDa amelogenin, 89 kDa enamelin and the 13&#x02013;17 kDa nonamelogenins, on immature enamel of the pig and rat</article-title>. <source xml:lang="en">Histochemistry</source>, <volume>96</volume>(<issue>2</issue>), <fpage>129</fpage>&#x02013;<lpage>138</lpage>. <pub-id pub-id-type="doi">10.1007/BF00315983</pub-id>
+<pub-id pub-id-type="pmid">1917569</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0063"><mixed-citation publication-type="journal" id="mgg3929-cit-0063">
+<string-name>
+<surname>Wang</surname>, <given-names>S.&#x02010;K.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Nunez</surname>, <given-names>S. M.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2015</year>). <article-title>Critical roles for WDR72 in calcium transport and matrix protein removal during enamel maturation</article-title>. <source xml:lang="en">Molecular Genetics &#x00026; Genomic Medicine</source>, <volume>3</volume>(<issue>4</issue>), <fpage>302</fpage>&#x02013;<lpage>319</lpage>. <pub-id pub-id-type="doi">10.1002/mgg3.143</pub-id>
+<pub-id pub-id-type="pmid">26247047</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0064"><mixed-citation publication-type="journal" id="mgg3929-cit-0064">
+<string-name>
+<surname>Wazen</surname>, <given-names>R. M.</given-names>
+</string-name>, <string-name>
+<surname>Moffatt</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Zalzal</surname>, <given-names>S. F.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Nanci</surname>, <given-names>A.</given-names>
+</string-name> (<year>2009</year>). <article-title>A mouse model expressing a truncated form of ameloblastin exhibits dental and junctional epithelium defects</article-title>. <source xml:lang="en">Matrix Biology</source>, <volume>28</volume>(<issue>5</issue>), <fpage>292</fpage>&#x02013;<lpage>303</lpage>. <pub-id pub-id-type="doi">10.1016/j.matbio.2009.04.004</pub-id>
+<pub-id pub-id-type="pmid">19375505</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0065"><mixed-citation publication-type="journal" id="mgg3929-cit-0065">
+<string-name>
+<surname>Yang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Kawasaki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Reid</surname>, <given-names>B. M.</given-names>
+</string-name>, <string-name>
+<surname>Nunez</surname>, <given-names>S. M.</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hu</surname>, <given-names>J.&#x02010;C.</given-names>
+</string-name> (<year>2016</year>). <article-title>The dentin phosphoprotein repeat region and inherited defects of dentin</article-title>. <source xml:lang="en">Molecular Genetics &#x00026; Genomic Medicine</source>, <volume>4</volume>(<issue>1</issue>), <fpage>28</fpage>&#x02013;<lpage>38</lpage>. <pub-id pub-id-type="doi">10.1002/mgg3.176</pub-id>
+<pub-id pub-id-type="pmid">26788535</pub-id></mixed-citation></ref><ref id="mgg3929-bib-0066"><mixed-citation publication-type="journal" id="mgg3929-cit-0066">
+<string-name>
+<surname>Zhang</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Koruyucu</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Kasimoglu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>, <given-names>S.&#x02010;K.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.&#x02010;C.</given-names>
+</string-name> (in press). <article-title>ENAM Mutations and Digenic Inheritance</article-title>. <source xml:lang="en">Molecular Genetics and Genomic Medicine</source>.</mixed-citation></ref><ref id="mgg3929-bib-0067"><mixed-citation publication-type="journal" id="mgg3929-cit-0067">
+<string-name>
+<surname>Zhang</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Koruyucu</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Kasimoglu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<surname>Tinawi</surname>, <given-names>S.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hu</surname>, <given-names>J. C. C.</given-names>
+</string-name> (<year>2019</year>). <article-title>WDR72 mutations associated with amelogenesis imperfecta and acidosis</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>19</volume>, <fpage>22034518824571</fpage>
+<pub-id pub-id-type="doi">10.1177/0022034518824571</pub-id>
+</mixed-citation></ref></ref-list></back></article>

@@ -1,0 +1,690 @@
+{
+  "id": [
+    "27642012"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27642012"
+  ],
+  "pmcid": [
+    "PMC5061548"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5061548"
+      ]
+    }
+  ],
+  "doi": [
+    "10.7554/elife.11994"
+  ],
+  "title": [
+    "TP53 copy number expansion is associated with the evolution of increased body size and an enhanced DNA damage response in elephants."
+  ],
+  "authorString": [
+    "Sulak M, Fong L, Mika K, Chigurupati S, Yon L, Mongan NP, Emes RD, Lynch VJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Sulak M"
+          ],
+          "firstName": [
+            "Michael"
+          ],
+          "lastName": [
+            "Sulak"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Human Genetics, The University of Chicago, Chicago, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Fong L"
+          ],
+          "firstName": [
+            "Lindsey"
+          ],
+          "lastName": [
+            "Fong"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Human Genetics, The University of Chicago, Chicago, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mika K"
+          ],
+          "firstName": [
+            "Katelyn"
+          ],
+          "lastName": [
+            "Mika"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2170-9364",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Human Genetics, The University of Chicago, Chicago, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chigurupati S"
+          ],
+          "firstName": [
+            "Sravanthi"
+          ],
+          "lastName": [
+            "Chigurupati"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Human Genetics, The University of Chicago, Chicago, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Yon L"
+          ],
+          "firstName": [
+            "Lisa"
+          ],
+          "lastName": [
+            "Yon"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9765-3192",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Veterinary Medicine and Science, University of Nottingham, Leicestershire, United Kingdom.",
+                "Faculty of Medicine and Health Sciences, University of Nottingham, Leicestershire, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mongan NP"
+          ],
+          "firstName": [
+            "Nigel P"
+          ],
+          "lastName": [
+            "Mongan"
+          ],
+          "initials": [
+            "NP"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5438-1126",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Veterinary Medicine and Science, University of Nottingham, Leicestershire, United Kingdom.",
+                "Faculty of Medicine and Health Sciences, University of Nottingham, Leicestershire, United Kingdom.",
+                "Department of Pharmacology, Weill Cornell Medical College, New York, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Emes RD"
+          ],
+          "firstName": [
+            "Richard D"
+          ],
+          "lastName": [
+            "Emes"
+          ],
+          "initials": [
+            "RD"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6855-5481",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Veterinary Medicine and Science, University of Nottingham, Leicestershire, United Kingdom.",
+                "Faculty of Medicine and Health Sciences, University of Nottingham, Leicestershire, United Kingdom.",
+                "Advanced Data Analysis Centre, University of Nottingham UK, Nottingham, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lynch VJ"
+          ],
+          "firstName": [
+            "Vincent J"
+          ],
+          "lastName": [
+            "Lynch"
+          ],
+          "initials": [
+            "VJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5311-3824",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Human Genetics, The University of Chicago, Chicago, United States."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-2170-9364",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9765-3192",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-5438-1126",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6855-5481",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-5311-3824",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "recommended_reviews",
+        "related_data",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "5"
+      ],
+      "journalIssueId": [
+        "2446576"
+      ],
+      "dateOfPublication": [
+        "2016 Sep"
+      ],
+      "monthOfPublication": [
+        "9"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-09-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "eLife"
+          ],
+          "ISOAbbreviation": [
+            "Elife"
+          ],
+          "medlineAbbreviation": [
+            "Elife"
+          ],
+          "NLMid": [
+            "101579614"
+          ],
+          "ISSN": [
+            "2050-084X"
+          ],
+          "ESSN": [
+            "2050-084X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "abstractText": [
+    "A major constraint on the evolution of large body sizes in animals is an increased risk of developing cancer. There is no correlation, however, between body size and cancer risk. This lack of correlation is often referred to as 'Peto's Paradox'. Here, we show that the elephant genome encodes 20 copies of the tumor suppressor gene TP53 and that the increase in TP53 copy number occurred coincident with the evolution of large body sizes, the evolution of extreme sensitivity to genotoxic stress, and a hyperactive TP53 signaling pathway in the elephant (Proboscidean) lineage. Furthermore, we show that several of the TP53 retrogenes (TP53RTGs) are transcribed and likely translated. While TP53RTGs do not appear to directly function as transcription factors, they do contribute to the enhanced sensitivity of elephant cells to DNA damage and the induction of apoptosis by regulating activity of the TP53 signaling pathway. These results suggest that an increase in the copy number of TP53 may have played a direct role in the evolution of very large body sizes and the resolution of Peto's paradox in Proboscideans."
+  ],
+  "affiliation": [
+    "Department of Human Genetics, The University of Chicago, Chicago, United States."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Elephants"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Body Size"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Expression Profiling"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Signal Transduction"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Apoptosis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "DNA Repair"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Biosynthesis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Transcription, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Gene Dosage"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genes, p53"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Cell biology",
+        "Genomics",
+        "Asian elephant",
+        "Evolutionary Biology",
+        "Armadillo",
+        "Hyrax",
+        "African Elephant",
+        "Aardvark"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.7554/eLife.11994"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5061548"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5061548?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "27997337"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Elife. 2016 Dec 20;5:"
+          ],
+          "type": [
+            "Erratum in"
+          ],
+          "orderIn": [
+            "1"
+          ]
+        },
+        {
+          "id": [
+            "27797705"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Elife. 2016 Oct 31;5:"
+          ],
+          "type": [
+            "Comment in"
+          ],
+          "orderIn": [
+            "2"
+          ]
+        },
+        {
+          "id": [
+            "PPR30111"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "33"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "geo",
+        "ensembl"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2017-12-11"
+  ],
+  "dateOfCreation": [
+    "2016-09-20"
+  ],
+  "firstIndexDate": [
+    "2016-09-21"
+  ],
+  "fullTextReceivedDate": [
+    "2016-10-16"
+  ],
+  "dateOfRevision": [
+    "2018-11-13"
+  ],
+  "electronicPublicationDate": [
+    "2016-09-19"
+  ],
+  "firstPublicationDate": [
+    "2016-09-19"
+  ]
+}

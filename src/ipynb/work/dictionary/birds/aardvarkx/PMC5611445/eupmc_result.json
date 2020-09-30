@@ -1,0 +1,356 @@
+{
+  "id": [
+    "28979209"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28979209"
+  ],
+  "pmcid": [
+    "PMC5611445"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5611445"
+      ]
+    }
+  ],
+  "doi": [
+    "10.3389/fphys.2017.00670"
+  ],
+  "title": [
+    "Evolution of UCP1 Transcriptional Regulatory Elements Across the Mammalian Phylogeny."
+  ],
+  "authorString": [
+    "Gaudry MJ, Campbell KL."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Gaudry MJ"
+          ],
+          "firstName": [
+            "Michael J"
+          ],
+          "lastName": [
+            "Gaudry"
+          ],
+          "initials": [
+            "MJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biological Sciences, University of ManitobaWinnipeg, MB, Canada."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Campbell KL"
+          ],
+          "firstName": [
+            "Kevin L"
+          ],
+          "lastName": [
+            "Campbell"
+          ],
+          "initials": [
+            "KL"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7005-7086",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biological Sciences, University of ManitobaWinnipeg, MB, Canada."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7005-7086",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2550597"
+      ],
+      "dateOfPublication": [
+        "2017 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Frontiers in physiology"
+          ],
+          "ISOAbbreviation": [
+            "Front Physiol"
+          ],
+          "medlineAbbreviation": [
+            "Front Physiol"
+          ],
+          "NLMid": [
+            "101549006"
+          ],
+          "ISSN": [
+            "1664-042X"
+          ],
+          "ESSN": [
+            "1664-042X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "670"
+  ],
+  "abstractText": [
+    "Uncoupling protein 1 (UCP1) permits non-shivering thermogenesis (NST) when highly expressed in brown adipose tissue (BAT) mitochondria. Exclusive to placental mammals, BAT has commonly been regarded to be advantageous for thermoregulation in hibernators, small-bodied species, and the neonates of larger species. While numerous regulatory control motifs associated with UCP1 transcription have been proposed for murid rodents, it remains unclear whether these are conserved across the eutherian mammal phylogeny and hence essential for UCP1 expression. To address this shortcoming, we conducted a broad comparative survey of putative UCP1 transcriptional regulatory elements in 139 mammals (135 eutherians). We find no evidence for presence of a UCP1 enhancer in monotremes and marsupials, supporting the hypothesis that this control region evolved in a stem eutherian ancestor. We additionally reveal that several putative promoter elements (e.g., CRE-4, CCAAT) identified in murid rodents are not conserved among BAT-expressing eutherians, and together with the putative regulatory region (PRR) and CpG island do not appear to be crucial for UCP1 expression. The specificity and importance of the upTRE, dnTRE, URE1, CRE-2, RARE-2, NBRE, BRE-1, and BRE-2 enhancer elements first described from rats and mice are moreover uncertain as these motifs differ substantially-but generally remain highly conserved-in other BAT-expressing eutherians. Other UCP1 enhancer motifs (CRE-3, PPRE, and RARE-3) as well as the TATA box are also highly conserved in nearly all eutherian lineages with an intact UCP1. While these transcriptional regulatory motifs are generally also maintained in species where this gene is pseudogenized, the loss or degeneration of key basal promoter (e.g., TATA box) and enhancer elements in other UCP1-lacking lineages make it unlikely that the enhancer region is pleiotropic (i.e., co-regulates additional genes). Importantly, differential losses of (or mutations within) putative regulatory elements among the eutherian lineages with an intact UCP1 suggests that the transcriptional control of gene expression is not highly conserved in this mammalian clade."
+  ],
+  "affiliation": [
+    "Department of Biological Sciences, University of ManitobaWinnipeg, MB, Canada."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Transcriptional regulation",
+        "Enhancer",
+        "comparative analysis",
+        "Uncoupling protein 1"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3389/fphys.2017.00670"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5611445"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5611445?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "29235582"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Front Physiol. 2017 Nov 28;8:978"
+          ],
+          "type": [
+            "Comment in"
+          ],
+          "orderIn": [
+            "57"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "4"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2017-10-06"
+  ],
+  "firstIndexDate": [
+    "2017-10-06"
+  ],
+  "fullTextReceivedDate": [
+    "2017-10-06"
+  ],
+  "dateOfRevision": [
+    "2017-12-20"
+  ],
+  "electronicPublicationDate": [
+    "2017-09-20"
+  ],
+  "firstPublicationDate": [
+    "2017-09-20"
+  ]
+}

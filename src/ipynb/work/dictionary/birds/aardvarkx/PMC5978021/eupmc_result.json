@@ -1,0 +1,842 @@
+{
+  "id": [
+    "28985326"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28985326"
+  ],
+  "pmcid": [
+    "PMC5978021"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5978021"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/icb/icx090"
+  ],
+  "title": [
+    "The Effects of Captivity on the Mammalian Gut Microbiome."
+  ],
+  "authorString": [
+    "McKenzie VJ, Song SJ, Delsuc F, Prest TL, Oliverio AM, Korpita TM, Alexiev A, Amato KR, Metcalf JL, Kowalewski M, Avenant NL, Link A, Di Fiore A, Seguin-Orlando A, Feh C, Orlando L, Mendelson JR, Sanders J, Knight R."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "McKenzie VJ"
+          ],
+          "firstName": [
+            "Valerie J"
+          ],
+          "lastName": [
+            "McKenzie"
+          ],
+          "initials": [
+            "VJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Song SJ"
+          ],
+          "firstName": [
+            "Se Jin"
+          ],
+          "lastName": [
+            "Song"
+          ],
+          "initials": [
+            "SJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA.",
+                "Department of Pediatrics and Computer Science & Engineering, University of California at San Diego, CA, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Delsuc F"
+          ],
+          "firstName": [
+            "Frédéric"
+          ],
+          "lastName": [
+            "Delsuc"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut des Sciences de l'Evolution, Université de Montpellier, UMR 5554, CNRS, IRD, EPHE, France."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Prest TL"
+          ],
+          "firstName": [
+            "Tiffany L"
+          ],
+          "lastName": [
+            "Prest"
+          ],
+          "initials": [
+            "TL"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Oliverio AM"
+          ],
+          "firstName": [
+            "Angela M"
+          ],
+          "lastName": [
+            "Oliverio"
+          ],
+          "initials": [
+            "AM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0261-0393",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Korpita TM"
+          ],
+          "firstName": [
+            "Timothy M"
+          ],
+          "lastName": [
+            "Korpita"
+          ],
+          "initials": [
+            "TM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Alexiev A"
+          ],
+          "firstName": [
+            "Alexandra"
+          ],
+          "lastName": [
+            "Alexiev"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Amato KR"
+          ],
+          "firstName": [
+            "Katherine R"
+          ],
+          "lastName": [
+            "Amato"
+          ],
+          "initials": [
+            "KR"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Anthropology, Northwestern University, IL, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Metcalf JL"
+          ],
+          "firstName": [
+            "Jessica L"
+          ],
+          "lastName": [
+            "Metcalf"
+          ],
+          "initials": [
+            "JL"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Animal Sciences, Colorado State University, CO, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kowalewski M"
+          ],
+          "firstName": [
+            "Martin"
+          ],
+          "lastName": [
+            "Kowalewski"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "National Scientific and Technical Research Council (CONICET), Estacion Biologica Corrientes, Argentina."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Avenant NL"
+          ],
+          "firstName": [
+            "Nico L"
+          ],
+          "lastName": [
+            "Avenant"
+          ],
+          "initials": [
+            "NL"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5390-9010",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Mammalogy, National Museum, Bloemfontein, South Africa.",
+                "Centre for Environmental Management, University of the Free State, Bloemfontein, South Africa."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Link A"
+          ],
+          "firstName": [
+            "Andres"
+          ],
+          "lastName": [
+            "Link"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Departamento de Ciencias Biologicas, Universidad de Los Andes, Bogotá, Colombia."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Di Fiore A"
+          ],
+          "firstName": [
+            "Anthony"
+          ],
+          "lastName": [
+            "Di Fiore"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Anthropology, University of Texas Austin, TX, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Seguin-Orlando A"
+          ],
+          "firstName": [
+            "Andaine"
+          ],
+          "lastName": [
+            "Seguin-Orlando"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centre for GeoGenetics, Natural History Museum of Denmark, University of Copenhagen, Denmark.",
+                "National High-Throughput DNA Sequencing Center, University of Copenhagen, Denmark."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Feh C"
+          ],
+          "firstName": [
+            "Claudia"
+          ],
+          "lastName": [
+            "Feh"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Association pour le cheval de Przewalski: TAKH, Station Biologique de la Tour du Valat, Arles 13200, France."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Orlando L"
+          ],
+          "firstName": [
+            "Ludovic"
+          ],
+          "lastName": [
+            "Orlando"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "National Scientific and Technical Research Council (CONICET), Estacion Biologica Corrientes, Argentina."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mendelson JR"
+          ],
+          "firstName": [
+            "Joseph R"
+          ],
+          "lastName": [
+            "Mendelson"
+          ],
+          "initials": [
+            "JR"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Zoo Atlanta, GA, USA.",
+                "School of Biological Sciences, Georgia Institute of Technology, GA, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Sanders J"
+          ],
+          "firstName": [
+            "Jon"
+          ],
+          "lastName": [
+            "Sanders"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pediatrics and Computer Science & Engineering, University of California at San Diego, CA, USA.",
+                "Center for Microbiome Innovation, University of California at San Diego, La Jolla, CA, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Knight R"
+          ],
+          "firstName": [
+            "Rob"
+          ],
+          "lastName": [
+            "Knight"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pediatrics and Computer Science & Engineering, University of California at San Diego, CA, USA.",
+                "Center for Microbiome Innovation, University of California at San Diego, La Jolla, CA, USA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-0261-0393",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5390-9010",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "57"
+      ],
+      "journalIssueId": [
+        "2609458"
+      ],
+      "dateOfPublication": [
+        "2017 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Integrative and comparative biology"
+          ],
+          "ISOAbbreviation": [
+            "Integr. Comp. Biol."
+          ],
+          "medlineAbbreviation": [
+            "Integr Comp Biol"
+          ],
+          "NLMid": [
+            "101152341"
+          ],
+          "ISSN": [
+            "1540-7063"
+          ],
+          "ESSN": [
+            "1557-7023"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "690-704"
+  ],
+  "abstractText": [
+    "Recent studies increasingly note the effect of captivity or the built environment on the microbiome of humans and other animals. As symbiotic microbes are essential to many aspects of biology (e.g., digestive and immune functions), it is important to understand how lifestyle differences can impact the microbiome, and, consequently, the health of hosts. Animals living in captivity experience a range of changes that may influence the gut bacteria, such as diet changes, treatments, and reduced contact with other individuals, species and variable environmental substrates that act as sources of bacterial diversity. Thus far, initial results from previous studies point to a pattern of decreased bacterial diversity in captive animals. However, these studies are relatively limited in the scope of species that have been examined. Here we present a dataset that includes paired wild and captive samples from mammalian taxa across six Orders to investigate generalizable patterns of the effects captivity on mammalian gut bacteria. In comparing the wild to the captive condition, our results indicate that alpha diversity of the gut bacteria remains consistent in some mammalian hosts (bovids, giraffes, anteaters, and aardvarks), declines in the captive condition in some hosts (canids, primates, and equids), and increases in the captive condition in one host taxon (rhinoceros). Differences in gut bacterial beta diversity between the captive and wild state were observed for most of the taxa surveyed, except the even-toed ungulates (bovids and giraffes). Additionally, beta diversity variation was also strongly influenced by host taxonomic group, diet type, and gut fermentation physiology. Bacterial taxa that demonstrated larger shifts in relative abundance between the captive and wild states included members of the Firmicutes and Bacteroidetes. Overall, the patterns that we observe will inform a range of disciplines from veterinary practice to captive breeding efforts for biological conservation. Furthermore, bacterial taxa that persist in the captive state provide unique insight into symbiotic relationships with the host."
+  ],
+  "affiliation": [
+    "Department of Ecology and Evolutionary Biology, University of Colorado at Boulder, CO, USA."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "683257"
+          ],
+          "agency": [
+            "European Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "00013266"
+          ],
+          "agency": [
+            "Villum Fonden"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals, Zoo"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MI"
+                  ],
+                  "qualifierName": [
+                    "microbiology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MI"
+                  ],
+                  "qualifierName": [
+                    "microbiology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bacteria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bacterial Physiological Phenomena"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Gastrointestinal Microbiome"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/icb/icx090"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5978021"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5978021?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "47"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-05-04"
+  ],
+  "dateOfCreation": [
+    "2017-10-07"
+  ],
+  "firstIndexDate": [
+    "2017-10-07"
+  ],
+  "fullTextReceivedDate": [
+    "2018-06-06"
+  ],
+  "dateOfRevision": [
+    "2018-06-05"
+  ],
+  "firstPublicationDate": [
+    "2017-10-01"
+  ]
+}

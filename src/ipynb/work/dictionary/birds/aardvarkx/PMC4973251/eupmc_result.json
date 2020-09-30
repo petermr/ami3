@@ -1,0 +1,822 @@
+{
+  "id": [
+    "27488946"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27488946"
+  ],
+  "pmcid": [
+    "PMC4973251"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4973251"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1038/srep30807"
+  ],
+  "title": [
+    "Phylogeographic Patterns in Africa and High Resolution Delineation of Genetic Clades in the Lion (Panthera leo)."
+  ],
+  "authorString": [
+    "Bertola LD, Jongbloed H, van der Gaag KJ, de Knijff P, Yamaguchi N, Hooghiemstra H, Bauer H, Henschel P, White PA, Driscoll CA, Tende T, Ottosson U, Saidu Y, Vrieling K, de Iongh HH."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Bertola LD"
+          ],
+          "firstName": [
+            "L D"
+          ],
+          "lastName": [
+            "Bertola"
+          ],
+          "initials": [
+            "LD"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3445-0355",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Leiden University, Institute of Environmental Sciences (CML), PO Box 9518, 2300 RA Leiden, The Netherlands.",
+                "Leiden University, Institute of Biology Leiden (IBL), PO Box 9505, 2300 RA Leiden, The Netherlands."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Jongbloed H"
+          ],
+          "firstName": [
+            "H"
+          ],
+          "lastName": [
+            "Jongbloed"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Leiden University, Institute of Environmental Sciences (CML), PO Box 9518, 2300 RA Leiden, The Netherlands.",
+                "Leiden University, Institute of Biology Leiden (IBL), PO Box 9505, 2300 RA Leiden, The Netherlands."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "van der Gaag KJ"
+          ],
+          "firstName": [
+            "K J"
+          ],
+          "lastName": [
+            "van der Gaag"
+          ],
+          "initials": [
+            "KJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Forensic Laboratory for DNA Research, Department of Human Genetics, Leiden University Medical Centre, P.O. Box 9600, 2300 RC Leiden, The Netherlands."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "de Knijff P"
+          ],
+          "firstName": [
+            "P"
+          ],
+          "lastName": [
+            "de Knijff"
+          ],
+          "initials": [
+            "P"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Forensic Laboratory for DNA Research, Department of Human Genetics, Leiden University Medical Centre, P.O. Box 9600, 2300 RC Leiden, The Netherlands."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Yamaguchi N"
+          ],
+          "firstName": [
+            "N"
+          ],
+          "lastName": [
+            "Yamaguchi"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Qatar University, Department of Biological and Environmental Sciences, College of Arts and Sciences, PO Box 2713, Doha, Qatar."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hooghiemstra H"
+          ],
+          "firstName": [
+            "H"
+          ],
+          "lastName": [
+            "Hooghiemstra"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, Science Park 904, 1018 XH Amsterdam, The Netherlands."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bauer H"
+          ],
+          "firstName": [
+            "H"
+          ],
+          "lastName": [
+            "Bauer"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5031-5842",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "WildCRU, Recanati-Kaplan Centre, University of Oxford. Tubney House, Abingdon Road, OX13 5QL, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Henschel P"
+          ],
+          "firstName": [
+            "P"
+          ],
+          "lastName": [
+            "Henschel"
+          ],
+          "initials": [
+            "P"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Panthera, 8 West 40th Street, 18th Floor, New York, NY 10018, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "White PA"
+          ],
+          "firstName": [
+            "P A"
+          ],
+          "lastName": [
+            "White"
+          ],
+          "initials": [
+            "PA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Center for Tropical Research, Institute of the Environment and Sustainability, University of California, Los Angeles, CA 90095-1496, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Driscoll CA"
+          ],
+          "firstName": [
+            "C A"
+          ],
+          "lastName": [
+            "Driscoll"
+          ],
+          "initials": [
+            "CA"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2392-505X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Wildlife Institute of India, Dehradun 248001, Uttarakhand, India."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Tende T"
+          ],
+          "firstName": [
+            "T"
+          ],
+          "lastName": [
+            "Tende"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "A. P. Leventis Ornithological Research Institute, P.O. Box 13404 Jos, Nigeria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ottosson U"
+          ],
+          "firstName": [
+            "U"
+          ],
+          "lastName": [
+            "Ottosson"
+          ],
+          "initials": [
+            "U"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "A. P. Leventis Ornithological Research Institute, P.O. Box 13404 Jos, Nigeria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Saidu Y"
+          ],
+          "firstName": [
+            "Y"
+          ],
+          "lastName": [
+            "Saidu"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Nigeria National Park Service, PMB 0258 Garki-Abuja, Nigeria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Vrieling K"
+          ],
+          "firstName": [
+            "K"
+          ],
+          "lastName": [
+            "Vrieling"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Leiden University, Institute of Biology Leiden (IBL), PO Box 9505, 2300 RA Leiden, The Netherlands."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "de Iongh HH"
+          ],
+          "firstName": [
+            "H H"
+          ],
+          "lastName": [
+            "de Iongh"
+          ],
+          "initials": [
+            "HH"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Leiden University, Institute of Environmental Sciences (CML), PO Box 9518, 2300 RA Leiden, The Netherlands.",
+                "University of Antwerp, Department Biology, Evolutionary Ecology Group, Groenenborgerlaan 171, 2020 Antwerpen, Belgium."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-3445-0355",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-5031-5842",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-2392-505X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2477989"
+      ],
+      "dateOfPublication": [
+        "2016 Aug"
+      ],
+      "monthOfPublication": [
+        "8"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-08-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific reports"
+          ],
+          "ISOAbbreviation": [
+            "Sci Rep"
+          ],
+          "medlineAbbreviation": [
+            "Sci Rep"
+          ],
+          "NLMid": [
+            "101563288"
+          ],
+          "ISSN": [
+            "2045-2322"
+          ],
+          "ESSN": [
+            "2045-2322"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "30807"
+  ],
+  "abstractText": [
+    "Comparative phylogeography of African savannah mammals shows a congruent pattern in which populations in West/Central Africa are distinct from populations in East/Southern Africa. However, for the lion, all African populations are currently classified as a single subspecies (Panthera leo leo), while the only remaining population in Asia is considered to be distinct (Panthera leo persica). This distinction is disputed both by morphological and genetic data. In this study we introduce the lion as a model for African phylogeography. Analyses of mtDNA sequences reveal six supported clades and a strongly supported ancestral dichotomy with northern populations (West Africa, Central Africa, North Africa/Asia) on one branch, and southern populations (North East Africa, East/Southern Africa and South West Africa) on the other. We review taxonomies and phylogenies of other large savannah mammals, illustrating that similar clades are found in other species. The described phylogeographic pattern is considered in relation to large scale environmental changes in Africa over the past 300,000 years, attributable to climate. Refugial areas, predicted by climate envelope models, further confirm the observed pattern. We support the revision of current lion taxonomy, as recognition of a northern and a southern subspecies is more parsimonious with the evolutionary history of the lion."
+  ],
+  "affiliation": [
+    "Leiden University, Institute of Environmental Sciences (CML), PO Box 9518, 2300 RA Leiden, The Netherlands."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Lions"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA, Mitochondrial"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "VE"
+                  ],
+                  "qualifierName": [
+                    "veterinary"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Environment"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Africa"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genetic Variation"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeography"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "DNA, Mitochondrial"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/srep30807"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4973251"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4973251?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "12"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-04-30"
+  ],
+  "dateOfCreation": [
+    "2016-08-05"
+  ],
+  "firstIndexDate": [
+    "2016-08-08"
+  ],
+  "fullTextReceivedDate": [
+    "2016-08-13"
+  ],
+  "dateOfRevision": [
+    "2018-04-30"
+  ],
+  "electronicPublicationDate": [
+    "2016-08-04"
+  ],
+  "firstPublicationDate": [
+    "2016-08-04"
+  ]
+}

@@ -1,0 +1,605 @@
+{
+  "id": [
+    "31002707"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31002707"
+  ],
+  "pmcid": [
+    "PMC6474625"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6474625"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.pone.0215682"
+  ],
+  "title": [
+    "A landscape-scale assessment of tropical mammals reveals the effects of habitat and anthropogenic disturbance on community occupancy."
+  ],
+  "authorString": [
+    "Cavada N, Worsøe Havmøller R, Scharff N, Rovero F."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Cavada N"
+          ],
+          "firstName": [
+            "Nathalie"
+          ],
+          "lastName": [
+            "Cavada"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9251-6471",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Tropical Biodiversity Section, MUSE-Museo delle Scienze, Trento, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Worsøe Havmøller R"
+          ],
+          "firstName": [
+            "Rasmus"
+          ],
+          "lastName": [
+            "Worsøe Havmøller"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7457-7326",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Center for Macroecology, Evolution and Climate, Natural History Museum of Denmark, University of Copenhagen, Copenhagen, Denmark.",
+                "Section for Evolutionary Genomics, Natural History Museum of Denmark, Copenhagen, Denmark.",
+                "Department of Anthropology, University California, Davis, Davis, California, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Scharff N"
+          ],
+          "firstName": [
+            "Nikolaj"
+          ],
+          "lastName": [
+            "Scharff"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6809-2878",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Center for Macroecology, Evolution and Climate, Natural History Museum of Denmark, University of Copenhagen, Copenhagen, Denmark.",
+                "Udzungwa Ecological Monitoring Centre, Udzungwa Mountains National Park, Mang'ula, Tanzania."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Rovero F"
+          ],
+          "firstName": [
+            "Francesco"
+          ],
+          "lastName": [
+            "Rovero"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Tropical Biodiversity Section, MUSE-Museo delle Scienze, Trento, Italy.",
+                "Udzungwa Ecological Monitoring Centre, Udzungwa Mountains National Park, Mang'ula, Tanzania.",
+                "Dipartimento di Biologia, Università degli Studi di Firenze, Sesto Fiorentino, Italy."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-9251-6471",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7457-7326",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6809-2878",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "14"
+      ],
+      "journalIssueId": [
+        "2839709"
+      ],
+      "dateOfPublication": [
+        "2019"
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "e0215682"
+  ],
+  "abstractText": [
+    "With biodiversity facing unparalleled threats from anthropogenic disturbance, knowledge on the occurrences of species and communities provides for an effective and fast approach to assess their status and vulnerability. Disturbance is most prominent at the landscape-level, for example through habitat loss from large-scale resource extraction or agriculture. However, addressing species responses to habitat changes at the landscape-scale can be difficult and cost-ineffective, hence studies are mostly conducted at single areas or habitat patches. Moreover, there is a relative lack of studies on communities, as opposed to focal species, despite the former may carry more comprehensive information. Here, we used a multi-region, multi-species hierarchical occupancy model to study a meta-community of mammals detected by camera traps across five distinct areas within a heterogeneous landscape in Tanzania, and aimed to assess responses to human disturbance and environmental variables. Estimated species richness did not vary significantly across different areas, even though these held broadly different habitats. Moreover, we found remarkable consistency in the positive effect of distance to human settlements, a proxy for anthropogenic disturbance, on community occupancy. The positive effect of body size and the positive effect of proximity to rivers on community occupancy were also shared by communities. Results yield conservation relevance because: (1) the among-communities consistency in responses to anthropogenic disturbance, despite the heterogeneity in sampled habitats, indicates that conservation plans designed at the landscape-scale may represent a comprehensive and cost-efficient approach; (2) the consistency in responses to environmental factors suggests that multi-species models are a powerful method to study ecological patterns at the landscape-level."
+  ],
+  "affiliation": [
+    "Tropical Biodiversity Section, MUSE-Museo delle Scienze, Trento, Italy."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PH"
+                  ],
+                  "qualifierName": [
+                    "physiology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ecology"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Conservation of Natural Resources"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Ecosystem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Tropical Climate"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Geography"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Algorithms"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Theoretical"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Human Activities"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Agriculture"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Tanzania"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0215682"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6474625"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6474625?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2020-01-13"
+  ],
+  "dateOfCreation": [
+    "2019-04-20"
+  ],
+  "firstIndexDate": [
+    "2019-04-20"
+  ],
+  "fullTextReceivedDate": [
+    "2019-05-15"
+  ],
+  "dateOfRevision": [
+    "2020-03-09"
+  ],
+  "electronicPublicationDate": [
+    "2019-04-19"
+  ],
+  "firstPublicationDate": [
+    "2019-04-19"
+  ]
+}

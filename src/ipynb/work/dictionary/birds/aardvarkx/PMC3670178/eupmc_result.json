@@ -1,0 +1,327 @@
+{
+  "id": [
+    "24058829"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "24058829"
+  ],
+  "pmcid": [
+    "PMC3670178"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3670178"
+      ]
+    }
+  ],
+  "doi": [
+    "10.4161/worm.19156"
+  ],
+  "title": [
+    "Our evolving view of Wnt signaling in C. elegans: If two's company and three's a crowd, is four really necessary?"
+  ],
+  "authorString": [
+    "Robertson SM, Lin R."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Robertson SM"
+          ],
+          "firstName": [
+            "Scott M"
+          ],
+          "lastName": [
+            "Robertson"
+          ],
+          "initials": [
+            "SM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Molecular Biology; University of Texas Southwestern Medical Center at Dallas; Dallas, TX USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lin R"
+          ],
+          "firstName": [
+            "Rueyling"
+          ],
+          "lastName": [
+            "Lin"
+          ],
+          "initials": [
+            "R"
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "1"
+      ],
+      "journalIssueId": [
+        "2024597"
+      ],
+      "dateOfPublication": [
+        "2012 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2012"
+      ],
+      "printPublicationDate": [
+        "2012-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Worm"
+          ],
+          "ISOAbbreviation": [
+            "Worm"
+          ],
+          "medlineAbbreviation": [
+            "Worm"
+          ],
+          "NLMid": [
+            "101591366"
+          ],
+          "ISSN": [
+            "2162-4046"
+          ],
+          "ESSN": [
+            "2162-4054"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2012"
+  ],
+  "pageInfo": [
+    "82-89"
+  ],
+  "abstractText": [
+    "In this commentary, we discuss how our recent paper by Yang et al. contributes a new wrinkle to the already somewhat curious Wnt signaling pathway in C. elegans. We begin with a historical perspective on the Wnt pathway in the worm, followed by a summary of the key salient point from Yang et al., 2011, namely demonstration of mutually inhibitory binding of a β-catenin SYS-1 to the N-terminus and another β-catenin WRM-1 to the C-terminus of the TCF protein POP-1, and a plausible structural explanation for these differential binding specificities. The mutually inhibitory binding creates one population of POP-1 that is bound by WRM-1, phosphorylated by the NLK kinase and exported from the nucleus, and another bound by coactivator SYS-1 that remains in the nucleus. We speculate on the evolutionary history of the four β-catenins in C. elegans and suggest a possible link between multiple β-catenin gene duplications and the requirement to reduce nuclear POP-1 levels to activate Wnt target genes."
+  ],
+  "affiliation": [
+    "Department of Molecular Biology; University of Texas Southwestern Medical Center at Dallas; Dallas, TX USA."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "article-commentary",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Embryo",
+        "Asymmetry",
+        "endoderm",
+        "Wnt signaling",
+        "Pop-1",
+        "Sys-1",
+        "Wrm-1"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24058829/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24058829/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.4161/worm.19156"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3670178"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3670178?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2013-09-23"
+  ],
+  "dateOfCreation": [
+    "2013-09-23"
+  ],
+  "firstIndexDate": [
+    "2013-09-24"
+  ],
+  "fullTextReceivedDate": [
+    "2013-09-21"
+  ],
+  "dateOfRevision": [
+    "2014-09-30"
+  ],
+  "firstPublicationDate": [
+    "2012-01-01"
+  ]
+}

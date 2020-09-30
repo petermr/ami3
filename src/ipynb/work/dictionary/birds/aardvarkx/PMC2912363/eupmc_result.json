@@ -1,0 +1,910 @@
+{
+  "id": [
+    "20534815"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "20534815"
+  ],
+  "pmcid": [
+    "PMC2912363"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC2912363"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1091/mbc.e09-10-0891"
+  ],
+  "title": [
+    "Glycogen synthase kinase-3 is required for efficient Dictyostelium chemotaxis."
+  ],
+  "authorString": [
+    "Teo R, Lewis KJ, Forde JE, Ryves WJ, Reddy JV, Rogers BJ, Harwood AJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Teo R"
+          ],
+          "firstName": [
+            "Regina"
+          ],
+          "lastName": [
+            "Teo"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Cardiff School of Biosciences, Cardiff University, CF10 3AX Cardiff, United Kingdom. teor@cardiff.ac.uk"
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lewis KJ"
+          ],
+          "firstName": [
+            "Kimberley J"
+          ],
+          "lastName": [
+            "Lewis"
+          ],
+          "initials": [
+            "KJ"
+          ]
+        },
+        {
+          "fullName": [
+            "Forde JE"
+          ],
+          "firstName": [
+            "Josephine E"
+          ],
+          "lastName": [
+            "Forde"
+          ],
+          "initials": [
+            "JE"
+          ]
+        },
+        {
+          "fullName": [
+            "Ryves WJ"
+          ],
+          "firstName": [
+            "W Jonathan"
+          ],
+          "lastName": [
+            "Ryves"
+          ],
+          "initials": [
+            "WJ"
+          ]
+        },
+        {
+          "fullName": [
+            "Reddy JV"
+          ],
+          "firstName": [
+            "Jonathan V"
+          ],
+          "lastName": [
+            "Reddy"
+          ],
+          "initials": [
+            "JV"
+          ]
+        },
+        {
+          "fullName": [
+            "Rogers BJ"
+          ],
+          "firstName": [
+            "Benjamin J"
+          ],
+          "lastName": [
+            "Rogers"
+          ],
+          "initials": [
+            "BJ"
+          ]
+        },
+        {
+          "fullName": [
+            "Harwood AJ"
+          ],
+          "firstName": [
+            "Adrian J"
+          ],
+          "lastName": [
+            "Harwood"
+          ],
+          "initials": [
+            "AJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3124-5169",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3124-5169",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "15"
+      ],
+      "volume": [
+        "21"
+      ],
+      "journalIssueId": [
+        "1750128"
+      ],
+      "dateOfPublication": [
+        "2010 Aug"
+      ],
+      "monthOfPublication": [
+        "8"
+      ],
+      "yearOfPublication": [
+        "2010"
+      ],
+      "printPublicationDate": [
+        "2010-08-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Molecular biology of the cell"
+          ],
+          "ISOAbbreviation": [
+            "Mol. Biol. Cell"
+          ],
+          "medlineAbbreviation": [
+            "Mol Biol Cell"
+          ],
+          "NLMid": [
+            "9201390"
+          ],
+          "ISSN": [
+            "1059-1524"
+          ],
+          "ESSN": [
+            "1939-4586"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2010"
+  ],
+  "pageInfo": [
+    "2788-2796"
+  ],
+  "abstractText": [
+    "Glycogen synthase kinase-3 (GSK3) is a highly conserved protein kinase that is involved in several important cell signaling pathways and is associated with a range of medical conditions. Previous studies indicated a major role of the Dictyostelium homologue of GSK3 (gskA) in cell fate determination during morphogenesis of the fruiting body; however, transcriptomic and proteomic studies have suggested that GSK3 regulates gene expression much earlier during Dictyostelium development. To investigate a potential earlier role of GskA, we examined the effects of loss of gskA on cell aggregation. We find that cells lacking gskA exhibit poor chemotaxis toward cAMP and folate. Mutants fail to activate two important regulatory signaling pathways, mediated by phosphatidylinositol 3,4,5-trisphosphate (PIP(3)) and target of rapamycin complex 2 (TORC2), which in combination are required for chemotaxis and cAMP signaling. These results indicate that GskA is required during early stages of Dictyostelium development, in which it is necessary for both chemotaxis and cell signaling."
+  ],
+  "affiliation": [
+    "Cardiff School of Biosciences, Cardiff University, CF10 3AX Cardiff, United Kingdom. teor@cardiff.ac.uk"
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "agency": [
+            "Wellcome Trust"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Dictyostelium"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CY"
+                  ],
+                  "qualifierName": [
+                    "cytology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "DE"
+                  ],
+                  "qualifierName": [
+                    "drug effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "EN"
+                  ],
+                  "qualifierName": [
+                    "enzymology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GD"
+                  ],
+                  "qualifierName": [
+                    "growth & development"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Folic Acid"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "PD"
+                  ],
+                  "qualifierName": [
+                    "pharmacology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phosphoric Monoester Hydrolases"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Glycogen Synthase Kinase 3"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phosphatidylinositols"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protozoan Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cyclic AMP"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "BI"
+                  ],
+                  "qualifierName": [
+                    "biosynthesis"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Signal Transduction"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "DE"
+                  ],
+                  "qualifierName": [
+                    "drug effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cell Aggregation"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "DE"
+                  ],
+                  "qualifierName": [
+                    "drug effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phosphorylation"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "DE"
+                  ],
+                  "qualifierName": [
+                    "drug effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mutation"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Biological"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Proto-Oncogene Proteins c-akt"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "myo-inositol-1 (or 4)-monophosphatase"
+          ],
+          "registryNumber": [
+            "EC 3.1.3.25"
+          ]
+        },
+        {
+          "name": [
+            "phosphoinositide-3,4,5-triphosphate"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Phosphatidylinositols"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Protozoan Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Glycogen Synthase Kinase 3"
+          ],
+          "registryNumber": [
+            "EC 2.7.11.26"
+          ]
+        },
+        {
+          "name": [
+            "Proto-Oncogene Proteins c-akt"
+          ],
+          "registryNumber": [
+            "EC 2.7.11.1"
+          ]
+        },
+        {
+          "name": [
+            "Cyclic AMP"
+          ],
+          "registryNumber": [
+            "E0399OZS9N"
+          ]
+        },
+        {
+          "name": [
+            "Folic Acid"
+          ],
+          "registryNumber": [
+            "935E97BOY8"
+          ]
+        },
+        {
+          "name": [
+            "Phosphoric Monoester Hydrolases"
+          ],
+          "registryNumber": [
+            "EC 3.1.3.2"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/20534815/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/20534815/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "abs"
+          ],
+          "site": [
+            "www.molbiolcell.org"
+          ],
+          "url": [
+            "http://www.molbiolcell.org/cgi/content/abstract/21/15/2788"
+          ]
+        },
+        {
+          "availability": [
+            "Free after 2 months"
+          ],
+          "availabilityCode": [
+            "F2"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "www.molbiolcell.org"
+          ],
+          "url": [
+            "http://www.molbiolcell.org/cgi/content/full/21/15/2788"
+          ]
+        },
+        {
+          "availability": [
+            "Free after 2 months"
+          ],
+          "availabilityCode": [
+            "F2"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "www.molbiolcell.org"
+          ],
+          "url": [
+            "http://www.molbiolcell.org/cgi/reprint/21/15/2788.pdf"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1091/mbc.E09-10-0891"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC2912363"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC2912363?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "17"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2010-11-16"
+  ],
+  "dateOfCreation": [
+    "2010-07-30"
+  ],
+  "firstIndexDate": [
+    "2010-11-17"
+  ],
+  "fullTextReceivedDate": [
+    "2012-06-11"
+  ],
+  "dateOfRevision": [
+    "2016-11-25"
+  ],
+  "electronicPublicationDate": [
+    "2010-06-09"
+  ],
+  "firstPublicationDate": [
+    "2010-06-09"
+  ]
+}

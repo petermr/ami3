@@ -1,0 +1,482 @@
+{
+  "id": [
+    "32160866"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "32160866"
+  ],
+  "pmcid": [
+    "PMC7066803"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC7066803"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/s12864-020-6620-2"
+  ],
+  "title": [
+    "Phylogeny of teleost connexins reveals highly inconsistent intra- and interspecies use of nomenclature and misassemblies in recent teleost chromosome assemblies."
+  ],
+  "authorString": [
+    "Mikalsen SO, Tausen M, Í Kongsstovu S."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Mikalsen SO"
+          ],
+          "firstName": [
+            "Svein-Ole"
+          ],
+          "lastName": [
+            "Mikalsen"
+          ],
+          "initials": [
+            "SO"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7128-4464",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Faculty of Science and Technology, University of the Faroe Islands, Vestara Bryggja 15, FO-100, Tórshavn, Faroe Islands. sveinom@setur.fo."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Tausen M"
+          ],
+          "firstName": [
+            "Marni"
+          ],
+          "lastName": [
+            "Tausen"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-0694-9199",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Faculty of Science and Technology, University of the Faroe Islands, Vestara Bryggja 15, FO-100, Tórshavn, Faroe Islands.",
+                "Present affiliation: Bioinformatics Research Centre, Aarhus University, C. F. Møllers Allé 8, 8000, Aarhus C, Denmark."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Í Kongsstovu S"
+          ],
+          "firstName": [
+            "Sunnvør"
+          ],
+          "lastName": [
+            "Í Kongsstovu"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6631-2347",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Faculty of Science and Technology, University of the Faroe Islands, Vestara Bryggja 15, FO-100, Tórshavn, Faroe Islands.",
+                "Amplexa Genetics A/S, Hoyvíksvegur 51, FO-100, Tórshavn, Faroe Islands."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-7128-4464",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-0694-9199",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6631-2347",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "21"
+      ],
+      "journalIssueId": [
+        "2918837"
+      ],
+      "dateOfPublication": [
+        "2020 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2020"
+      ],
+      "printPublicationDate": [
+        "2020-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC genomics"
+          ],
+          "ISOAbbreviation": [
+            "BMC Genomics"
+          ],
+          "medlineAbbreviation": [
+            "BMC Genomics"
+          ],
+          "NLMid": [
+            "100965258"
+          ],
+          "ISSN": [
+            "1471-2164"
+          ],
+          "ESSN": [
+            "1471-2164"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2020"
+  ],
+  "pageInfo": [
+    "223"
+  ],
+  "abstractText": [
+    "BACKGROUND:Based on an initial collecting of database sequences from the gap junction protein gene family (also called connexin genes) in a few teleosts, the naming of these sequences appeared variable. The reasons could be (i) that the structure in this family is variable across teleosts, or (ii) unfortunate naming. Rather clear rules for the naming of genes in fish and mammals have been outlined by nomenclature committees, including the naming of orthologous and ohnologous genes. We therefore analyzed the connexin gene family in teleosts in more detail. We covered the range of divergence times in teleosts (eel, Atlantic herring, zebrafish, Atlantic cod, three-spined stickleback, Japanese pufferfish and spotted pufferfish; listed from early divergence to late divergence). RESULTS:The gene family pattern of connexin genes is similar across the analyzed teleosts. However, (i) several nomenclature systems are used, (ii) specific orthologous groups contain genes that are named differently in different species, (iii) several distinct genes have the same name in a species, and (iv) some genes have incorrect names. The latter includes a human connexin pseudogene, claimed as GJA4P, but which in reality is Cx39.2P (a delta subfamily gene often called GJD2like). We point out the ohnologous pairs of genes in teleosts, and we suggest a more consistent nomenclature following the outlined rules from the nomenclature committees. We further show that connexin sequences can indicate some errors in two high-quality chromosome assemblies that became available very recently. CONCLUSIONS:Minimal consistency exists in the present practice of naming teleost connexin genes. A consistent and unified nomenclature would be an advantage for future automatic annotations and would make various types of subsequent genetic analyses easier. Additionally, roughly 5% of the connexin sequences point out misassemblies in the new high-quality chromosome assemblies from herring and cod."
+  ],
+  "affiliation": [
+    "Faculty of Science and Technology, University of the Faroe Islands, Vestara Bryggja 15, FO-100, Tórshavn, Faroe Islands. sveinom@setur.fo."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "NA"
+          ],
+          "agency": [
+            "Fisheries Research Fund of the Faroe Islands"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "NA"
+          ],
+          "agency": [
+            "Statoil Føroyar"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "NA"
+          ],
+          "agency": [
+            "Danish Innovation Fund"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "NA"
+          ],
+          "agency": [
+            "Faroese Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "NA"
+          ],
+          "agency": [
+            "The Faroese Pelagic Organisation"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mammals",
+        "Nomenclature",
+        "Connexins",
+        "genome duplication",
+        "Phylogenetic Trees",
+        "Paralogs",
+        "Orthologs",
+        "Teleosts",
+        "Ohnologs"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s12864-020-6620-2"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7066803"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7066803?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "PPR128017"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "ensembl",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2020-03-13"
+  ],
+  "firstIndexDate": [
+    "2020-03-13"
+  ],
+  "fullTextReceivedDate": [
+    "2020-03-22"
+  ],
+  "dateOfRevision": [
+    "2020-03-20"
+  ],
+  "electronicPublicationDate": [
+    "2020-03-11"
+  ],
+  "firstPublicationDate": [
+    "2020-03-11"
+  ]
+}

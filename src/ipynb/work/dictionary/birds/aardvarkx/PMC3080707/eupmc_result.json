@@ -1,0 +1,287 @@
+{
+  "id": [
+    "21516242"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "21516242"
+  ],
+  "pmcid": [
+    "PMC3080707"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3080707"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/currents.rrn1228"
+  ],
+  "title": [
+    "Linking NCBI to Wikipedia: a wiki-based approach."
+  ],
+  "authorString": [
+    "Page RD."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Page RD"
+          ],
+          "firstName": [
+            "Roderic D M"
+          ],
+          "lastName": [
+            "Page"
+          ],
+          "initials": [
+            "RD"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7101-9767",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institute of Biodiversity, Animal Health and Comparative Medicine College of Medical, Vetinary and Life Sciences University of Glasgow Glasgow G12 8QQ, UK."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-7101-9767",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "wikipedia",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "3"
+      ],
+      "journalIssueId": [
+        "1818577"
+      ],
+      "dateOfPublication": [
+        "2011 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2011"
+      ],
+      "printPublicationDate": [
+        "2011-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PLoS currents"
+          ],
+          "ISOAbbreviation": [
+            "PLoS Curr"
+          ],
+          "medlineAbbreviation": [
+            "PLoS Curr"
+          ],
+          "NLMid": [
+            "101515638"
+          ],
+          "ISSN": [
+            "2157-3999"
+          ],
+          "ESSN": [
+            "2157-3999"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2011"
+  ],
+  "pageInfo": [
+    "RRN1228"
+  ],
+  "abstractText": [
+    "The NCBI Taxonomy underpins many bioinformatics and phyloinformatics databases, but by itself provides limited information on the taxa it contains. One readily available source of information on many taxa is Wikipedia. This paper describes iPhylo Linkout, a Semantic wiki that maps taxa in NCBI's taxonomy database onto corresponding pages in Wikipedia. Storing the mapping in a wiki makes it easy to edit, correct, or otherwise annotate the links between NCBI and Wikipedia. The mapping currently comprises some 53,000 taxa, and is available at http://iphylo.org/linkout. The links between NCBI and Wikipedia are also made available to NCBI users through the NCBI LinkOut service."
+  ],
+  "affiliation": [
+    "Institute of Biodiversity, Animal Health and Comparative Medicine College of Medical, Vetinary and Life Sciences University of Glasgow Glasgow G12 8QQ, UK."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/21516242/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/currents.RRN1228"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3080707"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "N"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2011-07-14"
+  ],
+  "dateOfCreation": [
+    "2011-04-26"
+  ],
+  "firstIndexDate": [
+    "2011-04-26"
+  ],
+  "fullTextReceivedDate": [
+    "2013-02-01"
+  ],
+  "dateOfRevision": [
+    "2020-03-06"
+  ],
+  "electronicPublicationDate": [
+    "2011-03-31"
+  ],
+  "firstPublicationDate": [
+    "2011-03-31"
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "id": [
+    "22298939"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "22298939"
+  ],
+  "pmcid": [
+    "PMC3268649"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3268649"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1016/j.datak.2011.06.004"
+  ],
+  "title": [
+    "Interaction mining and skill-dependent recommendations for multi-objective team composition."
+  ],
+  "authorString": [
+    "Dorn C, Skopik F, Schall D, Dustdar S."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Dorn C"
+          ],
+          "firstName": [
+            "Christoph"
+          ],
+          "lastName": [
+            "Dorn"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institute for Software Research, University of California, Irvine, CA 92697-3455, USA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Skopik F"
+          ],
+          "firstName": [
+            "Florian"
+          ],
+          "lastName": [
+            "Skopik"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1922-7892",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Schall D"
+          ],
+          "firstName": [
+            "Daniel"
+          ],
+          "lastName": [
+            "Schall"
+          ],
+          "initials": [
+            "D"
+          ]
+        },
+        {
+          "fullName": [
+            "Dustdar S"
+          ],
+          "firstName": [
+            "Schahram"
+          ],
+          "lastName": [
+            "Dustdar"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6872-8821",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1922-7892",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6872-8821",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "10"
+      ],
+      "volume": [
+        "70"
+      ],
+      "journalIssueId": [
+        "1901600"
+      ],
+      "dateOfPublication": [
+        "2011 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2011"
+      ],
+      "printPublicationDate": [
+        "2011-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Data & knowledge engineering"
+          ],
+          "ISOAbbreviation": [
+            "Data Knowl Eng"
+          ],
+          "medlineAbbreviation": [
+            "Data Knowl Eng"
+          ],
+          "NLMid": [
+            "101550897"
+          ],
+          "ISSN": [
+            "0169-023X"
+          ],
+          "ESSN": [
+            "1872-6933"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2011"
+  ],
+  "pageInfo": [
+    "866-891"
+  ],
+  "abstractText": [
+    "Web-based collaboration and virtual environments supported by various Web 2.0 concepts enable the application of numerous monitoring, mining and analysis tools to study human interactions and team formation processes. The composition of an effective team requires a balance between adequate skill fulfillment and sufficient team connectivity. The underlying interaction structure reflects social behavior and relations of individuals and determines to a large degree how well people can be expected to collaborate. In this paper we address an extended team formation problem that does not only require direct interactions to determine team connectivity but additionally uses implicit recommendations of collaboration partners to support even sparsely connected networks. We provide two heuristics based on Genetic Algorithms and Simulated Annealing for discovering efficient team configurations that yield the best trade-off between skill coverage and team connectivity. Our self-adjusting mechanism aims to discover the best combination of direct interactions and recommendations when deriving connectivity. We evaluate our approach based on multiple configurations of a simulated collaboration network that features close resemblance to real world expert networks. We demonstrate that our algorithm successfully identifies efficient team configurations even when removing up to 40% of experts from various social network configurations."
+  ],
+  "affiliation": [
+    "Institute for Software Research, University of California, Irvine, CA 92697-3455, USA."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "FP7_213876"
+          ],
+          "agency": [
+            "European Commission FP7"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "FP7_216256"
+          ],
+          "agency": [
+            "European Commission FP7"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1016/j.datak.2011.06.004"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3268649"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "N"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc-nd"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2012-02-02"
+  ],
+  "firstIndexDate": [
+    "2012-02-03"
+  ],
+  "fullTextReceivedDate": [
+    "2013-04-24"
+  ],
+  "firstPublicationDate": [
+    "2011-10-01"
+  ]
+}

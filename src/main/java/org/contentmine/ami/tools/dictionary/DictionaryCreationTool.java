@@ -259,7 +259,11 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 		if (informat != null && informat.toString().startsWith("wikisparql")) {
 			getOrCreateWikidataSparql();
-			parseSparql(wikidataSparql);
+//			if (informat.toString().equals(InputFormat.wikisparqlquery.toString())) {
+//				LOG.info("parsing wikidataSparqlQuery");
+//			} else {
+				parseSparqlNameByAmiName(wikidataSparql);
+//			}
 		}
 		if (this.templateNames != null) {
 			createFilenamesForWikimediaInput();
@@ -293,7 +297,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 	}
 
-	private void parseSparql(WikidataSparql wikidataSparql) {
+	private void parseSparqlNameByAmiName(WikidataSparql wikidataSparql) {
 		if (sparqlNameByAmiName == null) {
 			throw new RuntimeException("Must give --sparqlmap for " + informat);
 		}
@@ -410,6 +414,16 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		if (sparqlQuery != null) {
 			wikidataSparql.readSparqlCreateDictionary(inputStream);
 			writeDictionary();
+		} else if (InputFormat.wikisparqlquery.equals(informat)) {
+			getOrCreateWikidataSparql();
+			LOG.info("read wikidata query: ");
+			String xml = null;
+			try {
+				xml = wikidataSparql.readSparqlQueryAndSubmitToWikidata(inputStream);
+			} catch (IOException e) {
+				LOG.error("Could not submit wikidata query: "+e);
+			}
+			writeDictionary(dictionaryName);
 		} else if (InputFormat.wikisparqlxml.equals(informat)) {
 			wikidataSparql.readSparqlCreateDictionary(inputStream);
 			System.err.println("FIX OUTPUT");
@@ -438,6 +452,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			showstopperEncountered = true;
 		} else if (InputFormat.csv.equals(informat)) {
 			readCSV(inputStream);
+		} else if (InputFormat.wikisparqlquery.equals(informat)) {
+			LOG.info("querying wikidata");
 		} else if (InputFormat.list.equals(informat)) {
 			readList(inputStream);
 		} else if (InputFormat.wikisparqlxml.equals(informat)) {
@@ -970,6 +986,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private void writeDictionary(String dictionaryName) {
 		// this is slightly messy - 
 		transformValues();
+		LOG.info("simpleDictionary "+simpleDictionary);
 		simpleDictionary.getDictionaryElement().addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionaryName));
 		File subDirectory = getOrCreateExistingSubdirectory(dictionaryName);
 		if (subDirectory != null) {

@@ -1,0 +1,895 @@
+{
+  "id": [
+    "31647412"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31647412"
+  ],
+  "pmcid": [
+    "PMC6855841"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6855841"
+      ]
+    }
+  ],
+  "doi": [
+    "10.7554/elife.49801"
+  ],
+  "title": [
+    "A unicellular relative of animals generates a layer of polarized cells by actomyosin-dependent cellularization."
+  ],
+  "authorString": [
+    "Dudin O, Ondracka A, Grau-Bové X, Haraldsen AA, Toyoda A, Suga H, Bråte J, Ruiz-Trillo I."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Dudin O"
+          ],
+          "firstName": [
+            "Omaya"
+          ],
+          "lastName": [
+            "Dudin"
+          ],
+          "initials": [
+            "O"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6673-3149",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut de Biologia Evolutiva (CSIC-Universitat Pompeu Fabra), Barcelona, Spain."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ondracka A"
+          ],
+          "firstName": [
+            "Andrej"
+          ],
+          "lastName": [
+            "Ondracka"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4193-6027",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut de Biologia Evolutiva (CSIC-Universitat Pompeu Fabra), Barcelona, Spain."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Grau-Bové X"
+          ],
+          "firstName": [
+            "Xavier"
+          ],
+          "lastName": [
+            "Grau-Bové"
+          ],
+          "initials": [
+            "X"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1978-5824",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut de Biologia Evolutiva (CSIC-Universitat Pompeu Fabra), Barcelona, Spain.",
+                "Department of Vector Biology, Liverpool School of Tropical Medicine, Liverpool, United Kingdom."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Haraldsen AA"
+          ],
+          "firstName": [
+            "Arthur Ab"
+          ],
+          "lastName": [
+            "Haraldsen"
+          ],
+          "initials": [
+            "AA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Section for Genetics and Evolutionary Biology (EVOGENE), Department of Biosciences, University of Oslo, Oslo, Norway."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Toyoda A"
+          ],
+          "firstName": [
+            "Atsushi"
+          ],
+          "lastName": [
+            "Toyoda"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0728-7548",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Genomics and Evolutionary Biology, National Institute of Genetics, Mishima, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Suga H"
+          ],
+          "firstName": [
+            "Hiroshi"
+          ],
+          "lastName": [
+            "Suga"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Faculty of Life and Environmental Sciences, Prefectural University of Hiroshima, Hiroshima, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bråte J"
+          ],
+          "firstName": [
+            "Jon"
+          ],
+          "lastName": [
+            "Bråte"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-0490-1175",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Section for Genetics and Evolutionary Biology (EVOGENE), Department of Biosciences, University of Oslo, Oslo, Norway."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ruiz-Trillo I"
+          ],
+          "firstName": [
+            "Iñaki"
+          ],
+          "lastName": [
+            "Ruiz-Trillo"
+          ],
+          "initials": [
+            "I"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6547-5304",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institut de Biologia Evolutiva (CSIC-Universitat Pompeu Fabra), Barcelona, Spain.",
+                "Departament de Genètica, Microbiologia i Estadística, Universitat de Barcelona, Barcelona, Spain.",
+                "ICREA, Barcelona, Spain."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-6673-3149",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-4193-6027",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1978-5824",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0728-7548",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-0490-1175",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6547-5304",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "recommended_reviews",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2865254"
+      ],
+      "dateOfPublication": [
+        "2019 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "eLife"
+          ],
+          "ISOAbbreviation": [
+            "Elife"
+          ],
+          "medlineAbbreviation": [
+            "Elife"
+          ],
+          "NLMid": [
+            "101579614"
+          ],
+          "ISSN": [
+            "2050-084X"
+          ],
+          "ESSN": [
+            "2050-084X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "abstractText": [
+    "In animals, cellularization of a coenocyte is a specialized form of cytokinesis that results in the formation of a polarized epithelium during early embryonic development. It is characterized by coordinated assembly of an actomyosin network, which drives inward membrane invaginations. However, whether coordinated cellularization driven by membrane invagination exists outside animals is not known. To that end, we investigate cellularization in the ichthyosporean Sphaeroforma arctica, a close unicellular relative of animals. We show that the process of cellularization involves coordinated inward plasma membrane invaginations dependent on an actomyosin network and reveal the temporal order of its assembly. This leads to the formation of a polarized layer of cells resembling an epithelium. We show that this stage is associated with tightly regulated transcriptional activation of genes involved in cell adhesion. Hereby we demonstrate the presence of a self-organized, clonally-generated, polarized layer of cells in a unicellular relative of animals."
+  ],
+  "affiliation": [
+    "Institut de Biologia Evolutiva (CSIC-Universitat Pompeu Fabra), Barcelona, Spain."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "240284"
+          ],
+          "agency": [
+            "Young Research Talents grant from the Research Council of Norway"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "MSCA-IF 747086"
+          ],
+          "agency": [
+            "Marie Sklodowska-Curie individual fellowship"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "171815"
+          ],
+          "agency": [
+            "Swiss National Science Foundation"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "ERC-2012-Co -616960"
+          ],
+          "agency": [
+            "European Research Council Consolidator Grant"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "MEXT KAKENHI 221S0002"
+          ],
+          "agency": [
+            "Ministry of Education, Culture, Sports, Science and Technology"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "26891021"
+          ],
+          "agency": [
+            "MEXT KAKENHI"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "Young Research Talents grant 240284"
+          ],
+          "agency": [
+            "Research Council of Norway"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "221S0002"
+          ],
+          "agency": [
+            "MEXT KAKENHI"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "Individual fellowship MSCA-IF 746044"
+          ],
+          "agency": [
+            "H2020 Marie Skłodowska-Curie Actions"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "MSCA-IF 746044"
+          ],
+          "agency": [
+            "Marie Sklodowska-Curie individual fellowship"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "Consolidator Grant ERC-2012-Co-616960"
+          ],
+          "agency": [
+            "European Research Council"
+          ],
+          "acronym": [
+            "ERC_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "MEXT KAKENHI 26891021"
+          ],
+          "agency": [
+            "Ministry of Education, Culture, Sports, Science and Technology"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "P2LAP3_171815"
+          ],
+          "agency": [
+            "Swiss National Science Foundation"
+          ],
+          "acronym": [
+            "SNSF_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "616960"
+          ],
+          "agency": [
+            "European Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "Individual fellowship MSCA-IF 747086"
+          ],
+          "agency": [
+            "H2020 Marie Skłodowska-Curie Actions"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cell Membrane"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Actomyosin"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Cell Polarity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Expression Regulation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mesomycetozoea"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "PH"
+                  ],
+                  "qualifierName": [
+                    "physiology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Epithelium",
+        "Actin",
+        "Cell biology",
+        "Evolutionary Biology",
+        "Multicellularity",
+        "Cellularization",
+        "Coenocyte"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Actomyosin"
+          ],
+          "registryNumber": [
+            "9013-26-7"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.7554/eLife.49801"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6855841"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6855841?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "31724951"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Elife. 2019 Nov 14;8:"
+          ],
+          "type": [
+            "Comment in"
+          ],
+          "orderIn": [
+            "1"
+          ]
+        },
+        {
+          "id": [
+            "32553113"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Elife. 2020 Jun 19;9:"
+          ],
+          "type": [
+            "Erratum in"
+          ],
+          "orderIn": [
+            "2"
+          ]
+        },
+        {
+          "id": [
+            "PPR71829"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject",
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2020-04-08"
+  ],
+  "dateOfCreation": [
+    "2019-10-25"
+  ],
+  "firstIndexDate": [
+    "2019-10-26"
+  ],
+  "fullTextReceivedDate": [
+    "2019-11-23"
+  ],
+  "dateOfRevision": [
+    "2020-06-23"
+  ],
+  "electronicPublicationDate": [
+    "2019-10-28"
+  ],
+  "firstPublicationDate": [
+    "2019-10-28"
+  ]
+}

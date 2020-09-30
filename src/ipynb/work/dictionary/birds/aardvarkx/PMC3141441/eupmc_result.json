@@ -1,0 +1,446 @@
+{
+  "id": [
+    "21740572"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "21740572"
+  ],
+  "pmcid": [
+    "PMC3141441"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3141441"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/1471-2148-11-198"
+  ],
+  "title": [
+    "The evolutionary history of the catenin gene family during metazoan evolution."
+  ],
+  "authorString": [
+    "Zhao ZM, Reynolds AB, Gaucher EA."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Zhao ZM"
+          ],
+          "firstName": [
+            "Zi-Ming"
+          ],
+          "lastName": [
+            "Zhao"
+          ],
+          "initials": [
+            "ZM"
+          ]
+        },
+        {
+          "fullName": [
+            "Reynolds AB"
+          ],
+          "firstName": [
+            "Albert B"
+          ],
+          "lastName": [
+            "Reynolds"
+          ],
+          "initials": [
+            "AB"
+          ]
+        },
+        {
+          "fullName": [
+            "Gaucher EA"
+          ],
+          "firstName": [
+            "Eric A"
+          ],
+          "lastName": [
+            "Gaucher"
+          ],
+          "initials": [
+            "EA"
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "11"
+      ],
+      "journalIssueId": [
+        "1801140"
+      ],
+      "dateOfPublication": [
+        "2011 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2011"
+      ],
+      "printPublicationDate": [
+        "2011-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC evolutionary biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Evol. Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Evol Biol"
+          ],
+          "NLMid": [
+            "100966975"
+          ],
+          "ISSN": [
+            "1471-2148"
+          ],
+          "ESSN": [
+            "1471-2148"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2011"
+  ],
+  "pageInfo": [
+    "198"
+  ],
+  "abstractText": [
+    "BACKGROUND: Catenin is a gene family composed of three subfamilies; p120, beta and alpha. Beta and p120 are homologous subfamilies based on sequence and structural comparisons, and are members of the armadillo repeat protein superfamily. Alpha does not appear to be homologous to either beta or p120 based on the lack of sequence and structural similarity, and the alpha subfamily belongs to the vinculin superfamily. Catenins link the transmembrane protein cadherin to the cytoskeleton and thus function in cell-cell adhesion. To date, only the beta subfamily has been evolutionarily analyzed and experimentally studied for its functions in signaling pathways, development and human diseases such as cancer. We present a detailed evolutionary study of the whole catenin family to provide a better understanding of how this family has evolved in metazoans, and by extension, the evolution of cell-cell adhesion. RESULTS: All three catenin subfamilies have been detected in metazoans used in the present study by searching public databases and applying species-specific BLAST searches. Two monophyletic clades are formed between beta and p120 subfamilies using Bayesian phylogenetic inference. Phylogenetic analyses also reveal an array of duplication events throughout metazoan history. Furthermore, numerous annotation issues for the catenin family have been detected by our computational analyses. CONCLUSIONS: Delta2/ARVCF catenin in the p120 subfamily, beta catenin in the beta subfamily, and alpha2 catenin in the alpha subfamily are present in all metazoans analyzed. This implies that the last common ancestor of metazoans had these three catenin subfamilies. However, not all members within each subfamily were detected in all metazoan species. Each subfamily has undergone duplications at different levels (species-specific, subphylum-specific or phylum-specific) and to different extents (in the case of the number of homologs). Extensive annotation problems have been resolved in each of the three catenin subfamilies. This resolution provides a more coherent description of catenin evolution."
+  ],
+  "affiliation": [
+    "School of Biology, Georgia Institute of Technology, Atlanta, GA 30332, USA."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Duplication"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Catenins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Catenins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/21740572/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/21740572/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2148-11-198"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3141441"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3141441?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "26"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2011-09-27"
+  ],
+  "dateOfCreation": [
+    "2011-07-22"
+  ],
+  "firstIndexDate": [
+    "2011-07-12"
+  ],
+  "fullTextReceivedDate": [
+    "2012-06-13"
+  ],
+  "dateOfRevision": [
+    "2013-06-28"
+  ],
+  "electronicPublicationDate": [
+    "2011-07-08"
+  ],
+  "firstPublicationDate": [
+    "2011-07-08"
+  ]
+}

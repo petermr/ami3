@@ -1,0 +1,866 @@
+{
+  "id": [
+    "30506946"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30506946"
+  ],
+  "pmcid": [
+    "PMC6392136"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6392136"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1111/cge.13487"
+  ],
+  "title": [
+    "Mutations in RELT cause autosomal recessive amelogenesis imperfecta."
+  ],
+  "authorString": [
+    "Kim JW, Zhang H, Seymen F, Koruyucu M, Hu Y, Kang J, Kim YJ, Ikeda A, Kasimoglu Y, Bayram M, Zhang C, Kawasaki K, Bartlett JD, Saunders TL, Simmer JP, Hu JC."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Kim JW"
+          ],
+          "firstName": [
+            "Jung-Wook"
+          ],
+          "lastName": [
+            "Kim"
+          ],
+          "initials": [
+            "JW"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pediatric Dentistry & Dental Research Institute, School of Dentistry, Seoul National University, Seoul, Republic of Korea.",
+                "Department of Molecular Genetics & the Dental Research Institute, School of Dentistry, Seoul National University, Seoul, Republic of Korea."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Zhang H"
+          ],
+          "firstName": [
+            "Hong"
+          ],
+          "lastName": [
+            "Zhang"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Seymen F"
+          ],
+          "firstName": [
+            "Figen"
+          ],
+          "lastName": [
+            "Seymen"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pedodontics, Faculty of Dentistry, Istanbul University, Istanbul, Turkey."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Koruyucu M"
+          ],
+          "firstName": [
+            "Mine"
+          ],
+          "lastName": [
+            "Koruyucu"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pedodontics, Faculty of Dentistry, Istanbul University, Istanbul, Turkey."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hu Y"
+          ],
+          "firstName": [
+            "Yuanyuan"
+          ],
+          "lastName": [
+            "Hu"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kang J"
+          ],
+          "firstName": [
+            "Jenny"
+          ],
+          "lastName": [
+            "Kang"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pediatric Dentistry & Dental Research Institute, School of Dentistry, Seoul National University, Seoul, Republic of Korea."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kim YJ"
+          ],
+          "firstName": [
+            "Youn J"
+          ],
+          "lastName": [
+            "Kim"
+          ],
+          "initials": [
+            "YJ"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Molecular Genetics & the Dental Research Institute, School of Dentistry, Seoul National University, Seoul, Republic of Korea."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ikeda A"
+          ],
+          "firstName": [
+            "Atsushi"
+          ],
+          "lastName": [
+            "Ikeda"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Biosciences, The Ohio State University, College of Dentistry, Columbus, Ohio."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kasimoglu Y"
+          ],
+          "firstName": [
+            "Yelda"
+          ],
+          "lastName": [
+            "Kasimoglu"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pedodontics, Faculty of Dentistry, Istanbul University, Istanbul, Turkey."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bayram M"
+          ],
+          "firstName": [
+            "Merve"
+          ],
+          "lastName": [
+            "Bayram"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Pedodontics, Faculty of Dentistry, Istanbul Medipol University, Istanbul, Turkey."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Zhang C"
+          ],
+          "firstName": [
+            "Chuhua"
+          ],
+          "lastName": [
+            "Zhang"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kawasaki K"
+          ],
+          "firstName": [
+            "Kazuhiko"
+          ],
+          "lastName": [
+            "Kawasaki"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Anthropology, Penn State University, University Park, Pennsylvania."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bartlett JD"
+          ],
+          "firstName": [
+            "John D"
+          ],
+          "lastName": [
+            "Bartlett"
+          ],
+          "initials": [
+            "JD"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Biosciences, The Ohio State University, College of Dentistry, Columbus, Ohio."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Saunders TL"
+          ],
+          "firstName": [
+            "Thomas L"
+          ],
+          "lastName": [
+            "Saunders"
+          ],
+          "initials": [
+            "TL"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2015-101X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Internal Medicine, Division of Molecular, Medicine and Genetics, University of Michigan Medical School, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Simmer JP"
+          ],
+          "firstName": [
+            "James P"
+          ],
+          "lastName": [
+            "Simmer"
+          ],
+          "initials": [
+            "JP"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hu JC"
+          ],
+          "firstName": [
+            "Jan C-C"
+          ],
+          "lastName": [
+            "Hu"
+          ],
+          "initials": [
+            "JC"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-2015-101X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "3"
+      ],
+      "volume": [
+        "95"
+      ],
+      "journalIssueId": [
+        "2783765"
+      ],
+      "dateOfPublication": [
+        "2019 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Clinical genetics"
+          ],
+          "ISOAbbreviation": [
+            "Clin. Genet."
+          ],
+          "medlineAbbreviation": [
+            "Clin Genet"
+          ],
+          "NLMid": [
+            "0253664"
+          ],
+          "ISSN": [
+            "0009-9163"
+          ],
+          "ESSN": [
+            "1399-0004"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "375-383"
+  ],
+  "abstractText": [
+    "Amelogenesis imperfecta (AI) is a collection of isolated (non-syndromic) inherited diseases affecting dental enamel formation or a clinical phenotype in syndromic conditions. We characterized three consanguineous AI families with generalized irregular hypoplastic enamel with rapid attrition that perfectly segregated with homozygous defects in a novel gene: RELT that is a member of the tumor necrosis factor receptor superfamily (TNFRSF). RNAscope in situ hybridization of wild-type mouse molars and incisors showed specific Relt mRNA expression by secretory stage ameloblasts and by odontoblasts. Relt-/- mice generated by CRISPR/Cas9 exhibited incisor and molar enamel malformations. Relt-/- enamel had a rough surface and underwent rapid attrition. Normally unmineralized spaces in the deep enamel near the dentino-enamel junction (DEJ) were as highly mineralized as the adjacent enamel, which likely altered the mechanical properties of the DEJ. Phylogenetic analyses showed the existence of selective pressure on RELT gene outside of tooth development, indicating that the human condition may be syndromic, which possibly explains the history of small stature and severe childhood infections in two of the probands. Knowing a TNFRSF member is critical during the secretory stage of enamel formation advances our understanding of amelogenesis and improves our ability to diagnose human conditions featuring enamel malformations."
+  ],
+  "affiliation": [
+    "Department of Pediatric Dentistry & Dental Research Institute, School of Dentistry, Seoul National University, Seoul, Republic of Korea."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Multicenter Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "R01 DE015846"
+          ],
+          "agency": [
+            "NIDCR NIH HHS"
+          ],
+          "acronym": [
+            "DE"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Amelogenesis Imperfecta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "DI"
+                  ],
+                  "qualifierName": [
+                    "diagnosis"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genetic Predisposition to Disease"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Receptors, Tumor Necrosis Factor"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "In Situ Hybridization"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Pedigree"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Consanguinity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA Splicing"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genotype"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genes, Recessive"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phenotype"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Mutation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Germ-Line Mutation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genetic Association Studies"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Whole Exome Sequencing"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Enamel",
+        "tooth",
+        "Amelogenesis Imperfecta",
+        "Relt Knockout",
+        "Hypomineralized"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "RELT"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Receptors, Tumor Necrosis Factor"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1111/cge.13487"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6392136"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6392136?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "5"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "OMIM",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "refsnp",
+        "omim",
+        "dbgap",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2020-08-03"
+  ],
+  "dateOfCreation": [
+    "2018-12-04"
+  ],
+  "firstIndexDate": [
+    "2018-12-05"
+  ],
+  "fullTextReceivedDate": [
+    "2019-03-12"
+  ],
+  "dateOfRevision": [
+    "2020-08-03"
+  ],
+  "electronicPublicationDate": [
+    "2018-12-21"
+  ],
+  "firstPublicationDate": [
+    "2018-12-21"
+  ]
+}

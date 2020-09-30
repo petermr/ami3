@@ -1,0 +1,646 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20031101//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 2?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Genet</journal-id><journal-id journal-id-type="iso-abbrev">PLoS Genet</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosgen</journal-id><journal-title-group><journal-title>PLoS Genetics</journal-title></journal-title-group><issn pub-type="ppub">1553-7390</issn><issn pub-type="epub">1553-7404</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">19730686</article-id><article-id pub-id-type="publisher-id">09-PLGE-RA-0854R2</article-id><article-id pub-id-type="doi">10.1371/journal.pgen.1000634</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Evolutionary Biology</subject><subject>Evolutionary Biology/Animal Genetics</subject><subject>Evolutionary Biology/Evolutionary and Comparative Genetics</subject><subject>Evolutionary Biology/Genomics</subject><subject>Genetics and Genomics/Animal Genetics</subject><subject>Genetics and Genomics/Comparative Genomics</subject></subj-group></article-categories><title-group><article-title>Molecular Decay of the Tooth Gene Enamelin (<italic>ENAM</italic>) Mirrors the Loss of Enamel in the Fossil Record of Placental Mammals</article-title><alt-title alt-title-type="running-head">Enamelin Evolution in Placental Mammals</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Meredith</surname><given-names>Robert W.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Gatesy</surname><given-names>John</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Murphy</surname><given-names>William J.</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Ryder</surname><given-names>Oliver A.</given-names></name><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Springer</surname><given-names>Mark S.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Biology, University of California Riverside, Riverside, California, United States of America</addr-line></aff><aff id="aff2"><label>2</label><addr-line>Department of Veterinary Integrative Biosciences, Texas A&#x00026;M University, College Station, Texas, United States of America</addr-line></aff><aff id="aff3"><label>3</label><addr-line>San Diego Zoo's Institute for Conservation Research, Escondido, California, United States of America</addr-line></aff><contrib-group><contrib contrib-type="editor"><name><surname>Malik</surname><given-names>Harmit S.</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">Fred Hutchinson Cancer Research Center, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>mark.springer@ucr.edu</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: RWM JG WJM OAR MSS. Performed the experiments: RWM. Analyzed the data: RWM JG MSS. Contributed reagents/materials/analysis tools: RWM JG WJM OAR MSS. Wrote the paper: MSS.</p></fn></author-notes><pub-date pub-type="collection"><month>9</month><year>2009</year></pub-date><pub-date pub-type="epub"><day>4</day><month>9</month><year>2009</year></pub-date><volume>5</volume><issue>9</issue><elocation-id>e1000634</elocation-id><history><date date-type="received"><day>26</day><month>5</month><year>2009</year></date><date date-type="accepted"><day>6</day><month>8</month><year>2009</year></date></history><permissions><copyright-statement>Meredith et al.</copyright-statement><copyright-year>2009</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><related-article id="RA1" related-article-type="companion" vol="5" page="e1000655" ext-link-type="pmc"><!--related-article was converted to @ext-link-type="pmc" and original @xlink:href value
+						was info:doi/10.1371/journal.pgen.1000655-->
+<article-title>Molecular Tooth Decay</article-title>
+</related-article><abstract><p>Vestigial structures occur at both the anatomical and molecular levels, but studies documenting the co-occurrence of morphological degeneration in the fossil record and molecular decay in the genome are rare. Here, we use morphology, the fossil record, and phylogenetics to predict the occurrence of &#x0201c;molecular fossils&#x0201d; of the enamelin (<italic>ENAM</italic>) gene in four different orders of placental mammals (Tubulidentata, Pholidota, Cetacea, Xenarthra) with toothless and/or enamelless taxa. Our results support the &#x0201c;molecular fossil&#x0201d; hypothesis and demonstrate the occurrence of frameshift mutations and/or stop codons in all toothless and enamelless taxa. We then use a novel method based on selection intensity estimates for codons (&#x003c9;) to calculate the timing of iterated enamel loss in the fossil record of aardvarks and pangolins, and further show that the molecular evolutionary history of <italic>ENAM</italic> predicts the occurrence of enamel in basal representatives of Xenarthra (sloths, anteaters, armadillos) even though frameshift mutations are ubiquitous in <italic>ENAM</italic> sequences of living xenarthrans. The molecular decay of <italic>ENAM</italic> parallels the morphological degeneration of enamel in the fossil record of placental mammals and provides manifest evidence for the predictive power of Darwin's theory.</p></abstract><abstract abstract-type="summary"><title>Author Summary</title><p>Enamel is the hardest substance in the vertebrate body. One of the key proteins involved in enamel formation is enamelin. Most placental mammals have teeth that are capped with enamel, but there are also lineages without teeth (anteaters, pangolins, baleen whales) or with enamelless teeth (armadillos, sloths, aardvarks, pygmy and dwarf sperm whales). All toothless and enamelless mammals are descended from ancestral forms that possessed teeth with enamel. Given this ancestry, we predicted that mammalian species without teeth or with teeth that lack enamel would have copies of the gene that codes for the enamelin protein, but that the enamelin gene in these species would contain mutations that render it a nonfunctional pseudogene. To test this hypothesis, we sequenced most of the protein-coding region of the enamelin gene in all groups of placental mammals that lack teeth or have enamelless teeth. In every case, we discovered mutations in the enamelin gene that disrupt the proper reading frame that codes for the enamelin protein. Our results link evolutionary change at the molecular level to morphological change in the fossil record and also provide evidence for the enormous predictive power of Charles Darwin's theory of descent with modification.</p></abstract><counts><page-count count="12"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>Vestigial characters occur in a degenerate condition as a result of evolutionary reduction from a more elaborated, functional character state in an ancestral species <xref rid="pgen.1000634-Futuyma1" ref-type="bibr">[1]</xref>. Darwin <xref rid="pgen.1000634-Darwin1" ref-type="bibr">[2]</xref>,<xref rid="pgen.1000634-Darwin2" ref-type="bibr">[3]</xref> identified &#x0201c;vestiges&#x0201d; in human anatomy such as the vermiform appendix that are leftovers from distant evolutionary history, and recognized that vestigial organs are both anticipated and explained by his theory of descent with modification. Other vestiges include remnants of the pelvic girdle and hindlimb within the body wall of baleen whales <xref rid="pgen.1000634-Bedjer1" ref-type="bibr">[4]</xref> and eyes that are in various stages of degeneration in cave-dwelling animals <xref rid="pgen.1000634-Fong1" ref-type="bibr">[5]</xref>. At the genomic level, genes that were functional in an ancestral species but which are no longer under selective constraints are predicted to degrade through an accumulation of mutations <xref rid="pgen.1000634-Nishikimi1" ref-type="bibr">[6]</xref>,<xref rid="pgen.1000634-Ohta1" ref-type="bibr">[7]</xref>. However, previous studies provide limited evidence linking morphological degeneration in the fossil record to molecular decay in the genome owing to the rarity of soft tissue preservation and the prevalence of pleiotropic genes that influence multiple phenotypic traits.</p><p>Enamel is the hardest substance found in vertebrates and forms the outer cap of teeth, which comprise the most common and often only preserved remains of extinct mammalian species. Enamel is a derivative of the oral epithelium (ameloblasts), and its development involves secretory and maturation phases that culminate in the formation of an organized network of hydroxyapatite crystals <xref rid="pgen.1000634-Hu1" ref-type="bibr">[8]</xref>. Multiple extracellular matrix proteins (EMPs) are secreted by mammalian ameloblasts: amelogenin, ameloblastin, and enamelin are structural proteins that direct the formation of hydroxyapatite crystals during the secretory phase of enamel formation; enamelysin and kallikrein 4 are proteinases that process and eventually degrade the structural EMPs during the secretory and maturation phases, respectively. Mutations in the genes for amelogenin (<italic>AMELX)</italic>, enamelin (<italic>ENAM</italic>), enamelysin (<italic>MMP20</italic>), and kallikrein 4 (<italic>KLK4</italic>) are known to cause defects in enamel that are collectively referred to as amelogenesis imperfectas <xref rid="pgen.1000634-Wright1" ref-type="bibr">[9]</xref>. The three structural EMP genes belong to the secretory calcium-binding phosphoprotein (SSCP) gene family <xref rid="pgen.1000634-Kawasaki1" ref-type="bibr">[10]</xref>, and have an evolutionary history that traces at least as far back as the most recent common ancestor of tetrapods <xref rid="pgen.1000634-Sire1" ref-type="bibr">[11]</xref>,<xref rid="pgen.1000634-Kawasaki2" ref-type="bibr">[12]</xref>. EMPs that are associated with enameloid formation in chondrichthyans and actinopterygians also belong to the SSCP gene family, but are not orthologous to tetrapod EMPs <xref rid="pgen.1000634-Kawasaki2" ref-type="bibr">[12]</xref>.</p><p>Enamelin is the largest EMP in mammals (1104 aa in pig) and is secreted along the mineralization front of developing enamel <xref rid="pgen.1000634-Hu2" ref-type="bibr">[13]</xref> where it may play a role in crystal elongation <xref rid="pgen.1000634-Hu1" ref-type="bibr">[8]</xref>. Homozygous <italic>ENAM</italic> knock-in mice show no true enamel <xref rid="pgen.1000634-Hu3" ref-type="bibr">[14]</xref>, but are otherwise normal. The combination of the hardness of enamel and the hypothesized ameloblast-specific expression of enamelin <xref rid="pgen.1000634-Hu3" ref-type="bibr">[14]</xref> provides a model system for investigating the correlated loss of a phenotypic character (enamel) in the fossil record and the molecular decay of a protein-coding gene (<italic>ENAM</italic>) in the genome.</p><p>Most placental mammals have teeth with enamel, but there are also edentulous (toothless) mammals (pangolins, baleen whales, anteaters) and mammals with enamelless teeth (sloths, armadillos, pygmy and dwarf sperm whales, aardvark). Among edentulous mammals, there is evidence for aborted tooth bud development in mysticetes <xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref>, pangolins <xref rid="pgen.1000634-Osborn1" ref-type="bibr">[16]</xref>,<xref rid="pgen.1000634-Spurgin1" ref-type="bibr">[17]</xref>, and anteaters <xref rid="pgen.1000634-Spurgin1" ref-type="bibr">[17]</xref>. Rudimentary teeth are best developed in mysticetes, but enamel is not deposited and the tooth buds are degraded and resorbed prior to parturition (reviewed in reference <xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref>). Given that all edentulous and enamelless mammals ultimately evolved from ancestors with fully mineralized teeth that included an outer enamel cap, we hypothesized that ameloblast-specific <italic>ENAM</italic> would be present in these taxa, albeit nonfunctional and in various states of decay with frameshift mutations and stop codons. To test this hypothesis, we generated and analyzed protein-coding sequences for <italic>ENAM</italic> in all placental orders containing edentulous and/or enamelless taxa. We also used selection intensity estimates for codons (&#x003c9;) on branches of the tree with functional versus pseudogenic histories to estimate the timing of iterated enamel loss in the fossil record of aardvarks and pangolins. Finally, molecular evolutionary analyses of <italic>ENAM</italic> were employed to predict the occurrence of teeth with enamel in basal representatives of the order Xenarthra (anteaters, sloths, armadillos).</p></sec><sec id="s2"><title>Results/Discussion</title><p>Our sequence alignment (&#x0223c;4.1 kb; <xref ref-type="supplementary-material" rid="pgen.1000634.s001">Dataset S1</xref>) included more than 80&#x00025; of the protein-coding region for <italic>ENAM</italic>. Taxon sampling included 20 species that are representative of all placental orders that either lack teeth or have enamelless teeth, 27 additional placental species among which are the closest living relatives to each edentulous/enamelless group, and two marsupial outgroups. The <italic>ENAM</italic> gene tree (<xref ref-type="supplementary-material" rid="pgen.1000634.s003">Figure S1</xref> and <xref ref-type="supplementary-material" rid="pgen.1000634.s004">Figure S2</xref>) is generally concordant with other molecular phylogenies based on larger data sets <xref rid="pgen.1000634-Murphy1" ref-type="bibr">[18]</xref>,<xref rid="pgen.1000634-Springer1" ref-type="bibr">[19]</xref>. Three of the four major clades of placental mammals (Afrotheria, Xenarthra, Laurasiatheria) were represented in our study and each was recovered with robust support in the <italic>ENAM</italic> gene tree. Further, relationships within both Xenarthra and Cetartiodactyla are generally congruent with other molecular phylogenies <xref rid="pgen.1000634-Delsuc1" ref-type="bibr">[20]</xref>,<xref rid="pgen.1000634-OLeary1" ref-type="bibr">[21]</xref>. Differences between the <italic>ENAM</italic> gene tree and other molecular studies pertain to nodes that are not well supported by <italic>ENAM</italic> alone and typically require larger data sets with increased taxon sampling to subdivide long branches.</p><p>Given the concordance of our gene tree to mammalian species trees, we mapped 125 different <italic>ENAM</italic> frameshift mutations onto a composite species tree (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>). Of these, 123 mapped onto the tree without homoplasy and the remaining two required only two character state changes (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>, <xref ref-type="supplementary-material" rid="pgen.1000634.s011">Table S1</xref>). Frameshifts are lacking in all taxa having teeth with enamel whereas 17 of 20 taxa lacking teeth or enamel have at least one frameshift in <italic>ENAM</italic> (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>). Frameshifts are evident in all four placental orders that include edentulous or enamelless taxa (<xref ref-type="fig" rid="pgen-1000634-g002">Figure 2</xref>).</p><fig id="pgen-1000634-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pgen.1000634.g001</object-id><label>Figure 1</label><caption><title>Species tree with frameshift mutations and dN/dS branch coding.</title><p>Symbols next to taxon names denote taxa having teeth with enamel, taxa having teeth without enamel, and edentulous taxa. Branches are functional (black), pre-mutation (blue), mixed (purple), and pseudogenic (red). Vertical bars on branches represent frameshift mutations (see <xref ref-type="supplementary-material" rid="pgen.1000634.s011">Table S1</xref>). Frameshifts that map unambiguously onto branches are shown in black. Frameshifts shown in white are unique, but occur in regions where sequences are missing for one or more taxa (<xref ref-type="supplementary-material" rid="pgen.1000634.s009">Figure S7</xref>) and were arbitrarily mapped onto the youngest possible branch. Homoplastic frameshifts (deltran optimization) are marked by numbers. Numbers after taxon names indicate the minimum number of stop codons in the sequence (before slashes) and the length of the sequence (after slashes).</p></caption><graphic xlink:href="pgen.1000634.g001"/></fig><fig id="pgen-1000634-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pgen.1000634.g002</object-id><label>Figure 2</label><caption><title>Examples of frameshift mutations and stop codons in edentulous and enamelless taxa.</title><p>(A) <italic>Orycteropus</italic>. (B) <italic>Manis</italic>. (C) Cetacea. (D) Xenarthra. Frameshift insertions are highlighted in blue, frameshift deletions are highlighted in red, and stop codons are highlighted in green. Also see <xref ref-type="supplementary-material" rid="pgen.1000634.s007">Figure S5</xref>.</p></caption><graphic xlink:href="pgen.1000634.g002"/></fig><p>
+<italic>ENAM</italic> sequences for edentulous and enamelless taxa were translated in all three reading frames and in every case stop codons were present (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>). Stop codons occur in both of the baleen whale genera (<italic>Eubalaena</italic>, <italic>Megaptera</italic>) that lack frameshift mutations. The combination of frameshifts and stop codons provides evidence that all edentulous and enamelless taxa lack a functional copy of full length <italic>ENAM</italic>. Molecular decay of <italic>ENAM</italic> in these lineages also corroborates the hypothesis that enamelin exhibits ameloblast-specific gene expression <xref rid="pgen.1000634-Hu3" ref-type="bibr">[14]</xref>.</p><p>We calculated dN/dS ratios (&#x003c9;) for <italic>ENAM</italic> after dividing phylogenetic branches into four categories [functional, pre-mutation, mixed (functional &#x0002b; pseudogene), and pseudogene] based on ancestral reconstructions of the presence or absence of enamel, and the distribution of frameshifts and stop codons in <italic>ENAM</italic> sequences (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>, <xref ref-type="supplementary-material" rid="pgen.1000634.s005">Figure S3</xref>). Functional branches lead to internal nodes or extant species with teeth having enamel and are expected to have evolved under selective constraints with the lowest &#x003c9; values unless there is extensive positive selection. Pre-mutation, mixed, and pseudogene branches lead to internal nodes or extant species that lack enamel. Pre-mutation branches lack frameshifts or stop codons in the region of <italic>ENAM</italic> that was sequenced. Mixed branches are descended from pre-mutation branches and contain the first detected occurrence of a frameshift or stop codon. Mixed branches may be entirely pseudogenic if undetected frameshifts occurred on an earlier (pre-mutation) branch; alternatively, mixed branches may record a history of evolution under functional constraints combined with pseudogenic evolution if the first frameshift or stop codon occurred on the mixed branch. Pseudogene branches occur after mixed branches and are expected to have &#x003c9; values near the neutral value of 1 given the absence of purifying or positive selection.</p><p>Results of dN/dS analyses confirm that functional branches have evolved under purifying selection (&#x003c9;&#x0200a;=&#x0200a;0.51) and that pseudogene branches have evolved as predicted for pseudogenes (&#x003c9;&#x0200a;=&#x0200a;1.02). The pseudogene value of 1.02 agrees with the null hypothesis that <italic>ENAM</italic> evolved under neutral constraints (&#x003c9;&#x0200a;=&#x0200a;1) based on a &#x003c7;<sup>2</sup> test (0.75&#x0003c;P&#x0003c;0.90). Estimated values for pre-mutation and mixed branches were 0.83 and 0.98, respectively, and are compatible with the hypothesis that <italic>ENAM</italic> has evolved under progressively more relaxed constraints on branches leading to species that are edentulous or enamelless. The &#x003c9; value for mixed branches is only slightly less than for pseudogene branches, which suggests that these branches have histories that are almost entirely pseudogenic.</p><p>The abundance of mammalian teeth in the fossil record provides information on the timing and sequence of events leading to enamel and tooth loss in different mammalian lineages. Complementary data from molecular evolutionary analyses of <italic>ENAM</italic> provide information on missing segments of the fossil record. Together, as discussed below, the fossil record and the genome facilitate predictive interplay and inform our understanding of the evolutionary history of enamel degeneration in a way that is not possible based on fossils or molecular sequences alone.</p><p>Teeth in the extant aardvark, <italic>Orycteropus afer</italic>, lack both enamel and a central pulp cavity and are composed of &#x0223c;1500 thin, hexagonal tubes of dentin that are bound together by cementum <xref rid="pgen.1000634-Holroyd1" ref-type="bibr">[22]</xref>. Whereas molecular data suggest that the aardvark lineage diverged from its closest living relatives (Afrosoricida, Macroscelidea) &#x0223c;75.1 million years ago in the Cretaceous <xref rid="pgen.1000634-Murphy2" ref-type="bibr">[23]</xref>, the oldest fossil aardvarks are <italic>O. minutus</italic> (19 mya) and <italic>Myorycteropus africanus</italic> (18 mya) from the early Miocene of Kenya and also lack enamel <xref rid="pgen.1000634-Patterson1" ref-type="bibr">[24]</xref>,<xref rid="pgen.1000634-Milledge1" ref-type="bibr">[25]</xref>. The combination of molecular and paleontological data thus suggests that enamel was lost in the aardvark lineage after aardvarks split from their nearest extant relatives 75 million years ago but before the early Miocene when aardvarks first appear in the fossil record. We estimated the value of &#x003c9; for <italic>ENAM</italic> at 0.75 for the aardvark branch and then calculated the fraction of functional versus pseudogenic history for <italic>ENAM</italic> on this branch by comparing its &#x003c9; value with &#x003c9;values that were calculated for functional and pseudogene branches (see <xref ref-type="sec" rid="s4">Methods</xref>). Calculations were performed using two different assumptions. First, functional and pseudogenic segments of the mixed branch were assumed to have equal synonymous substitution rates <xref rid="pgen.1000634-Wolfe1" ref-type="bibr">[26]</xref>,<xref rid="pgen.1000634-Kumar1" ref-type="bibr">[27]</xref>. Second, the rate of synonymous substitution on the functional segment of the mixed branch was assumed to be 70&#x00025; of the rate of synonymous substitution on the pseudogenic segment on the mixed branch <xref rid="pgen.1000634-Bustamante1" ref-type="bibr">[28]</xref>. Our estimates for the transition from functional gene to pseudogene for aardvark <italic>ENAM</italic> range from 28.8 mya (two synonymous rates) to 35.3 mya (one synonymous rate) and are &#x0223c;10-16 million years older than the first fossil aardvarks. Our analyses predict the occurrence of enamelless fossil aardvarks that are much older than both <italic>O. minutus</italic> and <italic>M. africanus</italic> (<xref ref-type="fig" rid="pgen-1000634-g003">Figure 3</xref>).</p><fig id="pgen-1000634-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pgen.1000634.g003</object-id><label>Figure 3</label><caption><title>A synthetic interpretation of the history of enamel degeneration in Tubulidentata (aardvarks) based on fossils, phylogenetics, molecular clocks, frameshift mutations, and dN/dS ratios.</title><p>Estimates for the timing of the transition from functional gene to pseudogene are based on decomposition of mixed dN/dS history into two distinct episodes of evolution under purifying selection and neutral evolution, respectively. The divergence time between Tubulidentata and Afrosoricida (golden moles, tenrecs) &#x0002b; Macroscelidea (elephant shrews) is from Murphy and Eizirik <xref rid="pgen.1000634-Murphy2" ref-type="bibr">[23]</xref>. The age of the oldest aardvark, <italic>O. minutus</italic>, is from Milledge <xref rid="pgen.1000634-Milledge1" ref-type="bibr">[25]</xref>.</p></caption><graphic xlink:href="pgen.1000634.g003"/></fig><p>Numerous frameshifts were reconstructed on the internal branch leading to living pangolins (<italic>Manis</italic>) and support the hypothesis that <italic>ENAM</italic> was rendered nonfunctional on this branch (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>). The internal branch leading to crown-group <italic>Manis</italic> extends from 79.8 mya <xref rid="pgen.1000634-Murphy2" ref-type="bibr">[23]</xref> to 27.9 mya (see <xref ref-type="sec" rid="s4">Methods</xref>). The earliest definitive pangolin is <italic>Eomanis</italic> from the Eocene Messel deposits of Germany, which have been dated at &#x0223c;47 mya <xref rid="pgen.1000634-Franzen1" ref-type="bibr">[29]</xref>. <italic>Eomanis</italic> was edentulous as are modern pangolins. The occurrence of an early pangolin without teeth is consistent with our finding that <italic>ENAM</italic> became a pseudogene on the stem pangolin branch and further suggests that <italic>ENAM</italic> has been a pseudogene since at least the Eocene. Given that the branch leading to crown-group pangolins represents &#x0223c;52 million years of evolution and that the value of &#x003c9; on this branch is 0.82, we used the aforementioned method to estimate that the transition from functional gene to pseudogene occurred 54.9 (two synonymous rates) to 59.4 (one synonymous rate) mya, which is &#x0223c;8 to 12 million years older than <italic>Eomanis</italic>. We therefore predict the occurrence of edentulous, or at least enamelless, fossil pangolins in the Paleocene (<xref ref-type="fig" rid="pgen-1000634-g004">Figure 4</xref>).</p><fig id="pgen-1000634-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pgen.1000634.g004</object-id><label>Figure 4</label><caption><title>A synthetic interpretation of the history of enamel degeneration in Pholidota (pangolins) based on fossils, phylogenetics, molecular clocks, frameshift mutations, and dN/dS ratios.</title><p>Estimates for the timing of the transition from functional gene to pseudogene are based on decomposition of mixed dN/dS history into two distinct episodes of evolution under purifying selection and neutral evolution, respectively. The divergence time between Pholidota and Carnivora (79.8 mya) is from Murphy and Eizirik <xref rid="pgen.1000634-Murphy2" ref-type="bibr">[23]</xref>. The divergence time between <italic>Manis pentadactyla</italic> and <italic>M. tricuspis</italic> (27.9 mya) is based on molecular dating analyses with <italic>ENAM</italic> (see <xref ref-type="sec" rid="s4">Methods</xref>). The age of the oldest pangolin, <italic>Eomanis</italic> from the Eocene Messel deposits of Germany, is &#x0223c;47 mya <xref rid="pgen.1000634-Franzen1" ref-type="bibr">[29]</xref>.</p></caption><graphic xlink:href="pgen.1000634.g004"/></fig><p>Extinct palaeanodonts have been associated with pangolins <xref rid="pgen.1000634-Emry1" ref-type="bibr">[30]</xref>,<xref rid="pgen.1000634-Rose1" ref-type="bibr">[31]</xref>, xenarthrans <xref rid="pgen.1000634-Simpson1" ref-type="bibr">[32]</xref>,<xref rid="pgen.1000634-Patterson2" ref-type="bibr">[33]</xref>, or both groups <xref rid="pgen.1000634-Matthew1" ref-type="bibr">[34]</xref>&#x02013;<xref rid="pgen.1000634-Rose2" ref-type="bibr">[36]</xref>. Palaeanodonts first appear in the early Paleocene of North America and show a mixture of xenarthran and pholidotan features <xref rid="pgen.1000634-Rose3" ref-type="bibr">[37]</xref>. The earliest forms have teeth with enamel, but palaeanodonts show trends toward reduction and loss of postcanine teeth from back to front, and loss of enamel on the postcanine teeth <xref rid="pgen.1000634-Rose3" ref-type="bibr">[37]</xref>&#x02013;<xref rid="pgen.1000634-Gheerbrant1" ref-type="bibr">[39]</xref>. Rose <italic>et al</italic>. (Figure 8.4 in <xref rid="pgen.1000634-Rose3" ref-type="bibr">[37]</xref>) hypothesized that Palaeanodonta and Pholidota are either sister taxa that split in the latest Cretaceous or that Pholidota evolved from within Palaeanodonta in the early Eocene. The former hypothesis implies that tooth reduction and loss, as well as enamel loss on the postcanine teeth, occurred independently in palaeanodonts and pangolins, whereas these changes may be shared derived features uniting metacheiromyid palaeanodonts and pangolins if the latter hypothesis is correct. Our estimates for the transition from functional <italic>ENAM</italic> to pseudogene on the basal pangolin branch (54.9&#x02013;59.4 mya) suggest that ancestral pholidotans without enamel were contemporaneous with, rather than descended from, late Paleocene and early Eocene metacheiromyids such as <italic>Palaeanodon</italic> that exhibited a reduced postcanine dental arcade, but retained a functional copy of the <italic>ENAM</italic> gene as inferred by the presence of canines with enamel. The combination of fossil and molecular evolutionary evidence is thus more compatible with the hypothesis that palaeanodonts and pholidotans are sister taxa than the hypothesis that pangolins are derived from within Metacheiromyidae.</p><p>Cetacea includes both edentulous (Mysticeti) <xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref> and enamelless (<italic>Kogia</italic>) <xref rid="pgen.1000634-Bianucci1" ref-type="bibr">[40]</xref> taxa. Early mysticete fossils record the transition from ancestral forms that possessed teeth, but not baleen, to intermediate forms with teeth and baleen, to forms that are fully edentulous <xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref>,<xref rid="pgen.1000634-Fitzgerald1" ref-type="bibr">[41]</xref>. This pattern suggests that purifying selection on enamel-specific genes was relaxed on the stem mysticete branch. The five mysticetes examined here all exhibit frameshifts and/or stop codons in <italic>ENAM</italic>, which is indicative of pseudogenic evolution, although no frameshifts or stop codons were found that unite all mysticetes. This result agrees with the findings of Dem&#x000e9;r&#x000e9; <italic>et al.</italic>
+<xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref> that the ameloblastin gene (<italic>AMBN</italic>) and a shorter segment of <italic>ENAM</italic> (&#x0223c;530 bp) both contain frameshift mutations that are shared by one or more mysticete taxa, but none in common to all extant mysticetes. Whereas deltran optimization (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>) suggests an independent origin of the same frameshift mutation in <italic>Eschrichtius robustus</italic> and <italic>Caperea marginata</italic>, acctran optimization (not shown) suggests an earlier origin of the frameshift in the common ancestor of <italic>E. robustus</italic>, <italic>C. marginata</italic>, and <italic>Megaptera novaeangliae</italic>, followed by loss of the frameshift in <italic>M. novaeangliae</italic>. The acctran optimization scenario is compatible with the gain of an ancestral polymorphism on the branch leading to these taxa, followed by subsequent lineage sorting that resulted in loss of the frameshift in <italic>M. novaeangliae</italic>
+<xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref>. When all crown mysticete branches were treated as a separate category in dN/dS analyses (<xref ref-type="sec" rid="s4">Methods</xref>), the result was in agreement with the null hypothesis that <italic>ENAM</italic> evolved as a pseudogene (i.e., &#x003c9;&#x0200a;=&#x0200a;1) based on a &#x003c7;<sup>2</sup> test (0.10&#x0003c;P&#x0003c;0.25). Thus, it appears that <italic>ENAM</italic> was released from selective constraints in crown mysticetes as predicted by the basal position of the archaic toothless mysticete, <italic>Eomysticetus whitmorei</italic> (<xref ref-type="fig" rid="pgen-1000634-g005">Figure 5</xref>) <xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref>. If we assume that <italic>ENAM</italic> evolved as a pseudogene in crown-group mysticetes, which as a group are characterized by generation times and lifespans that equal or exceed those of most other mammals, then the neutral rate of nucleotide substitution is only 3.3&#x000d7;10<sup>&#x02212;4</sup> substitutions/site/myr, which is almost an order of magnitude lower than Kumar and Subramanian's <xref rid="pgen.1000634-Kumar1" ref-type="bibr">[27]</xref> estimate of the average mammalian genome rate of 2.2&#x000d7;10<sup>&#x02212;3</sup> substitutions/site/myr based on an analysis of fourfold degenerate sites.</p><fig id="pgen-1000634-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pgen.1000634.g005</object-id><label>Figure 5</label><caption><title>A synthetic interpretation of the history of enamel degeneration in Cetacea based on fossils, phylogenetics, molecular clocks, frameshift mutations, and dN/dS ratios.</title><p>The common ancestor of Cetacea was reconstructed as having teeth with enamel based on the occurrence of teeth with enamel in stem cetaceans, stem mysticetes, and stem odontocetes. The common ancestor of Mysticeti was reconstructed as toothless based on (1) the fossil record, which records the transition from ancestral forms that possessed teeth but not baleen (e.g., <italic>Janjucetus</italic>), to intermediate forms with teeth and baleen (e.g., <italic>Aetiocetus</italic>), to forms that are fully edentulous (e.g., <italic>Eomysticetus</italic>) and (2) a dN/dS ratio for <italic>ENAM</italic> in crown mysticetes that agrees with the null hypothesis of neutral evolution (dN/dS&#x0200a;=&#x0200a;1). The common ancestor of physeteroids was reconstructed as having teeth with enamel based on the presence of enamel-capped teeth in stem physeteroids (e.g., <italic>Naganocetus</italic>) and <italic>Physeter</italic>. Cladistic relationships and divergence times among extant taxa are based on McGowen <italic>et al.</italic>
+<xref rid="pgen.1000634-McGowen1" ref-type="bibr">[69]</xref>. Cladistic relationships of basal mysticetes and basal physeteroids are based on Dem&#x000e9;r&#x000e9; <italic>et al.</italic>
+<xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref> and Bianucci and Landini <xref rid="pgen.1000634-Bianucci1" ref-type="bibr">[40]</xref>, respectively. Frameshift mutations and stop codons were mapped using deltran optimization. All extant mysticete lineages that were sampled have at least one frameshift or stop codon, but none are shared by all mysticetes. Acctran optimization suggests that some homoplastic frameshifts and stop codons within Mysticeti may have resulted from lineage sorting of ancestral polymorphisms <xref rid="pgen.1000634-Demr1" ref-type="bibr">[15]</xref>.</p></caption><graphic xlink:href="pgen.1000634.g005"/></fig><p>Stem physeteroids (sperm whales) are known from the Miocene and had teeth with enamel <xref rid="pgen.1000634-Bianucci1" ref-type="bibr">[40]</xref>. <italic>Physeter</italic> and <italic>Kogia</italic> are the only living genera of sperm whales and the teeth in adults belonging to these genera lack enamel. A caveat is that thin, prismless enamel has been observed on the unerupted teeth of <italic>P. macrocephalus</italic> (giant sperm whale) <xref rid="pgen.1000634-Ishiyama1" ref-type="bibr">[42]</xref>. Our results provide support for loss of the intact enamelin protein in both <italic>Kogia</italic> species, but not in <italic>P. macrocephalus</italic> (<xref ref-type="fig" rid="pgen-1000634-g005">Figure 5</xref>, <xref ref-type="supplementary-material" rid="pgen.1000634.s012">Text S1</xref>).</p><p>Xenarthrans comprise one of the major clades of placental mammals <xref rid="pgen.1000634-Murphy1" ref-type="bibr">[18]</xref> and the stem xenarthran branch represents &#x0223c;30 million years of evolution <xref rid="pgen.1000634-Murphy3" ref-type="bibr">[43]</xref>. Even with this long history there are no described fossils that are definitive basal xenarthrans <xref rid="pgen.1000634-Rose3" ref-type="bibr">[37]</xref>. Almost all living and fossil xenarthrans, which are crown taxa, either lack teeth or have teeth without enamel. The only clear-cut exception is <italic>Utaetus</italic>, a member of Cingulata (armadillos and extinct relatives) from the Casamayoran (Eocene) that had thin, prismatic enamel (<xref ref-type="supplementary-material" rid="pgen.1000634.s012">Text S1</xref>) <xref rid="pgen.1000634-Simpson2" ref-type="bibr">[44]</xref>. The occurrence of enamel in <italic>Utaetus</italic> suggests that enamel was lost independently in pilosans (anteaters, sloths) and in cingulatans. An alternative hypothesis is that <italic>Utaetus</italic> re-evolved enamel after earlier loss in the common ancestor of Xenarthra (<xref ref-type="supplementary-material" rid="pgen.1000634.s006">Figure S4</xref>). We estimated the value of &#x003c9; for the stem xenarthran branch to determine if <italic>ENAM</italic> evolved under purifying selection or as a pseudogene on this branch. The estimated value (0.48) is similar to that estimated for functional branches (0.51) and implies that <italic>ENAM</italic> evolved under purifying selection on the stem xenarthran branch, concordant with the hypothesis that enamel was lost independently in Pilosa and in Cingulata. Ancestral reconstructions based solely on the phenotypes of extant taxa (<xref ref-type="supplementary-material" rid="pgen.1000634.s005">Figure S3</xref>) imply that enamel was lost on the stem xenarthran branch, but we predict that all stem xenarthran fossils will have teeth with enamel (<xref ref-type="fig" rid="pgen-1000634-g006">Figure 6</xref>) based on (1) an estimated value of &#x003c9; on the stem xenarthran branch that is similar to the estimated value of &#x003c9; for functional branches elsewhere on the tree, (2) the absence of frameshifts on the stem xenarthran branch, (3) the occurrence of enamel in a fossil armadillo (<italic>Utaetus</italic>), which would be difficult to regain if enamel had been lost earlier in evolution, and (4) genomics observations on <italic>AMELX</italic>, <italic>AMBN</italic>, <italic>MMP20</italic>, and <italic>ENAM</italic> in <italic>Dasypus novemcinctus</italic>, which preclude the possibility of unique, homoplasy-free frameshifts in these genes in the common ancestry of Xenarthra (see below).</p><fig id="pgen-1000634-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pgen.1000634.g006</object-id><label>Figure 6</label><caption><title>An integrated interpretation of the history of enamel degeneration in Xenarthra based on fossils, phylogenetics, molecular clocks, frameshift mutations, and dN/dS ratios.</title><p>No definitive stem xenarthrans have been described, but the common ancestor of Xenarthra was reconstructed as having teeth with enamel based on (1) purifying selection on the stem xenarthran branch (&#x003c9;&#x0200a;=&#x0200a;0.48), (2) a reconstructed ancestral <italic>ENAM</italic> sequence that contains no frameshifts and no stop codons, (3) at least one crown-group xenarthran (<italic>Utaetus</italic>) with enamel, which would be improbable to re-evolve if the common ancestor of Xenarthra lacked enamel and had a nonfunctional copy of <italic>ENAM</italic>, and (4) genomics observations. The common ancestor of Pilosa was reconstructed as having teeth without enamel based on the occurrence of shared frameshifts in <italic>ENAM</italic> on the stem pilosan branch. The dN/dS ratio in crown clade Dasypodidae agrees with the neutral evolution (dN/dS&#x0200a;=&#x0200a;1) hypothesis. There are also frameshifts that result in premature stop codons in all dasypodid <italic>ENAM</italic> sequences; however, none are shared by all four dasypodids that were sampled in our analysis. We reconstructed the ancestor of living Dasypodidae as having enamel, which may have been very thin as in <italic>Utaetus</italic>, based on the absence of shared frameshift mutations in protein-coding sequences of <italic>AMELX</italic>, <italic>AMBN</italic>, <italic>ENAM</italic>, and <italic>MMP20</italic>. The sister group relationship and divergence time between <italic>Choloepus hoffmanni</italic> and <italic>C. didactylus</italic> is based on analyses with <italic>ENAM</italic> (<xref ref-type="supplementary-material" rid="pgen.1000634.s003">Figure S1</xref>, <xref ref-type="supplementary-material" rid="pgen.1000634.s004">Figure S2</xref>; <xref ref-type="sec" rid="s4">Methods</xref>). All other relationships and divergence times are based on <xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref> of Delsuc <italic>et al.</italic>
+<xref rid="pgen.1000634-Delsuc1" ref-type="bibr">[20]</xref>. <italic>Utaetus</italic> is derived from Casamayoran age deposits, which are thought to be ?middle to late Eocene in age <xref rid="pgen.1000634-Shockey1" ref-type="bibr">[75]</xref>,<xref rid="pgen.1000634-Croft1" ref-type="bibr">[76]</xref>.</p></caption><graphic xlink:href="pgen.1000634.g006"/></fig><p>Unambiguous fossils of Pilosa are crown rather than stem <xref rid="pgen.1000634-Rose3" ref-type="bibr">[37]</xref> and the fossil record does not speak directly to whether enamel was lost on the branch leading to extant pilosans. However, the occurrence of 2&#x02013;4 frameshifts on the stem pilosan branch implies that <italic>ENAM</italic> transitioned from a functional gene to a pseudogene after Pilosa diverged from Cingulata &#x0223c;65 mya, but before Folivora (sloths) separated from Vermilingua (anteaters) &#x0223c;55 mya <xref rid="pgen.1000634-Delsuc1" ref-type="bibr">[20]</xref> (<xref ref-type="fig" rid="pgen-1000634-g006">Figure 6</xref>).</p><p>In Cingulata, all extant dasypodids (armadillos) that we examined have frameshifts and premature stop codons, suggesting that <italic>ENAM</italic> is a decaying pseudogene in these taxa. However, the only shared frameshifts were in <italic>Euphractus</italic> and <italic>Chaetophractus</italic>, which suggests the possibility that enamel was lost independently in different armadillo lineages. As a further test of this hypothesis, we reconstructed the complete coding sequences for the enamelin (<italic>ENAM</italic>), amelogenin (<italic>AMELX</italic>), ameloblastin (<italic>AMBN</italic>), and enamelysin (<italic>MMP20</italic>) genes in <italic>Dasypus novemcinctus</italic> based on Ensembl 51 scaffolds and trace files (including inspection of chromatograms). There are no frameshifts or stop codons in the coding sequences of <italic>AMELX</italic>, <italic>AMBN</italic>, and <italic>MMP20</italic> in <italic>D. novemcinctus</italic>, and the only frameshift in the Ensembl sequence for <italic>ENAM</italic> is identical to the one that we discovered for <italic>D. novemcinctus</italic> (<xref ref-type="fig" rid="pgen-1000634-g002">Figure 2</xref>, <xref ref-type="supplementary-material" rid="pgen.1000634.s007">Figure S5</xref>, and <xref ref-type="supplementary-material" rid="pgen.1000634.s008">Figure S6</xref>). These observations preclude the occurrence of unique, homoplasy-free frameshifts in <italic>AMELX</italic>, <italic>AMBN</italic>, <italic>MMP20</italic>, or <italic>ENAM</italic> in the common ancestry of either Xenarthra or Dasypodidae and are consistent with the hypothesis that enamel was lost independently in Pilosa and also in more than one dasypodid lineage. When crown-group dasypodid branches were treated as a separate category in dN/dS analyses with <italic>ENAM</italic>, the pseudogene hypothesis of neutral evolution (&#x003c9;&#x0200a;=&#x0200a;1) could not be rejected (0.05&#x0003c;P&#x0003c;0.10), which suggests that <italic>ENAM</italic> has evolved as a pseudogene over most of the history of Dasypodidae even though the protein-coding regions of four EMPs appear to have been intact in the most recent common ancestor of Dasypodidae (<xref ref-type="fig" rid="pgen-1000634-g006">Figure 6</xref>).</p><p>Whereas our analyses provide strong support for multiple instances of tooth loss, enamel loss, and <italic>ENAM</italic> degeneration in placental mammals, they provide no compelling evidence for the re-evolution of enamel following degeneration of the <italic>ENAM</italic> gene on an earlier branch of the tree. This finding is consistent with Dollo's law, which may be stated as follows: complex organs, once lost, can never be regained in exactly the same form <xref rid="pgen.1000634-Lee1" ref-type="bibr">[45, p. 1441]</xref>. Dollo's law implies that genes or developmental pathways released from selective constraints will rapidly become nonfunctional <xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref>. Marshall <italic>et al.</italic>
+<xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref> showed that there is a significant probability over evolutionary time scales of 0.5 to 6 million years for successful reactivation of neutrally evolving coding sequences in the range of 0.5 to 2.0 kb, but that resurrection of genes of this length that have evolved neutrally for &#x0003e;10 million years is highly improbable. In the case of a three kb exon (e.g., exon 10 of <italic>ENAM</italic>), the probability of survival after one million years of neutral evolution ranges from 0.65 to 1.6&#x000d7;10<sup>&#x02212;17</sup> based on calculations using Marshall <italic>et al.</italic>'s <xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref> equation 4 and a range of substitution rates, frameshift accumulation rates, and different values of <italic>f</italic>, where <italic>f</italic> is the probability that a substitution will not result in loss of function. Even in the case of very slow substitution and frameshift accumulation rates (i.e., mysticete rates), and a high value of <italic>f</italic> (i.e., 0.7) <xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref>, the probability that a 3 kb exon will remain functional after ten million years is only 0.014. Our finding that enamel has not been regained in any placental mammal lineage is consistent with these predictions for <italic>ENAM</italic>'s rapid demise in the absence of selective constraints.</p><p>Among other vertebrates, Kollar and Fisher <xref rid="pgen.1000634-Kollar1" ref-type="bibr">[47]</xref> performed experiments with recombinant mouse molar mesenchyme and chick dental epithelium that resulted in &#x0201c;hen's teeth&#x0201d; consisting of a dentine cone covered by enamel matrix proteins. This result implies that chick dental epithelium has retained the genetic potential to develop until the last developmental stage (enamel matrix deposition) for 80 to 100 million years. However, possible contamination of mouse mesenchyme by mouse epithelium makes this interpretation uncertain (reviewed in <xref rid="pgen.1000634-Sire2" ref-type="bibr">[48]</xref>). Further, Sire <italic>et al.</italic>
+<xref rid="pgen.1000634-Sire2" ref-type="bibr">[48]</xref> report that all of the genes encoding dental-specific proteins in chicken, including <italic>ENAM</italic>, have either disappeared from the genome or are pseudogenes. Oral teeth were lost in the common ancestor of cypriniform fishes at least 50 million years ago, possibly in conjunction with the evolution of suction feeding, but have never been regained <xref rid="pgen.1000634-Jackman1" ref-type="bibr">[49]</xref>. The group has subsequently diversified into &#x0223c;3000 extant species that exhibit a wide range of feeding modes, but the loss of oral teeth may have constrained the evolution of large fish-eating forms, which are rare and may be less efficient predators than teleosts that retain oral teeth <xref rid="pgen.1000634-Portz1" ref-type="bibr">[50]</xref>,<xref rid="pgen.1000634-Stock1" ref-type="bibr">[51]</xref>. There are examples of the reacquisition of specific teeth, including the polymorphic occurrence of the second lower molar in <italic>Lynx lynx</italic>
+<xref rid="pgen.1000634-Werdelin1" ref-type="bibr">[52]</xref>, and of sets of teeth such as the third basibranchial teeth in centrarchid fishes <xref rid="pgen.1000634-Gosline1" ref-type="bibr">[53]</xref>. However, examples of the reacquisition of individual teeth or sets of teeth only occur in the context of organisms that retain other teeth in the oropharynx <xref rid="pgen.1000634-Stock2" ref-type="bibr">[54]</xref>.</p><p>Darwin <xref rid="pgen.1000634-Darwin1" ref-type="bibr">[2]</xref> stated that &#x0201c;the existence of organs in a rudimentary, imperfect, and useless condition, or quite aborted, far from presenting a strange difficulty, as they assuredly do on the ordinary doctrine of creation, might even have been anticipated, and can be accounted for by the laws of inheritance.&#x0201d; Our analysis of <italic>ENAM</italic> pseudogenes is the first study to combine information from living taxa, the fossil record, phylogenetics, molecular sequences, and selection intensity estimates for codons to make reciprocal predictions about patterns of molecular decay and the parallel loss of a phenotypic character in the fossil record. Given ancestral species with enamel-capped teeth, we correctly predicted the occurrence of vestigial copies of <italic>ENAM</italic> in four different placental orders with edentulous or enamelless species. dN/dS methods then allowed us to predict the timing of iterated enamel loss in the fossil record of aardvarks and pangolins and the presence of enamel in extinct, basal xenarthrans that may reside in the rock record, but have not yet been described by paleontologists. The molecular decay of <italic>ENAM</italic> mirrors the morphological degeneration of enamel in edentulous and enamelless taxa and provides manifest evidence for the predictive power of Darwin's theory.</p></sec><sec id="s3"><title>Methods</title><sec id="s3a"><title>Gene Sequences</title><p>Exon 10 <xref rid="pgen.1000634-Hart1" ref-type="bibr">[55]</xref> is the longest exon in <italic>ENAM</italic> (2838 base pairs in <italic>Sus</italic>) and codes for &#x0003e;80&#x00025; of the total length of the secreted protein after removal of the signal peptide. PCR was used to amplify &#x0223c;95&#x00025; of exon 10 in four overlapping segments. Primer sequences are enumerated in <xref ref-type="supplementary-material" rid="pgen.1000634.s009">Figure S7</xref>. All segments were amplified with Invitrogen <italic>Taq</italic> DNA polymerase in 50 &#x000b5;l reactions with the following thermal cycling parameters: initial denaturation at 94&#x000b0;C for 2 minutes; 35 cycles of 1 minute at 94&#x000b0;C (denaturation), 1 minute at 50&#x000b0;C (annealing), and 1 minute at 72&#x000b0;C (extension); and a final extension at 72&#x000b0;C for 10 minutes. Fully nested or half nested PCR reactions, using the aforementioned PCR regime, were performed when the primary PCR reaction did not yield a usable product. One &#x000b5;l of the original PCR product was used as the template DNA in the 50 &#x000b5;l nested PCR reaction. PCR products were run out on a 1&#x00025; agarose gel, excised, and cleaned with the Bioneer AccuPrep Gel Purification Kit. Cleaned PCR products were sequenced in both directions at the UCR Core Instrumentation Facility using an automated DNA sequencer (ABI 3730xl). Contigs were assembled using Sequencher 4.1. In cases where PCR products did not sequence directly, they were cloned using the CloneJET PCR Cloning Kit (Fermentas) and Top10 chemically competent cells. Transformed cells were grown overnight on SOB agar medium at 37&#x000b0;C. Three to five clone colonies were then picked and used as the template DNA in 50 &#x000b5;l PCR reactions using vector specific primers. PCR amplification, cleaning, and sequencing protocols were identical to the aforementioned regime except that the annealing temperature was 60&#x000b0;C. Sequences for cloned PCR products are consensus sequences based on data from at least three clones. Some xenarthran and <italic>Manis</italic> segments failed to amplify (<xref ref-type="supplementary-material" rid="pgen.1000634.s010">Figure S8</xref>). Genbank Accession numbers for new <italic>ENAM</italic> sequences for 46 taxa are GQ354839-GQ354884; sequences for <italic>Bos</italic>, <italic>Canis</italic>, and <italic>Monodelphis</italic> were obtained from Ensembl 51.</p></sec><sec id="s3b"><title>DNA Alignments</title><p>DNA sequences were aligned with Clustal X 2.0.9 <xref rid="pgen.1000634-Larkin1" ref-type="bibr">[56]</xref> using default settings and then manually adjusted using Se-Al <xref rid="pgen.1000634-Rambaut1" ref-type="bibr">[57]</xref>. Two alignments were generated. The first alignment (4089 bp; <xref ref-type="supplementary-material" rid="pgen.1000634.s001">Dataset S1</xref>), which was used for phylogenetic analyses and visual discovery of frameshift mutations, included complete sequences for all taxa. Frameshift mutations were mapped onto the composite species tree (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>) using deltran parsimony optimization. The second alignment (2760 bp; <xref ref-type="supplementary-material" rid="pgen.1000634.s002">Dataset S2</xref>) was used in dN/dS analyses with PAML and omitted marsupial sequences, all frameshift insertions (i.e., insertions not in multiples of three), all insertions that were unique to one taxon, and all insertions that were unique to edentulous or enamelless taxa. Stop codons were recoded as missing.</p></sec><sec id="s3c"><title>Phylogenetic Analyses</title><p>Modeltest 3.06 <xref rid="pgen.1000634-Posada1" ref-type="bibr">[58]</xref> was used to select the model of molecular evolution (GTR &#x0002b; &#x00393;) that was implemented in ML and Bayesian analyses with the 4089 bp alignment. RAxML7.0.4 <xref rid="pgen.1000634-Stamatakis1" ref-type="bibr">[59]</xref> and MrBayes v3.1.1 <xref rid="pgen.1000634-Ronquist1" ref-type="bibr">[60]</xref>,<xref rid="pgen.1000634-Huelsenbeck1" ref-type="bibr">[61]</xref> were used to perform the ML and Bayesian analyses, respectively. RAxML analyses employed 500 replicates, randomized MP starting trees, and the fast hill-climbing algorithm; all other free parameters were estimated. The Bayesian analyses used the default priors, random starting trees, and eight chains (seven hot, one cold), and were terminated when the standard deviation of split frequencies for two different simultaneous analyses fell below 0.01 (2.03 million post-burnin generations). Standard deviation of split frequency calculations were performed on the fly after discarding 25&#x00025; of each chain as burnin. Post-burnin trees were sampled every 1000 generations (i.e., 2030 trees were sampled from each analysis).</p></sec><sec id="s3d"><title>dN/dS Analyses</title><p>PAML 4.2 <xref rid="pgen.1000634-Yang1" ref-type="bibr">[62]</xref> was used to estimate the ratio (&#x003c9;) of the nonsynonymous substitution rate (dN) to the synonymous substitution rate (dS) using a composite species tree (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>) and the PAML alignment after recoding stop codons as missing data. The composite species tree is based on Springer <italic>et al.</italic>
+<xref rid="pgen.1000634-Springer1" ref-type="bibr">[19]</xref> for interordinal relationships, Delsuc et al. <xref rid="pgen.1000634-Delsuc1" ref-type="bibr">[20]</xref> for xenarthrans, and Gatesy <xref rid="pgen.1000634-Gatesy1" ref-type="bibr">[63]</xref> for cetartiodactyls. Codeml <xref rid="pgen.1000634-Yang1" ref-type="bibr">[62]</xref> with the branch model was implemented to estimate dN/dS ratios (&#x003c9;) for four different branch categories (functional, pre-mutation, mixed, pseudogene) (<xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref> and <xref ref-type="supplementary-material" rid="pgen.1000634.s005">Figure S3</xref>). Functional branches lead to terminal nodes (i.e., extant taxa) having enamel or internal nodes that were reconstructed as having enamel (<xref ref-type="supplementary-material" rid="pgen.1000634.s005">Figure S3</xref>) and are expected to have evolved under purifying selection with &#x003c9; values&#x0003c;1. Pre-mutation, mixed, and pseudogene branches lead to terminal nodes without enamel or internal nodes that were reconstructed as not having enamel (<xref ref-type="supplementary-material" rid="pgen.1000634.s005">Figure S3</xref>). Pre-mutation branches predate the first detected occurrence of a stop codon or frameshift in <italic>ENAM</italic>; these branches have uncertain functional versus pseudogene histories and may have evolved under purifying selection or alternatively under relaxed constraints if enamel was already lost or in a state of degeneration. Mixed branches contain the first detected occurrence of a frameshift mutation or stop codon in <italic>ENAM</italic>. Mixed branches may be entirely pseudogenic if undetected frameshift mutations (i.e., in one of the remaining short exons that comprise the <italic>ENAM</italic> gene structure that we did not sample here) occurred on an earlier pre-mutation branch; alternatively, mixed branches may reflect a history of evolution that includes a period of evolution under functional constraints followed by a period of pseudogenic evolution if the first frameshift mutation or stop codon in <italic>ENAM</italic> occurred on the mixed branch. Pseudogene branches post-date the first detected occurrence of a frameshift or stop codon on an earlier branch and are expected to have evolved at the neutral rate (&#x003c9;&#x0200a;=&#x0200a;1). In addition to analyses that recognized these four categories of branches, we performed additional analyses that added a fifth branch category for (a) the branch leading to <italic>Orycteropus</italic>, (b) the branch leading to <italic>Manis</italic> species, (c) crown-group mysticete branches, (d) the stem branch leading to crown Xenarthra, and (e) crown-group dasypodid branches, respectively. Codon sites with ambiguous data (i.e., missing data, gaps) were included in the analyses. We used &#x003c7;<sup>2</sup> tests to compare the estimated number of nonsynonymous and synonymous substitutions (from PAML) with the expected number of nonsynonymous and synonymous substitutions according to a neutral model of evolution with &#x003c9;&#x0200a;=&#x0200a;1. PAML estimates for the number of nonsynonymous and synonymous sites in the alignment were 2004.6 and 755.4, respectively. These estimates were used to calculate expected numbers of nonsynonymous and synonymous changes. In the case that examined all pseudogene branches in the four-category analysis, estimated numbers of nonsynonymous and synonymous changes were 780.8 and 287.9, respectively, whereas expected numbers of nonsynonymous and synonymous changes were 776.2 and 292.5, respectively. In the case of crown-group mysticetes, estimated numbers of nonsynonymous and synonymous changes were 66.3 and 16.3, respectively, whereas expected numbers of nonsynonymous and synonymous changes were 60.0 and 22.6 for &#x003c9;&#x0200a;=&#x0200a;1. Finally, estimated numbers of nonsynonymous and synonymous changes were 308.7 and 93.0, respectively, for crown-group dasypodids, whereas expected numbers or nonsynonymous and synonymous changes were 291.8 and 109.9 for &#x003c9;&#x0200a;=&#x0200a;1. All PAML analyses were run with the CodonFreq&#x0200a;=&#x0200a;3 option in PAML.</p></sec><sec id="s3e"><title>Molecular Dating Analyses</title><p>The relaxed molecular clock method implemented in <italic>Multidivtime</italic> (version 9-25-03) <xref rid="pgen.1000634-Thorne1" ref-type="bibr">[64]</xref>&#x02013;<xref rid="pgen.1000634-Kishino1" ref-type="bibr">[66]</xref> was used to estimate divergence times for several pairs of taxa that lack published molecular estimates of divergence times: <italic>Manis tricuspis</italic> and <italic>M. pentadactyla</italic>; <italic>Choloepus didactylus</italic> and <italic>C. hoffmanni</italic>; <italic>Heterohyrax brucei</italic> and <italic>Procavia capensis</italic>; and <italic>Amblysomus hottentotus</italic> and <italic>Chrysochloris asiatica</italic>. We used the phylogeny in <xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref> with the following constraints: (1) minimum of 50 mya and maximum of 63 mya for the split between Feliformia and Caniformia <xref rid="pgen.1000634-Springer2" ref-type="bibr">[67]</xref>; (2) minimum of 54 mya and maximum of 65 mya for the base of Paenungulata <xref rid="pgen.1000634-Springer2" ref-type="bibr">[67]</xref>; (3) minimum of 52 mya for the base of the hippo and cetacean clade <xref rid="pgen.1000634-Waddell1" ref-type="bibr">[68]</xref> and a maximum of 65 mya given uncertain relationships between cetartiodactyls and Paleocene mesonychids <xref rid="pgen.1000634-OLeary1" ref-type="bibr">[21]</xref>.</p></sec><sec id="s3f"><title>Calculations of Substitution Rates in Mysticetes</title><p>We calculated the neutral substitution rate in crown-group mysticetes as 82.6 substitutions/2760 nucleotide sites/90 myr&#x0200a;=&#x0200a;3.3&#x000d7;10<sup>&#x02212;3</sup> substitutions/site/myr, where 82.6 is the PAML estimate for the total number of substitutions in <italic>ENAM</italic> on crown-group mysticete branches, 2760 is the number of nucleotide sites in the PAML alignment, and 90 myr is the total duration of crown-group mysticete branches based on McGowen <italic>et al.</italic>
+<xref rid="pgen.1000634-McGowen1" ref-type="bibr">[69]</xref>. Similarly, we calculated the rate of frameshift accumulation in mysticetes as 2 frameshifts/2.76 kb/90 myr&#x0200a;=&#x0200a;0.0081 frameshifts/kb/myr, where 2 is the minimum number of frameshifts in mysticete <italic>ENAM</italic> (acctran reconstruction).</p></sec><sec id="s3g"><title>Resolving Mixed Branches into Functional and Pseudogenic Components</title><p>The mixed branches leading to <italic>Orycteropus</italic> and to the two species of <italic>Manis</italic> were assumed to have mixed histories that included both functional and pseudogenic components. For these branches, the lengths of time that <italic>ENAM</italic> was functional versus pseudogenic were estimated under two different assumptions. First, we assumed that rates of synonymous substitution are neutral and equal on functional and pseudogene branches <xref rid="pgen.1000634-Wolfe1" ref-type="bibr">[26]</xref>,<xref rid="pgen.1000634-Kumar1" ref-type="bibr">[27]</xref>. Second, we assumed that the rate of synonymous substitution on functional branches is non-neutral and is 70&#x00025; of the rate of synonymous substitution on pseudogene branches following Bustamante <italic>et al</italic>. <xref rid="pgen.1000634-Bustamante1" ref-type="bibr">[28]</xref>. Possible reasons for a lower rate of synonymous substitution on functional branches include constraints associated with codon usage, splicing, and mRNA stability <xref rid="pgen.1000634-Chamary1" ref-type="bibr">[70]</xref>.</p><p>For a single rate of synonymous substitution on functional and pseudogenic branches, the following equation describes the relationship between the lengths of time that <italic>ENAM</italic> was functional versus pseudogenic on the mixed branch:<disp-formula><graphic xlink:href="pgen.1000634.e001.jpg" mimetype="image" position="float"/><label>(1)</label></disp-formula>where T is the length of the mixed branch in millions of years, &#x003c9;<sub>m</sub> is the dN/dS estimate for the mixed branch, T<sub>f</sub> is the amount of time that <italic>ENAM</italic> was functional on the mixed branch, &#x003c9;<sub>f</sub> is the dN/dS estimate for functional branches, T<sub>p</sub> &#x0200a;=&#x0200a; (T &#x02212; T<sub>f</sub>) is the amount of time that <italic>ENAM</italic> was pseudogenic on the mixed branch, and &#x003c9;<sub>p</sub> is the dN/dS estimate for pseudogenic branches. T<sub>f</sub> and T<sub>p</sub> are then obtained by rearrangement and substitution:<disp-formula><graphic xlink:href="pgen.1000634.e002.jpg" mimetype="image" position="float"/><label>(2)</label></disp-formula>
+<disp-formula><graphic xlink:href="pgen.1000634.e003.jpg" mimetype="image" position="float"/><label>(3)</label></disp-formula>
+</p><p>In the case of two different synonymous substitution rates, one for functional branches and the other for pseudogenic branches, the lengths of time that <italic>ENAM</italic> was functional versus pseudogenic were estimated using the following equations:<disp-formula><graphic xlink:href="pgen.1000634.e004.jpg" mimetype="image" position="float"/><label>(4)</label></disp-formula>
+<disp-formula><graphic xlink:href="pgen.1000634.e005.jpg" mimetype="image" position="float"/><label>(5)</label></disp-formula>where T<sub>f(2)</sub> is the amount of time that <italic>ENAM</italic> was functional on the mixed branch when there are two synonymous rates, T<sub>p(2)</sub> is the amount of time that <italic>ENAM</italic> was pseudogenic on the mixed branch when there are two synonymous rates, dS<sub>f</sub> is the synonymous (non-neutral) rate of substitution on the functional segment of the mixed branch, dS<sub>p</sub> is the synonymous (neutral) rate of substitution on the pseudogenic segment of the mixed branch, and T<sub>f</sub> is from equation 2. The denominator in equation 4 adjusts for differences in rates of synonymous substitution on functional and pseudogenic segments of the mixed branch, and also introduces a normalization correction so that T &#x0200a;=&#x0200a; T<sub>f(2)</sub> &#x0002b; T<sub>p(2)</sub>. In the case of dS<sub>f</sub> &#x0200a;=&#x0200a; dS<sub>p</sub>, the denominator in equation 4 equals 1 and the equation reduces to T<sub>f(2)</sub> &#x0200a;=&#x0200a; T<sub>f</sub>.</p><p>Our approach for dating the transition from functional gene to pseudogene is conceptually related to methods that are based on the overall substitution rate <xref rid="pgen.1000634-Li1" ref-type="bibr">[71]</xref> and the rate of indel accumulation <xref rid="pgen.1000634-Saitou1" ref-type="bibr">[72]</xref>,<xref rid="pgen.1000634-Springer3" ref-type="bibr">[73]</xref>, respectively.</p></sec><sec id="s3h"><title>Ancestral Reconstructions</title><p>Ancestral reconstructions for the presence or absence of enamel (<xref ref-type="supplementary-material" rid="pgen.1000634.s005">Figure S3</xref>) were performed with SIMMAP Version 1.0 B2.3.2 <xref rid="pgen.1000634-Bollback1" ref-type="bibr">[74]</xref>.</p></sec><sec id="s3i"><title>Calculations of Survival Time under Neutral Evolution</title><p>Equation 4 from Marshall <italic>et al.</italic>
+<xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref> was used to estimate the probability that a three kb exon will remain functional after one million years of neutral evolution. Calculations were performed using the very slow rate of nucleotide substitution that we calculated for mysticetes (r<sub>s</sub>&#x0200a;=&#x0200a;3.3&#x000d7;10<sup>&#x02212;4</sup> substitutions per site per myr) and Marshall <italic>et al</italic>.'s <xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref> slow, intermediate, and fast rates of nucleotide substitution (<italic>r</italic>
+<sub>s</sub>&#x0200a;=&#x0200a;1&#x000d7;10<sup>&#x02212;3</sup>, 5&#x000d7;10<sup>&#x02212;3</sup>, and 10&#x000d7;10<sup>&#x02212;3</sup> substitutions per site per myr); very slow (i.e., mysticetes), slow, intermediate, and fast rates of frameshift accumulation (<italic>r</italic>
+<sub>f</sub>&#x0200a;=&#x0200a;0.0081, 0.014, 0.093, and 0.287 frameshifts per kb per myr); and with two different values of <italic>f</italic> (0.3, 0.7), where <italic>f</italic> is the probability that a substitution will not result in loss of function and the chosen values represent endpoints of Marshall <italic>et al</italic>.'s <xref rid="pgen.1000634-Marshall1" ref-type="bibr">[46]</xref> &#x0201c;realistic range&#x0201d; for this variable.</p></sec></sec><sec sec-type="supplementary-material" id="s4"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pgen.1000634.s001"><label>Dataset S1</label><caption><p>Complete nexus alignment of DNA sequences for <italic>ENAM.</italic>
+</p><p>(0.32 MB TXT)</p></caption><media xlink:href="pgen.1000634.s001.txt"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s002"><label>Dataset S2</label><caption><p>Complete nexus alignment of DNA sequences used in PAML analyses.</p><p>(0.21 MB TXT)</p></caption><media xlink:href="pgen.1000634.s002.txt"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s003"><label>Figure S1</label><caption><p>ML phylogram based on 4089 bp alignment (<xref ref-type="supplementary-material" rid="pgen.1000634.s001">Dataset S1</xref>). Marsupial outgroups are not shown.</p><p>(1.72 MB TIF)</p></caption><media xlink:href="pgen.1000634.s003.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s004"><label>Figure S2</label><caption><p>Maximum posterior probability tree with Bayesian posterior probabilities above branches and ML bootstrap support percentages below branches. Bayesian and ML analyses were performed with the 4089 bp alignment (<xref ref-type="supplementary-material" rid="pgen.1000634.s001">Dataset S1</xref>).</p><p>(1.81 MB TIF)</p></caption><media xlink:href="pgen.1000634.s004.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s005"><label>Figure S3</label><caption><p>Ancestral state reconstructions (enamel present or enamel absent) for internal nodes based on SIMMAP (Version 1.0 B2.3.2) <xref rid="pgen.1000634-Bollback1" ref-type="bibr">[74]</xref>. Parsimony optimization (not shown) agreed with the most probable ML reconstruction. Functional branches lead to extant taxa and internal nodes with enamel. Pre-mutation, mixed, and pseudogene branches lead to extant taxa and internal nodes without enamel. Pre-mutation branches predate the first detected occurrence of a frameshift mutation or stop codon in <italic>ENAM</italic>. Mixed branches record the first detected occurrence of a frameshift or stop codon in <italic>ENAM</italic>. Pseudogene branches postdate the first detected occurrence of a frameshift or stop codon in <italic>ENAM</italic>. Branch colors are as in <xref ref-type="fig" rid="pgen-1000634-g001">Figure 1</xref>.</p><p>(1.95 MB TIF)</p></caption><media xlink:href="pgen.1000634.s005.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s006"><label>Figure S4</label><caption><p>Alternative hypotheses for the loss of enamel in Xenarthra given a basal position for the fossil armadillo <italic>Utaetus</italic> relative to living armadillos. Deltran parsimony optimization favors the dual loss hypothesis wherein enamel was lost independently in Pilosa and Dasypodidae; acctran parsimony optimization favors loss of enamel in the common ancestor of Xenarthra followed by gain of this feature in <italic>Utaetus</italic>. A dN/dS ratio of 0.48 suggests that <italic>ENAM</italic> evolved under purifying selection on the stem branch leading to crown Xenarthra and was a functional gene at this stage in its evolutionary history. Parsimony reconstruction of the partial <italic>ENAM</italic> sequence for the most recent common ancestor of Xenarthra also suggests that <italic>ENAM</italic> was functional (i.e., no frameshift mutations or stop codons in reconstructed ancestral sequence). Taken together, the dN/dS ratio for <italic>ENAM</italic> on the stem xenarthran branch and the reconstructed ancestral <italic>ENAM</italic> sequence in the last common ancestor of Xenarthra provide support for the dual loss hypothesis. Additional observations from genomics suggest that enamel may have been lost independently in more than one armadillo lineage (see text).</p><p>(0.74 MB TIF)</p></caption><media xlink:href="pgen.1000634.s006.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s007"><label>Figure S5</label><caption><p>Representative chromatograms showing frameshift insertions and deletions in edentulous and enamelless taxa.</p><p>(0.29 MB PDF)</p></caption><media xlink:href="pgen.1000634.s007.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s008"><label>Figure S6</label><caption><p>Pairwise amino acid alignments between <italic>Sus</italic> and <italic>Dasypus</italic> for the <italic>AMELX, AMBN, ENAM,</italic> and <italic>MMP20</italic> genes.</p><p>(0.04 MB DOC)</p></caption><media xlink:href="pgen.1000634.s008.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s009"><label>Figure S7</label><caption><p>Primer sequences and location of primer sequences in relationship to nearly complete exonic sequences that were assembled from Ensembl 51 and trace files. F designates forward primers; R designates reverse primers.</p><p>(0.74 MB DOC)</p></caption><media xlink:href="pgen.1000634.s009.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s010"><label>Figure S8</label><caption><p>Illustration of <italic>ENAM</italic> segments that amplified (black) and failed to amplify (white) for edentulous and enamelless taxa.</p><p>(0.87 MB TIF)</p></caption><media xlink:href="pgen.1000634.s010.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s011"><label>Table S1</label><caption><p>Comprehensive list of frameshift insertions and deletions in edentulous and enamelless taxa. Numbering of insertions and deletions corresponds to the alignment in <xref ref-type="supplementary-material" rid="pgen.1000634.s001">Dataset S1</xref>. Numbers in red font indicate the minimum to maximum number of frameshift indels.</p><p>(0.03 MB DOC)</p></caption><media xlink:href="pgen.1000634.s011.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pgen.1000634.s012"><label>Text S1</label><caption><p>Supplementary note on enamel in (a) sperm whales and (b) xenarthrans.</p><p>(0.07 MB DOC)</p></caption><media xlink:href="pgen.1000634.s012.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack><p>We thank N. Ayoub, T. Gaudin, S. Gatesy, C. Hayashi, M. Lee, M. McGowen, A. de Queiroz, K. Springer, and two anonymous reviewers for helpful comments. Southwest Fisheries Science Center (specimen numbers Z505, Z3859, Z5750, Z9834, Z10119, Z10124, Z13086, Z15224, Z18928, Z28452, Z35275, Z38274), New York Zoological Society, Northeast Fisheries Science Center Stranding Network, Smithsonian Institution Division of Mammals, Mote Marine Lab, South Australian Museum, G. Braulik (World Wildlife Fund), H. Rosenbaum, U. Arnason, and M. Milinkovitch kindly provided DNA samples.</p></ack><fn-group><fn fn-type="COI-statement"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p>This work was supported in part by the National Science Foundation (EF06298660 to MSS and JG, DEB-0743724 to JG, and EF0629849 to WJM. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pgen.1000634-Futuyma1"><label>1</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Futuyma</surname><given-names>DJ</given-names></name></person-group>
+<year>1998</year>
+<article-title>Evolutionary biology.</article-title>
+<publisher-loc>Sunderland</publisher-loc>
+<publisher-name>Sinauer</publisher-name>
+</element-citation></ref><ref id="pgen.1000634-Darwin1"><label>2</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Darwin</surname><given-names>C</given-names></name></person-group>
+<year>1859</year>
+<article-title>On the origin of species by means of natural selection, or the preservation of favoured races in the struggle for life.</article-title>
+<publisher-loc>London</publisher-loc>
+<publisher-name>John Murray</publisher-name>
+</element-citation></ref><ref id="pgen.1000634-Darwin2"><label>3</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Darwin</surname><given-names>C</given-names></name></person-group>
+<year>1871</year>
+<article-title>The descent of man, and selection in relation to sex.</article-title>
+<publisher-loc>London</publisher-loc>
+<publisher-name>John Murray</publisher-name>
+</element-citation></ref><ref id="pgen.1000634-Bedjer1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bedjer</surname><given-names>L</given-names></name><name><surname>Hall</surname><given-names>BK</given-names></name></person-group>
+<year>2002</year>
+<article-title>Limbs in whales and limblessness in other vertebrates: mechanisms of evolutionary and developmental transformation and loss.</article-title>
+<source>Evol Dev</source>
+<volume>4</volume>
+<fpage>445</fpage>
+<lpage>458</lpage>
+<pub-id pub-id-type="pmid">12492145</pub-id></element-citation></ref><ref id="pgen.1000634-Fong1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fong</surname><given-names>DW</given-names></name><name><surname>Kane</surname><given-names>TC</given-names></name><name><surname>Culver</surname><given-names>DC</given-names></name></person-group>
+<year>1995</year>
+<article-title>Vestigialization and loss of nonfunctional characters.</article-title>
+<source>Annu Rev Ecol Syst</source>
+<volume>26</volume>
+<fpage>249</fpage>
+<lpage>268</lpage>
+</element-citation></ref><ref id="pgen.1000634-Nishikimi1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nishikimi</surname><given-names>M</given-names></name><name><surname>Fukuyama</surname><given-names>R</given-names></name><name><surname>Minoshima</surname><given-names>S</given-names></name><name><surname>Shimizu</surname><given-names>N</given-names></name><name><surname>Yagi</surname><given-names>K</given-names></name></person-group>
+<year>1994</year>
+<article-title>Cloning and chromosomal mapping of the human nonfunctional gene for L-gulono-&#x003b3;-lactone oxidase, the enzyme for L-ascorbic acid biosynthesis missing in man.</article-title>
+<source>J Biol Chem</source>
+<volume>269</volume>
+<fpage>13685</fpage>
+<lpage>13688</lpage>
+<pub-id pub-id-type="pmid">8175804</pub-id></element-citation></ref><ref id="pgen.1000634-Ohta1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ohta</surname><given-names>Y</given-names></name><name><surname>Nishikimi</surname><given-names>M</given-names></name></person-group>
+<year>1999</year>
+<article-title>Random nucleotide substitutions in primate nonfunctional gene for L-gulono-&#x003b3;-lactone oxidase, the missing enzyme in L-ascorbic acid biosynthesis.</article-title>
+<source>Biochim Biophys Acta</source>
+<volume>1472</volume>
+<fpage>408</fpage>
+<lpage>411</lpage>
+<pub-id pub-id-type="pmid">10572964</pub-id></element-citation></ref><ref id="pgen.1000634-Hu1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hu</surname><given-names>JC-C</given-names></name><name><surname>Chun</surname><given-names>Y-HP</given-names></name><name><surname>Al Hazzazzi</surname><given-names>T</given-names></name><name><surname>Simmer</surname><given-names>JP</given-names></name></person-group>
+<year>2007</year>
+<article-title>Enamel formation and amelogenesis imperfecta.</article-title>
+<source>Cells Tissues Organs</source>
+<volume>186</volume>
+<fpage>78</fpage>
+<lpage>85</lpage>
+<pub-id pub-id-type="pmid">17627121</pub-id></element-citation></ref><ref id="pgen.1000634-Wright1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wright</surname><given-names>JT</given-names></name><name><surname>Hart</surname><given-names>TC</given-names></name><name><surname>Hart</surname><given-names>PS</given-names></name><name><surname>Simmons</surname><given-names>D</given-names></name><name><surname>Suggs</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Human and mouse enamel phenotypes resulting from mutation or altered expression of <italic>AMEL</italic>, <italic>ENAM</italic>, <italic>MMP20</italic> and <italic>KLK4</italic>.</article-title>
+<source>Cells Tissues Organs</source>
+<volume>189</volume>
+<fpage>224</fpage>
+<lpage>229</lpage>
+<pub-id pub-id-type="pmid">18714142</pub-id></element-citation></ref><ref id="pgen.1000634-Kawasaki1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kawasaki</surname><given-names>K</given-names></name><name><surname>Weiss</surname><given-names>KM</given-names></name></person-group>
+<year>2003</year>
+<article-title>Mineralized tissue and vertebrate evolution: the secretory calcium-binding phosphoprotein gene cluster.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>100</volume>
+<fpage>4060</fpage>
+<lpage>4065</lpage>
+<pub-id pub-id-type="pmid">12646701</pub-id></element-citation></ref><ref id="pgen.1000634-Sire1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sire</surname><given-names>J-Y</given-names></name><name><surname>Davit-Beal</surname><given-names>T</given-names></name><name><surname>Delgado</surname><given-names>S</given-names></name><name><surname>Gu</surname><given-names>X</given-names></name></person-group>
+<year>2007</year>
+<article-title>The origin and evolution of enamel mineralization genes.</article-title>
+<source>Cells Tissues Organs</source>
+<volume>186</volume>
+<fpage>25</fpage>
+<lpage>48</lpage>
+<pub-id pub-id-type="pmid">17627117</pub-id></element-citation></ref><ref id="pgen.1000634-Kawasaki2"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kawasaki</surname><given-names>K</given-names></name></person-group>
+<year>2009</year>
+<article-title>The SCPP gene repertoire in bony vertebrates and graded differences in mineralized tissues.</article-title>
+<source>Dev Genes Evol</source>
+<volume>219</volume>
+<fpage>147</fpage>
+<lpage>157</lpage>
+<pub-id pub-id-type="pmid">19255778</pub-id></element-citation></ref><ref id="pgen.1000634-Hu2"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hu</surname><given-names>C-C</given-names></name><name><surname>Fukae</surname><given-names>M</given-names></name><name><surname>Uchida</surname><given-names>T</given-names></name><name><surname>Qian</surname><given-names>Q</given-names></name><name><surname>Zhang</surname><given-names>CH</given-names></name><etal/></person-group>
+<year>1997</year>
+<article-title>Cloning and characterization of porcine enamelin mRNAs.</article-title>
+<source>J Dent Res</source>
+<volume>76</volume>
+<fpage>1720</fpage>
+<lpage>1729</lpage>
+<pub-id pub-id-type="pmid">9372788</pub-id></element-citation></ref><ref id="pgen.1000634-Hu3"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hu</surname><given-names>JC-C</given-names></name><name><surname>Hu</surname><given-names>Y</given-names></name><name><surname>Smith</surname><given-names>CE</given-names></name><name><surname>McKee</surname><given-names>MD</given-names></name><name><surname>Wright</surname><given-names>JT</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Enamel defects and ameloblast-specific expression in <italic>Enam</italic> knock-out/<italic>lacZ</italic> knock-in mice.</article-title>
+<source>J Biol Chem</source>
+<volume>283</volume>
+<fpage>10858</fpage>
+<lpage>10871</lpage>
+<pub-id pub-id-type="pmid">18252720</pub-id></element-citation></ref><ref id="pgen.1000634-Demr1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dem&#x000e9;r&#x000e9;</surname><given-names>TA</given-names></name><name><surname>McGowen</surname><given-names>MR</given-names></name><name><surname>Berta</surname><given-names>A</given-names></name><name><surname>Gatesy</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>Morphological and molecular evidence for a stepwise evolutionary transition from teeth to baleen in mysticete whales.</article-title>
+<source>Syst Biol</source>
+<volume>57</volume>
+<fpage>15</fpage>
+<lpage>37</lpage>
+<pub-id pub-id-type="pmid">18266181</pub-id></element-citation></ref><ref id="pgen.1000634-Osborn1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Osborn</surname><given-names>HF</given-names></name></person-group>
+<year>1893</year>
+<article-title>Recent researches upon the succession of teeth in mammals.</article-title>
+<source>Amer Nat</source>
+<volume>27</volume>
+<fpage>493</fpage>
+<lpage>508</lpage>
+</element-citation></ref><ref id="pgen.1000634-Spurgin1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Spurgin</surname><given-names>AM</given-names></name></person-group>
+<year>1904</year>
+<article-title>Enamel in the teeth of an embryo edentate (<italic>Dasypus novemcinctus</italic> Linn).</article-title>
+<source>Amer J Anat</source>
+<volume>3</volume>
+<fpage>75</fpage>
+<lpage>84</lpage>
+</element-citation></ref><ref id="pgen.1000634-Murphy1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Murphy</surname><given-names>WJ</given-names></name><name><surname>Eizirik</surname><given-names>E</given-names></name><name><surname>O'Brien</surname><given-names>SJ</given-names></name><name><surname>Madsen</surname><given-names>O</given-names></name><name><surname>Scally</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>Resolution of the early placental mammal radiation using Bayesian phylogenetics.</article-title>
+<source>Science</source>
+<volume>294</volume>
+<fpage>2348</fpage>
+<lpage>2351</lpage>
+<pub-id pub-id-type="pmid">11743200</pub-id></element-citation></ref><ref id="pgen.1000634-Springer1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Springer</surname><given-names>MS</given-names></name><name><surname>Burk-Herrick</surname><given-names>A</given-names></name><name><surname>Meredith</surname><given-names>R</given-names></name><name><surname>Eizirik</surname><given-names>E</given-names></name><name><surname>Teeling</surname><given-names>E</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The adequacy of morphology for reconstructing the early history of placental mammals.</article-title>
+<source>Syst Biol</source>
+<volume>56</volume>
+<fpage>673</fpage>
+<lpage>684</lpage>
+<pub-id pub-id-type="pmid">17661234</pub-id></element-citation></ref><ref id="pgen.1000634-Delsuc1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Delsuc</surname><given-names>F</given-names></name><name><surname>Vizcaino</surname><given-names>SF</given-names></name><name><surname>Douzery</surname><given-names>EJP</given-names></name></person-group>
+<year>2004</year>
+<article-title>Influence of Tertiary paleoenvironmental changes on the diversification of South American mammals: a relaxed molecular clock study within xenarthrans.</article-title>
+<source>BMC Evol Biol</source>
+<volume>4</volume>
+<fpage>11</fpage>
+<pub-id pub-id-type="pmid">15115541</pub-id></element-citation></ref><ref id="pgen.1000634-OLeary1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>O'Leary</surname><given-names>MA</given-names></name><name><surname>Gatesy</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>Impact of increased character sampling on the phylogeny of Cetartiodactyla (Mammalia): combined analysis including fossils.</article-title>
+<source>Cladistics</source>
+<volume>24</volume>
+<fpage>397</fpage>
+<lpage>442</lpage>
+</element-citation></ref><ref id="pgen.1000634-Holroyd1"><label>22</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Holroyd</surname><given-names>PA</given-names></name><name><surname>Mussell</surname><given-names>JC</given-names></name></person-group>
+<year>2005</year>
+<article-title>Macroscelidea and Tubulidentata.</article-title>
+<person-group person-group-type="editor"><name><surname>Rose</surname><given-names>KD</given-names></name><name><surname>Archibald</surname><given-names>JD</given-names></name></person-group>
+<source>The rise of placental mammals</source>
+<publisher-loc>Baltimore</publisher-loc>
+<publisher-name>The Johns Hopkins Univ Press</publisher-name>
+<fpage>71</fpage>
+<lpage>83</lpage>
+</element-citation></ref><ref id="pgen.1000634-Murphy2"><label>23</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Murphy</surname><given-names>WJ</given-names></name><name><surname>Eizirik</surname><given-names>E</given-names></name></person-group>
+<year>2009</year>
+<article-title>Placental mammals (Eutheria).</article-title>
+<person-group person-group-type="editor"><name><surname>Hedges</surname><given-names>SB</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<source>The timetree of life</source>
+<publisher-loc>Oxford</publisher-loc>
+<publisher-name>Oxford Univ Press</publisher-name>
+<fpage>471</fpage>
+<lpage>474</lpage>
+</element-citation></ref><ref id="pgen.1000634-Patterson1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Patterson</surname><given-names>B</given-names></name></person-group>
+<year>1975</year>
+<article-title>The fossil aardvarks (Mammalia: Tubulidentata).</article-title>
+<source>Bull Mus Comp Zool</source>
+<volume>147</volume>
+<fpage>185</fpage>
+<lpage>237</lpage>
+</element-citation></ref><ref id="pgen.1000634-Milledge1"><label>25</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Milledge</surname><given-names>S</given-names></name></person-group>
+<year>2003</year>
+<article-title>Fossil aardvarks from the Lothagam beds.</article-title>
+<person-group person-group-type="editor"><name><surname>Leakey</surname><given-names>J</given-names></name><name><surname>Harris</surname><given-names>J</given-names></name></person-group>
+<source>Lothagam: The dawn of humanity in Eastern Africa</source>
+<publisher-loc>New York</publisher-loc>
+<publisher-name>Columbia University Press</publisher-name>
+<fpage>363</fpage>
+<lpage>368</lpage>
+</element-citation></ref><ref id="pgen.1000634-Wolfe1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wolfe</surname><given-names>KH</given-names></name><name><surname>Sharp</surname><given-names>PM</given-names></name><name><surname>Li</surname><given-names>W-H</given-names></name></person-group>
+<year>1989</year>
+<article-title>Mutation rates differ among regions of the mammalian genome.</article-title>
+<source>Nature</source>
+<volume>337</volume>
+<fpage>283</fpage>
+<lpage>285</lpage>
+<pub-id pub-id-type="pmid">2911369</pub-id></element-citation></ref><ref id="pgen.1000634-Kumar1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kumar</surname><given-names>S</given-names></name><name><surname>Subramanian</surname><given-names>S</given-names></name></person-group>
+<year>2002</year>
+<article-title>Mutation rates in mammalian genomes.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>803</fpage>
+<lpage>808</lpage>
+<pub-id pub-id-type="pmid">11792858</pub-id></element-citation></ref><ref id="pgen.1000634-Bustamante1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bustamante</surname><given-names>CD</given-names></name><name><surname>Nielsen</surname><given-names>R</given-names></name><name><surname>Hartl</surname><given-names>DL</given-names></name></person-group>
+<year>2002</year>
+<article-title>A maximum likelihood method analyzing pseudogene evolution: implications for silent site evolution in humans and rodents.</article-title>
+<source>Mol Biol Evol</source>
+<volume>19</volume>
+<fpage>110</fpage>
+<lpage>117</lpage>
+<pub-id pub-id-type="pmid">11752196</pub-id></element-citation></ref><ref id="pgen.1000634-Franzen1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Franzen</surname><given-names>JL</given-names></name></person-group>
+<year>2005</year>
+<article-title>The implications of the numerical dating of the Messel fossil deposit (Eocene, Germany) for mammalian biochronology.</article-title>
+<source>Annales de Paleontologie</source>
+<volume>91</volume>
+<fpage>329</fpage>
+<lpage>335</lpage>
+</element-citation></ref><ref id="pgen.1000634-Emry1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Emry</surname><given-names>RJ</given-names></name></person-group>
+<year>1970</year>
+<article-title>A North American Oligocene pangolin and other additions to the Pholidota.</article-title>
+<source>Bull Amer Mus Nat Hist</source>
+<volume>142</volume>
+<fpage>455</fpage>
+<lpage>510</lpage>
+</element-citation></ref><ref id="pgen.1000634-Rose1"><label>31</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Rose</surname><given-names>KD</given-names></name><name><surname>Emry</surname><given-names>RJ</given-names></name></person-group>
+<year>1993</year>
+<article-title>Relationships of Xenarthra, Pholidota, and fossil &#x0201c;edentates&#x0201d;: the morphological evidence.</article-title>
+<person-group person-group-type="editor"><name><surname>Szalay</surname><given-names>FS</given-names></name><name><surname>Novacek</surname><given-names>MJ</given-names></name><name><surname>McKenna</surname><given-names>MC</given-names></name></person-group>
+<source>Mammal phylogeny: Placentals</source>
+<publisher-loc>New York</publisher-loc>
+<publisher-name>Springer-Verlag</publisher-name>
+<fpage>81</fpage>
+<lpage>102</lpage>
+</element-citation></ref><ref id="pgen.1000634-Simpson1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Simpson</surname><given-names>GG</given-names></name></person-group>
+<year>1931</year>
+<article-title>
+<italic>Metacheiromys</italic> and the Edentata.</article-title>
+<source>Bull Amer Mus Nat Hist</source>
+<volume>59</volume>
+<fpage>295</fpage>
+<lpage>381</lpage>
+</element-citation></ref><ref id="pgen.1000634-Patterson2"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Patterson</surname><given-names>B</given-names></name><name><surname>Segall</surname><given-names>W</given-names></name><name><surname>Turnbull</surname><given-names>W</given-names></name><name><surname>Gaudin</surname><given-names>T</given-names></name></person-group>
+<year>1992</year>
+<article-title>The ear region in xenarthrans (&#x0200a;=&#x0200a;Edentata: Mammalia). Part II. Pilosa (sloths, anteaters), palaeanodonts, and a miscellany.</article-title>
+<source>Fieldiana Geol new series</source>
+<volume>24</volume>
+<fpage>1</fpage>
+<lpage>79</lpage>
+</element-citation></ref><ref id="pgen.1000634-Matthew1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Matthew</surname><given-names>WD</given-names></name></person-group>
+<year>1918</year>
+<article-title>A revision of the lower Eocene Wasatch and Wind River faunas. Part V. Insectivora (continued), Glires, Edentata.</article-title>
+<source>Bull Amer Mus Nat Hist</source>
+<volume>38</volume>
+<fpage>565</fpage>
+<lpage>657</lpage>
+</element-citation></ref><ref id="pgen.1000634-Patterson3"><label>35</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Patterson</surname><given-names>B</given-names></name></person-group>
+<year>1978</year>
+<article-title>Pholidota and Tubulidentata.</article-title>
+<person-group person-group-type="editor"><name><surname>Maglio</surname><given-names>VJ</given-names></name><name><surname>Cook</surname><given-names>HBS</given-names></name></person-group>
+<source>Evolution of African mammals</source>
+<publisher-loc>Cambridge</publisher-loc>
+<publisher-name>Harvard Univ Press</publisher-name>
+<fpage>268</fpage>
+<lpage>278</lpage>
+</element-citation></ref><ref id="pgen.1000634-Rose2"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rose</surname><given-names>KD</given-names></name></person-group>
+<year>1978</year>
+<article-title>A new Paleocene epoicotheriid (Mammalia), with comments on the Palaeanodonta.</article-title>
+<source>J Paleontol</source>
+<volume>52</volume>
+<fpage>658</fpage>
+<lpage>674</lpage>
+</element-citation></ref><ref id="pgen.1000634-Rose3"><label>37</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Rose</surname><given-names>KD</given-names></name><name><surname>Emry</surname><given-names>RJ</given-names></name><name><surname>Gaudin</surname><given-names>TJ</given-names></name><name><surname>Storch</surname><given-names>G</given-names></name></person-group>
+<year>2005</year>
+<article-title>Xenarthra and Pholidota.</article-title>
+<person-group person-group-type="editor"><name><surname>Rose</surname><given-names>KD</given-names></name><name><surname>Archibald</surname><given-names>JD</given-names></name></person-group>
+<source>The rise of placental mammals</source>
+<publisher-loc>Baltimore</publisher-loc>
+<publisher-name> The Johns Hopkins University Press</publisher-name>
+<fpage>106</fpage>
+<lpage>126</lpage>
+</element-citation></ref><ref id="pgen.1000634-Secord1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Secord</surname><given-names>R</given-names></name><name><surname>Gingerich</surname><given-names>PD</given-names></name><name><surname>Bloch</surname><given-names>JI</given-names></name></person-group>
+<year>2002</year>
+<article-title>
+<italic>Mylanodon rosei</italic>, a new metacheiromyid (Mammalia, Palaeanodonta) from the late Tiffanian (late Paleocene) of northwestern Wyoming.</article-title>
+<source>Contrib Mus Paleontol Univ Michigan</source>
+<volume>30</volume>
+<fpage>385</fpage>
+<lpage>399</lpage>
+</element-citation></ref><ref id="pgen.1000634-Gheerbrant1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gheerbrant</surname><given-names>E</given-names></name><name><surname>Rose</surname><given-names>KD</given-names></name><name><surname>Godinot</surname><given-names>M</given-names></name></person-group>
+<year>2005</year>
+<article-title>First palaeanodont (?pholidotan) mammal from the Eocene of Europe.</article-title>
+<source>Acta Palaeontol Polon</source>
+<volume>50</volume>
+<fpage>209</fpage>
+<lpage>218</lpage>
+</element-citation></ref><ref id="pgen.1000634-Bianucci1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bianucci</surname><given-names>G</given-names></name><name><surname>Landini</surname><given-names>W</given-names></name></person-group>
+<year>2006</year>
+<article-title>Killer sperm whale: a new basal physeteroid (Mammalia, Cetecea) from the Late Miocene of Italy.</article-title>
+<source>Zool J Linn Soc</source>
+<volume>148</volume>
+<fpage>103</fpage>
+<lpage>131</lpage>
+</element-citation></ref><ref id="pgen.1000634-Fitzgerald1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fitzgerald</surname><given-names>EM</given-names></name></person-group>
+<year>2006</year>
+<article-title>A bizarre new toothed mysticete (Cetacea) from Australia and the early evolution of baleen whales.</article-title>
+<source>Proc R Soc B</source>
+<volume>273</volume>
+<fpage>2955</fpage>
+<lpage>2963</lpage>
+</element-citation></ref><ref id="pgen.1000634-Ishiyama1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ishiyama</surname><given-names>M</given-names></name></person-group>
+<year>1987</year>
+<article-title>Enamel structure in odontocete whales.</article-title>
+<source>Scanning Microscopy</source>
+<volume>1</volume>
+<fpage>1071</fpage>
+<lpage>1079</lpage>
+<pub-id pub-id-type="pmid">3659855</pub-id></element-citation></ref><ref id="pgen.1000634-Murphy3"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Murphy</surname><given-names>WJ</given-names></name><name><surname>Pringle</surname><given-names>TH</given-names></name><name><surname>Crider</surname><given-names>TA</given-names></name><name><surname>Springer</surname><given-names>MS</given-names></name><name><surname>Miller</surname><given-names>W</given-names></name></person-group>
+<year>2007</year>
+<article-title>Using genomic data to unravel the root of the placental mammal phylogeny.</article-title>
+<source>Gen Res</source>
+<volume>17</volume>
+<fpage>413</fpage>
+<lpage>421</lpage>
+</element-citation></ref><ref id="pgen.1000634-Simpson2"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Simpson</surname><given-names>GG</given-names></name></person-group>
+<year>1948</year>
+<article-title>The beginning of the age of mammals in South America.</article-title>
+<source>Bull Amer Mus Nat Hist</source>
+<volume>91</volume>
+<fpage>1</fpage>
+<lpage>232</lpage>
+</element-citation></ref><ref id="pgen.1000634-Lee1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lee</surname><given-names>MSY</given-names></name><name><surname>Shine</surname><given-names>R</given-names></name></person-group>
+<year>1998</year>
+<article-title>Reptilian viviparity and Dollo's law.</article-title>
+<source>Evolution</source>
+<volume>52</volume>
+<fpage>1441</fpage>
+<lpage>1450</lpage>
+</element-citation></ref><ref id="pgen.1000634-Marshall1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Marshall</surname><given-names>CR</given-names></name><name><surname>Raff</surname><given-names>EC</given-names></name><name><surname>Raff</surname><given-names>RA</given-names></name></person-group>
+<year>1994</year>
+<article-title>Dollo's law and the death and resurrection of genes.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>91</volume>
+<fpage>12283</fpage>
+<lpage>12287</lpage>
+<pub-id pub-id-type="pmid">7991619</pub-id></element-citation></ref><ref id="pgen.1000634-Kollar1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kollar</surname><given-names>EJ</given-names></name><name><surname>Fisher</surname><given-names>C</given-names></name></person-group>
+<year>1980</year>
+<article-title>Tooth induction in chick epithelium: expression of quiescent genes for enamel synthesis.</article-title>
+<source>Science</source>
+<volume>207</volume>
+<fpage>993</fpage>
+<lpage>995</lpage>
+<pub-id pub-id-type="pmid">7352302</pub-id></element-citation></ref><ref id="pgen.1000634-Sire2"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sire</surname><given-names>J-Y</given-names></name><name><surname>Delgado</surname><given-names>SC</given-names></name><name><surname>Girondot</surname><given-names>M</given-names></name></person-group>
+<year>2008</year>
+<article-title>Hen's teeth with enamel cap: from dream to impossibility.</article-title>
+<source>BMC Evol Biol</source>
+<volume>8</volume>
+<fpage>246</fpage>
+<pub-id pub-id-type="pmid">18775069</pub-id></element-citation></ref><ref id="pgen.1000634-Jackman1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jackman</surname><given-names>WR</given-names></name><name><surname>Stock</surname><given-names>DW</given-names></name></person-group>
+<year>2006</year>
+<article-title>Transgenic analysis of Dlx regulation in fish tooth development reveals evolutionary retention of enhancer function despite organ loss.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>103</volume>
+<fpage>19390</fpage>
+<lpage>19395</lpage>
+<pub-id pub-id-type="pmid">17146045</pub-id></element-citation></ref><ref id="pgen.1000634-Portz1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Portz</surname><given-names>DE</given-names></name><name><surname>Tyus</surname><given-names>HM</given-names></name></person-group>
+<year>2004</year>
+<article-title>Fish humps in two Colorado River fishes: a morphological response to cyprinid predation?</article-title>
+<source>Environ Biol Fishes</source>
+<volume>71</volume>
+<fpage>233</fpage>
+<lpage>245</lpage>
+</element-citation></ref><ref id="pgen.1000634-Stock1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stock</surname><given-names>DW</given-names></name><name><surname>Jackman</surname><given-names>WR</given-names></name><name><surname>Trapani</surname><given-names>J</given-names></name></person-group>
+<year>2006</year>
+<article-title>Developmental genetic mechanisms of evolutionary tooth loss in cypriniform fishes.</article-title>
+<source>Development</source>
+<volume>133</volume>
+<fpage>3127</fpage>
+<lpage>3137</lpage>
+<pub-id pub-id-type="pmid">16831836</pub-id></element-citation></ref><ref id="pgen.1000634-Werdelin1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Werdelin</surname><given-names>L</given-names></name></person-group>
+<year>1987</year>
+<article-title>Supernumerary teeth in <italic>Lynx lynx</italic> and the irreversibility of evolution.</article-title>
+<source>J Zool</source>
+<volume>211</volume>
+<fpage>259</fpage>
+<lpage>266</lpage>
+</element-citation></ref><ref id="pgen.1000634-Gosline1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gosline</surname><given-names>WA</given-names></name></person-group>
+<year>1985</year>
+<article-title>A possible relationship between aspects of dentition and feeding in the centrarchid and anabantoid fishes.</article-title>
+<source>Environ Biol Fishes</source>
+<volume>12</volume>
+<fpage>161</fpage>
+<lpage>168</lpage>
+</element-citation></ref><ref id="pgen.1000634-Stock2"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stock</surname><given-names>DW</given-names></name></person-group>
+<year>2001</year>
+<article-title>The genetic basis of modularity in the development and evolution of the vertebrate dentition.</article-title>
+<source>Phil Trans R Soc Lond B</source>
+<volume>356</volume>
+<fpage>1633</fpage>
+<lpage>1653</lpage>
+<pub-id pub-id-type="pmid">11604128</pub-id></element-citation></ref><ref id="pgen.1000634-Hart1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hart</surname><given-names>PS</given-names></name><name><surname>Michalec</surname><given-names>MD</given-names></name><name><surname>Seow</surname><given-names>WK</given-names></name><name><surname>Hart</surname><given-names>TC</given-names></name><name><surname>Wright</surname><given-names>JT</given-names></name></person-group>
+<year>2003</year>
+<article-title>Identification of the enamelin (g.8344delG) mutation in a new kindred and presentation of a standardized ENAM nomenclature.</article-title>
+<source>Arch Oral Biol</source>
+<volume>48</volume>
+<fpage>589</fpage>
+<lpage>596</lpage>
+<pub-id pub-id-type="pmid">12828988</pub-id></element-citation></ref><ref id="pgen.1000634-Larkin1"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Larkin</surname><given-names>MA</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Clustal W and Clustal X version 2.0.</article-title>
+<source>Bioinformatics</source>
+<volume>23</volume>
+<fpage>2947</fpage>
+<lpage>2948</lpage>
+<pub-id pub-id-type="pmid">17846036</pub-id></element-citation></ref><ref id="pgen.1000634-Rambaut1"><label>57</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Rambaut</surname><given-names>A</given-names></name></person-group>
+<year>1996</year>
+<article-title>Se-Al: Sequence Alignment Editor, 2.0a11.</article-title>
+<comment><ext-link ext-link-type="uri" xlink:href="http://evolve.zoo.ox.ac.uk">http://evolve.zoo.ox.ac.uk</ext-link></comment>
+</element-citation></ref><ref id="pgen.1000634-Posada1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Posada</surname><given-names>D</given-names></name><name><surname>Crandall</surname><given-names>KA</given-names></name></person-group>
+<year>1998</year>
+<article-title>MODELTEST: testing the model of DNA substitution.</article-title>
+<source>Bioinformatics</source>
+<volume>14</volume>
+<fpage>817</fpage>
+<lpage>818</lpage>
+<pub-id pub-id-type="pmid">9918953</pub-id></element-citation></ref><ref id="pgen.1000634-Stamatakis1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stamatakis</surname><given-names>A</given-names></name></person-group>
+<year>2006</year>
+<article-title>RAxML-VI-HPC: Maximum likelihood-based phylogenetic analyses with thousands of taxa and mixed models.</article-title>
+<source>Bioinformatics</source>
+<volume>22</volume>
+<fpage>2688</fpage>
+<lpage>2690</lpage>
+<pub-id pub-id-type="pmid">16928733</pub-id></element-citation></ref><ref id="pgen.1000634-Ronquist1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ronquist</surname><given-names>F</given-names></name><name><surname>Huelsenbeck</surname><given-names>JP</given-names></name></person-group>
+<year>2003</year>
+<article-title>MrBayes 3: Bayesian phylogenetic inference under mixed models.</article-title>
+<source>Bioinformatics</source>
+<volume>19</volume>
+<fpage>1572</fpage>
+<lpage>1574</lpage>
+<pub-id pub-id-type="pmid">12912839</pub-id></element-citation></ref><ref id="pgen.1000634-Huelsenbeck1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Huelsenbeck</surname><given-names>JP</given-names></name><name><surname>Ronquist</surname><given-names>F</given-names></name></person-group>
+<year>2001</year>
+<article-title>MRBAYES: Bayesian inference of phylogenetic trees.</article-title>
+<source>Bioinformatics</source>
+<volume>17</volume>
+<fpage>754</fpage>
+<lpage>755</lpage>
+<pub-id pub-id-type="pmid">11524383</pub-id></element-citation></ref><ref id="pgen.1000634-Yang1"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>Z</given-names></name></person-group>
+<year>2007</year>
+<article-title>PAML 4: a program package for phylogenetic analysis by maximum likelihood.</article-title>
+<source>Mol Biol Evol</source>
+<volume>24</volume>
+<fpage>1586</fpage>
+<lpage>1591</lpage>
+<pub-id pub-id-type="pmid">17483113</pub-id></element-citation></ref><ref id="pgen.1000634-Gatesy1"><label>63</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Gatesy</surname><given-names>J</given-names></name></person-group>
+<year>2009</year>
+<article-title>Whales and even-toed ungulates (Cetartiodactyla).</article-title>
+<person-group person-group-type="editor"><name><surname>Hedges</surname><given-names>SB</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<source>The timetree of life</source>
+<publisher-loc>Oxford</publisher-loc>
+<publisher-name>Oxford Univ Press</publisher-name>
+<fpage>511</fpage>
+<lpage>515</lpage>
+</element-citation></ref><ref id="pgen.1000634-Thorne1"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thorne</surname><given-names>JL</given-names></name><name><surname>Kishino</surname><given-names>H</given-names></name></person-group>
+<year>2002</year>
+<article-title>Divergence time and evolutionary rate estimation with multilocus data.</article-title>
+<source>Syst Biol</source>
+<volume>51</volume>
+<fpage>689</fpage>
+<lpage>702</lpage>
+<pub-id pub-id-type="pmid">12396584</pub-id></element-citation></ref><ref id="pgen.1000634-Thorne2"><label>65</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thorne</surname><given-names>JL</given-names></name><name><surname>Kishino</surname><given-names>H</given-names></name><name><surname>Painter</surname><given-names>IS</given-names></name></person-group>
+<year>1998</year>
+<article-title>Estimating the rate of evolution of the rate of molecular evolution.</article-title>
+<source>Mol Biol Evol</source>
+<volume>15</volume>
+<fpage>1647</fpage>
+<lpage>1657</lpage>
+<pub-id pub-id-type="pmid">9866200</pub-id></element-citation></ref><ref id="pgen.1000634-Kishino1"><label>66</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kishino</surname><given-names>H</given-names></name><name><surname>Thorne</surname><given-names>JL</given-names></name><name><surname>Bruno</surname><given-names>WJ</given-names></name></person-group>
+<year>2001</year>
+<article-title>Performance of a divergence time estimation method under a probabilistic model of rate evolution.</article-title>
+<source>Mol Biol Evol</source>
+<volume>18</volume>
+<fpage>352</fpage>
+<lpage>361</lpage>
+<pub-id pub-id-type="pmid">11230536</pub-id></element-citation></ref><ref id="pgen.1000634-Springer2"><label>67</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Springer</surname><given-names>MS</given-names></name><name><surname>Murphy</surname><given-names>WJ</given-names></name><name><surname>Eizirik</surname><given-names>E</given-names></name><name><surname>O'Brien</surname><given-names>SJ</given-names></name></person-group>
+<year>2003</year>
+<article-title>Placental mammal diversification and the Cretaceous-Tertiary boundary.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>100</volume>
+<fpage>1056</fpage>
+<lpage>1061</lpage>
+<pub-id pub-id-type="pmid">12552136</pub-id></element-citation></ref><ref id="pgen.1000634-Waddell1"><label>68</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Waddell</surname><given-names>PJ</given-names></name><name><surname>Kishino</surname><given-names>H</given-names></name><name><surname>Ota</surname><given-names>R</given-names></name></person-group>
+<year>2001</year>
+<article-title>A phylogenetic foundation for comparative mammalian genomics.</article-title>
+<source>Genome Inform</source>
+<volume>12</volume>
+<fpage>141</fpage>
+<lpage>154</lpage>
+<pub-id pub-id-type="pmid">11791233</pub-id></element-citation></ref><ref id="pgen.1000634-McGowen1"><label>69</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>McGowen</surname><given-names>MR</given-names></name><name><surname>Spaulding</surname><given-names>M</given-names></name><name><surname>Gatesy</surname><given-names>J</given-names></name></person-group>
+<year>2009</year>
+<article-title>Divergence date estimation and a comprehensive molecular tree of extant cetaceans.</article-title>
+<source>Mol Phylogenet Evol</source>
+<comment>In press</comment>
+</element-citation></ref><ref id="pgen.1000634-Chamary1"><label>70</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chamary</surname><given-names>JV</given-names></name><name><surname>Parmley</surname><given-names>JL</given-names></name><name><surname>Hurst</surname><given-names>LD</given-names></name></person-group>
+<year>2006</year>
+<article-title>Hearing silence: non-neutral evolution at synonymous sites in mammals.</article-title>
+<source>Nature Genet</source>
+<volume>7</volume>
+<fpage>98</fpage>
+<lpage>108</lpage>
+</element-citation></ref><ref id="pgen.1000634-Li1"><label>71</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>W-H</given-names></name><name><surname>Gojobori</surname><given-names>T</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name></person-group>
+<year>1981</year>
+<article-title>Pseudogenes as a paradigm of neutral evolution.</article-title>
+<source>Nature</source>
+<volume>292</volume>
+<fpage>237</fpage>
+<lpage>239</lpage>
+<pub-id pub-id-type="pmid">7254315</pub-id></element-citation></ref><ref id="pgen.1000634-Saitou1"><label>72</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Saitou</surname><given-names>N</given-names></name><name><surname>Ueda</surname><given-names>S</given-names></name></person-group>
+<year>1994</year>
+<article-title>Evolutionary rates of insertion and deletion in noncoding nucleotide sequences of Primates.</article-title>
+<source>Mol Biol Evol</source>
+<volume>11</volume>
+<fpage>504</fpage>
+<lpage>512</lpage>
+<pub-id pub-id-type="pmid">8015443</pub-id></element-citation></ref><ref id="pgen.1000634-Springer3"><label>73</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Springer</surname><given-names>MS</given-names></name><name><surname>Burk</surname><given-names>A</given-names></name><name><surname>Kavanagh</surname><given-names>JR</given-names></name><name><surname>Waddell</surname><given-names>VG</given-names></name><name><surname>Stanhope</surname><given-names>MJ</given-names></name></person-group>
+<year>1997</year>
+<article-title>The interphotoreceptor retinoid binding protein gene in therian mammals: Implications for higher level relationships and evidence for loss of function in the marsupial mole.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>94</volume>
+<fpage>13754</fpage>
+<lpage>13759</lpage>
+<pub-id pub-id-type="pmid">9391099</pub-id></element-citation></ref><ref id="pgen.1000634-Bollback1"><label>74</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bollback</surname><given-names>JP</given-names></name></person-group>
+<year>2006</year>
+<article-title>SIMMAP: stochastic character mapping of discrete traits on phylogenies.</article-title>
+<source>BMC Bioinf</source>
+<volume>7</volume>
+<fpage>88</fpage>
+</element-citation></ref><ref id="pgen.1000634-Shockey1"><label>75</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shockey</surname><given-names>BJ</given-names></name><name><surname>Flynn</surname><given-names>JJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>Morphological diversity in the postcranial skeleton of Casamayoran (?Middle to Late Eocene) Notoungulata and foot posture in notoungulates.</article-title>
+<source>Amer Mus Novitat</source>
+<volume>3601</volume>
+<fpage>1</fpage>
+<lpage>28</lpage>
+</element-citation></ref><ref id="pgen.1000634-Croft1"><label>76</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Croft</surname><given-names>D</given-names></name><name><surname>Flynn</surname><given-names>JF</given-names></name><name><surname>Wyss</surname><given-names>AR</given-names></name></person-group>
+<year>2008</year>
+<article-title>The Tinguiririca fauna of Chile and the early stages of &#x0201c;modernization&#x0201d; of South American mammal faunas.</article-title>
+<source>Arquivos do Museu Nacional, Rio de Janeiro</source>
+<volume>66</volume>
+<fpage>191</fpage>
+<lpage>211</lpage>
+</element-citation></ref></ref-list></back></article>

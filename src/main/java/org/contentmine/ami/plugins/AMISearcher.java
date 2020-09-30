@@ -126,6 +126,7 @@ public class AMISearcher extends AbstractSearcher {
 				XPathGenerator xPathGenerator = new XPathGenerator(elementToSearch);
 				xPathGenerator.setShort(true);
 				String xpath = xPathGenerator.getXPath();
+				LOG.info("xpath "+xpath);
 				resultsElement.setXPath(xpath);
 				resultsElement.appendChild(resultElement);
 				LOG.trace("XPATH added "+resultsElement.toXML());
@@ -376,6 +377,12 @@ public class AMISearcher extends AbstractSearcher {
 //		LOG.debug("Term: "+term);
 		return term;
 	}
+
+	/** checks whether term (in resultElement) is in dictionary.
+	 * I am not sure why...
+	 * if not , sets dictionary check false on resultElement.
+	 * not sure whether this is simply trapping bugs.
+ 	 */
 
 	protected void markFalsePositives(ResultsElement resultsElement, DefaultAMIDictionary dictionary) {
 		if (dictionary != null && resultsElement != null) {

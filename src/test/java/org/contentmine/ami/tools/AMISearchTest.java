@@ -89,6 +89,7 @@ public class AMISearchTest extends AbstractAMITest {
 				+ " --dictionary species gene country disease funders "
 			;
 		AMI.execute(args);
+
 //		new AMISearchTool().runCommands(args);
 	}
 

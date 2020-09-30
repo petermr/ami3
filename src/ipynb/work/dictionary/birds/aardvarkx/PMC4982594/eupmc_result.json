@@ -1,0 +1,615 @@
+{
+  "id": [
+    "27518265"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27518265"
+  ],
+  "pmcid": [
+    "PMC4982594"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4982594"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.ppat.1005785"
+  ],
+  "title": [
+    "Exaptation of Bornavirus-Like Nucleoprotein Elements in Afrotherians."
+  ],
+  "authorString": [
+    "Kobayashi Y, Horie M, Nakano A, Murata K, Itou T, Suzuki Y."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Kobayashi Y"
+          ],
+          "firstName": [
+            "Yuki"
+          ],
+          "lastName": [
+            "Kobayashi"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Nihon University Veterinary Research Center, Fujisawa, Kanagawa, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Horie M"
+          ],
+          "firstName": [
+            "Masayuki"
+          ],
+          "lastName": [
+            "Horie"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4682-7698",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Transboundary Animal Diseases Research Center, Joint Faculty of Veterinary Medicine, Kagoshima University, Kagoshima, Japan.",
+                "United Graduate School of Veterinary Science, Yamaguchi University, Yamaguchi, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Nakano A"
+          ],
+          "firstName": [
+            "Ayumi"
+          ],
+          "lastName": [
+            "Nakano"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Nihon University Veterinary Research Center, Fujisawa, Kanagawa, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Murata K"
+          ],
+          "firstName": [
+            "Koichi"
+          ],
+          "lastName": [
+            "Murata"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Animal Resource Science, College of Bioresource Sciences, Nihon Universitym, Fujisawa, Kanagawa, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Itou T"
+          ],
+          "firstName": [
+            "Takuya"
+          ],
+          "lastName": [
+            "Itou"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Nihon University Veterinary Research Center, Fujisawa, Kanagawa, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Suzuki Y"
+          ],
+          "firstName": [
+            "Yoshiyuki"
+          ],
+          "lastName": [
+            "Suzuki"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Graduate School of Natural Sciences, Nagoya City University, Nagoya, Aichi, Japan."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-4682-7698",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "8"
+      ],
+      "volume": [
+        "12"
+      ],
+      "journalIssueId": [
+        "2436285"
+      ],
+      "dateOfPublication": [
+        "2016 Aug"
+      ],
+      "monthOfPublication": [
+        "8"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-08-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PLoS pathogens"
+          ],
+          "ISOAbbreviation": [
+            "PLoS Pathog."
+          ],
+          "medlineAbbreviation": [
+            "PLoS Pathog"
+          ],
+          "NLMid": [
+            "101238921"
+          ],
+          "ISSN": [
+            "1553-7366"
+          ],
+          "ESSN": [
+            "1553-7374"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "e1005785"
+  ],
+  "abstractText": [
+    "Endogenous bornavirus-like nucleoprotein elements (EBLNs), the nucleotide sequence elements derived from the nucleoprotein gene of ancient bornavirus-like viruses, have been identified in many animal genomes. Here we show evidence that EBLNs encode functional proteins in their host. Some afrotherian EBLNs were observed to have been maintained for more than 83.3 million years under negative selection. Splice variants were expressed from the genomic loci of EBLNs in elephant, and some were translated into proteins. The EBLN proteins appeared to be localized to the rough endoplasmic reticulum in African elephant cells, in contrast to the nuclear localization of bornavirus N. These observations suggest that afrotherian EBLNs have acquired a novel function in their host. Interestingly, genomic sequences of the first exon and its flanking regions in these EBLN loci were homologous to those of transmembrane protein 106B (TMEM106B). The upstream region of the first exon in the EBLN loci exhibited a promoter activity, suggesting that the ability of these EBLNs to be transcribed in the host cell was gained through capturing a partial duplicate of TMEM106B. In conclusion, our results strongly support for exaptation of EBLNs to encode host proteins in afrotherians."
+  ],
+  "affiliation": [
+    "Nihon University Veterinary Research Center, Fujisawa, Kanagawa, Japan."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Elephants"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "VI"
+                  ],
+                  "qualifierName": [
+                    "virology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bornaviridae"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Endogenous Retroviruses"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Nucleoproteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Blotting, Western"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Immunohistochemistry"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Polymerase Chain Reaction"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Amino Acid Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Homology, Amino Acid"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Nucleoproteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.ppat.1005785"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4982594"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4982594?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "4"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "biosample",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2017-06-09"
+  ],
+  "dateOfCreation": [
+    "2016-08-13"
+  ],
+  "firstIndexDate": [
+    "2016-08-17"
+  ],
+  "fullTextReceivedDate": [
+    "2016-09-09"
+  ],
+  "dateOfRevision": [
+    "2018-08-06"
+  ],
+  "electronicPublicationDate": [
+    "2016-08-12"
+  ],
+  "firstPublicationDate": [
+    "2016-08-12"
+  ]
+}

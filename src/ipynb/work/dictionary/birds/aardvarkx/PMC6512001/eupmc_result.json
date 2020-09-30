@@ -1,0 +1,380 @@
+{
+  "id": [
+    "31148881"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31148881"
+  ],
+  "pmcid": [
+    "PMC6512001"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6512001"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1007/s00371-016-1257-5"
+  ],
+  "title": [
+    "Visual analytics and rendering for tunnel crack analysis: A methodological approach for integrating geometric and attribute data."
+  ],
+  "authorString": [
+    "Ortner T, Sorger J, Piringer H, Hesina G, Gröller E."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Ortner T"
+          ],
+          "firstName": [
+            "Thomas"
+          ],
+          "lastName": [
+            "Ortner"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "VRVis Research Center, Vienna, Austria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Sorger J"
+          ],
+          "firstName": [
+            "Johannes"
+          ],
+          "lastName": [
+            "Sorger"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "VRVis Research Center, Vienna, Austria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Piringer H"
+          ],
+          "firstName": [
+            "Harald"
+          ],
+          "lastName": [
+            "Piringer"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "VRVis Research Center, Vienna, Austria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hesina G"
+          ],
+          "firstName": [
+            "Gerd"
+          ],
+          "lastName": [
+            "Hesina"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "VRVis Research Center, Vienna, Austria."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Gröller E"
+          ],
+          "firstName": [
+            "Eduard"
+          ],
+          "lastName": [
+            "Gröller"
+          ],
+          "initials": [
+            "E"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "2TU Wien, Vienna, Austria."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "6"
+      ],
+      "volume": [
+        "32"
+      ],
+      "journalIssueId": [
+        "2821560"
+      ],
+      "dateOfPublication": [
+        "2016 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "The Visual computer"
+          ],
+          "ISOAbbreviation": [
+            "Vis Comput"
+          ],
+          "medlineAbbreviation": [
+            "Vis Comput"
+          ],
+          "NLMid": [
+            "101584127"
+          ],
+          "ISSN": [
+            "0178-2789"
+          ],
+          "ESSN": [
+            "1432-2315"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "859-869"
+  ],
+  "abstractText": [
+    "The visual analysis of surface cracks plays an essential role in tunnel maintenance when assessing the condition of a tunnel. To identify patterns of cracks, which endanger the structural integrity of its concrete surface, analysts need an integrated solution for visual analysis of geometric and multivariate data to decide if issuing a repair project is necessary. The primary contribution of this work is a design study, supporting tunnel crack analysis by tightly integrating geometric and attribute views to allow users a holistic visual analysis of geometric representations and multivariate attributes. Our secondary contribution is Visual Analytics and Rendering, a methodological approach which addresses challenges and recurring design questions in integrated systems. We evaluated the tunnel crack analysis solution in informal feedback sessions with experts from tunnel maintenance and surveying. We substantiated the derived methodology by providing guidelines and linking it to examples from the literature."
+  ],
+  "affiliation": [
+    "VRVis Research Center, Vienna, Austria."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "P 24597"
+          ],
+          "agency": [
+            "Austrian Science Fund FWF"
+          ],
+          "acronym": [
+            "FWF_"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Methodology",
+        "Visual Analytics",
+        "3D Real-time Rendering",
+        "Integration Of Spatial And Non-spatial Data"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1007/s00371-016-1257-5"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6512001"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6512001?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2019-06-01"
+  ],
+  "firstIndexDate": [
+    "2019-06-01"
+  ],
+  "fullTextReceivedDate": [
+    "2019-06-01"
+  ],
+  "dateOfRevision": [
+    "2019-06-10"
+  ],
+  "electronicPublicationDate": [
+    "2016-05-11"
+  ],
+  "firstPublicationDate": [
+    "2016-05-11"
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "id": [
+    "23342979"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "23342979"
+  ],
+  "pmcid": [
+    "PMC3562159"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3562159"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1186/1471-2148-13-20"
+  ],
+  "title": [
+    "Molecular decay of enamel matrix protein genes in turtles and other edentulous amniotes."
+  ],
+  "authorString": [
+    "Meredith RW, Gatesy J, Springer MS."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Meredith RW"
+          ],
+          "firstName": [
+            "Robert W"
+          ],
+          "lastName": [
+            "Meredith"
+          ],
+          "initials": [
+            "RW"
+          ]
+        },
+        {
+          "fullName": [
+            "Gatesy J"
+          ],
+          "firstName": [
+            "John"
+          ],
+          "lastName": [
+            "Gatesy"
+          ],
+          "initials": [
+            "J"
+          ]
+        },
+        {
+          "fullName": [
+            "Springer MS"
+          ],
+          "firstName": [
+            "Mark S"
+          ],
+          "lastName": [
+            "Springer"
+          ],
+          "initials": [
+            "MS"
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "13"
+      ],
+      "journalIssueId": [
+        "2001264"
+      ],
+      "dateOfPublication": [
+        "2013 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC evolutionary biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Evol. Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Evol Biol"
+          ],
+          "NLMid": [
+            "100966975"
+          ],
+          "ISSN": [
+            "1471-2148"
+          ],
+          "ESSN": [
+            "1471-2148"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "20"
+  ],
+  "abstractText": [
+    "BACKGROUND: Secondary edentulism (toothlessness) has evolved on multiple occasions in amniotes including several mammalian lineages (pangolins, anteaters, baleen whales), birds, and turtles. All edentulous amniote clades have evolved from ancestors with enamel-capped teeth. Previous studies have documented the molecular decay of tooth-specific genes in edentulous mammals, all of which lost their teeth in the Cenozoic, and birds, which lost their teeth in the Cretaceous. By contrast with mammals and birds, tooth loss in turtles occurred in the Jurassic (201.6-145.5 Ma), providing an extended time window for tooth gene degradation in this clade. The release of the painted turtle and Chinese softshell turtle genomes provides an opportunity to recover the decayed remains of tooth-specific genes in Testudines. RESULTS: We queried available genomes of Testudines (Chrysemys picta [painted turtle], Pelodiscus sinensis [Chinese softshell turtle]), Aves (Anas platyrhynchos [duck], Gallus gallus [chicken], Meleagris gallopavo [turkey], Melopsittacus undulatus [budgerigar], Taeniopygia guttata [zebra finch]), and enamelless mammals (Orycteropus afer [aardvark], Choloepus hoffmanni [Hoffmann's two-toed sloth], Dasypus novemcinctus [nine-banded armadillo]) for remnants of three enamel matrix protein (EMP) genes with putative enamel-specific functions. Remnants of the AMBN and ENAM genes were recovered in Chrysemys and retain their original synteny. Remnants of AMEL were recovered in both testudines, although there are no shared frameshifts. We also show that there are inactivated copies of AMBN, AMEL and ENAM in representatives of divergent avian lineages including Galloanserae, Passeriformes, and Psittaciformes, and that there are shared frameshift mutations in all three genes that predate the basal split in Neognathae. Among enamelless mammals, all three EMP genes exhibit inactivating mutations in Orycteropus and Choloepus. CONCLUSIONS: Our results highlight the power of combining fossil and genomic evidence to decipher macroevolutionary transitions and characterize the functional range of different loci involved in tooth development. The fossil record and phylogenetics combine to predict the occurrence of molecular fossils of tooth-specific genes in the genomes of edentulous amniotes, and in every case these molecular fossils have been discovered. The widespread occurrence of EMP pseudogenes in turtles, birds, and edentulous/enamelless mammals also provides compelling evidence that in amniotes, the only unique, non-redundant function of these genes is in enamel formation."
+  ],
+  "affiliation": [
+    "Department of Biology, University of California, Riverside, CA 92521, USA."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Tooth"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Birds"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Reptiles"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Turtles"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Dental Enamel Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Synteny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mutation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Pseudogenes"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Fossils"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "enamel matrix proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Dental Enamel Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/23342979/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/23342979/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2148-13-20"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3562159"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3562159?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "25"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2013-05-30"
+  ],
+  "dateOfCreation": [
+    "2013-02-04"
+  ],
+  "firstIndexDate": [
+    "2013-01-26"
+  ],
+  "fullTextReceivedDate": [
+    "2013-02-07"
+  ],
+  "dateOfRevision": [
+    "2013-07-11"
+  ],
+  "electronicPublicationDate": [
+    "2013-01-23"
+  ],
+  "firstPublicationDate": [
+    "2013-01-23"
+  ]
+}

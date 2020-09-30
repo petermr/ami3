@@ -1,0 +1,347 @@
+{
+  "id": [
+    "PMC7498332"
+  ],
+  "source": [
+    "PMC"
+  ],
+  "pmcid": [
+    "PMC7498332"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC7498332"
+      ]
+    }
+  ],
+  "title": [
+    "A fully-automated method discovers loss of mouse-lethal and human-monogenic disease genes in 58 mammals"
+  ],
+  "authorString": [
+    "Turakhia Y, Chen H, Marcovitz A, Bejerano G."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Turakhia Y"
+          ],
+          "firstName": [
+            "Yatish"
+          ],
+          "lastName": [
+            "Turakhia"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                {
+                  "$": {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "xsi:nil": "true"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chen H"
+          ],
+          "firstName": [
+            "Heidi I"
+          ],
+          "lastName": [
+            "Chen"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                {
+                  "$": {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "xsi:nil": "true"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Marcovitz A"
+          ],
+          "firstName": [
+            "Amir"
+          ],
+          "lastName": [
+            "Marcovitz"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                {
+                  "$": {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "xsi:nil": "true"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bejerano G"
+          ],
+          "firstName": [
+            "Gill"
+          ],
+          "lastName": [
+            "Bejerano"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                {
+                  "$": {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "xsi:nil": "true"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "16"
+      ],
+      "volume": [
+        "48"
+      ],
+      "journalIssueId": [
+        "3021972"
+      ],
+      "dateOfPublication": [
+        "2020 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2020"
+      ],
+      "printPublicationDate": [
+        "2020-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nucleic acids research"
+          ],
+          "ISOAbbreviation": [
+            "Nucleic Acids Res."
+          ],
+          "medlineAbbreviation": [
+            "Nucleic Acids Res"
+          ],
+          "NLMid": [
+            "0411011"
+          ],
+          "ISSN": [
+            "0305-1048"
+          ],
+          "ESSN": [
+            "1362-4962"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2020"
+  ],
+  "pageInfo": [
+    "e91-e91"
+  ],
+  "abstractText": [
+    "Abstract Gene losses provide an insightful route for studying the morphological and physiological adaptations of species, but their discovery is challenging. Existing genome annotation tools focus on annotating intact genes and do not attempt to distinguish nonfunctional genes from genes missing annotation due to sequencing and assembly artifacts. Previous attempts to annotate gene losses have required significant manual curation, which hampers their scalability for the ever-increasing deluge of newly sequenced genomes. Using extreme sequence erosion (amino acid deletions and substitutions) and sister species support as an unambiguous signature of loss, we developed an automated approach for detecting high-confidence gene loss events across a species tree. Our approach relies solely on gene annotation in a single reference genome, raw assemblies for the remaining species to analyze, and the associated phylogenetic tree for all organisms involved. Using human as reference, we discovered over 400 unique human ortholog erosion events across 58 mammals. This includes dozens of clade-specific losses of genes that result in early mouse lethality or are associated with severe human congenital diseases. Our discoveries yield intriguing potential for translational medical genetics and evolutionary biology, and our approach is readily applicable to large-scale genome sequencing efforts across the tree of life."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Undetermined"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7498332/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7498332/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7498332"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC7498332?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "N"
+  ],
+  "hasTextMinedTerms": [
+    "N"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "N"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2020-09-28"
+  ],
+  "firstIndexDate": [
+    "2020-09-28"
+  ],
+  "fullTextReceivedDate": [
+    "2020-09-28"
+  ],
+  "dateOfRevision": [
+    "2020-09-28"
+  ],
+  "electronicPublicationDate": [
+    "2020-07-02"
+  ],
+  "firstPublicationDate": [
+    "2020-07-02"
+  ]
+}

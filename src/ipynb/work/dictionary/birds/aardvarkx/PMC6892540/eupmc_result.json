@@ -1,0 +1,468 @@
+{
+  "id": [
+    "31800571"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31800571"
+  ],
+  "pmcid": [
+    "PMC6892540"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6892540"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.pbio.3000494"
+  ],
+  "title": [
+    "Inferring the mammal tree: Species-level sets of phylogenies for questions in ecology, evolution, and conservation."
+  ],
+  "authorString": [
+    "Upham NS, Esselstyn JA, Jetz W."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Upham NS"
+          ],
+          "firstName": [
+            "Nathan S"
+          ],
+          "lastName": [
+            "Upham"
+          ],
+          "initials": [
+            "NS"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5412-9342",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology & Evolutionary Biology, Yale University, New Haven, Connecticut, United States of America.",
+                "Center for Biodiversity & Global Change, Yale University, New Haven, Connecticut, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Esselstyn JA"
+          ],
+          "firstName": [
+            "Jacob A"
+          ],
+          "lastName": [
+            "Esselstyn"
+          ],
+          "initials": [
+            "JA"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biological Sciences and Museum of Natural Science, Louisiana State University, Baton Rouge, Louisiana, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Jetz W"
+          ],
+          "firstName": [
+            "Walter"
+          ],
+          "lastName": [
+            "Jetz"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Ecology & Evolutionary Biology, Yale University, New Haven, Connecticut, United States of America.",
+                "Center for Biodiversity & Global Change, Yale University, New Haven, Connecticut, United States of America."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-5412-9342",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "12"
+      ],
+      "volume": [
+        "17"
+      ],
+      "journalIssueId": [
+        "2887038"
+      ],
+      "dateOfPublication": [
+        "2019 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PLoS biology"
+          ],
+          "ISOAbbreviation": [
+            "PLoS Biol."
+          ],
+          "medlineAbbreviation": [
+            "PLoS Biol"
+          ],
+          "NLMid": [
+            "101183755"
+          ],
+          "ISSN": [
+            "1544-9173"
+          ],
+          "ESSN": [
+            "1545-7885"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "e3000494"
+  ],
+  "abstractText": [
+    "Big, time-scaled phylogenies are fundamental to connecting evolutionary processes to modern biodiversity patterns. Yet inferring reliable phylogenetic trees for thousands of species involves numerous trade-offs that have limited their utility to comparative biologists. To establish a robust evolutionary timescale for all approximately 6,000 living species of mammals, we developed credible sets of trees that capture root-to-tip uncertainty in topology and divergence times. Our \"backbone-and-patch\" approach to tree building applies a newly assembled 31-gene supermatrix to two levels of Bayesian inference: (1) backbone relationships and ages among major lineages, using fossil node or tip dating, and (2) species-level \"patch\" phylogenies with nonoverlapping in-groups that each correspond to one representative lineage in the backbone. Species unsampled for DNA are either excluded (\"DNA-only\" trees) or imputed within taxonomic constraints using branch lengths drawn from local birth-death models (\"completed\" trees). Joining time-scaled patches to backbones results in species-level trees of extant Mammalia with all branches estimated under the same modeling framework, thereby facilitating rate comparisons among lineages as disparate as marsupials and placentals. We compare our phylogenetic trees to previous estimates of mammal-wide phylogeny and divergence times, finding that (1) node ages are broadly concordant among studies, and (2) recent (tip-level) rates of speciation are estimated more accurately in our study than in previous \"supertree\" approaches, in which unresolved nodes led to branch-length artifacts. Credible sets of mammalian phylogenetic history are now available for download at http://vertlife.org/phylosubsets, enabling investigations of long-standing questions in comparative biology."
+  ],
+  "affiliation": [
+    "Department of Ecology & Evolutionary Biology, Yale University, New Haven, Connecticut, United States of America."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biodiversity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Fossils"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Computer Simulation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Software"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pbio.3000494"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6892540"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6892540?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2020-03-20"
+  ],
+  "dateOfCreation": [
+    "2019-12-05"
+  ],
+  "firstIndexDate": [
+    "2019-12-05"
+  ],
+  "fullTextReceivedDate": [
+    "2019-12-17"
+  ],
+  "dateOfRevision": [
+    "2020-03-20"
+  ],
+  "electronicPublicationDate": [
+    "2019-12-04"
+  ],
+  "firstPublicationDate": [
+    "2019-12-04"
+  ]
+}

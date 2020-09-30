@@ -1,0 +1,733 @@
+{
+  "id": [
+    "30947305"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30947305"
+  ],
+  "pmcid": [
+    "PMC6448838"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6448838"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.pone.0214823"
+  ],
+  "title": [
+    "Land use, REDD+ and the status of wildlife populations in Yaeda Valley, northern Tanzania."
+  ],
+  "authorString": [
+    "Kiffner C, Arndt Z, Foky T, Gaeth M, Gannett A, Jackson M, Lellman G, Love S, Maroldi A, McLaughlin S, Skenandore B, von Euler S, Zambrano Z, Kissui B."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Kiffner C"
+          ],
+          "firstName": [
+            "Christian"
+          ],
+          "lastName": [
+            "Kiffner"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7475-9023",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Center For Wildlife Management Studies, The School For Field Studies, Karatu, Tanzania."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Arndt Z"
+          ],
+          "firstName": [
+            "Zoe"
+          ],
+          "lastName": [
+            "Arndt"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Zoology Department, Colorado State University, Fort Collins, CO, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Foky T"
+          ],
+          "firstName": [
+            "Trent"
+          ],
+          "lastName": [
+            "Foky"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Whitman College, Walla Walla, WA, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Gaeth M"
+          ],
+          "firstName": [
+            "Megan"
+          ],
+          "lastName": [
+            "Gaeth"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Biology Department, Guilford College, Greensboro, North Carolina, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Gannett A"
+          ],
+          "firstName": [
+            "Alex"
+          ],
+          "lastName": [
+            "Gannett"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Environmental Studies, Gonzaga University, Spokane, WA, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Jackson M"
+          ],
+          "firstName": [
+            "Madeline"
+          ],
+          "lastName": [
+            "Jackson"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Ecology, Evolution and Behavior, University of Minnesota, St. Paul, MN, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lellman G"
+          ],
+          "firstName": [
+            "Georgie"
+          ],
+          "lastName": [
+            "Lellman"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Kenyon College, Gambier, OH, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Love S"
+          ],
+          "firstName": [
+            "Sophia"
+          ],
+          "lastName": [
+            "Love"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Whitman College, Walla Walla, WA, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Maroldi A"
+          ],
+          "firstName": [
+            "Ana"
+          ],
+          "lastName": [
+            "Maroldi"
+          ],
+          "initials": [
+            "A"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Veterinary and Animal Science, University of Massachusetts-Amherst, Amherst, MA, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "McLaughlin S"
+          ],
+          "firstName": [
+            "Shane"
+          ],
+          "lastName": [
+            "McLaughlin"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Environmental Science Program, Trinity College, Hartford, CT, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Skenandore B"
+          ],
+          "firstName": [
+            "Bobbi"
+          ],
+          "lastName": [
+            "Skenandore"
+          ],
+          "initials": [
+            "B"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Nelson Institute for Environmental Studies, University of Wisconsin-Madison, Madison, Wisconsin, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "von Euler S"
+          ],
+          "firstName": [
+            "Sarah"
+          ],
+          "lastName": [
+            "von Euler"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Biology Department, Davidson College, Davidson, NC, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Zambrano Z"
+          ],
+          "firstName": [
+            "Zachary"
+          ],
+          "lastName": [
+            "Zambrano"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Animal Sciences and Industry, Kansas State University, Manhattan, KS, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kissui B"
+          ],
+          "firstName": [
+            "Bernard"
+          ],
+          "lastName": [
+            "Kissui"
+          ],
+          "initials": [
+            "B"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Center For Wildlife Management Studies, The School For Field Studies, Karatu, Tanzania."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-7475-9023",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "14"
+      ],
+      "journalIssueId": [
+        "2839709"
+      ],
+      "dateOfPublication": [
+        "2019"
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "e0214823"
+  ],
+  "abstractText": [
+    "REDD+ projects primarily focus on reducing carbon emissions from deforestation and forest degradation in developing countries. These projects are regularly evaluated against their core objective of conserving carbon stocks, but their contribution to biodiversity conservation has rarely been assessed. To assess the conservation value of the area and the relative performance of a REDD+ land use plan in Yaeda Valley, a semi-arid savannah ecosystem in northern Tanzania, we implemented an annual wildlife monitoring scheme. Based on direct sightings and indirect signs of wildlife, obtained from stratified walking transects conducted annually from 2015-2018, we estimated annual trends of mammal species richness and wildlife densities in three REDD+ and three non-REDD+ land-use strata. Our surveys document a near complete mammal community in the area. Species accumulation curves, and subsequent statistical comparisons, indicated highest mammal species richness in the woodland habitats (both REDD+ and non REDD+ strata) as compared to more human and livestock impacted areas, and suggested constant species richness from 2015-2018. To estimate stratum- and year-specific livestock and wildlife densities (cattle, donkey, goat and sheep combined, Thomson's gazelle, Kirk's dik-dik) and wildlife sign densities (aardvark, bushbuck, bushpig, Kirk's dik dik, eland, elephant, Maasai giraffe, greater kudu, hyena, impala, lesser kudu, warthog, wildebeest, Plains zebra), we fitted species-specific detection functions in a distance sampling framework. Species-specific densities varied between 2015 and 2018 and showed substantial increases and occasional declines in other species-stratum combinations. However, population growth rates were not systematically associated with specific land-use strata. Although our results do not explicitly provide evidence that REDD+ land-use plans directly co-benefit wildlife conservation, they show that REDD+ areas have the potential to maintain intact wildlife assemblages. To ensure effective long-term conservation outcomes, we advocate for a more formal integration of wildlife conservation goals in the REDD+ scheme."
+  ],
+  "affiliation": [
+    "Center For Wildlife Management Studies, The School For Field Studies, Karatu, Tanzania."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Animals, Wild"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Carbon"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Conservation of Natural Resources"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ecosystem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biodiversity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Environmental Monitoring"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Population Dynamics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Tanzania"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Livestock"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Forests"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Natural Resources"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Carbon"
+          ],
+          "registryNumber": [
+            "7440-44-0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0214823"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6448838"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6448838?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2020-01-02"
+  ],
+  "dateOfCreation": [
+    "2019-04-05"
+  ],
+  "firstIndexDate": [
+    "2019-04-11"
+  ],
+  "fullTextReceivedDate": [
+    "2019-04-21"
+  ],
+  "dateOfRevision": [
+    "2020-03-09"
+  ],
+  "electronicPublicationDate": [
+    "2019-04-04"
+  ],
+  "firstPublicationDate": [
+    "2019-04-04"
+  ]
+}

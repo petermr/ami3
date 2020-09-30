@@ -26,7 +26,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 import nu.xom.Attribute;
 import nu.xom.Element;
 
-/** reads Wikidata SPARQL and maps onto AMI names.
+/** reads Wikidata SPARQL OUTPUT and maps onto AMI names.
  * 
  * 
  * @author pm286
@@ -102,6 +102,14 @@ public class WikidataSparql {
 				LOG.warn(value + " not found in " + target);
 			}
 		}
+	}
+
+	/** returns XML sparql.xml */
+	String readSparqlQueryAndSubmitToWikidata(InputStream inputStream) throws IOException {
+		String queryString = IOUtils.toString(inputStream, "UTF-8");
+		String result = WikidataSparql.queryWikidata(queryString);
+//		LOG.info("result "+result);
+		return result;
 	}
 
 	void readSparqlCreateDictionary(InputStream inputStream) {

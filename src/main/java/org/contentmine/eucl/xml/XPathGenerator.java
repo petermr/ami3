@@ -32,7 +32,7 @@ public class XPathGenerator {
 
 	
 	private static final Logger LOG = LogManager.getLogger(XPathGenerator.class);
-private static final String NAME = "name";
+	private static final String NAME = "name";
 	private static final String ID = "id";
 	private static final String TAGX = "tagx";
 	private static final String[] TAGS = {ID, NAME, TAGX};

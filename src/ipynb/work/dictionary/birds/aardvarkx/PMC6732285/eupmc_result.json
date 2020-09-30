@@ -1,0 +1,884 @@
+{
+  "id": [
+    "31402633"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "31402633"
+  ],
+  "pmcid": [
+    "PMC6732285"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6732285"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1002/mgg3.929"
+  ],
+  "title": [
+    "AMBN mutations causing hypoplastic amelogenesis imperfecta and Ambn knockout-NLS-lacZ knockin mice exhibiting failed amelogenesis and Ambn tissue-specificity."
+  ],
+  "authorString": [
+    "Liang T, Hu Y, Smith CE, Richardson AS, Zhang H, Yang J, Lin B, Wang SK, Kim JW, Chun YH, Simmer JP, Hu JC."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Liang T"
+          ],
+          "firstName": [
+            "Tian"
+          ],
+          "lastName": [
+            "Liang"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3429-7821",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hu Y"
+          ],
+          "firstName": [
+            "Yuanyuan"
+          ],
+          "lastName": [
+            "Hu"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Smith CE"
+          ],
+          "firstName": [
+            "Charles E"
+          ],
+          "lastName": [
+            "Smith"
+          ],
+          "initials": [
+            "CE"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Anatomy and Cell Biology, Faculty of Medicine, McGill University, Montreal, Quebec, Canada."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Richardson AS"
+          ],
+          "firstName": [
+            "Amelia S"
+          ],
+          "lastName": [
+            "Richardson"
+          ],
+          "initials": [
+            "AS"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Zhang H"
+          ],
+          "firstName": [
+            "Hong"
+          ],
+          "lastName": [
+            "Zhang"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Yang J"
+          ],
+          "firstName": [
+            "Jie"
+          ],
+          "lastName": [
+            "Yang"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan.",
+                "Department of Pediatric Dentistry, School and Hospital of Stomatology, Peking University, Beijing, China."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lin B"
+          ],
+          "firstName": [
+            "Brent"
+          ],
+          "lastName": [
+            "Lin"
+          ],
+          "initials": [
+            "B"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Orofacial Sciences, UCSF School of Dentistry, San Francisco, California."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Wang SK"
+          ],
+          "firstName": [
+            "Shih-Kai"
+          ],
+          "lastName": [
+            "Wang"
+          ],
+          "initials": [
+            "SK"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8378-5880",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Dentistry, National Taiwan University School of Dentistry, Taipei City, Taiwan R.O.C."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Kim JW"
+          ],
+          "firstName": [
+            "Jung-Wook"
+          ],
+          "lastName": [
+            "Kim"
+          ],
+          "initials": [
+            "JW"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Molecular Genetics and Department of Pediatric Dentistry & Dental Research Institute, School of Dentistry, Seoul National University, Seoul, Korea."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chun YH"
+          ],
+          "firstName": [
+            "Yong-Hee"
+          ],
+          "lastName": [
+            "Chun"
+          ],
+          "initials": [
+            "YH"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Periodontics and Department of Cell Systems & Anatomy, School of Dentistry, University of Texas Health Science Center at San Antonio, San Antonio, Texas."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Simmer JP"
+          ],
+          "firstName": [
+            "James P"
+          ],
+          "lastName": [
+            "Simmer"
+          ],
+          "initials": [
+            "JP"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7192-6105",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Hu JC"
+          ],
+          "firstName": [
+            "Jan C-C"
+          ],
+          "lastName": [
+            "Hu"
+          ],
+          "initials": [
+            "JC"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-3429-7821",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-8378-5880",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7192-6105",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "9"
+      ],
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2857113"
+      ],
+      "dateOfPublication": [
+        "2019 Sep"
+      ],
+      "monthOfPublication": [
+        "9"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-09-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Molecular genetics & genomic medicine"
+          ],
+          "ISOAbbreviation": [
+            "Mol Genet Genomic Med"
+          ],
+          "medlineAbbreviation": [
+            "Mol Genet Genomic Med"
+          ],
+          "NLMid": [
+            "101603758"
+          ],
+          "ISSN": [
+            "2324-9269"
+          ],
+          "ESSN": [
+            "2324-9269"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "e929"
+  ],
+  "abstractText": [
+    "BACKGROUND:Ameloblastin (AMBN) is a secreted matrix protein that is critical for the formation of dental enamel and is enamel-specific with respect to its essential functions. Biallelic AMBN defects cause non-syndromic autosomal recessive amelogenesis imperfecta. Homozygous Ambn mutant mice expressing an internally truncated AMBN protein deposit only a soft mineral crust on the surface of dentin. METHODS:We characterized a family with hypoplastic amelogenesis imperfecta caused by AMBN compound heterozygous mutations (c.1061T>C; p.Leu354Pro/ c.1340C>T; p.Pro447Leu). We generated and characterized Ambn knockout/NLS-lacZ (AmbnlacZ/lacZ ) knockin mice. RESULTS:No AMBN protein was detected using immunohistochemistry in null mice. ß-galactosidase activity was specific for ameloblasts in incisors and molars, and islands of cells along developing molar roots. AmbnlacZ/lacZ 7-week incisors and unerupted (D14) first molars showed extreme enamel surface roughness. No abnormalities were observed in dentin mineralization or in nondental tissues. Ameloblasts in the AmbnlacZ/lacZ mice were unable to initiate appositional growth and started to degenerate and deposit ectopic mineral. No layer of initial enamel ribbons formed in the AmbnlacZ/lacZ mice, but pockets of amelogenin accumulated on the dentin surface along the ameloblast distal membrane and within the enamel organ epithelia (EOE). NLS-lacZ signal was positive in the epididymis and nasal epithelium, but negative in ovary, oviduct, uterus, prostate, seminal vesicles, testis, submandibular salivary gland, kidney, liver, bladder, and bone, even after 15 hr of incubation with X-gal. CONCLUSIONS:Ameloblastin is critical for the initiation of enamel ribbon formation, and its absence results in pathological mineralization within the enamel organ epithelia."
+  ],
+  "affiliation": [
+    "Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, Ann Arbor, Michigan."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "R01 DE015846"
+          ],
+          "agency": [
+            "NIDCR NIH HHS"
+          ],
+          "acronym": [
+            "DE"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R21 DE025758"
+          ],
+          "agency": [
+            "NIDCR NIH HHS"
+          ],
+          "acronym": [
+            "DE"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 DE026769"
+          ],
+          "agency": [
+            "NIDCR NIH HHS"
+          ],
+          "acronym": [
+            "DE"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Ameloblasts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PA"
+                  ],
+                  "qualifierName": [
+                    "pathology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Dentin"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PA"
+                  ],
+                  "qualifierName": [
+                    "pathology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mice, Transgenic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mice"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Amelogenesis Imperfecta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PA"
+                  ],
+                  "qualifierName": [
+                    "pathology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Dental Enamel Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Organ Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Mutation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Knock-In Techniques"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mineralization",
+        "Missense mutation",
+        "Amelogenin",
+        "Ameloblastin",
+        "Matrix Proteins",
+        "Sheath Protein",
+        "Ambn -/- Amelx -/-",
+        "Amelin",
+        "Dental Enamel Formation",
+        "Sheathlin"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "AMBN protein, human"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Ambn protein, mouse"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Dental Enamel Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1002/mgg3.929"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6732285"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6732285?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "omim"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2020-06-17"
+  ],
+  "dateOfCreation": [
+    "2019-08-13"
+  ],
+  "firstIndexDate": [
+    "2019-08-13"
+  ],
+  "fullTextReceivedDate": [
+    "2019-09-19"
+  ],
+  "dateOfRevision": [
+    "2020-06-17"
+  ],
+  "electronicPublicationDate": [
+    "2019-08-11"
+  ],
+  "firstPublicationDate": [
+    "2019-08-11"
+  ]
+}

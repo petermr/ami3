@@ -1,0 +1,679 @@
+{
+  "id": [
+    "26658285"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26658285"
+  ],
+  "pmcid": [
+    "PMC4687636"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4687636"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1371/journal.ppat.1005304"
+  ],
+  "title": [
+    "Evolutionary Analyses Suggest a Function of MxB Immunity Proteins Beyond Lentivirus Restriction."
+  ],
+  "authorString": [
+    "Mitchell PS, Young JM, Emerman M, Malik HS."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Mitchell PS"
+          ],
+          "firstName": [
+            "Patrick S"
+          ],
+          "lastName": [
+            "Mitchell"
+          ],
+          "initials": [
+            "PS"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8375-9060",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Molecular and Cellular Biology Graduate Program, University of Washington, Seattle, United States of America.",
+                "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Young JM"
+          ],
+          "firstName": [
+            "Janet M"
+          ],
+          "lastName": [
+            "Young"
+          ],
+          "initials": [
+            "JM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Emerman M"
+          ],
+          "firstName": [
+            "Michael"
+          ],
+          "lastName": [
+            "Emerman"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, United States of America.",
+                "Division of Human Biology, Fred Hutchinson Cancer Research Center, Seattle, United States of America."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Malik HS"
+          ],
+          "firstName": [
+            "Harmit S"
+          ],
+          "lastName": [
+            "Malik"
+          ],
+          "initials": [
+            "HS"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6005-0016",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, United States of America.",
+                "Howard Hughes Medical Institute, Fred Hutchinson Cancer Research Center, Seattle, United States of America."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-8375-9060",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6005-0016",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "related_data",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "12"
+      ],
+      "volume": [
+        "11"
+      ],
+      "journalIssueId": [
+        "2347469"
+      ],
+      "dateOfPublication": [
+        "2015 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PLoS pathogens"
+          ],
+          "ISOAbbreviation": [
+            "PLoS Pathog."
+          ],
+          "medlineAbbreviation": [
+            "PLoS Pathog"
+          ],
+          "NLMid": [
+            "101238921"
+          ],
+          "ISSN": [
+            "1553-7366"
+          ],
+          "ESSN": [
+            "1553-7374"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "e1005304"
+  ],
+  "abstractText": [
+    "Viruses impose diverse and dynamic challenges on host defenses. Diversifying selection of codons and gene copy number variation are two hallmarks of genetic innovation in antiviral genes engaged in host-virus genetic conflicts. The myxovirus resistance (Mx) genes encode interferon-inducible GTPases that constitute a major arm of the cell-autonomous defense against viral infection. Unlike the broad antiviral activity of MxA, primate MxB was recently shown to specifically inhibit lentiviruses including HIV-1. We carried out detailed evolutionary analyses to investigate whether genetic conflict with lentiviruses has shaped MxB evolution in primates. We found strong evidence for diversifying selection in the MxB N-terminal tail, which contains molecular determinants of MxB anti-lentivirus specificity. However, we found no overlap between previously-mapped residues that dictate lentiviral restriction and those that have evolved under diversifying selection. Instead, our findings are consistent with MxB having a long-standing and important role in the interferon response to viral infection against a broader range of pathogens than is currently appreciated. Despite its critical role in host innate immunity, we also uncovered multiple functional losses of MxB during mammalian evolution, either by pseudogenization or by gene conversion from MxA genes. Thus, although the majority of mammalian genomes encode two Mx genes, this apparent stasis masks the dramatic effects that recombination and diversifying selection have played in shaping the evolutionary history of Mx genes. Discrepancies between our study and previous publications highlight the need to account for recombination in analyses of positive selection, as well as the importance of using sequence datasets with appropriate depth of divergence. Our study also illustrates that evolutionary analyses of antiviral gene families are critical towards understanding molecular principles that govern host-virus interactions and species-specific susceptibility to viral infection."
+  ],
+  "affiliation": [
+    "Molecular and Cellular Biology Graduate Program, University of Washington, Seattle, United States of America."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "P50 GM107632"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "T32 CA080416"
+          ],
+          "agency": [
+            "NCI NIH HHS"
+          ],
+          "acronym": [
+            "CA"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "P30 CA015704"
+          ],
+          "agency": [
+            "NCI NIH HHS"
+          ],
+          "acronym": [
+            "CA"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "S10 OD020069"
+          ],
+          "agency": [
+            "NIH HHS"
+          ],
+          "acronym": [
+            "OD"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "agency": [
+            "Howard Hughes Medical Institute"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01AI030927"
+          ],
+          "agency": [
+            "NIAID NIH HHS"
+          ],
+          "acronym": [
+            "AI"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Haplorhini"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Humans"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Lentivirus Infections"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Reverse Transcriptase Polymerase Chain Reaction"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Amino Acid Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Host-Parasite Interactions"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Immunity, Innate"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA Copy Number Variations"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Myxovirus Resistance Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "myxovirus resistance proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.ppat.1005304"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4687636"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4687636?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "28"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2016-04-19"
+  ],
+  "dateOfCreation": [
+    "2015-12-15"
+  ],
+  "firstIndexDate": [
+    "2015-12-24"
+  ],
+  "fullTextReceivedDate": [
+    "2016-01-05"
+  ],
+  "dateOfRevision": [
+    "2018-02-07"
+  ],
+  "electronicPublicationDate": [
+    "2015-12-10"
+  ],
+  "firstPublicationDate": [
+    "2015-12-10"
+  ]
+}

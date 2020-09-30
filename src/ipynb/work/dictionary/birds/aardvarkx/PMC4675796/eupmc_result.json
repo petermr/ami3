@@ -1,0 +1,406 @@
+{
+  "id": [
+    "26693256"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26693256"
+  ],
+  "pmcid": [
+    "PMC4675796"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4675796"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1007/s12559-015-9347-7"
+  ],
+  "title": [
+    "Sherlock: A Semi-automatic Framework for Quiz Generation Using a Hybrid Semantic Similarity Measure."
+  ],
+  "authorString": [
+    "Lin C, Liu D, Pang W, Wang Z."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Lin C"
+          ],
+          "firstName": [
+            "Chenghua"
+          ],
+          "lastName": [
+            "Lin"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Computing Science, University of Aberdeen, Aberdeen, AB24 3UE UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Liu D"
+          ],
+          "firstName": [
+            "Dong"
+          ],
+          "lastName": [
+            "Liu"
+          ],
+          "initials": [
+            "D"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "BBC Future Media and Technology - Knowledge and Learning, BBC Bridge House, MediaCityUK, Salford, M50 2QH UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Pang W"
+          ],
+          "firstName": [
+            "Wei"
+          ],
+          "lastName": [
+            "Pang"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1761-6659",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Computing Science, University of Aberdeen, Aberdeen, AB24 3UE UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Wang Z"
+          ],
+          "firstName": [
+            "Zhe"
+          ],
+          "lastName": [
+            "Wang"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "College of Computer Science and Technology, Jilin University, Changchun, 130012 China."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1761-6659",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "6"
+      ],
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2356344"
+      ],
+      "dateOfPublication": [
+        "2015"
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Cognitive computation"
+          ],
+          "ISOAbbreviation": [
+            "Cognit Comput"
+          ],
+          "medlineAbbreviation": [
+            "Cognit Comput"
+          ],
+          "NLMid": [
+            "101499358"
+          ],
+          "ISSN": [
+            "1866-9956"
+          ],
+          "ESSN": [
+            "1866-9964"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "667-679"
+  ],
+  "abstractText": [
+    "In this paper, we present a semi-automatic system (Sherlock) for quiz generation using linked data and textual descriptions of RDF resources. Sherlock is distinguished from existing quiz generation systems in its generic framework for domain-independent quiz generation as well as in the ability of controlling the difficulty level of the generated quizzes. Difficulty scaling is non-trivial, and it is fundamentally related to cognitive science. We approach the problem with a new angle by perceiving the level of knowledge difficulty as a similarity measure problem and propose a novel hybrid semantic similarity measure using linked data. Extensive experiments show that the proposed semantic similarity measure outperforms four strong baselines with more than 47 % gain in clustering accuracy. In addition, we discovered in the human quiz test that the model accuracy indeed shows a strong correlation with the pairwise quiz similarity."
+  ],
+  "affiliation": [
+    "Department of Computing Science, University of Aberdeen, Aberdeen, AB24 3UE UK."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "ES/M001628/1"
+          ],
+          "agency": [
+            "Economic and Social Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "EP/G066051/1"
+          ],
+          "agency": [
+            "Engineering and Physical Sciences Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Rdf",
+        "Linked Data",
+        "Semantic Similarity",
+        "Educational Games",
+        "Text Analytics",
+        "Quiz Generation"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1007/s12559-015-9347-7"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1007/s12559-015-9347-7"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4675796"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4675796?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2015-12-23"
+  ],
+  "firstIndexDate": [
+    "2015-12-24"
+  ],
+  "fullTextReceivedDate": [
+    "2015-12-23"
+  ],
+  "dateOfRevision": [
+    "2019-07-10"
+  ],
+  "electronicPublicationDate": [
+    "2015-08-04"
+  ],
+  "firstPublicationDate": [
+    "2015-08-04"
+  ]
+}

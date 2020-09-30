@@ -1,0 +1,476 @@
+{
+  "id": [
+    "26674947"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26674947"
+  ],
+  "pmcid": [
+    "PMC4707753"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4707753"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1098/rspb.2015.2023"
+  ],
+  "title": [
+    "Fossils and living taxa agree on patterns of body mass evolution: a case study with Afrotheria."
+  ],
+  "authorString": [
+    "Puttick MN, Thomas GH."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Puttick MN"
+          ],
+          "firstName": [
+            "Mark N"
+          ],
+          "lastName": [
+            "Puttick"
+          ],
+          "initials": [
+            "MN"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1011-3442",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Earth Sciences, University of Bristol, Wills Memorial Building, Queen's Road, Bristol BS8 1RJ, UK mark.puttick@bristol.ac.uk."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Thomas GH"
+          ],
+          "firstName": [
+            "Gavin H"
+          ],
+          "lastName": [
+            "Thomas"
+          ],
+          "initials": [
+            "GH"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1982-6051",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Animal and Plant Sciences, University of Sheffield, Alfred Denny Building, Western Bank, Sheffield S10 2TN, UK."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1011-3442",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-1982-6051",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1821"
+      ],
+      "volume": [
+        "282"
+      ],
+      "journalIssueId": [
+        "2355062"
+      ],
+      "dateOfPublication": [
+        "2015 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Proceedings. Biological sciences"
+          ],
+          "ISOAbbreviation": [
+            "Proc. Biol. Sci."
+          ],
+          "medlineAbbreviation": [
+            "Proc Biol Sci"
+          ],
+          "NLMid": [
+            "101245157"
+          ],
+          "ISSN": [
+            "0962-8452"
+          ],
+          "ESSN": [
+            "1471-2954"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "20152023"
+  ],
+  "abstractText": [
+    "Most of life is extinct, so incorporating some fossil evidence into analyses of macroevolution is typically seen as necessary to understand the diversification of life and patterns of morphological evolution. Here we test the effects of inclusion of fossils in a study of the body size evolution of afrotherian mammals, a clade that includes the elephants, sea cows and elephant shrews. We find that the inclusion of fossil tips has little impact on analyses of body mass evolution; from a small ancestral size (approx. 100 g), there is a shift in rate and an increase in mass leading to the larger-bodied Paenungulata and Tubulidentata, regardless of whether fossils are included or excluded from analyses. For Afrotheria, the inclusion of fossils and morphological character data affect phylogenetic topology, but these differences have little impact upon patterns of body mass evolution and these body mass evolutionary patterns are consistent with the fossil record. The largest differences between our analyses result from the evolutionary model, not the addition of fossils. For some clades, extant-only analyses may be reliable to reconstruct body mass evolution, but the addition of fossils and careful model selection is likely to increase confidence and accuracy of reconstructed macroevolutionary patterns."
+  ],
+  "affiliation": [
+    "School of Earth Sciences, University of Bristol, Wills Memorial Building, Queen's Road, Bristol BS8 1RJ, UK mark.puttick@bristol.ac.uk."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "NE/G012938/1"
+          ],
+          "agency": [
+            "Natural Environment Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "NE/G012938/2"
+          ],
+          "agency": [
+            "Natural Environment Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "1241006"
+          ],
+          "agency": [
+            "Natural Environment Research Council"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Body Size"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Fossils"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Fossil",
+        "Body mass",
+        "Macroevolution",
+        "Afrotheria",
+        "Ancestral Size Reconstruction"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1098/rspb.2015.2023"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4707753"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4707753?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2017-01-19"
+  ],
+  "dateOfCreation": [
+    "2015-12-18"
+  ],
+  "firstIndexDate": [
+    "2015-12-24"
+  ],
+  "fullTextReceivedDate": [
+    "2016-02-24"
+  ],
+  "dateOfRevision": [
+    "2019-01-09"
+  ],
+  "firstPublicationDate": [
+    "2015-12-01"
+  ]
+}

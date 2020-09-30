@@ -1,0 +1,544 @@
+{
+  "id": [
+    "30851112"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "30851112"
+  ],
+  "pmcid": [
+    "PMC6501877"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC6501877"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1093/molbev/msz049"
+  ],
+  "title": [
+    "Bayesian Detection of Convergent Rate Changes of Conserved Noncoding Elements on Phylogenetic Trees."
+  ],
+  "authorString": [
+    "Hu Z, Sackton TB, Edwards SV, Liu JS."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Hu Z"
+          ],
+          "firstName": [
+            "Zhirui"
+          ],
+          "lastName": [
+            "Hu"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Statistics, Harvard University, Cambridge, MA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Sackton TB"
+          ],
+          "firstName": [
+            "Timothy B"
+          ],
+          "lastName": [
+            "Sackton"
+          ],
+          "initials": [
+            "TB"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Informatics Group, Harvard University, Cambridge, MA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Edwards SV"
+          ],
+          "firstName": [
+            "Scott V"
+          ],
+          "lastName": [
+            "Edwards"
+          ],
+          "initials": [
+            "SV"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA.",
+                "Museum of Comparative Zoology, Harvard University, Cambridge, MA."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Liu JS"
+          ],
+          "firstName": [
+            "Jun S"
+          ],
+          "lastName": [
+            "Liu"
+          ],
+          "initials": [
+            "JS"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Statistics, Harvard University, Cambridge, MA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "5"
+      ],
+      "volume": [
+        "36"
+      ],
+      "journalIssueId": [
+        "2813696"
+      ],
+      "dateOfPublication": [
+        "2019 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2019"
+      ],
+      "printPublicationDate": [
+        "2019-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Molecular biology and evolution"
+          ],
+          "ISOAbbreviation": [
+            "Mol. Biol. Evol."
+          ],
+          "medlineAbbreviation": [
+            "Mol Biol Evol"
+          ],
+          "NLMid": [
+            "8501455"
+          ],
+          "ISSN": [
+            "0737-4038"
+          ],
+          "ESSN": [
+            "1537-1719"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2019"
+  ],
+  "pageInfo": [
+    "1086-1100"
+  ],
+  "abstractText": [
+    "Conservation of DNA sequence over evolutionary time is a strong indicator of function, and gain or loss of sequence conservation can be used to infer changes in function across a phylogeny. Changes in evolutionary rates on particular lineages in a phylogeny can indicate shared functional shifts, and thus can be used to detect genomic correlates of phenotypic convergence. However, existing methods do not allow easy detection of patterns of rate variation, which causes challenges for detecting convergent rate shifts or other complex evolutionary scenarios. Here we introduce PhyloAcc, a new Bayesian method to model substitution rate changes in conserved elements across a phylogeny. The method assumes several categories of substitution rate for each branch on the phylogenetic tree, estimates substitution rates per category, and detects changes of substitution rate as the posterior probability of a category switch. Simulations show that PhyloAcc can detect genomic regions with rate shifts in multiple target species better than previous methods and has a higher accuracy of reconstructing complex patterns of substitution rate changes than prevalent Bayesian relaxed clock models. We demonstrate the utility of PhyloAcc in two classic examples of convergent phenotypes: loss of flight in birds and the transition to marine life in mammals. In each case, our approach reveals numerous examples of conserved nonexonic elements with accelerations specific to the phenotypically convergent lineages. Our method is widely applicable to any set of conserved elements where multiple rate changes are expected on a phylogeny."
+  ],
+  "affiliation": [
+    "Department of Statistics, Harvard University, Cambridge, MA."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Validation Study",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "DEB-1355343"
+          ],
+          "agency": [
+            "National Science Foundation"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 GM122080"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "EAR-1355292"
+          ],
+          "agency": [
+            "National Science Foundation"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Birds"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genetic Techniques"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Models, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Computer Simulation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Software"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mammal",
+        "Comparative genomics",
+        "Convergence",
+        "phylogenetics",
+        "Bayesian Model"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/molbev/msz049"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6501877"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC6501877?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "PPR18439"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2019-07-01"
+  ],
+  "dateOfCreation": [
+    "2019-03-10"
+  ],
+  "firstIndexDate": [
+    "2019-03-10"
+  ],
+  "fullTextReceivedDate": [
+    "2019-05-15"
+  ],
+  "dateOfRevision": [
+    "2020-03-09"
+  ],
+  "firstPublicationDate": [
+    "2019-05-01"
+  ]
+}

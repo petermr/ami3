@@ -1,0 +1,857 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.2 20190208//EN" "JATS-archivearticle1-mathml3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.1 20151215//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName JATS-archive-oasis-article1-mathml3.dtd?><?SourceDTD.Version 1.1?><?ConverterInfo.XSLTName jpoasis-nisons2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Ecol Evol</journal-id><journal-id journal-id-type="iso-abbrev">Ecol Evol</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2045-7758</journal-id><journal-id journal-id-type="publisher-id">ECE3</journal-id><journal-title-group><journal-title>Ecology and Evolution</journal-title></journal-title-group><issn pub-type="epub">2045-7758</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1002/ece3.5916</article-id><article-id pub-id-type="publisher-id">ECE35916</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Research</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></article-categories><title-group><article-title>Community&#x02010;based wildlife management area supports similar mammal species richness and densities compared to a national park</article-title><alt-title alt-title-type="left-running-head">KIFFNER et al.</alt-title></title-group><contrib-group><contrib id="ece35916-cr-0001" contrib-type="author" corresp="yes"><name><surname>Kiffner</surname><given-names>Christian</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7475-9023</contrib-id><xref ref-type="aff" rid="ece35916-aff-0001">
+<sup>1</sup>
+</xref><address><email>ckiffne@gwdg.de</email></address></contrib><contrib id="ece35916-cr-0002" contrib-type="author"><name><surname>Thomas</surname><given-names>Seth</given-names></name><xref ref-type="aff" rid="ece35916-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="ece35916-cr-0003" contrib-type="author"><name><surname>Speaker</surname><given-names>Talia</given-names></name><xref ref-type="aff" rid="ece35916-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="ece35916-cr-0004" contrib-type="author"><name><surname>O'Connor</surname><given-names>Victoria</given-names></name><xref ref-type="aff" rid="ece35916-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="ece35916-cr-0005" contrib-type="author"><name><surname>Schwarz</surname><given-names>Paige</given-names></name><xref ref-type="aff" rid="ece35916-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="ece35916-cr-0006" contrib-type="author"><name><surname>Kioko</surname><given-names>John</given-names></name><xref ref-type="aff" rid="ece35916-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="ece35916-cr-0007" contrib-type="author"><name><surname>Kissui</surname><given-names>Bernard</given-names></name><xref ref-type="aff" rid="ece35916-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="ece35916-aff-0001">
+<label><sup>1</sup></label>
+<institution>Center for Wildlife Management Studies</institution>
+<institution>The School For Field Studies</institution>
+<city>Karatu</city>
+<country country="TZ">Tanzania</country>
+</aff><aff id="ece35916-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Department of Integrative Biology &#x00026; The Department of Environmental Sciences</named-content>
+<institution>Oregon State University</institution>
+<city>Corvallis</city>
+<named-content content-type="country-part">OR</named-content>
+<country country="US">USA</country>
+</aff><aff id="ece35916-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Human Dimensions of Natural Resources</named-content>
+<institution>Colorado State University</institution>
+<city>Fort Collins</city>
+<named-content content-type="country-part">CO</named-content>
+<country country="US">USA</country>
+</aff><aff id="ece35916-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Psychology</named-content>
+<institution>Franklin &#x00026; Marshall College</institution>
+<city>Lancaster</city>
+<named-content content-type="country-part">PA</named-content>
+<country country="US">USA</country>
+</aff><aff id="ece35916-aff-0005">
+<label><sup>5</sup></label>
+<institution>Warner College of Natural Resources</institution>
+<institution>Colorado State University</institution>
+<city>Fort Collins</city>
+<named-content content-type="country-part">CO</named-content>
+<country country="US">USA</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+Christian Kiffner, Center for Wildlife Management Studies, The School For Field Studies, PO Box 304, Karatu, Tanzania.<break/>
+Email: <email>ckiffne@gwdg.de</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>06</day><month>12</month><year>2019</year></pub-date><pub-date pub-type="collection"><month>1</month><year>2020</year></pub-date><volume>10</volume><issue>1</issue><issue-id pub-id-type="doi">10.1002/ece3.v10.1</issue-id><fpage>480</fpage><lpage>492</lpage><history><date date-type="received"><day>28</day><month>8</month><year>2019</year></date><date date-type="rev-recd"><day>07</day><month>11</month><year>2019</year></date><date date-type="accepted"><day>11</day><month>11</month><year>2019</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2020 Published by John Wiley & Sons Ltd. <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2019 The Authors. <italic>Ecology and Evolution</italic> published by John Wiley &#x00026; Sons Ltd.</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:ECE3-10-480.pdf"/><abstract id="ece35916-abs-0001"><title>Abstract</title><p>Community&#x02010;based conservation models have been widely implemented across Africa to improve wildlife conservation and livelihoods of rural communities. In Tanzania, communities can set aside land and formally register it as Wildlife Management Area (WMA), which allows them to generate revenue via consumptive or nonconsumptive utilization of wildlife. The key, yet often untested, assumption of this model is that economic benefits accrued from wildlife motivate sustainable management of wildlife. To test the ecological effectiveness (here defined as persistence of wildlife populations) of Burunge Wildlife Management Area (BWMA), we employed a participatory monitoring approach involving WMA personnel. At intermittent intervals between 2011 and 2018, we estimated mammal species richness and population densities of ten mammal species (African elephant, giraffe, buffalo, zebra, wildebeest, waterbuck, warthog, impala, Kirk's dik&#x02010;dik, and vervet monkey) along line transects. We compared mammal species accumulation curves and density estimates with those of time&#x02010;matched road transect surveys conducted in adjacent Tarangire National Park (TNP). Mammal species richness estimates were similar in both areas, yet observed species richness per transect was greater in TNP compared to BWMA. Species&#x02010;specific density estimates of time&#x02010;matched surveys were mostly not significantly different between BWMA and TNP, but elephants occasionally reached greater densities in TNP compared to BWMA. In BWMA, elephant, wildebeest, and impala populations showed significant increases from 2011 to 2018. These results suggest that community&#x02010;based conservation models can support mammal communities and densities that are similar to national park baselines. In light of the ecological success of this case study, we emphasize the need for continued efforts to ensure that the BWMA is effective. This will require adaptive management to counteract potential negative repercussions of wildlife populations on peoples' livelihoods. This study can be used as a model to evaluate the effectiveness of wildlife management areas across Tanzania.</p></abstract><abstract abstract-type="graphical" id="ece35916-abs-0002"><p>Our case study uses time&#x02010;matched and consecutive wildlife counts over multiple years in a community&#x02010;based conservation scheme and in an ideal baseline (a directly neighboring national park) as comparison. We show that mammal species richness and densities of ten mammal species are not fundamentally different in a community&#x02010;based conservation area versus the adjacent national park. These results showcase the high conservation value of this community&#x02010;based conservation model.<boxed-text position="anchor" content-type="graphic" id="ece35916-blkfxd-0001" orientation="portrait"><graphic xlink:href="ECE3-10-480-g008.jpg" position="anchor" id="nlm-graphic-1" orientation="portrait"/></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="ece35916-kwd-0001">community&#x02010;based conservation</kwd><kwd id="ece35916-kwd-0002">conservation effectiveness</kwd><kwd id="ece35916-kwd-0003">distance sampling</kwd><kwd id="ece35916-kwd-0004">ecological baseline</kwd><kwd id="ece35916-kwd-0005">participatory monitoring</kwd><kwd id="ece35916-kwd-0006">population dynamics</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>African Wildlife Foundation</funding-source></award-group><award-group id="funding-0002"><funding-source>PAMS Foundation</funding-source></award-group><award-group id="funding-0003"><funding-source>IGF Foundation</funding-source></award-group><award-group id="funding-0004"><funding-source>Chem Chem Associations</funding-source></award-group><award-group id="funding-0005"><funding-source>The School for Field Studies</funding-source></award-group></funding-group><counts><fig-count count="7"/><table-count count="0"/><page-count count="13"/><word-count count="8150"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>January 2020</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:5.7.5 mode:remove_FC converted:21.01.2020</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="ece35916-cit-1001">
+<string-name>
+<surname>Kiffner</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Speaker</surname>
+<given-names>T</given-names>
+</string-name>, et al. <article-title>Community&#x02010;based wildlife management area supports similar mammal species richness and densities compared to a national park</article-title>. <source xml:lang="en">Ecol Evol</source>. <year>2020</year>;<volume>10</volume>:<fpage>480</fpage>&#x02013;<lpage>492</lpage>. <pub-id pub-id-type="doi">10.1002/ece3.5916</pub-id>
+</mixed-citation>
+</p></notes></front><body id="ece35916-body-0001"><sec id="ece35916-sec-0001"><label>1</label><title>INTRODUCTION</title><p>Community&#x02010;based natural resource management models have been advocated as a dual strategy to alleviate poverty and to halt overall biodiversity decline (Berkes, <xref rid="ece35916-bib-0006" ref-type="ref">2004</xref>, <xref rid="ece35916-bib-0007" ref-type="ref">2007</xref>; Kiss, <xref rid="ece35916-bib-0045" ref-type="ref">1990</xref>, <xref rid="ece35916-bib-0046" ref-type="ref">2004</xref>). In East Africa, where wildlife populations have been declining (Craigie et al., <xref rid="ece35916-bib-0022" ref-type="ref">2010</xref>; Stoner et al., <xref rid="ece35916-bib-0082" ref-type="ref">2007</xref>; Western, Russell, &#x00026; Cuthil, <xref rid="ece35916-bib-0088" ref-type="ref">2009</xref>) and people in rural areas often lack basic commodities (Ellis &#x00026; Freeman, <xref rid="ece35916-bib-0026" ref-type="ref">2004</xref>; Reardon &#x00026; Vosti, <xref rid="ece35916-bib-0073" ref-type="ref">1995</xref>; Salerno, Borgerhoff Mulder, Grote, Ghiselli, &#x00026; Packer, <xref rid="ece35916-bib-0075" ref-type="ref">2016</xref>), community&#x02010;based wildlife conservation models have been considered and implemented as a strategy to balance the trade&#x02010;off between wildlife conservation and development (Borgerhoff Mulder &#x00026; Coppolillo, <xref rid="ece35916-bib-0011" ref-type="ref">2005</xref>; Kiwango, Komakech, Tarimo, &#x00026; Martz, <xref rid="ece35916-bib-0048" ref-type="ref">2015</xref>; Naidoo et al., <xref rid="ece35916-bib-0065" ref-type="ref">2016</xref>). In East Africa and elsewhere, such community&#x02010;based conservation models have been subject to considerable criticism, specifically in regard to their socio&#x02010;economic contributions and poor governance (Benjaminsen, Goldman, Minwary, &#x00026; Maganga, <xref rid="ece35916-bib-0005" ref-type="ref">2013</xref>; Bluwstein, Moyo, &#x00026; Kicheleri, <xref rid="ece35916-bib-0008" ref-type="ref">2016</xref>; Brehony, Bluwstein, Lund, &#x00026; Tyrrell, <xref rid="ece35916-bib-0013" ref-type="ref">2018</xref>; Goldman, <xref rid="ece35916-bib-0032" ref-type="ref">2003</xref>; Moyo, Ijumba, &#x00026; Lund, <xref rid="ece35916-bib-0062" ref-type="ref">2016</xref>; Wright, <xref rid="ece35916-bib-0089" ref-type="ref">1995</xref>). While constructive criticism may improve issues related to benefit sharing and local involvement in governance over natural resources, research on the ecological effectiveness of community&#x02010;based conservation models is an equally important component to guide adaptive management and policy (Lee &#x00026; Bond, <xref rid="ece35916-bib-0052" ref-type="ref">2018</xref>; Lindenmayer &#x00026; Likens, <xref rid="ece35916-bib-0054" ref-type="ref">2010</xref>; Ogutu, Kuloba, Piepho, &#x00026; Kanga, <xref rid="ece35916-bib-0068" ref-type="ref">2017</xref>; Stem, Margoluis, Salafsky, &#x00026; Brown, <xref rid="ece35916-bib-0081" ref-type="ref">2005</xref>; Watson, Dudley, Segan, &#x00026; Hockings, <xref rid="ece35916-bib-0087" ref-type="ref">2014</xref>; Yoccoz, Nichols, &#x00026; Boulinier, <xref rid="ece35916-bib-0090" ref-type="ref">2001</xref>). Exemplary work in multipurpose and community&#x02010;based conservation areas in East Africa suggests that these areas can support species&#x02010;rich and abundant wildlife communities (Georgiadis, Olwero, Ojwang', &#x00026; Roma&#x000f1;ach, <xref rid="ece35916-bib-0030" ref-type="ref">2007</xref>; Kinnaird &#x00026; O'Brien, <xref rid="ece35916-bib-0044" ref-type="ref">2012</xref>; Schuette, Creel, &#x00026; Christianson, <xref rid="ece35916-bib-0077" ref-type="ref">2016</xref>), yet long&#x02010;term wildlife monitoring in these areas is often lacking (Newmark &#x00026; Hough, <xref rid="ece35916-bib-0066" ref-type="ref">2000</xref>).</p><p>Assessing the performance of conservation areas requires monitoring of suitable biological variables over time, ideally in comparison to appropriate spatial baselines (Geldmann et al., <xref rid="ece35916-bib-0029" ref-type="ref">2015</xref>; Schmeller et al., <xref rid="ece35916-bib-0076" ref-type="ref">2018</xref>). When wildlife is readily observable, assessing, and estimating species richness of large mammal assemblages and population densities of specific species over time can be performed simultaneously (Kiffner et al., <xref rid="ece35916-bib-0039" ref-type="ref">2019</xref>; Kiffner, Nagar, Kollmar, &#x00026; Kioko, <xref rid="ece35916-bib-0041" ref-type="ref">2016</xref>; Schuette et al., <xref rid="ece35916-bib-0078" ref-type="ref">2018</xref>). This combined approach offers advantages over focusing solely on species richness (Cromsigt, van Rensburg, Etienne, &#x00026; Olff, <xref rid="ece35916-bib-0023" ref-type="ref">2009</xref>; Msuha, Carbone, Pettorelli, &#x00026; Durant, <xref rid="ece35916-bib-0064" ref-type="ref">2012</xref>; Treydte, Edwards, &#x00026; Suter, <xref rid="ece35916-bib-0084" ref-type="ref">2005</xref>), on one or few snapshot assessments of species' densities (Caro, <xref rid="ece35916-bib-0016" ref-type="ref">1999</xref>; Waltert, Meyer, &#x00026; Kiffner, <xref rid="ece35916-bib-0086" ref-type="ref">2009</xref>), or on population trends of selected species (Kiffner et al., <xref rid="ece35916-bib-0042" ref-type="ref">2017</xref>; Ogutu et al., <xref rid="ece35916-bib-0068" ref-type="ref">2017</xref>). This is because (a) mammal communities are sensitive to different levels of human impact (Kiffner, Wenner, LaViolet, Yeh, &#x00026; Kioko, <xref rid="ece35916-bib-0043" ref-type="ref">2015</xref>; Msuha et al., <xref rid="ece35916-bib-0064" ref-type="ref">2012</xref>; Riggio et al., <xref rid="ece35916-bib-0074" ref-type="ref">2018</xref>); (b) focusing on one snapshot assessment in time may yield biased conclusions if animals move across the landscape in response to seasonal variation of natural resources (Rannestad, Danielsen, &#x00026; Stokke, <xref rid="ece35916-bib-0072" ref-type="ref">2006</xref>); and (c) focusing on a single species may not represent population trajectories of other species (Caro, <xref rid="ece35916-bib-0018" ref-type="ref">2016</xref>; Caro, Gardner, Stoner, Fitzherbert, &#x00026; Davenport, <xref rid="ece35916-bib-0019" ref-type="ref">2009</xref>; Kiffner, Hopper, &#x00026; Kioko, <xref rid="ece35916-bib-0040" ref-type="ref">2016</xref>; Riggio et al., <xref rid="ece35916-bib-0074" ref-type="ref">2018</xref>).</p><p>Here, we report on a participatory (i.e., involving local management personnel) monitoring study (Danielsen, Burgess, &#x00026; Balmford, <xref rid="ece35916-bib-0025" ref-type="ref">2005</xref>; Msoffe et al., <xref rid="ece35916-bib-0063" ref-type="ref">2010</xref>) to estimate mammalian species richness and densities of ten mammal species in Burunge Wildlife Management Area, Tanzania. In contrast to other assessments of the effectiveness of wildlife management areas in northern Tanzania, which used animal population metrics on community lands as baseline for comparisons (Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>; Lee &#x00026; Bond, <xref rid="ece35916-bib-0052" ref-type="ref">2018</xref>), we chose to compare wildlife community and population parameters to those assessed in an adjacent fully protected national park (Tarangire National Park). Using a national park as baseline allowed us to assess whether wildlife management areas can support the same structure and abundance of wildlife populations compared to areas where human influence is minimal (Arcese &#x00026; Sinclair, <xref rid="ece35916-bib-0001" ref-type="ref">1997</xref>; Sinclair &#x00026; Dobson, <xref rid="ece35916-bib-0079" ref-type="ref">2015</xref>).</p></sec><sec sec-type="materials-and-methods" id="ece35916-sec-0002"><label>2</label><title>MATERIAL AND METHODS</title><sec id="ece35916-sec-0003"><label>2.1</label><title>Study areas</title><p>Burunge WMA (BWMA) and Tarangire NP (TNP) are located in the Tarangire&#x02010;Manyara Ecosystem (TME). The TME is characterized by the movements of wildebeest (<italic>Connochates taurinus</italic>) and zebra (<italic>Equus quagga</italic>) populations (Figure <xref rid="ece35916-fig-0001" ref-type="fig">1</xref>) which perform round&#x02010;trip migrations to track seasonal landscape&#x02010;scale variation in food and nutrient availability (Bolger, Newmark, Morrison, &#x00026; Doak, <xref rid="ece35916-bib-0009" ref-type="ref">2008</xref>). The climate of the area is semiarid, with an average annual rainfall of 710&#x000a0;mm (Prins &#x00026; Loth, <xref rid="ece35916-bib-0070" ref-type="ref">1988</xref>). The topography is flat to undulating, and the average elevation is between 1,000&#x000a0;m (BWMA) and 1,200&#x000a0;m (TNP) above sea level (Gereta, Ole Meing'ataki, Mduma, &#x00026; Wolanski, <xref rid="ece35916-bib-0031" ref-type="ref">2004</xref>; Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>). The landscape is characterized by mosaics of <italic>Acacia&#x02010;Commiphora</italic> bushland, edaphic grasslands, and riverine vegetation (Lamprey, <xref rid="ece35916-bib-0049" ref-type="ref">1964</xref>; Prins &#x00026; Loth, <xref rid="ece35916-bib-0070" ref-type="ref">1988</xref>). BWMA and TNP share a common, unfenced border (Figure <xref rid="ece35916-fig-0002" ref-type="fig">2</xref>).</p><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Wildebeest (<italic>Connochaetes taurinus</italic>) and zebra (<italic>Equus quagga</italic>) in Burunge Wildlife Management Area, Tanzania (Photo: C. Kiffner)</p></caption><graphic id="nlm-graphic-3" xlink:href="ECE3-10-480-g001"/></fig><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Map of the study area, showing the outlines of Tarangire National Park (TNP), the wildlife area of Burunge Wildlife Management Area (BWMA) and the transects used for animal counts. Additional transects during the 2018 BWMA survey are displayed in light gray. The inset (top right) indicates the approximate location of the study area within Tanzania</p></caption><graphic id="nlm-graphic-5" xlink:href="ECE3-10-480-g002"/></fig><p>BWMA, officially gazetted in 2006, is located in the Babati district, contains ten villages, and the main ethnic groups are pastoralist Maasai and agro&#x02010;pastoral Mbugwe (Kaswamila, <xref rid="ece35916-bib-0037" ref-type="ref">2012</xref>). In Tanzania, wildlife management areas are spatially structured by land&#x02010;use plans that assign specific human activities to designated areas. The portion of BWMA that is set aside for wildlife use only is 280&#x000a0;km<sup>2</sup> in extent (226&#x000a0;km<sup>2</sup> excluding Lake Burunge). Initially, the eastern portion of the wildlife area was designated for trophy hunting, but since 2014 only photographic tourism has been practiced in the wildlife area (Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>). Village game scouts regularly patrol the area by vehicle and on foot to mitigate illegal activities such as livestock grazing, tree cutting, and hunting. Due to support from multiple donors, the management of the BWMA and law enforcement activities have been substantially strengthened since 2015 (Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>).</p><p>Tarangire National Park is 2,850&#x000a0;km<sup>2</sup> in extent, but animal counts for this study were restricted to the northern section of the park (approx. 300&#x000a0;km<sup>2</sup>) that directly borders BWMA. This sector of TNP contains exceptionally high wildlife densities during the dry season (June&#x02013;November) due to the availability of water and grass during this time (Kiffner, Hopper, et al., <xref rid="ece35916-bib-0040" ref-type="ref">2016</xref>; Lamprey, <xref rid="ece35916-bib-0049" ref-type="ref">1964</xref>). At the start of the rainy season (usually November), multiple species (mainly wildebeest and zebra) leave TNP and migrate to the Simanjiro plains in the east or to the northern plains around Lake Natron (Bond, Bradley, Kiffner, Morrison, &#x00026; Lee, <xref rid="ece35916-bib-0010" ref-type="ref">2017</xref>; Borner, <xref rid="ece35916-bib-0012" ref-type="ref">1985</xref>; Lamprey, <xref rid="ece35916-bib-0049" ref-type="ref">1964</xref>) where they give birth in nutrient&#x02010;rich grasslands (Morrison &#x00026; Bolger, <xref rid="ece35916-bib-0059" ref-type="ref">2012</xref>; Voeten, van de Vijver, Olff, &#x00026; van Langevelde, <xref rid="ece35916-bib-0085" ref-type="ref">2009</xref>). At the onset of the dry season (usually around June), wildebeest and zebra return to TNP. TNP is managed by Tanzanian National Parks (TANAPA), whose rangers regularly patrol the area. Other than photographic tourism and research, no human activities are permitted.</p></sec><sec id="ece35916-sec-0004"><label>2.2</label><title>Wildlife surveys</title><p>We used ground&#x02010;based line transect methodology to estimate large mammal presence and density in the northern sector of TNP and the wildlife use area of BWMA (Buckland et al., <xref rid="ece35916-bib-0014" ref-type="ref">2001</xref>; Thomas et al., <xref rid="ece35916-bib-0083" ref-type="ref">2010</xref>). To account for the seasonal distribution of wildlife in the TME, we collected line transect data during varying seasons from 2011 to 2018.</p><p>With a few exceptions, we placed transects in BWMA systematically and oriented them parallel to each other if landscape features allowed (Figure <xref rid="ece35916-fig-0002" ref-type="fig">2</xref>). Overall, we completed seven separate surveys in BWMA. Transects varied in length (range: 0.5&#x02013;10.3&#x000a0;km, average: 3.4&#x000a0;km), and for the most part, we completed the same transects in each survey. In 2018, we added multiple new transects to increase the spatial coverage of the area. In total, we counted wildlife along 871.33&#x000a0;km of transects. We performed animal counts with teams of 3&#x02013;7 observers per transect including BWMA game scouts, wildlife division rangers, and students from the School for Field Studies (2014 survey only) and used GPS units with preloaded transect coordinates (Garmin Etrex &#x00026; GPS map 760Cx) to navigate in the field. We surveyed wildlife by either walking or driving with a 4WD vehicle along transects. We walked transects in the dense bushlands near the border with TNP and drove transects located in more open areas in the grasslands near the shore of Lake Manyara (Figure <xref rid="ece35916-fig-0002" ref-type="fig">2</xref>). For each animal sighting, we recorded the species, group size (defined as individuals of the same species within 50&#x000a0;m), and GPS coordinates. We measured perpendicular distances between the center of the animal (group) and the transect directly in the field with Bushnell Elite 1500 laser range finders. Observers walked along the transect until reaching orthogonal bearings with the animal (group). If animals moved after the initial detection, observers recorded the perpendicular distance between the transect line and the initial position of the animal (group). Prior to the start of each survey, we trained all participating individuals on data collection and equipment use.</p><p>Due to off&#x02010;road restrictions in TNP, we placed transects along major roadways within the park. To distribute transects as representative as possible, we chose roads that cover all major habitats (bushed grasslands in the north, <italic>Vachellia tortilis</italic> savanna in the central part, riverine habitat near the Tarangire river and <italic>Combretum&#x02010;Terminalia</italic> shrubland at higher elevations) of the northern section of TNP (Figure <xref rid="ece35916-fig-0002" ref-type="fig">2</xref>). Transects were generally 2&#x000a0;km in length (range: 0.3&#x02013;2.5&#x000a0;km, average: 2&#x000a0;km), consecutive transects and were separated by 500&#x000a0;m. In total, we conducted six surveys in TNP, totaling 484.05&#x000a0;km. We drove transects in open&#x02010;top vehicles at slow speed, and 3&#x02013;9 observers recorded mammal sightings. We followed the same protocol as in BWMA to assess, count, and record animal sightings. We used the same GPS units and range finders and trained all observers in data collection prior to fieldwork.</p><p>We aimed to time&#x02010;match surveys in BWMA and TNP as closely as possible to avoid potential confounding effects of seasonal animal movements. Time intervals between matched surveys typically ranged between 11 and 14&#x000a0;days. The 2018 dry season surveys were an exception at 40&#x000a0;days apart, but wildlife movement in this ecosystem is limited during the dry season (Gereta et al., <xref rid="ece35916-bib-0031" ref-type="ref">2004</xref>; Lamprey, <xref rid="ece35916-bib-0049" ref-type="ref">1964</xref>; Morrison, Link, Newmark, Foley, &#x00026; Bolger, <xref rid="ece35916-bib-0061" ref-type="ref">2016</xref>). The first survey in BWMA (2011 long rain) had no equivalent TNP survey but we included density estimates from this survey to assess annual trends of wildlife populations in BWMA.</p></sec><sec id="ece35916-sec-0005"><label>2.3</label><title>Data analyses</title><p>To generate seasonal species richness estimates for each study area, we used the program <italic>EstimateS 9</italic> (Colwell, <xref rid="ece35916-bib-0021" ref-type="ref">2016</xref>). We estimated the expected number of species as a function of sampling effort (number of transects). We derived rarefaction curves based on recorded (naive) occurrence data of each mammal species and 100 bootstrap replicates. In contrast to species richness estimation in a multispecies occupancy framework (which typically requires repeat visits in the same season and allows incorporating variable detectability of species), estimates from this method may be considered minimum estimates of species richness (Mc New &#x00026; Handel, <xref rid="ece35916-bib-0057" ref-type="ref">2015</xref>).</p><p>Genet (<italic>Genetta genetta</italic> and <italic>G. tigrina</italic>) and mongoose (<italic>Helogale</italic> spp., <italic>Herpestes</italic> spp. &#x00026; <italic>Mungos</italic> spp.) species were not always unambiguously identified to species level and were thus combined to &#x0201c;genet&#x0201d; or &#x0201c;mongoose&#x0201d; (Appendix <xref rid="ece35916-sup-0001" ref-type="supplementary-material">S1</xref>). We visually compared species richness estimates at the community&#x02010;level. In addition, since transect length varied systematically between BWMA and TNP, we compared species richness estimates at the transect level using a generalized linear model (glm) with Poisson error distribution. This error distribution was selected because species richness is a count metric and was not normally distributed (Shapiro&#x02013;Wilk test: <italic>W</italic>&#x000a0;=&#x000a0;0.93, <italic>p</italic>&#x000a0;&#x0003c;&#x000a0;.001). We tested for area and seasonal effects on species richness estimates and included transect length as an explanatory variable to account for differing transect length. We first fitted the most complex model (area&#x000a0;+&#x000a0;season&#x000a0;+&#x000a0;transect length) and then derived all permutations of variable combinations using the <italic>MuMIn</italic> package (B&#x000e1;rton, <xref rid="ece35916-bib-0003" ref-type="ref">2013</xref>). Because the top two models received similar information&#x02010;theoretic support (within two AICc scores), we averaged these models using the full average method (Burnham &#x00026; Anderson, <xref rid="ece35916-bib-0015" ref-type="ref">2002</xref>; Grueber, Nakagawa, Laws, &#x00026; Jamieson, <xref rid="ece35916-bib-0034" ref-type="ref">2011</xref>).</p><p>We estimated species&#x02010; and area&#x02010;specific detection functions with sighting data from the most frequently detected mammal species using Distance 6.0 (Thomas et al., <xref rid="ece35916-bib-0083" ref-type="ref">2010</xref>). To estimate densities for a range of species, we considered species with a minimum of 20 sightings. However, 13 out of the 20 species&#x02010;area combinations yielded more than the recommended 60 sightings (Buckland et al., <xref rid="ece35916-bib-0014" ref-type="ref">2001</xref>). For each species&#x02013;area combination, we fitted half&#x02010;normal detection functions [which is the recommended shape of the detection function, particularly with limited detection frequencies (Prieto Gonzalez, Thomas, &#x00026; Marques, <xref rid="ece35916-bib-0069" ref-type="ref">2017</xref>)] in the conventional (CDS) and the multicovariate (MCDS, with season coded as a three&#x02010;level covariate) distance sampling framework. We selected between CDS and MCDS models based on Akaike's information criterion. For all models, we truncated 10% of the observations most distant from transects (Buckland et al., <xref rid="ece35916-bib-0014" ref-type="ref">2001</xref>) and used the average cluster size in each season to extrapolate from herd density to animal density (ind./km<sup>2</sup>).</p><p>We compared density estimates using a pairwise testing approach because density estimates in BWMA and TNP were derived from time&#x02010;matched surveys. For each species&#x02013;season combination, we tested for significant density differences using a <italic>z</italic> test (Buckland et al., <xref rid="ece35916-bib-0014" ref-type="ref">2001</xref>). Due to multiple testing (<italic>n</italic>&#x000a0;=&#x000a0;6 pairwise comparisons for each species), we corrected the corresponding <italic>p</italic>&#x02010;value using the Bonferroni method (Kiffner, Nagar, et al., <xref rid="ece35916-bib-0041" ref-type="ref">2016</xref>). To assess temporal trends in the time series of the population density estimates, we computed Kendall's correlation test. All statistics and graphs were computed and generated in <italic>R 3.6</italic> (R Core Team, <xref rid="ece35916-bib-0071" ref-type="ref">2016</xref>).</p></sec></sec><sec sec-type="results" id="ece35916-sec-0006"><label>3</label><title>RESULTS</title><sec id="ece35916-sec-0007"><label>3.1</label><title>Large mammal species richness</title><p>Season&#x02010; and site&#x02010;specific species accumulation curves appeared to be asymptotic, suggesting that sampling effort was sufficient (Figure <xref rid="ece35916-fig-0003" ref-type="fig">3</xref>). In general, both study areas appeared to support similar mammal species richness (Figure <xref rid="ece35916-fig-0003" ref-type="fig">3</xref>) and there was a high congruence in observed mammal species between BWMA and TNP. However, klipspringer (<italic>Oreotragus oreotragus</italic>) and bush hyrax (<italic>Heterohyrax brucei</italic>) were only observed in TNP, while hippopotamus (<italic>Hippopotamus amphibius</italic>), genets, hares (<italic>Lepus</italic> spp.), spotted hyenas (<italic>Crocuta crocuta</italic>), leopards (<italic>Panthera pardus</italic>), and African wild cats (<italic>Felis lybica</italic>) were only recorded in BWMA (Appendix S1). At the transect level, however, observed mammal species richness was&#x02014;on average and corrected for variable transect length&#x02014;higher in TNP compared to BWMA and was lower during the long rainy season compared to surveys during the short rains (Appendix <xref rid="ece35916-sup-0001" ref-type="supplementary-material">S2</xref>).</p><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Species richness estimates of seasonal (SR: short rain season; LR: long rain season; Dry: dry season) large mammal species richness in Burunge Wildlife Management Area (BWMA; black) and Tarangire National Park (TNP; gray). Solid lines represent mean estimates; dashed lines indicate 95% confidence intervals of the mean estimates</p></caption><graphic id="nlm-graphic-7" xlink:href="ECE3-10-480-g003"/></fig></sec><sec id="ece35916-sec-0008"><label>3.2</label><title>Seasonal population densities and population trends over time</title><p>In most of the species&#x02013;site combinations (16 out of 20), CDS half&#x02010;normal detection functions were selected, but in four cases (BWMA: buffalo; TNP: warthog, impala, Kirk's dik&#x02010;dik) the MCDS half&#x02010;normal detection function better fit the data (Appendix <xref rid="ece35916-sup-0001" ref-type="supplementary-material">S3</xref>). Mostly, the selected detection functions fit the observed data as indicated by chi<sup>2</sup>&#x02010;goodness of fit <italic>p</italic>&#x02010;values exceeding .05 (except for two cases BWMA: wildebeest; TNP: warthogs) (Appendix S2). However, some species appear to avoid areas near the transect line as indicated by fewer observations in the first distance bin(s) (Figures <xref rid="ece35916-fig-0004" ref-type="fig">4</xref> and <xref rid="ece35916-fig-0005" ref-type="fig">5</xref>). This pattern was particularly observed in road transects in TNP (zebra, warthog, impala, and Kirk's dik&#x02010;dik) and much less pronounced in data from the walking transects in BWMA (Figures <xref rid="ece35916-fig-0004" ref-type="fig">4</xref> and <xref rid="ece35916-fig-0005" ref-type="fig">5</xref>).</p><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Detection functions of elephant, giraffe, buffalo, zebra, and wildebeest in Burunge Wildlife Management Area (BWMA) and Tarangire National Park (TNP). Histograms (blue bars) represent sighting frequencies and the red line describes the fitted detection function</p></caption><graphic id="nlm-graphic-9" xlink:href="ECE3-10-480-g004"/></fig><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Detection functions of waterbuck, warthog, impala, Kirk's dik&#x02010;dik, and vervet monkey in Burunge Wildlife Management Area (BWMA) and Tarangire National Park (TNP). Histograms (blue bars) represent sighting frequencies and the red line describes the fitted detection function</p></caption><graphic id="nlm-graphic-11" xlink:href="ECE3-10-480-g005"/></fig><p>Densities of larger&#x02010; and smaller&#x02010;bodied species are displayed in Figures <xref rid="ece35916-fig-0006" ref-type="fig">6</xref> and <xref rid="ece35916-fig-0007" ref-type="fig">7</xref>. Among the analyzed species, zebra, wildebeest, and impala occurred at high densities in both BWMA and TNP. Waterbuck, buffalo, and giraffe occurred at relatively low densities in both areas. Zebra and wildebeest population densities showed strong seasonal variability in TNP but not BWMA, with both species practically absent from TNP during the long rains but occurring at high densities during dry and short rain seasons.</p><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Estimated seasonal (SR: short rain season; LR: long rain season; Dry: dry season) densities (open circles) and associated 95%&#x02010;confidence intervals (error bars) of waterbuck, warthog, impala, Kirk's dik&#x02010;dik, and vervet monkey in Burunge Wildlife Management Area (BWMA) and Tarangire National Park (TNP)</p></caption><graphic id="nlm-graphic-13" xlink:href="ECE3-10-480-g006"/></fig><fig fig-type="Figure" xml:lang="en" id="ece35916-fig-0007" orientation="portrait" position="float"><label>Figure 7</label><caption><p>Estimated seasonal (SR: short rain season; LR: long rain season; Dry: dry season) densities (open circles) and associated 95%&#x02010;confidence intervals (error bars) of elephant, giraffe, buffalo, zebra, and wildebeest in Burunge Wildlife Management Area (BWMA) and Tarangire National Park (TNP)</p></caption><graphic id="nlm-graphic-15" xlink:href="ECE3-10-480-g007"/></fig><p>Pairwise comparisons of seasonal densities indicated that species' densities in BWMA and TNP were not significantly different during most seasons (Appendix <xref rid="ece35916-sup-0001" ref-type="supplementary-material">S4</xref>). However, in two out of six pairwise comparisons, elephants had significantly greater densities (long rains 2012 and short rains 2014) in TNP than in BWMA. In two out of six pairwise comparisons (short rains 2016 and dry season 2018) zebras also had significantly greater densities in TNP. In contrast, during the 2016 long rains, zebra density was significantly greater in BWMA than in TNP (Appendix S4).</p><p>Over the intermittent time series from 2011 to 2018, elephant, wildebeest, and impala populations showed a significant population increase in BWMA (Appendix <xref rid="ece35916-sup-0001" ref-type="supplementary-material">S5</xref>). Concurrently, populations of giraffe and warthog showed a significant and positive trajectory in TNP, while vervet monkey populations declined over time.</p></sec></sec><sec sec-type="discussion" id="ece35916-sec-0009"><label>4</label><title>DISCUSSION</title><p>The results of wildlife surveys in BWMA highlight that this community&#x02010;based conservation model (a) maintains a near&#x02010;complete mammal community, (b) supports high densities of resident and migratory large mammal species, and (c) effectively maintains populations of these species over time. These results thus confirm and bolster conclusions of previous studies in the Tarangire ecosystem, which suggest, that wildlife management areas in Tanzania can be ecologically effective (Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>; Lee &#x00026; Bond, <xref rid="ece35916-bib-0052" ref-type="ref">2018</xref>).</p><sec id="ece35916-sec-0010"><label>4.1</label><title>Conservation value and implications of effective wildlife conservation</title><p>Mammal species richness, community composition, and densities similar to those observed in neighboring TNP emphasize the considerable conservation value of BWMA. Given the overall positive relationship between species richness and ecosystem functioning (Loreau, <xref rid="ece35916-bib-0055" ref-type="ref">2009</xref>, <xref rid="ece35916-bib-0056" ref-type="ref">2010</xref>), it can be expected that BWMA effectively supports crucial ecological processes in the wider landscape. BWMA provides suitable habitat for migratory ungulates (e.g., wildebeest and zebra) and nonmigratory species (e.g., Kirk's dik&#x02010;dik, impala, and giraffe) across seasons. Therefore, it is likely that BWMA not only helps to maintain connectivity within the increasingly fragmented Tarangire&#x02010;Manyara ecosystem (Bond et al., <xref rid="ece35916-bib-0010" ref-type="ref">2017</xref>; Borner, <xref rid="ece35916-bib-0012" ref-type="ref">1985</xref>; Morrison &#x00026; Bolger, <xref rid="ece35916-bib-0060" ref-type="ref">2014</xref>; Morrison et al., <xref rid="ece35916-bib-0061" ref-type="ref">2016</xref>) but also provides year&#x02010;round habitat for numerous species. Indeed, BWMA supports populations of ungulate species (e.g., eland, hartebeest, lesser kudu, steenbuck, bush duiker, reedbuck) that are either rare or absent in other parts of the Tarangire&#x02010;Manyara ecosystem such as Lake Manyara National Park (Kiffner et al., <xref rid="ece35916-bib-0043" ref-type="ref">2015</xref>). Similar to other terrestrial protected area networks, BWMA thus likely provides complementary conservation functions in the wider Tarangire&#x02010;Manyara ecosystem which cannot be achieved by the current national park network alone (Caro et al., <xref rid="ece35916-bib-0019" ref-type="ref">2009</xref>; Gardner et al., <xref rid="ece35916-bib-0028" ref-type="ref">2008</xref>; Lem&#x000e9;nager, King, Elliott, Gibbons, &#x00026; King, <xref rid="ece35916-bib-0053" ref-type="ref">2014</xref>).</p><p>Species accumulation curves in TNP occasionally&#x000a0;did not fully reach asymptotes (Figure <xref rid="ece35916-fig-0003" ref-type="fig">3</xref>) which may suggest that mammal species richness in TNP may be slightly greater than in BWMA. In line with this finding, species richness per transect in BWMA was lower than in TNP. Slightly lower species richness can potentially be explained by multiple hypotheses. In BWMA, transects occasionally covered only a single habitat type (e.g., alkaline grassland or bushland) whereas transects in TNP often cut across more heterogeneous habitats, therefore increasing the likelihood of encountering more mammal species&#x000a0;per transect. However, walking transects may facilitate detecting species that are possibly more difficult to encounter and detect while driving transects. Either way, the &#x0201c;true&#x0201d; mammal species richness in both BWMA and TNP may be substantially higher, because species richness estimates were derived using diurnal transects and because we combined multiple species (e.g., mongoose species) (Steinbeiser, Kioko, Maresi, Kaitilia, &#x00026; Kiffner, <xref rid="ece35916-bib-0080" ref-type="ref">2019</xref>). Indeed, recent camera trapping efforts in BWMA revealed the presence of multiple mammal species (e.g., aardvark <italic>Orycteropus afer</italic>, crested porcupine <italic>Hystrix cristata</italic>, honeybadger <italic>Mellivora capensis</italic>, striped hyena <italic>Hyaena hyaena</italic>) that were not detected during the transect counts (Kissui, Lobora, &#x00026; Tosi, <xref rid="ece35916-bib-0047" ref-type="ref">2019</xref>). To more thoroughly compare species richness across sites, we thus recommend systematic camera trapping in both areas and utilizing a multispecies occupancy framework to quantify species richness while explicitly accounting for species&#x02010; and area&#x02010;specific detection probabilities (Mc New &#x00026; Handel, <xref rid="ece35916-bib-0057" ref-type="ref">2015</xref>).</p><p>While the persistence and positive population trends of multiple wildlife species can be interpreted as the ecological success of community&#x02010;based conservation efforts (Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>; Lee &#x00026; Bond, <xref rid="ece35916-bib-0052" ref-type="ref">2018</xref>), the proliferation of wildlife populations may have negative repercussions for people adjacent to wildlife areas (Salerno et al., <xref rid="ece35916-bib-0075" ref-type="ref">2016</xref>). For example, it is possible that the increase in the BWMA elephant population may cause an upsurge of human&#x02013;elephant conflict in the area. Indeed, elephants are frequently perceived as a considerable threat to crops, human safety, and property in the area (Bencin, Kioko, &#x00026; Kiffner, <xref rid="ece35916-bib-0004" ref-type="ref">2016</xref>). In cooperation with multiple nongovernmental organizations, the management of BWMA addresses this issue by testing and implementing multiple strategies to prevent and mitigate crop damages by elephants (Chang'a et al., <xref rid="ece35916-bib-0020" ref-type="ref">2016</xref>; Hahn et al., <xref rid="ece35916-bib-0035" ref-type="ref">2017</xref>). Although benefit sharing models and adaptive management practices to curb damages by wildlife species and benefit sharing models are in place, these approaches could potentially be more effective (Brehony et al., <xref rid="ece35916-bib-0013" ref-type="ref">2018</xref>; Kicheleri, Treue, Nielsen, Kajembe, &#x00026; Mombo, <xref rid="ece35916-bib-0038" ref-type="ref">2018</xref>), so that the ecological success of this community&#x02010;based conservation area does not come at the expense of local livelihoods (Salerno et al., <xref rid="ece35916-bib-0075" ref-type="ref">2016</xref>).</p></sec><sec id="ece35916-sec-0011"><label>4.2</label><title>Measuring conservation effectiveness</title><p>Similar to other ecosystems (Mihoub et al., <xref rid="ece35916-bib-0058" ref-type="ref">2017</xref>), wildlife populations in the Tarangire&#x02010;Manyara ecosystem have fluctuated considerably over the long term in response to variation in anthropogenic and natural factors (Foley &#x00026; Faust, <xref rid="ece35916-bib-0027" ref-type="ref">2010</xref>; Kiffner et al., <xref rid="ece35916-bib-0042" ref-type="ref">2017</xref>; Morrison et al., <xref rid="ece35916-bib-0061" ref-type="ref">2016</xref>). Thus, measuring the conservation effectiveness of protected areas requires time&#x02010;matched wildlife population data from suitable spatial reference points. Whether to choose areas with little or no conservation efforts as reference points (Lee, <xref rid="ece35916-bib-0050" ref-type="ref">2018</xref>; Lee &#x00026; Bond, <xref rid="ece35916-bib-0052" ref-type="ref">2018</xref>), or fully protected national parks (Arcese &#x00026; Sinclair, <xref rid="ece35916-bib-0001" ref-type="ref">1997</xref>; Sinclair &#x00026; Dobson, <xref rid="ece35916-bib-0079" ref-type="ref">2015</xref>), may be a philosophical question. However, comparisons to fully protected areas can potentially yield stronger arguments for the conservation value and ecological integrity of community&#x02010;based conservation models.</p><p>Presently, most wildlife population monitoring schemes in Tanzania are carried out by aerial surveys (Stoner et al., <xref rid="ece35916-bib-0082" ref-type="ref">2007</xref>). Due to limited detection capabilities for most wildlife species, and relatively high costs, this monitoring technique is likely not ideal for assessing wildlife population parameters in community&#x02010;based conservation models (Caro, <xref rid="ece35916-bib-0017" ref-type="ref">2011</xref>; Greene, Bell, Kioko, &#x00026; Kiffner, <xref rid="ece35916-bib-0033" ref-type="ref">2017</xref>; Jachmann, <xref rid="ece35916-bib-0036" ref-type="ref">2002</xref>; Lee &#x00026; Bond, <xref rid="ece35916-bib-0051" ref-type="ref">2016</xref>). In addition to providing information on wildlife populations, participatory and ground&#x02010;based monitoring approaches (Danielsen et al., <xref rid="ece35916-bib-0025" ref-type="ref">2005</xref>; Msoffe et al., <xref rid="ece35916-bib-0063" ref-type="ref">2010</xref>; Schuette et al., <xref rid="ece35916-bib-0078" ref-type="ref">2018</xref>) may serve as an useful management tool for community&#x02010;based conservation models. Ground&#x02010;based wildlife monitoring yields other vital management data, such as detecting illegal activities. For example, two independent cases of illegal tree cutting were detected during the 2014 survey. Moreover, empowering WMA employees to monitor wildlife resources could be a crucial step toward decentralizing wildlife management in Tanzania (Benjaminsen et al., <xref rid="ece35916-bib-0005" ref-type="ref">2013</xref>; Kiwango et al., <xref rid="ece35916-bib-0048" ref-type="ref">2015</xref>). Ideally, wildlife monitoring schemes produce precise and unbiased density estimates (Yoccoz et al., <xref rid="ece35916-bib-0090" ref-type="ref">2001</xref>). In this case study, variation in encounter rates was the single most important factor contributing to uncertainty associated with density estimates (Appendix <xref rid="ece35916-sup-0001" ref-type="supplementary-material">S6</xref>). To increase the precision of density estimates, employing a stratified sampling approach according to main habitat types may be a viable option (Barabesi &#x00026; Fattorini, <xref rid="ece35916-bib-0002" ref-type="ref">2013</xref>). In cases where a (randomized or stratified) design&#x02010;based layout of transects is not possible, accounting for environmental and management related covariates may be a suitable option to further improve the robustness of results from wildlife monitoring (Oedekoven, Buckland, Mackenzie, Evans, &#x00026; Burger, <xref rid="ece35916-bib-0067" ref-type="ref">2013</xref>; Schuette et al., <xref rid="ece35916-bib-0078" ref-type="ref">2018</xref>).</p></sec><sec id="ece35916-sec-0012"><label>4.3</label><title>Conclusions and recommendations</title><p>Compared to a neighboring national park, we show that BWMA supports a similar mammal community and comparable species' densities. Most likely, BWMA provides complementary conservation functions that cannot be secured by national parks alone (including facilitating animal movement across seasonal ranges and providing permanent habitat for relatively rare species). However, given that BWMA constitutes only one example out of a total of 38 WMAs (22 with Authorized Association status) in Tanzania (CWMAC, <xref rid="ece35916-bib-0024" ref-type="ref">2019</xref>), participatory wildlife monitoring in multiple WMAs (ideally in relation to wildlife populations of adjacent national parks) is a crucial next step in measuring the general ecological effectiveness of this conservation model.</p><p>Despite the observed potential of BWMA to support a diverse and abundant mammal community, there are many challenges threatening the long&#x02010;term integrity of BWMA, including the rapidly growing human population, expansion of agriculture and human settlement, high frequency of livestock grazing in areas designated for wildlife, poaching, tree cutting, human&#x02010;wildlife conflicts, and power struggles among BWMA stakeholders (Bluwstein et al., <xref rid="ece35916-bib-0008" ref-type="ref">2016</xref>; Kicheleri et al., <xref rid="ece35916-bib-0038" ref-type="ref">2018</xref>; Kissui et al., <xref rid="ece35916-bib-0047" ref-type="ref">2019</xref>; Moyo et al., <xref rid="ece35916-bib-0062" ref-type="ref">2016</xref>). We recommend that the participatory management approach of BWMA need to be strengthened to ensure sustainable co&#x02010;existence between people and wildlife in Burunge.</p></sec></sec><sec sec-type="COI-statement" id="ece35916-sec-0014"><title>CONFLICT OF INTEREST</title><p>None declared.</p></sec><sec id="ece35916-sec-0015"><title>AUTHOR CONTRIBUTIONS</title><p>CK designed the study, executed field work, collated data, analyzed data and wrote the manuscript; ST executed field work, collated data, analyzed data and gave editorial advise; TS executed field work, collated data, analyzed data and gave editorial advise; VO'C executed field work, collated data, analyzed data and gave editorial advise; PS executed field work, collated data, analyzed data and gave editorial advise; JK designed the study, executed field work, collated data and gave editorial advise; BK designed the study, executed field work, collated data and gave editorial advise.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data" id="ece35916-sup-0001"><caption><p>&#x000a0;</p></caption><media xlink:href="ECE3-10-480-s001.docx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="ece35916-sec-0013"><title>ACKNOWLEDGMENTS</title><p>We thank all participating village game scouts, rangers, and SFS students and staff who conducted the wildlife surveys. This research was permitted by TAWIRI/COSTECH (permits #: 2012&#x02010;241&#x02010;NA&#x02010;2012&#x02010;57 to 2019&#x02010;92&#x02010;NA&#x02010;2013&#x02010;191) and conducted in close collaboration with Burunge WMA management. J. Silaa kindly helped with the map. Funding was provided by African Wildlife Foundation, PAMS Foundation, IGF Foundation and Chem Chem Associations (BWMA surveys), and The School for Field Studies (BWMA survey in 2014 and all TNP surveys). Funders had no role in study design, data analysis or in the publication process.</p></ack><sec sec-type="data-availability" id="ece35916-sec-0017"><title>DATA AVAILABILITY STATEMENT</title><p>Raw data of the transect observations are available at <ext-link ext-link-type="uri" xlink:href="http://Dryad.org" specific-use="software is-supplemented-by">http://Dryad.org</ext-link>: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.5061/dryad.w0vt4b8mf" specific-use="dataset is-supplemented-by">https://doi.org/10.5061/dryad.w0vt4b8mf</ext-link>.</p></sec><ref-list content-type="cited-references" id="ece35916-bibl-0001"><title>REFERENCES</title><ref id="ece35916-bib-0001"><mixed-citation publication-type="journal" id="ece35916-cit-0001">
+<string-name>
+<surname>Arcese</surname>, <given-names>P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Sinclair</surname>, <given-names>A. R. E.</given-names>
+</string-name> (<year>1997</year>). <article-title>The role of protected areas as ecologial baselines</article-title>. <source xml:lang="en">The Journal of Wildlife Management</source>, <volume>61</volume>(<issue>3</issue>), <fpage>587</fpage>&#x02013;<lpage>602</lpage>.</mixed-citation></ref><ref id="ece35916-bib-0002"><mixed-citation publication-type="journal" id="ece35916-cit-0002">
+<string-name>
+<surname>Barabesi</surname>, <given-names>L.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Fattorini</surname>, <given-names>L.</given-names>
+</string-name> (<year>2013</year>). <article-title>Random versus stratified location of transects or points in distance sampling: Theoretical results and practical considerations</article-title>. <source xml:lang="en">Environmental and Ecological Statistics</source>, <volume>20</volume>(<issue>2</issue>), <fpage>215</fpage>&#x02013;<lpage>236</lpage>. <pub-id pub-id-type="doi">10.1007/s10651-012-0216-1</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0003"><mixed-citation publication-type="book" id="ece35916-cit-0003">
+<string-name>
+<surname>B&#x000e1;rton</surname>, <given-names>K.</given-names>
+</string-name> (<year>2013</year>). <source xml:lang="en">Model selection and model averaging based on information criteria (AICc and alike)</source>. Retrieved from <ext-link ext-link-type="uri" xlink:href="https://cran.r-project.org/web/packages/MuMIn/index.html">https://cran.r-project.org/web/packages/MuMIn/index.html</ext-link>
+</mixed-citation></ref><ref id="ece35916-bib-0004"><mixed-citation publication-type="journal" id="ece35916-cit-0004">
+<string-name>
+<surname>Bencin</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Kioko</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name> (<year>2016</year>). <article-title>Local people's perceptions of wildlife species in two distinct landscapes of Northern Tanzania</article-title>. <source xml:lang="en">Journal for Nature Conservation</source>, <volume>34</volume>, <fpage>82</fpage>&#x02013;<lpage>92</lpage>. <pub-id pub-id-type="doi">10.1016/j.jnc.2016.09.004</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0005"><mixed-citation publication-type="journal" id="ece35916-cit-0005">
+<string-name>
+<surname>Benjaminsen</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>Goldman</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Minwary</surname>, <given-names>M. Y.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Maganga</surname>, <given-names>F. P.</given-names>
+</string-name> (<year>2013</year>). <article-title>Wildlife management in Tanzania: State control, rent seeking and community resistance</article-title>. <source xml:lang="en">Development and Change</source>, <volume>44</volume>(<issue>5</issue>), <fpage>1087</fpage>&#x02013;<lpage>1109</lpage>. <pub-id pub-id-type="doi">10.1111/dech.12055</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0006"><mixed-citation publication-type="journal" id="ece35916-cit-0006">
+<string-name>
+<surname>Berkes</surname>, <given-names>F.</given-names>
+</string-name> (<year>2004</year>). <article-title>Rethinking community&#x02010;based conservation</article-title>. <source xml:lang="en">Conservation Biology</source>, <volume>18</volume>(<issue>3</issue>), <fpage>621</fpage>&#x02013;<lpage>630</lpage>. <pub-id pub-id-type="doi">10.1111/j.1523-1739.2004.00077.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0007"><mixed-citation publication-type="journal" id="ece35916-cit-0007">
+<string-name>
+<surname>Berkes</surname>, <given-names>F.</given-names>
+</string-name> (<year>2007</year>). <article-title>Community&#x02010;based conservation in a globalized world</article-title>. <source xml:lang="en">Proceedings of the National Academy of Sciences of the United States of America</source>, <volume>104</volume>(<issue>39</issue>), <fpage>15188</fpage>&#x02013;<lpage>15193</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0702098104</pub-id>
+<pub-id pub-id-type="pmid">17881580</pub-id></mixed-citation></ref><ref id="ece35916-bib-0008"><mixed-citation publication-type="journal" id="ece35916-cit-0008">
+<string-name>
+<surname>Bluwstein</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Moyo</surname>, <given-names>F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kicheleri</surname>, <given-names>R.</given-names>
+</string-name> (<year>2016</year>). <article-title>Austere conservation: Understanding conflicts over resource governance in Tanzanian wildlife management areas</article-title>. <source xml:lang="en">Conservation and Society</source>, <volume>14</volume>(<issue>3</issue>), <fpage>218</fpage>&#x02013;<lpage>231</lpage>. <pub-id pub-id-type="doi">10.4103/0972-4923.191156</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0009"><mixed-citation publication-type="journal" id="ece35916-cit-0009">
+<string-name>
+<surname>Bolger</surname>, <given-names>D. T.</given-names>
+</string-name>, <string-name>
+<surname>Newmark</surname>, <given-names>W. D.</given-names>
+</string-name>, <string-name>
+<surname>Morrison</surname>, <given-names>T. A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Doak</surname>, <given-names>D. F.</given-names>
+</string-name> (<year>2008</year>). <article-title>The need for integrative approaches to understand and conserve migratory ungulates</article-title>. <source xml:lang="en">Ecology Letters</source>, <volume>11</volume>, <fpage>63</fpage>&#x02013;<lpage>77</lpage>.<pub-id pub-id-type="pmid">17897327</pub-id></mixed-citation></ref><ref id="ece35916-bib-0010"><mixed-citation publication-type="journal" id="ece35916-cit-0010">
+<string-name>
+<surname>Bond</surname>, <given-names>M. L.</given-names>
+</string-name>, <string-name>
+<surname>Bradley</surname>, <given-names>C. M.</given-names>
+</string-name>, <string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Morrison</surname>, <given-names>T. A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lee</surname>, <given-names>D. E.</given-names>
+</string-name> (<year>2017</year>). <article-title>A multi&#x02010;method approach to delineate and validate migratory corridors</article-title>. <source xml:lang="en">Landscape Ecology</source>, <volume>32</volume>(<issue>8</issue>), <fpage>1705</fpage>&#x02013;<lpage>1721</lpage>. <pub-id pub-id-type="doi">10.1007/s10980-017-0537-4</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0011"><mixed-citation publication-type="book" id="ece35916-cit-0011">
+<string-name>
+<surname>Borgerhoff Mulder</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Coppolillo</surname>, <given-names>P.</given-names>
+</string-name> (<year>2005</year>). <source xml:lang="en">Conservation: Linking ecology, economics, and culture</source>. <publisher-loc>Princeton, NJ</publisher-loc>: <publisher-name>Princeton University Press</publisher-name>.</mixed-citation></ref><ref id="ece35916-bib-0012"><mixed-citation publication-type="journal" id="ece35916-cit-0012">
+<string-name>
+<surname>Borner</surname>, <given-names>M.</given-names>
+</string-name> (<year>1985</year>). <article-title>The increasing isolation of Tarangire National Park</article-title>. <source xml:lang="en">Oryx</source>, <volume>19</volume>, <fpage>91</fpage>&#x02013;<lpage>96</lpage>. <pub-id pub-id-type="doi">10.1017/S0030605300019797</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0013"><mixed-citation publication-type="journal" id="ece35916-cit-0013">
+<string-name>
+<surname>Brehony</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Bluwstein</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Lund</surname>, <given-names>J. F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Tyrrell</surname>, <given-names>P.</given-names>
+</string-name> (<year>2018</year>). <article-title>Bringing back complex socio&#x02010;ecological realities to the study of CBNRM impacts: A response to Lee and Bond (2018)</article-title>. <source xml:lang="en">Journal of Mammalogy</source>, <volume>99</volume>(<issue>6</issue>), <fpage>1539</fpage>&#x02013;<lpage>1542</lpage>. <pub-id pub-id-type="doi">10.1093/jmammal/gyy118</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0014"><mixed-citation publication-type="book" id="ece35916-cit-0014">
+<string-name>
+<surname>Buckland</surname>, <given-names>S. T.</given-names>
+</string-name>, <string-name>
+<surname>Anderson</surname>, <given-names>D. R.</given-names>
+</string-name>, <string-name>
+<surname>Burnham</surname>, <given-names>K. P.</given-names>
+</string-name>, <string-name>
+<surname>Laake</surname>, <given-names>J. L.</given-names>
+</string-name>, <string-name>
+<surname>Borchers</surname>, <given-names>D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Thomas</surname>, <given-names>L.</given-names>
+</string-name> (<year>2001</year>). <source xml:lang="en">Introduction to distance sampling. Estimating abundance of biological populations</source>. <publisher-loc>Oxford, UK</publisher-loc>: <publisher-name>Oxford University Press</publisher-name>.</mixed-citation></ref><ref id="ece35916-bib-0015"><mixed-citation publication-type="book" id="ece35916-cit-0015">
+<string-name>
+<surname>Burnham</surname>, <given-names>K. P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Anderson</surname>, <given-names>D. R.</given-names>
+</string-name> (<year>2002</year>). <source xml:lang="en">Model selection and multi&#x02010;model inference: A practical information theoretic approach</source>. <publisher-loc>New York, NY</publisher-loc>: <publisher-name>Springer, US</publisher-name>.</mixed-citation></ref><ref id="ece35916-bib-0016"><mixed-citation publication-type="journal" id="ece35916-cit-0016">
+<string-name>
+<surname>Caro</surname>, <given-names>T. M.</given-names>
+</string-name> (<year>1999</year>). <article-title>Densities of mammals in partially protected areas: The Katavi ecosystem of western Tanzania</article-title>. <source xml:lang="en">Journal of Applied Ecology</source>, <volume>36</volume>(<issue>2</issue>), <fpage>205</fpage>&#x02013;<lpage>217</lpage>. <pub-id pub-id-type="doi">10.1046/j.1365-2664.1999.00392.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0017"><mixed-citation publication-type="journal" id="ece35916-cit-0017">
+<string-name>
+<surname>Caro</surname>, <given-names>T.</given-names>
+</string-name> (<year>2011</year>). <article-title>On the merits and feasibility of wildlife monitoring for conservation: A case study from Katavi National Park, Tanzania</article-title>. <source xml:lang="en">African Journal of Ecology</source>, <volume>49</volume>(<issue>3</issue>), <fpage>320</fpage>&#x02013;<lpage>331</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2028.2011.01268.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0018"><mixed-citation publication-type="journal" id="ece35916-cit-0018">
+<string-name>
+<surname>Caro</surname>, <given-names>T.</given-names>
+</string-name> (<year>2016</year>). <article-title>Guidelines for wildlife monitoring: Savannah herbivores</article-title>. <source xml:lang="en">Tropical Conservation Science</source>, <volume>9</volume>(<issue>1</issue>), <fpage>1</fpage>&#x02013;<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1177/194008291600900102</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0019"><mixed-citation publication-type="journal" id="ece35916-cit-0019">
+<string-name>
+<surname>Caro</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Gardner</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>Stoner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Fitzherbert</surname>, <given-names>E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Davenport</surname>, <given-names>T. R. B.</given-names>
+</string-name> (<year>2009</year>). <article-title>Assessing the effectiveness of protected areas: Paradoxes call for pluralism in evaluating conservation performance</article-title>. <source xml:lang="en">Diversity and Distributions</source>, <volume>15</volume>(<issue>1</issue>), <fpage>178</fpage>&#x02013;<lpage>182</lpage>. <pub-id pub-id-type="doi">10.1111/j.1472-4642.2008.00522.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0020"><mixed-citation publication-type="journal" id="ece35916-cit-0020">
+<string-name>
+<surname>Chang'a</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Souza de</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Muya</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Keyyu</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Mwakatobe</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Malugu</surname>, <given-names>L.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Olson</surname>, <given-names>D.</given-names>
+</string-name> (<year>2016</year>). <article-title>Scaling&#x02010;up the use of chili fences for reducing human&#x02010;elephant conflict across landscapes in Tanzania</article-title>. <source xml:lang="en">Tropical Conservation Science</source>, <volume>9</volume>(<issue>2</issue>), <fpage>921</fpage>&#x02013;<lpage>930</lpage>. <pub-id pub-id-type="doi">10.1177/194008291600900220</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0021"><mixed-citation publication-type="book" id="ece35916-cit-0021">
+<string-name>
+<surname>Colwell</surname>, <given-names>R. K.</given-names>
+</string-name> (<year>2016</year>). <source xml:lang="en">EstimateS: Statistical estimation of species richness and shared species from samples. (User's Guide and application)</source>. <ext-link ext-link-type="uri" xlink:href="http://viceroy.eeb.uconn.edu/estimates/EstimateSPages/EstSUsersGuide/EstimateSUsersGuide.htm">http://viceroy.eeb.uconn.edu/estimates/EstimateSPages/EstSUsersGuide/EstimateSUsersGuide.htm</ext-link>. Accessed December 02, 2019.</mixed-citation></ref><ref id="ece35916-bib-0022"><mixed-citation publication-type="journal" id="ece35916-cit-0022">
+<string-name>
+<surname>Craigie</surname>, <given-names>I. D.</given-names>
+</string-name>, <string-name>
+<surname>Baillie</surname>, <given-names>J. E. M.</given-names>
+</string-name>, <string-name>
+<surname>Balmford</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Carbone</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Collen</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Green</surname>, <given-names>R. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hutton</surname>, <given-names>J. M.</given-names>
+</string-name> (<year>2010</year>). <article-title>Large mammal population declines in Africa's protected areas</article-title>. <source xml:lang="en">Biological Conservation</source>, <volume>143</volume>(<issue>9</issue>), <fpage>2221</fpage>&#x02013;<lpage>2228</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocon.2010.06.007</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0023"><mixed-citation publication-type="journal" id="ece35916-cit-0023">
+<string-name>
+<surname>Cromsigt</surname>, <given-names>J. P. G. M.</given-names>
+</string-name>, <string-name>
+<surname>van Rensburg</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Etienne</surname>, <given-names>R. S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Olff</surname>, <given-names>H.</given-names>
+</string-name> (<year>2009</year>). <article-title>Monitoring large herbivore diversity at different scales: Comparing direct and indirect methods</article-title>. <source xml:lang="en">Biodiversity and Conservation</source>, <volume>18</volume>(<issue>5</issue>), <fpage>1219</fpage>&#x02013;<lpage>1231</lpage>. <pub-id pub-id-type="doi">10.1007/s10531-008-9506-1</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0024"><mixed-citation publication-type="book" id="ece35916-cit-0024">
+<collab collab-type="authors">CWMAC</collab>
+(<year>2019</year>). <source xml:lang="en">Community wildlife management areas consortium</source>. Retrieved from <ext-link ext-link-type="uri" xlink:href="http://www.twma.co.tz/twma/about/category/general_info">http://www.twma.co.tz/twma/about/category/general_info</ext-link>
+</mixed-citation></ref><ref id="ece35916-bib-0025"><mixed-citation publication-type="journal" id="ece35916-cit-0025">
+<string-name>
+<surname>Danielsen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Burgess</surname>, <given-names>N. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Balmford</surname>, <given-names>A.</given-names>
+</string-name> (<year>2005</year>). <article-title>Monitoring matters: Examining the potential of locally&#x02010;based approaches</article-title>. <source xml:lang="en">Biodiversity and Conservation</source>, <volume>14</volume>, <fpage>2507</fpage>&#x02013;<lpage>2542</lpage>. <pub-id pub-id-type="doi">10.1007/s10531-005-8375-0</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0026"><mixed-citation publication-type="journal" id="ece35916-cit-0026">
+<string-name>
+<surname>Ellis</surname>, <given-names>F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Freeman</surname>, <given-names>H. A.</given-names>
+</string-name> (<year>2004</year>). <article-title>Rural livelihoods and poverty reduction strategies in four African countries</article-title>. <source xml:lang="en">The Journal of Development Studies</source>, <volume>40</volume>(<issue>4</issue>), <fpage>1</fpage>&#x02013;<lpage>30</lpage>. <pub-id pub-id-type="doi">10.1080/00220380410001673175</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0027"><mixed-citation publication-type="journal" id="ece35916-cit-0027">
+<string-name>
+<surname>Foley</surname>, <given-names>C. A. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Faust</surname>, <given-names>L. J.</given-names>
+</string-name> (<year>2010</year>). <article-title>Rapid population growth in an elephant <italic>Loxodonta africana</italic> population recovering from poaching in Tarangire National Park, Tanzania</article-title>. <source xml:lang="en">Oryx</source>, <volume>44</volume>(<issue>2</issue>), <fpage>205</fpage>&#x02013;<lpage>212</lpage>. <pub-id pub-id-type="doi">10.1017/s0030605309990706</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0028"><mixed-citation publication-type="journal" id="ece35916-cit-0028">
+<string-name>
+<surname>Gardner</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>Barlow</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Araujo</surname>, <given-names>I. S.</given-names>
+</string-name>, <string-name>
+<surname>&#x000c1;vila&#x02010;Pires</surname>, <given-names>T. C.</given-names>
+</string-name>, <string-name>
+<surname>Bonaldo</surname>, <given-names>A. B.</given-names>
+</string-name>, <string-name>
+<surname>Costa</surname>, <given-names>J. E.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Peres</surname>, <given-names>C. A.</given-names>
+</string-name> (<year>2008</year>). <article-title>The cost&#x02010;effectiveness of biodiversity surveys in tropical forests</article-title>. <source xml:lang="en">Ecology Letters</source>, <volume>11</volume>(<issue>2</issue>), <fpage>139</fpage>&#x02013;<lpage>150</lpage>. <pub-id pub-id-type="doi">10.1111/j.1461-0248.2007.01133.x</pub-id>
+<pub-id pub-id-type="pmid">18031554</pub-id></mixed-citation></ref><ref id="ece35916-bib-0029"><mixed-citation publication-type="journal" id="ece35916-cit-0029">
+<string-name>
+<surname>Geldmann</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Coad</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Barnes</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Craigie</surname>, <given-names>I. D.</given-names>
+</string-name>, <string-name>
+<surname>Hockings</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Knights</surname>, <given-names>K.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Burgess</surname>, <given-names>N. D.</given-names>
+</string-name> (<year>2015</year>). <article-title>Changes in protected area management effectiveness over time: A global analysis</article-title>. <source xml:lang="en">Biological Conservation</source>, <volume>191</volume>, <fpage>692</fpage>&#x02013;<lpage>699</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocon.2015.08.029</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0030"><mixed-citation publication-type="journal" id="ece35916-cit-0030">
+<string-name>
+<surname>Georgiadis</surname>, <given-names>N. J.</given-names>
+</string-name>, <string-name>
+<surname>Olwero</surname>, <given-names>J. G. N.</given-names>
+</string-name>, <string-name>
+<surname>Ojwang'</surname>, <given-names>G.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Roma&#x000f1;ach</surname>, <given-names>S. S.</given-names>
+</string-name> (<year>2007</year>). <article-title>Savanna herbivore dynamics in a livestock&#x02010;dominated landscape: I. Dependence on land use, rainfall, density, and time</article-title>. <source xml:lang="en">Biological Conservation</source>, <volume>137</volume>(<issue>3</issue>), <fpage>461</fpage>&#x02013;<lpage>472</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocon.2007.03.005</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0031"><mixed-citation publication-type="journal" id="ece35916-cit-0031">
+<string-name>
+<surname>Gereta</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Ole Meing'ataki</surname>, <given-names>G. E.</given-names>
+</string-name>, <string-name>
+<surname>Mduma</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Wolanski</surname>, <given-names>E.</given-names>
+</string-name> (<year>2004</year>). <article-title>The role of wetlands in wildlife migration in the Tarangire ecosystem, Tanzania</article-title>. <source xml:lang="en">Wetlands Ecology and Management</source>, <volume>12</volume>, <fpage>285</fpage>&#x02013;<lpage>299</lpage>. <pub-id pub-id-type="doi">10.1007/s11273-005-3499-2</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0032"><mixed-citation publication-type="journal" id="ece35916-cit-0032">
+<string-name>
+<surname>Goldman</surname>, <given-names>M.</given-names>
+</string-name> (<year>2003</year>). <article-title>Partitioned nature, privileged knowledge: Community&#x02010;based conservation in Tanzania</article-title>. <source xml:lang="en">Development and Change</source>, <volume>34</volume>(<issue>5</issue>), <fpage>833</fpage>&#x02013;<lpage>862</lpage>. <pub-id pub-id-type="doi">10.1111/j.1467-7660.2003.00331.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0033"><mixed-citation publication-type="journal" id="ece35916-cit-0033">
+<string-name>
+<surname>Greene</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Bell</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Kioko</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name> (<year>2017</year>). <article-title>Performance of ground&#x02010;based and aerial survey methods for monitoring wildlife assemblages in a conservation area of northern Tanzania</article-title>. <source xml:lang="en">European Journal of Wildlife Research</source>, <volume>63</volume>(<issue>5</issue>), <fpage>77</fpage>
+<pub-id pub-id-type="doi">10.1007/s10344-017-1133-2</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0034"><mixed-citation publication-type="journal" id="ece35916-cit-0034">
+<string-name>
+<surname>Grueber</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Nakagawa</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Laws</surname>, <given-names>R. J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Jamieson</surname>, <given-names>I. G.</given-names>
+</string-name> (<year>2011</year>). <article-title>Multimodel inference in ecology and evolution: Challenges and solutions</article-title>. <source xml:lang="en">Journal of Evolutionary Biology</source>, <volume>24</volume>(<issue>4</issue>), <fpage>699</fpage>&#x02013;<lpage>711</lpage>. <pub-id pub-id-type="doi">10.1111/j.1420-9101.2010.02210.x</pub-id>
+<pub-id pub-id-type="pmid">21272107</pub-id></mixed-citation></ref><ref id="ece35916-bib-0035"><mixed-citation publication-type="journal" id="ece35916-cit-0035">
+<string-name>
+<surname>Hahn</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Mwakatobe</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Konuche</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>de Souza</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Keyyu</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Goss</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Olson</surname>, <given-names>D.</given-names>
+</string-name> (<year>2017</year>). <article-title>Unmanned aerial vehicles mitigate human&#x02013;elephant conflict on the borders of Tanzanian Parks: A case study</article-title>. <source xml:lang="en">Oryx</source>, <volume>51</volume>(<issue>3</issue>), <fpage>513</fpage>&#x02013;<lpage>516</lpage>. <pub-id pub-id-type="doi">10.1017/s0030605316000946</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0036"><mixed-citation publication-type="journal" id="ece35916-cit-0036">
+<string-name>
+<surname>Jachmann</surname>, <given-names>H.</given-names>
+</string-name> (<year>2002</year>). <article-title>Comparison of aerial counts with ground counts for large African herbivores</article-title>. <source xml:lang="en">Journal of Applied Ecology</source>, <volume>39</volume>(<issue>5</issue>), <fpage>841</fpage>&#x02013;<lpage>852</lpage>. <pub-id pub-id-type="doi">10.1046/j.1365-2664.2002.00752.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0037"><mixed-citation publication-type="book" id="ece35916-cit-0037">
+<string-name>
+<surname>Kaswamila</surname>, <given-names>A. L.</given-names>
+</string-name> (<year>2012</year>). <chapter-title>An analysis of the contribution of community wildlife management areas on livelihood in Tanzania</chapter-title> In: <person-group person-group-type="editor"><name name-style="western"><surname>Kaswamila</surname><given-names>A.</given-names></name></person-group> (Ed.), <source xml:lang="en">Sustainable Natural Resource Management</source>. (pp. <fpage>139</fpage>&#x02013;<lpage>154</lpage>). <publisher-name>InTech</publisher-name>. </mixed-citation></ref><ref id="ece35916-bib-0038"><mixed-citation publication-type="journal" id="ece35916-cit-0038">
+<string-name>
+<surname>Kicheleri</surname>, <given-names>R. P.</given-names>
+</string-name>, <string-name>
+<surname>Treue</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Nielsen</surname>, <given-names>M. R.</given-names>
+</string-name>, <string-name>
+<surname>Kajembe</surname>, <given-names>G. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Mombo</surname>, <given-names>F. M.</given-names>
+</string-name> (<year>2018</year>). <article-title>Institutional rhetoric versus local reality: A case study of Burunge Wildlife Management Area, Tanzania</article-title>. <source xml:lang="en">Journal of Environment &#x00026; Development</source>, <volume>8</volume>(<issue>2</issue>), <fpage>1</fpage>&#x02013;<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1177/2158244018774382</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0039"><mixed-citation publication-type="journal" id="ece35916-cit-0039">
+<string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Arndt</surname>, <given-names>Z.</given-names>
+</string-name>, <string-name>
+<surname>Foky</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Gaeth</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Gannett</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Jackson</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Kissui</surname>, <given-names>B.</given-names>
+</string-name> (<year>2019</year>). <article-title>Land use, REDD+ and the status of wildlife populations in Yaeda Valley, northern Tanzania</article-title>. <source xml:lang="en">PLoS ONE</source>, <volume>14</volume>(<issue>4</issue>), <fpage>1</fpage>&#x02013;<lpage>22</lpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0214823</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0040"><mixed-citation publication-type="journal" id="ece35916-cit-0040">
+<string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Hopper</surname>, <given-names>R.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kioko</surname>, <given-names>J.</given-names>
+</string-name> (<year>2016</year>). <article-title>Trends in seasonal population densities of wildlife species in Tarangire National Park, Tanzania</article-title>. <source xml:lang="en">African Journal of Ecology</source>, <volume>54</volume>(<issue>3</issue>), <fpage>383</fpage>&#x02013;<lpage>388</lpage>. <pub-id pub-id-type="doi">10.1111/aje.12286</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0041"><mixed-citation publication-type="journal" id="ece35916-cit-0041">
+<string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Nagar</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Kollmar</surname>, <given-names>C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kioko</surname>, <given-names>J.</given-names>
+</string-name> (<year>2016</year>). <article-title>Wildlife species richness and densities in wildlife corridors of Northern Tanzania</article-title>. <source xml:lang="en">Journal for Nature Conservation</source>, <volume>31</volume>, <fpage>29</fpage>&#x02013;<lpage>37</lpage>. <pub-id pub-id-type="doi">10.1016/j.jnc.2016.02.006</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0042"><mixed-citation publication-type="journal" id="ece35916-cit-0042">
+<string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Rheault</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Miller</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Scheetz</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Enriquez</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Swafford</surname>, <given-names>R.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Prins</surname>, <given-names>H. H. T.</given-names>
+</string-name> (<year>2017</year>). <article-title>Long&#x02010;term population dynamics in a multi&#x02010;species assemblage of large herbivores in East Africa</article-title>. <source xml:lang="en">Ecosphere</source>, <volume>8</volume>(<issue>12</issue>), <elocation-id>e02027</elocation-id>
+<pub-id pub-id-type="doi">10.1002/ecs2.2027</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0043"><mixed-citation publication-type="journal" id="ece35916-cit-0043">
+<string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Wenner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>LaViolet</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Yeh</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kioko</surname>, <given-names>J.</given-names>
+</string-name> (<year>2015</year>). <article-title>From savannah to farmland: Effects of land&#x02010;use on mammal communities in the Tarangire&#x02010;Manyara ecosystem, Tanzania</article-title>. <source xml:lang="en">African Journal of Ecology</source>, <volume>53</volume>(<issue>2</issue>), <fpage>156</fpage>&#x02013;<lpage>166</lpage>. <pub-id pub-id-type="doi">10.1111/aje.12160</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0044"><mixed-citation publication-type="journal" id="ece35916-cit-0044">
+<string-name>
+<surname>Kinnaird</surname>, <given-names>M. F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>O'Brien</surname>, <given-names>T. G.</given-names>
+</string-name> (<year>2012</year>). <article-title>Effects of private&#x02010;land use, livestock management, and human tolerance on diversity, distribution, and abundance of large African mammals</article-title>. <source xml:lang="en">Conservation Biology</source>, <volume>26</volume>(<issue>6</issue>), <fpage>1026</fpage>&#x02013;<lpage>1039</lpage>. <pub-id pub-id-type="doi">10.1111/j.1523-1739.2012.01942.x</pub-id>
+<pub-id pub-id-type="pmid">23082891</pub-id></mixed-citation></ref><ref id="ece35916-bib-0045"><mixed-citation publication-type="book" id="ece35916-cit-0045">
+<string-name>
+<surname>Kiss</surname>, <given-names>A.</given-names>
+</string-name> (Ed.) (<year>1990</year>). <source xml:lang="en">Living with wildlife: Wildlife resource management with local participation in Africa</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>The World Bank</publisher-name>
+<pub-id pub-id-type="doi">10.1016/0006-3207(92)90678-G</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0046"><mixed-citation publication-type="journal" id="ece35916-cit-0046">
+<string-name>
+<surname>Kiss</surname>, <given-names>A.</given-names>
+</string-name> (<year>2004</year>). <article-title>Is community&#x02010;based ecotourism a good use of biodiversity conservation funds?</article-title>
+<source xml:lang="en">Trends in Ecology and Evolution</source>, <volume>19</volume>(<issue>5</issue>), <fpage>232</fpage>&#x02013;<lpage>237</lpage>. <pub-id pub-id-type="doi">10.1016/j.tree.2004.03.010</pub-id>
+<pub-id pub-id-type="pmid">16701261</pub-id></mixed-citation></ref><ref id="ece35916-bib-0047"><mixed-citation publication-type="book" id="ece35916-cit-0047">
+<string-name>
+<surname>Kissui</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Lobora</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Tosi</surname>, <given-names>R.</given-names>
+</string-name> (<year>2019</year>). <source xml:lang="en">Camera trap survey to assess mammalian species diversity in Burunge WMA and Kwakuchinja wildlife corridor</source>.</mixed-citation></ref><ref id="ece35916-bib-0048"><mixed-citation publication-type="journal" id="ece35916-cit-0048">
+<string-name>
+<surname>Kiwango</surname>, <given-names>W. A.</given-names>
+</string-name>, <string-name>
+<surname>Komakech</surname>, <given-names>H. C.</given-names>
+</string-name>, <string-name>
+<surname>Tarimo</surname>, <given-names>T. M. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Martz</surname>, <given-names>L.</given-names>
+</string-name> (<year>2015</year>). <article-title>Decentralized environmental governance: A reflection on its role in shaping wildlife management areas in Tanzania</article-title>. <source xml:lang="en">Tropical Conservation Science</source>, <volume>88</volume>(<issue>44</issue>), <fpage>1080</fpage>&#x02013;<lpage>1097</lpage>. <pub-id pub-id-type="doi">10.1177/194008291500800415</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0049"><mixed-citation publication-type="journal" id="ece35916-cit-0049">
+<string-name>
+<surname>Lamprey</surname>, <given-names>H. F.</given-names>
+</string-name> (<year>1964</year>). <article-title>Estimation of the large mammal densities, biomass and energy exchange in the Tarangire Game Reserve and the Masai Steppe in Tanganyika</article-title>. <source xml:lang="en">East African Wildlife Journal</source>, <volume>2</volume>, <fpage>1</fpage>&#x02013;<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2028.1964.tb00194.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0050"><mixed-citation publication-type="journal" id="ece35916-cit-0050">
+<string-name>
+<surname>Lee</surname>, <given-names>D. E.</given-names>
+</string-name> (<year>2018</year>). <article-title>Evaluating conservation effectiveness in a Tanzanian community wildlife management area</article-title>. <source xml:lang="en">The Journal of Wildlife Management</source>, <volume>82</volume>(<issue>8</issue>), <fpage>1767</fpage>&#x02013;<lpage>1774</lpage>. <pub-id pub-id-type="doi">10.1002/jwmg.21549</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0051"><mixed-citation publication-type="journal" id="ece35916-cit-0051">
+<string-name>
+<surname>Lee</surname>, <given-names>D. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bond</surname>, <given-names>M. L.</given-names>
+</string-name> (<year>2016</year>). <article-title>Precision, accuracy, and costs of survey methods for giraffe <italic>Giraffa camelopardalis</italic>
+</article-title>. <source xml:lang="en">Journal of Mammalogy</source>, <volume>97</volume>(<issue>3</issue>), <fpage>940</fpage>&#x02013;<lpage>948</lpage>. <pub-id pub-id-type="doi">10.1093/jmammal/gyw025</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0052"><mixed-citation publication-type="journal" id="ece35916-cit-0052">
+<string-name>
+<surname>Lee</surname>, <given-names>D. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bond</surname>, <given-names>M. L.</given-names>
+</string-name> (<year>2018</year>). <article-title>Quantifying the ecological success of a community&#x02010;based wildlife conservation area in Tanzania</article-title>. <source xml:lang="en">Journal of Mammalogy</source>, <volume>99</volume>(<issue>2</issue>), <fpage>459</fpage>&#x02013;<lpage>464</lpage>. <pub-id pub-id-type="doi">10.1093/jmammal/gyy014</pub-id>
+<pub-id pub-id-type="pmid">29867255</pub-id></mixed-citation></ref><ref id="ece35916-bib-0053"><mixed-citation publication-type="journal" id="ece35916-cit-0053">
+<string-name>
+<surname>Lem&#x000e9;nager</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>King</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Elliott</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Gibbons</surname>, <given-names>H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>King</surname>, <given-names>A.</given-names>
+</string-name> (<year>2014</year>). <article-title>&#x02018;Greater than the sum of their parts: Exploring the environmental complementarity of state, private and community protected areas</article-title>. <source xml:lang="en">Global Ecology and Conservation</source>, <volume>2</volume>, <fpage>238</fpage>&#x02013;<lpage>247</lpage>. <pub-id pub-id-type="doi">10.1016/j.gecco.2014.09.009</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0054"><mixed-citation publication-type="journal" id="ece35916-cit-0054">
+<string-name>
+<surname>Lindenmayer</surname>, <given-names>D. B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Likens</surname>, <given-names>G. E.</given-names>
+</string-name> (<year>2010</year>). <article-title>The science and application of ecological monitoring</article-title>. <source xml:lang="en">Biological Conservation</source>, <volume>143</volume>(<issue>6</issue>), <fpage>1317</fpage>&#x02013;<lpage>1328</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocon.2010.02.013</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0055"><mixed-citation publication-type="journal" id="ece35916-cit-0055">
+<string-name>
+<surname>Loreau</surname>, <given-names>M.</given-names>
+</string-name> (<year>2009</year>). <article-title>Biodiversity and ecosystem functioning: Recent theoretical advances</article-title>. <source xml:lang="en">Oikos</source>, <volume>91</volume>(<issue>1</issue>), <fpage>3</fpage>&#x02013;<lpage>17</lpage>. <pub-id pub-id-type="doi">10.1034/j.1600-0706.2000.910101.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0056"><mixed-citation publication-type="journal" id="ece35916-cit-0056">
+<string-name>
+<surname>Loreau</surname>, <given-names>M.</given-names>
+</string-name> (<year>2010</year>). <article-title>Linking biodiversity and ecosystems: Towards a unifying ecological theory</article-title>. <source xml:lang="en">Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</source>, <volume>365</volume>(<issue>1537</issue>), <fpage>49</fpage>&#x02013;<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2009.0155</pub-id>
+<pub-id pub-id-type="pmid">20008385</pub-id></mixed-citation></ref><ref id="ece35916-bib-0057"><mixed-citation publication-type="journal" id="ece35916-cit-0057">
+<string-name>
+<surname>Mc New</surname>, <given-names>L. B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Handel</surname>, <given-names>C. M.</given-names>
+</string-name> (<year>2015</year>). <article-title>Evaluating species richness: Biased ecological inference results from spatial heterogeneity in detection probabilities</article-title>. <source xml:lang="en">Ecological Applications</source>, <volume>25</volume>(<issue>6</issue>), <fpage>1669</fpage>&#x02013;<lpage>1680</lpage>. <pub-id pub-id-type="doi">10.1890/14-1248.1</pub-id>
+<pub-id pub-id-type="pmid">26552273</pub-id></mixed-citation></ref><ref id="ece35916-bib-0058"><mixed-citation publication-type="journal" id="ece35916-cit-0058">
+<string-name>
+<surname>Mihoub</surname>, <given-names>J.&#x02010;B.</given-names>
+</string-name>, <string-name>
+<surname>Henle</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Titeux</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Brotons</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Brummitt</surname>, <given-names>N. A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Schmeller</surname>, <given-names>D. S.</given-names>
+</string-name> (<year>2017</year>). <article-title>Setting temporal baselines for biodiversity: The limits of available monitoring data for capturing the full impact of anthropogenic pressures</article-title>. <source xml:lang="en">Scientific Reports</source>, <volume>7</volume>, <fpage>41591</fpage>
+<pub-id pub-id-type="doi">10.1038/srep41591</pub-id>
+<pub-id pub-id-type="pmid">28134310</pub-id></mixed-citation></ref><ref id="ece35916-bib-0059"><mixed-citation publication-type="journal" id="ece35916-cit-0059">
+<string-name>
+<surname>Morrison</surname>, <given-names>T. A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bolger</surname>, <given-names>D. T.</given-names>
+</string-name> (<year>2012</year>). <article-title>Wet season range fidelity in a tropical migratory ungulate</article-title>. <source xml:lang="en">Journal of Animal Ecology</source>, <volume>81</volume>(<issue>3</issue>), <fpage>543</fpage>&#x02013;<lpage>552</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2656.2011.01941.x</pub-id>
+<pub-id pub-id-type="pmid">22256947</pub-id></mixed-citation></ref><ref id="ece35916-bib-0060"><mixed-citation publication-type="journal" id="ece35916-cit-0060">
+<string-name>
+<surname>Morrison</surname>, <given-names>T. A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bolger</surname>, <given-names>D. T.</given-names>
+</string-name> (<year>2014</year>). <article-title>Connectivity and bottlenecks in a migratory wildebeest <italic>Connochaetes taurinus</italic> population</article-title>. <source xml:lang="en">Oryx</source>, <volume>48</volume>, <fpage>1</fpage>&#x02013;<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1017/S0030605313000537</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0061"><mixed-citation publication-type="journal" id="ece35916-cit-0061">
+<string-name>
+<surname>Morrison</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>Link</surname>, <given-names>W. A.</given-names>
+</string-name>, <string-name>
+<surname>Newmark</surname>, <given-names>W. D.</given-names>
+</string-name>, <string-name>
+<surname>Foley</surname>, <given-names>C. A. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bolger</surname>, <given-names>D. T.</given-names>
+</string-name> (<year>2016</year>). <article-title>Tarangire revisited: Consequences of declining connectivity in a tropical ungulate population</article-title>. <source xml:lang="en">Biological Conservation</source>, <volume>197</volume>, <fpage>53</fpage>&#x02013;<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocon.2016.02.034</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0062"><mixed-citation publication-type="journal" id="ece35916-cit-0062">
+<string-name>
+<surname>Moyo</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Ijumba</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lund</surname>, <given-names>J. F.</given-names>
+</string-name> (<year>2016</year>). <article-title>Failure by design? Revisiting Tanzania's flagship wildlife management area Burunge</article-title>. <source xml:lang="en">Conservation and Society</source>, <volume>14</volume>(<issue>3</issue>), <fpage>232</fpage>
+<pub-id pub-id-type="doi">10.4103/0972-4923.191160</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0063"><mixed-citation publication-type="journal" id="ece35916-cit-0063">
+<string-name>
+<surname>Msoffe</surname>, <given-names>F. U.</given-names>
+</string-name>, <string-name>
+<surname>Ogutu</surname>, <given-names>J. O.</given-names>
+</string-name>, <string-name>
+<surname>Kaaya</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Bedelian</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Said</surname>, <given-names>M. Y.</given-names>
+</string-name>, <string-name>
+<surname>Kifugo</surname>, <given-names>S. C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Thirgood</surname>, <given-names>S.</given-names>
+</string-name> (<year>2010</year>). <article-title>Participatory wildlife surveys in communal lands: A case study from Simanjiro, Tanzania</article-title>. <source xml:lang="en">African Journal of Ecology</source>, <volume>48</volume>(<issue>3</issue>), <fpage>727</fpage>&#x02013;<lpage>735</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2028.2009.01170.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0064"><mixed-citation publication-type="journal" id="ece35916-cit-0064">
+<string-name>
+<surname>Msuha</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Carbone</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Pettorelli</surname>, <given-names>N.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Durant</surname>, <given-names>S. M.</given-names>
+</string-name> (<year>2012</year>). <article-title>Conserving biodiversity in a changing world: Land use change and species richness in northern Tanzania</article-title>. <source xml:lang="en">Biodiversity and Conservation</source>, <volume>21</volume>(<issue>11</issue>), <fpage>2747</fpage>&#x02013;<lpage>2759</lpage>. <pub-id pub-id-type="doi">10.1007/s10531-012-0331-1</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0065"><mixed-citation publication-type="journal" id="ece35916-cit-0065">
+<string-name>
+<surname>Naidoo</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Weaver</surname>, <given-names>L. C.</given-names>
+</string-name>, <string-name>
+<surname>Diggle</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<surname>Matongo</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Stuart&#x02010;Hill</surname>, <given-names>G.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Thouless</surname>, <given-names>C.</given-names>
+</string-name> (<year>2016</year>). <article-title>Complementary benefits of tourism and hunting to communal conservancies in Namibia</article-title>. <source xml:lang="en">Conservation Biology</source>, <volume>30</volume>(<issue>3</issue>), <pub-id pub-id-type="doi">10.1111/cobi.12643</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0066"><mixed-citation publication-type="journal" id="ece35916-cit-0066">
+<string-name>
+<surname>Newmark</surname>, <given-names>W. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hough</surname>, <given-names>J. L.</given-names>
+</string-name> (<year>2000</year>). <article-title>Conserving wildlife in Africa: Integrated conservation and development projects and beyond</article-title>. <source xml:lang="en">BioScience</source>, <volume>50</volume>(<issue>7</issue>), <fpage>585</fpage>&#x02013;<lpage>592</lpage>. <pub-id pub-id-type="doi">10.1641/0006-3568(2000)050[0585:CWIAIC]2.0.CO;2</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0067"><mixed-citation publication-type="journal" id="ece35916-cit-0067">
+<string-name>
+<surname>Oedekoven</surname>, <given-names>C. S.</given-names>
+</string-name>, <string-name>
+<surname>Buckland</surname>, <given-names>S. T.</given-names>
+</string-name>, <string-name>
+<surname>Mackenzie</surname>, <given-names>M. L.</given-names>
+</string-name>, <string-name>
+<surname>Evans</surname>, <given-names>K. O.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Burger</surname>, <given-names>L. W.</given-names>
+</string-name> (<year>2013</year>). <article-title>Improving distance sampling: Accounting for covariates and non&#x02010;independency between sampled sites</article-title>. <source xml:lang="en">Journal of Applied Ecology</source>, <volume>50</volume>(<issue>3</issue>), <fpage>786</fpage>&#x02013;<lpage>793</lpage>. <pub-id pub-id-type="doi">10.1111/1365-2664.12065</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0068"><mixed-citation publication-type="journal" id="ece35916-cit-0068">
+<string-name>
+<surname>Ogutu</surname>, <given-names>J. O.</given-names>
+</string-name>, <string-name>
+<surname>Kuloba</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Piepho</surname>, <given-names>H.&#x02010;P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kanga</surname>, <given-names>E.</given-names>
+</string-name> (<year>2017</year>). <article-title>Wildlife population dynamics in human&#x02010; dominated landscapes under community&#x02010;based conservation: The example of Nakuru wildlife conservancy, Kenya</article-title>. <source xml:lang="en">PLoS ONE</source>, <volume>12</volume>(<issue>1</issue>), <elocation-id>e0169730</elocation-id>
+<pub-id pub-id-type="doi">10.1371/journal.pone.0169730</pub-id>
+<pub-id pub-id-type="pmid">28103269</pub-id></mixed-citation></ref><ref id="ece35916-bib-0069"><mixed-citation publication-type="journal" id="ece35916-cit-0069">
+<string-name>
+<surname>Prieto Gonzalez</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>, <given-names>L.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Marques</surname>, <given-names>T. A.</given-names>
+</string-name> (<year>2017</year>). <article-title>Estimation bias under model selection for distance sampling detection functions</article-title>. <source xml:lang="en">Environmental and Ecological Statistics</source>, <volume>24</volume>(<issue>3</issue>), <fpage>399</fpage>&#x02013;<lpage>414</lpage>. <pub-id pub-id-type="doi">10.1007/s10651-017-0376-0</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0070"><mixed-citation publication-type="journal" id="ece35916-cit-0070">
+<string-name>
+<surname>Prins</surname>, <given-names>H. H. T.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Loth</surname>, <given-names>P. E.</given-names>
+</string-name> (<year>1988</year>). <article-title>Rainfall patterns as background to plant phenology in northern Tanzania</article-title>. <source xml:lang="en">Journal of Biogeography</source>, <volume>15</volume>, <fpage>451</fpage>&#x02013;<lpage>463</lpage>. <pub-id pub-id-type="doi">10.2307/2845275</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0071"><mixed-citation publication-type="book" id="ece35916-cit-0071">
+<collab collab-type="authors">R Core Team</collab>
+(<year>2016</year>). <source xml:lang="en">R: A language and environment for statistical computing</source>. <publisher-loc>Vienna, Austria</publisher-loc>: <publisher-name>R Foundation for Statistical Computing</publisher-name> Retrieved from <ext-link ext-link-type="uri" xlink:href="http://www.r-project.org/">http://www.r-project.org/</ext-link>
+</mixed-citation></ref><ref id="ece35916-bib-0072"><mixed-citation publication-type="journal" id="ece35916-cit-0072">
+<string-name>
+<surname>Rannestad</surname>, <given-names>O. T.</given-names>
+</string-name>,<string-name>
+<surname>Danielsen</surname>, <given-names>T.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Stokke</surname>, <given-names>S.</given-names>
+</string-name> (<year>2006</year>). <article-title>Adjacent pastoral areas support higher densities of wild ungulates during the wet season than the Lake Mburo National Park in Uganda</article-title>. <source xml:lang="en">Tropical Ecology</source>, <volume>22</volume>, <fpage>675</fpage>&#x02013;<lpage>683</lpage>. <pub-id pub-id-type="doi">10.1017/SO2664674060003619</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0073"><mixed-citation publication-type="journal" id="ece35916-cit-0073">
+<string-name>
+<surname>Reardon</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Vosti</surname>, <given-names>S. A.</given-names>
+</string-name> (<year>1995</year>). <article-title>Links between rural poverty and the environment in developing countries: Asset categories and investment poverty</article-title>. <source xml:lang="en">World Development</source>, <volume>23</volume>(<issue>9</issue>), <fpage>1495</fpage>&#x02013;<lpage>1506</lpage>. <pub-id pub-id-type="doi">10.1016/0305-750X(95)00061-G</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0074"><mixed-citation publication-type="journal" id="ece35916-cit-0074">
+<string-name>
+<surname>Riggio</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Kija</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Masenga</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Mbwilo</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Van de Perre</surname>, <given-names>F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Caro</surname>, <given-names>T.</given-names>
+</string-name> (<year>2018</year>). <article-title>Sensitivity of Africa's larger mammals to humans</article-title>. <source xml:lang="en">Journal for Nature Conservation</source>, <volume>43</volume>, <fpage>136</fpage>&#x02013;<lpage>145</lpage>. <pub-id pub-id-type="doi">10.1016/j.jnc.2018.04.001</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0075"><mixed-citation publication-type="journal" id="ece35916-cit-0075">
+<string-name>
+<surname>Salerno</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Borgerhoff Mulder</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Grote</surname>, <given-names>M. N.</given-names>
+</string-name>, <string-name>
+<surname>Ghiselli</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Packer</surname>, <given-names>C.</given-names>
+</string-name> (<year>2016</year>). <article-title>Household livelihoods and conflict with wildlife in community&#x02010;based conservation areas across northern Tanzania</article-title>. <source xml:lang="en">Oryx</source>, <volume>50</volume>(<issue>4</issue>), <fpage>702</fpage>&#x02013;<lpage>712</lpage>. <pub-id pub-id-type="doi">10.1017/s0030605315000393</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0076"><mixed-citation publication-type="journal" id="ece35916-cit-0076">
+<string-name>
+<surname>Schmeller</surname>, <given-names>D. S.</given-names>
+</string-name>, <string-name>
+<surname>Weatherdon</surname>, <given-names>L. V.</given-names>
+</string-name>, <string-name>
+<surname>Loyau</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Bondeau</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Brotons</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Brummitt</surname>, <given-names>N.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Regan</surname>, <given-names>E. C.</given-names>
+</string-name> (<year>2018</year>). <article-title>A suite of essential biodiversity variables for detecting critical biodiversity change</article-title>. <source xml:lang="en">Biological Reviews</source>, <volume>93</volume>(<issue>1</issue>), <fpage>55</fpage>&#x02013;<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1111/brv.12332</pub-id>
+<pub-id pub-id-type="pmid">28447398</pub-id></mixed-citation></ref><ref id="ece35916-bib-0077"><mixed-citation publication-type="journal" id="ece35916-cit-0077">
+<string-name>
+<surname>Schuette</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Creel</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Christianson</surname>, <given-names>D.</given-names>
+</string-name> (<year>2016</year>). <article-title>Ungulate distributions in a rangeland with competitors, predators and pastoralists</article-title>. <source xml:lang="en">Journal of Applied Ecology</source>, <volume>53</volume>(<issue>4</issue>), <fpage>1066</fpage>&#x02013;<lpage>1077</lpage>. <pub-id pub-id-type="doi">10.1111/1365-2664.12610</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0078"><mixed-citation publication-type="journal" id="ece35916-cit-0078">
+<string-name>
+<surname>Schuette</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Namukonde</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Becker</surname>, <given-names>M. S.</given-names>
+</string-name>, <string-name>
+<surname>Watson</surname>, <given-names>F. G. R.</given-names>
+</string-name>, <string-name>
+<surname>Creel</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Chifunte</surname>, <given-names>C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Sanguinetti</surname>, <given-names>C.</given-names>
+</string-name> (<year>2018</year>). <article-title>Boots on the ground: In defense of low&#x02010;tech, inexpensive, and robust survey methods for Africa's under&#x02010;funded protected areas</article-title>. <source xml:lang="en">Biodiversity and Conservation</source>, <volume>27</volume>(<issue>9</issue>), <fpage>2173</fpage>&#x02013;<lpage>2191</lpage>. <pub-id pub-id-type="doi">10.1007/s10531-018-1529-7</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0079"><mixed-citation publication-type="book" id="ece35916-cit-0079">
+<string-name>
+<surname>Sinclair</surname>, <given-names>A. R. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Dobson</surname>, <given-names>A.</given-names>
+</string-name> (<year>2015</year>). <chapter-title>Conservation in a human&#x02010;dominated world</chapter-title> In <person-group person-group-type="editor"><name name-style="western"><surname>Sinclair</surname><given-names>A. R. E.</given-names></name></person-group>, <person-group person-group-type="editor"><name name-style="western"><surname>Metzger</surname><given-names>K. L.</given-names></name></person-group>, <person-group person-group-type="editor"><name name-style="western"><surname>Mduma</surname><given-names>S. A. R.</given-names></name></person-group>, &#x00026; <person-group person-group-type="editor"><name name-style="western"><surname>Fryxell</surname><given-names>J. M.</given-names></name></person-group> (Eds.), <source xml:lang="en">Serengeti IV: Sustaining biodiversity in a coupled human&#x02010;natural system</source> (pp. <fpage>1</fpage>&#x02013;<lpage>11</lpage>). <publisher-loc>Chicago, IL</publisher-loc>: <publisher-name>The University of Chicago Press</publisher-name>.</mixed-citation></ref><ref id="ece35916-bib-0080"><mixed-citation publication-type="journal" id="ece35916-cit-0080">
+<string-name>
+<surname>Steinbeiser</surname>, <given-names>C. M.</given-names>
+</string-name>, <string-name>
+<surname>Kioko</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Maresi</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Kaitilia</surname>, <given-names>R.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name> (<year>2019</year>). <article-title>Relative abundance and activity patterns explain method&#x02010;related differences in mammalian species richness estimates</article-title>. <source xml:lang="en">Journal of Mammalogy</source>, <volume>100</volume>(<issue>1</issue>), <fpage>192</fpage>&#x02013;<lpage>201</lpage>. <pub-id pub-id-type="doi">10.1093/jmammal/gyy175</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0081"><mixed-citation publication-type="journal" id="ece35916-cit-0081">
+<string-name>
+<surname>Stem</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Margoluis</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Salafsky</surname>, <given-names>N.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Brown</surname>, <given-names>M.</given-names>
+</string-name> (<year>2005</year>). <article-title>Monitoring and evaluation in conservation: A review of trends and approaches</article-title>. <source xml:lang="en">Conservation Biology</source>, <volume>19</volume>(<issue>2</issue>), <fpage>295</fpage>&#x02013;<lpage>309</lpage>. <pub-id pub-id-type="doi">10.1111/j.1523-1739.2005.00594.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0082"><mixed-citation publication-type="journal" id="ece35916-cit-0082">
+<string-name>
+<surname>Stoner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Caro</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Mduma</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Mlingwa</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Sabuni</surname>, <given-names>G.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Borner</surname>, <given-names>M.</given-names>
+</string-name> (<year>2007</year>). <article-title>Assessment of effectiveness of protection strategies in Tanzania based on a decade of survey data for large herbivores</article-title>. <source xml:lang="en">Conservation Biology</source>, <volume>21</volume>(<issue>3</issue>), <fpage>635</fpage>&#x02013;<lpage>646</lpage>. <pub-id pub-id-type="doi">10.1111/j.1523-1739.2007.00705.x</pub-id>
+<pub-id pub-id-type="pmid">17531042</pub-id></mixed-citation></ref><ref id="ece35916-bib-0083"><mixed-citation publication-type="journal" id="ece35916-cit-0083">
+<string-name>
+<surname>Thomas</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Buckland</surname>, <given-names>S. T.</given-names>
+</string-name>, <string-name>
+<surname>Rexstad</surname>, <given-names>E. A.</given-names>
+</string-name>, <string-name>
+<surname>Laake</surname>, <given-names>J. L.</given-names>
+</string-name>, <string-name>
+<surname>Strindberg</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Hedley</surname>, <given-names>S. L.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Burnham</surname>, <given-names>K. P.</given-names>
+</string-name> (<year>2010</year>). <article-title>Distance software: Design and analysis of distance sampling surveys for estimating population size</article-title>. <source xml:lang="en">Journal of Applied Ecology</source>, <volume>47</volume>(<issue>1</issue>), <fpage>5</fpage>&#x02013;<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2664.2009.01737.x</pub-id>
+<pub-id pub-id-type="pmid">20383262</pub-id></mixed-citation></ref><ref id="ece35916-bib-0084"><mixed-citation publication-type="journal" id="ece35916-cit-0084">
+<string-name>
+<surname>Treydte</surname>, <given-names>A. C.</given-names>
+</string-name>, <string-name>
+<surname>Edwards</surname>, <given-names>P. J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Suter</surname>, <given-names>W.</given-names>
+</string-name> (<year>2005</year>). <article-title>Shifts in native ungulate communities on a former cattle ranch in Tanzania</article-title>. <source xml:lang="en">African Journal of Ecology</source>, <volume>43</volume>(<issue>4</issue>), <fpage>302</fpage>&#x02013;<lpage>311</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2028.2005.00573.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0085"><mixed-citation publication-type="journal" id="ece35916-cit-0085">
+<string-name>
+<surname>Voeten</surname>, <given-names>M. M.</given-names>
+</string-name>, <string-name>
+<surname>van de Vijver</surname>, <given-names>C. A. D. M.</given-names>
+</string-name>, <string-name>
+<surname>Olff</surname>, <given-names>H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>van Langevelde</surname>, <given-names>F.</given-names>
+</string-name> (<year>2009</year>). <article-title>Possible causes of decreasing migratory ungulate populations in an East African savannah after restrictions in their seasonal movements</article-title>. <source xml:lang="en">African Journal of Ecology</source>, <volume>48</volume>, <fpage>169</fpage>&#x02013;<lpage>179</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2028.2009.01098.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0086"><mixed-citation publication-type="journal" id="ece35916-cit-0086">
+<string-name>
+<surname>Waltert</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Meyer</surname>, <given-names>B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kiffner</surname>, <given-names>C.</given-names>
+</string-name> (<year>2009</year>). <article-title>Habitat availability, hunting or poaching: What affects distribution and density of large mammals in western Tanzanian woodlands?</article-title>
+<source xml:lang="en">African Journal of Ecology</source>, <volume>47</volume>(<issue>4</issue>), <fpage>737</fpage>&#x02013;<lpage>746</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2028.2009.01080.x</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0087"><mixed-citation publication-type="journal" id="ece35916-cit-0087">
+<string-name>
+<surname>Watson</surname>, <given-names>J. E. M.</given-names>
+</string-name>, <string-name>
+<surname>Dudley</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Segan</surname>, <given-names>D. B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hockings</surname>, <given-names>M.</given-names>
+</string-name> (<year>2014</year>). <article-title>The performance and potential of protected areas</article-title>. <source xml:lang="en">Nature</source>, <volume>515</volume>(<issue>7525</issue>), <fpage>67</fpage>&#x02013;<lpage>73</lpage>. <pub-id pub-id-type="doi">10.1038/nature13947</pub-id>
+<pub-id pub-id-type="pmid">25373676</pub-id></mixed-citation></ref><ref id="ece35916-bib-0088"><mixed-citation publication-type="journal" id="ece35916-cit-0088">
+<string-name>
+<surname>Western</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Russell</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Cuthil</surname>, <given-names>I.</given-names>
+</string-name> (<year>2009</year>). <article-title>The status of wildlife in protected areas compared to non&#x02010;protected areas of Kenya</article-title>. <source xml:lang="en">PLoS ONE</source>, <volume>4</volume>(<issue>7</issue>), <elocation-id>e6140</elocation-id>
+<pub-id pub-id-type="doi">10.1371/journal.pone.0006140</pub-id>
+<pub-id pub-id-type="pmid">19584912</pub-id></mixed-citation></ref><ref id="ece35916-bib-0089"><mixed-citation publication-type="book" id="ece35916-cit-0089">
+<string-name>
+<surname>Wright</surname>, <given-names>R. M.</given-names>
+</string-name> (<year>1995</year>). <chapter-title>Alleviating poverty and conserving wildlife in Africa: An &#x0201c;imperfect&#x0201d; model from Zambia</chapter-title> In <person-group person-group-type="editor"><name name-style="western"><surname>Puntenney</surname><given-names>P. J.</given-names></name></person-group> (Ed.), <source xml:lang="en">Global Ecosystems: Creating options through anthropological perspectives</source> (pp. <fpage>19</fpage>&#x02013;<lpage>32</lpage>). <publisher-loc>New Jersey</publisher-loc>: <publisher-name>Wiley&#x02010;Blackwell</publisher-name>
+<pub-id pub-id-type="doi">10.1002/9781444307115.ch2</pub-id>
+</mixed-citation></ref><ref id="ece35916-bib-0090"><mixed-citation publication-type="journal" id="ece35916-cit-0090">
+<string-name>
+<surname>Yoccoz</surname>, <given-names>N. G.</given-names>
+</string-name>, <string-name>
+<surname>Nichols</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Boulinier</surname>, <given-names>T.</given-names>
+</string-name> (<year>2001</year>). <article-title>Monitoring of biological diversity in space and time</article-title>. <source xml:lang="en">Trends in Ecology and Evolution</source>, <volume>16</volume>, <fpage>446</fpage>&#x02013;<lpage>453</lpage>. <pub-id pub-id-type="doi">10.1016/S0169-5347(01)02205-4</pub-id>
+</mixed-citation></ref></ref-list></back></article>

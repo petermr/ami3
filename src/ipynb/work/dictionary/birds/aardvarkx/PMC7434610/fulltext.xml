@@ -1,0 +1,953 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.2 20190208//EN" "JATS-archivearticle1-mathml3.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.1 20151215//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName JATS-archive-oasis-article1-mathml3.dtd?><?SourceDTD.Version 1.1?><?ConverterInfo.XSLTName jpoasis-nisons2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="iso-abbrev">Mol Genet Genomic Med</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2324-9269</journal-id><journal-id journal-id-type="publisher-id">MGG3</journal-id><journal-title-group><journal-title>Molecular Genetics &#x00026; Genomic Medicine</journal-title></journal-title-group><issn pub-type="epub">2324-9269</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">7434610</article-id><article-id pub-id-type="doi">10.1002/mgg3.1307</article-id><article-id pub-id-type="publisher-id">MGG31307</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>Dental malformations associated with biallelic <italic>MMP20</italic> mutations</article-title><alt-title alt-title-type="left-running-head">WANG et al.</alt-title></title-group><contrib-group><contrib id="mgg31307-cr-0001" contrib-type="author" corresp="yes"><name><surname>Wang</surname><given-names>Shih&#x02010;Kai</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="mgg31307-aff-0002">
+<sup>2</sup>
+</xref><address><email>shihkaiw@ntu.edu.tw</email><email>jsimmer@umich.edu</email></address></contrib><contrib id="mgg31307-cr-0002" contrib-type="author"><name><surname>Zhang</surname><given-names>Hong</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg31307-cr-0003" contrib-type="author"><name><surname>Chavez</surname><given-names>Michael B.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg31307-cr-0004" contrib-type="author"><name><surname>Hu</surname><given-names>Yuanyuan</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="mgg31307-cr-0005" contrib-type="author"><name><surname>Seymen</surname><given-names>Figen</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="mgg31307-cr-0006" contrib-type="author"><name><surname>Koruyucu</surname><given-names>Mine</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="mgg31307-cr-0007" contrib-type="author"><name><surname>Kasimoglu</surname><given-names>Yelda</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="mgg31307-cr-0008" contrib-type="author"><name><surname>Colvin</surname><given-names>Connor D.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg31307-cr-0009" contrib-type="author"><name><surname>Kolli</surname><given-names>Tamara N.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg31307-cr-0010" contrib-type="author"><name><surname>Tan</surname><given-names>Michelle H.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg31307-cr-0011" contrib-type="author"><name><surname>Wang</surname><given-names>Yin&#x02010;Lin</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="mgg31307-cr-0012" contrib-type="author"><name><surname>Lu</surname><given-names>Pei&#x02010;Ying</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="mgg31307-cr-0013" contrib-type="author"><name><surname>Kim</surname><given-names>Jung&#x02010;Wook</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0005">
+<sup>5</sup>
+</xref><xref ref-type="aff" rid="mgg31307-aff-0006">
+<sup>6</sup>
+</xref></contrib><contrib id="mgg31307-cr-0014" contrib-type="author"><name><surname>Foster</surname><given-names>Brian L.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg31307-cr-0015" contrib-type="author"><name><surname>Bartlett</surname><given-names>John D.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="mgg31307-cr-0016" contrib-type="author" corresp="yes"><name><surname>Simmer</surname><given-names>James P.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7192-6105</contrib-id><xref ref-type="aff" rid="mgg31307-aff-0001">
+<sup>1</sup>
+</xref><address><email>jsimmer@umich.edu</email></address></contrib><contrib id="mgg31307-cr-0017" contrib-type="author"><name><surname>Hu</surname><given-names>Jan C.&#x02010;C.</given-names></name><xref ref-type="aff" rid="mgg31307-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="mgg31307-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Biologic and Materials Sciences</named-content>
+<institution>University of Michigan School of Dentistry</institution>
+<city>Ann Arbor</city>
+<named-content content-type="country-part">MI</named-content>
+<country country="US">USA</country>
+</aff><aff id="mgg31307-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Department of Pediatric Dentistry</named-content>
+<institution>National Taiwan University School of Dentistry</institution>
+<city>Taipei City</city>
+<country country="TW">Taiwan R.O.C.</country>
+</aff><aff id="mgg31307-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Division of Biosciences</named-content>
+<named-content content-type="organisation-division">College of Dentistry</named-content>
+<institution>The Ohio State University</institution>
+<city>Columbus</city>
+<named-content content-type="country-part">OH</named-content>
+<country country="US">USA</country>
+</aff><aff id="mgg31307-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Pedodontics</named-content>
+<institution>Istanbul University Faculty of Dentistry</institution>
+<city>Istanbul</city>
+<country country="TR">Turkey</country>
+</aff><aff id="mgg31307-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">Department of Pediatric Dentistry &#x00026; Dental Research Institute</named-content>
+<named-content content-type="organisation-division">School of Dentistry</named-content>
+<institution>Seoul National University</institution>
+<city>Seoul</city>
+<country country="KR">Republic of Korea</country>
+</aff><aff id="mgg31307-aff-0006">
+<label><sup>6</sup></label>
+<named-content content-type="organisation-division">Department of Molecular Genetics &#x00026; Dental Research Institute</named-content>
+<named-content content-type="organisation-division">School of Dentistry</named-content>
+<institution>Seoul National University</institution>
+<city>Seoul</city>
+<country country="KR">Republic of Korea</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+Shih&#x02010;Kai Wang, Department of Pediatric Dentistry, National Taiwan University School of Dentistry, No.1, Changde St., Jhongjheng District, Taipei City 100, Taiwan R.O.C.<break/>
+Email: <email>shihkaiw@ntu.edu.tw</email><break/>
+James P. Simmer, Department of Biologic and Materials Sciences, University of Michigan School of Dentistry, 1210 Eisenhower Pl, Ann Arbor, MI 48108, USA.<break/>
+Email: <email>jsimmer@umich.edu</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>03</day><month>6</month><year>2020</year></pub-date><pub-date pub-type="collection"><month>8</month><year>2020</year></pub-date><volume>8</volume><issue>8</issue><issue-id pub-id-type="doi">10.1002/mgg3.v8.8</issue-id><elocation-id>e1307</elocation-id><history><date date-type="received"><day>18</day><month>2</month><year>2020</year></date><date date-type="rev-recd"><day>07</day><month>4</month><year>2020</year></date><date date-type="accepted"><day>08</day><month>4</month><year>2020</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> Copyright &#x000a9; 2020 John Wiley & Sons Ltd. <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2020 The Authors. Molecular Genetics &#x00026; Genomic Medicine published by Wiley Periodicals LLC</copyright-statement><license license-type="creativeCommonsBy-nc"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:MGG3-8-e1307.pdf"/><abstract id="mgg31307-abs-0001"><title>Abstract</title><sec id="mgg31307-sec-0001"><title>Background</title><p>Matrix metallopeptidase 20 (MMP20) is an evolutionarily conserved protease that is essential for processing enamel matrix proteins during dental enamel formation. <italic>MMP20</italic> mutations cause human autosomal recessive pigmented hypomaturation&#x02010;type amelogenesis imperfecta (AI2A2; OMIM #612529). MMP20 is expressed in both odontoblasts and ameloblasts, but its function during dentinogenesis is unclear.</p></sec><sec id="mgg31307-sec-0002"><title>Methods</title><p>We characterized 10 AI kindreds with <italic>MMP20</italic> defects, characterized human third molars and/or <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mice by histology, Backscattered Scanning Electron Microscopy (bSEM), &#x000b5;CT, and nanohardness testing.</p></sec><sec id="mgg31307-sec-0003"><title>Results</title><p>We identified six novel <italic>MMP20</italic> disease&#x02010;causing mutations. Four pathogenic variants were associated with exons encoding the MMP20 hemopexin&#x02010;like (PEX) domain, suggesting a necessary regulatory function. Mutant human enamel hardness was softest (13% of normal) midway between the dentinoenamel junction (DEJ) and the enamel surface. bSEM and &#x000b5;CT analyses of the third molars revealed reduced mineral density in both enamel and dentin. Dentin close to the DEJ showed an average hardness number 62%&#x02013;69% of control. Characterization of <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mouse dentin revealed a significant reduction in dentin thickness and mineral density and a transient increase in predentin thickness, indicating disturbances in dentin matrix secretion and mineralization.</p></sec><sec id="mgg31307-sec-0004"><title>Conclusion</title><p>These results expand the spectrum of <italic>MMP20</italic> disease&#x02010;causing mutations and provide the first evidence for MMP20 function during dentin formation.</p></sec></abstract><abstract abstract-type="graphical" id="mgg31307-abs-0002"><p>Matrix metallopeptidase 20 (MMP20) is specifically expressed by ameloblasts during enamel formation and by odontoblasts during dentin formation. Here we characterized 10 kindreds with MMP20 defects and identified 6 novel disease&#x02010;causing mutations. Hardness testing of third molars from a patient with biallelic MMP20 p.Ala304Gly defects showed enamel that was only 48&#x02010;61% as hard as controls, with the softest enamel midway between the dentinoenamel junction (DEJ) and the enamel surface. Human mutant dentin close to the DEJ showed average hardness numbers 62&#x02010;69% of control, indicating a hardness defect in the superficial dentin. Dentin further away from the DEJ showed normal hardness.<boxed-text position="anchor" content-type="graphic" id="mgg31307-blkfxd-0001" orientation="portrait"><graphic xlink:href="MGG3-8-e1307-g007.jpg" position="anchor" id="nlm-graphic-1" orientation="portrait"/></boxed-text>
+</p></abstract><kwd-group><kwd id="mgg31307-kwd-0001">amelogenesis imperfecta</kwd><kwd id="mgg31307-kwd-0002">enamel hardness</kwd><kwd id="mgg31307-kwd-0003">dentin defects</kwd><kwd id="mgg31307-kwd-0004">hypomineralization</kwd><kwd id="mgg31307-kwd-0005"><italic>MMP20</italic> mutations</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source><institution-wrap><institution>National Taiwan University Hospital </institution><institution-id institution-id-type="open-funder-registry">10.13039/501100005762</institution-id></institution-wrap></funding-source><award-id>107&#x02010;N3966</award-id></award-group><award-group id="funding-0002"><funding-source><institution-wrap><institution>Ministry of Science and Technology, Taiwan </institution><institution-id institution-id-type="open-funder-registry">10.13039/501100004663</institution-id></institution-wrap></funding-source><award-id>108&#x02010;2314&#x02010;B&#x02010;002&#x02010;038&#x02010;MY3</award-id></award-group><award-group id="funding-0003"><funding-source><institution-wrap><institution>National Institute of Dental and Craniofacial Research </institution><institution-id institution-id-type="open-funder-registry">10.13039/100000072</institution-id></institution-wrap></funding-source><award-id>DE015846 (Jan Hu)</award-id><award-id>DE027675 (James Simmer)</award-id><award-id>DE028297 (John Bartlett)</award-id><award-id>R03DE028411 (Brian Foster)</award-id></award-group><award-group id="funding-0004"><funding-source><institution-wrap><institution>National Research Foundation of Korea </institution><institution-id institution-id-type="open-funder-registry">10.13039/501100003725</institution-id></institution-wrap></funding-source><award-id>NRF&#x02010;2017R1A2A2A05069281</award-id><award-id>NRF&#x02010;2018R1A5A2024418</award-id></award-group></funding-group><counts><fig-count count="6"/><table-count count="0"/><page-count count="16"/><word-count count="9821"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>August 2020</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:5.8.6 mode:remove_FC converted:18.08.2020</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="mgg31307-cit-1001">
+<string-name>
+<surname>Wang</surname>
+<given-names>S&#x02010;K</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Chavez</surname>
+<given-names>MB</given-names>
+</string-name>, et al. <article-title>Dental malformations associated with biallelic <italic>MMP20</italic> mutations</article-title>. <source xml:lang="en">Mol Genet Genomic Med</source>. <year>2020</year>;<volume>8</volume>:<elocation-id>e1307</elocation-id>
+<pub-id pub-id-type="doi">10.1002/mgg3.1307</pub-id>
+</mixed-citation>
+</p><fn-group id="mgg31307-ntgp-0001"><fn fn-type="equal" id="mgg31307-note-0001"><p>Hong Zhang is cofirst author.</p></fn><fn id="mgg31307-note-0002"><p>All authors are eligible for author listing.</p></fn></fn-group></notes></front><body id="mgg31307-body-0001"><sec id="mgg31307-sec-0005"><label>1</label><title>INTRODUCTION</title><p>MMP20 (matrix metallopeptidase 20; OMIM *604629) (Bartlett, Simmer, Xue, Margolis, &#x00026; Moreno,&#x000a0;<xref rid="mgg31307-bib-0005" ref-type="ref">1996</xref>) and KLK4 (kallikrein&#x02010;related peptidase 4; OMIM *603767) (Simmer et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0048" ref-type="ref">1998</xref>) are two major proteinases secreted by ameloblasts, and are expressed at sequential stages of enamel formation (Hu et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0021" ref-type="ref">2002</xref>; Lu et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0032" ref-type="ref">2008</xref>). MMP20 is expressed at the onset of amelogenesis (Begue&#x02010;Kirn, Krebsbach, Bartlett, &#x00026; Butler,&#x000a0;<xref rid="mgg31307-bib-0007" ref-type="ref">1998</xref>) and is responsible for processing enamel matrix proteins (EMPs) (Iwata et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0023" ref-type="ref">2007</xref>; Ryu et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0042" ref-type="ref">1999</xref>) throughout the secretory stage when the enamel ribbons elongate and the enamel layer as a whole reaches its final dimensions. <italic>Mmp20</italic> null mice exhibit a severe phenotype of hypoplastic enamel (Bartlett, Skobe, Nanci, &#x00026; Smith,&#x000a0;<xref rid="mgg31307-bib-0006" ref-type="ref">2011</xref>; Caterina et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0010" ref-type="ref">2002</xref>; Hu et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0022" ref-type="ref">2016</xref>) and accumulate uncleaved EMPs in developing molars (Smith et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0054" ref-type="ref">2011</xref>; Yamakoshi et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0062" ref-type="ref">2011</xref>) indicating an indispensable role for MMP20 during enamel formation. In humans, <italic>MMP20</italic> mutations cause autosomal recessive amelogenesis imperfecta (AI), in which the dental enamel of affected individuals is soft, and usually thin (Gasse et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0019" ref-type="ref">2013</xref>; Gasse et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0020" ref-type="ref">2017</xref>; Kim, Simmer, et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0026" ref-type="ref">2005</xref>; Kim et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0027" ref-type="ref">2017</xref>; Lee et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0028" ref-type="ref">2010</xref>; Ozdemir et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0036" ref-type="ref">2005</xref>; Papagerakis et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0037" ref-type="ref">2008</xref>; Prasad et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0040" ref-type="ref">2016</xref>; Seymen et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0046" ref-type="ref">2015</xref>; Wang et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0056" ref-type="ref">2013</xref>; Wright et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0057" ref-type="ref">2011</xref>). OMIM (Online Mendelian Inheritance in Man) classifies the phenotype as pigmented hypomaturation type 2 (AI2A2; OMIM #612529).</p><p>The human <italic>MMP20</italic> gene is located on chromosome 11q22.2 in a cluster of MMP genes that apparently arose by tandem gene duplication (Llano et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0031" ref-type="ref">1997</xref>). Accordingly, MMP20 has a multidomain protein structure similar to that of other MMPs: a signal peptide (Met<sup>1</sup>&#x02010;Ala<sup>22</sup>), a putative peptidoglycan&#x02010;binding domain (Arg<sup>35</sup>&#x02010;Ile<sup>95</sup>), a catalytic domain (Lys<sup>116</sup>&#x02010;Gly<sup>271</sup>), and a hemopexin&#x02010;like domain (Cys<sup>296</sup>&#x02010;Cys<sup>483</sup>) (Bartlett &#x00026; Simmer,&#x000a0;<xref rid="mgg31307-bib-0004" ref-type="ref">1999</xref>; Ryu et al., <xref rid="mgg31307-bib-0043" ref-type="ref">2000</xref>). The putative peptidoglycan&#x02010;binding domain (pfam01471) is comprised of three &#x003b1;&#x02010;helices and is N&#x02010;terminal to the catalytic domain of most MMPs, although its contribution to the functions of MMPs is unclear. The Zn&#x02010;dependent catalytic metalloproteinase domain (cd04278) of MMP20 contains the consensus motif (HEFGHALGLAH) that is characteristic of MMP active sites and critical for their proteolytic activity. MMP20 binds TIMP&#x02010;2 (metallopeptidase inhibitor 2) in a concentration&#x02010;dependent manor, which permits quantification of MMP20 by active site titration (Llano et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0031" ref-type="ref">1997</xref>). Separated from the catalytic domain by a hinge region, the hemopexin&#x02010;like domain of MMP20 is flanked by two cysteines connected by a disulfide bridge. While this domain in other MMPs has been shown to serve a variety of functions through protein&#x02013;protein interactions, the function of the MMP20 hemopexin&#x02010;like domain remains largely unknown.</p><p>To date, 13 human <italic>MMP20</italic> pathogenic variants have been reported in patients with AI (Table&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S1</xref>), including a rare (minor allele frequency of 0.03% in non&#x02010;Finnish European population) synonymous mutation (c.103A&#x000a0;&#x0003e;&#x000a0;C; p.Arg35Arg) (Gasse et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0020" ref-type="ref">2017</xref>). Among the other 12 AI&#x02010;causing mutations, 5 are nonsense, frameshift, or splice&#x02010;site mutations, which would presumably generate a mutant transcript undergoing nonsense&#x02010;mediated decay and cause a null <italic>MMP20</italic> allele. Two pathogenic missense variants (p.His204Arg and p.His226Gln) in the catalytic domain replace 2 histidines critical for stabilization of the catalytic and structural zinc ions, respectively, which significantly affects the proteolytic activity of MMP20. The other three pathogenic missense variants (p.Tyr108Cys, p.Ala304Thr, and p.Glu352Lys), while located outside of the catalytic domain, all change a highly conserved amino acid and presumably disturb MMP20&#x02019;s function during enamel formation.</p><p>It has been demonstrated that <italic>Mmp20</italic> is expressed not only in ameloblasts but also odontoblasts during mouse tooth development (Caterina et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0011" ref-type="ref">2000</xref>; Simmer et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0050" ref-type="ref">2004</xref>). MMP20 was also detected in odontoblasts of adult human teeth (Sulkala, Larmas, Sorsa, Salo, &#x00026; Tjaderhane,&#x000a0;<xref rid="mgg31307-bib-0055" ref-type="ref">2002</xref>). However, a function for MMP20 in odontoblasts and dentin formation has been doubted as dentin abnormalities have not been reported in patients with <italic>MMP20</italic>&#x02010;associated AI, whereas the enamel malformations are readily detectable clinically and radiographically. Correspondingly, <italic>Mmp20</italic> null mice exhibited no apparent dentin malformations except for delayed mineralization of mantle dentin (a 5&#x000a0;~&#x000a0;20&#x02010;&#x003bc;m&#x02010;thick layer of dentin beneath DEJ) (Beniash, Skobe, &#x00026; Bartlett,&#x000a0;<xref rid="mgg31307-bib-0008" ref-type="ref">2006</xref>) and a tendency to fracture at the dentinoenamel junction (DEJ) (Simmer, Richardson, Hu, Smith, &#x00026; Hu, <xref rid="mgg31307-bib-0049" ref-type="ref">2012</xref>). Moreover, it has been shown that <italic>Mmp20</italic> has been pseudogenized in the sloth and aardvark, enamel&#x02010;less mammals that still make dentin (Meredith, Gatesy, Cheng, &#x00026; Springer,&#x000a0;<xref rid="mgg31307-bib-0034" ref-type="ref">2011</xref>), suggesting a lack of selection pressure for MMP20 in dentin formation (see discussion session).</p><p>In this study, we identified 10 families with autosomal recessive hypomaturation or hypoplastic&#x02010;hypomaturation AI, all of which carried biallelic <italic>MMP20</italic> mutations. Among the identified mutations, six were not previously reported to be disease causing (Table&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S1</xref>). By characterizing the enamel and dentin from extracted third molars of a patient, we identified significant hardness defects and altered microstructure in both enamel and dentin of affected teeth. Correspondingly, we also found that the matrix secretion and mineralization of dentin in <italic>Mmp20</italic> null mice were defective or delayed. These findings indicated a necessary role for MMP20 in not only enamel but also in dentin formation.</p></sec><sec sec-type="materials-and-methods" id="mgg31307-sec-0006"><label>2</label><title>MATERIALS AND METHODS</title><sec id="mgg31307-sec-0007"><label>2.1</label><title>Enrollment of human subjects</title><p>The study protocol and subject consent forms were reviewed and approved by the Ethics Committee at the University of Istanbul, the Institution Review Boards at the University of Michigan, and National Taiwan University Hospital. Study explanation, pedigree construction, subject enrollment, clinical examinations, and collection of blood or saliva samples were completed under the proper consenting procedure specified in the study protocols and according to the Declaration of Helsinki and US Federal Policy for the Protection of Human Subjects.</p></sec><sec id="mgg31307-sec-0008"><label>2.2</label><title>C57BL/6 mice</title><p>Animal research studies were approved by the Institutional Animal Care and Use Committee at the University of Michigan and The Ohio State University and were in compliance with guiding principles (Institute for Laboratory Animal Research, <xref rid="mgg31307-bib-0002" ref-type="ref">2011</xref>). Mice genetically ablated for <italic>Mmp20</italic> (<italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic>) have been described previously (Caterina et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0010" ref-type="ref">2002</xref>). <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> and wild&#x02010;type (WT) mice (4&#x02013;6 mice per genotype per age) were sacrificed at postnatal day (dpn) 14, 30, and 60. C57BL/6 mice were used for in situ hybridization to assay <italic>Mmp20</italic> mRNA expression at 8 and 14 dpn.</p></sec><sec id="mgg31307-sec-0009"><label>2.3</label><title>Whole&#x02010;exome sequencing and bioinformatics analysis</title><p>Either the nonstimulated saliva sample of 2&#x000a0;ml or a peripheral blood sample of 5&#x000a0;ml was collected from each participant. Each sample was inspected, coded, then a small aliquot was removed for genomic DNA isolation using the Saliva DNA Isolation kit (Norgen Biotek Corp; Ontario, CN). Genomic DNA quality was assessed by 1.5% agarose gel electrophoresis and quantity was determined using Qubit<sup>TM</sup> Fluorometer (ThermoFisher Scientific, Waltham, MA). Samples from the parents and proband of each family were selected for whole&#x02010;exome sequencing (WES), while DNA samples from the other family members were used for segregation analyses. DNA samples, following the initial quality control, were submitted to Johns Hopkins Center for Inherited Disease Research (CIDR, Baltimore, MD) for WES. Each DNA sample, at the concentration of 50&#x000a0;ng/&#x000b5;l, volume of 50 &#x000b5;l, and total amount of 2.5&#x000a0;&#x000b5;g, was plated onto a 96 well plate. A manifest file with coded sample information and the plated samples were shipped to the CIDR overnight on dry ice. Each sample was genotyped using an Illumina QC Array. Once sample aliquoting errors were ruled out, and performance potential and genotypes were determined to be appropriate then samples were subjected to WES procedure. Exome capture was completed using the Agilent SureSelect Human All Exon Enrichment System. Paired&#x02010;end sequencing was generated using the Illumina HiSeq 2500 (CIDR, Baltimore, MD). Sequencing reads were aligned to the 1000 genomes phase 2 (GRCh37) human genome reference using BWA version 0.7.8 (Li &#x00026; Durbin,&#x000a0;<xref rid="mgg31307-bib-0030" ref-type="ref">2010</xref>). Duplicate reads were flagged with Picard version 1.109. Local realignment around indels and base call quality score recalibration was performed using the Genome Analysis Toolkit (GATK) (McKenna et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0033" ref-type="ref">2010</xref>) version v3.3&#x02010;0. GATK's reference confidence model workflow was used to perform joint sample genotyping to generate a multisample VCF file. Variant filtering was done using the Variant Quality Score Recalibration (VQSR) method (DePristo et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0015" ref-type="ref">2011</xref>). Multisample VCF files from each family containing variants that were polymorphic among the family members were extracted from the multisample VCF file derived from the specific cohort with similar phenotypes. All variants in individual VCF files were annotated using VarSeq (Golden Helix, Bozeman, MT) against a variety of data sources including gene annotation, function prediction, and frequency information (a cutoff value of 0.01 for the minor allele frequency). Following the comparisons between the affected and unaffected individuals, a list of prioritized variants was then subjected to segregation analysis. Sequence variant designations are based on the gene reference sequence NG_012151.1; mRNA reference sequence NM_004771.3 (A of the ATG translation initiation codon is designated as nucleotide 1) and protein reference sequence NP_004762.2. All designations were checked using LUMC Mutalyzer 2.0.32 released on 9 December 2019 (<ext-link ext-link-type="uri" xlink:href="https://mutalyzer.nl/">https://mutalyzer.nl/</ext-link>). MAF, minor allele frequency; gnomAD, Genome Aggregation Database.<xref ref-type="fn" rid="mgg31307-note-1001">
+<sup>1</sup>
+</xref>
+</p></sec><sec id="mgg31307-sec-0010"><label>2.4</label><title>Segregation analyses using Sanger sequencing</title><p>The prioritized DNA sequence variations and their segregation within each family were confirmed by Sanger sequencing. The PCR primers were designed to bracket the candidate variant and the reactions were conducted following established protocols (Kim, Seymen, et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0025" ref-type="ref">2005</xref>). PCR primers and amplification conditions are provided in Table&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S2</xref>.</p></sec><sec id="mgg31307-sec-0011"><label>2.5</label><title>Nanohardness testing</title><p>The two maxillary third molars (#1 and #16) extracted from the proband (III:1) of Family 6 and a control maxillary third molar from an unrelated healthy individual were dehydrated with an acetone series (30%, 50%, 70%, 80%, 90%, and 100%), and embedded in epoxy. The embedded molars were cut sagittally (in a mesial&#x02010;distal direction), re&#x02010;embedded in Castolite AC in 25&#x000a0;mm SeriForm molds (Struers Inc, Westlake, OH), and successively polished with 400, 800, and 1,200 grit waterproof silicon carbide papers, followed by polishing with 1&#x02010;micron diamond paste. Nanohardness testing was performed using a Hysitron 950 Triboindenter using the nanoDMA transducer and Berkovich probe, and the nano&#x02010;indentations were analyzed using Triboscan v9 software (University of Michigan Center for Materials Characterization). Indentations were made at 12 equivalent positions relative to the DEJ (or dentin surface) for each molar (A&#x02010;E in enamel; F&#x02010;L in dentin). Nanohardness was measured in both enamel and dentin at several locations on the molars: on enamel and dentin under mesial and distal cusp tips and above cementoenamel junction (CEJ), and on dentin only at a position 1&#x000a0;mm apical to the CEJ. To make the hardness data comparable from different locations, indents were grouped according to their distance from the DEJ or specified tooth surfaces. For enamel: A, 100&#x000a0;&#x000b5;m from enamel surface; B, midway between enamel surface and DEJ; C, 100&#x000a0;&#x000b5;m above DEJ; D, 50&#x000a0;&#x000b5;m above DEJ; and E, 10&#x000a0;&#x000b5;m above DEJ. For dentin: F, 10&#x000a0;&#x000b5;m below DEJ; G, 30&#x000a0;&#x000b5;m below DEJ; H, 50&#x000a0;&#x000b5;m below DEJ; I, 100&#x000a0;&#x000b5;m below DEJ on dentin; J, 500&#x000a0;&#x000b5;m below DEJ; K, midway between DEJ and pulp chamber; and L 100&#x000a0;&#x000b5;m above pulp chamber. The number of indents at each position for the <italic>MMP20</italic>
+<sup>+/+</sup> control was A6, B6, C7, D8, E8, F10, G9, H10, I10, J10, K22, and L22. The combined number of indents at each position for the <italic>MMP20</italic> mutant (<italic>MMP20<sup>mut</sup></italic>) molars was A4, B6, C10, D10, E10, F14, G14, H16, I14, J14, K40, and L39. The indents were converted into nanohardness (GPa) (Cheng et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0012" ref-type="ref">2017</xref>). The nanohardness data were analyzed using <italic>t</italic> test to compare the nanohardness measurements at equivalent positions on <italic>MMP20</italic>
+<sup>+/+</sup> and <italic>MMP20<sup>mut</sup></italic> molars, and between the two <italic>MMP20<sup>mut</sup></italic> molars.</p></sec><sec id="mgg31307-sec-0012"><label>2.6</label><title>Backscattered scanning electron microscopy</title><p>Following nanohardness testing, the polished human molar sagittal sections were examined by backscattered scanning electron microscopy (bSEM), as described previously (Smith et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0054" ref-type="ref">2011</xref>) using a Joel JSM&#x02010;7800FLV scanning electron microscope (Peabody, Massachusetts) in the backscatter mode at 20&#x000a0;kV at the University of Michigan Electron Microbeam Analysis Lab (Ann Arbor, MI). The samples were acetone&#x02010;dehydrated, air&#x02010;dried, mounted on metallic stubs using conductive carbon cement, and carbon coated to increase conductivity. The images were collected at outer enamel, middle enamel, inner enamel, as well as in superficial and deeper dentin. Identical beam conditions and brightness/contrast were used for all images. Differences in degree of mineralization (grayscale) were highlighted using ImageJ (v. 1.50i) analyses in which successive grayscale ranges were assigned different colors (0&#x02013;66 black; 67&#x02013;85 white; 86&#x02013;123 blue; 124&#x02013;148 orange; and 149&#x02013;255 red).</p></sec><sec id="mgg31307-sec-0013"><label>2.7</label><title>Microcomputed tomography</title><p>Human teeth were scanned in a &#x000b5;CT 50 scanner (Scanco Medical, Bassersdorf, Switzerland) at 70&#x000a0;kVp, 76&#x000a0;&#x000b5;A, 0.5 Al filter, 900&#x000a0;ms integration time, and 10&#x000a0;&#x000b5;m voxel dimension. Mouse hemi&#x02010;mandibles were scanned under the same parameters except for 6&#x000a0;&#x000b5;m voxel dimension. DICOM files were created from raw data, exported, and calibrated to five known densities of hydroxyapatite (mg/cm<sup>3</sup> HA), as previously described (Shin, Chavez, Ikeda, Foster, &#x00026; Bartlett,&#x000a0;<xref rid="mgg31307-bib-0047" ref-type="ref">2018</xref>). Reconstructed images were analyzed using AnalyzePro (version 1.0; AnalyzeDirect, Overland Park, KS). For both human teeth and mouse first mandibular molars, enamel was segmented semi&#x02010;automatically (with manual corrections where necessary) at 1,600&#x000a0;mg/cm<sup>3</sup> HA, and dentin/cementum was segmented at 650&#x000a0;mg/cm<sup>3 </sup>HA, as previously described (Shin et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0047" ref-type="ref">2018</xref>). Average dentin thickness was determined for regions of interest (ROIs) by adapting algorithms defined for cortical bone analysis (Bouxsein et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0009" ref-type="ref">2010</xref>). The crown dentin ROI initiated 60&#x000a0;&#x000b5;m coronal to the CEJ and extended 150&#x000a0;&#x000b5;m coronally, while the root dentin ROI initiated 300&#x000a0;&#x000b5;m apical to the CEJ and extended 150&#x000a0;&#x000b5;m apically. Mouse crown dentin thickness was measured in the 150&#x000a0;&#x000b5;m of dentin coronal to the CEJ, and root dentin thickness was measured in the central 150&#x000a0;&#x000b5;m of the mesial root.</p></sec><sec id="mgg31307-sec-0014"><label>2.8</label><title>Histology</title><p>Mouse hemi&#x02010;mandibles used for histology were fixed in Bouin's solution for 24&#x000a0;hr, decalcified in acetic acid/formalin/sodium chloride solution, and paraffin embedded for 6&#x02010;&#x000b5;m coronal sectioning (Foster,&#x000a0;<xref rid="mgg31307-bib-0016" ref-type="ref">2012</xref>). Deparaffinized tissue sections were stained with hematoxylin and eosin (H&#x00026;E). Histomorphometry was performed on H&#x00026;E&#x02010;stained coronal sections chosen from the center of the first molar mesial root. Measurements were performed at the crown&#x02010;root inflection point at the CEJ and included dentin and predentin thickness, with predentin/dentin ratio calculated from primary measurements. In situ hybridization (ISH) for <italic>Mmp20</italic> was visualized with fast red (Advanced Cell Diagnostics, Newark, CA). For statistical analyses, mean&#x000a0;&#x000b1;&#x000a0;standard deviation was shown in graphs. Comparisons of WT and <italic>Mmp20<sup>&#x02010;/&#x02010;</sup></italic> mouse tissues were performed using an independent samples <italic>t</italic> test.</p></sec></sec><sec sec-type="results" id="mgg31307-sec-0015"><label>3</label><title>RESULTS</title><sec id="mgg31307-sec-0016"><label>3.1</label><title>Novel MMP20 mutations causing amelogenesis imperfecta</title><p>We identified 10 families with autosomal recessive amelogenesis imperfecta (AI) caused by mutations in <italic>MMP20</italic>. Families 1 through 5 were from Turkey, Family 6 was from Taiwan, and Families 7&#x02013;10 were from the USA. Among the 11 <italic>MMP20</italic> mutations identified, 6 have never been reported previously, including 2 splice site, 1 frameshift, and 3 missense mutations (Tables&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S1</xref> and <xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S3</xref>). In all cases <italic>MMP20</italic> mutations segregated with the enamel phenotype, that is, all recruited members of the 10 AI families with biallelic <italic>MMP20</italic> mutations exhibited an obvious AI phenotype, whereas none of the recruited family members with either a wild&#x02010;type or a single&#x02010;mutant <italic>MMP20</italic> allele presented with enamel malformations. All of the <italic>MMP20</italic> defects were rare and predicted to be damaging.</p></sec><sec id="mgg31307-sec-0017"><label>3.2</label><title>Families 1 through 5 from Turkey</title><p>In Family 1, the proband and his affected sister inherited a transition defect in the splice acceptor site at the 3&#x02032; end of Intron 9 (c.1352&#x02010;1G&#x000a0;&#x0003e;&#x000a0;A) in both <italic>MMP20</italic> alleles (Figure&#x000a0;<xref rid="mgg31307-fig-0001" ref-type="fig">1</xref>). This novel mutation is rare, and not listed in any of the five databases screened: the 1000 Genomes (1000G) database (1000 Genomes Project Consortium et al., 2015), Exome Aggregation Consortium (ExAC), Genome Aggregation Database (GnomAD) (Lek et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0029" ref-type="ref">2016</xref>), Trans&#x02010;Omics for Precision Medicine (TOPMed), and the Grand Opportunity Exome Sequencing Project (GO&#x02010;ESP). One possible effect of this change would be to shift the Intron 9 splice&#x02010;acceptor junction by a single nucleotide into Exon 10, deleting the G at the start of Exon 10, and shifting the reading frame of the last coding exon (p.Gly451Alafs*25). This shift would replace the MMP20 C&#x02010;terminal 33 amino acids (GYIYFFSGPKTYKYDTEKEDVVSVVKSSSWIGC) with 24 extraneous (ATFTSFQ DQKHTSMTQRRKMWLVW) ones, significantly altering the hemopexin, or noncatalytic domain of MMP20. Another novel, homozygous splice&#x02010;site mutation was identified at the 3&#x02032; end of Intron 6 (c.954&#x02010;2A&#x000a0;&#x0003e;&#x000a0;G) of <italic>MMP20</italic> in the proband of Family 2 (Figure&#x000a0;<xref rid="mgg31307-fig-0002" ref-type="fig">2</xref>). This mutation is rare and has not been identified in the databases mentioned above. A transversion mutation (rs140213840) changing the same nucleotide (c.954&#x02010;2A&#x000a0;&#x0003e;&#x000a0;T) was previously reported to cause AI (Gasse et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0020" ref-type="ref">2017</xref>; Kim, Simmer, et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0026" ref-type="ref">2005</xref>; Prasad et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0040" ref-type="ref">2016</xref>; Wright et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0057" ref-type="ref">2011</xref>). This splice site mutation was also identified in Families 7, 8, and 10 in this study.</p><fig fig-type="FIGURE" xml:lang="en" id="mgg31307-fig-0001" orientation="portrait" position="float"><label>FIGURE 1</label><caption><p>Family 1 (Turkey). (a) Pedigree showing an autosomal recessive pattern of inheritance with four persons recruited (asterisks). Two were affected. (b) Both affected individuals (III:1 and III:2) were homozygous for an <italic>MMP20</italic> splice junction mutation at the 3&#x02032; end of Intron 9 (NG_012151.1: g.52906G&#x000a0;&#x0003e;&#x000a0;A; NM_004771.3: c.1352&#x02010;1G&#x000a0;&#x0003e;&#x000a0;A)<sup>1</sup>. Both parents (II:4 and II:5) were heterozygous for this mutation. (c) The proband (III:1) at age 11 showed thin (hypoplastic), brown&#x02010;stained hypomineralized enamel that was susceptible to rapid attrition and did not contrast well with dentin on radiographs. (d) The proband's younger sister (III:2) at age 6 was in the mixed dentition stage. The primary teeth showed significant attrition and the newly erupted permanent first molars had a rough, irregular crown form. The thinness of the enamel was apparent on the newly erupted mandibular central incisors</p></caption><graphic id="nlm-graphic-3" xlink:href="MGG3-8-e1307-g001"/></fig><fig fig-type="FIGURE" xml:lang="en" id="mgg31307-fig-0002" orientation="portrait" position="float"><label>FIGURE 2</label><caption><p>Family 2 (Turkey). (a) Pedigree showing an autosomal recessive pattern of inheritance with no reported consanguinity. Three persons were recruited (asterisks); one was affected. (b) The proband (III:1) was homozygous for an <italic>MMP20</italic> splice junction mutation at the 3&#x02032; end of Intron 6 (NG_012151.1: g.35574A&#x000a0;&#x0003e;&#x000a0;G; NM_004771.3: c.954&#x02010;2A&#x000a0;&#x0003e;&#x000a0;G. p.?)<sup>1</sup>. Both parents (II:3 and II:4) were heterozygous for this mutation. (c) The dentition of the proband (III:1; at age 10) showed light brown staining. (d) The panoramic radiograph of the proband showed stainless&#x02010;steel crowns covering the four first molars that had undergone significant attrition. Enamel thickness and contrast with dentin was variable</p></caption><graphic id="nlm-graphic-5" xlink:href="MGG3-8-e1307-g002"/></fig><p>In Family 3, only the proband had AI (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S1</xref>). WES analyses identified a previously reported biallelic <italic>MMP20</italic> mutation (c.910G&#x000a0;&#x0003e;&#x000a0;A/p.Ala304Thr) in the coding region for the hemopexin domain (Gasse et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0020" ref-type="ref">2017</xref>; Lee et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0028" ref-type="ref">2010</xref>). The four affected individuals in Families 4 and 5 (Figures&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S2</xref> and <xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S3</xref>) shared a previously reported biallelic <italic>MMP20</italic> defect (c.678T&#x000a0;&#x0003e;&#x000a0;A/p.His226Gln) in Exon 5 (Kim et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0027" ref-type="ref">2017</xref>; Ozdemir et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0036" ref-type="ref">2005</xref>).</p></sec><sec id="mgg31307-sec-0018"><label>3.3</label><title>Family 6 from Taiwan</title><p>Three members of this Taiwanese family were recruited: two unaffected parents with one affected offspring (Figure&#x000a0;<xref rid="mgg31307-fig-0003" ref-type="fig">3</xref>). The proband (III:1, age 17) harbored novel defects in each of her two <italic>MMP20</italic> alleles: c.911C&#x000a0;&#x0003e;&#x000a0;G/p.Ala304Gly with a SIFT score of 0.002, a PolyPhen&#x02010;2 score of 1, and an allele frequency (ExAC) of T&#x000a0;=&#x000a0;0.00001 (1/121310), and c.1046C&#x000a0;&#x0003e;&#x000a0;T/p.Ala349Val with a SIFT score&#x000a0;=&#x000a0;0 and a PolyPhen&#x02010;2 score&#x000a0;=&#x000a0;1. Besides the obvious enamel hypomaturation defects, the proband's dentition showed crowding and an anterior open bite. The maxillary third molars, already showing signs of dental caries, were extracted and later used for nanohardness testing, bSEM, and &#x000b5;CT analyses.</p><fig fig-type="FIGURE" xml:lang="en" id="mgg31307-fig-0003" orientation="portrait" position="float"><label>FIGURE 3</label><caption><p>Family 6 (Taiwan). (a) Pedigree showing an autosomal recessive pattern of inheritance with no consanguinity. Three individuals were recruited (asterisks); one was affected. (b) The proband (III:1) was heterozygous for two <italic>MMP20</italic> missense mutations, with a novel Exon 6 mutation (NG_012151.1: g.23756C&#x000a0;&#x0003e;&#x000a0;G; NM_004771.3: c.911C&#x000a0;&#x0003e;&#x000a0;G, p.Ala304Gly)<sup>1</sup> from her mother (II:5) and a novel Exon 7 mutation (g.35668C&#x000a0;&#x0003e;&#x000a0;T; c.1046C&#x000a0;&#x0003e;&#x000a0;T, p.Ala349Val)<sup>1</sup> from her father (II:4). (c) The proband (III:1) presented with an anterior open bite and attrition of her posterior occlusal enamel. (d) The panoramic radiograph showed variable enamel thickness and contrast with dentin among teeth</p></caption><graphic id="nlm-graphic-7" xlink:href="MGG3-8-e1307-g003"/></fig></sec><sec id="mgg31307-sec-0019"><label>3.4</label><title>Families 7 through 10 from the USA</title><p>Four members from each of Families 7 and 8 were recruited: two unaffected parents with one affected and one unaffected offspring. The proband of Family 7 harbored a novel <italic>MMP20</italic> defect in Exon 1 (c.42_49dup/p.Leu17Serfs*4; the duplicated sequence is CATGGCTT) combined with a previously reported splice junction mutation (c. 954&#x02010;2A&#x000a0;&#x0003e;&#x000a0;T) at the 3&#x02032; end of Intron 6 (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S4</xref>a&#x02013;c). The proband of Family 8 was homozygous for this same splice junction mutation (c. 954&#x02010;2A&#x000a0;&#x0003e;&#x000a0;T) (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S4</xref>d,e). The proband of Family 9 was a compound heterozygote, with both mutations being reported previously (Gasse et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0019" ref-type="ref">2013</xref>, <xref rid="mgg31307-bib-0020" ref-type="ref">2017</xref>; Kim et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0027" ref-type="ref">2017</xref>) (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S5</xref>). The first <italic>MMP20</italic> mutation (rs61730849) was in Exon 3 (c.389C&#x000a0;&#x0003e;&#x000a0;T/p.Thr130Ile). The second <italic>MMP20</italic> mutation (rs569599769) was in Exon 4 (c.566T&#x000a0;&#x0003e;&#x000a0;C/p.Leu189Pro). The proband of Family 10 also harbored compound <italic>MMP20</italic> mutations (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S6</xref>). The first <italic>MMP20</italic> mutation (rs778890652) was in Exon 5 (c.808T&#x000a0;&#x0003e;&#x000a0;C/p.Tyr270His) and is novel. This defect had a SIFT score of 0 and a PolyPhen&#x02010;2 score of 1, and is rare: its GnomAD frequency is 0.00011 (28/246242), and ExAC frequency is 0.00019 (23/121408). The second <italic>MMP20</italic> mutation (rs140213840) was at the 3&#x02019; end of Intron 6 (c.954&#x02010;2A&#x000a0;&#x0003e;&#x000a0;T), was also found in Families 7 and 8 and was previously reported (Kim, Simmer, et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0026" ref-type="ref">2005</xref>; Wright et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0057" ref-type="ref">2011</xref>).</p></sec><sec id="mgg31307-sec-0020"><label>3.5</label><title>Enamel and dentin defects in third molars from human MMP20<sup>mut</sup> patient</title><p>Two extracted maxillary third molars from Family 6 proband along with one from an unrelated healthy individual (control) were subjected to nanohardness testing. During sample preparation, the sectioned teeth were inspected under a dissection microscope (Figure&#x000a0;<xref rid="mgg31307-fig-0004" ref-type="fig">4</xref>). A surprising finding was that the <italic>MMP20<sup>mut</sup></italic> molars exhibited two very distinct layers of enamel. The outer enamel layer was of uniform thickness overall, but became abruptly thinner near the fissures, and looked normal except for a slight loss of transparency. The inner enamel, which originated at the DEJ, was thicker than the outer layer, light brown in color, and obviously hypomineralized. The <italic>MMP20<sup>mut</sup></italic> dentin looked generally comparable to the control except a layer, yellow to light brown in appearance, right beneath DEJ. Both <italic>MMP20<sup>mut</sup></italic> molars showed obvious signs of dental caries: chalky white at the enamel surface, brown to dark brown in the deeper enamel, and in one of the molars, dark brown stain in dentin that spread along the DEJ. A few cracks were evident in the enamel and dentin that did not seem to be the result of processing. Hardness testing was performed staying clear of these areas, under the assumption that exposure to the oral cavity had not affected smooth, intact enamel or the dentin beneath it or in the roots.</p><fig fig-type="FIGURE" xml:lang="en" id="mgg31307-fig-0004" orientation="portrait" position="float"><label>FIGURE 4</label><caption><p>Nanohardness of Enamel and Dentin. Top: Sagittally cut third molars, one from an unaffected (<italic>MMP20</italic>
+<sup>+/+</sup>) individual and two from the proband in Family 6 (<italic>MMP20<sup>mut</sup></italic>), were subjected to nanohardness testing. Indents (blue dots) in enamel (a&#x02013;e) were made at five positions (a: 100&#x000a0;&#x000b5;m from the enamel surface; b: midway between the DEJ and enamel surface; c: 100&#x000a0;&#x000b5;m from the DEJ; d: 50&#x000a0;&#x000b5;m from DEJ; and e: 10&#x000a0;&#x000b5;m from DEJ), at two locations: under the cusp tip and near the cervical margin. The <italic>MMP20<sup>mut</sup></italic> enamel varied in hardness at different locations, but was significantly softer at all locations. The enamel was hardest (Point A, 55% of normal) nearest the enamel surface, and softest (Point B, 13% of normal) half&#x02010;way between the DEJ and the enamel surface. Indents in dentin (f&#x02010;l) were made at seven positions (Point F, 10&#x000a0;&#x000b5;m from DEJ; g, 30&#x000a0;&#x000b5;m from DEJ; h, 50&#x000a0;&#x000b5;m from DEJ; i, 100&#x000a0;&#x000b5;m from DEJ; j, 500&#x000a0;&#x000b5;m from DEJ; k, midway between DEJ and pulp surface; and l, 100&#x000a0;&#x000b5;m away from the pulp surface)</p></caption><graphic id="nlm-graphic-9" xlink:href="MGG3-8-e1307-g004"/></fig><p>Nanohardness testing revealed that the <italic>MMP20<sup>mut</sup></italic> surface enamel, despite its near normal appearance, was only about 55% that of normal. At points midway between the enamel surface and DEJ (in the brownish inner layer), the enamel was very soft. Its hardness value was only 13% of normal and lower than all other measurements, including those for <italic>MMP20<sup>mut</sup></italic> dentin. The hardness of enamel nearest the DEJ was 61% and dropped to 48% of normal only 100&#x000a0;&#x000b5;m above the DEJ. Nanohardness testing also revealed differences between the <italic>MMP20</italic>
+<sup>+/+</sup> and <italic>MMP20<sup>mut</sup></italic> dentin within 500&#x000a0;&#x000b5;m of the dentin surface. The hardness values for <italic>MMP20<sup>mut</sup></italic> dentin ranged between 62% and 69% of normal, whereas the hardness values for <italic>MMP20<sup>mut</sup></italic> circumpulpal dentin and dentin midway between the pulp surface and the DEJ were normal. Previously, Knoop hardness testing found that the enamel microhardness of <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> mouse incisors was ~63% of normal (Bartlett, Beniash, Lee, &#x00026; Smith,&#x000a0;<xref rid="mgg31307-bib-0003" ref-type="ref">2004</xref>).</p><p>We analyzed the human <italic>MMP20</italic>
+<sup>+/+</sup> and <italic>MMP20<sup>mut</sup></italic> molars with bSEM to observe and highlight changes in mineral density (Figures&#x000a0;<xref rid="mgg31307-fig-0005" ref-type="fig">5</xref>; Figures&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S7&#x02013;S9</xref>). On the grayscale images, the <italic>MMP20</italic>
+<sup>+/+</sup> tooth enamel showed a homogeneous layer of uniformly high mineral density from the DEJ to the surface, while the <italic>MMP20<sup>mut</sup></italic> tooth enamel exhibited a lower mineral density in the inner and middle enamel that highlighted the enamel rods, indicating a decrease in mineralization of interrod enamel or along the periphery of the rods. A decrease in enamel mineral density with depth was recently observed in human third molars surgically extracted from a patient with AI caused by a dominant <italic>LAMB3</italic> splice junction mutation (Smith et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0053" ref-type="ref">2019</xref>). The enamel layer was more highly mineralized than dentin and the <italic>MMP20<sup>mut</sup></italic> enamel beneath a relatively hard surface layer was severely hypomineralized. Differences in degree of mineralization were highlighted by ImageJ analyses (where successive grayscale ranges were assigned different colors) that clearly illustrated the reduced mineralization of the middle and inner enamel and supported the nanohardness findings.</p><fig fig-type="FIGURE" xml:lang="en" id="mgg31307-fig-0005" orientation="portrait" position="float"><label>FIGURE 5</label><caption><p>Backscattered SEM Analysis of human molars. The same sagittally cut third molars from an unaffected (<italic>MMP20</italic>
+<sup>+/+</sup>) individual, and the proband of Family 6 (<italic>MMP20<sup>mut</sup></italic>) that were prepared for nanohardness testing were imaged by bSEM (Top) and analyzed using IMAGEJ (Bottom). Mineral in a sample increases the whiteness of the bSEM image. The grayscale images at the top show the enamel layer is more highly mineralized than dentin and that the <italic>MMP20<sup>mut</sup></italic> enamel below a relatively hard surface layer is severely hypomineralized. Differences in the degree of mineralization were highlighted by ImageJ analysis where grayscale ranges were assigned different colors: 0&#x02013;66 black; 67&#x02013;85 white; 86&#x02013;123 blue; 124&#x02013;148 orange; and 149&#x02013;255 red. The <italic>MMP20</italic>
+<sup>+/+</sup> enamel is red throughout, whereas the <italic>MMP20<sup>mut</sup></italic> enamel shows large areas of orange sometimes mixed with blue. The <italic>MMP20<sup>mut</sup></italic> dentin shows some increase in whiteness relative to the <italic>MMP20</italic>
+<sup>+/+</sup> dentin, but the difference in apparent mineral density is not striking</p></caption><graphic id="nlm-graphic-11" xlink:href="MGG3-8-e1307-g005"/></fig><p>With regard to dentin, a general pattern of blue with a hint of orange was observed on the pseudocolor images of the control tooth (Figure&#x000a0;<xref rid="mgg31307-fig-0005" ref-type="fig">5</xref>). However, the mutant dentin, while having the similar blue pattern, showed a nonhomogeneous texture and carried a hue of whiteness, suggesting a slight reduction in mineral density. Noticeably, an uneven but apparent layer of white (67&#x02013;85 grayscale) right underneath DEJ was found in mutant dentin but not the control, indicating a more prominent hypomineralization in the outer layer of primary dentin. The high&#x02010;magnification images revealed that the control and mutant dentin had generally comparable structure and level of mineralization (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S10</xref>). Furthermore, the mutant dentin seemed to have a thinner layer of peritubular dentin compared to the control, which was readily seen when a longitudinal cut of dentinal tubules was made.</p><p>High&#x02010;resolution &#x000b5;CT analysis was employed to further confirm the findings in <italic>MMP20<sup>mut</sup></italic> teeth. Heat maps for mineral density showed severely reduced mineral density in the inner and middle enamel layers, while dentin appeared generally comparable between control and mutant teeth (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S11</xref>a,b). Quantitative analysis of bulk tissue properties revealed on average a more than 10% decrease in mineral density in enamel of <italic>MMP20<sup>mut</sup></italic> teeth, while dentin mineral density was decreased to a lesser extent (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S11</xref>c&#x02010;f).</p></sec><sec id="mgg31307-sec-0021"><label>3.6</label><title>Dentin defects in <italic>Mmp20</italic> null mice</title><p>To further discern potential important functions of MMP20 in dentin formation, we characterized dentin phenotypes in <italic>Mmp20</italic> null (<italic>Mmp20<sup>&#x02010;/&#x02010;</sup></italic>) mice (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6</xref>; Figures&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S12&#x02013;S14</xref>). We first reevaluated <italic>Mmp20</italic> mRNA expression during mouse tooth development. At 8 dpn, <italic>Mmp20</italic> was strongly detected in ameloblasts and odontoblasts of mandibular incisors (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S12</xref>a). At 14 dpn, <italic>Mmp20</italic> expression appeared strong in third molar ameloblasts (secretory stage), but decreased in ameloblasts (maturation stage) of first and second molars. In contrast, odontoblasts consistently showed a strong expression in both crown and root (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S12</xref>b&#x02013;e). Microcomputed tomography (MicroCT) analyses of mandibular first molars (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6a&#x02013;d</xref>; Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S13</xref>a&#x02013;d) revealed a 10%&#x02013;20% decrease in crown dentin thickness in <italic>Mmp20<sup>&#x02010;/&#x02010;</sup></italic> teeth at both 30 and 60 dpn compared to the WTs (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6e</xref>). The mineral density of crown dentin was reduced by 5% in <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars at 30 dpn, with no density differences at 60 dpn (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6f</xref>). <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> root dentin also showed reduced dentin thickness (30%) and mineral density (5%) compared to that of WTs at 30 dpn. However, no differences were found at 60 dpn (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6g,h</xref>). The whole tooth, enamel, and dentin/cementum of <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> teeth all exhibited a decreased tissue volume measured by threshold segmentation of microCT images (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S13</xref>e&#x02010;g). The volume of dental pulp was significantly higher in <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars at 30 dpn compared to the WTs but slightly lower in those of 60 dpn (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S13</xref>h).</p><fig fig-type="FIGURE" xml:lang="en" id="mgg31307-fig-0006" orientation="portrait" position="float"><label>FIGURE 6</label><caption><p>MicroCT and histological analyses of mouse mandibular first molars. (a&#x02010;d) microCT images and heat maps of mineral density of WT (a,b) and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> (c,d) molars from 30 dpn mice. (M1, mandibular first molar; AB, alveolar bone; EN, enamel; DE, dentin) (e&#x02010;h) measurements of thickness and mineral density of crown (e,f) and root (g,h) dentin. Dentin thickness was measured in the crown dentin 150&#x000a0;&#x000b5;m above the cementoenamel junction (CEJ) and in the mesial root dentin 150&#x000a0;&#x000b5;m below CEJ (*<italic>p</italic>&#x000a0;&#x0003c;&#x000a0;.05; **<italic>p</italic>&#x000a0;&#x0003c;&#x000a0;.01; ***<italic>p</italic>&#x000a0;&#x0003c;&#x000a0;.01&#x02013;0.001; ****<italic>p</italic>&#x000a0;&#x0003c;&#x000a0;.0001). (i&#x02010;l) Histology of WT (i,j) and <italic>Mmp20</italic>
+<sup>&#x02212;/&#x02212;</sup> (k,l) molars. (PD, predentin; PDL, periodontal ligament). (m&#x02010;o) Histomorphometry of dentin structures. Thicknesses of dentin (m) and predentin (n) were measured at the level of CEJ, and the predentin/dentin ratio (o) was calculated from primary measurements</p></caption><graphic id="nlm-graphic-13" xlink:href="MGG3-8-e1307-g006"/></fig><p>The dentin formation of <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> teeth was also evaluated by histology using mice of 14, 30, and 60 dpn. While odontoblasts and dentin of <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars exhibited a generally normal organization and structure without apparent cell pathology or dysmorphology, the dentin appeared thin compared to that of WTs (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6i,k</xref>). Dentin thickness was significantly reduced in <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars at all ages, particularly at 30 dpn (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6m</xref>). Noticeably, the thickness of predentin in <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars was increased at 30 dpn (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6j,l</xref>), resulting in a significant increase in predentin/dentin ratio at this age (Figure&#x000a0;<xref rid="mgg31307-fig-0006" ref-type="fig">6n,o</xref>). By 60 dpn, <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars showed evidence of reactionary dentin formation, with some pulp horns infilled with new dentin (Figure&#x000a0;<xref rid="mgg31307-sup-0001" ref-type="supplementary-material">S14</xref>). The predentin thickness and predentin/dentin ratio both became comparable between <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> and WT molars.</p></sec></sec><sec sec-type="discussion" id="mgg31307-sec-0022"><label>4</label><title>DISCUSSION</title><p>Active MMP20 can be isolated from developing pig enamel (Yamada et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0058" ref-type="ref">2003</xref>) and has been used to study its substrate specificity (Yamakoshi, Hu, Fukae, Yamakoshi, &#x00026; Simmer,&#x000a0;<xref rid="mgg31307-bib-0059" ref-type="ref">2006</xref>; Yamakoshi, Simmer, Bartlett, Karakida, &#x00026; Oida,&#x000a0;<xref rid="mgg31307-bib-0063" ref-type="ref">2013</xref>). The protein migrates as a doublet at 46 and 41&#x000a0;kDa on Western blots and casein zymograms and shows greatest activity for digesting amelogenin at pH 7.2 with 10&#x000a0;mM Ca<sup>2+</sup> (Fukae et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0017" ref-type="ref">1998</xref>). Including the 6 novel pathogenic variants we reported here, there is a total of 18 disease&#x02010;causing <italic>MMP20</italic> mutations currently identified. These mutations are evenly distributed throughout the 10 coding exons of the gene, excepting Exon 8 and Exon 9. Frameshift, nonsense, missense, and splice&#x02010;site mutations have all been reported. This high heterogeneity of disease&#x02010;causing mutations in <italic>MMP20</italic> demonstrates a loss&#x02010;of&#x02010;function mechanism of its pathogenesis. Noticeably, 7 pathogenic variants are located about or within the last 5 exons, which encode the hemopexin&#x02010;like domain (PEX) of MMP20, suggesting an indispensable role of this protein domain in enamel formation. While PEX has been considered to be a protein&#x02013;protein interaction module in MMPs, its definite functions are not fully understood. Also, the sequence homology of this domain among different MMPs is considerably low, suggesting it has variable functions in individual MMPs (Alford et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0001" ref-type="ref">2017</xref>). It has been demonstrated that PEX determines the substrate specificity of collagenolytic MMPs (Cui, Hu, &#x00026; Khalil,&#x000a0;<xref rid="mgg31307-bib-0014" ref-type="ref">2017</xref>; Patterson, Atkinson, Knauper, &#x00026; Murphy,&#x000a0;<xref rid="mgg31307-bib-0038" ref-type="ref">2001</xref>; Singh, Fields, Christov, &#x00026; Karabencheva&#x02010;Christova,&#x000a0;<xref rid="mgg31307-bib-0051" ref-type="ref">2016</xref>). While these enzymes without PEX cannot cleave collagens, they remain proteolytic for other substrates. However, MMP20 has been shown to precisely cleave enamel matrix proteins (EMPs) even without its PEX domain (Ryu et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0042" ref-type="ref">1999</xref>). Therefore, it is unlikely that the PEX mutations in MMP20 cause enamel defects by disrupting its catalytic activity and specificity to EMPs. Recently, mice carrying a PEX mutation (p.Ser466Pro) in MT1&#x02010;MMP were shown to have profound defects in growth and development due to mutant proteins that were misfolded and retained in the ER (Sakr et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0044" ref-type="ref">2018</xref>). Similarly, it is possible that human MMP20 PEX mutations might affect MMP20 secretion and increase ER stress in ameloblasts, which leads to the enamel phenotypes. However, this disease mechanism of &#x0201c;gain&#x02010;of&#x02010;abnormal function&#x0201d; (neomorphism) is mainly seen in dominant human diseases, since the mutant proteins from a single copy of a defective gene usually have substantial toxicity to cause diseases. In contrast, recessive disorders primarily result from a &#x0201c;loss&#x02010;of&#x02010;function&#x0201d; (hypomorphism or amorphism) disease mechanism. Recently, more attention has been paid to the nonproteolytic functions of MMPs (Garc&#x000ed;a&#x02010;Pardo &#x00026; Opdenakker,&#x000a0;<xref rid="mgg31307-bib-0018" ref-type="ref">2015</xref>). These functions are independent of their catalytic activity and based upon protein&#x02013;protein interactions with soluble molecules or cell surface receptors, primarily through their PEX domain (Piccard, Van den Steen, &#x00026; Opdenakker, <xref rid="mgg31307-bib-0039" ref-type="ref">2007</xref>). For example, several MMPs have been shown to interact with integrins, which activates specific signaling pathways and modulates cell behaviors. MMP1 binds to &#x003b1;2&#x003b2;1 integrin, causing Akt dephosphorylation and neuron cell death (Conant et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0013" ref-type="ref">2004</xref>). The PEX domain of MMP9 interacts with &#x003b1;4&#x003b2;1 integrin and affects cell migration and survival (Redondo&#x02010;Munoz et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0041" ref-type="ref">2010</xref>). These interactions and functions do not require proteolytic activity of MMPs. Accordingly, it is possible that the PEX domain of MMP20 might execute proteolysis&#x02010;independent functions that are critical for enamel formation. Particularly, both &#x003b1;6&#x003b2;4 and &#x003b1;4&#x003b2;6 integrins have been demonstrated to play indispensable roles during enamel development, and mutations in genes encoding these integrins were shown to cause amelogenesis imperfecta (C. E. L. Smith et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0052" ref-type="ref">2017</xref>). Therefore, it is plausible to speculate that the PEX domain of MMP20 might interact with &#x003b1;6&#x003b2;4 or &#x003b1;4&#x003b2;6 integrin, and this interaction might be essential for enamel formation. Structurally, a PEX domain consists of a four&#x02010;bladed &#x003b2;&#x02010;propeller structure. Each blade is formed by a sequence repeat starting with an N&#x02010;terminal motif of aspartic acid&#x02010;alanine (DA) (Piccard, Van den Steen, &#x00026; Opdenakker,&#x000a0;<xref rid="mgg31307-bib-0039" ref-type="ref">2007</xref>). The two missense mutations identified in Family 6, p.Ala304Gly and p.Ala349Val, substitute for the alanine of this motif in the first and second blades, respectively, which would presumably cause structural alteration of the PEX domain and disturb its interaction with other proteins. In brief, the <italic>MMP20</italic> mutations we identified in this study suggest a critical role for its PEX domain in enamel formation, which might be based on unappreciated nonproteolytic functions of MMP20. Further investigations are warranted to demonstrate this hypothesis.</p><p>The most compelling finding in this study is that loss of function of MMP20 causes not only enamel malformations but also dentin defects. Despite consisting of the same inorganic component of hydroxyapatite as enamel, dentin is formed through a developmental process distinct from that of enamel. During dentinogenesis, a layer of unmineralized collagen&#x02010;based matrix, known as predentin, is first deposited by odontoblasts. As various noncollagenous proteins are incorporated, predentin then gradually mineralizes into dentin, which is achieved by continuous deposition of mineral in matrix vesicles and at the mineralization front. Fibrils of type I collagen, with holes and pores, serve as scaffolds that hold about 56% of the mineral. On the other hand, the noncollagenous matrix proteins are believed to modulate the mineralization process. Dentin sialophosphoprotein (DSPP) is the major noncollagenous protein of dentin and is comprised of three major domains, dentin sialoprotein (DSP), dentin glycoprotein (DGP), and dentin phosphoprotein (DPP) (Yamakoshi, Hu, Fukae, Zhang, &#x00026; Simmer,&#x000a0;<xref rid="mgg31307-bib-0060" ref-type="ref">2005</xref>). After synthesis, DSPP is rapidly cleaved, as intact DSPP has never been isolated. It is believed that proteolytic cleavage of DSPP is essential activation steps and specific proteases might be required. In a porcine animal model, MMP20 and MMP2, extracted from dentin matrix, have been shown to cleave DSPP and generate cleavage products that closely correlate with in vivo products (Yamakoshi, Hu, Iwata, et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0061" ref-type="ref">2006</xref>). MMP20 cleaves between DSP and DGP, and releases a series of N&#x02010;terminal DSP cleavage products ranging from 25 to 38&#x000a0;kDa. If these DSPP cleavage products are active independent of the parent protein, failure to generate them might explain the hardness defect of dentin in our <italic>MMP20</italic> mutation patient. It has been demonstrated that while DPP binds to collagen, DSP is mainly detected in peritubular dentin, a collar of highly calcified matrix that delimits dentinal tubules and is hypermineralized compared to intertubular dentin. Therefore, when <italic>MMP20</italic> is mutated, proper DSP cleavage products might not be generated, which disturbs mineralization of peritubular dentin and causes dentin hypomineralization. The reduced thickness of peritubular dentin we observed in the human <italic>MMP20</italic> mutant molars further supports this hypothesis, although more detailed quantification is required to make a definitive conclusion. To date, many proteases have been identified in human dentin matrix, including MMPs, cathepsins, and astacins. Although some of them are believed to serve overlapping functions, their differential expression levels during dentinogenesis and enzymatic efficiency on dentin matrix proteins might vary significantly. Hence, the defective function of mutant MMP20 on human dentin formation might not be sufficiently compensated by molecular redundancy from other proteases, such as MMP2, and causes dentin hardness defects.</p><p>The functional role of MMP20 in dentin formation is also supported by the dentin phenotypes in <italic>Mmp20</italic> null mice. The reduced dentin thickness and mineral density, and transiently increased predentin thickness in <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars demonstrates a disturbance in dentin matrix secretion and mineralization when MMP20 is ablated. The more evident defects at 30&#x000a0;dpn may result from a relatively high rate of dentin formation at this stage. However, the recovery of some dentin parameters in <italic>Mmp20<sup>&#x02212;/&#x02212;</sup></italic> molars by 60&#x000a0;dpn suggests a potential compensation mechanism by the odontoblasts, which warrants further investigations.</p><p>It has been well documented that <italic>Mmp20</italic>, during evolution, is independently pseudogenized in many vertebrates that lose the ability to make teeth, such as birds, turtles, pangolins, baleen, and sperm whales, indicating an important role for MMP20 specifically in tooth formation but not in other tissues or organs (Meredith et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0034" ref-type="ref">2011</xref>; Meredith, Zhang, Gilbert, Jarvis, &#x00026; Springer,&#x000a0;<xref rid="mgg31307-bib-0035" ref-type="ref">2014</xref>). <italic>Mmp20</italic> pseudogenization has also been reported for mammals that have teeth without enamel capping, such as sperm whales, sloths, and aardvarks. It was then suggested that <italic>Mmp20</italic> is not only tooth specific but also enamel specific which seems to contradict our finding in this study. However, while evidence for <italic>Mmp20</italic> pseudogenization in toothless animals is compelling, that in enamel&#x02010;less mammals is not so clear. Meredith <italic>et al</italic>. sequenced <italic>Mmp20</italic> in two species of enamel&#x02010;less sperm whales, <italic>Kogia breviceps</italic> and <italic>Kogia sima</italic>, and identified a premature stop codon in only 1 of 3 individuals of <italic>K. breviceps</italic> and none of 5 individuals of <italic>K. sima</italic> (Meredith et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0034" ref-type="ref">2011</xref>). While many inactivation mutations have been reported in the enamelin (<italic>Enam</italic>) genes of <italic>Kogia</italic>, <italic>Mmp20</italic> pseudogenization seems to be a rare finding in these sperm whales. For sloths and aardvarks, it was reported that they could form teeth comprised of dentin even if <italic>Mmp20</italic> is inactivated in their genome. However, it has been documented that the dentin structure of sloths and aardvarks is different from that of other mammalian species (Kalthoff,&#x000a0;<xref rid="mgg31307-bib-0024" ref-type="ref">2011</xref>; Santana et&#x000a0;al.,&#x000a0;<xref rid="mgg31307-bib-0045" ref-type="ref">2013</xref>). Therefore, there appears to be selection pressure for maintaining <italic>Mmp20</italic> in most mammals, not only for enamel formation but also dentin development.</p></sec><sec sec-type="COI-statement" id="mgg31307-sec-0024"><title>CONFLICT OF INTEREST</title><p>None declared.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data" id="mgg31307-sup-0001"><caption><p>Supplementary Material</p></caption><media xlink:href="MGG3-8-e1307-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="mgg31307-sec-0023"><title>ACKNOWLEDGMENTS</title><p>We thank Tameka U. Shelford, M.A., Project Manager and Senior Research Program Coordinator at the Johns Hopkins Genomics Center for Inherited Disease Research (CIDR) for managing the Whole&#x02010;Exome Sequencing of the study samples. This work was supported by MOST (Ministry of Science and Technology in Taiwan) Grant 108&#x02010;2314&#x02010;B&#x02010;002&#x02010;038&#x02010;MY3 and NTUH (National Taiwan University Hospital) Grant 107&#x02010;N3966, NIDCR/NIH grants DE015846 (JCCH), DE027675 (JPS), DE028297 (JDB), R03DE028411 (BLF), and by grants from the National Research Foundation of Korea (NRF) funded by the Korea government (NRF&#x02010;2017R1A2A2A05069281 and NRF&#x02010;2018R1A5A2024418).</p></ack><fn-group id="mgg31307-ntgp-0002"><title>ENDNOTE</title><fn id="mgg31307-note-1001"><label><sup>1</sup></label><p>Sequences are based on the gene reference sequence NG_012151.1; mRNA reference sequence NM_004771.3 (A of the ATG translation initiation codon is designated as nucleotide 1); and protein reference sequence NP_004762.2. All designations were checked using LUMC Mutalyzer 2.0.32 released on 9 December 2019 (<ext-link ext-link-type="uri" xlink:href="https://mutalyzer.nl/">https://mutalyzer.nl/</ext-link>). MAF, minor allele frequency; gnomAD, Genome Aggregation Database.</p></fn></fn-group><sec sec-type="data-availability" id="mgg31307-sec-0026"><title>DATA AVAILABILITY STATEMENT</title><p>Whole&#x02010;exome sequencing data and analysis are available at dbGaP under Genetics of Disorders Affecting Tooth Structure, Number, Morphology, and Eruption. dbGaP Study Accession: phs001491.v1.p1. Additional data used to support the findings of this study are available from the corresponding author upon request.</p></sec><ref-list content-type="cited-references" id="mgg31307-bibl-0001"><title>REFERENCES</title><ref id="mgg31307-bib-0001"><mixed-citation publication-type="journal" id="mgg31307-cit-0001">
+<string-name>
+<surname>Alford</surname>, <given-names>V. M.</given-names>
+</string-name>, <string-name>
+<surname>Kamath</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Ren</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Kumar</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Gan</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<surname>Awwa</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Sampson</surname>, <given-names>N. S.</given-names>
+</string-name> (<year>2017</year>). <article-title>Targeting the hemopexin&#x02010;like domain of latent matrix metalloproteinase&#x02010;9 (proMMP&#x02010;9) with a small molecule inhibitor prevents the formation of focal adhesion junctions</article-title>. <source xml:lang="en">ACS Chemical Biology</source>, <volume>12</volume>(<issue>11</issue>), <fpage>2788</fpage>&#x02013;<lpage>2803</lpage>. <pub-id pub-id-type="doi">10.1021/acschembio.7b00758</pub-id>
+<pub-id pub-id-type="pmid">28945333</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0003"><mixed-citation publication-type="journal" id="mgg31307-cit-0003">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Beniash</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>D. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name> (<year>2004</year>). <article-title>Decreased mineral content in MMP&#x02010;20 null mouse enamel is prominent during the maturation stage</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>83</volume>(<issue>12</issue>), <fpage>909</fpage>&#x02013;<lpage>913</lpage>. <pub-id pub-id-type="doi">10.1177/154405910408301204</pub-id>
+<pub-id pub-id-type="pmid">15557396</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0004"><mixed-citation publication-type="journal" id="mgg31307-cit-0004">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>1999</year>). <article-title>Proteinases in developing dental enamel</article-title>. <source xml:lang="en">Critical Reviews in Oral Biology and Medicine</source>, <volume>10</volume>(<issue>4</issue>), <fpage>425</fpage>&#x02013;<lpage>441</lpage>. <pub-id pub-id-type="doi">10.1177/10454411990100040101</pub-id>
+<pub-id pub-id-type="pmid">10634581</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0005"><mixed-citation publication-type="journal" id="mgg31307-cit-0005">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Xue</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Margolis</surname>, <given-names>H. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Moreno</surname>, <given-names>E. C.</given-names>
+</string-name> (<year>1996</year>). <article-title>Molecular cloning and mRNA tissue distribution of a novel matrix metalloproteinase isolated from porcine enamel organ</article-title>. <source xml:lang="en">Gene</source>, <volume>183</volume>, <fpage>123</fpage>&#x02013;<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1016/S0378-1119(96)00525-2</pub-id>
+<pub-id pub-id-type="pmid">8996096</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0006"><mixed-citation publication-type="journal" id="mgg31307-cit-0006">
+<string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Skobe</surname>, <given-names>Z.</given-names>
+</string-name>, <string-name>
+<surname>Nanci</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name> (<year>2011</year>). <article-title>Matrix metalloproteinase 20 promotes a smooth enamel surface, a strong dentino&#x02010;enamel junction, and a decussating enamel rod pattern</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>119</volume>(<issue>Suppl. 1</issue>), <fpage>199</fpage>&#x02013;<lpage>205</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2011.00864.x</pub-id>
+<pub-id pub-id-type="pmid">22243247</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0007"><mixed-citation publication-type="journal" id="mgg31307-cit-0007">
+<string-name>
+<surname>Begue&#x02010;Kirn</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Butler</surname>, <given-names>W. T.</given-names>
+</string-name> (<year>1998</year>). <article-title>Dentin sialoprotein, dentin phosphoprotein, enamelysin and ameloblastin: Tooth&#x02010;specific molecules that are distinctively expressed during murine dental differentiation</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>106</volume>(<issue>5</issue>), <fpage>963</fpage>&#x02013;<lpage>970</lpage>. <pub-id pub-id-type="doi">10.1046/j.0909-8836.1998.eos106510.x</pub-id>
+<pub-id pub-id-type="pmid">9786327</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0008"><mixed-citation publication-type="journal" id="mgg31307-cit-0008">
+<string-name>
+<surname>Beniash</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Skobe</surname>, <given-names>Z.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name> (<year>2006</year>). <article-title>Formation of the dentino&#x02010;enamel interface in enamelysin (MMP&#x02010;20)&#x02010;deficient mouse incisors</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>114</volume>(<issue>Suppl. 1</issue>), <fpage>24</fpage>&#x02013;<lpage>29</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2006.00293.x</pub-id>
+<pub-id pub-id-type="pmid">16674658</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0009"><mixed-citation publication-type="journal" id="mgg31307-cit-0009">
+<string-name>
+<surname>Bouxsein</surname>, <given-names>M. L.</given-names>
+</string-name>, <string-name>
+<surname>Boyd</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<surname>Christiansen</surname>, <given-names>B. A.</given-names>
+</string-name>, <string-name>
+<surname>Guldberg</surname>, <given-names>R. E.</given-names>
+</string-name>, <string-name>
+<surname>Jepsen</surname>, <given-names>K. J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Muller</surname>, <given-names>R.</given-names>
+</string-name> (<year>2010</year>). <article-title>Guidelines for assessment of bone microstructure in rodents using micro&#x02010;computed tomography</article-title>. <source xml:lang="en">Journal of Bone and Mineral Research</source>, <volume>25</volume>(<issue>7</issue>), <fpage>1468</fpage>&#x02013;<lpage>1486</lpage>. <pub-id pub-id-type="doi">10.1002/jbmr.141</pub-id>
+<pub-id pub-id-type="pmid">20533309</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0010"><mixed-citation publication-type="journal" id="mgg31307-cit-0010">
+<string-name>
+<surname>Caterina</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name>
+<surname>Skobe</surname>, <given-names>Z.</given-names>
+</string-name>, <string-name>
+<surname>Shi</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Ding</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Birkedal&#x02010;Hansen</surname>, <given-names>H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name> (<year>2002</year>). <article-title>Enamelysin (matrix metalloproteinase 20)&#x02010;deficient mice display an amelogenesis imperfecta phenotype</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>277</volume>(<issue>51</issue>), <fpage>49598</fpage>&#x02013;<lpage>49604</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M209100200</pub-id>
+<pub-id pub-id-type="pmid">12393861</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0011"><mixed-citation publication-type="journal" id="mgg31307-cit-0011">
+<string-name>
+<surname>Catering</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Shi</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Qian</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>, <given-names>Y.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2000</year>). <article-title>Cloning, characterization, and expression analysis of mouse enamelysin</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>79</volume>(<issue>9</issue>), <fpage>1697</fpage>&#x02013;<lpage>1703</lpage>. <pub-id pub-id-type="doi">10.1177/00220345000790091001</pub-id>
+<pub-id pub-id-type="pmid">11023266</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0012"><mixed-citation publication-type="journal" id="mgg31307-cit-0012">
+<string-name>
+<surname>Cheng</surname>, <given-names>E. J.</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Sakamoto</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Han</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Noble</surname>, <given-names>J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Goto</surname>, <given-names>T.</given-names>
+</string-name> (<year>2017</year>). <article-title>Mechanical properties of individual phases of ZrB2&#x02010;ZrC eutectic composite measured by nanoindentation</article-title>. <source xml:lang="en">Journal of the European Ceramic Society</source>, <volume>37</volume>(<issue>13</issue>), <fpage>4223</fpage>&#x02013;<lpage>4227</lpage>. <pub-id pub-id-type="doi">10.1016/j.jeurceramsoc.2017.05.031</pub-id>
+</mixed-citation></ref><ref id="mgg31307-bib-0013"><mixed-citation publication-type="journal" id="mgg31307-cit-0013">
+<string-name>
+<surname>Conant</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Hillaire</surname>, <given-names>C. S.</given-names>
+</string-name>, <string-name>
+<surname>Nagase</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Visse</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Gary</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Haughey</surname>, <given-names>N.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Nath</surname>, <given-names>A.</given-names>
+</string-name> (<year>2004</year>). <article-title>Matrix metalloproteinase 1 interacts with neuronal integrins and stimulates dephosphorylation of Akt</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>279</volume>(<issue>9</issue>), <fpage>8056</fpage>&#x02013;<lpage>8062</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M307051200</pub-id>
+<pub-id pub-id-type="pmid">14679206</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0014"><mixed-citation publication-type="journal" id="mgg31307-cit-0014">
+<string-name>
+<surname>Cui</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Khalil</surname>, <given-names>R. A.</given-names>
+</string-name> (<year>2017</year>). <article-title>Biochemical and biological attributes of matrix metalloproteinases</article-title>. <source xml:lang="en">Progress in Molecular Biology and Translational Science</source>, <volume>147</volume>, <fpage>1</fpage>&#x02013;<lpage>73</lpage>. <pub-id pub-id-type="doi">10.1016/bs.pmbts.2017.02.005</pub-id>
+<pub-id pub-id-type="pmid">28413025</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0015"><mixed-citation publication-type="journal" id="mgg31307-cit-0015">
+<string-name>
+<surname>DePristo</surname>, <given-names>M. A.</given-names>
+</string-name>, <string-name>
+<surname>Banks</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Poplin</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Garimella</surname>, <given-names>K. V.</given-names>
+</string-name>, <string-name>
+<surname>Maguire</surname>, <given-names>J. R.</given-names>
+</string-name>, <string-name>
+<surname>Hartl</surname>, <given-names>C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Daly</surname>, <given-names>M. J.</given-names>
+</string-name> (<year>2011</year>). <article-title>A framework for variation discovery and genotyping using next&#x02010;generation DNA sequencing data</article-title>. <source xml:lang="en">Nature Genetics</source>, <volume>43</volume>(<issue>5</issue>), <fpage>491</fpage>&#x02013;<lpage>498</lpage>. <pub-id pub-id-type="doi">10.1038/ng.806</pub-id>
+<pub-id pub-id-type="pmid">21478889</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0016"><mixed-citation publication-type="journal" id="mgg31307-cit-0016">
+<string-name>
+<surname>Foster</surname>, <given-names>B. L.</given-names>
+</string-name> (<year>2012</year>). <article-title>Methods for studying tooth root cementum by light microscopy</article-title>. <source xml:lang="en">International Journal of Oral Science</source>, <volume>4</volume>(<issue>3</issue>), <fpage>119</fpage>&#x02013;<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1038/ijos.2012.57</pub-id>
+<pub-id pub-id-type="pmid">22996273</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0017"><mixed-citation publication-type="journal" id="mgg31307-cit-0017">
+<string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>S.&#x02010;K.</given-names>
+</string-name>, <string-name>
+<surname>Ryu</surname>, <given-names>O.&#x02010;H.</given-names>
+</string-name>, <string-name>
+<surname>Murakami</surname>, <given-names>C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name> (<year>1998</year>). <article-title>Enamelysin (matrix metalloproteinase&#x02010;20): Localization in the developing tooth and effects of pH and calcium on amelogenin hydrolysis</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>77</volume>(<issue>8</issue>), <fpage>1580</fpage>&#x02013;<lpage>1588</lpage>. <pub-id pub-id-type="doi">10.1177/00220345980770080501</pub-id>
+<pub-id pub-id-type="pmid">9719031</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0018"><mixed-citation publication-type="journal" id="mgg31307-cit-0018">
+<string-name>
+<surname>Garc&#x000ed;a&#x02010;Pardo</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Opdenakker</surname>, <given-names>G.</given-names>
+</string-name> (<year>2015</year>). <article-title>Nonproteolytic functions of matrix metalloproteinases in pathology and insights for the development of novel therapeutic inhibitors</article-title>. <source xml:lang="en">Metalloproteinases in Medicine</source>, <volume>2015</volume>(<issue>2</issue>), <fpage>19</fpage>&#x02013;<lpage>28</lpage>. <pub-id pub-id-type="doi">10.2147/MNM.S63629</pub-id>
+</mixed-citation></ref><ref id="mgg31307-bib-0019"><mixed-citation publication-type="journal" id="mgg31307-cit-0019">
+<string-name>
+<surname>Gasse</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Karayigit</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Mathieu</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Jung</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Garret</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Huckert</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Bloch&#x02010;Zupan</surname>, <given-names>A.</given-names>
+</string-name> (<year>2013</year>). <article-title>Homozygous and compound heterozygous MMP20 mutations in amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>92</volume>(<issue>7</issue>), <fpage>598</fpage>&#x02013;<lpage>603</lpage>. <pub-id pub-id-type="doi">10.1177/0022034513488393</pub-id>
+<pub-id pub-id-type="pmid">23625376</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0020"><mixed-citation publication-type="journal" id="mgg31307-cit-0020">
+<string-name>
+<surname>Gasse</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Prasad</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Delgado</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Huckert</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Kawczynski</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Garret&#x02010;Bernardin</surname>, <given-names>A.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Sire</surname>, <given-names>J.&#x02010;Y.</given-names>
+</string-name> (<year>2017</year>). <article-title>Evolutionary analysis predicts sensitive positions of MMP20 and validates newly&#x02010; and previously&#x02010;Identified MMP20 mutations causing amelogenesis imperfecta</article-title>. <source xml:lang="en">Frontiers in Physiology</source>, <volume>8</volume>, <fpage>398</fpage>
+<pub-id pub-id-type="doi">10.3389/fphys.2017.00398</pub-id>
+<pub-id pub-id-type="pmid">28659819</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0021"><mixed-citation publication-type="journal" id="mgg31307-cit-0021">
+<string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2002</year>). <article-title>Enamelysin and kallikrein&#x02010;4 mRNA expression in developing mouse molars</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>110</volume>(<issue>4</issue>), <fpage>307</fpage>&#x02013;<lpage>315</lpage>. <pub-id pub-id-type="doi">10.1034/j.1600-0722.2002.21301.x</pub-id>
+<pub-id pub-id-type="pmid">12206593</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0022"><mixed-citation publication-type="journal" id="mgg31307-cit-0022">
+<string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2016</year>). <article-title>MMP20, KLK4, and MMP20/KLK4 double null mice define roles for matrix proteases during dental enamel formation</article-title>. <source xml:lang="en">Molecular Genetics &#x00026; Genomic Medicine</source>, <volume>4</volume>(<issue>2</issue>), <fpage>178</fpage>&#x02013;<lpage>196</lpage>. <pub-id pub-id-type="doi">10.1002/mgg3.194</pub-id>
+<pub-id pub-id-type="pmid">27066511</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0002"><mixed-citation publication-type="book" id="mgg31307-cit-0002">
+<collab collab-type="authors">Institute for Laboratory Animal Research</collab>
+. (<year>2011</year>). <source xml:lang="en">Guide for the care and use of laboratory animals</source> (<edition designator="8">8th ed.</edition>). <publisher-loc>Washington, D.C.</publisher-loc>: <publisher-name>National Research Council of the National Academies</publisher-name> Retrieved from <ext-link ext-link-type="uri" xlink:href="https://www.google.com/books/edition/Guide_for_the_Care_and_Use_of_Laboratory/Vp5mgXtxYdQC?hl=en%26gbpv=1%26printsec=frontcover">https://www.google.com/books/edition/Guide_for_the_Care_and_Use_of_Laboratory/Vp5mgXtxYdQC?hl=en&#x00026;gbpv=1&#x00026;printsec=frontcover</ext-link>
+</mixed-citation></ref><ref id="mgg31307-bib-0023"><mixed-citation publication-type="journal" id="mgg31307-cit-0023">
+<string-name>
+<surname>Iwata</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Ishikawa</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Krebsbach</surname>, <given-names>P. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2007</year>). <article-title>Processing of ameloblastin by MMP&#x02010;20</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>86</volume>(<issue>2</issue>), <fpage>153</fpage>&#x02013;<lpage>157</lpage>. <pub-id pub-id-type="doi">10.1177/154405910708600209</pub-id>
+<pub-id pub-id-type="pmid">17251515</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0024"><mixed-citation publication-type="journal" id="mgg31307-cit-0024">
+<string-name>
+<surname>Kalthoff</surname>, <given-names>D. C.</given-names>
+</string-name> (<year>2011</year>). <article-title>Microstructure of dental hard tissues in fossil and recent xenarthrans (Mammalia: Folivora and Cingulata)</article-title>. <source xml:lang="en">Journal of Morphology</source>, <volume>272</volume>(<issue>6</issue>), <fpage>641</fpage>&#x02013;<lpage>661</lpage>. <pub-id pub-id-type="doi">10.1002/jmor.10937</pub-id>
+<pub-id pub-id-type="pmid">21456028</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0025"><mixed-citation publication-type="journal" id="mgg31307-cit-0025">
+<string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>, <given-names>B. P.</given-names>
+</string-name>, <string-name>
+<surname>Kiziltan</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Gencay</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2005</year>). <article-title>ENAM mutations in autosomal&#x02010;dominant amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>84</volume>(<issue>3</issue>), <fpage>278</fpage>&#x02013;<lpage>282</lpage>. <pub-id pub-id-type="doi">10.1177/154405910508400314</pub-id>
+<pub-id pub-id-type="pmid">15723871</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0026"><mixed-citation publication-type="journal" id="mgg31307-cit-0026">
+<string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Hart</surname>, <given-names>T. C.</given-names>
+</string-name>, <string-name>
+<surname>Hart</surname>, <given-names>P. S.</given-names>
+</string-name>, <string-name>
+<surname>Ramaswami</surname>, <given-names>M. D.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2005</year>). <article-title>MMP&#x02010;20 mutation in autosomal recessive pigmented hypomaturation amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Medical Genetics</source>, <volume>42</volume>(<issue>3</issue>), <fpage>271</fpage>&#x02013;<lpage>275</lpage>. <pub-id pub-id-type="doi">10.1136/jmg.2004.024505</pub-id>
+<pub-id pub-id-type="pmid">15744043</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0027"><mixed-citation publication-type="journal" id="mgg31307-cit-0027">
+<string-name>
+<surname>Kim</surname>, <given-names>Y. J.</given-names>
+</string-name>, <string-name>
+<surname>Kang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Koruyucu</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Gencay</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Shin</surname>, <given-names>T. J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Kim</surname>, <given-names>J.&#x02010;W.</given-names>
+</string-name> (<year>2017</year>). <article-title>Analyses of MMP20 missense mutations in two families with hypomaturation amelogenesis imperfecta</article-title>. <source xml:lang="en">Frontiers in Physiology</source>, <volume>8</volume>, <fpage>229</fpage>
+<pub-id pub-id-type="doi">10.3389/fphys.2017.00229</pub-id>
+<pub-id pub-id-type="pmid">28473773</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0028"><mixed-citation publication-type="journal" id="mgg31307-cit-0028">
+<string-name>
+<surname>Lee</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Kang</surname>, <given-names>H. Y.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>K. E.</given-names>
+</string-name>, <string-name>
+<surname>Gencay</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Tuna</surname>, <given-names>B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name> (<year>2010</year>). <article-title>MMP20 hemopexin domain mutation in amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>89</volume>(<issue>1</issue>), <fpage>46</fpage>&#x02013;<lpage>50</lpage>. <pub-id pub-id-type="doi">10.1177/0022034509352844</pub-id>
+<pub-id pub-id-type="pmid">19966041</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0029"><mixed-citation publication-type="journal" id="mgg31307-cit-0029">
+<string-name>
+<surname>Lek</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Karczewski</surname>, <given-names>K. J.</given-names>
+</string-name>, <string-name>
+<surname>Minikel</surname>, <given-names>E. V.</given-names>
+</string-name>, <string-name>
+<surname>Samocha</surname>, <given-names>K. E.</given-names>
+</string-name>, <string-name>
+<surname>Banks</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Fennell</surname>, <given-names>T.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>MacArthur</surname>, <given-names>D. G.</given-names>
+</string-name> (<year>2016</year>). <article-title>Analysis of protein&#x02010;coding genetic variation in 60,706 humans</article-title>. <source xml:lang="en">Nature</source>, <volume>536</volume>(<issue>7616</issue>), <fpage>285</fpage>&#x02013;<lpage>291</lpage>. <pub-id pub-id-type="doi">10.1038/nature19057</pub-id>
+<pub-id pub-id-type="pmid">27535533</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0030"><mixed-citation publication-type="journal" id="mgg31307-cit-0030">
+<string-name>
+<surname>Li</surname>, <given-names>H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Durbin</surname>, <given-names>R.</given-names>
+</string-name> (<year>2010</year>). <article-title>Fast and accurate long&#x02010;read alignment with Burrows&#x02010;Wheeler transform</article-title>. <source xml:lang="en">Bioinformatics</source>, <volume>26</volume>(<issue>5</issue>), <fpage>589</fpage>&#x02013;<lpage>595</lpage>. <pub-id pub-id-type="doi">10.1093/bioinformatics/btp698</pub-id>
+<pub-id pub-id-type="pmid">20080505</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0031"><mixed-citation publication-type="journal" id="mgg31307-cit-0031">
+<string-name>
+<surname>Llano</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Pendas</surname>, <given-names>A. M.</given-names>
+</string-name>, <string-name>
+<surname>Knauper</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Sorsa</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Salo</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Salido</surname>, <given-names>E.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Lopez&#x02010;Otin</surname>, <given-names>C.</given-names>
+</string-name> (<year>1997</year>). <article-title>Identification and structural and functional characterization of human enamelysin (MMP&#x02010;20)</article-title>. <source xml:lang="en">Biochemistry</source>, <volume>36</volume>(<issue>49</issue>), <fpage>15101</fpage>&#x02013;<lpage>15108</lpage>. <pub-id pub-id-type="doi">10.1021/bi972120y</pub-id>
+<pub-id pub-id-type="pmid">9398237</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0032"><mixed-citation publication-type="journal" id="mgg31307-cit-0032">
+<string-name>
+<surname>Lu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Papagerakis</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2008</year>). <article-title>Functions of KLK4 and MMP&#x02010;20 in dental enamel formation</article-title>. <source xml:lang="en">Biological Chemistry</source>, <volume>389</volume>(<issue>6</issue>), <fpage>695</fpage>&#x02013;<lpage>700</lpage>. <pub-id pub-id-type="doi">10.1515/BC.2008.080</pub-id>
+<pub-id pub-id-type="pmid">18627287</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0033"><mixed-citation publication-type="journal" id="mgg31307-cit-0033">
+<string-name>
+<surname>McKenna</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Hanna</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Banks</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Sivachenko</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Cibulskis</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Kernytsky</surname>, <given-names>A.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>DePristo</surname>, <given-names>M. A.</given-names>
+</string-name> (<year>2010</year>). <article-title>The Genome Analysis Toolkit: A MapReduce framework for analyzing next&#x02010;generation DNA sequencing data</article-title>. <source xml:lang="en">Genome Research</source>, <volume>20</volume>(<issue>9</issue>), <fpage>1297</fpage>&#x02013;<lpage>1303</lpage>. <pub-id pub-id-type="doi">10.1101/gr.107524.110</pub-id>
+<pub-id pub-id-type="pmid">20644199</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0034"><mixed-citation publication-type="journal" id="mgg31307-cit-0034">
+<string-name>
+<surname>Meredith</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<surname>Gatesy</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Cheng</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Springer</surname>, <given-names>M. S.</given-names>
+</string-name> (<year>2011</year>). <article-title>Pseudogenization of the tooth gene enamelysin (MMP20) in the common ancestor of extant baleen whales</article-title>. <source xml:lang="en">Proceedings of the Royal Society B: Biological Sciences</source>, <volume>278</volume>(<issue>1708</issue>), <fpage>993</fpage>&#x02013;<lpage>1002</lpage>. <pub-id pub-id-type="doi">10.1098/rspb.2010.1280</pub-id>
+</mixed-citation></ref><ref id="mgg31307-bib-0035"><mixed-citation publication-type="journal" id="mgg31307-cit-0035">
+<string-name>
+<surname>Meredith</surname>, <given-names>R. W.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Gilbert</surname>, <given-names>M. T.</given-names>
+</string-name>, <string-name>
+<surname>Jarvis</surname>, <given-names>E. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Springer</surname>, <given-names>M. S.</given-names>
+</string-name> (<year>2014</year>). <article-title>Evidence for a single loss of mineralized teeth in the common avian ancestor</article-title>. <source xml:lang="en">Science</source>, <volume>346</volume>(<issue>6215</issue>), <fpage>1254390</fpage>
+<pub-id pub-id-type="doi">10.1126/science.1254390</pub-id>
+<pub-id pub-id-type="pmid">25504730</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0036"><mixed-citation publication-type="journal" id="mgg31307-cit-0036">
+<string-name>
+<surname>Ozdemir</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Hart</surname>, <given-names>P. S.</given-names>
+</string-name>, <string-name>
+<surname>Ryu</surname>, <given-names>O. H.</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Ozdemir&#x02010;Karatas</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Firatli</surname>, <given-names>E.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hart</surname>, <given-names>T. C.</given-names>
+</string-name> (<year>2005</year>). <article-title>MMP20 active&#x02010;site mutation in hypomaturation amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>84</volume>(<issue>11</issue>), <fpage>1031</fpage>&#x02013;<lpage>1035</lpage>. <pub-id pub-id-type="doi">10.1177/154405910508401112</pub-id>
+<pub-id pub-id-type="pmid">16246936</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0037"><mixed-citation publication-type="journal" id="mgg31307-cit-0037">
+<string-name>
+<surname>Papagerakis</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>, <given-names>H. K.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>K. Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J.&#x02010; C.&#x02010;C.</given-names>
+</string-name> (<year>2008</year>). <article-title>Premature stop codon in MMP20 causing amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>87</volume>(<issue>1</issue>), <fpage>56</fpage>&#x02013;<lpage>59</lpage>. <pub-id pub-id-type="doi">10.1177/154405910808700109</pub-id>
+<pub-id pub-id-type="pmid">18096894</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0038"><mixed-citation publication-type="journal" id="mgg31307-cit-0038">
+<string-name>
+<surname>Patterson</surname>, <given-names>M. L.</given-names>
+</string-name>, <string-name>
+<surname>Atkinson</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Knauper</surname>, <given-names>V.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Murphy</surname>, <given-names>G.</given-names>
+</string-name> (<year>2001</year>). <article-title>Specific collagenolysis by gelatinase A, MMP&#x02010;2, is determined by the hemopexin domain and not the fibronectin&#x02010;like domain</article-title>. <source xml:lang="en">FEBS Letters</source>, <volume>503</volume>(<issue>2&#x02013;3</issue>), <fpage>158</fpage>&#x02013;<lpage>162</lpage>. <pub-id pub-id-type="doi">10.1016/S0014-5793(01)02723-5</pub-id>
+<pub-id pub-id-type="pmid">11513874</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0039"><mixed-citation publication-type="journal" id="mgg31307-cit-0039">
+<string-name>
+<surname>Piccard</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Van den Steen</surname>, <given-names>P. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Opdenakker</surname>, <given-names>G.</given-names>
+</string-name> (<year>2007</year>). <article-title>Hemopexin domains as multifunctional liganding modules in matrix metalloproteinases and other proteins</article-title>. <source xml:lang="en">Journal of Leukocyte Biology</source>, <volume>81</volume>(<issue>4</issue>), <fpage>870</fpage>&#x02013;<lpage>892</lpage>. <pub-id pub-id-type="doi">10.1189/jlb.1006629</pub-id>
+<pub-id pub-id-type="pmid">17185359</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0040"><mixed-citation publication-type="journal" id="mgg31307-cit-0040">
+<string-name>
+<surname>Prasad</surname>, <given-names>M. K.</given-names>
+</string-name>, <string-name>
+<surname>Geoffroy</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Vicaire</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Jost</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Dumas</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Le Gras</surname>, <given-names>S.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Bloch&#x02010;Zupan</surname>, <given-names>A.</given-names>
+</string-name> (<year>2016</year>). <article-title>A targeted next&#x02010;generation sequencing assay for the molecular diagnosis of genetic disorders with orodental involvement</article-title>. <source xml:lang="en">Journal of Medical Genetics</source>, <volume>53</volume>(<issue>2</issue>), <fpage>98</fpage>&#x02013;<lpage>110</lpage>. <pub-id pub-id-type="doi">10.1136/jmedgenet-2015-103302</pub-id>
+<pub-id pub-id-type="pmid">26502894</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0041"><mixed-citation publication-type="journal" id="mgg31307-cit-0041">
+<string-name>
+<surname>Redondo&#x02010;Mu&#x000f1;oz</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Ugarte&#x02010;Berzal</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Terol</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Van den Steen</surname>, <given-names>P. E.</given-names>
+</string-name>, <string-name>
+<surname>Hern&#x000e1;ndez del Cerro</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Roderfeld</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Garc&#x000ed;a&#x02010;Pardo</surname>, <given-names>A.</given-names>
+</string-name> (<year>2010</year>). <article-title>Matrix metalloproteinase&#x02010;9 promotes chronic lymphocytic leukemia b cell survival through its hemopexin domain</article-title>. <source xml:lang="en">Cancer Cell</source>, <volume>17</volume>(<issue>2</issue>), <fpage>160</fpage>&#x02013;<lpage>172</lpage>. <pub-id pub-id-type="doi">10.1016/j.ccr.2009.12.044</pub-id>
+<pub-id pub-id-type="pmid">20159608</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0042"><mixed-citation publication-type="journal" id="mgg31307-cit-0042">
+<string-name>
+<surname>Ryu</surname>, <given-names>O. H.</given-names>
+</string-name>, <string-name>
+<surname>Fincham</surname>, <given-names>A. G.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Qian</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>1999</year>). <article-title>Characterization of recombinant pig enamelysin activity and cleavage of recombinant pig and mouse amelogenins</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>78</volume>(<issue>3</issue>), <fpage>743</fpage>&#x02013;<lpage>750</lpage>. <pub-id pub-id-type="doi">10.1177/00220345990780030601</pub-id>
+<pub-id pub-id-type="pmid">10096449</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0043"><mixed-citation publication-type="book" id="mgg31307-cit-0043">
+<string-name>
+<surname>Ryu</surname>, <given-names>O. H.</given-names>
+</string-name>, <string-name>
+<surname>Hsiung</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>C.&#x02010;C.</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Cao</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2000</year>). <chapter-title>The structure and function of enamelysin (MMP&#x02010;20)</chapter-title>
+<italic>Paper presented at the Chemistry and Biology of Mineralized Tissues: Proceedings of the Sixth International Conference, 1998</italic>, <publisher-loc>Vittel, France</publisher-loc>.</mixed-citation></ref><ref id="mgg31307-bib-0044"><mixed-citation publication-type="journal" id="mgg31307-cit-0044">
+<string-name>
+<surname>Sakr</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>, <given-names>X. Y.</given-names>
+</string-name>, <string-name>
+<surname>Sabeh</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Feinberg</surname>, <given-names>T. Y.</given-names>
+</string-name>, <string-name>
+<surname>Tesmer</surname>, <given-names>J. J. G.</given-names>
+</string-name>, <string-name>
+<surname>Tang</surname>, <given-names>Y.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Weiss</surname>, <given-names>S. J.</given-names>
+</string-name> (<year>2018</year>). <article-title>Tracking the Cartoon mouse phenotype: Hemopexin domain&#x02010;dependent regulation of MT1&#x02010;MMP pericellular collagenolytic activity</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>293</volume>(<issue>21</issue>), <fpage>8113</fpage>&#x02013;<lpage>8127</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.RA117.001503</pub-id>
+<pub-id pub-id-type="pmid">29643184</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0045"><mixed-citation publication-type="journal" id="mgg31307-cit-0045">
+<string-name>
+<surname>Santana</surname>, <given-names>L. N.</given-names>
+</string-name>, <string-name>
+<surname>Barbosa</surname>, <given-names>L. V.</given-names>
+</string-name>, <string-name>
+<surname>Teixeira</surname>, <given-names>F. B.</given-names>
+</string-name>, <string-name>
+<surname>Costa</surname>, <given-names>A. M.</given-names>
+</string-name>, <string-name>
+<surname>Fernandes</surname>, <given-names>L. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lima</surname>, <given-names>R. R.</given-names>
+</string-name> (<year>2013</year>). <article-title>Morphology of the dentin structure of sloths Bradypus tridactylus: A light and scanning electron microscopy investigation</article-title>. <source xml:lang="en">Anatomia Histologia and Embryologia</source>, <volume>42</volume>(<issue>6</issue>), <fpage>410</fpage>&#x02013;<lpage>414</lpage>. <pub-id pub-id-type="doi">10.1111/ahe.12029</pub-id>
+</mixed-citation></ref><ref id="mgg31307-bib-0046"><mixed-citation publication-type="journal" id="mgg31307-cit-0046">
+<string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Park</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>K. E.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>H. K.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>D. S.</given-names>
+</string-name>, <string-name>
+<surname>Koruyucu</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Kim</surname>, <given-names>J. W.</given-names>
+</string-name> (<year>2015</year>). <article-title>Novel MMP20 and KLK4 mutations in amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>94</volume>(<issue>8</issue>), <fpage>1063</fpage>&#x02013;<lpage>1069</lpage>. <pub-id pub-id-type="doi">10.1177/0022034515590569</pub-id>
+<pub-id pub-id-type="pmid">26124219</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0047"><mixed-citation publication-type="journal" id="mgg31307-cit-0047">
+<string-name>
+<surname>Shin</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Chavez</surname>, <given-names>M. B.</given-names>
+</string-name>, <string-name>
+<surname>Ikeda</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Foster</surname>, <given-names>B. L.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name> (<year>2018</year>). <article-title>MMP20 overexpression disrupts molar ameloblast polarity and migration</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>97</volume>(<issue>7</issue>), <fpage>820</fpage>&#x02013;<lpage>827</lpage>. <pub-id pub-id-type="doi">10.1177/0022034518758657</pub-id>
+<pub-id pub-id-type="pmid">29481294</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0048"><mixed-citation publication-type="journal" id="mgg31307-cit-0048">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Uchida</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Xue</surname>, <given-names>J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name> (<year>1998</year>). <article-title>Purification, characterization, and cloning of enamel matrix serine proteinase 1</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>77</volume>(<issue>2</issue>), <fpage>377</fpage>&#x02013;<lpage>386</lpage>. <pub-id pub-id-type="doi">10.1177/00220345980770020601</pub-id>
+<pub-id pub-id-type="pmid">9465170</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0049"><mixed-citation publication-type="journal" id="mgg31307-cit-0049">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y. Y.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J.&#x02010; C.&#x02010;C.</given-names>
+</string-name> (<year>2012</year>). <article-title>A post&#x02010;classical theory of enamel biomineralization.. and why we need one</article-title>. <source xml:lang="en">International Journal of Oral Science</source>, <volume>4</volume>(<issue>3</issue>), <fpage>129</fpage>&#x02013;<lpage>134</lpage>. <pub-id pub-id-type="doi">10.1038/ijos.2012.59</pub-id>
+<pub-id pub-id-type="pmid">22996272</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0050"><mixed-citation publication-type="book" id="mgg31307-cit-0050">
+<string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>C. H.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hu</surname>, <given-names>J.&#x02010; C.&#x02010;C.</given-names>
+</string-name> (<year>2004</year>). <chapter-title>Enamelysin and kallikrein&#x02010;4 expression in the mouse incisor</chapter-title> In <person-group person-group-type="editor"><name name-style="western"><surname>Kobayashi</surname><given-names>I.</given-names></name></person-group> &#x00026; <person-group person-group-type="editor"><name name-style="western"><surname>Ozawa</surname><given-names>H.</given-names></name></person-group> (Eds.), <source xml:lang="en">Biomineralization: Formation, diversity, evolution and application. Proceedings of the 8th International Symposium on Biomineralization</source>, Niigata, Japan, Sept 25&#x02013;28, 2001 (pp. <fpage>348</fpage>&#x02013;<lpage>352</lpage>). <publisher-loc>Hadano, Japan</publisher-loc>: <publisher-name>Tokai University Press</publisher-name>.</mixed-citation></ref><ref id="mgg31307-bib-0051"><mixed-citation publication-type="journal" id="mgg31307-cit-0051">
+<string-name>
+<surname>Singh</surname>, <given-names>W.</given-names>
+</string-name>, <string-name>
+<surname>Fields</surname>, <given-names>G. B.</given-names>
+</string-name>, <string-name>
+<surname>Christov</surname>, <given-names>C. Z.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Karabencheva&#x02010;Christova</surname>, <given-names>T. G.</given-names>
+</string-name> (<year>2016</year>). <article-title>Effects of mutations on structure&#x02010;function relationships of matrix metalloproteinase&#x02010;1</article-title>. <source xml:lang="en">International Journal of Molecular Sciences</source>, <volume>17</volume>(<issue>10</issue>), pii ijms17101727. <pub-id pub-id-type="doi">10.3390/ijms17101727</pub-id>
+</mixed-citation></ref><ref id="mgg31307-bib-0052"><mixed-citation publication-type="journal" id="mgg31307-cit-0052">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E. L.</given-names>
+</string-name>, <string-name>
+<surname>Poulter</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Antanaviciute</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Kirkham</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Brookes</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Inglehearn</surname>, <given-names>C. F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Mighell</surname>, <given-names>A. J.</given-names>
+</string-name> (<year>2017</year>). <article-title>Amelogenesis imperfecta; Genes, proteins, and pathways</article-title>. <source xml:lang="en">Frontiers in Physiology</source>, <volume>8</volume>, <fpage>435</fpage>
+<pub-id pub-id-type="doi">10.3389/fphys.2017.00435</pub-id>
+<pub-id pub-id-type="pmid">28694781</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0053"><mixed-citation publication-type="journal" id="mgg31307-cit-0053">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E. L.</given-names>
+</string-name>, <string-name>
+<surname>Poulter</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Brookes</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Murillo</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Silva</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Brown</surname>, <given-names>C. J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Mighell</surname>, <given-names>A. J.</given-names>
+</string-name> (<year>2019</year>). <article-title>Phenotype and variant spectrum in the LAMB3 form of amelogenesis imperfecta</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>98</volume>(<issue>6</issue>), <fpage>698</fpage>&#x02013;<lpage>704</lpage>. <pub-id pub-id-type="doi">10.1177/0022034519835205</pub-id>
+<pub-id pub-id-type="pmid">30905256</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0054"><mixed-citation publication-type="journal" id="mgg31307-cit-0054">
+<string-name>
+<surname>Smith</surname>, <given-names>C. E.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2011</year>). <article-title>Effect of kallikrein 4 loss on enamel mineralization: Comparison with mice lacking matrix metalloproteinase 20</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>286</volume>(<issue>20</issue>), <fpage>18149</fpage>&#x02013;<lpage>18160</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M110.194258</pub-id>
+<pub-id pub-id-type="pmid">21454549</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0055"><mixed-citation publication-type="journal" id="mgg31307-cit-0055">
+<string-name>
+<surname>Sulkala</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Larmas</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Sorsa</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Salo</surname>, <given-names>T.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Tjaderhane</surname>, <given-names>L.</given-names>
+</string-name> (<year>2002</year>). <article-title>The localization of matrix metalloproteinase&#x02010;20 (MMP&#x02010;20, enamelysin) in mature human teeth</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>81</volume>(<issue>9</issue>), <fpage>603</fpage>&#x02013;<lpage>607</lpage>. <pub-id pub-id-type="doi">10.1177/154405910208100905</pub-id>
+<pub-id pub-id-type="pmid">12202640</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0056"><mixed-citation publication-type="journal" id="mgg31307-cit-0056">
+<string-name>
+<surname>Wang</surname>, <given-names>S. K.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Seymen</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Estrella</surname>, <given-names>N. M.</given-names>
+</string-name>, <string-name>
+<surname>Pal</surname>, <given-names>S.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name> (<year>2013</year>). <article-title>Novel KLK4 and MMP20 mutations discovered by whole&#x02010;exome sequencing</article-title>. <source xml:lang="en">Journal of Dental Research</source>, <volume>92</volume>(<issue>3</issue>), <fpage>266</fpage>&#x02013;<lpage>271</lpage>. <pub-id pub-id-type="doi">10.1177/0022034513475626</pub-id>
+<pub-id pub-id-type="pmid">23355523</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0057"><mixed-citation publication-type="journal" id="mgg31307-cit-0057">
+<string-name>
+<surname>Wright</surname>, <given-names>J. T.</given-names>
+</string-name>, <string-name>
+<surname>Torain</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Long</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Seow</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Crawford</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Aldred</surname>, <given-names>M. J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hart</surname>, <given-names>T. C.</given-names>
+</string-name> (<year>2011</year>). <article-title>Amelogenesis imperfecta: Genotype&#x02010;phenotype studies in 71 families</article-title>. <source xml:lang="en">Cells Tissues Organs</source>, <volume>194</volume>(<issue>2&#x02013;4</issue>), <fpage>279</fpage>&#x02013;<lpage>283</lpage>. <pub-id pub-id-type="doi">10.1159/000324339</pub-id>
+<pub-id pub-id-type="pmid">21597265</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0058"><mixed-citation publication-type="journal" id="mgg31307-cit-0058">
+<string-name>
+<surname>Yamada</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Gerlach</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Matsumoto</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J.</given-names>
+</string-name> (<year>2003</year>). <article-title>Purification and characterization of enamelysin from secretory stage pig enamel</article-title>. <source xml:lang="en">Archives of Comparative Biology of Tooth Enamel</source>, <volume>8</volume>, <fpage>21</fpage>&#x02013;<lpage>25</lpage>.</mixed-citation></ref><ref id="mgg31307-bib-0059"><mixed-citation publication-type="journal" id="mgg31307-cit-0059">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>F.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2006</year>). <article-title>How do enamelysin and kallikrein 4 process the 32&#x02010;kDa enamelin?</article-title>
+<source xml:lang="en">European Journal of Oral Sciences</source>, <volume>114</volume>(<issue>Suppl. 1</issue>), <fpage>45</fpage>&#x02013;<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2006.00281.x</pub-id>
+<pub-id pub-id-type="pmid">16674662</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0060"><mixed-citation publication-type="journal" id="mgg31307-cit-0060">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>, <given-names>H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2005</year>). <article-title>Dentin glycoprotein: The protein in the middle of the dentin sialophosphoprotein chimera</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>280</volume>(<issue>17</issue>), <fpage>17472</fpage>&#x02013;<lpage>17479</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M413220200</pub-id>
+<pub-id pub-id-type="pmid">15728577</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0061"><mixed-citation publication-type="journal" id="mgg31307-cit-0061">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J. C.</given-names>
+</string-name>, <string-name>
+<surname>Iwata</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Kobayashi</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Fukae</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2006</year>). <article-title>Dentin sialophosphoprotein is processed by MMP&#x02010;2 and MMP&#x02010;20 in vitro and in vivo</article-title>. <source xml:lang="en">Journal of Biological Chemistry</source>, <volume>281</volume>(<issue>50</issue>), <fpage>38235</fpage>&#x02013;<lpage>38243</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M607767200</pub-id>
+<pub-id pub-id-type="pmid">17046814</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0062"><mixed-citation publication-type="journal" id="mgg31307-cit-0062">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name>
+<surname>Nunez</surname>, <given-names>S. M.</given-names>
+</string-name>, <string-name>
+<surname>Yamakoshi</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Milkovich</surname>, <given-names>R. N.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>J.&#x02010;C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2011</year>). <article-title>Enamel proteins and proteases in Mmp20 and Klk4 null and double&#x02010;null mice</article-title>. <source xml:lang="en">European Journal of Oral Sciences</source>, <volume>119</volume>(<issue>Suppl. 1</issue>), <fpage>206</fpage>&#x02013;<lpage>216</lpage>. <pub-id pub-id-type="doi">10.1111/j.1600-0722.2011.00866.x</pub-id>
+<pub-id pub-id-type="pmid">22243248</pub-id></mixed-citation></ref><ref id="mgg31307-bib-0063"><mixed-citation publication-type="journal" id="mgg31307-cit-0063">
+<string-name>
+<surname>Yamakoshi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Simmer</surname>, <given-names>J. P.</given-names>
+</string-name>, <string-name>
+<surname>Bartlett</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Karakida</surname>, <given-names>T.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Oida</surname>, <given-names>S.</given-names>
+</string-name> (<year>2013</year>). <article-title>MMP20 and KLK4 activation and inactivation interactions in vitro</article-title>. <source xml:lang="en">Archives of Oral Biology</source>, <volume>58</volume>(<issue>11</issue>), <fpage>1569</fpage>&#x02013;<lpage>1577</lpage>. <pub-id pub-id-type="doi">10.1016/j.archoralbio.2013.08.005</pub-id>
+<pub-id pub-id-type="pmid">24112721</pub-id></mixed-citation></ref></ref-list></back></article>

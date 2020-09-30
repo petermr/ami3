@@ -1,0 +1,375 @@
+{
+  "id": [
+    "25309733"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "25309733"
+  ],
+  "pmcid": [
+    "PMC4184305"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4184305"
+      ]
+    }
+  ],
+  "doi": [
+    "10.12688/f1000research.4711.1"
+  ],
+  "title": [
+    "Non-human lnc-DC orthologs encode Wdnm1-like protein."
+  ],
+  "authorString": [
+    "Dijkstra JM, Ballingall KT."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Dijkstra JM"
+          ],
+          "firstName": [
+            "Johannes M"
+          ],
+          "lastName": [
+            "Dijkstra"
+          ],
+          "initials": [
+            "JM"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institute for Comprehensive Medical Science, Fujita Health University, Toyoake, 470-1192, Japan."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ballingall KT"
+          ],
+          "firstName": [
+            "Keith T"
+          ],
+          "lastName": [
+            "Ballingall"
+          ],
+          "initials": [
+            "KT"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6920-8369",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Moredun Research Institute, Penicuik, Midlothian, Scotland, EH26 0PZ, UK."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-6920-8369",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "recommended_reviews",
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "3"
+      ],
+      "journalIssueId": [
+        "2120705"
+      ],
+      "dateOfPublication": [
+        "2014 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2014"
+      ],
+      "printPublicationDate": [
+        "2014-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "F1000Research"
+          ],
+          "ISOAbbreviation": [
+            "F1000Res"
+          ],
+          "medlineAbbreviation": [
+            "F1000Res"
+          ],
+          "NLMid": [
+            "101594320"
+          ],
+          "ISSN": [
+            "2046-1402"
+          ],
+          "ESSN": [
+            "2046-1402"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2014"
+  ],
+  "pageInfo": [
+    "160"
+  ],
+  "abstractText": [
+    "In a recent publication in Science, Wang et al. found a long noncoding RNA (lncRNA) expressed in human dendritic cells (DC), which they designated lnc-DC. Based on lentivirus-mediated RNA interference (RNAi) experiments in human and murine systems, they concluded that lnc-DC is important in differentiation of monocytes into DC. However, Wang et al. did not mention that their so-called \"mouse lnc-DC ortholog\" gene was already designated \" Wdnm1-like\" and is known to encode a small secreted protein.  We found that incapacitation of the Wdnm1-like open reading frame (ORF) is very rare among mammals, with all investigated primates except for hominids having an intact ORF. The null-hypothesis by Wang et al. therefore should have been that the human lnc-DC transcript might only represent a non-functional relatively young evolutionary remnant of a protein coding locus.  Whether this null-hypothesis can be rejected by the experimental data presented by Wang et al. depends in part on the possible off-target (immunogenic or otherwise) effects of their RNAi procedures, which were not exhaustive in regard to the number of analyzed RNAi sequences and control sequences.  If, however, the conclusions by Wang et al. on their human model are correct, and they may be, current knowledge regarding the Wdnm1-like locus suggests an intriguing combination of different functions mediated by transcript and protein in the maturation of several cell types at some point in evolution. We feel that the article by Wang et al. tends to be misleading without the discussion presented here."
+  ],
+  "affiliation": [
+    "Institute for Comprehensive Medical Science, Fujita Health University, Toyoake, 470-1192, Japan."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "letter",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.12688/f1000research.4711.2"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.12688/f1000research.4711.1"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.12688/f1000research.4711.1"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4184305"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4184305?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "PPR42717"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "Link created based on a title-first author match"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "10"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "ensembl",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2014-10-15"
+  ],
+  "dateOfCreation": [
+    "2014-10-15"
+  ],
+  "firstIndexDate": [
+    "2014-10-14"
+  ],
+  "fullTextReceivedDate": [
+    "2020-07-10"
+  ],
+  "dateOfRevision": [
+    "2017-02-20"
+  ],
+  "electronicPublicationDate": [
+    "2014-07-11"
+  ],
+  "firstPublicationDate": [
+    "2014-07-11"
+  ]
+}

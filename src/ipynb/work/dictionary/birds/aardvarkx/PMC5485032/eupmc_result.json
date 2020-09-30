@@ -1,0 +1,782 @@
+{
+  "id": [
+    "28429538"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28429538"
+  ],
+  "pmcid": [
+    "PMC5485032"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5485032"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1111/nph.14557"
+  ],
+  "title": [
+    "Finding a partner in the ocean: molecular and evolutionary bases of the response to sexual cues in a planktonic diatom."
+  ],
+  "authorString": [
+    "Basu S, Patil S, Mapleson D, Russo MT, Vitale L, Fevola C, Maumus F, Casotti R, Mock T, Caccamo M, Montresor M, Sanges R, Ferrante MI."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Basu S"
+          ],
+          "firstName": [
+            "Swaraj"
+          ],
+          "lastName": [
+            "Basu"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6107-2487",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Patil S"
+          ],
+          "firstName": [
+            "Shrikant"
+          ],
+          "lastName": [
+            "Patil"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mapleson D"
+          ],
+          "firstName": [
+            "Daniel"
+          ],
+          "lastName": [
+            "Mapleson"
+          ],
+          "initials": [
+            "D"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Earlham Institute, Norwich Research Park, Norwich, NR4 7UG, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Russo MT"
+          ],
+          "firstName": [
+            "Monia Teresa"
+          ],
+          "lastName": [
+            "Russo"
+          ],
+          "initials": [
+            "MT"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2001-5384",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Vitale L"
+          ],
+          "firstName": [
+            "Laura"
+          ],
+          "lastName": [
+            "Vitale"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Fevola C"
+          ],
+          "firstName": [
+            "Cristina"
+          ],
+          "lastName": [
+            "Fevola"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Maumus F"
+          ],
+          "firstName": [
+            "Florian"
+          ],
+          "lastName": [
+            "Maumus"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7325-0527",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "URGI, INRA, Université Paris-Saclay, 78026, Versailles, France."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Casotti R"
+          ],
+          "firstName": [
+            "Raffaella"
+          ],
+          "lastName": [
+            "Casotti"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Mock T"
+          ],
+          "firstName": [
+            "Thomas"
+          ],
+          "lastName": [
+            "Mock"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Environmental Sciences, University of East Anglia, Norwich Research Park, Norwich, NR4 7TJ, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Caccamo M"
+          ],
+          "firstName": [
+            "Mario"
+          ],
+          "lastName": [
+            "Caccamo"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Earlham Institute, Norwich Research Park, Norwich, NR4 7UG, UK."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Montresor M"
+          ],
+          "firstName": [
+            "Marina"
+          ],
+          "lastName": [
+            "Montresor"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Sanges R"
+          ],
+          "firstName": [
+            "Remo"
+          ],
+          "lastName": [
+            "Sanges"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5047-9713",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Biology and Evolution of Marine Organisms, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Ferrante MI"
+          ],
+          "firstName": [
+            "Maria Immacolata"
+          ],
+          "lastName": [
+            "Ferrante"
+          ],
+          "initials": [
+            "MI"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8102-8018",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-6107-2487",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-2001-5384",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-7325-0527",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5047-9713",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-8102-8018",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "full_text",
+        "related_data",
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "215"
+      ],
+      "journalIssueId": [
+        "2561388"
+      ],
+      "dateOfPublication": [
+        "2017 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "The New phytologist"
+          ],
+          "ISOAbbreviation": [
+            "New Phytol."
+          ],
+          "medlineAbbreviation": [
+            "New Phytol"
+          ],
+          "NLMid": [
+            "9882884"
+          ],
+          "ISSN": [
+            "0028-646X"
+          ],
+          "ESSN": [
+            "1469-8137"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "140-156"
+  ],
+  "abstractText": [
+    "Microalgae play a major role as primary producers in aquatic ecosystems. Cell signalling regulates their interactions with the environment and other organisms, yet this process in phytoplankton is poorly defined. Using the marine planktonic diatom Pseudo-nitzschia multistriata, we investigated the cell response to cues released during sexual reproduction, an event that demands strong regulatory mechanisms and impacts on population dynamics. We sequenced the genome of P. multistriata and performed phylogenomic and transcriptomic analyses, which allowed the definition of gene gains and losses, horizontal gene transfers, conservation and evolutionary rate of sex-related genes. We also identified a small number of conserved noncoding elements. Sexual reproduction impacted on cell cycle progression and induced an asymmetric response of the opposite mating types. G protein-coupled receptors and cyclic guanosine monophosphate (cGMP) are implicated in the response to sexual cues, which overall entails a modulation of cell cycle, meiosis-related and nutrient transporter genes, suggesting a fine control of nutrient uptake even under nutrient-replete conditions. The controllable life cycle and the genome sequence of P. multistriata allow the reconstruction of changes occurring in diatoms in a key phase of their life cycle, providing hints on the evolution and putative function of their genes and empowering studies on sexual reproduction."
+  ],
+  "affiliation": [
+    "Integrative Marine Ecology, Stazione Zoologica Anton Dohrn, Villa Comunale 1, Naples, 80121, Italy."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Diatoms"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "PH"
+                  ],
+                  "qualifierName": [
+                    "physiology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Population Dynamics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Signal Transduction"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cell Cycle"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Expression Regulation, Developmental"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Biological Transport"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Reproduction"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Algae",
+        "Signal transduction",
+        "Diatom",
+        "Sexual reproduction",
+        "Phytoplankton",
+        "Mating type",
+        "Genomics",
+        "Pseudo-nitzschia Multistriata"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1111/nph.14557"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5485032"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5485032?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "26"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "ARXPR"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-05-01"
+  ],
+  "dateOfCreation": [
+    "2017-04-22"
+  ],
+  "firstIndexDate": [
+    "2017-04-21"
+  ],
+  "fullTextReceivedDate": [
+    "2017-07-13"
+  ],
+  "dateOfRevision": [
+    "2018-05-01"
+  ],
+  "electronicPublicationDate": [
+    "2017-04-21"
+  ],
+  "firstPublicationDate": [
+    "2017-04-21"
+  ]
+}

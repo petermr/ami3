@@ -1,0 +1,650 @@
+{
+  "id": [
+    "28590247"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28590247"
+  ],
+  "pmcid": [
+    "PMC5519329"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5519329"
+      ]
+    }
+  ],
+  "doi": [
+    "10.7554/elife.24133"
+  ],
+  "title": [
+    "Repeated losses of PRDM9-directed recombination despite the conservation of PRDM9 across vertebrates."
+  ],
+  "authorString": [
+    "Baker Z, Schumer M, Haba Y, Bashkirova L, Holland C, Rosenthal GG, Przeworski M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Baker Z"
+          ],
+          "firstName": [
+            "Zachary"
+          ],
+          "lastName": [
+            "Baker"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1540-0731",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Systems Biology, Columbia University, New York City, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Schumer M"
+          ],
+          "firstName": [
+            "Molly"
+          ],
+          "lastName": [
+            "Schumer"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2075-5668",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biological Sciences, Columbia University, New York City, United States.",
+                "Harvard Society of Fellows, Harvard University, Cambridge, United States.",
+                "Centro de Investigaciones Científicas de las Huastecas 'Aguazarca', Hidalgo, Mexico."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Haba Y"
+          ],
+          "firstName": [
+            "Yuki"
+          ],
+          "lastName": [
+            "Haba"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Evolution, Ecology and Environmental Biology, Columbia University, New York City, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Bashkirova L"
+          ],
+          "firstName": [
+            "Lisa"
+          ],
+          "lastName": [
+            "Bashkirova"
+          ],
+          "initials": [
+            "L"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Biochemistry and Molecular Biophysics, Columbia University, New York City, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Holland C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Holland"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centro de Investigaciones Científicas de las Huastecas 'Aguazarca', Hidalgo, Mexico.",
+                "Department of Biology, Texas A&M University, College Station, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Rosenthal GG"
+          ],
+          "firstName": [
+            "Gil G"
+          ],
+          "lastName": [
+            "Rosenthal"
+          ],
+          "initials": [
+            "GG"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Centro de Investigaciones Científicas de las Huastecas 'Aguazarca', Hidalgo, Mexico.",
+                "Department of Biology, Texas A&M University, College Station, United States."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Przeworski M"
+          ],
+          "firstName": [
+            "Molly"
+          ],
+          "lastName": [
+            "Przeworski"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5369-9009",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Systems Biology, Columbia University, New York City, United States.",
+                "Department of Biological Sciences, Columbia University, New York City, United States."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-1540-0731",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-2075-5668",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5369-9009",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2562268"
+      ],
+      "dateOfPublication": [
+        "2017 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "eLife"
+          ],
+          "ISOAbbreviation": [
+            "Elife"
+          ],
+          "medlineAbbreviation": [
+            "Elife"
+          ],
+          "NLMid": [
+            "101579614"
+          ],
+          "ISSN": [
+            "2050-084X"
+          ],
+          "ESSN": [
+            "2050-084X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "abstractText": [
+    "Studies of highly diverged species have revealed two mechanisms by which meiotic recombination is directed to the genome-through PRDM9 binding or by targeting promoter-like features-that lead to dramatically different evolutionary dynamics of hotspots. Here, we identify PRDM9 orthologs from genome and transcriptome data in 225 species. We find the complete PRDM9 ortholog across distantly related vertebrates but, despite this broad conservation, infer a minimum of six partial and three complete losses. Strikingly, taxa carrying the complete ortholog of PRDM9 are precisely those with rapid evolution of its predicted binding affinity, suggesting that all domains are necessary for directing recombination. Indeed, as we show, swordtail fish carrying only a partial but conserved ortholog share recombination properties with PRDM9 knock-outs."
+  ],
+  "affiliation": [
+    "Department of Systems Biology, Columbia University, New York City, United States."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "R01 GM083098"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "T32 GM008224"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Vertebrates"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Histone-Lysine N-Methyltransferase"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Recombination, Genetic"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Recombination",
+        "Meiosis",
+        "Genomics",
+        "hotspot",
+        "vertebrates",
+        "Evolutionary Biology",
+        "Prdm9",
+        "Xiphophorus"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Histone-Lysine N-Methyltransferase"
+          ],
+          "registryNumber": [
+            "EC 2.1.1.43"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.7554/eLife.24133"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5519329"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5519329?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "28726634"
+          ],
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "Elife. 2017 Jul 20;6:"
+          ],
+          "type": [
+            "Comment in"
+          ],
+          "orderIn": [
+            "1"
+          ]
+        },
+        {
+          "id": [
+            "PPR26857"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "29"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "pfam",
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-03-19"
+  ],
+  "dateOfCreation": [
+    "2017-06-08"
+  ],
+  "firstIndexDate": [
+    "2017-06-08"
+  ],
+  "fullTextReceivedDate": [
+    "2017-07-28"
+  ],
+  "dateOfRevision": [
+    "2020-04-15"
+  ],
+  "electronicPublicationDate": [
+    "2017-06-06"
+  ],
+  "firstPublicationDate": [
+    "2017-06-06"
+  ]
+}

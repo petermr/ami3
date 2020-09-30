@@ -1,0 +1,1667 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">New Phytol</journal-id><journal-id journal-id-type="iso-abbrev">New Phytol</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1469-8137</journal-id><journal-id journal-id-type="publisher-id">NPH</journal-id><journal-title-group><journal-title>The New Phytologist</journal-title></journal-title-group><issn pub-type="ppub">0028-646X</issn><issn pub-type="epub">1469-8137</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1111/nph.14557</article-id><article-id pub-id-type="publisher-id">NPH14557</article-id><article-id pub-id-type="other">2016-22838</article-id><article-categories><subj-group subj-group-type="overline"><subject>Full Paper</subject></subj-group><subj-group subj-group-type="heading"><subject>Research</subject><subj-group subj-group-type="heading"><subject>Full Papers</subject></subj-group></subj-group></article-categories><title-group><article-title>Finding a partner in the ocean: molecular and evolutionary bases of the response to sexual cues in a planktonic diatom</article-title></title-group><contrib-group><contrib id="nph14557-cr-0001" contrib-type="author"><name><surname>Basu</surname><given-names>Swaraj</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0002" contrib-type="author"><name><surname>Patil</surname><given-names>Shrikant</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0003" contrib-type="author"><name><surname>Mapleson</surname><given-names>Daniel</given-names></name><xref ref-type="aff" rid="nph14557-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="nph14557-cr-0004" contrib-type="author"><name><surname>Russo</surname><given-names>Monia Teresa</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0005" contrib-type="author"><name><surname>Vitale</surname><given-names>Laura</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0006" contrib-type="author"><name><surname>Fevola</surname><given-names>Cristina</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0007" contrib-type="author"><name><surname>Maumus</surname><given-names>Florian</given-names></name><xref ref-type="aff" rid="nph14557-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="nph14557-cr-0008" contrib-type="author"><name><surname>Casotti</surname><given-names>Raffaella</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0009" contrib-type="author"><name><surname>Mock</surname><given-names>Thomas</given-names></name><xref ref-type="aff" rid="nph14557-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="nph14557-cr-0010" contrib-type="author"><name><surname>Caccamo</surname><given-names>Mario</given-names></name><xref ref-type="aff" rid="nph14557-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="nph14557-cr-0011" contrib-type="author"><name><surname>Montresor</surname><given-names>Marina</given-names></name><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14557-cr-0012" contrib-type="author" corresp="yes"><name><surname>Sanges</surname><given-names>Remo</given-names></name><address><email>remo.sanges@szn.it</email></address><xref ref-type="aff" rid="nph14557-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="nph14557-cr-0013" contrib-type="author" corresp="yes"><name><surname>Ferrante</surname><given-names>Maria Immacolata</given-names></name><address><email>mariella.ferrante@szn.it</email></address><xref ref-type="aff" rid="nph14557-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="nph14557-aff-0001"><label><sup>1</sup></label><named-content content-type="organisation-division">Integrative Marine Ecology</named-content><institution>Stazione Zoologica Anton Dohrn</institution><named-content content-type="street">Villa Comunale 1</named-content><named-content content-type="city">Naples</named-content><named-content content-type="post-code">80121</named-content><country country="IT">Italy</country></aff><aff id="nph14557-aff-0002"><label><sup>2</sup></label><named-content content-type="organisation-division">Earlham Institute</named-content><institution>Norwich Research Park</institution><named-content content-type="city">Norwich</named-content><named-content content-type="post-code">NR4 7UG</named-content><country country="GB">UK</country></aff><aff id="nph14557-aff-0003"><label><sup>3</sup></label><named-content content-type="organisation-division">URGI</named-content><named-content content-type="organisation-division">INRA</named-content><institution>Universit&#x000e9; Paris&#x02010;Saclay</institution><named-content content-type="post-code">78026</named-content><named-content content-type="city">Versailles</named-content><country country="FR">France</country></aff><aff id="nph14557-aff-0004"><label><sup>4</sup></label><named-content content-type="organisation-division">School of Environmental Sciences</named-content><named-content content-type="organisation-division">University of East Anglia</named-content><institution>Norwich Research Park</institution><named-content content-type="city">Norwich</named-content><named-content content-type="post-code">NR4 7TJ</named-content><country country="GB">UK</country></aff><aff id="nph14557-aff-0005"><label><sup>5</sup></label><named-content content-type="organisation-division">Biology and Evolution of Marine Organisms</named-content><institution>Stazione Zoologica Anton Dohrn</institution><named-content content-type="street">Villa Comunale 1</named-content><named-content content-type="city">Naples</named-content><named-content content-type="post-code">80121</named-content><country country="IT">Italy</country></aff><author-notes><corresp id="correspondenceTo"><label>*</label>
+Authors for correspondence:<break/><italic>Maria Immacolata Ferrante</italic><break/><italic>Tel: +39 0815833268</italic><break/><italic>Email: </italic><email>mariella.ferrante@szn.it</email><break/><italic>Remo Sanges</italic><break/><italic>Tel: +39 0815833428</italic><break/><italic>Email: </italic><email>remo.sanges@szn.it</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>21</day><month>4</month><year>2017</year></pub-date><pub-date pub-type="ppub"><month>7</month><year>2017</year></pub-date><volume>215</volume><issue>1</issue><issue-id pub-id-type="doi">10.1111/nph.2017.215.issue-1</issue-id><fpage>140</fpage><lpage>156</lpage><history><date date-type="received"><day>17</day><month>9</month><year>2016</year></date><date date-type="accepted"><day>25</day><month>2</month><year>2017</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> Copyright &#x000a9; 2017 New Phytologist Trust <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2017 The Authors. New Phytologist &#x000a9; 2017 New Phytologist Trust</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:NPH-215-140.pdf"/><abstract id="nph14557-abs-0001"><title>Summary</title><p>
+<list list-type="bullet" id="nph14557-list-0001"><list-item><p>Microalgae play a major role as primary producers in aquatic ecosystems. Cell signalling regulates their interactions with the environment and other organisms, yet this process in phytoplankton is poorly defined. Using the marine planktonic diatom <italic>Pseudo&#x02010;nitzschia multistriata</italic>, we investigated the cell response to cues released during sexual reproduction, an event that demands strong regulatory mechanisms and impacts on population dynamics.</p></list-item><list-item><p>We sequenced the genome of <italic>P.&#x000a0;multistriata</italic> and performed phylogenomic and transcriptomic analyses, which allowed the definition of gene gains and losses, horizontal gene transfers, conservation and evolutionary rate of sex&#x02010;related genes. We also identified a small number of conserved noncoding elements.</p></list-item><list-item><p>Sexual reproduction impacted on cell cycle progression and induced an asymmetric response of the opposite mating types. G protein&#x02010;coupled receptors and cyclic guanosine monophosphate (<styled-content style="fixed-case">cGMP</styled-content>) are implicated in the response to sexual cues, which overall entails a modulation of cell cycle, meiosis&#x02010;related and nutrient transporter genes, suggesting a fine control of nutrient uptake even under nutrient&#x02010;replete conditions.</p></list-item><list-item><p>The controllable life cycle and the genome sequence of <italic>P.&#x000a0;multistriata</italic> allow the reconstruction of changes occurring in diatoms in a key phase of their life cycle, providing hints on the evolution and putative function of their genes and empowering studies on sexual reproduction.</p></list-item></list>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="nph14557-kwd-0001">algae</kwd><kwd id="nph14557-kwd-0002">diatom</kwd><kwd id="nph14557-kwd-0003">genomics</kwd><kwd id="nph14557-kwd-0004">mating type</kwd><kwd id="nph14557-kwd-0005">phytoplankton</kwd><kwd id="nph14557-kwd-0006"><italic>Pseudo&#x02010;nitzschia multistriata</italic></kwd><kwd id="nph14557-kwd-0007">sexual reproduction</kwd><kwd id="nph14557-kwd-0008">signal transduction</kwd></kwd-group><funding-group><award-group><funding-source>Marie Curie FP7&#x02010;PEOPLE&#x02010;2011&#x02010;CIG</funding-source><award-id>293887</award-id></award-group></funding-group><funding-group><award-group><funding-source>RITMARE Italian Flagship Project</funding-source></award-group></funding-group><funding-group><award-group><funding-source>Office of Science of the US Department of Energy</funding-source><award-id>DE&#x02010;AC02&#x02010;05CH11231</award-id></award-group></funding-group><funding-group><award-group><funding-source>SZN Open University PhD fellowship</funding-source></award-group></funding-group><funding-group><award-group><funding-source>Stazione Zoologica Anton Dohrn</funding-source></award-group></funding-group><funding-group><award-group><funding-source>NBIP Computing infrastructure for Science (CiS)</funding-source></award-group></funding-group><counts><fig-count count="6"/><table-count count="2"/><page-count count="17"/><word-count count="11636"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>nph14557</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>July 2017</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.1.2 mode:remove_FC converted:27.06.2017</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="nph14557-sec-0001"><title>Introduction</title><p>Phytoplankton feature prominently in aquatic ecosystems, showing striking morphological and functional diversity and accounting for one&#x02010;half of the Earth's primary productivity (Falkowski &#x00026; Knoll, <xref rid="nph14557-bib-0022" ref-type="ref">2011</xref>). Diatoms are a major component of phytoplankton with over 100&#x000a0;000 species (Mann &#x00026; Vanormelingen, <xref rid="nph14557-bib-0043" ref-type="ref">2013</xref>) and contribute substantially to primary production and major biogeochemical cycles (Armbrust, <xref rid="nph14557-bib-0003" ref-type="ref">2009</xref>). A high rate of DNA turnover, horizontal gene transfer (HGT) from bacteria and endosymbiotic events are responsible for the chimeric nature of diatom genomes, which have probably contributed to the heterogeneity of their physiological and ecological traits (Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0011" ref-type="ref">2010</xref>).</p><p>The first assembled genomes of a centric (<italic>Thalassiosira pseudonana</italic>, Armbrust <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0004" ref-type="ref">2004</xref>) and a pennate (<italic>Phaeodactylum tricornutum</italic>, Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>) diatom were small in size (27&#x02013;32&#x000a0;Mb) with 10&#x000a0;000&#x02013;14&#x000a0;000 genes. They contained only one&#x02010;half of the genes with an annotated function, and <italic>c</italic>. 35% of the genes were reported to be species specific. Further, <italic>c</italic>. 5% of <italic>P.&#x000a0;tricornutum</italic> genes were predicted to be acquired by HGT from bacteria. These genomes contributed towards an understanding of the genes and pathways involved in nutrient assimilation and metabolism of diatoms. To improve our understanding of the evolution and adaptation of this highly diverse group of organisms, additional diatom genomes were sequenced, such as those of the open&#x02010;ocean centric diatom <italic>Thalassiosira oceanica</italic> (Lommer <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0041" ref-type="ref">2012</xref>), the oleaginous <italic>Fistulifera solaris</italic> (Tanaka <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0073" ref-type="ref">2015</xref>) and the polar diatom <italic>Fragilariopsis cylindrus</italic> (Mock <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0047" ref-type="ref">2017</xref>), instrumental for the study of iron physiology, lipid metabolism and adaptation to cold, respectively.</p><p>The dynamics of planktonic communities are strongly dependent on the life cycle traits of the individual species. Diatoms have a unique life cycle characterized by progressive cell size reduction in the population, imposed by a rigid silica wall. A few exceptions apart, sexual reproduction is an obligate phase in diatom life cycles, important not only to generate genetic diversity, but also to escape the miniaturization process, thus allowing the persistence of populations by restoring the original cell size (Montresor <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0049" ref-type="ref">2016</xref>). It has been proposed that some of the unique features of the diatom genomes may reflect the unusual characteristics of diatom life cycles (Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>). However, the most widely used diatom models are putatively asexual and this has hampered research on the molecular and genomic underpinning of sexual reproduction.</p><p>The marine planktonic pennate diatom <italic>Pseudo&#x02010;nitzschia multistriata</italic> has a typical, controllable size reduction&#x02013;restitution life cycle in which cells of opposite mating type (MT+ and MT&#x02212;) produce gametes when they are below the size threshold for sex (D'Alelio <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0015" ref-type="ref">2009</xref>). On gamete conjugation, an expandable zygote is produced, within which the cell of maximum size is formed (Fig.&#x000a0;<xref rid="nph14557-fig-0001" ref-type="fig">1</xref>). Sexual reproduction requires a threshold cell concentration to start, suggesting that chemical signalling is needed to allow the induction of the sexual phase in this species (Scalco <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0066" ref-type="ref">2014</xref>). Diffusible chemical cues have been shown to be responsible for a multi&#x02010;step sexualization process, and two sex pheromones have been characterized for the benthic diatom <italic>Seminavis robusta</italic> (Gillard <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0027" ref-type="ref">2013</xref>; Moeys <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0048" ref-type="ref">2016</xref>). The availability of transcriptomic data for the latter species and for <italic>P.&#x000a0;multistriata</italic>, coupled with a comparative genomic approach, led us to the identification of the diatom genes involved in meiosis (Patil <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0053" ref-type="ref">2015</xref>). Although the meiosis toolkit is well conserved, the sexual cues and the response mechanisms might have diverged substantially between benthic species, which can glide on the substrate to follow attraction cues, and planktonic species, which are suspended in the water column. Indeed, it is a mystery how pennate planktonic diatoms find their partner and the significance of pheromone signalling remains completely unexplored.</p><fig fig-type="Figure" xml:lang="en" id="nph14557-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Schematic drawing of the life cycle of <italic>Pseudo&#x02010;nitzschia multistriata</italic>. Starting clockwise from the bottom portion of the cycle, the vegetative phase is characterized by progressive cell size reduction of the population imposed by the rigid silica wall, made up of two unequal thecae. During this process, the cells reach the sexualization size threshold (<styled-content style="fixed-case">SST</styled-content>) and can either keep decreasing in size until death, or undergo sexual reproduction and escape the miniaturization process, producing large cells. In the heterothallic <italic>P.&#x000a0;multistriata</italic>, sex can occur only if strains of opposite mating type come into contact. The perception of chemical cues deriving from the mating partner (0&#x02013;12&#x000a0;h) brings cells of opposite mating type to pair (12&#x02013;24&#x000a0;h). The formation of gametes (24&#x02013;36&#x000a0;h) takes place following meiosis. Conjugation of the haploid gametes (24&#x02013;48&#x000a0;h) produces two expandable zygotes (36&#x02013;48&#x000a0;h) that develop into auxospores (36&#x02013;72&#x000a0;h). Within each auxospore, an initial cell of maximum size is synthesized (60&#x02013;72&#x000a0;h), restoring the vegetative phase of the cycle. The time interval for each stage is indicated. Representative microscopic images of the different stages are shown outside the circle; bar, 10&#x000a0;&#x003bc;m. Thick black arrows mark the sampling time points for the experiments described in this work. <styled-content style="fixed-case">MT</styled-content>, mating type.</p></caption><graphic id="nlm-graphic-1" xlink:href="NPH-215-140-g001"/></fig><p>
+<italic>Pseudo&#x02010;nitzschia multistriata</italic> is able to produce the neurotoxin domoic acid, a molecule that can contaminate seafood and cause a syndrome called amnesic shellfish poisoning (Trainer <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0074" ref-type="ref">2012</xref>). The genome sequence of this toxic species and insights into the mechanisms underlying its life cycle regulation will facilitate investigations on the dynamics of toxic <italic>Pseudo&#x02010;nitzschia</italic> blooms.</p><p>We chose <italic>P.&#x000a0;multistriata</italic> as a model to study sexual reproduction. We report the assembly and annotation of its genome, which was first exploited to reveal unexplored features of diatom genomes, such as conserved noncoding elements (CNEs) with a potential regulatory function, and transposable element activity. We also assessed the turnover of gene families amongst Stramenopiles through an in&#x02010;depth phylogenomic approach to better identify conserved and unique features of <italic>P.&#x000a0;multistriata</italic>, and to provide novel information on HGT. Furthermore, the availability of the <italic>P.&#x000a0;multistriata</italic> genome, coupled with a transcriptomic approach, led us to dissect the signalling pathways employed in the early phases of sexual reproduction. Several mating type (MT)&#x02010;specific gene expression changes were observed, highlighting the involvement of different pathways in the response to putative pheromones, whereas other changes were common to both MTs, including growth arrest and the modulation of cell cycle genes and nutrient transporters.</p></sec><sec id="nph14557-sec-0002"><title>Materials and Methods</title><sec id="nph14557-sec-0003"><title>Strains</title><p>A <italic>Pseudo&#x02010;nitzschia multistriata</italic> (Takano) Takano pedigree was built starting from two strains collected in 2009 (Fig.&#x000a0;<xref rid="nph14557-fig-0002" ref-type="fig">2</xref>). Strain B856, chosen for genome sequencing, was made axenic by treatment with antibiotics (Supporting Information Methods&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S1</xref>). RNA&#x02010;seq reads used to produce the <italic>de&#x000a0;novo</italic> transcriptome were obtained from strains Sy373, Sy379, B856 and B857 (Fig.&#x000a0;<xref rid="nph14557-fig-0002" ref-type="fig">2</xref>e). For the differential expression studies, strains B856, B857 and B938 were used with B936, B937 and B939, isolated from the LTER (Long TERm) station MareChiara (40&#x000b0;48.5&#x02032;N, 14&#x000b0;15&#x02032;E). Cultures were kept at a temperature of 18&#x000b0;C, irradiance of 80&#x000a0;&#x003bc;mol&#x000a0;photons&#x000a0;m<sup>&#x02212;1</sup>&#x000a0;s<sup>&#x02212;1</sup> and in a 12&#x000a0;h&#x000a0;:&#x000a0;12&#x000a0;h light&#x000a0;:&#x000a0;dark photoperiod.</p><fig fig-type="Figure" xml:lang="en" id="nph14557-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Main features of <italic>Pseudo&#x02010;nitzschia multistriata</italic> and its genome. (a, b) Microscopic images showing three cells in a chain in a normal culture with bacteria, in bright field and fluorescence, respectively, and (c, d) four cells in an axenic culture without bacteria. DAPI (4&#x02032;,6&#x02010;diamidino&#x02010;2&#x02010;phenylindole) stains <styled-content style="fixed-case">DNA</styled-content> in cell nuclei (arrowheads) and bacterial nucleoids (thin arrows). Bars, 10&#x000a0;&#x003bc;m. (e) <italic>Pseudo&#x02010;nitzschia multistriata</italic> pedigree showing four generations. Strain B856 was used to produce the genome sequence. (f) Estimation of species divergence based on amino acid identity of coding genes. The <italic>x</italic>&#x02010;axis represents the average percentage identity of <styled-content style="fixed-case">BLAST</styled-content>p hits with maximum scores for the first species against the second. The <italic>y</italic>&#x02010;axis represents the cumulative proportion of the genes showing a given percentage identity. (g) Distribution of percentage identity for noncoding elements conserved between <italic>Pseudo&#x02010;nitzschia</italic> species (light blue dots), among <italic>P.&#x000a0;multistriata</italic>,<italic> Pseudo&#x02010;nitzschia multiseries</italic> and <italic>Fragilariopsis cylindrus</italic> (red dots) and in other combinations. The <italic>x</italic>&#x02010;axis represents the identified conserved noncoding elements, stacked for best visualization of their distribution of conservation.</p></caption><graphic id="nlm-graphic-3" xlink:href="NPH-215-140-g002"/></fig></sec><sec id="nph14557-sec-0004"><title>Genome sequencing and assembly</title><p>B856 cells were collected onto 1.2&#x02010;&#x003bc;m pore&#x02010;size membrane filters (RAWP04700 Millipore) and DNA was extracted with phenol&#x02013;chloroform as described in Sabatino <italic>et&#x000a0;al</italic>. (<xref rid="nph14557-bib-0062" ref-type="ref">2015</xref>). The <italic>P.&#x000a0;multistriata</italic> genome was assembled from a total of 172 million 101&#x02010;bp overlapping paired&#x02010;end reads with <italic>c</italic>. 175&#x02010;bp inserts, 117 million 100&#x02010;bp paired&#x02010;end reads with <italic>c</italic>. 450&#x02010;bp inserts, 72 million <italic>c</italic>. 68&#x02010;bp (after trimming) mate pair reads with <italic>c</italic>. 1.2&#x02010;kb inserts and 5.4 million <italic>c</italic>. 156&#x02010;bp (after trimming) mate pair reads with <italic>c</italic>. 4.5&#x02010;kb inserts. Mate pair libraries were processed by N<sc>ext</sc>C<sc>lip</sc> to remove adapters. Depending on the library, the genome size was estimated to be between 71 and 82&#x000a0;Mb using SGA preqc. Reads from libraries exceeding 100&#x000d7; coverage were randomly subsampled to 100&#x000d7; and then assembled into scaffolds by A<sc>llpaths</sc>&#x02010;LG (Gnerre <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0028" ref-type="ref">2011</xref>) via R<sc>ampart</sc> (Mapleson <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0044" ref-type="ref">2015</xref>). The completeness of the genome was evaluated using C<sc>egma</sc> with the set of 248 core eukaryotic genes (CEGs) (Parra <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0052" ref-type="ref">2007</xref>). The assembly (accession number PRJEB9419) can be visualized at <ext-link ext-link-type="uri" xlink:href="http://apollo.tgac.ac.uk/Pseudo-nitzschia_multistriata_V1_4_browser/sequences">http://apollo.tgac.ac.uk/Pseudo-nitzschia_multistriata_V1_4_browser/sequences</ext-link> (username and password: pnitzschia).</p></sec><sec id="nph14557-sec-0005"><title>Gene prediction and annotation</title><p>Protein&#x02010;coding genes were predicted using a workflow incorporating RNA&#x02010;seq reads, homologous proteins from <italic>P.&#x000a0;tricornutum</italic>,<italic> T.&#x000a0;pseudonana</italic> and a <italic>de&#x000a0;novo P.&#x000a0;multistriata</italic> transcriptome assembly. RNA&#x02010;seq reads were combined from four different libraries (samples: B856, libraries HCUO and HCUH; B857, libraries HCUN and HATT; available at <ext-link ext-link-type="uri" xlink:href="http://genomeportal.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=PsenittraphaseII">http://genomeportal.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=PsenittraphaseII</ext-link>) and assembled <italic>de&#x000a0;novo</italic>. The transcripts generated were used as training data for A<sc>ugustus</sc> (Stanke <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0071" ref-type="ref">2006</xref>). The model built on the training data was applied to the entire repeat masked assembly, together with external support from homologous proteins aligned using E<sc>xonerate</sc> (Slater &#x00026; Birney, <xref rid="nph14557-bib-0068" ref-type="ref">2005</xref>). The predicted gene models were annotated using A<sc>nnocript</sc> (Musacchia <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0050" ref-type="ref">2015</xref>).</p><p>Repeats were identified using R<sc>epet</sc>. The TE<sc>denovo</sc> pipeline (Flutre <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0024" ref-type="ref">2011</xref>) was used to build a library of consensus sequences of repetitive elements in the genome assembly. The TE<sc>annot</sc> pipeline (Quesneville <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0058" ref-type="ref">2005</xref>) was employed with default settings using the sequences from the filtered combined library as probes to perform genome annotation.</p><p>Full&#x02010;length complete long terminal repeats (LTRs) were identified using LTRH<sc>arvest</sc> and LTRD<sc>igest</sc> (Gremme <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0030" ref-type="ref">2013</xref>). The relative age of LTR insertion was estimated using the method proposed in previous studies (Kimura, <xref rid="nph14557-bib-0037" ref-type="ref">1980</xref>).</p><p>The statistics for the genomic features in Table <xref rid="nph14557-tbl-0001" ref-type="table-wrap">1</xref> were extracted from the GFF files using shell scripts and the BEDT<sc>ools</sc> package (Quinlan, <xref rid="nph14557-bib-0059" ref-type="ref">2014</xref>). The genome size, N50 value and GC content were taken from the respective publications (Armbrust <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0004" ref-type="ref">2004</xref>; Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>; Cock <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0014" ref-type="ref">2010</xref>; L&#x000e9;vesque <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0040" ref-type="ref">2010</xref>; Lommer <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0041" ref-type="ref">2012</xref>; Tanaka <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0073" ref-type="ref">2015</xref>; Mock <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0047" ref-type="ref">2017</xref>).</p><table-wrap id="nph14557-tbl-0001" xml:lang="en" orientation="portrait" position="float"><label>Table 1</label><caption><p>Genome assembly and gene annotation statistics for selected Stramenopiles</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Organism</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Pseudo&#x02010;nitzschia multistriata</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Pseudo&#x02010;nitzschia multiseries</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Fragilariopsis cylindrus</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Fistulifera solaris</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Phaeodactylum tricornutum</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Thalassiosira pseudonana</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Thalassiosira oceanica</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Pythium ultimum</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>Ectocarpus siliculosus</italic>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Genome size (Mb)</td><td align="left" rowspan="1" colspan="1">59</td><td align="left" rowspan="1" colspan="1">219</td><td align="left" rowspan="1" colspan="1">61</td><td align="left" rowspan="1" colspan="1">50</td><td align="left" rowspan="1" colspan="1">27</td><td align="left" rowspan="1" colspan="1">32</td><td align="left" rowspan="1" colspan="1">92</td><td align="left" rowspan="1" colspan="1">45</td><td align="left" rowspan="1" colspan="1">196</td></tr><tr><td align="left" rowspan="1" colspan="1">N50 (Mb)</td><td align="left" rowspan="1" colspan="1">0.138</td><td align="left" rowspan="1" colspan="1">0.147</td><td align="left" rowspan="1" colspan="1">1.3</td><td align="left" rowspan="1" colspan="1">na</td><td align="left" rowspan="1" colspan="1">0.945</td><td align="left" rowspan="1" colspan="1">1.9</td><td align="left" rowspan="1" colspan="1">0.04</td><td align="left" rowspan="1" colspan="1">0.837</td><td align="left" rowspan="1" colspan="1">0.504</td></tr><tr><td align="left" rowspan="1" colspan="1">G&#x000a0;+&#x000a0;C (%)</td><td align="left" rowspan="1" colspan="1">46.3</td><td align="left" rowspan="1" colspan="1">40.72</td><td align="left" rowspan="1" colspan="1">39.8</td><td align="left" rowspan="1" colspan="1">46.1</td><td align="left" rowspan="1" colspan="1">48.8</td><td align="left" rowspan="1" colspan="1">47</td><td align="left" rowspan="1" colspan="1">53.3</td><td align="left" rowspan="1" colspan="1">52</td><td align="left" rowspan="1" colspan="1">53.6</td></tr><tr><td align="left" rowspan="1" colspan="1">Repeat (%)</td><td align="left" rowspan="1" colspan="1">25</td><td align="left" rowspan="1" colspan="1">73</td><td align="left" rowspan="1" colspan="1">38</td><td align="left" rowspan="1" colspan="1">16</td><td align="left" rowspan="1" colspan="1">6.4</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">na</td><td align="left" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">22.7</td></tr><tr><td align="left" rowspan="1" colspan="1">Gene count</td><td align="left" rowspan="1" colspan="1">12&#x000a0;008</td><td align="left" rowspan="1" colspan="1">19&#x000a0;703</td><td align="left" rowspan="1" colspan="1">21&#x000a0;066</td><td align="left" rowspan="1" colspan="1">20&#x000a0;621</td><td align="left" rowspan="1" colspan="1">10&#x000a0;402</td><td align="left" rowspan="1" colspan="1">11&#x000a0;776</td><td align="left" rowspan="1" colspan="1">34&#x000a0;500</td><td align="left" rowspan="1" colspan="1">15&#x000a0;291</td><td align="left" rowspan="1" colspan="1">16&#x000a0;256</td></tr><tr><td align="left" rowspan="1" colspan="1">Av. gene length (bp)</td><td align="left" rowspan="1" colspan="1">2205</td><td align="left" rowspan="1" colspan="1">1522</td><td align="left" rowspan="1" colspan="1">1575</td><td align="left" rowspan="1" colspan="1">na</td><td align="left" rowspan="1" colspan="1">1511</td><td align="left" rowspan="1" colspan="1">1553</td><td align="left" rowspan="1" colspan="1">1256</td><td align="left" rowspan="1" colspan="1">1312</td><td align="left" rowspan="1" colspan="1">1526</td></tr><tr><td align="left" rowspan="1" colspan="1">Av. exon length (bp)</td><td align="left" rowspan="1" colspan="1">1164</td><td align="left" rowspan="1" colspan="1">509</td><td align="left" rowspan="1" colspan="1">625</td><td align="left" rowspan="1" colspan="1">na</td><td align="left" rowspan="1" colspan="1">842</td><td align="left" rowspan="1" colspan="1">612</td><td align="left" rowspan="1" colspan="1">464</td><td align="left" rowspan="1" colspan="1">501</td><td align="left" rowspan="1" colspan="1">242</td></tr><tr><td align="left" rowspan="1" colspan="1">Av. intron length (bp)</td><td align="left" rowspan="1" colspan="1">341</td><td align="left" rowspan="1" colspan="1">229</td><td align="left" rowspan="1" colspan="1">245</td><td align="left" rowspan="1" colspan="1">na</td><td align="left" rowspan="1" colspan="1">135</td><td align="left" rowspan="1" colspan="1">124</td><td align="left" rowspan="1" colspan="1">149</td><td align="left" rowspan="1" colspan="1">116</td><td align="left" rowspan="1" colspan="1">715</td></tr><tr><td align="left" rowspan="1" colspan="1">Av. exon number per gene</td><td align="left" rowspan="1" colspan="1">1.87</td><td align="left" rowspan="1" colspan="1">2.38</td><td align="left" rowspan="1" colspan="1">2.08</td><td align="left" rowspan="1" colspan="1">na</td><td align="left" rowspan="1" colspan="1">1.79</td><td align="left" rowspan="1" colspan="1">2.49</td><td align="left" rowspan="1" colspan="1">2.3</td><td align="left" rowspan="1" colspan="1">2.6</td><td align="left" rowspan="1" colspan="1">8</td></tr></tbody></table><table-wrap-foot><fn id="nph14557-note-0001"><p>na, data not available.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap></sec><sec id="nph14557-sec-0006"><title>Identification of CNEs</title><p>The public genomes of sequenced diatoms were aligned pairwise against the reference <italic>P.&#x000a0;multistriata</italic> genome with L<sc>astz</sc>. Utilities from the University of California Santa Cruz (UCSC) genome browser source code tree (Speir <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0069" ref-type="ref">2016</xref>) were used to generate NET alignments from the raw pairwise alignments.</p><p>The pairwise NET alignments in MAF format were combined into a single diatom NET alignment file using the roast binary from the M<sc>ultiz</sc> package (Blanchette <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0007" ref-type="ref">2004</xref>) with <italic>P.&#x000a0;multistriata</italic> as reference. Custom P<sc>erl</sc> scripts were used to scan the diatom NET alignment to identify conserved intergenic blocks (window, 20&#x000a0;bp; step, 10&#x000a0;bp) which do not overlap gene/expressed sequence tags in the species conserved. Searches for transcription factor binding sites were performed using J<sc>aspar</sc> 2014 (Mathelier <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0045" ref-type="ref">2014</xref>).</p></sec><sec id="nph14557-sec-0007"><title>Expansion of gene families in <italic>P.&#x000a0;multistriata</italic>
+</title><p>Proteomes of Stramenopiles were compared against hidden Markov models (HMMs) of protein families classified in the SUPERFAMILY database (Wilson <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0079" ref-type="ref">2009</xref>). The comparison was performed using Perl scripts provided by the SUPERFAMILY database (<ext-link ext-link-type="uri" xlink:href="http://supfam.cs.bris.ac.uk/SUPERFAMILY/howto_use_models.html">http://supfam.cs.bris.ac.uk/SUPERFAMILY/howto_use_models.html</ext-link>) and the hmmscan binary from HMMER3 (Eddy, <xref rid="nph14557-bib-0019" ref-type="ref">1995</xref>). For each SUPERFAMILY present in <italic>P.&#x000a0;multistriata</italic>, a Z&#x02010;score was calculated using the following formula (no. of SUPERFAMILY genes in <italic>P.&#x000a0;multistriata</italic>&#x000a0;&#x02013;&#x000a0;mean no. of SUPERFAMILY genes in all proteomes)/SD of SUPERFAMILY genes in all proteomes.</p></sec><sec id="nph14557-sec-0008"><title>Identification of gene families by clustering of protein sequences</title><p>An All vs All B<sc>last</sc>p search was performed on the combined F<sc>asta</sc> file of proteomes from bacteria, archaea and 50 eukaryotes. The results of the B<sc>last</sc>p search were provided to the orthAgogue software (Ekseth <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0020" ref-type="ref">2014</xref>) for the estimation of homology between the protein sequences. The &#x02018;abc&#x02019; format output from <sc>orth</sc>A<sc>gogue</sc> was given to the MCL software (Enright <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0021" ref-type="ref">2002</xref>) for clustering of the proteins into homologous groups.</p></sec><sec id="nph14557-sec-0009"><title>Estimation of gene family gains and losses in Stramenopiles</title><p>Clusters containing only one&#x02010;to&#x02010;one orthologues of each stramenopile species (85 clusters, considering 13 species mentioned in the &#x02018;Expansion of gene families in <italic>P.&#x000a0;multistriata</italic>&#x02019; subsection) were chosen to generate the species tree for Stramenopiles using M<sc>afft</sc> (Katoh &#x00026; Standley, <xref rid="nph14557-bib-0036" ref-type="ref">2013</xref>).</p><p>The alignments were concatenated and trimmed with trimAl. ProtTest (Darriba <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0016" ref-type="ref">2011</xref>) was then run on the trimmed concatenated alignment to determine the best amino acid substitution matrix to generate a phylogenetic tree based on the Bayesian Information Criterion score. The identified model was employed to generate the phylogenetic tree using a maximum likelihood and a Bayesian approach employing RA<sc>x</sc>ML and M<sc>r</sc>B<sc>ayes</sc> (Stamatakis, <xref rid="nph14557-bib-0070" ref-type="ref">2006</xref>). In both approaches, <italic>Blastocystis hominis</italic> was used as outgroup. Protein clusters with at least one member from any stramenopile species were identified to obtain 28&#x000a0;927 clusters. For each stramenopile species, a binary code was established stating the presence or absence of the species in each cluster. The binary file, together with the maximum likelihood tree, was subjected to D<sc>ollo</sc> parsimony analysis using the P<sc>hylip</sc> package (Felsenstein, <xref rid="nph14557-bib-0023" ref-type="ref">1989</xref>). The topologies of the maximum likelihood and Bayesian trees were compared with treedist from the P<sc>hylip</sc> software, indicating an identical topology.</p></sec><sec id="nph14557-sec-0010"><title>Identification of genes acquired from red algae and by HGT from bacteria in <italic>P.&#x000a0;multistriata</italic>
+</title><p>Identification of HGT events in <italic>P.&#x000a0;multistriata</italic> was performed with the following steps: identification of protein clusters containing at least one <italic>P.&#x000a0;multistriata</italic> protein; building of a multiple alignment for each cluster using M<sc>afft</sc> (Katoh &#x00026; Standley, <xref rid="nph14557-bib-0036" ref-type="ref">2013</xref>); trimming of columns with &#x02265;&#x000a0;95% gaps in the alignment generated using <sc>trim</sc>A<sc>l</sc> (Capella&#x02010;Guti&#x000e9;rrez <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0012" ref-type="ref">2009</xref>); generation of a phylogenetic tree using F<sc>ast</sc>T<sc>ree</sc>.</p><p>Phylogenetic trees for each cluster were parsed to identify genes of potential bacterial origin using the following criteria: identification of a clade represented in the majority by bacteria, archaea and diatoms (&#x02265;&#x000a0;90%) without members from metazoa, plantae or fungi; bootstrap cut off at the clade of interest &#x02265;&#x000a0;0.5 or if the average bootstrap value for the tree is &#x02265;&#x000a0;0.5 (if one of the bootstrap values is &#x02264;&#x000a0;0.5, the tree is still retained (if other filters are passed) as a candidate with medium confidence); to add further stringency to the analysis, at least five bacterial members must be present in the clade of interest (10 when <italic>P.&#x000a0;multistriata</italic> is the only eukaryote in the clade) to avoid false positives as a result of misplacement of a single protein within the clade of another taxon, which can be caused by issues such as long branch attraction.</p></sec><sec id="nph14557-sec-0011"><title>Co&#x02010;culture experiments</title><p>Three independent co&#x02010;culture experiments were performed, two for RNA&#x02010;seq (MT+B856xMT&#x02010;B939 and MT+B938xMT&#x02010;B857) and one for quantitative PCR (MT+B937xMT&#x02010;B936). A bipartite glass apparatus (Duran flasks; VWR, Dresden, Germany) (Paul <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0054" ref-type="ref">2012</xref>) was used for the co&#x02010;culture of strains of opposite MTs. A 0.22&#x02010;&#x003bc;m pore size hydrophilic polyvinylidene fluoride membrane (Durapore, Millipore) was placed in between the bottles to keep the cells separate. Control parental strains were grown in monoculture. The cell concentration was 80&#x000a0;000&#x000a0;cells&#x000a0;ml<sup>&#x02212;1</sup> for each strain. The cells were grown in f/2 medium (Guillard, <xref rid="nph14557-bib-0031" ref-type="ref">1975</xref>). A 36&#x02010;h dark incubation was employed to synchronize the cultures. Samples were collected 2 and 6&#x000a0;h after the start of the experiment. Fifty&#x02010;millilitre samples were centrifuged, resuspended in cold methanol and stored at &#x02212;20&#x000b0;C. They were resuspended in Tris&#x02010;EDTA buffer, treated with RNase I (300&#x000a0;&#x003bc;g&#x000a0;ml<sup>&#x02212;1</sup>) for 45&#x000a0;min and stained with SYBR Green (1&#x000a0;:&#x000a0;10&#x000a0;000 dilution of SYBR<sup>&#x000ae;</sup> Green I &#x02013; 10&#x000a0;000&#x000d7; concentrate, Invitrogen) for 15&#x000a0;min. Cell cycle synchronization was verified with a FACSCalibur flow cytometer (Becton Dickinson BioSciences Inc., Franklin Lakes, NJ, USA) with standard filters and a 488&#x02010;nm Ar laser. SYBR Green fluorescence (DNA) was collected through 530&#x000a0;&#x000b1;&#x000a0;30&#x02010;nm optical filters in order to assess the percentage of cells in the different cell cycle phases. Control cells always presented a bimodal distribution of SYBR Green fluorescence, allowing the assessment of cell cycle blockage (one peak) in treated samples. Sample acquisition was realized using BD C<sc>ell</sc>Q<sc>uest</sc> software, and the relative proportions of cells in the different phases of the cell cycle were assessed using ModFit software (Verity Inc., Palo Alto, CA, USA).</p></sec><sec id="nph14557-sec-0012"><title>RNA extraction and sequencing</title><p>Samples were collected on 1.2&#x02010;&#x003bc;m pore size membrane filters (RAWP04700 Millipore) and extracted with Trizol&#x02122; (Invitrogen) according to the manufacturer's instructions; the gDNA contamination was removed by DNase I treatment (Qiagen), followed by purification using an RNeasy Plant Mini Kit (Qiagen). RNA quantity was determined using a Qubit<sup>&#x000ae;</sup> 2.0 Fluorometer (Life Technologies, Thermofisher, Waltham, MA, USA) and integrity using a Bioanalyzer (2100 Bioanalyzer Instruments, Agilent Technologies, Santa Clara, CA, USA).</p><p>Libraries were prepared using a Beckman Biomek FX and an Illumina<sup>&#x000ae;</sup> TruSeq<sup>&#x000ae;</sup> Stranded Total RNA Sample Preparation kit, with poly&#x02010;A selection and starting with 500&#x000a0;ng of total RNA. Samples were sequenced on an Illumina HiSeq2000 producing single&#x02010;end 50&#x02010;bp reads. Library preparation and sequencing were performed at the Genecore Facility of the European Molecular Biology Laboratory (EMBL), Germany.</p></sec><sec id="nph14557-sec-0013"><title>RNA&#x02010;seq filtering, mapping and differential expression analysis</title><p>The raw sequencing reads were processed with T<sc>rimmomatic</sc> (Bolger <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0009" ref-type="ref">2014</xref>) to trim low&#x02010;quality bases and adapters and to filter reads with low quality and smaller than 36 bases. The S<sc>tar</sc> aligner (Dobin <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0018" ref-type="ref">2013</xref>) was used to map the filtered reads onto the <italic>P.&#x000a0;multistriata</italic> genome. The A<sc>ugustus</sc> gene models were associated with the mapped reads from each sample to generate raw counts for each gene as a measure of their expression level. E<sc>dge</sc>R (Robinson <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0061" ref-type="ref">2010</xref>) was used to obtain the differentially expressed genes. In brief, generalized linear models were used to estimate dispersion considering multiple factors (MT, control/sexualized and species strain), whereas a more classical negative binomial distribution was used to compare only the control and sexualized stages independently in each MT.</p><p>For quantitative PCR validation, total RNA was extracted from samples collected at 6&#x000a0;h. One microgram of total RNA was reverse transcribed using a QuantiTect<sup>&#x000ae;</sup> Reverse Transcription Kit (Qiagen). Nineteen genes were selected (Table&#x000a0;<xref rid="nph14557-sup-0003" ref-type="supplementary-material">S1</xref>). <italic>TUB&#x02010;A</italic> (Adelfi <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0001" ref-type="ref">2014</xref>) was used as reference. Real&#x02010;time PCR amplification and analyses were performed as described in Patil <italic>et&#x000a0;al</italic>. (<xref rid="nph14557-bib-0053" ref-type="ref">2015</xref>).</p></sec><sec id="nph14557-sec-0014"><title>Identification of homologous genes and Ka&#x000a0;:&#x000a0;Ks analysis</title><p>The analysed data included 12&#x000a0;152 and 19&#x000a0;703 coding DNA sequences (CDSs) of <italic>P.&#x000a0;multistriata</italic> and <italic>Pseudo&#x02010;nitzschia multiseries</italic> (Psemu1, downloaded from the Joint Genome Institute (JGI)), respectively. As a first step, a reciprocal best B<sc>last</sc> hit (RBH) was used to identify <italic>P.&#x000a0;multistriata</italic> and <italic>P.&#x000a0;multiseries</italic> orthologues. Only alignments covering at least 30% of <italic>P.&#x000a0;multistriata</italic> sequences were retained. The analysis identified 7128 reciprocal best B<sc>last</sc> hits. Next, each pair of sequences was aligned with P<sc>rank</sc> (L&#x000f6;ytynoja, <xref rid="nph14557-bib-0042" ref-type="ref">2014</xref>) using the empirical codon model, and the alignments were refined using <sc>trim</sc>A<sc>l</sc> (Capella&#x02010;Guti&#x000e9;rrez <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0012" ref-type="ref">2009</xref>). Of the 7128 alignments, 6066 were suitable for Ka&#x000a0;:&#x000a0;Ks calculation. Ka&#x000a0;:&#x000a0;Ks calculation was performed with KaKs_Calculator (Wang <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0076" ref-type="ref">2010</xref>); the model for the calculation was chosen for each alignment using the corrected akaike information criterion (AICc) model selection method.</p><p>An extended version of the methods can be found in Methods&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S1</xref>.</p></sec></sec><sec id="nph14557-sec-0015"><title>Results and discussion</title><sec id="nph14557-sec-0016"><title>The <italic>P.&#x000a0;multistriata</italic> genome sequence and first identification of CNEs in diatoms</title><p>To sequence the genome of <italic>P.&#x000a0;multistriata</italic>, we used a strain derived from the cross of two siblings, grown under axenic conditions (Fig.&#x000a0;<xref rid="nph14557-fig-0002" ref-type="fig">2</xref>a&#x02013;e). The sequencing and assembly yielded a genome of 59&#x000a0;Mb composed of 1099 scaffolds with an N50 of 139&#x000a0;kb. Estimated heterozygosity was 0.18% and the distribution of allele frequencies peaked at <italic>c</italic>. 0.5, indicating a diploid clonal strain. A total of 99.5% of variable sites presented two alleles; only <italic>c</italic>. 500 of <italic>c</italic>. 110&#x000a0;000 variable sites showed more than two alleles, mainly associated with repeats and noncoding regions. A total of 12&#x000a0;008 genes were predicted on the assembled scaffolds. The regions comprising coding genes accounted for 50% of the genome, where <italic>c</italic>. 80% of genes (9653 genes) were assigned a U<sc>niprot</sc> ID and an additional 214 genes were exclusively annotated for the presence of a protein domain. Estimation of genome completion by C<sc>egma</sc> identified 221 (89.11%) of CEGs as complete and an additional seven CEGs (3%) as partial, indicating a high&#x02010;quality genome assembly and gene build. The statistics and features of the genome assembly and gene prediction for <italic>P.&#x000a0;multistriata</italic> and selected Stramenopiles are summarized in Table&#x000a0;<xref rid="nph14557-tbl-0001" ref-type="table-wrap">1</xref> and Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S1</xref>.</p><p>Sequence conservation at the amino acid level can be a potential indicator of species divergence; hence, we used the sequence homology between species with known evolutionary history to estimate the divergence within diatom genomes (Fig.&#x000a0;<xref rid="nph14557-fig-0002" ref-type="fig">2</xref>f). Consistent with its known phylogenetic relationships (Kooistra <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0038" ref-type="ref">2007</xref>), <italic>P.&#x000a0;multistriata</italic> shows maximum amino acid identity with the congeneric species <italic>P.&#x000a0;multiseries</italic>, followed by the phylogenetically close <italic>F.&#x000a0;cylindrus</italic> and then by the more distant <italic>P.&#x000a0;tricornutum</italic>. The group of raphid pennates to which the four species belong is thought to have evolved <italic>c</italic>. 60&#x000a0;million yr ago (Ma) (Kooistra <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0038" ref-type="ref">2007</xref>). Yet, the divergence of these diatom pairs is comparable with that between eukaryotic pairs known to have separated earlier (<italic>Plasmodium falciparum</italic> and <italic>P.&#x000a0;vivax</italic>, reported to have separated <italic>c</italic>. 90&#x02013;100&#x000a0;Ma (Perkins &#x00026; Schall, <xref rid="nph14557-bib-0055" ref-type="ref">2002</xref>); <italic>Arabidopsis thaliana</italic> and <italic>Physcomitrella patens</italic>, with flowering plants reported to have diverged from the bryopsids <italic>c</italic>. 400&#x02013;450&#x000a0;Ma (Rensing <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0060" ref-type="ref">2008</xref>)), confirming the rapid evolutionary rates in diatoms (Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>).</p><p>In comparison with coding genes, the noncoding part of diatom genomes remains vastly unexplored, with no precise information on noncoding regions that might act as regulatory elements, as reported in animals, plants and unicellular eukaryotes (Vavouri <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0075" ref-type="ref">2007</xref>; Piganeau <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0056" ref-type="ref">2009</xref>; Haudry <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0033" ref-type="ref">2013</xref>). Here, we take a first step towards the identification and classification of CNEs in diatoms using a comparative genomic approach centred on <italic>P.&#x000a0;multistriata</italic>. CNEs play a role in the regulation of gene expression, often being part of promoters or enhancers (Woolfe <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0081" ref-type="ref">2005</xref>). We identified a core set of <italic>c</italic>. 1500 CNEs in the genome of <italic>P.&#x000a0;multistriata</italic> (mean length, 110&#x000a0;bp; mean identity, 73%; Table&#x000a0;<xref rid="nph14557-sup-0003" ref-type="supplementary-material">S2</xref>) when compared with other diatom genomes. As expected, the majority of the predicted CNEs (93%, 1462 CNEs) were conserved exclusively between the <italic>Pseudo&#x02010;nitzschia</italic> species (Fig.&#x000a0;<xref rid="nph14557-fig-0002" ref-type="fig">2</xref>g). A smaller subset of <italic>c</italic>. 50 CNEs was conserved between <italic>Pseudo&#x02010;nitzschia</italic> species and <italic>F.&#x000a0;cylindrus</italic> (26), between <italic>P.&#x000a0;multistriata</italic> and <italic>P.&#x000a0;tricornutum</italic> (15), and between <italic>P.&#x000a0;multistriata</italic> and <italic>T.&#x000a0;pseudonana</italic> (10, Fig.&#x000a0;<xref rid="nph14557-fig-0002" ref-type="fig">2</xref>g), suggesting functional constraints leading to noncoding conservation over large evolutionary distances. The predicted CNEs showed a significant enrichment to be located near transcription start sites (TSSs) (Student's <italic>t</italic>&#x02010;test, <italic>P</italic>&#x000a0;=&#x000a0;0.0034; Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S2</xref>a), indicating that they are probably involved in transcriptional regulation. Genes associated with the gene ontology (GO) molecular function terms &#x02018;<italic>signal transducer activity</italic>&#x02019; and &#x02018;<italic>sequence&#x02010;specific DNA binding transcription factor activity</italic>&#x02019; were enriched in loci containing CNEs (Fisher test, <italic>P</italic>&#x000a0;&#x02264;&#x000a0;0.05), further supporting the functionality of the CNE. In addition, a significant enrichment of transcription factor binding sites of major transcription factor families was observed in CNE sequences compared with that observed in random sequences of similar size (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S2</xref>b&#x02013;d; Table&#x000a0;<xref rid="nph14557-sup-0004" ref-type="supplementary-material">S3</xref>). Thus, the proximity to genes related to the regulation of transcriptional control, together with the binding site propensity for transcription factors, corroborate previous reports which indicate that CNEs are often involved in the regulation of transcription (Inada <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0035" ref-type="ref">2003</xref>; Sanges <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0063" ref-type="ref">2013</xref>), and provide evidence in support of their functionality in diatoms.</p><p>Approximately 25% of the <italic>P.&#x000a0;multistriata</italic> genome comprises repetitive elements, 8% of which are in genic regions and 92% of which are in intergenic regions. The repetitive element coverage is significantly higher than that of other diatoms (6.4% in <italic>P.&#x000a0;tricornutum</italic> and 1.9% in <italic>T.&#x000a0;pseudonana</italic>). Of the known classes of repetitive elements, LTR retrotransposons were the most abundant group of annotated repeats (6%) (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S3</xref>a&#x02013;c), similar to previous reports in other diatoms (Maumus <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0046" ref-type="ref">2009</xref>), as well as other Stramenopiles (Cock <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0014" ref-type="ref">2010</xref>; Ye <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0084" ref-type="ref">2015</xref>), yeast (Bleykasten&#x02010;Grosshans &#x00026; Neuv&#x000e9;glise, <xref rid="nph14557-bib-0008" ref-type="ref">2011</xref>) and some flowering plants (Bennetzen, <xref rid="nph14557-bib-0006" ref-type="ref">2005</xref>). To investigate the role of LTRs in shaping the genomic structure of <italic>P.&#x000a0;multistriata</italic>, a <italic>de&#x000a0;novo</italic> search specific for complete LTR elements was performed in the genomes of five diatoms and that of <italic>Oryza sativa</italic>. Intact retroelements have a built&#x02010;in molecular clock useful for estimating their insertion times, based on sister LTR divergence. <italic>Pseudo&#x02010;nitzschia</italic> species have, on average, older insertions of LTR elements (45% insertions in the last 0.5&#x000a0;Mya) with respect to <italic>F.&#x000a0;cylindrus</italic>,<italic> P.&#x000a0;tricornutum</italic> and <italic>T.&#x000a0;pseudonana</italic> (80%, 65% and 61% insertions in the last 0.5&#x000a0;Mya, respectively) (Table&#x000a0;<xref rid="nph14557-sup-0002" ref-type="supplementary-material">S4</xref>), indicating an earlier expansion of LTR retroelements in the <italic>Pseudo&#x02010;nitzschia</italic> genus. However, LTR elements of the Copia lineage also showed a recent burst of activity, suggesting that they might still be active in generating genetic variability in <italic>Pseudo&#x02010;nitzschia</italic>, as shown in <italic>P.&#x000a0;tricornutum</italic> (Maumus <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0046" ref-type="ref">2009</xref>) (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S3</xref>d).</p></sec><sec id="nph14557-sec-0017"><title>High&#x02010;resolution phylogenomic analyses define gene family expansions, gene gains and HGT in diatoms</title><p>Lineage&#x02010;specific gene duplications, losses and pseudogenization, together with genome rearrangements and horizontal transfer of genes between species, have paved the way for the evolution of diversity (Koonin, <xref rid="nph14557-bib-0039" ref-type="ref">2010</xref>).</p><p>In order to identify gene family expansions in diatoms, we compared the proteomes of 13 Stramenopiles (including five diatoms) against the collection of gene families from the SUPERFAMILY database. In total, 11 families showed expansion within the diatom lineage (Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>; Table&#x000a0;<xref rid="nph14557-sup-0005" ref-type="supplementary-material">S5</xref>); none was <italic>P.&#x000a0;multistriata</italic> specific. We confirmed an expansion of a gene family (<italic>pseudouridine synthase</italic>) (Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>a) reported to be expanded in the <italic>P.&#x000a0;tricornutum</italic> genome (Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>) and found specific expansion events within the order Bacillariales (Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>a).</p><fig fig-type="Figure" xml:lang="en" id="nph14557-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Evolution of gene families in diatoms. (a) Expansion of gene families within diatoms. Each column represents a stramenopile species and each row represents a given gene family showing expansion within diatoms as compared with other Stramenopiles. Names of diatom species are given in red, whereas names of other Stramenopiles are given in blue. The colour intensity and size of the circles are proportional to the number of genes falling under the given gene family. (b) A species tree of Stramenopiles derived using a maximum likelihood approach, built using 85 genes showing one&#x02010;to&#x02010;one orthology among the selected species. The selected genes include genes with a wide range of functions. Branch lengths are drawn to scale. At each branch point, the number of gene family gains and losses is indicated in green and brown, respectively. The number of orphans present in each organism is shown in blue. (c) Phylogenetic tree for a cluster containing proteins annotated with an uncharacterized cystatin&#x02010;like domain, conserved in bacteria. The tree topology depicts a potential horizontal gene transfer event which led to the introduction of the gene within diatoms. The regions coloured red, blue and green represent bacteria, diatoms and other Stramenopiles, respectively. Species codes used in the tree: ecsi, <italic>Ectocarpus siliculosus</italic>; naga, <italic>Nannochloropsis gaditana</italic>; symi, <italic>Symbiodinium minutum</italic>; psmu, <italic>Pseudo&#x02010;nitzschia multistriata</italic>; psmus, <italic>Pseudo&#x02010;nitzschia multiseries</italic>; frcy, <italic>Fragilariopsis cylindrus</italic>; phtr, <italic>Phaeodactylum tricornutum</italic>; thps, <italic>Thalassiosira pseudonana</italic>; chre, <italic>Chlamydomonas reinhardtii</italic>; chva, <italic>Chlorella variabilis</italic>; BODB suffix is used for all bacterial species. For the correspondence between protein IDs used in this tree and GenBank IDs, see Supporting Information Methods <xref rid="nph14557-sup-0001" ref-type="supplementary-material">S1</xref>.</p></caption><graphic id="nlm-graphic-5" xlink:href="NPH-215-140-g003"/></fig><p>In addition to gene family expansions, gene family gains and losses also contribute to the evolution and diversification of species. A study on the <italic>Ectocarpus</italic> genome showed large&#x02010;scale gene gains and losses within Stramenopiles, where lineages giving rise to multicellularity were reported to show a high rate of evolution of new gene families (Cock <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0014" ref-type="ref">2010</xref>). Until a few years ago, the limited availability of sequenced genomes resulted in a lack of resolution to identify gene gain/loss events during the divergence of Stramenopiles. Taking advantage of the latest sequenced genomes, we were able to use <italic>c</italic>. 2 million protein sequences from organisms spanning the tree of life (50 eukaryotes, 1000 bacteria, 170 archaea; Table&#x000a0;<xref rid="nph14557-sup-0006" ref-type="supplementary-material">S6</xref>) to infer, at an unprecedented resolution, gene gains/losses in diatoms. Phylogenetic clustering analysis generated <italic>c</italic>. 240&#x000a0;000 clusters of putative homologous proteins, 8113 of which contained 9122 <italic>P.&#x000a0;multistriata</italic> proteins. Approximately 26% (2886 singlets&#x000a0;+&#x000a0;241 genes in 109 clusters) of the <italic>P.&#x000a0;multistriata</italic> proteome was predicted to be orphan (<italic>P.&#x000a0;multistriata</italic>&#x02010;specific) (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S4</xref>), which is slightly less than that reported for other diatoms (<italic>P.&#x000a0;tricornutum</italic>, 35%, Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>; <italic>T.&#x000a0;pseudonana</italic>, 29%, Armbrust <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0004" ref-type="ref">2004</xref>) and similar to estimates deriving from transcriptomic data (Di Dato <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0017" ref-type="ref">2015</xref>). Based on these data, we built a comprehensive species tree for 13 Stramenopiles by concatenating the alignments of 85 clusters of one&#x02010;to&#x02010;one orthologues conserved across the 13 species. The species tree topologies generated independently by maximum likelihood and Bayesian inference were identical and supported by bootstrap values &#x0003e;&#x000a0;90 at all branch points (Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>b). The tree topology is congruent with a previous report (Yang <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0082" ref-type="ref">2012</xref>), except for <italic>Aureococcus anophagefferens</italic> and diatoms forming a monophyletic group separated from the other Stramenopiles (<italic>Ectocarpus siliculosus</italic> and <italic>Nannochloropsis gaditana</italic>). Interestingly, a similar topology has been obtained recently using chloroplast genomes to infer phylogeny (&#x00160;ev&#x0010d;&#x000ed;kov&#x000e1; <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0067" ref-type="ref">2015</xref>), suggesting, in accordance with our results, a comparatively more recent split of pelagophytes and diatoms than previously estimated (Gobler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0029" ref-type="ref">2011</xref>). We then performed a Dollo parsimony analysis considering the presence/absence profiles of the identified protein clusters within the produced stramenopile species tree. Only those clusters containing at least one stramenopile member were considered (<italic>c</italic>. 27&#x000a0;000 clusters). We observed large&#x02010;scale gene family gain and loss events (Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>b), suggesting a high order of genetic diversity among the species compared. A large number of orphan gene families were predicted for each species, confirming extensive species&#x02010;specific gains and/or rapid gene divergence as a major feature of stramenopile genomes. We then performed a GO term enrichment analysis on the subset of gene families gained at particular branch points (Figs&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>b, <xref rid="nph14557-sup-0005" ref-type="supplementary-material">S5</xref>). Although gene families significantly gained by autotrophic Stramenopiles (lower clade in Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>b) were mostly related to photosynthesis (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S5</xref>a), gene families associated with terms such as &#x02018;<italic>mitotic cell cycle spindle assembly check point</italic>&#x02019;, &#x02018;<italic>synaptonemal complex assembly</italic>&#x02019; and &#x02018;<italic>G protein&#x02010;coupled receptor signalling pathway</italic>&#x02019; were enriched in <italic>Pseudo&#x02010;nitzschia</italic> species and <italic>F.&#x000a0;cylindrus</italic>, suggesting that potential novel mechanisms evolved in these diatoms to regulate cell division and, possibly, sexual reproduction (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S5</xref>b).</p><p>The clusters of homologous genes produced were then used for the identification of putative HGT events from bacteria to diatoms. A total of 32% of the <italic>P.&#x000a0;multistriata</italic> genes were placed in clusters containing putative orthologues from bacteria, red algae, plants, fungi and metazoans. Among these, genes falling exclusively within clusters dominated by bacterial genes might reflect ancient HGT events from bacteria to diatoms. We identified 392 <italic>P.&#x000a0;multistriata</italic> proteins showing homology exclusively with bacteria (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S6</xref>). To refine these results, we developed a stringent classification method which, starting from the clusters of orthologous proteins, generated &#x0003e;&#x000a0;9000 phylogenetic trees containing at least one <italic>P.&#x000a0;multistriata</italic> protein and, based on the topology of each tree, predicted 252 genes of bacterial origin specifically within diatoms. This is &#x0003c;&#x000a0;50% of the number of genes reported to be of bacterial origin in <italic>P.&#x000a0;tricornutum</italic> (587 genes) (Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0010" ref-type="ref">2008</xref>) and more than a previous estimate at lower resolution (Lommer <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0041" ref-type="ref">2012</xref>). Repeating the analysis considering HGT events within Stramenopiles and the SAR supergroup (Stramenopiles, Alveolates and Rhizaria), we predicted 353 and 438 <italic>P.&#x000a0;multistriata</italic> genes of potential bacterial origin, respectively. We conclude that the detailed taxonomic resolution introduced in our study allowed for the filtering of candidate genes previously considered to be of bacterial origin via HGT because of a lack of data from related species at the time of analysis. The 252 genes predicted to be of bacterial origin are proposed as a conservative set of genes introduced in the diatom lineage through HGT (Table&#x000a0;<xref rid="nph14557-sup-0007" ref-type="supplementary-material">S7</xref>). They are smaller in size than average (<italic>t</italic>&#x02010;test; <italic>P</italic> value for gene length, 1e&#x02010;04; <italic>P</italic> value for exon length, 1.4e&#x02010;05), with no significant difference in the number of exons/gene (Mann&#x02013;Whitney test, <italic>P</italic>&#x000a0;=&#x000a0;0.48) and length of introns (<italic>t</italic>&#x02010;test, <italic>P</italic>&#x000a0;=&#x000a0;0.24) (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S7</xref>). These genes are enriched for GO terms involved in processes such as &#x02018;<italic>energy metabolism</italic>&#x02019;, &#x02018;<italic>oxidative stress response</italic>&#x02019; and &#x02018;<italic>substrate transport</italic>&#x02019; (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S8</xref>; <italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.05). In support of our results, the &#x02018;<italic>quinone oxidoreductase</italic>&#x02019; (PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0025570.1) was already known to be derived from HGT in diatoms (Nosenko &#x00026; Bhattacharya, <xref rid="nph14557-bib-0051" ref-type="ref">2007</xref>). In addition, a significant difference (<italic>t</italic>&#x02010;test, <italic>P</italic>&#x000a0;=&#x000a0;0.014) in the GC content for HGT genes compared with all <italic>P.&#x000a0;multistriata</italic> genes supports their foreign origin (Garcia&#x02010;Vallv&#x000e9; <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0026" ref-type="ref">2000</xref>) (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S9</xref>). Twenty&#x02010;four HGT events are specific to the <italic>Pseudo&#x02010;nitzschia</italic> genus; an example is shown in Fig.&#x000a0;<xref rid="nph14557-fig-0003" ref-type="fig">3</xref>(c).</p><p>Apart from bacteria, 123 genes in <italic>P.&#x000a0;multistriata</italic> were classified to be of red algal origin (Table&#x000a0;<xref rid="nph14557-sup-0002" ref-type="supplementary-material">S8</xref>), consistent with the notion that diatom progenitors originated from an ancient secondary endosymbiosis event involving a red alga and a heterotrophic eukaryote (Bowler <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0011" ref-type="ref">2010</xref>).</p></sec><sec id="nph14557-sec-0018"><title>Global gene expression changes at the onset of the sexual phase highlight a stronger response in MT&#x02212; cells</title><p>We exploited the controllable life cycle of <italic>P.&#x000a0;multistriata</italic> to investigate the changes occurring in diatom cells in a key phase of their life cycle (Fig.&#x000a0;<xref rid="nph14557-fig-0004" ref-type="fig">4</xref>). To study gene expression changes induced by the perception of chemical cues deriving from the mating partner, each of two <italic>P.&#x000a0;multistriata</italic> strains was placed in one compartment of an apparatus that allowed free exchange of the medium, but not physical contact between the cells (Fig.&#x000a0;<xref rid="nph14557-fig-0004" ref-type="fig">4</xref>a). Sampling times were 2&#x000a0;h (T1) and 6&#x000a0;h (T2) after co&#x02010;culture, the time at which the two MTs are sensing each other (black arrows in Fig.&#x000a0;<xref rid="nph14557-fig-0001" ref-type="fig">1</xref>; Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S10</xref>; Table&#x000a0;<xref rid="nph14557-sup-0002" ref-type="supplementary-material">S9</xref>). Interestingly, although control strains in an isolated monoculture continued to progress through the cell cycle, cells of both MTs in the experimental set&#x02010;up arrested their cell cycle in the G1 phase (Fig.&#x000a0;<xref rid="nph14557-fig-0004" ref-type="fig">4</xref>b). Previous observations over a longer period of time (14&#x000a0;d, Scalco <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0066" ref-type="ref">2014</xref>) have revealed a marked decrease in growth of <italic>P.&#x000a0;multistriata</italic> cultures undergoing sexual reproduction. The occurrence of growth arrest concomitantly with sexual reproduction is known in yeast, where the cell cycle is arrested in G1 as a consequence of pheromone signalling (Wilkinson &#x00026; Pringle, <xref rid="nph14557-bib-0078" ref-type="ref">1974</xref>). One of the roles of pheromones is indeed cell synchronization to release gametes, simultaneously increasing the success of sexual reproduction (Frenkel <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0025" ref-type="ref">2014</xref>). A total of 1112 genes (9% of the total <italic>P.&#x000a0;multistriata</italic> genes) were differentially expressed in any of the comparisons (all sexualized vs all control samples, MT+ sexualized vs MT+ controls, and MT&#x02212; sexualized vs MT&#x02212; controls) (Tables&#x000a0;<xref rid="nph14557-sup-0008" ref-type="supplementary-material">S10</xref>, <xref rid="nph14557-sup-0009" ref-type="supplementary-material">S11</xref>). A larger number of genes appeared to be regulated in MT&#x02212; compared with MT+ (596 in MT&#x02212; and 182 in MT+, Fisher test, <italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.01) (Table&#x000a0;<xref rid="nph14557-sup-0002" ref-type="supplementary-material">S12</xref>). In a cross, both MTs behave similarly (most of the cells arrest their growth and only a small fraction, <italic>c</italic>. 20%, undergo meiosis; Scalco <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0066" ref-type="ref">2014</xref>), and the gametes produced are morphologically indistinguishable (Fig.&#x000a0;<xref rid="nph14557-fig-0001" ref-type="fig">1</xref>). However, microscopic and time&#x02010;lapse observations have shown that the <italic>P.&#x000a0;multistriata</italic> MT&#x02212; cell in a pair undergoes meiosis, on average, 30&#x000a0;min earlier than the MT+ cell (Scalco <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0065" ref-type="ref">2016</xref>). This observation suggests that the general response of the cells to pheromones is slightly out of phase, with MT&#x02212; cells initiating the process earlier than MT+ cells, and this partly explains the different gene expression profiles between MT+ and MT&#x02212;. In addition to this asynchrony, other MT&#x02010;specific changes can be explained by the fact that each of the two MTs secretes specific pheromones, produced by different mechanisms and triggering MT&#x02010;specific responses. Signalling involving multiple molecules has been demonstrated for <italic>S.&#x000a0;robusta</italic> (Moeys <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0048" ref-type="ref">2016</xref>) and postulated for <italic>Pseudostaurosira trainorii</italic> (Sato <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0064" ref-type="ref">2011</xref>). In <italic>S.&#x000a0;robusta</italic>, the compound diproline acts as an attraction pheromone (Gillard <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0027" ref-type="ref">2013</xref>), whereas the molecule SIP+, secreted by MT+ cells, triggers both cell cycle arrest and diproline production in MT&#x02212; cells (Moeys <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0048" ref-type="ref">2016</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14557-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Cell cycle and gene expression changes in the early stages of sexual reproduction. (a) Co&#x02010;culture glass apparatus containing cultures of opposite mating type (<styled-content style="fixed-case">MT</styled-content>) separated by a membrane held by a metal ring (black arrowhead), and control bottles containing each of the two <styled-content style="fixed-case">MT</styled-content>s. (b) Cell cycle phases of <styled-content style="fixed-case">MT</styled-content>+ and <styled-content style="fixed-case">MT</styled-content>&#x02013; control (grey) and sexualized (green) samples represented by the relative percentage of cells in G1 (upper) and S&#x000a0;+&#x000a0;G2&#x000a0;+&#x000a0;M (lower) phases, at the beginning of the experiment (0) and 2 and 6&#x000a0;h later. Whiskers in the boxplot extend to &#x000b1;&#x000a0;1.5&#x000a0;&#x000d7;&#x000a0;interquartile range (<styled-content style="fixed-case">IQR</styled-content>). (c) Plot showing the log<sub>FC</sub> (fold change) (<italic>y</italic>&#x02010;axis) of genes differentially expressed, ordered according to the log<sub>CPM</sub> (counts per million) on the <italic>x</italic>&#x02010;axis. (d) Percentage of orphan genes and gene gains in the set of genes differentially expressed at the onset of the sexual phase in <italic>Pseudo&#x02010;nitzschia multistriata</italic> compared with the percentages of the same classes in the entire gene set.</p></caption><graphic id="nlm-graphic-7" xlink:href="NPH-215-140-g004"/></fig></sec><sec id="nph14557-sec-0019"><title>Genes differentially expressed during sexual reproduction are involved in signalling, metabolism, nutrient transport and meiosis</title><p>The largest fraction of genes was found to be regulated in both MTs at T2 (Fig.&#x000a0;<xref rid="nph14557-fig-0004" ref-type="fig">4</xref>c), where we observed a general tendency to downregulate genes encoding nutrient transporters, such as silicate (PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0083020.1), ammonium, nitrate/nitrite and formate transporters (Tables&#x000a0;<xref rid="nph14557-tbl-0002" ref-type="table-wrap">2</xref>, <xref rid="nph14557-sup-0008" ref-type="supplementary-material">S10</xref>), suggesting that the cells, once the sexual phase is initiated, modulate their nutrient uptake. Interestingly, two <italic>P.&#x000a0;multistriata</italic> genes with significant homology to the <italic>P.&#x000a0;tricornutum</italic> diatom&#x02010;specific cyclins <italic>dsCYC5</italic> and <italic>dsCYC4</italic> were downregulated at T2 (Tables&#x000a0;<xref rid="nph14557-tbl-0002" ref-type="table-wrap">2</xref>, <xref rid="nph14557-sup-0008" ref-type="supplementary-material">S10</xref>). <italic>Phaeodactylum tricornutum dsCYC5</italic> is known to respond to phosphate addition and is supposed to be involved in signal integration to regulate the cell cycle, whereas <italic>dsCYC4</italic> is involved in the perception of growth stimuli (Huysman <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0034" ref-type="ref">2013</xref>). In our experiment, we used nutrient&#x02010;replete medium, and it is unlikely that the cells suffered from nutrient limitation after only 6&#x000a0;h of treatment. Thus, the downregulation of nutrient transporters and cyclins involved in sensing the nutritional status suggests the existence of a complex interplay for the integration of external signals, including mating signals. Upregulation of genes encoding the cohesin complex (<italic>SMC1</italic>,<italic> SMC3</italic>,<italic> SCC3</italic>,<italic> RAD21</italic>; Patil <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0053" ref-type="ref">2015</xref>), required to hold sister chromatids together during the S phase, indicated preparation for meiosis, which will occur a few hours later (Fig.&#x000a0;<xref rid="nph14557-fig-0001" ref-type="fig">1</xref>; Scalco <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0065" ref-type="ref">2016</xref>). This was also supported by the simultaneous upregulation of the meiosis&#x02010;related genes <italic>RAD51&#x02010;A1</italic>,<italic> RAD51&#x02010;C</italic>,<italic> SMC5</italic>,<italic> PSD5</italic> and Smc&#x02010;containing proteins (Tables&#x000a0;<xref rid="nph14557-tbl-0002" ref-type="table-wrap">2</xref>, <xref rid="nph14557-sup-0008" ref-type="supplementary-material">S10</xref>).</p><table-wrap id="nph14557-tbl-0002" xml:lang="en" orientation="portrait" position="float"><label>Table 2</label><caption><p>Selection of genes differentially expressed in <italic>Pseudo&#x02010;nitzschia multistriata</italic> cells 6&#x000a0;h after chemical contact of opposite mating types (MTs)</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Pathway/process</th><th align="left" valign="top" rowspan="1" colspan="1">GeneModel ID</th><th align="left" valign="top" rowspan="1" colspan="1">Gene description</th><th align="left" valign="top" rowspan="1" colspan="1">log<sub>FC</sub>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">ABC transporters</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0056660.1</td><td align="left" rowspan="1" colspan="1">ATP&#x02010;binding cassette, subfamily B (MDR/TAP), member 1</td><td align="left" rowspan="1" colspan="1">2.14</td></tr><tr><td align="left" rowspan="10" colspan="1">Cell cycle and meiosis</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0056780.1</td><td align="left" rowspan="1" colspan="1">DNA repair protein RAD51 homologue 1, RAD51&#x02010;A1<xref ref-type="fn" rid="nph14557-note-0002">a</xref>
+</td><td align="left" rowspan="1" colspan="1">7.60</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0104040.1</td><td align="left" rowspan="1" colspan="1">DNA repair protein RAD51 homologue 3, RAD51&#x02010;C<xref ref-type="fn" rid="nph14557-note-0002">a</xref>
+</td><td align="left" rowspan="1" colspan="1">2.86</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0089060.1</td><td align="left" rowspan="1" colspan="1">Pds5<xref ref-type="fn" rid="nph14557-note-0002">a</xref>
+</td><td align="left" rowspan="1" colspan="1">1.95</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0102810.1</td><td align="left" rowspan="1" colspan="1">Structural maintenance of chromosomes protein 5</td><td align="left" rowspan="1" colspan="1">2.02</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0079810.1</td><td align="left" rowspan="1" colspan="1">Structural maintenance of chromosomes protein 3</td><td align="left" rowspan="1" colspan="1">1.67</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0116990.1</td><td align="left" rowspan="1" colspan="1">Structural maintenance of chromosomes protein 1</td><td align="left" rowspan="1" colspan="1">2.60</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0072170.1</td><td align="left" rowspan="1" colspan="1">Cohesin complex subunit SCC1 (RAD21)</td><td align="left" rowspan="1" colspan="1">2.07</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0079350.1</td><td align="left" rowspan="1" colspan="1">Cohesin complex subunit SA&#x02010;1/2 (SCC3)</td><td align="left" rowspan="1" colspan="1">2.49</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0081540.1</td><td align="left" rowspan="1" colspan="1">G2/mitotic&#x02010;specific cyclin S13&#x02010;6 (dsCYC5)</td><td align="left" rowspan="1" colspan="1">&#x02212;1.66</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0095090.1</td><td align="left" rowspan="1" colspan="1">Cyclin&#x02010;B2&#x02010;2 (dsCYC4)</td><td align="left" rowspan="1" colspan="1">&#x02212;2.14</td></tr><tr><td align="left" rowspan="3" colspan="1">Nitrate metabolism</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0102470.1</td><td align="left" rowspan="1" colspan="1">Ferredoxin&#x02010;dependent glutamate synthase 2</td><td align="left" rowspan="1" colspan="1">&#x02212;1.88</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0012680.1</td><td align="left" rowspan="1" colspan="1">Ammonium transporter 1, member 5</td><td align="left" rowspan="1" colspan="1">&#x02212;2.01</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0048930.1</td><td align="left" rowspan="1" colspan="1">Nitrate/nitrite transporter NarU</td><td align="left" rowspan="1" colspan="1">&#x02212;1.88</td></tr><tr><td align="left" rowspan="2" colspan="1">Transcription factors</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0036500.1</td><td align="left" rowspan="1" colspan="1">Transcription factor SKN7</td><td align="left" rowspan="1" colspan="1">&#x02212;2.63</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0061620.1</td><td align="left" rowspan="1" colspan="1">Transcriptional activator Myb</td><td align="left" rowspan="1" colspan="1">&#x02212;2.31</td></tr><tr><td align="left" rowspan="1" colspan="1">Protein processing</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0032180.1</td><td align="left" rowspan="1" colspan="1">Major intracellular serine protease</td><td align="left" rowspan="1" colspan="1">&#x02212;1.96</td></tr><tr><td align="left" rowspan="10" colspan="1">Receptor like</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0028550.1</td><td align="left" rowspan="1" colspan="1">Probable leucine&#x02010;rich repeat receptor&#x02010;like protein kinase At2g33170</td><td align="left" rowspan="1" colspan="1">2.39</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0087210.1</td><td align="left" rowspan="1" colspan="1">Probable leucine&#x02010;rich repeat receptor&#x02010;like protein kinase At1g35710</td><td align="left" rowspan="1" colspan="1">&#x02212;1.84</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0079570.1</td><td align="left" rowspan="1" colspan="1">Receptor&#x02010;like protein kinase 5</td><td align="left" rowspan="1" colspan="1">&#x02212;1.83</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0113140.1</td><td align="left" rowspan="1" colspan="1">Probable leucine&#x02010;rich repeat receptor&#x02010;like serine/threonine protein kinase At4g08850</td><td align="left" rowspan="1" colspan="1">&#x02212;1.70</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0039440.1</td><td align="left" rowspan="1" colspan="1">Receptor&#x02010;like protein kinase HSL1</td><td align="left" rowspan="1" colspan="1">&#x02212;1.69</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0029550.1</td><td align="left" rowspan="1" colspan="1">Leucine&#x02010;rich repeat receptor&#x02010;like serine/threonine protein kinase GSO2</td><td align="left" rowspan="1" colspan="1">&#x02212;1.62</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0018920.1</td><td align="left" rowspan="1" colspan="1">Somatic embryogenesis receptor kinase 1</td><td align="left" rowspan="1" colspan="1">&#x02212;1.52</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0055410.1</td><td align="left" rowspan="1" colspan="1">Probable leucine&#x02010;rich repeat receptor&#x02010;like serine/threonine protein kinase At4g26540</td><td align="left" rowspan="1" colspan="1">&#x02212;2.32</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0055070.1<xref ref-type="fn" rid="nph14557-note-0003">b</xref>
+</td><td align="left" rowspan="2" colspan="1">Probable leucine&#x02010;rich repeat receptor&#x02010;like protein kinase</td><td align="left" rowspan="2" colspan="1">&#x02212;2.41</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0055080.1<xref ref-type="fn" rid="nph14557-note-0003">b</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Signalling</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0051110.1</td><td align="left" rowspan="1" colspan="1">Soluble guanylate cyclase 88E</td><td align="left" rowspan="1" colspan="1">6.30</td></tr><tr><td align="left" rowspan="4" colspan="1">Miscellaneous</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0102760.1</td><td align="left" rowspan="1" colspan="1">Protein aardvark (adhesion protein)</td><td align="left" rowspan="1" colspan="1">6.09</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0112340.1</td><td align="left" rowspan="1" colspan="1">Tetratricopeptide (TPR) repeat&#x02010;containing protein<xref ref-type="fn" rid="nph14557-note-0004">c</xref> (protein&#x02013;protein interactions)</td><td align="left" rowspan="1" colspan="1">2.94</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0063230.1</td><td align="left" rowspan="1" colspan="1">Salicylate carboxymethyltransferase</td><td align="left" rowspan="1" colspan="1">3.50</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0078620.1</td><td align="left" rowspan="1" colspan="1">E3 ubiquitin&#x02010;protein ligase Nedd&#x02010;4</td><td align="left" rowspan="1" colspan="1">3.30</td></tr><tr><td align="left" colspan="4" rowspan="1">MT&#x02010;specific</td></tr><tr><td align="left" style="padding-left:10%" rowspan="3" colspan="1">Miscellaneous</td><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0041130.1</td><td align="left" rowspan="1" colspan="1">Heat shock factor protein 3</td><td align="left" rowspan="1" colspan="1">3.41</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0103000.1</td><td align="left" rowspan="1" colspan="1">Cathepsin D</td><td align="left" rowspan="1" colspan="1">6.96</td></tr><tr><td align="left" rowspan="1" colspan="1">PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0067710.1</td><td align="left" rowspan="1" colspan="1">TPR repeat&#x02010;containing protein<xref ref-type="fn" rid="nph14557-note-0004">c</xref> (protein&#x02013;protein interactions)</td><td align="left" rowspan="1" colspan="1">&#x02212;2.86</td></tr></tbody></table><table-wrap-foot><fn id="nph14557-note-0002"><label>a</label><p>Gene identity defined in Patil <italic>et&#x000a0;al</italic>. (<xref rid="nph14557-bib-0053" ref-type="ref">2015</xref>).</p></fn><fn id="nph14557-note-0003"><label>b</label><p>Gene models to be merged in a single model.</p></fn><fn id="nph14557-note-0004"><label>c</label><p>Automatic annotation yields nephrocystin.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap><p>One of the strongest inductions (6.3&#x02010;fold) was observed in&#x000a0;both MTs for a soluble guanylate cyclase (Tables&#x000a0;<xref rid="nph14557-tbl-0002" ref-type="table-wrap">2</xref>, <xref rid="nph14557-sup-0008" ref-type="supplementary-material">S10</xref>). Notably, a bifunctional guanylyl cyclase/phosphodiesterase (<italic>GC/PDE</italic>) was found to be upregulated in MT&#x02212; <italic>S.&#x000a0;robusta</italic> cells in response to the SIP+ pheromone (Moeys <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0048" ref-type="ref">2016</xref>). Although the <italic>S.&#x000a0;robusta GC/PDE</italic> and the <italic>P.&#x000a0;multistriata</italic> guanylate cyclase show some degree of similarity (25% identity), they are not orthologues (data not shown). The <italic>P.&#x000a0;multistriata GC/PDE</italic> homologue (PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0076150.1) was also regulated, albeit at a lower level (1.9&#x02010;fold). Therefore, through different genes, cyclic guanosine monophosphate (cGMP) synthesis and downstream activation of signalling are common responses to pheromone perception.</p><p>The presence of G protein&#x02010;coupled receptors (GPCRs), one of the largest families of cell surface receptors in eukaryotes, has been reported in <italic>P.&#x000a0;multiseries</italic> (Port <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0057" ref-type="ref">2013</xref>), and we also detected gain of this class in <italic>P.&#x000a0;multistriata</italic>. In the RNA&#x02010;seq data, PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0072880.1, homologous to <italic>GPCR3</italic> (Port <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0057" ref-type="ref">2013</xref>), is upregulated, and the inositol phospholipid signalling pathway, which is downstream of GPCRs, also appears to be employed by <italic>P.&#x000a0;multistriata</italic> cells to transduce information (Table&#x000a0;<xref rid="nph14557-sup-0008" ref-type="supplementary-material">S10</xref>). GPCRs bind many signalling molecules and our data indicate that they might be involved in the perception of mating cues in diatoms, as has been reported in yeast (Alvaro &#x00026; Thorner, <xref rid="nph14557-bib-0002" ref-type="ref">2016</xref>).</p><p>The MT&#x02212; sexualized strain displayed a seven&#x02010;fold increase in Cathepsin D, a pepsin&#x02010;like aspartate protease, which has been shown to cleave proteins in the extracellular matrix (Handley <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0032" ref-type="ref">2001</xref>). In <italic>Saccharomyces cerevisiae</italic>, an extracellular peptidase is involved in the degradation of the pheromone, a process that helps to align the pheromone gradient to detect the direction of the nearest mating partner, increasing mating efficiency (Barkai <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0005" ref-type="ref">1998</xref>).</p><p>Nineteen genes were selected for quantitative PCR validations on samples from an independent experiment, and changes were confirmed for 16 of them (Table&#x000a0;<xref rid="nph14557-sup-0002" ref-type="supplementary-material">S1</xref>).</p></sec><sec id="nph14557-sec-0020"><title>A subset of genes differentially expressed during sexual reproduction shows lineage&#x02010;specific evolution</title><p>Rapid divergence and positive selection are common for genes involved in sexual reproduction and can contribute to the establishment of reproductive isolation (Swanson &#x00026; Vacquier, <xref rid="nph14557-bib-0072" ref-type="ref">2002</xref>). Our results support this assumption. A significantly higher proportion of genes differentially expressed during the early phases of sexual reproduction (sensing, Fig.&#x000a0;<xref rid="nph14557-fig-0001" ref-type="fig">1</xref>) were predicted to be <italic>P.&#x000a0;multistriata</italic> orphans (35%) or gene gain events in Bacillariales (20%) with respect to the same proportions in the whole proteome (Fisher test, <italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.05; Fig.&#x000a0;<xref rid="nph14557-fig-0004" ref-type="fig">4</xref>d; Tables&#x000a0;<xref rid="nph14557-sup-0010" ref-type="supplementary-material">S13</xref>, <xref rid="nph14557-sup-0011" ref-type="supplementary-material">S14</xref>). In addition, when comparing the average identity between <italic>P.&#x000a0;multistriata</italic> and <italic>P.&#x000a0;multiseries</italic> orthologues (or between <italic>P.&#x000a0;multistriata</italic> and other diatoms), genes differentially expressed in our experiment showed lower conservation with respect to the entire <italic>P.&#x000a0;multistriata</italic> gene set (Fig.&#x000a0;<xref rid="nph14557-sup-0001" ref-type="supplementary-material">S11</xref>).</p><p>Furthermore, using our in&#x02010;depth clustering of <italic>P.&#x000a0;multistriata</italic> genes with a diverse range of prokaryotes and eukaryotes, we observed that the majority of non&#x02010;orphan genes differentially expressed during the sexual phase were specific to diatoms (Figs&#x000a0;<xref rid="nph14557-fig-0005" ref-type="fig">5</xref>, <xref rid="nph14557-sup-0001" ref-type="supplementary-material">S11</xref>e).</p><fig fig-type="Figure" xml:lang="en" id="nph14557-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Conservation of the genes differentially expressed in the experiments described in this work. Conservation is shown as the presence/absence of a horizontal line in 52 different species belonging to Prokaryotes, Rhizarians, Chromalveolates, Excavates, Unikonts and Plantae.</p></caption><graphic id="nlm-graphic-9" xlink:href="NPH-215-140-g005"/></fig><p>The data indicate that a substantial fraction of the differentially expressed genes are diatom specific, Bacillariales specific or <italic>Pseudo&#x02010;nitzschia</italic> specific, or orphans, consistent with the uniqueness of the diatom life cycle and with the necessity to evolve species&#x02010;specific mechanisms to attract and mate with the right partner.</p><p>Reproductive proteins show a tendency to be under positive selection (Clark <italic>et&#x000a0;al</italic>., <xref rid="nph14557-bib-0013" ref-type="ref">2006</xref>). In order to identify the <italic>P.&#x000a0;multistriata</italic> genes which are under positive selection, we selected all one&#x02010;to&#x02010;one homologues between <italic>P.&#x000a0;multistriata</italic> and <italic>P.&#x000a0;multiseries</italic>, and calculated the Ka&#x000a0;:&#x000a0;Ks ratio (number of nonsynonymous mutations/number of synonymous mutations) to measure their evolutionary divergence (Yang &#x00026; Bielawski, <xref rid="nph14557-bib-0083" ref-type="ref">2000</xref>). Ka&#x000a0;:&#x000a0;Ks&#x000a0;&#x0003e;&#x000a0;1 indicates a selective advantage to amino acid substitutions in a protein. Of the 6066 homologous pairs identified (Table&#x000a0;<xref rid="nph14557-sup-0012" ref-type="supplementary-material">S15</xref>), 434 were among those regulated during sexual reproduction and included 11 genes showing a strong positive selection (Ka&#x000a0;:&#x000a0;Ks&#x000a0;&#x0003e;&#x000a0;1). This group contains six unknown genes, two peptidases, two leucine&#x02010;rich repeat (LRR) receptor&#x02010;like protein kinases and a putative DNA helicase (Table&#x000a0;<xref rid="nph14557-sup-0012" ref-type="supplementary-material">S15</xref>). The next gene in the list, with a Ka&#x000a0;:&#x000a0;Ks value of 0.92, is the homologue of the <italic>S.&#x000a0;robusta GC/PDE</italic>. Further studies will clarify whether any of these genes has a specific role in recognizing the right mating partner, avoiding interspecies breeding. Finally, 20 differentially expressed genes are derived from bacteria by HGT in diatoms (Table&#x000a0;<xref rid="nph14557-sup-0013" ref-type="supplementary-material">S16</xref>); an example (nitrate/nitrite transporter, PSNMU&#x02010;V1.4_AUG&#x02010;EV&#x02010;PASAV3_0048930.1) is shown in Fig.&#x000a0;<xref rid="nph14557-sup-0002" ref-type="supplementary-material">S12</xref>.</p><p>A schematic summary of the regulated pathways and functions in a <italic>P.&#x000a0;multistriata</italic> cell responding to sexual cues is shown in Fig.&#x000a0;<xref rid="nph14557-fig-0006" ref-type="fig">6</xref>.</p><fig fig-type="Figure" xml:lang="en" id="nph14557-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Cell response to sexual cues. Diagrammatic representation of a <italic>Pseudo&#x02010;nitzschia multistriata</italic> cell with the principal genes involved in the response to chemical cues acting at the beginning of sexual reproduction. Green triangles represent upregulation and red triangles downregulation of expression. PLC, Phospholipase C; DAG, diacylglycerol; PIP2, phosphatidylinositol biphosphate; IP3, inositol trisphosphate; GTP, Guanosine&#x02010;5&#x02032;&#x02010;triphosphate; N, nucleus; ER, endoplasmic reticulum; M, mitochondrion; Ch, chloroplast; G, Golgi; LRR, leucine&#x02010;rich repeat.</p></caption><graphic id="nlm-graphic-11" xlink:href="NPH-215-140-g006"/></fig><p>These data provide markers for data mining of metatranscriptomic datasets and will improve our ability to understand and monitor toxic <italic>Pseudo&#x02010;nitzschia</italic> blooms.</p></sec></sec><sec id="nph14557-sec-0022"><title>Author contributions</title><p>M.I.F. coordinated the project. M.I.F., R.S., M.M. and M.C. designed the study. S.P., C.F. and R.C. performed the experiments. S.B., S.P., D.M., M.T.R., L.V., F.M., T.M., R.C., R.S. and M.I.F. analysed the data. S.B., M.I.F., R.S. and M.M. wrote the paper with contributions from all authors. All authors read and approved the final manuscript.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><p>Please note: Wiley Blackwell are not responsible for the content or functionality of any Supporting Information supplied by the authors. Any queries (other than missing material) should be directed to the <italic>New Phytologist</italic> Central Office.</p></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0001"><caption><p>
+<bold>Fig.&#x000a0;S1</bold> General statistics of the <italic>Pseudo&#x02010;nitzschia multistriata</italic> genome assembly.</p><p>
+<bold>Fig.&#x000a0;S2</bold> Putative association of conserved noncoding elements in <italic>Pseudo&#x02010;nitzschia multistriata</italic> with regulation of transcription.</p><p>
+<bold>Fig.&#x000a0;S3</bold> Coverage of repeat elements and estimation of long terminal repeat (LTR) insertion period in the <italic>Pseudo&#x02010;nitzschia multistriata</italic> genome.</p><p>
+<bold>Fig.&#x000a0;S4</bold> Comparison of the number of protein clusters (potential gene families) in chromalveolates, unikonts, plants and prokaryotes (archaea&#x000a0;+&#x000a0;bacteria) in relation to the clusters with at least one representative from <italic>Pseudo&#x02010;nitzschia multistriata</italic>.</p><p>
+<bold>Fig.&#x000a0;S5</bold> Enrichment of gene ontology (GO) molecular function terms for gene families gained in photosynthetic Stramenopiles or in <italic>Pseudo&#x02010;nitzschia</italic> and <italic>Fragilariopsis</italic>.</p><p>
+<bold>Fig.&#x000a0;S6</bold> Comparison of the number of <italic>Pseudo&#x02010;nitzschia multistriata</italic> proteins sharing common clusters (potential gene families) with red algae, plants, fungi, metazoans and bacteria.</p><p>
+<bold>Fig.&#x000a0;S7</bold> General statistics of <italic>Pseudo&#x02010;nitzschia multistriata</italic> genes against those predicted to be of bacterial origin specifically in diatoms.</p><p>
+<bold>Fig.&#x000a0;S8</bold> Enrichment of gene ontology (GO) molecular function terms for genes of potential bacterial origin specific to diatoms, Stramenopiles or SAR (Stramenopiles, Alveolates and Rhizaria).</p><p>
+<bold>Fig.&#x000a0;S9</bold> GC content of genes acquired by horizontal gene transfer from bacteria as compared with all genes in <italic>Pseudo&#x02010;nitzschia multistriata</italic>.</p><p>
+<bold>Fig.&#x000a0;S10</bold> Experimental set&#x02010;up for gene expression studies at the onset of sexual reproduction.</p><p>
+<bold>Fig.&#x000a0;S11</bold> Conservation of genes predicted to be differentially expressed during sexual reproduction in <italic>Pseudo&#x02010;nitzschia multistriata</italic> compared with the same data for the entire <italic>P.&#x000a0;multistriata</italic> gene set.</p><p>
+<bold>Fig.&#x000a0;S12</bold> Screenshot of the <italic>Pseudo&#x02010;nitzschia multistriata</italic> genome browser.</p><p>
+<bold>Methods S1</bold> Supplementary methods.</p></caption><media xlink:href="NPH-215-140-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0002"><caption><p>
+<bold>Table&#x000a0;S1</bold> Validation of a selected subset of genes differentially expressed during sexual reproduction in <italic>Pseudo&#x02010;nitzschia multistriata</italic> by quantitative PCR</p><p>
+<bold>Table&#x000a0;S4</bold> Insertion period estimation of complete long terminal repeats (LTRs) identified in diatom genomes</p><p>
+<bold>Table&#x000a0;S8</bold> Annotation for diatom genes of red algal origin</p><p>
+<bold>Table&#x000a0;S9</bold> Summary statistics of RNA&#x02010;seq read mapping results for <italic>Pseudo&#x02010;nitzschia multistriata</italic> samples</p><p>
+<bold>Table&#x000a0;S12</bold> Statistics of genes differentially regulated during the sexualized stage in both mating types at two different time points</p></caption><media xlink:href="NPH-215-140-s002.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0003"><caption><p>
+<bold>Table&#x000a0;S2</bold> Genomic coordinates of the <italic>Pseudo&#x02010;nitzschia multistriata</italic> conserved noncoding elements, together with coordinates in other diatom species, where each element remains conserved</p></caption><media xlink:href="NPH-215-140-s003.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0004"><caption><p>
+<bold>Table&#x000a0;S3</bold> The core, plant and fungal transcription factor families which show enrichment of binding sites on the <italic>Pseudo&#x02010;nitzschia multistriata</italic> conserved noncoding elements</p></caption><media xlink:href="NPH-215-140-s004.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0005"><caption><p>
+<bold>Table&#x000a0;S5</bold> Number of proteins from stramenopile genomes represented by different superfamilies from the SUPERFAMILY database</p></caption><media xlink:href="NPH-215-140-s005.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0006"><caption><p>
+<bold>Table&#x000a0;S6</bold> Details of eukaryotic and prokaryotic organisms considered for the generation of the protein clusters for the <italic>Pseudo&#x02010;nitzschia multistriata</italic> proteome</p></caption><media xlink:href="NPH-215-140-s006.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0007"><caption><p>
+<bold>Table&#x000a0;S7</bold> Annotation for the <italic>Pseudo&#x02010;nitzschia</italic>/diatom/stramenopile/SAR (Stramenopile, Alveolates and Rhizaria)&#x02010;specific genes of bacterial origin</p></caption><media xlink:href="NPH-215-140-s007.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0008"><caption><p>
+<bold>Table&#x000a0;S10</bold> Differential expression analyses of all sexualized samples vs all control samples, MT+ sexualized samples against MT+ controls, and MT&#x02212; sexualized samples against MT&#x02212; controls, at two different time points</p></caption><media xlink:href="NPH-215-140-s008.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0009"><caption><p>
+<bold>Table&#x000a0;S11</bold> Log<sub>FC</sub> (fold change) and false discovery rate (FDR) values for all <italic>Pseudo&#x02010;nitzschia multistriata</italic> transcripts for the same conditions as in Table&#x000a0;S10</p></caption><media xlink:href="NPH-215-140-s009.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0010"><caption><p>
+<bold>Table&#x000a0;S13</bold> Differentially expressed genes predicted to be gene gain events in diatoms post&#x02010;divergence from <italic>Phaeodactylum tricornutum</italic>
+</p></caption><media xlink:href="NPH-215-140-s010.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0011"><caption><p>
+<bold>Table&#x000a0;S14</bold> Differentially expressed genes predicted to be orphan genes in <italic>Pseudo&#x02010;nitzschia multistriata</italic>
+</p></caption><media xlink:href="NPH-215-140-s011.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0012"><caption><p>
+<bold>Table&#x000a0;S15</bold> Rate of evolution of homologous pairs of <italic>Pseudo&#x02010;nitzschia multistriata</italic> and <italic>Pseudo&#x02010;nitzschia multiseries</italic>
+</p></caption><media xlink:href="NPH-215-140-s012.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="nph14557-sup-0013"><caption><p>
+<bold>Table&#x000a0;S16</bold> Genes predicted to be introduced via horizontal gene transfer (HGT) in diatoms, showing differential expression during sexual reproduction in <italic>Pseudo&#x02010;nitzschia multistriata</italic>
+</p></caption><media xlink:href="NPH-215-140-s013.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="nph14557-sec-0021"><title>Acknowledgements</title><p>This work was supported by Marie Curie FP7&#x02010;PEOPLE&#x02010;2011&#x02010;CIG (GyPSy, grant no. 293887) to M.I.F. and the RITMARE Italian Flagship Project. The work conducted by the US Department of Energy Joint Genome Institute is supported by the Office of Science of the US Department of Energy under contract no. DE&#x02010;AC02&#x02010;05CH11231. S.P. and L.V. were supported by a SZN Open University PhD fellowship from Stazione Zoologica Anton Dohrn. This research was partly supported by the NBIP Computing infrastructure for Science (CiS). The authors wish to thank Cecilia Balestra for technical help, Anil Thanki for the TGAC browser, Riccardo Aiese Cigliano and Walter Sanseverino (Sequentia Biotech, <ext-link ext-link-type="uri" xlink:href="http://www.sequentiabiotech.com">www.sequentiabiotech.com</ext-link>), the International Centre for Theoretical Physics for cooperation, the EMBL GeneCore service and the SZN Molecular Biology and Bioinformatics Unit. E.&#x000a0;Scalco kindly provided <italic>P.&#x000a0;multistriata</italic> images.</p></ack><ref-list content-type="cited-references" id="nph14557-bibl-0001"><title>References</title><ref id="nph14557-bib-0001"><mixed-citation publication-type="journal" id="nph14557-cit-0001">
+<string-name>
+<surname>Adelfi</surname>
+<given-names>MG</given-names>
+</string-name>, <string-name>
+<surname>Borra</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sanges</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fontana</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>. <year>2014</year>
+<article-title>Selection and validation of reference genes for qPCR analysis in the pennate diatoms <italic>Pseudo&#x02010;nitzschia multistriata</italic> and <italic>P.&#x000a0;arenysensis</italic>
+</article-title>. <source>Journal of Experimental Marine Biology and Ecology</source>
+<volume>451</volume>: <fpage>74</fpage>&#x02013;<lpage>81</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0002"><mixed-citation publication-type="journal" id="nph14557-cit-0002">
+<string-name>
+<surname>Alvaro</surname>
+<given-names>CG</given-names>
+</string-name>, <string-name>
+<surname>Thorner</surname>
+<given-names>J</given-names>
+</string-name>. <year>2016</year>
+<article-title>Heterotrimeric G protein&#x02010;coupled receptor signaling in yeast mating pheromone response</article-title>. <source>Journal of Biological Chemistry</source>
+<volume>291</volume>: <fpage>7788</fpage>&#x02013;<lpage>7795</lpage>.<pub-id pub-id-type="pmid">26907689</pub-id></mixed-citation></ref><ref id="nph14557-bib-0003"><mixed-citation publication-type="journal" id="nph14557-cit-0003">
+<string-name>
+<surname>Armbrust</surname>
+<given-names>EV</given-names>
+</string-name>. <year>2009</year>
+<article-title>The life of diatoms in the world's oceans</article-title>. <source>Nature</source>
+<volume>459</volume>: <fpage>185</fpage>&#x02013;<lpage>192</lpage>.<pub-id pub-id-type="pmid">19444204</pub-id></mixed-citation></ref><ref id="nph14557-bib-0004"><mixed-citation publication-type="journal" id="nph14557-cit-0004">
+<string-name>
+<surname>Armbrust</surname>
+<given-names>EV</given-names>
+</string-name>, <string-name>
+<surname>Berges</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Bowler</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Green</surname>
+<given-names>BR</given-names>
+</string-name>, <string-name>
+<surname>Martinez</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Putnam</surname>
+<given-names>NH</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Apt</surname>
+<given-names>KE</given-names>
+</string-name>, <string-name>
+<surname>Bechner</surname>
+<given-names>M</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2004</year>
+<article-title>The genome of the diatom <italic>Thalassiosira pseudonana</italic>: ecology, evolution, and metabolism</article-title>. <source>Science</source>
+<volume>306</volume>: <fpage>79</fpage>&#x02013;<lpage>86</lpage>.<pub-id pub-id-type="pmid">15459382</pub-id></mixed-citation></ref><ref id="nph14557-bib-0005"><mixed-citation publication-type="journal" id="nph14557-cit-0005">
+<string-name>
+<surname>Barkai</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Wingreen</surname>
+<given-names>NS</given-names>
+</string-name>. <year>1998</year>
+<article-title>Protease helps yeast find mating partners</article-title>. <source>Nature</source>
+<volume>396</volume>: <fpage>422</fpage>&#x02013;<lpage>423</lpage>.<pub-id pub-id-type="pmid">9853747</pub-id></mixed-citation></ref><ref id="nph14557-bib-0006"><mixed-citation publication-type="journal" id="nph14557-cit-0006">
+<string-name>
+<surname>Bennetzen</surname>
+<given-names>JL</given-names>
+</string-name>. <year>2005</year>
+<article-title>Transposable elements, gene creation and genome rearrangement in flowering plants</article-title>. <source>Current Opinion in Genetics &#x00026; Development</source>
+<volume>15</volume>: <fpage>621</fpage>&#x02013;<lpage>627</lpage>.<pub-id pub-id-type="pmid">16219458</pub-id></mixed-citation></ref><ref id="nph14557-bib-0007"><mixed-citation publication-type="journal" id="nph14557-cit-0007">
+<string-name>
+<surname>Blanchette</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kent</surname>
+<given-names>WJ</given-names>
+</string-name>, <string-name>
+<surname>Riemer</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Elnitski</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Smit</surname>
+<given-names>AFA</given-names>
+</string-name>, <string-name>
+<surname>Roskin</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name>
+<surname>Baertsch</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Rosenbloom</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Clawson</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Green</surname>
+<given-names>ED</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2004</year>
+<article-title>Aligning multiple genomic sequences with the threaded blockset&#x000a0;aligner</article-title>. <source>Genome Research</source>
+<volume>14</volume>: <fpage>708</fpage>&#x02013;<lpage>715</lpage>.<pub-id pub-id-type="pmid">15060014</pub-id></mixed-citation></ref><ref id="nph14557-bib-0008"><mixed-citation publication-type="journal" id="nph14557-cit-0008">
+<string-name>
+<surname>Bleykasten&#x02010;Grosshans</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Neuv&#x000e9;glise</surname>
+<given-names>C</given-names>
+</string-name>. <year>2011</year>
+<article-title>Transposable elements in yeasts</article-title>. <source>Comptes Rendus Biologies</source>
+<volume>334</volume>: <fpage>679</fpage>&#x02013;<lpage>686</lpage>.<pub-id pub-id-type="pmid">21819950</pub-id></mixed-citation></ref><ref id="nph14557-bib-0009"><mixed-citation publication-type="journal" id="nph14557-cit-0009">
+<string-name>
+<surname>Bolger</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name>
+<surname>Lohse</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Usadel</surname>
+<given-names>B</given-names>
+</string-name>. <year>2014</year>
+<article-title>Trimmomatic: a flexible trimmer for Illumina sequence data</article-title>. <source>Bioinformatics</source>
+<volume>30</volume>: <fpage>2114</fpage>&#x02013;<lpage>2120</lpage>.<pub-id pub-id-type="pmid">24695404</pub-id></mixed-citation></ref><ref id="nph14557-bib-0010"><mixed-citation publication-type="journal" id="nph14557-cit-0010">
+<string-name>
+<surname>Bowler</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Badger</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name>
+<surname>Grimwood</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Jabbari</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Kuo</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Maheswari</surname>
+<given-names>U</given-names>
+</string-name>, <string-name>
+<surname>Martens</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Maumus</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Otillar</surname>
+<given-names>RP</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2008</year>
+<article-title>The <italic>Phaeodactylum</italic> genome reveals the evolutionary history of diatom genomes</article-title>. <source>Nature</source>
+<volume>456</volume>: <fpage>239</fpage>&#x02013;<lpage>244</lpage>.<pub-id pub-id-type="pmid">18923393</pub-id></mixed-citation></ref><ref id="nph14557-bib-0011"><mixed-citation publication-type="journal" id="nph14557-cit-0011">
+<string-name>
+<surname>Bowler</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Vardi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>AE</given-names>
+</string-name>. <year>2010</year>
+<article-title>Oceanographic and biogeochemical insights from diatom genomes</article-title>. <source>Annual Review of Marine Science</source>
+<volume>2</volume>: <fpage>333</fpage>&#x02013;<lpage>365</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0012"><mixed-citation publication-type="journal" id="nph14557-cit-0012">
+<string-name>
+<surname>Capella&#x02010;Guti&#x000e9;rrez</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Silla&#x02010;Mart&#x000ed;nez</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Gabald&#x000f3;n</surname>
+<given-names>T</given-names>
+</string-name>. <year>2009</year>
+<article-title>trimAl: a tool for automated alignment trimming in large&#x02010;scale phylogenetic analyses</article-title>. <source>Bioinformatics</source>
+<volume>25</volume>: <fpage>1972</fpage>&#x02013;<lpage>1973</lpage>.<pub-id pub-id-type="pmid">19505945</pub-id></mixed-citation></ref><ref id="nph14557-bib-0013"><mixed-citation publication-type="journal" id="nph14557-cit-0013">
+<string-name>
+<surname>Clark</surname>
+<given-names>NL</given-names>
+</string-name>, <string-name>
+<surname>Aagaard</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name>
+<surname>Swanson</surname>
+<given-names>WJ</given-names>
+</string-name>. <year>2006</year>
+<article-title>Evolution of reproductive proteins from animals and plants</article-title>. <source>Reproduction</source>
+<volume>131</volume>: <fpage>11</fpage>&#x02013;<lpage>22</lpage>.<pub-id pub-id-type="pmid">16388004</pub-id></mixed-citation></ref><ref id="nph14557-bib-0014"><mixed-citation publication-type="journal" id="nph14557-cit-0014">
+<string-name>
+<surname>Cock</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Sterck</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Rouz&#x000e9;</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Scornet</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Amoutzias</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Anthouard</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Artiguenave</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Aury</surname>
+<given-names>J&#x02010;M</given-names>
+</string-name>, <string-name>
+<surname>Badger</surname>
+<given-names>JH</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2010</year>
+<article-title>The <italic>Ectocarpus</italic> genome and the independent evolution of multicellularity in brown algae</article-title>. <source>Nature</source>
+<volume>465</volume>: <fpage>617</fpage>&#x02013;<lpage>621</lpage>.<pub-id pub-id-type="pmid">20520714</pub-id></mixed-citation></ref><ref id="nph14557-bib-0015"><mixed-citation publication-type="journal" id="nph14557-cit-0015">
+<string-name>
+<surname>D'Alelio</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Amato</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Luedeking</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>. <year>2009</year>
+<article-title>Sexual and vegetative phases in the planktonic diatom <italic>Pseudo&#x02010;nitzschia multistriata</italic>
+</article-title>. <source>Harmful Algae</source>
+<volume>8</volume>: <fpage>225</fpage>&#x02013;<lpage>232</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0016"><mixed-citation publication-type="journal" id="nph14557-cit-0016">
+<string-name>
+<surname>Darriba</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Taboada</surname>
+<given-names>GL</given-names>
+</string-name>, <string-name>
+<surname>Doallo</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Posada</surname>
+<given-names>D</given-names>
+</string-name>. <year>2011</year>
+<article-title>ProtTest 3: fast selection of best&#x02010;fit models of protein evolution</article-title>. <source>Bioinformatics</source>
+<volume>27</volume>: <fpage>1164</fpage>&#x02013;<lpage>1165</lpage>.<pub-id pub-id-type="pmid">21335321</pub-id></mixed-citation></ref><ref id="nph14557-bib-0017"><mixed-citation publication-type="journal" id="nph14557-cit-0017">
+<string-name>
+<surname>Di Dato</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Musacchia</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Petrosino</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Patil</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sanges</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>. <year>2015</year>
+<article-title>Transcriptome sequencing of three <italic>Pseudo&#x02010;nitzschia</italic> species reveals comparable gene sets and the presence of Nitric Oxide Synthase genes in diatoms</article-title>. <source>Scientific Reports</source>
+<volume>5</volume>: <fpage>12329</fpage>.<pub-id pub-id-type="pmid">26189990</pub-id></mixed-citation></ref><ref id="nph14557-bib-0018"><mixed-citation publication-type="journal" id="nph14557-cit-0018">
+<string-name>
+<surname>Dobin</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Davis</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Schlesinger</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Drenkow</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Zaleski</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Jha</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Batut</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Chaisson</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Gingeras</surname>
+<given-names>TR</given-names>
+</string-name>. <year>2013</year>
+<article-title>STAR: ultrafast universal RNA&#x02010;seq aligner</article-title>. <source>Bioinformatics</source>
+<volume>29</volume>: <fpage>15</fpage>&#x02013;<lpage>21</lpage>.<pub-id pub-id-type="pmid">23104886</pub-id></mixed-citation></ref><ref id="nph14557-bib-0019"><mixed-citation publication-type="journal" id="nph14557-cit-0019">
+<string-name>
+<surname>Eddy</surname>
+<given-names>SR</given-names>
+</string-name>. <year>1995</year>
+<article-title>Multiple alignment using hidden Markov models</article-title>. <source>Proceedings/International Conference on Intelligent Systems for Molecular Biology; ISMB. International Conference on Intelligent Systems for Molecular Biology</source>
+<volume>3</volume>: <fpage>114</fpage>&#x02013;<lpage>120</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0020"><mixed-citation publication-type="journal" id="nph14557-cit-0020">
+<string-name>
+<surname>Ekseth</surname>
+<given-names>OK</given-names>
+</string-name>, <string-name>
+<surname>Kuiper</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Mironov</surname>
+<given-names>V</given-names>
+</string-name>. <year>2014</year>
+<article-title>orthAgogue: an agile tool for the rapid prediction of orthology relations</article-title>. <source>Bioinformatics</source>
+<volume>30</volume>: <fpage>734</fpage>&#x02013;<lpage>736</lpage>.<pub-id pub-id-type="pmid">24115168</pub-id></mixed-citation></ref><ref id="nph14557-bib-0021"><mixed-citation publication-type="journal" id="nph14557-cit-0021">
+<string-name>
+<surname>Enright</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Van Dongen</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ouzounis</surname>
+<given-names>CA</given-names>
+</string-name>. <year>2002</year>
+<article-title>An efficient algorithm for large&#x02010;scale detection of protein families</article-title>. <source>Nucleic Acids Research</source>
+<volume>30</volume>: <fpage>1575</fpage>&#x02013;<lpage>1584</lpage>.<pub-id pub-id-type="pmid">11917018</pub-id></mixed-citation></ref><ref id="nph14557-bib-0022"><mixed-citation publication-type="book" id="nph14557-cit-0022">
+<string-name>
+<surname>Falkowski</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Knoll</surname>
+<given-names>AH</given-names>
+</string-name>. <year>2011</year>
+<chapter-title>An introduction to primary producers in the sea: who they are, what they do, and when they evolved</chapter-title> In: <person-group person-group-type="editor"><name><surname>Falkowski</surname><given-names>PG</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Knoll</surname><given-names>AH</given-names></name></person-group>, eds. <source>Evolution of primary producers in the sea</source>. <publisher-loc>Burlington, MA, USA</publisher-loc>: <publisher-name>Academic Press</publisher-name>, <fpage>1</fpage>&#x02013;<lpage>7</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0023"><mixed-citation publication-type="journal" id="nph14557-cit-0023">
+<string-name>
+<surname>Felsenstein</surname>
+<given-names>J</given-names>
+</string-name>. <year>1989</year>
+<article-title>PHYLIP &#x02013; phylogeny inference package (Version 3.2)</article-title>. <source>Cladistics</source>
+<volume>5</volume>: <fpage>164</fpage>&#x02013;<lpage>166</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0024"><mixed-citation publication-type="journal" id="nph14557-cit-0024">
+<string-name>
+<surname>Flutre</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Duprat</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Feuillet</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Quesneville</surname>
+<given-names>H</given-names>
+</string-name>. <year>2011</year>
+<article-title>Considering transposable element diversification in de&#x000a0;novo annotation approaches</article-title>. <source>PLoS ONE</source>
+<volume>6</volume>: <fpage>e16526</fpage>.<pub-id pub-id-type="pmid">21304975</pub-id></mixed-citation></ref><ref id="nph14557-bib-0025"><mixed-citation publication-type="journal" id="nph14557-cit-0025">
+<string-name>
+<surname>Frenkel</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Vyverman</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Pohnert</surname>
+<given-names>G</given-names>
+</string-name>. <year>2014</year>
+<article-title>Pheromone signaling during sexual reproduction in algae</article-title>. <source>Plant Journal</source>
+<volume>79</volume>: <fpage>632</fpage>&#x02013;<lpage>644</lpage>.<pub-id pub-id-type="pmid">24597605</pub-id></mixed-citation></ref><ref id="nph14557-bib-0026"><mixed-citation publication-type="journal" id="nph14557-cit-0026">
+<string-name>
+<surname>Garcia&#x02010;Vallv&#x000e9;</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Romeu</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Palau</surname>
+<given-names>J</given-names>
+</string-name>. <year>2000</year>
+<article-title>Horizontal gene transfer in bacterial and archaeal complete genomes</article-title>. <source>Genome Research</source>
+<volume>10</volume>: <fpage>1719</fpage>&#x02013;<lpage>1725</lpage>.<pub-id pub-id-type="pmid">11076857</pub-id></mixed-citation></ref><ref id="nph14557-bib-0027"><mixed-citation publication-type="journal" id="nph14557-cit-0027">
+<string-name>
+<surname>Gillard</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Frenkel</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Devos</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Sabbe</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Paul</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Rempt</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Inz&#x000e9;</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Pohnert</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Vuylsteke</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Vyverman</surname>
+<given-names>W</given-names>
+</string-name>. <year>2013</year>
+<article-title>Metabolomics enables the structure elucidation of a diatom sex pheromone</article-title>. <source>Angewandte Chemie International Edition</source>
+<volume>52</volume>: <fpage>854</fpage>&#x02013;<lpage>857</lpage>.<pub-id pub-id-type="pmid">23315901</pub-id></mixed-citation></ref><ref id="nph14557-bib-0028"><mixed-citation publication-type="journal" id="nph14557-cit-0028">
+<string-name>
+<surname>Gnerre</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>MacCallum</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Przybylski</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ribeiro</surname>
+<given-names>FJ</given-names>
+</string-name>, <string-name>
+<surname>Burton</surname>
+<given-names>JN</given-names>
+</string-name>, <string-name>
+<surname>Walker</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Sharpe</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Hall</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Shea</surname>
+<given-names>TP</given-names>
+</string-name>, <string-name>
+<surname>Sykes</surname>
+<given-names>S</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2011</year>
+<article-title>High&#x02010;quality draft assemblies of mammalian genomes from massively parallel sequence data</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>108</volume>: <fpage>1513</fpage>&#x02013;<lpage>1518</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0029"><mixed-citation publication-type="journal" id="nph14557-cit-0029">
+<string-name>
+<surname>Gobler</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Berry</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Dyhrman</surname>
+<given-names>ST</given-names>
+</string-name>, <string-name>
+<surname>Wilhelm</surname>
+<given-names>SW</given-names>
+</string-name>, <string-name>
+<surname>Salamov</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Lobanov</surname>
+<given-names>AV</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Collier</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name>
+<surname>Wurch</surname>
+<given-names>LL</given-names>
+</string-name>, <string-name>
+<surname>Kustka</surname>
+<given-names>AB</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2011</year>
+<article-title>Niche of harmful alga <italic>Aureococcus anophagefferens</italic> revealed through ecogenomics</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>108</volume>: <fpage>4352</fpage>&#x02013;<lpage>4357</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0030"><mixed-citation publication-type="journal" id="nph14557-cit-0030">
+<string-name>
+<surname>Gremme</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Steinbiss</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kurtz</surname>
+<given-names>S</given-names>
+</string-name>. <year>2013</year>
+<article-title>GenomeTools: a comprehensive software library for efficient processing of structured genome annotations</article-title>. <source>IEEE/ACM Transactions on Computational Biology and Bioinformatics</source>
+<volume>10</volume>: <fpage>645</fpage>&#x02013;<lpage>656</lpage>.<pub-id pub-id-type="pmid">24091398</pub-id></mixed-citation></ref><ref id="nph14557-bib-0031"><mixed-citation publication-type="book" id="nph14557-cit-0031">
+<string-name>
+<surname>Guillard</surname>
+<given-names>RRL</given-names>
+</string-name>. <year>1975</year>
+<chapter-title>Culture of phytoplankton for feeding marine invertebrates</chapter-title> In: <person-group person-group-type="editor"><name><surname>Smith</surname><given-names>WL</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Chanley</surname><given-names>MH</given-names></name></person-group>, eds. <source>Culture of marine invertebrate animals</source>. <publisher-loc>New York, NY, USA</publisher-loc>: <publisher-name>Plenum Press</publisher-name>, <fpage>29</fpage>&#x02013;<lpage>60</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0032"><mixed-citation publication-type="journal" id="nph14557-cit-0032">
+<string-name>
+<surname>Handley</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Tuck Mok</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ilic</surname>
+<given-names>MZ</given-names>
+</string-name>, <string-name>
+<surname>Adcocks</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Buttle</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name>
+<surname>Robinson</surname>
+<given-names>HC</given-names>
+</string-name>. <year>2001</year>
+<article-title>Cathepsin D cleaves aggrecan at unique sites within the interglobular domain and chondroitin sulfate attachment regions that are also cleaved when cartilage is maintained at acid pH</article-title>. <source>Matrix Biology</source>
+<volume>20</volume>: <fpage>543</fpage>&#x02013;<lpage>553</lpage>.<pub-id pub-id-type="pmid">11731271</pub-id></mixed-citation></ref><ref id="nph14557-bib-0033"><mixed-citation publication-type="journal" id="nph14557-cit-0033">
+<string-name>
+<surname>Haudry</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Platts</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Vello</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Hoen</surname>
+<given-names>DR</given-names>
+</string-name>, <string-name>
+<surname>Leclercq</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Williamson</surname>
+<given-names>RJ</given-names>
+</string-name>, <string-name>
+<surname>Forczek</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Joly&#x02010;Lopez</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Steffen</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Hazzouri</surname>
+<given-names>KM</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2013</year>
+<article-title>An atlas of over 90,000 conserved noncoding sequences provides insight into crucifer regulatory regions</article-title>. <source>Nature Genetics</source>
+<volume>45</volume>: <fpage>891</fpage>&#x02013;<lpage>898</lpage>.<pub-id pub-id-type="pmid">23817568</pub-id></mixed-citation></ref><ref id="nph14557-bib-0034"><mixed-citation publication-type="journal" id="nph14557-cit-0034">
+<string-name>
+<surname>Huysman</surname>
+<given-names>MJJ</given-names>
+</string-name>, <string-name>
+<surname>Vyverman</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>De Veylder</surname>
+<given-names>L</given-names>
+</string-name>. <year>2013</year>
+<article-title>Molecular regulation of the diatom cell cycle</article-title>. <source>Journal of Experimental Botany</source>
+<volume>65</volume>: <fpage>2573</fpage>&#x02013;<lpage>2584</lpage>.<pub-id pub-id-type="pmid">24277280</pub-id></mixed-citation></ref><ref id="nph14557-bib-0035"><mixed-citation publication-type="journal" id="nph14557-cit-0035">
+<string-name>
+<surname>Inada</surname>
+<given-names>DC</given-names>
+</string-name>, <string-name>
+<surname>Bashir</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name>
+<surname>Ko</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Goff</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name>
+<surname>Freeling</surname>
+<given-names>M</given-names>
+</string-name>. <year>2003</year>
+<article-title>Conserved noncoding sequences in the grasses</article-title>. <source>Genome Research</source>
+<volume>13</volume>: <fpage>2030</fpage>&#x02013;<lpage>2041</lpage>.<pub-id pub-id-type="pmid">12952874</pub-id></mixed-citation></ref><ref id="nph14557-bib-0036"><mixed-citation publication-type="journal" id="nph14557-cit-0036">
+<string-name>
+<surname>Katoh</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Standley</surname>
+<given-names>DM</given-names>
+</string-name>. <year>2013</year>
+<article-title>MAFFT multiple sequence alignment software version 7: improvements in performance and usability</article-title>. <source>Molecular Biology and Evolution</source>
+<volume>30</volume>: <fpage>772</fpage>&#x02013;<lpage>780</lpage>.<pub-id pub-id-type="pmid">23329690</pub-id></mixed-citation></ref><ref id="nph14557-bib-0037"><mixed-citation publication-type="journal" id="nph14557-cit-0037">
+<string-name>
+<surname>Kimura</surname>
+<given-names>M</given-names>
+</string-name>. <year>1980</year>
+<article-title>A simple method for estimating evolutionary rates of base substitutions through comparative studies of nucleotide sequences</article-title>. <source>Journal of Molecular Evolution</source>
+<volume>16</volume>: <fpage>111</fpage>&#x02013;<lpage>120</lpage>.<pub-id pub-id-type="pmid">7463489</pub-id></mixed-citation></ref><ref id="nph14557-bib-0038"><mixed-citation publication-type="book" id="nph14557-cit-0038">
+<string-name>
+<surname>Kooistra</surname>
+<given-names>WHCF</given-names>
+</string-name>, <string-name>
+<surname>Gersonde</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Medlin</surname>
+<given-names>LK</given-names>
+</string-name>. <year>2007</year>
+<chapter-title>The origin and evolution of the diatoms: their adaptation to a planktonic existence</chapter-title> In: <person-group person-group-type="editor"><name><surname>Falkowski</surname><given-names>PG</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Knoll</surname><given-names>AH</given-names></name></person-group>, eds. <source>Evolution of primary producers in the sea</source>. <publisher-loc>Burlington, MA, USA</publisher-loc>: <publisher-name>Academic Press</publisher-name>, <fpage>207</fpage>&#x02013;<lpage>249</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0039"><mixed-citation publication-type="journal" id="nph14557-cit-0039">
+<string-name>
+<surname>Koonin</surname>
+<given-names>EV</given-names>
+</string-name>. <year>2010</year>
+<article-title>The origin and early evolution of eukaryotes in the light of phylogenomics</article-title>. <source>Genome Biology</source>
+<volume>11</volume>: <fpage>209</fpage>.<pub-id pub-id-type="pmid">20441612</pub-id></mixed-citation></ref><ref id="nph14557-bib-0040"><mixed-citation publication-type="journal" id="nph14557-cit-0040">
+<string-name>
+<surname>L&#x000e9;vesque</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Brouwer</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Cano</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Hamilton</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Holt</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Huitema</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Raffaele</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Robideau</surname>
+<given-names>GP</given-names>
+</string-name>, <string-name>
+<surname>Thines</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Win</surname>
+<given-names>J</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2010</year>
+<article-title>Genome sequence of the necrotrophic plant pathogen <italic>Pythium ultimum</italic> reveals original pathogenicity mechanisms and effector repertoire</article-title>. <source>Genome Biology</source>
+<volume>11</volume>: <fpage>R73</fpage>.<pub-id pub-id-type="pmid">20626842</pub-id></mixed-citation></ref><ref id="nph14557-bib-0041"><mixed-citation publication-type="journal" id="nph14557-cit-0041">
+<string-name>
+<surname>Lommer</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Specht</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Roy</surname>
+<given-names>A&#x02010;S</given-names>
+</string-name>, <string-name>
+<surname>Kraemer</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Andreson</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Gutowska</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Wolf</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Bergner</surname>
+<given-names>SV</given-names>
+</string-name>, <string-name>
+<surname>Schilhabel</surname>
+<given-names>MB</given-names>
+</string-name>, <string-name>
+<surname>Klostermeier</surname>
+<given-names>UC</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2012</year>
+<article-title>Genome and low&#x02010;iron response of an oceanic diatom adapted to chronic iron limitation</article-title>. <source>Genome Biology</source>
+<volume>13</volume>: <fpage>R66</fpage>.<pub-id pub-id-type="pmid">22835381</pub-id></mixed-citation></ref><ref id="nph14557-bib-0042"><mixed-citation publication-type="journal" id="nph14557-cit-0042">
+<string-name>
+<surname>L&#x000f6;ytynoja</surname>
+<given-names>A</given-names>
+</string-name>. <year>2014</year>
+<article-title>Phylogeny&#x02010;aware alignment with PRANK</article-title>. <source>Methods in Molecular Biology</source>
+<volume>1079</volume>: <fpage>155</fpage>&#x02013;<lpage>170</lpage>.<pub-id pub-id-type="pmid">24170401</pub-id></mixed-citation></ref><ref id="nph14557-bib-0043"><mixed-citation publication-type="journal" id="nph14557-cit-0043">
+<string-name>
+<surname>Mann</surname>
+<given-names>DG</given-names>
+</string-name>, <string-name>
+<surname>Vanormelingen</surname>
+<given-names>P</given-names>
+</string-name>. <year>2013</year>
+<article-title>An inordinate fondness? The number, distributions, and origins of diatom species</article-title>. <source>Journal of Eukaryotic Microbiology</source>
+<volume>60</volume>: <fpage>414</fpage>&#x02013;<lpage>420</lpage>.<pub-id pub-id-type="pmid">23710621</pub-id></mixed-citation></ref><ref id="nph14557-bib-0044"><mixed-citation publication-type="journal" id="nph14557-cit-0044">
+<string-name>
+<surname>Mapleson</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Drou</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Swarbreck</surname>
+<given-names>D</given-names>
+</string-name>. <year>2015</year>
+<article-title>RAMPART: a workflow management system for de&#x000a0;novo genome assembly</article-title>. <source>Bioinformatics</source>
+<volume>31</volume>: <fpage>1824</fpage>&#x02013;<lpage>1826</lpage>.<pub-id pub-id-type="pmid">25637556</pub-id></mixed-citation></ref><ref id="nph14557-bib-0045"><mixed-citation publication-type="journal" id="nph14557-cit-0045">
+<string-name>
+<surname>Mathelier</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Zhao</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>AW</given-names>
+</string-name>, <string-name>
+<surname>Parcy</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Worsley&#x02010;Hunt</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Arenillas</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name>
+<surname>Buchman</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Chou</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ienasescu</surname>
+<given-names>H</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2014</year>
+<article-title>JASPAR 2014: an extensively expanded and updated open&#x02010;access database of transcription factor binding profiles</article-title>. <source>Nucleic Acids Research</source>
+<volume>42</volume>: <fpage>D142</fpage>&#x02013;<lpage>D147</lpage>.<pub-id pub-id-type="pmid">24194598</pub-id></mixed-citation></ref><ref id="nph14557-bib-0046"><mixed-citation publication-type="journal" id="nph14557-cit-0046">
+<string-name>
+<surname>Maumus</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Mhiri</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Jabbari</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Vardi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Grandbastien</surname>
+<given-names>M&#x02010;A</given-names>
+</string-name>, <string-name>
+<surname>Bowler</surname>
+<given-names>C</given-names>
+</string-name>. <year>2009</year>
+<article-title>Potential impact of stress activated retrotransposons on genome evolution in a marine diatom</article-title>. <source>BMC Genomics</source>
+<volume>10</volume>: <fpage>624</fpage>.<pub-id pub-id-type="pmid">20028555</pub-id></mixed-citation></ref><ref id="nph14557-bib-0047"><mixed-citation publication-type="journal" id="nph14557-cit-0047">
+<string-name>
+<surname>Mock</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Otillar</surname>
+<given-names>RP</given-names>
+</string-name>, <string-name>
+<surname>Strauss</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>McMullan</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Paajanen</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Schmutz</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Salamov</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Sanges</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Toseland</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ward</surname>
+<given-names>BJ</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2017</year>
+<article-title>Evolutionary genomics of the cold&#x02010;adapted diatom <italic>Fragilariopsis cylindrus</italic>
+</article-title>. <source>Nature</source>
+<volume>541</volume>: <fpage>536</fpage>&#x02013;<lpage>540</lpage>.<pub-id pub-id-type="pmid">28092920</pub-id></mixed-citation></ref><ref id="nph14557-bib-0048"><mixed-citation publication-type="journal" id="nph14557-cit-0048">
+<string-name>
+<surname>Moeys</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Frenkel</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Lembke</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Gillard</surname>
+<given-names>JTF</given-names>
+</string-name>, <string-name>
+<surname>Devos</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>den Berge</surname>
+<given-names>KV</given-names>
+</string-name>, <string-name>
+<surname>Bouillon</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Huysman</surname>
+<given-names>MJJ</given-names>
+</string-name>, <string-name>
+<surname>Decker</surname>
+<given-names>SD</given-names>
+</string-name>, <string-name>
+<surname>Scharf</surname>
+<given-names>J</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2016</year>
+<article-title>A sex&#x02010;inducing pheromone triggers cell cycle arrest and mate attraction in the diatom <italic>Seminavis robusta</italic>
+</article-title>. <source>Scientific Reports</source>
+<volume>6</volume>: <fpage>19252</fpage>.<pub-id pub-id-type="pmid">26786712</pub-id></mixed-citation></ref><ref id="nph14557-bib-0049"><mixed-citation publication-type="journal" id="nph14557-cit-0049">
+<string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Vitale</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>D'Alelio</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>. <year>2016</year>
+<article-title>Sex in marine planktonic diatoms: insights and challenges</article-title>. <source>Perspectives in Phycology</source>
+<volume>3</volume>: <fpage>61</fpage>&#x02013;<lpage>75</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0050"><mixed-citation publication-type="journal" id="nph14557-cit-0050">
+<string-name>
+<surname>Musacchia</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Basu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Petrosino</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Salvemini</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sanges</surname>
+<given-names>R</given-names>
+</string-name>. <year>2015</year>
+<article-title>Annocript: a flexible pipeline for the annotation of transcriptomes able to identify putative long noncoding RNAs</article-title>. <source>Bioinformatics</source>
+<volume>31</volume>: <fpage>2199</fpage>&#x02013;<lpage>2201</lpage>.<pub-id pub-id-type="pmid">25701574</pub-id></mixed-citation></ref><ref id="nph14557-bib-0051"><mixed-citation publication-type="journal" id="nph14557-cit-0051">
+<string-name>
+<surname>Nosenko</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Bhattacharya</surname>
+<given-names>D</given-names>
+</string-name>. <year>2007</year>
+<article-title>Horizontal gene transfer in chromalveolates</article-title>. <source>BMC Evolutionary Biology</source>
+<volume>7</volume>: <fpage>173</fpage>.<pub-id pub-id-type="pmid">17894863</pub-id></mixed-citation></ref><ref id="nph14557-bib-0052"><mixed-citation publication-type="journal" id="nph14557-cit-0052">
+<string-name>
+<surname>Parra</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Bradnam</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Korf</surname>
+<given-names>I</given-names>
+</string-name>. <year>2007</year>
+<article-title>CEGMA: a pipeline to accurately annotate core genes in eukaryotic genomes</article-title>. <source>Bioinformatics</source>
+<volume>23</volume>: <fpage>1061</fpage>&#x02013;<lpage>1067</lpage>.<pub-id pub-id-type="pmid">17332020</pub-id></mixed-citation></ref><ref id="nph14557-bib-0053"><mixed-citation publication-type="journal" id="nph14557-cit-0053">
+<string-name>
+<surname>Patil</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Moeys</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>von Dassow</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Huysman</surname>
+<given-names>MJJ</given-names>
+</string-name>, <string-name>
+<surname>Mapleson</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>De Veylder</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Sanges</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Vyverman</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>. <year>2015</year>
+<article-title>Identification of the meiotic toolkit in diatoms and exploration of meiosis&#x02010;specific SPO11 and RAD51 homologs in the sexual species <italic>Pseudo&#x02010;nitzschia multistriata</italic> and <italic>Seminavis robusta</italic>
+</article-title>. <source>BMC Genomics</source>
+<volume>16</volume>: <fpage>930</fpage>.<pub-id pub-id-type="pmid">26572248</pub-id></mixed-citation></ref><ref id="nph14557-bib-0054"><mixed-citation publication-type="journal" id="nph14557-cit-0054">
+<string-name>
+<surname>Paul</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Mausz</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Pohnert</surname>
+<given-names>G</given-names>
+</string-name>. <year>2012</year>
+<article-title>A co&#x02010;culturing/metabolomics approach to investigate chemically mediated interactions of planktonic organisms reveals influence of bacteria on diatom metabolism</article-title>. <source>Metabolomics</source>
+<volume>9</volume>: <fpage>349</fpage>&#x02013;<lpage>359</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0055"><mixed-citation publication-type="journal" id="nph14557-cit-0055">
+<string-name>
+<surname>Perkins</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Schall</surname>
+<given-names>J</given-names>
+</string-name>. <year>2002</year>
+<article-title>A molecular phylogeny of malarial parasites recovered from cytochrome <italic>b</italic> gene sequences</article-title>. <source>Journal of Parasitology</source>
+<volume>88</volume>: <fpage>972</fpage>&#x02013;<lpage>978</lpage>.<pub-id pub-id-type="pmid">12435139</pub-id></mixed-citation></ref><ref id="nph14557-bib-0056"><mixed-citation publication-type="journal" id="nph14557-cit-0056">
+<string-name>
+<surname>Piganeau</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Vandepoele</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Gourbi&#x000e8;re</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Van de Peer</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Moreau</surname>
+<given-names>H</given-names>
+</string-name>. <year>2009</year>
+<article-title>Unravelling cis&#x02010;regulatory elements in the genome of the smallest photosynthetic eukaryote: phylogenetic footprinting in <italic>Ostreococcus</italic>
+</article-title>. <source>Journal of Molecular Evolution</source>
+<volume>69</volume>: <fpage>249</fpage>&#x02013;<lpage>259</lpage>.<pub-id pub-id-type="pmid">19693423</pub-id></mixed-citation></ref><ref id="nph14557-bib-0057"><mixed-citation publication-type="journal" id="nph14557-cit-0057">
+<string-name>
+<surname>Port</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Parker</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Kodner</surname>
+<given-names>RB</given-names>
+</string-name>, <string-name>
+<surname>Wallace</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name>
+<surname>Armbrust</surname>
+<given-names>EV</given-names>
+</string-name>, <string-name>
+<surname>Faustman</surname>
+<given-names>EM</given-names>
+</string-name>. <year>2013</year>
+<article-title>Identification of G protein&#x02010;coupled receptor signaling pathway proteins in marine diatoms using comparative genomics</article-title>. <source>BMC Genomics</source>
+<volume>14</volume>: <fpage>503</fpage>.<pub-id pub-id-type="pmid">23883327</pub-id></mixed-citation></ref><ref id="nph14557-bib-0058"><mixed-citation publication-type="journal" id="nph14557-cit-0058">
+<string-name>
+<surname>Quesneville</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Bergman</surname>
+<given-names>CM</given-names>
+</string-name>, <string-name>
+<surname>Andrieu</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Autard</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Nouaud</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ashburner</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Anxolabehere</surname>
+<given-names>D</given-names>
+</string-name>. <year>2005</year>
+<article-title>Combined evidence annotation of transposable elements in genome sequences</article-title>. <source>PLoS Computational Biology</source>
+<volume>1</volume>: <fpage>166</fpage>&#x02013;<lpage>175</lpage>.<pub-id pub-id-type="pmid">16110336</pub-id></mixed-citation></ref><ref id="nph14557-bib-0059"><mixed-citation publication-type="journal" id="nph14557-cit-0059">
+<string-name>
+<surname>Quinlan</surname>
+<given-names>AR</given-names>
+</string-name>. <year>2014</year>
+<article-title>BEDTools: the Swiss&#x02010;Army tool for genome feature analysis</article-title>. <source>Current Protocols in Bioinformatics</source>
+<volume>47</volume>: <fpage>1</fpage>&#x02013;<lpage>34</lpage>.<pub-id pub-id-type="pmid">25199789</pub-id></mixed-citation></ref><ref id="nph14557-bib-0060"><mixed-citation publication-type="journal" id="nph14557-cit-0060">
+<string-name>
+<surname>Rensing</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name>
+<surname>Lang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Zimmer</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Terry</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Salamov</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Shapiro</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Nishiyama</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Perroud</surname>
+<given-names>P&#x02010;F</given-names>
+</string-name>, <string-name>
+<surname>Lindquist</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name>
+<surname>Kamisugi</surname>
+<given-names>Y</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2008</year>
+<article-title>The <italic>Physcomitrella</italic> genome reveals evolutionary insights into the conquest of land by plants</article-title>. <source>Science</source>
+<volume>319</volume>: <fpage>64</fpage>&#x02013;<lpage>69</lpage>.<pub-id pub-id-type="pmid">18079367</pub-id></mixed-citation></ref><ref id="nph14557-bib-0061"><mixed-citation publication-type="journal" id="nph14557-cit-0061">
+<string-name>
+<surname>Robinson</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>McCarthy</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name>
+<surname>Smyth</surname>
+<given-names>GK</given-names>
+</string-name>. <year>2010</year>
+<article-title>edgeR: a Bioconductor package for differential expression analysis of digital gene expression data</article-title>. <source>Bioinformatics</source>
+<volume>26</volume>: <fpage>139</fpage>&#x02013;<lpage>140</lpage>.<pub-id pub-id-type="pmid">19910308</pub-id></mixed-citation></ref><ref id="nph14557-bib-0062"><mixed-citation publication-type="journal" id="nph14557-cit-0062">
+<string-name>
+<surname>Sabatino</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Russo</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name>
+<surname>Patil</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>d'Ippolito</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Fontana</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>. <year>2015</year>
+<article-title>Establishment of genetic transformation in the sexually reproducing diatoms <italic>Pseudo&#x02010;nitzschia multistriata</italic> and <italic>Pseudo&#x02010;nitzschia arenysensis</italic> and inheritance of the transgene</article-title>. <source>Marine Biotechnology</source>
+<volume>17</volume>: <fpage>452</fpage>&#x02013;<lpage>462</lpage>.<pub-id pub-id-type="pmid">25869745</pub-id></mixed-citation></ref><ref id="nph14557-bib-0063"><mixed-citation publication-type="journal" id="nph14557-cit-0063">
+<string-name>
+<surname>Sanges</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Hadzhiev</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Gueroult&#x02010;Bellone</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Roure</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ferg</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Meola</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Amore</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Basu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Brown</surname>
+<given-names>ER</given-names>
+</string-name>, <string-name>
+<surname>De Simone</surname>
+<given-names>M</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2013</year>
+<article-title>Highly conserved elements discovered in vertebrates are present in non&#x02010;syntenic loci of tunicates, act as enhancers and can be transcribed during development</article-title>. <source>Nucleic Acids Research</source>
+<volume>41</volume>: <fpage>3600</fpage>&#x02013;<lpage>3618</lpage>.<pub-id pub-id-type="pmid">23393190</pub-id></mixed-citation></ref><ref id="nph14557-bib-0064"><mixed-citation publication-type="journal" id="nph14557-cit-0064">
+<string-name>
+<surname>Sato</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Beakes</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Idei</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Nagumo</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Mann</surname>
+<given-names>DG</given-names>
+</string-name>. <year>2011</year>
+<article-title>Novel sex cells and evidence for sex pheromones in diatoms</article-title>. <source>PLoS ONE</source>
+<volume>6</volume>: <fpage>e26923</fpage>.<pub-id pub-id-type="pmid">22046412</pub-id></mixed-citation></ref><ref id="nph14557-bib-0065"><mixed-citation publication-type="journal" id="nph14557-cit-0065">
+<string-name>
+<surname>Scalco</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Amato</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>, <string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>. <year>2016</year>
+<article-title>The sexual phase of the diatom <italic>Pseudo&#x02010;nitzschia multistriata</italic>: cytological and time&#x02010;lapse cinematography characterization</article-title>. <source>Protoplasma</source>
+<volume>253</volume>: <fpage>1421</fpage>&#x02013;<lpage>1431</lpage>.<pub-id pub-id-type="pmid">26494151</pub-id></mixed-citation></ref><ref id="nph14557-bib-0066"><mixed-citation publication-type="journal" id="nph14557-cit-0066">
+<string-name>
+<surname>Scalco</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Stec</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Iudicone</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ferrante</surname>
+<given-names>MI</given-names>
+</string-name>, <string-name>
+<surname>Montresor</surname>
+<given-names>M</given-names>
+</string-name>. <year>2014</year>
+<article-title>The dynamics of sexual phase in the marine diatom <italic>Pseudo&#x02010;nitzschia multistriata</italic> (Bacillariophyceae)</article-title>. <source>Journal of Phycology</source>
+<volume>50</volume>: <fpage>817</fpage>&#x02013;<lpage>828</lpage>.<pub-id pub-id-type="pmid">26988637</pub-id></mixed-citation></ref><ref id="nph14557-bib-0067"><mixed-citation publication-type="journal" id="nph14557-cit-0067">
+<string-name>
+<surname>&#x00160;ev&#x0010d;&#x000ed;kov&#x000e1;</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Hor&#x000e1;k</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Klime&#x00161;</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Zbr&#x000e1;nkov&#x000e1;</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Demir&#x02010;Hilton</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Sudek</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Jenkins</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Schmutz</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>P&#x00159;ibyl</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Fousek</surname>
+<given-names>J</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2015</year>
+<article-title>Updating algal evolutionary relationships through plastid genome sequencing: did alveolate plastids emerge through endosymbiosis of an ochrophyte?</article-title>
+<source>Scientific Reports</source>
+<volume>5</volume>: <fpage>10134</fpage>.<pub-id pub-id-type="pmid">26017773</pub-id></mixed-citation></ref><ref id="nph14557-bib-0068"><mixed-citation publication-type="journal" id="nph14557-cit-0068">
+<string-name>
+<surname>Slater</surname>
+<given-names>GSC</given-names>
+</string-name>, <string-name>
+<surname>Birney</surname>
+<given-names>E</given-names>
+</string-name>. <year>2005</year>
+<article-title>Automated generation of heuristics for biological sequence comparison</article-title>. <source>BMC Bioinformatics</source>
+<volume>6</volume>: <fpage>31</fpage>.<pub-id pub-id-type="pmid">15713233</pub-id></mixed-citation></ref><ref id="nph14557-bib-0069"><mixed-citation publication-type="journal" id="nph14557-cit-0069">
+<string-name>
+<surname>Speir</surname>
+<given-names>ML</given-names>
+</string-name>, <string-name>
+<surname>Zweig</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Rosenbloom</surname>
+<given-names>KR</given-names>
+</string-name>, <string-name>
+<surname>Raney</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Paten</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Nejad</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>BT</given-names>
+</string-name>, <string-name>
+<surname>Learned</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Karolchik</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Hinrichs</surname>
+<given-names>AS</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2016</year>
+<article-title>The UCSC Genome Browser database: 2016 update</article-title>. <source>Nucleic Acids Research</source>
+<volume>44</volume>: <fpage>D717</fpage>&#x02013;<lpage>D725</lpage>.<pub-id pub-id-type="pmid">26590259</pub-id></mixed-citation></ref><ref id="nph14557-bib-0070"><mixed-citation publication-type="journal" id="nph14557-cit-0070">
+<string-name>
+<surname>Stamatakis</surname>
+<given-names>A</given-names>
+</string-name>. <year>2006</year>
+<article-title>RAxML&#x02010;VI&#x02010;HPC: maximum likelihood&#x02010;based phylogenetic analyses with thousands of taxa and mixed models</article-title>. <source>Bioinformatics</source>
+<volume>22</volume>: <fpage>2688</fpage>&#x02013;<lpage>2690</lpage>.<pub-id pub-id-type="pmid">16928733</pub-id></mixed-citation></ref><ref id="nph14557-bib-0071"><mixed-citation publication-type="journal" id="nph14557-cit-0071">
+<string-name>
+<surname>Stanke</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sch&#x000f6;ffmann</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Morgenstern</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Waack</surname>
+<given-names>S</given-names>
+</string-name>. <year>2006</year>
+<article-title>Gene prediction in eukaryotes with a generalized hidden Markov model that uses hints from external sources</article-title>. <source>BMC Bioinformatics</source>
+<volume>7</volume>: <fpage>62</fpage>.<pub-id pub-id-type="pmid">16469098</pub-id></mixed-citation></ref><ref id="nph14557-bib-0072"><mixed-citation publication-type="journal" id="nph14557-cit-0072">
+<string-name>
+<surname>Swanson</surname>
+<given-names>WJ</given-names>
+</string-name>, <string-name>
+<surname>Vacquier</surname>
+<given-names>VD</given-names>
+</string-name>. <year>2002</year>
+<article-title>Reproductive protein evolution</article-title>. <source>Annual Review of Ecology and Systematics</source>
+<volume>33</volume>: <fpage>161</fpage>&#x02013;<lpage>179</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0073"><mixed-citation publication-type="journal" id="nph14557-cit-0073">
+<string-name>
+<surname>Tanaka</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Maeda</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Veluchamy</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Tanaka</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Abida</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Mar&#x000e9;chal</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Bowler</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Muto</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sunaga</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Tanaka</surname>
+<given-names>M</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2015</year>
+<article-title>Oil accumulation by the oleaginous diatom <italic>Fistulifera solaris</italic> as revealed by the genome and transcriptome</article-title>. <source>Plant Cell</source>
+<volume>27</volume>: <fpage>162</fpage>&#x02013;<lpage>176</lpage>.<pub-id pub-id-type="pmid">25634988</pub-id></mixed-citation></ref><ref id="nph14557-bib-0074"><mixed-citation publication-type="journal" id="nph14557-cit-0074">
+<string-name>
+<surname>Trainer</surname>
+<given-names>VL</given-names>
+</string-name>, <string-name>
+<surname>Bates</surname>
+<given-names>SS</given-names>
+</string-name>, <string-name>
+<surname>Lundholm</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Thessen</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Cochlan</surname>
+<given-names>WP</given-names>
+</string-name>, <string-name>
+<surname>Adams</surname>
+<given-names>NG</given-names>
+</string-name>, <string-name>
+<surname>Trick</surname>
+<given-names>CG</given-names>
+</string-name>. <year>2012</year>
+<article-title>
+<italic>Pseudo&#x02010;nitzschia</italic> physiological ecology, phylogeny, toxicity, monitoring and impacts on ecosystem health</article-title>. <source>Harmful Algae</source>
+<volume>14</volume>: <fpage>271</fpage>&#x02013;<lpage>300</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0075"><mixed-citation publication-type="journal" id="nph14557-cit-0075">
+<string-name>
+<surname>Vavouri</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Walter</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Gilks</surname>
+<given-names>WR</given-names>
+</string-name>, <string-name>
+<surname>Lehner</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Elgar</surname>
+<given-names>G</given-names>
+</string-name>. <year>2007</year>
+<article-title>Parallel evolution of conserved non&#x02010;coding elements that target a common set of developmental regulatory genes from worms to humans</article-title>. <source>Genome Biology</source>
+<volume>8</volume>: <fpage>R15</fpage>.<pub-id pub-id-type="pmid">17274809</pub-id></mixed-citation></ref><ref id="nph14557-bib-0076"><mixed-citation publication-type="journal" id="nph14557-cit-0076">
+<string-name>
+<surname>Wang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Zhu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Yu</surname>
+<given-names>J</given-names>
+</string-name>. <year>2010</year>
+<article-title>KaKs_Calculator 2.0: a toolkit incorporating gamma&#x02010;series methods and sliding window strategies</article-title>. <source>Genomics, Proteomics &#x00026; Bioinformatics</source>
+<volume>8</volume>: <fpage>77</fpage>&#x02013;<lpage>80</lpage>.</mixed-citation></ref><ref id="nph14557-bib-0078"><mixed-citation publication-type="journal" id="nph14557-cit-0078">
+<string-name>
+<surname>Wilkinson</surname>
+<given-names>LE</given-names>
+</string-name>, <string-name>
+<surname>Pringle</surname>
+<given-names>JR</given-names>
+</string-name>. <year>1974</year>
+<article-title>Transient G1 arrest of <italic>S.&#x000a0;cerevisiae</italic> cells of mating type alpha by a factor produced by cells of mating type <italic>a</italic>
+</article-title>. <source>Experimental Cell Research</source>
+<volume>89</volume>: <fpage>175</fpage>&#x02013;<lpage>187</lpage>.<pub-id pub-id-type="pmid">4611778</pub-id></mixed-citation></ref><ref id="nph14557-bib-0079"><mixed-citation publication-type="journal" id="nph14557-cit-0079">
+<string-name>
+<surname>Wilson</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Pethica</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Talbot</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Vogel</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Madera</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Chothia</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Gough</surname>
+<given-names>J</given-names>
+</string-name>. <year>2009</year>
+<article-title>SUPERFAMILY &#x02013; sophisticated comparative genomics, data mining, visualization and phylogeny</article-title>. <source>Nucleic Acids Research</source>
+<volume>37</volume>: <fpage>D380</fpage>&#x02013;<lpage>D386</lpage>.<pub-id pub-id-type="pmid">19036790</pub-id></mixed-citation></ref><ref id="nph14557-bib-0081"><mixed-citation publication-type="journal" id="nph14557-cit-0081">
+<string-name>
+<surname>Woolfe</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Goodson</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Goode</surname>
+<given-names>DK</given-names>
+</string-name>, <string-name>
+<surname>Snell</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>McEwen</surname>
+<given-names>GK</given-names>
+</string-name>, <string-name>
+<surname>Vavouri</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>SF</given-names>
+</string-name>, <string-name>
+<surname>North</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Callaway</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Kelly</surname>
+<given-names>K</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2005</year>
+<article-title>Highly conserved non&#x02010;coding sequences are associated with vertebrate development</article-title>. <source>PLoS Biology</source>
+<volume>3</volume>: <fpage>e7</fpage>.<pub-id pub-id-type="pmid">15630479</pub-id></mixed-citation></ref><ref id="nph14557-bib-0082"><mixed-citation publication-type="journal" id="nph14557-cit-0082">
+<string-name>
+<surname>Yang</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name>
+<surname>Boo</surname>
+<given-names>GH</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name>
+<surname>Cho</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name>
+<surname>Boo</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name>
+<surname>Andersen</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Yoon</surname>
+<given-names>HS</given-names>
+</string-name>. <year>2012</year>
+<article-title>Supermatrix data highlight the phylogenetic relationships of photosynthetic stramenopiles</article-title>. <source>Protist</source>
+<volume>163</volume>: <fpage>217</fpage>&#x02013;<lpage>231</lpage>.<pub-id pub-id-type="pmid">22001261</pub-id></mixed-citation></ref><ref id="nph14557-bib-0083"><mixed-citation publication-type="journal" id="nph14557-cit-0083">
+<string-name>
+<surname>Yang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Bielawski</surname>
+<given-names>JP</given-names>
+</string-name>. <year>2000</year>
+<article-title>Statistical methods for detecting molecular adaptation</article-title>. <source>Trends in Ecology &#x00026; Evolution</source>
+<volume>15</volume>: <fpage>496</fpage>&#x02013;<lpage>503</lpage>.<pub-id pub-id-type="pmid">11114436</pub-id></mixed-citation></ref><ref id="nph14557-bib-0084"><mixed-citation publication-type="journal" id="nph14557-cit-0084">
+<string-name>
+<surname>Ye</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Miao</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fan</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Zheng</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Gao</surname>
+<given-names>Y</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2015</year>
+<article-title>
+<italic>Saccharina</italic> genomes provide novel insight into kelp biology</article-title>. <source>Nature Communications</source>
+<volume>6</volume>: <fpage>6986</fpage>.</mixed-citation></ref></ref-list></back></article>

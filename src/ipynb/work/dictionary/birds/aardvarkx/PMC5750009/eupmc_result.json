@@ -1,0 +1,309 @@
+{
+  "id": [
+    "29308242"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29308242"
+  ],
+  "pmcid": [
+    "PMC5750009"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC5750009"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1098/rsos.171049"
+  ],
+  "title": [
+    "Lineage-independent retrotransposition of UTP14 associated with male fertility has occurred multiple times throughout mammalian evolution."
+  ],
+  "authorString": [
+    "Rohozinski J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Rohozinski J"
+          ],
+          "firstName": [
+            "Jan"
+          ],
+          "lastName": [
+            "Rohozinski"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7872-2984",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Institute for Regenerative Medicine, Wake Forest School of Medicine, 391 Technology Way, Winston-Salem, NC 27101, USA.",
+                "Division of Gynecologic Oncology, Department of Obstetrics and Gynecology, Center for Reproductive Medicine and Dan L. Duncan Cancer Center, Baylor College of Medicine, Houston, TX 77030, USA."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7872-2984",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "altmetrics",
+        "supporting_data"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "12"
+      ],
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2636439"
+      ],
+      "dateOfPublication": [
+        "2017 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Royal Society open science"
+          ],
+          "ISOAbbreviation": [
+            "R Soc Open Sci"
+          ],
+          "medlineAbbreviation": [
+            "R Soc Open Sci"
+          ],
+          "NLMid": [
+            "101647528"
+          ],
+          "ISSN": [
+            "2054-5703"
+          ],
+          "ESSN": [
+            "2054-5703"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "171049"
+  ],
+  "abstractText": [
+    "In mammals, gamete production is essential for reproductive success. This is particularly true for males where large quantities of sperm are produced to fertilize a limited number of eggs released by the female. Because of this, new genes associated with increased spermatogenic efficiency have been accumulating throughout the evolution of therian mammals. Many of these new genes are testis-specific retrotransposed copies of housekeeping genes located on the X chromosome. Of particular interest are retrotransposed copies of UTP14 that are present in many distantly related eutherian mammals. Analysis of genomic data available in ENSEMBL indicates that these UTP14 retrogenes have arisen independently in the various eutherian clades. They represent an interesting aspect of evolution whereby new homologues of UTP14 have become independently fixed in multiple mammalian lineages due to the reproductive advantage that may be conferred to males. Surprisingly, these genes may also be lost, even after being present within a lineage for millions of years. This phenomenon may potentially be used to delineate evolutionary trees in closely related groups of mammals, particularly in the case of South American primates. Studying these retrogenes will yield new insights into the evolutionary history of male gamete production and the phylogeny of eutherian mammals."
+  ],
+  "affiliation": [
+    "Institute for Regenerative Medicine, Wake Forest School of Medicine, 391 Technology Way, Winston-Salem, NC 27101, USA."
+  ],
+  "publicationStatus": [
+    "epublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Spermatogenesis",
+        "Mammalian evolution",
+        "Utp14 Retrogenes",
+        "Convergent Recruitment",
+        "Male Reproductive Advantage",
+        "Primate Diversity"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1098/rsos.171049"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5750009"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5750009?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "ensembl",
+        "doi"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2018-01-09"
+  ],
+  "firstIndexDate": [
+    "2018-01-08"
+  ],
+  "fullTextReceivedDate": [
+    "2018-01-09"
+  ],
+  "dateOfRevision": [
+    "2020-04-16"
+  ],
+  "electronicPublicationDate": [
+    "2017-12-20"
+  ],
+  "firstPublicationDate": [
+    "2017-12-20"
+  ]
+}

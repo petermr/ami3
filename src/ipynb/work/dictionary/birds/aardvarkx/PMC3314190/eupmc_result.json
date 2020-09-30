@@ -1,0 +1,426 @@
+{
+  "id": [
+    "22457604"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "22457604"
+  ],
+  "pmcid": [
+    "PMC3314190"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC3314190"
+      ]
+    }
+  ],
+  "doi": [
+    "10.7150/ijbs.3982"
+  ],
+  "title": [
+    "A comparative study of mammalian diversification pattern."
+  ],
+  "authorString": [
+    "Yu W, Xu J, Wu Y, Yang G."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Yu W"
+          ],
+          "firstName": [
+            "Wenhua"
+          ],
+          "lastName": [
+            "Yu"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Jiangsu Key Laboratory for Biodiversity and Biotechnology, College of Life Sciences, Nanjing Normal University, Nanjing, China."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Xu J"
+          ],
+          "firstName": [
+            "Junxiao"
+          ],
+          "lastName": [
+            "Xu"
+          ],
+          "initials": [
+            "J"
+          ]
+        },
+        {
+          "fullName": [
+            "Wu Y"
+          ],
+          "firstName": [
+            "Yi"
+          ],
+          "lastName": [
+            "Wu"
+          ],
+          "initials": [
+            "Y"
+          ]
+        },
+        {
+          "fullName": [
+            "Yang G"
+          ],
+          "firstName": [
+            "Guang"
+          ],
+          "lastName": [
+            "Yang"
+          ],
+          "initials": [
+            "G"
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "1914992"
+      ],
+      "dateOfPublication": [
+        "2012 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2012"
+      ],
+      "printPublicationDate": [
+        "2012-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "International journal of biological sciences"
+          ],
+          "ISOAbbreviation": [
+            "Int. J. Biol. Sci."
+          ],
+          "medlineAbbreviation": [
+            "Int J Biol Sci"
+          ],
+          "NLMid": [
+            "101235568"
+          ],
+          "ISSN": [
+            "1449-2288"
+          ],
+          "ESSN": [
+            "1449-2288"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2012"
+  ],
+  "pageInfo": [
+    "486-497"
+  ],
+  "abstractText": [
+    "Although mammals have long been regarded as a successful radiation, the diversification pattern among the clades is still poorly known. Higher-level phylogenies are conflicting and comprehensive comparative analyses are still lacking. Using a recently published supermatrix encompassing nearly all extant mammalian families and a novel comparative likelihood approach (MEDUSA), the diversification pattern of mammalian groups was examined. Both order- and family-level phylogenetic analyses revealed the rapid radiation of Boreoeutheria and Euaustralidelphia in the early mammalian history. The observation of a diversification burst within Boreoeutheria at approximately 100 My supports the Long Fuse model in elucidating placental diversification progress, and the rapid radiation of Euaustralidelphia suggests an important role of biogeographic dispersal events in triggering early Australian marsupial rapid radiation. Diversification analyses based on family-level diversity tree revealed seven additional clades with exceptional diversification rate shifts, six of which represent accelerations in net diversification rate as compared to the background pattern. The shifts gave origin to the clades Muridae+Cricetidae, Bovidae+Moschidae+Cervidae, Simiiformes, Echimyidae, Odontoceti (excluding Physeteridae+Kogiidae+Platanistidae), Macropodidae, and Vespertilionidae. Moderate to high extinction rates from background and boreoeutherian diversification patterns indicate the important role of turnovers in shaping the heterogeneous taxonomic richness observed among extant mammalian groups. Furthermore, the present results emphasize the key role of extinction on erasing unusual diversification signals, and suggest that further studies are needed to clarify the historical radiation of some mammalian groups for which MEDUSA did not detect exceptional diversification rates."
+  ],
+  "affiliation": [
+    "Jiangsu Key Laboratory for Biodiversity and Biotechnology, College of Life Sciences, Nanjing Normal University, Nanjing, China."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genetic Speciation"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Radiation",
+        "Mammal",
+        "medusa",
+        "Diversification Pattern"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/22457604/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/22457604/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.7150/ijbs.3982"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3314190"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC3314190?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "5"
+  ],
+  "hasData": [
+    "N"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "N"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2012-07-11"
+  ],
+  "dateOfCreation": [
+    "2012-03-29"
+  ],
+  "firstIndexDate": [
+    "2012-03-30"
+  ],
+  "fullTextReceivedDate": [
+    "2012-05-17"
+  ],
+  "dateOfRevision": [
+    "2016-03-18"
+  ],
+  "electronicPublicationDate": [
+    "2012-03-14"
+  ],
+  "firstPublicationDate": [
+    "2012-03-14"
+  ]
+}

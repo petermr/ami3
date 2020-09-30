@@ -1,0 +1,494 @@
+{
+  "id": [
+    "27325833"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27325833"
+  ],
+  "pmcid": [
+    "PMC4920337"
+  ],
+  "fullTextIdList": [
+    {
+      "fullTextId": [
+        "PMC4920337"
+      ]
+    }
+  ],
+  "doi": [
+    "10.1098/rstb.2015.0136"
+  ],
+  "title": [
+    "Closing the gap between rocks and clocks using total-evidence dating."
+  ],
+  "authorString": [
+    "Ronquist F, Lartillot N, Phillips MJ."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Ronquist F"
+          ],
+          "firstName": [
+            "Fredrik"
+          ],
+          "lastName": [
+            "Ronquist"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3929-251X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Department of Bioinformatics and Genetics, Swedish Museum of Natural History, PO Box 50007, 104 05 Stockholm, Sweden fredrik.ronquist@nrm.se."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lartillot N"
+          ],
+          "firstName": [
+            "Nicolas"
+          ],
+          "lastName": [
+            "Lartillot"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9973-7760",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "Laboratoire de Biométrie et Biologie Evolutive, UMR CNRS 5558, Université Claude Bernard Lyon 1, F-69622 Villeurbanne Cedex, France."
+              ]
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Phillips MJ"
+          ],
+          "firstName": [
+            "Matthew J"
+          ],
+          "lastName": [
+            "Phillips"
+          ],
+          "initials": [
+            "MJ"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1532-449X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "authorAffiliationsList": [
+            {
+              "authorAffiliation": [
+                "School of Earth, Environmental and Biological Sciences, Queensland University of Technology, 2 George Street, Brisbane, Queensland 4000, Australia."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-3929-251X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9973-7760",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1532-449X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "dataLinksTagsList": [
+    {
+      "dataLinkstag": [
+        "supporting_data",
+        "altmetrics"
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1699"
+      ],
+      "volume": [
+        "371"
+      ],
+      "journalIssueId": [
+        "2421647"
+      ],
+      "dateOfPublication": [
+        "2016 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Philosophical transactions of the Royal Society of London. Series B, Biological sciences"
+          ],
+          "ISOAbbreviation": [
+            "Philos. Trans. R. Soc. Lond., B, Biol. Sci."
+          ],
+          "medlineAbbreviation": [
+            "Philos Trans R Soc Lond B Biol Sci"
+          ],
+          "NLMid": [
+            "7503623"
+          ],
+          "ISSN": [
+            "0962-8436"
+          ],
+          "ESSN": [
+            "1471-2970"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "abstractText": [
+    "Total-evidence dating (TED) allows evolutionary biologists to incorporate a wide range of dating information into a unified statistical analysis. One might expect this to improve the agreement between rocks and clocks but this is not necessarily the case. We explore the reasons for such discordance using a mammalian dataset with rich molecular, morphological and fossil information. There is strong conflict in this dataset between morphology and molecules under standard stochastic models. This causes TED to push divergence events back in time when using inadequate models or vague priors, a phenomenon we term 'deep root attraction' (DRA). We identify several causes of DRA. Failure to account for diversified sampling results in dramatic DRA, but this can be addressed using existing techniques. Inadequate morphological models also appear to be a major contributor to DRA. The major reason seems to be that current models do not account for dependencies among morphological characters, causing distorted topology and branch length estimates. This is particularly problematic for huge morphological datasets, which may contain large numbers of correlated characters. Finally, diversification and fossil sampling priors that do not incorporate all the available background information can contribute to DRA, but these priors can also be used to compensate for DRA. Specifically, we show that DRA in the mammalian dataset can be addressed by introducing a modest extra penalty for ghost lineages that are unobserved in the fossil record, for instance by assuming rapid diversification, rare extinction or high fossil sampling rate; any of these assumptions produces highly congruent divergence time estimates with a minimal gap between rocks and clocks. Under these conditions, fossils have a stabilizing influence on divergence time estimates and significantly increase the precision of those estimates, which are generally close to the dates suggested by palaeontologists.This article is part of the themed issue 'Dating species divergences using rocks and clocks'."
+  ],
+  "affiliation": [
+    "Department of Bioinformatics and Genetics, Swedish Museum of Natural History, PO Box 50007, 104 05 Stockholm, Sweden fredrik.ronquist@nrm.se."
+  ],
+  "publicationStatus": [
+    "ppublish"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Mammals"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "AH"
+                  ],
+                  "qualifierName": [
+                    "anatomy & histology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Calibration"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Time"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Fossils"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "AH"
+                  ],
+                  "qualifierName": [
+                    "anatomy & histology"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biological Evolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Mammals",
+        "Total-evidence Dating",
+        "Deep Root Attraction",
+        "Fossilized Birth–death"
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1098/rstb.2015.0136"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4920337"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4920337?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "19"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2017-09-18"
+  ],
+  "dateOfCreation": [
+    "2016-06-21"
+  ],
+  "firstIndexDate": [
+    "2016-06-22"
+  ],
+  "fullTextReceivedDate": [
+    "2016-07-20"
+  ],
+  "dateOfRevision": [
+    "2017-09-18"
+  ],
+  "firstPublicationDate": [
+    "2016-07-01"
+  ]
+}
