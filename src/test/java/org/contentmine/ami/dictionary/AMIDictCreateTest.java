@@ -58,16 +58,15 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 	 */
 	public void testCreateWikipediaListIT() {
 		String args = "--input https://en.wikipedia.org/wiki/List_of_fish_common_names" +
-				" dictionary create --informat wikipage" + 
-				"   --dictionary commonfish --directory mydictionary --outformats xml,html";
+				" create --informat wikipage" +
+				"   --dictionary commonfish --directory mydictionary --outformats xml,html --maxcount 10";
 		AMIDict.execute(args);
 	}
 	
 	@Test
 //	@Ignore // BAD DICTIONARIES?
-	public void testListSome() {
-		String args =
-				"dictionary "
+	public void testDisplaySome() {
+		String args = ""
 						+ "display"
 						+ " --directory src/main/resources/org/contentmine/ami/plugins/dictionary "
 						+ " --dictionary " + "country disease"
@@ -76,7 +75,6 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 	}
 	
 	@Test
-//	@Ignore // REQUIRE INPUT
 	public void testCreateFungicideTerms() {
 		
 		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");
@@ -110,7 +108,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 		FileUtils.writeLines(fungicideFile, fungicides);
 		
 		String args =
-				"dictionary "
+				""
 						+ "create " +
 		    " --informat list" +
 		    " --directory " + directory + " " +

@@ -128,14 +128,21 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     		description = "input format (${COMPLETION-CANDIDATES})"
     		)
     protected InputFormat informat = InputFormat.list;
-    
-    @Option(names = {"--linkcol"}, 
-    		arity="1",
-    		description = "column to extract link to internal pages. main use Wikipedia. Defaults to the 'name' column"
-    		)
+
+	@Option(names = {"--linkcol"},
+			arity="1",
+			description = "column to extract link to internal pages. main use Wikipedia. Defaults to the 'name' column"
+	)
 	public String linkCol;
 
-    @Option(names = {"--namecol"}, 
+	@Option(names = {"--maxcount"},
+			arity="1",
+			description = "" +
+					"maximum number of entries to process (mainly for testing) ; default MAX_VALUE"
+	)
+	public int maxcount = Integer.MAX_VALUE;
+
+	@Option(names = {"--namecol"},
 //    		split=",",
     		arity="1..*",
     		description = "column(s) to extract name; use exact case (e.g. Common name)"
@@ -686,12 +693,17 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		linkList = new ArrayList<String>();
 		List<HtmlA> aList = HtmlA.extractSelfAndDescendantAs(htmlElement);
 		HtmlUl ul = new HtmlUl();
+		int count = 0;
 		for (HtmlA a : aList) {
 			nameList.add(a.getValue());
 			linkList.add(a.getHref());
 			HtmlElement li = new HtmlLi();
 			li.appendChild(a.copy());
 			ul.appendChild(li);
+			if (count++ >= maxcount) {
+				LOG.info("Max terms reached");
+				break;
+			}
 		}
 		return ul;
 	}
@@ -849,8 +861,10 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			}
 		} else {
 			HtmlElement htmlElement = readHtmlElement(inputStream);
+			LOG.debug("read wikipedia element ");
 			wikipediaDictionary.clean(htmlElement);
 			readWikipediaPage(htmlElement);
+			LOG.debug("read and interpreted wikipedia page");
 		}
 	}
 

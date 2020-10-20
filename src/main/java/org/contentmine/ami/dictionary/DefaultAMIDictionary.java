@@ -321,11 +321,15 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 
 	public List<DictionaryTerm> getTermsSortedBySize() {
 		getDictionaryTermList();
-		getMaximumTermSize();
 		List<DictionaryTerm> terms = new ArrayList<DictionaryTerm>();
-		if (namesByTerm != null) {
-			terms = new ArrayList<DictionaryTerm>(Arrays.asList(namesByTerm.keySet().toArray(new DictionaryTerm[0])));
-			Collections.sort(terms);
+		if (dictionaryTermList == null || dictionaryTermList.size() == 0) {
+			LOG.error("NO terms extracted");
+		} else {
+			getMaximumTermSize();
+			if (namesByTerm != null) {
+				terms = new ArrayList<DictionaryTerm>(Arrays.asList(namesByTerm.keySet().toArray(new DictionaryTerm[0])));
+				Collections.sort(terms);
+			}
 		}
 		return terms;
 	}
@@ -339,7 +343,11 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 		}
 		return termPhraseList;
 	}
-	
+
+	/** get maximum number of words in term
+	 *
+	 * @return
+	 */
 	public int getMaximumTermSize() {
 		getDictionaryTermList();
 		int maxLength = 0;

@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
@@ -201,14 +202,33 @@ public class AMIOCRTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 		CTree cTree = new CTree(new File(NormaFixtures.TEST_IMAGES_DIR, "ocr/battery"));
 		LOG.debug("ctree "+cTree);
 		String cmd = " --ctree "+cTree.getDirectory()+""
-					+ " --inputname raw"
-					+ " ocr"
-					+ " --html true"
-					+ " --tesseract=/usr/local/bin/tesseract"
-	                + " --scalefactor 2.0"
-					;
-			AMI.execute(cmd);
-			
+				+ " --inputname raw"
+				+ " ocr"
+				+ " --html true"
+				+ " --tesseract=/usr/local/bin/tesseract"
+				+ " --scalefactor 2.0"
+				;
+		AMI.execute(cmd);
+
+	}
+
+	@Test
+	public void testThermoGraph() {
+		org.apache.logging.log4j.core.config.Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
+
+		CTree cTree = new CTree(new File(SRC_TEST_AMI, "thermo/physrevlett.125.045701"));
+		LOG.debug("ctree "+cTree);
+		String cmd0 = " -vvv --ctree "+cTree.getDirectory()+" pdfbox ";
+		AMI.execute(cmd0);
+		String cmd = " --ctree "+cTree.getDirectory()+""
+				+ " --inputname raw"
+				+ " ocr"
+				+ " --html true"
+				+ " --tesseract=/usr/local/bin/tesseract"
+				+ " --scalefactor 2.0"
+				;
+		AMI.execute(cmd);
+
 	}
 
 //	@Test
