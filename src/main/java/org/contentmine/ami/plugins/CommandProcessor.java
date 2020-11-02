@@ -12,6 +12,7 @@ import java.util.Map;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMISearchTool;
+import org.contentmine.ami.tools.AbstractAMISearchTool;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -277,6 +278,7 @@ public class CommandProcessor {
 	}
 
 	public void runLegacyPluginOptions(AbstractAMITool amiTool) {
+		this.abstractAMITool = amiTool;
 		List<AMIPluginOption> pluginOptions = this.getPluginOptions();
 		AMISearchTool amiSearchTool = (amiTool != null && amiTool instanceof AMISearchTool) ? (AMISearchTool) amiTool : null;
 		for (AMIPluginOption pluginOption : pluginOptions) {
@@ -347,7 +349,5 @@ public class CommandProcessor {
 	public void setAbstractAMITool(AbstractAMITool abstractAMITool) {
 		this.abstractAMITool = abstractAMITool;
 	}
-
-
 
 }

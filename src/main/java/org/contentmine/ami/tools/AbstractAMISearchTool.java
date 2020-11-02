@@ -211,6 +211,7 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
 		try {
 			
 			CommandProcessor commandProcessor = new CommandProcessor(cProject.getDirectory());
+			commandProcessor.setAbstractAMITool(this);
 			List<String> cmdList = Arrays.asList(cmd.trim().split("\\s+"));
 			for (String cmd0 : cmdList) {
 				LOG.warn("legacy cmd> "+cmd0);

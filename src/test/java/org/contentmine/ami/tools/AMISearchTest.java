@@ -24,17 +24,26 @@ public class AMISearchTest extends AbstractAMITest {
 	@Test
 	public void testZikaSearch2() {
 		String project = "zika2";
+		File dictionaryDir = new File(_HOME, "dictionary/openVirus/");
+		if (!dictionaryDir.exists()) {
+			LOG.error("No dictionary directory " + dictionaryDir);
+			return;
+		}
 //		String project = "zika1";
 		File rawDir = new File(NAConstants.TEST_AMI_DIR, project);
 		File targetDir = new File("target/cooccurrence/"+project);
+		LOG.debug("writing to "+targetDir);
 		CMineTestFixtures.cleanAndCopyDir(rawDir, targetDir);
-		String args = 
-				"-p "+targetDir
+		File dictionary = new File(dictionaryDir, "disease");
+		String args = ""
+				+ "-p "+targetDir
 //				"-t "+new File(targetDir, "PMC2640145")
 				+ " -vv"
 				+ " search"
-//				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
-				+ " --dictionary country "
+				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
+				+ " --dictionary country.xml "
+				+ dictionary // note no xml??
+				+ " "
 			;
 		LOG.debug("args "+args);
 		AMI.execute(args);
@@ -42,6 +51,7 @@ public class AMISearchTest extends AbstractAMITest {
 	
 	
 	@Test
+	// OLD dictionary
 	public void testZikaSearch2Dictionary() {
 		String project = "zika2";
 		File rawDir = new File(NAConstants.TEST_AMI_DIR, project);

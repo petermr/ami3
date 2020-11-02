@@ -107,7 +107,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	private static final int PAGE_IMAGE_LINK_COLUMN = 6;
 	private static final int CENTRAL_DESCRIPTION_COLUMN = 5;
 	private static final int WIKIDATA_LINK_COLUMN = 4;
-	public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
+	public static final String EN_WIKIPEDIA_BASE = "https://en.wikipedia.org";
 	public static final String ID = "id";
 	public static final String DICTIONARY = "dictionary";
 	public static final String DESC = "desc";
@@ -130,7 +130,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	protected static final File GENE_DIR       = new File(AMI_DIR, "gene");
 	protected static final File PLACES_DIR     = new File(AMI_DIR, "places");
 	protected static final File SPECIES_DIR    = new File(AMI_DIR, "species");
-	public static final File SYNBIO_DIR     = new File(AMI_DIR, "synbio");
+	public    static final File SYNBIO_DIR     = new File(AMI_DIR, "synbio");
 	protected static final String UTF_8        = "UTF-8";
 	
 	private static final String PAGE_CONTENT = "content";
@@ -150,7 +150,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	private JsonElement jsonElement;
 	private File outputDir;
 	private File inputDir; 
-	private String baseUrl = "https://en.wikipedia.org";
+	private String baseUrl = EN_WIKIPEDIA_BASE;
 	
 	public DefaultAMIDictionary() {
 		init();
@@ -571,7 +571,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 			}
 		}
 		if (urlS != null) {
-			urlS = WIKIPEDIA_BASE + urlS;
+			urlS = EN_WIKIPEDIA_BASE + urlS;
 			tdList.get(3).setValue(urlS);
 			HtmlElement pageElement = null;
 			try {

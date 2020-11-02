@@ -256,7 +256,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	public static final String DOT = ".";
 	public static final String WIKIDATA = "wikidata";
 	public static final String WIKIPEDIA = "wikipedia";
-	public static final String HTTPS_EN_WIKIPEDIA_ORG_WIKI = "https://en.wikipedia.org/wiki/";
+	public static final String HTTPS_EN_WIKIPEDIA_ORG_WIKI = DefaultAMIDictionary.EN_WIKIPEDIA_BASE + "/wiki/";
 	public static final String XML = "xml";
 	
 	protected static File HOME_DIR = new File(System.getProperty("user.home"));

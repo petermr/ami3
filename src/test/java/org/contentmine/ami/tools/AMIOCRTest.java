@@ -231,6 +231,48 @@ public class AMIOCRTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 
 	}
 
+	@Test
+	public void testRahul() {
+//		org.apache.logging.log4j.core.config.Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
+
+		File rahul = new File(SRC_TEST_AMI, "rahul");
+		String cmd00 = "  -v -p "+rahul+" makeproject ";
+		AMI.execute(cmd00);
+		File directory = new File(rahul, "rahul1");
+		CTree rahul1 = new CTree(directory);
+		LOG.debug("ctree "+cTree);
+		String cmd0 = " -v -p "+rahul+" pdfbox ";
+		System.out.println("**************** PDFBox "+cmd0);
+		AMI.execute(cmd0);
+
+		String cmd1 = "-t " + directory
+				+ " -vv"
+				+ " --inputname raw"
+//				+ " --includetree " + treeNamesString
+				+ " --output octree"
+				+ " image"
+				+ " --octree 8"
+//				+ " --thin"
+//				+ " --merge 1"
+				+ " --outputfiles binary channels histogram "/*neighbours*/+ " octree"
+				+ "";
+		System.out.println("*************** OCTREE "+cmd1);
+		AMI.execute(cmd1);
+
+		String cmd = " --ctree "+directory+""
+				+ " --inputname "
+//				+ " channel.372e30"
+				+ " channel.282427"
+				+ " ocr"
+				+ " --html true"
+				+ " --tesseract=/usr/local/bin/tesseract"
+				+ " --scalefactor 2.0"
+				;
+		
+		AMI.execute(cmd);
+
+	}
+
 //	@Test
 //	/**
 //	 * reads already processed images and extracts OCR labels

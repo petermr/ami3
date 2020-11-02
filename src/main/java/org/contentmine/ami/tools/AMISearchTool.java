@@ -20,6 +20,7 @@ import org.contentmine.ami.tools.option.search.IgnorePluginsOption;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.norma.NAConstants;
 
+import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
@@ -244,6 +245,58 @@ public class AMISearchTool extends AbstractAMISearchTool {
 		}
 		LOG.info(_PR+"running search: "+cmd);
 		runLegacyCommandProcessor(cmd);
+/**		
+ * DefaultStringDictionary.addEntryToDictionary(Element) line: 96	
+DefaultStringDictionary.createDictionaryFromXML(Element) line: 91	
+DefaultStringDictionary.createFromInputStream(String, InputStream) line: 77	
+DefaultStringDictionary.createDictionary(String, InputStream) line: 55	
+SearchArgProcessor(NormaArgProcessor).createAndAddDictionaries(List<String>) line: 811	******
+^^ locates dictionaries
+SearchArgProcessor.parseSearch(ArgumentOption, ArgIterator) line: 47	
+NativeMethodAccessorImpl.invoke0(Method, Object, Object[]) line: not available [native method]	
+NativeMethodAccessorImpl.invoke(Object, Object[]) line: 62	
+DelegatingMethodAccessorImpl.invoke(Object, Object[]) line: 43	
+Method.invoke(Object, Object...) line: 498	
+SearchArgProcessor(DefaultArgProcessor).runMethod(ArgIterator, ArgumentOption, String) line: 1164	
+SearchArgProcessor(DefaultArgProcessor).runParseMethod1(ArgIterator, ArgumentOption, String) line: 1144	
+SearchArgProcessor(DefaultArgProcessor).addArgumentOptionsAndRunParseMethods(ArgIterator, String) line: 1126	
+SearchArgProcessor(DefaultArgProcessor).parseArgs(String[]) line: 955	
+SearchArgProcessor(CProjectArgProcessor).parseArgs(String[]) line: 762	
+SearchArgProcessor(NormaArgProcessor).parseArgs(String[]) line: 715	
+SearchArgProcessor(DefaultArgProcessor).parseArgs(String) line: 966	
+SearchArgProcessor.<init>(String) line: 30	
+
+
+SearchPluginOption.run() line: 43	
+CommandProcessor.runLegacyPluginOptions(AbstractAMITool) line: 296	
+AMISearchTool(AbstractAMISearchTool).runLegacyCommandProcessor(String) line: 222	
+AMISearchTool.runLegacyCommandProcessor(String) line: 251	
+
+
+AMIArgProcessor *****
+
+AbstractSearchArgProcessor
+	public void runSearch() {
+		ensureResultsByDictionary();
+
+
+DefaultStringDictionary
+	private void addEntryToDictionary(Element entry) {
+		String term = entry.getAttributeValue(TERM);
+		if (term == null) {
+			throw new RuntimeException("missing term attribute");
+		}
+		term = term.trim();
+		if (term.length() > 0) {
+			addStringToTrailingWordsMap(term);
+		}
+		if (addSynonyms) {
+			addSynonyms(entry);
+		}
+	}
+
+
+ */
 		amiProcessor.defaultAnalyzeCooccurrence(dictionaryList);
 	}
 
@@ -312,7 +365,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 					}
 					break;
 				} else {
-					LOG.debug("cannot find: "+dictionaryFile);
+					LOG.debug("cannot find dictionar: "+dictionaryFile);
 				}
 			}
 		}

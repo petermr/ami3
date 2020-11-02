@@ -16,7 +16,7 @@ import org.contentmine.cproject.util.CellRenderer;
 public class SearchPluginOption extends AMIPluginOption {
 
 	private static final Logger LOG = LogManager.getLogger(SearchPluginOption.class);
-public static final String TAG = "search";
+	public static final String TAG = "search";
 	private String searchDictionary;
 	private String dictionary;
 

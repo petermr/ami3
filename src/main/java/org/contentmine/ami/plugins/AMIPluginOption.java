@@ -30,7 +30,7 @@ private static final String RESULT_XPATH_ROOT = "//result";
 //	private static final String SPECIES = "species";
 //	private static final String SEQUENCE = "sequence";
 	private static final Logger LOG = LogManager.getLogger(AMIPluginOption.class);
-public static Pattern COMMAND = Pattern.compile("(.*)\\((.*)\\)(.*)");
+	public static Pattern COMMAND = Pattern.compile("(.*)\\((.*)\\)(.*)");
 	
 	public final static List<String> COMMANDS = Arrays.asList( new String[] {
 	GenePluginOption.TAG,

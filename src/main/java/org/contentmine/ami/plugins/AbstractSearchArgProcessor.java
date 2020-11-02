@@ -27,7 +27,7 @@ import org.contentmine.cproject.lookup.DefaultStringDictionary;
 public abstract class AbstractSearchArgProcessor extends AMIArgProcessor {
 	
 	public static final Logger LOG = LogManager.getLogger(AbstractSearchArgProcessor.class);
-static final double MIN_FONT = 10;
+	static final double MIN_FONT = 10;
 	static final double MAX_FONT = 30;
 	
 	private Map<String, ResultsElement> resultsByDictionary;
@@ -87,6 +87,7 @@ static final double MIN_FONT = 10;
 	public void runSearch() {
 		ensureResultsByDictionary();
 		ensureSearcherList();
+		// ned to extract dictionary details
 		for (AMISearcher searcher : searcherList) {
 			SearchSearcher wordSearcher = (SearchSearcher)searcher;
 			String title = wordSearcher.getTitle();

@@ -37,7 +37,7 @@ import nu.xom.Element;
 public class AMIArgProcessor extends NormaArgProcessor {
 	
 	public static final Logger LOG = LogManager.getLogger(AMIArgProcessor.class);
-private static final String AMI = "ami";
+	private static final String AMI = "ami";
 	private static final String ARG_PROCESSOR = "ArgProcessor";
 	protected static String RESOURCE_NAME_TOP = NAConstants.AMI_RESOURCE;
 	protected static String PLUGIN_RESOURCE = RESOURCE_NAME_TOP+"/plugins";
