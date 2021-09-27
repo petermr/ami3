@@ -1,3 +1,10 @@
+# ami v2021.09.27_15.49.34
+## Summary
+
+
+- [#67] Fixed NullPointer in EPMCResult.json dues to getInteger() assuming field exists
+
+
 # ami v2020.08.09_09.54.10
 ## Summary
 
