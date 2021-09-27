@@ -285,7 +285,7 @@ public static final String FULL_TEXT_URL_LIST = "fullTextUrlList";
 	
 	private Integer getInteger(String field) {
 		JsonElement jsonElement = getField(field);
-		Integer value = jsonElement.getAsInt();
+		Integer value = jsonElement == null ? null : jsonElement.getAsInt();
 		return value;
 	}
 
@@ -293,7 +293,9 @@ public static final String FULL_TEXT_URL_LIST = "fullTextUrlList";
 		JsonElement entry = getJsonEntry();
 		JsonObject jsonObject = entry.getAsJsonObject();
 		JsonElement jsonElement = jsonObject.get(field);
-		jsonElement = strip1ElementArray(jsonElement);
+		if (jsonElement != null) {
+			jsonElement = strip1ElementArray(jsonElement);
+		}
 		return jsonElement;
 	}
 
