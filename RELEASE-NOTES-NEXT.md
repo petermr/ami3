@@ -1,5 +1,7 @@
 ## Summary
 
+This is a template and should be replaced by actual release notes...
 
-- [#67] Fixed NullPointer in EPMCResult.json dues to getInteger() assuming field exists
-
+## Changes in this Release
+- First Change
+- Second Change
