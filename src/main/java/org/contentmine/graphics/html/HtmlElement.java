@@ -509,7 +509,17 @@ public abstract class HtmlElement extends AbstractCMElement {
 		return this;
 	}
 
+	/**  
+	 * 
+	 * @param title
+	 * @return
+	 * @throws RuntimeException for empty title
+	 */
 	public HtmlElement setTitle(String title) {
+		if(title == null || title.trim() == "") {
+			throw new RuntimeException("title cannot be null/empty");
+		}
+		
 		this.addAttribute(new Attribute(TITLE, title));
 		return this;
 	}

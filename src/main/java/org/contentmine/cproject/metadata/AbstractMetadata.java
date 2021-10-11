@@ -1416,7 +1416,11 @@ ARRAY translator; [{"affiliation":[],"family":"Munder","given":"Marc"},{"affilia
 
 	public HtmlDiv createSimpleHtml() {
 		HtmlDiv div = new HtmlDiv();
-		div.appendChild(createSpan(TITL, this.getTitle(), 30));
+		String title = this.getTitle();
+		if (title == null || title.trim().contentEquals("")) {
+			title = "unknown_title";
+		}
+		div.appendChild(createSpan(TITL, title, 30));
 		div.appendChild(new HtmlBr());
 		div.appendChild(createSpan(DATE, String.valueOf(this.getDate()), 6));
 		div.appendChild(" ");
@@ -1444,7 +1448,8 @@ ARRAY translator; [{"affiliation":[],"family":"Munder","given":"Marc"},{"affilia
 		biblioSpan.appendChild(iElement);
 		biblioSpan.setClassAttribute(name);
 		biblioSpan.appendChild(value);
-		biblioSpan.setTitle(value0);
+		String title = (value0 == null || value0.trim().length() == 0) ? "unknown" : value0;
+		biblioSpan.setTitle(title);
 		return biblioSpan;
 	}
 
