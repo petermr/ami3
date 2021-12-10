@@ -80,7 +80,7 @@
         <lucene.version>8.5.1</lucene.version>
         <!-- is this necessary? -->
 <!--         <lucene-query.version>4.0.0-BETA</lucene-query.version>  -->
-        <log4j.version>2.13.3</log4j.version>
+        <log4j.version>2.15.0</log4j.version>
         <pdf2dom.version>1.9</pdf2dom.version>
         <pdfbox2.version>2.0.19</pdfbox2.version>
         <pdfbox-tools.version>2.0.19</pdfbox-tools.version>
